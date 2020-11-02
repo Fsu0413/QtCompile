@@ -1,8 +1,8 @@
 # Previous Histories
 
 ## 2020.6.19
-Upload Android NDK to r21d.
-Recompile all android packages using new NDK.
+Upload Android NDK to r21d.  
+Rebuilt all android packages using new NDK.
 
 ## 2020.6.18
 Upload 5.12.9 builds.
@@ -49,7 +49,7 @@ Upload 5.12.7 Android series with NDK r21.
 Upload 5.15.0-beta1 series. (VS2017 and VS2019 shared builds are not provided due to QtWebEngine compile failure)
 
 ## 2020.2.6
-Upload Windows on ARM64 cross compile. (for now it only supports Qt 5.12 and later using VS2017.)
+Upload Windows on ARM64 cross build. (for now it only supports Qt 5.12 and later using VS2017.)
 
 ## 2020.2.5
 Upload Qt 5.12.7 Series. (Qt 5.12.7 actually released on 31st, Jan., but I didn't mention it....)  
@@ -75,11 +75,11 @@ Since there is no host tools in OpenSSL packages, most of the OpenSSL packages a
 
 ## 2020.1.16
 Recompress the Qt 5.6 static `full` packages due to a script bug which causes the missing of OpenSSL libraries.  
-Note that the packages are not re-compiled.  
+Note that the packages are not rebuilt.  
 (Qt 5.12 packages will update later when OpenSSL 1.1 series or Qt 5.12 series updates)
 
 ## 2020.1.5
-Packages using OpenSSL 1.0.2 Series recompiled using OpenSSL 1.0.2u.  
+Packages using OpenSSL 1.0.2 Series rebuilt using OpenSSL 1.0.2u.  
 Including all Qt 4 packages and non-macOS Qt 5.6/5.9 packages.
 
 Since OpenSSL 1.0.2 Series has reached EOL, there will be no further Qt 4 and Qt 5.6 builds.  

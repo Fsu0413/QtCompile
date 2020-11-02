@@ -21,7 +21,7 @@ Maybe you just want to distribute a single portable executable binary file, but 
 * It is not free of charge unless the program itself is a free software under (L)GPLv3.
 * A few modules of Qt does not compile. (WebEngine, etc...)
 * Cannot use dynamically-linked plugin.
-* It is not linked at compile time, possibly causing linking problem afterwards.
+* It is not linked at build time, possibly causing linking problem afterwards.
 
 To be wise and stop using static builds in huge projects. You'll feel liberated to make this change. Trust me.
 
@@ -75,7 +75,7 @@ I will not use zst because the compress ratio is not as good as LZMA2(xz).
 
 ## Difference of this Qt and offically distributed Qt (Updated 2020.6.7)
 
-I provide only binary tarball, which contains only compiled Qt binary for each OS.  
+I provide only binary tarball, which contains only built Qt binary for each OS.  
 It should work out of box (for Qt 5.14 or later) or work after patches to Qt (for Qt 5.13 and before).  
 I will never use online installers.
 
@@ -112,7 +112,7 @@ Qt just announced [Qt offering changes 2020](https://www.qt.io/blog/qt-offering-
 Following is my opinion of this blog.
 
 First of all, I have a Qt account, but I don’t understand why I need a Qt account to install the Qt development kit.  
-All files are compiled from the same set of source code. It will not change even if you log in to your Qt account. It will not add any features to Qt. "This can help optimize Qt" is simply nonsense.
+All files are compiled and linked from the same set of source code. It will not change even if you log in to your Qt account. It will not add any features to Qt. "This can help optimize Qt" is simply nonsense.
 
 LTS is only available for commercial license. So what is the license for the LTS source package?  
 If it is also only available for commercial licenses, Qt basically says goodbye to stable open source software.  
