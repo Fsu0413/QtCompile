@@ -60,23 +60,23 @@ MinGW builds is "-shared-and-static" so no need to build a seprate static versio
 
 | OpenSSL Version | Platform | Build Host | Compiler Version | Architecture | Variant |
 |-|
-|1.1.1h|Windows|Windows 8.1 Update|VS2015 Update 3|x86||
-|1.1.1h|Windows|Windows 8.1 Update|VS2015 Update 3|x86|-static|
-|1.1.1h|Windows|Windows 8.1 Update|VS2015 Update 3|x86_64||
-|1.1.1h|Windows|Windows 8.1 Update|MinGW 7.3.0|x86||
-|1.1.1h|Windows|Windows 8.1 Update|MinGW 7.3.0|x86_64||
-|1.1.1h|Windows|Windows 10 10.0.19041|VS2017 15.9.27|x86||
-|1.1.1h|Windows|Windows 10 10.0.19041|VS2017 15.9.27|x86|-static|
-|1.1.1h|Windows|Windows 10 10.0.19041|VS2017 15.9.27|x86_64||
-|1.1.1h|Windows|Windows 10 10.0.19041|VS2017 15.9.27|x86_64|-static|
-|1.1.1h|Windows|Windows 10 10.0.19041|VS2017 15.9.27|arm64||
-|1.1.1h|Windows|Windows 10 10.0.19041|VS2019 16.7.7|x86||
-|1.1.1h|Windows|Windows 10 10.0.19041|VS2019 16.7.7|x86_64||
-|1.1.1h|Android|CentOS 8.2|ndk r21d|arm|android-21, -static|
-|1.1.1h|Android|CentOS 8.2|ndk r21d|arm64|android-21, -static|
-|1.1.1h|Android|CentOS 8.2|ndk r21d|x86|android-21, -static|
-|1.1.1h|Android|CentOS 8.2|ndk r21d|x86_64|android-21, -static|
-|1.1.1h|Android|CentOS 8.2|ndk r21d|ALL|android-21, -static|
+|1.1.1i|Windows|Windows 8.1 Update|VS2015 Update 3|x86||
+|1.1.1i|Windows|Windows 8.1 Update|VS2015 Update 3|x86|-static|
+|1.1.1i|Windows|Windows 8.1 Update|VS2015 Update 3|x86_64||
+|1.1.1i|Windows|Windows 8.1 Update|MinGW 7.3.0|x86||
+|1.1.1i|Windows|Windows 8.1 Update|MinGW 7.3.0|x86_64||
+|1.1.1i|Windows|Windows 10 10.0.19041|VS2017 15.9.27|x86||
+|1.1.1i|Windows|Windows 10 10.0.19041|VS2017 15.9.27|x86|-static|
+|1.1.1i|Windows|Windows 10 10.0.19041|VS2017 15.9.27|x86_64||
+|1.1.1i|Windows|Windows 10 10.0.19041|VS2017 15.9.27|x86_64|-static|
+|1.1.1i|Windows|Windows 10 10.0.19041|VS2017 15.9.27|arm64||
+|1.1.1i|Windows|Windows 10 10.0.19041|VS2019 16.7.7|x86||
+|1.1.1i|Windows|Windows 10 10.0.19041|VS2019 16.7.7|x86_64||
+|1.1.1i|Android|CentOS 8.2|ndk r21d|arm|android-21, -static|
+|1.1.1i|Android|CentOS 8.2|ndk r21d|arm64|android-21, -static|
+|1.1.1i|Android|CentOS 8.2|ndk r21d|x86|android-21, -static|
+|1.1.1i|Android|CentOS 8.2|ndk r21d|x86_64|android-21, -static|
+|1.1.1i|Android|CentOS 8.2|ndk r21d|ALL|android-21, -static|
 
 ## Qt 5.12.10 Series (Previous LTS release)
 
@@ -113,16 +113,16 @@ MinGW builds is "-shared-and-static" so no need to build a seprate static versio
 |WebAssembly|CentOS 8.2|emscripten-1.38.16|-||wasm-emscripten|√|√|
 |↑|macOS 10.15|↑|-||wasm-emscripten|√|√|
 
-## Qt 5.15.1 Series (Current LTS release for commerical version only)
+## Qt 5.15.2 Series (Current LTS release for commerical version only)
 
 | Platform | Build Host |  Compiler Version | Architecture | Variant | mkspecs | Uploaded | Configuration |
 |-|
 |Windows|Windows 8.1 Update|VS2015 Update 3|x86||win32-msvc|√|√|
 |↑|↑|↑|x86_64||win32-msvc|√|√|
-|↑|Windows 10 10.0.19041|VS2017 15.9.27|x86||win32-msvc|√|√|
+|↑|Windows 10 10.0.19042|VS2017 15.9.30|x86||win32-msvc|√|√|
 |↑|↑|↑|x86_64||win32-msvc|√|√|
 |↑|↑|↑|arm64||win32-arm64-msvc2017|√|√|
-|↑|↑|VS2019 16.7.3|x86||win32-msvc|√|√|
+|↑|↑|VS2019 16.8.3|x86||win32-msvc|√|√|
 |↑|↑|↑|x86|-static(Full)|win32-msvc|√|√|
 |↑|↑|↑|x86_64||win32-msvc|√|√|
 |↑|↑|↑|x86_64|-static(Full)|win32-msvc|√|√|
@@ -130,14 +130,14 @@ MinGW builds is "-shared-and-static" so no need to build a seprate static versio
 |↑|↑|↑|x86|-static(Full)|win32-g++|√|√|
 |↑|↑|↑|x86_64||win32-g++|√|√|
 |↑|↑|↑|x86_64|-static(Full)|win32-g++|√|√|
-|macOS|macOS 10.15|AppleClang 11.0|x86_64|-framework|macx-clang|√|√|
+|macOS|macOS 11.0|AppleClang 12.0|x86_64|-framework|macx-clang|√|√|
 |↑|↑|↑|x86_64|-no-framework|macx-clang|√|√|
-|Android|Windows 10 10.0.19041|ndk r21d|ALL||android-clang|√|√|
-|↑|CentOS 8.2|↑|ALL||android-clang|√|√|
-|↑|macOS 10.15|↑|ALL||android-clang|√|√|
-|WebAssembly|Windows 10 10.0.19041|emscripten-1.39.8|-|-feature-threads|wasm-emscripten|√|√|
-|↑|CentOS 8.2|↑|-|-feature-threads|wasm-emscripten|√|√|
-|↑|macOS 10.15|↑|-|-feature-threads|wasm-emscripten|√|√|
+|Android|Windows 10 10.0.19042|ndk r21d|ALL||android-clang|√|√|
+|↑|CentOS 8.3|↑|ALL||android-clang|√|√|
+|↑|macOS 11.0|↑|ALL||android-clang|√|√|
+|WebAssembly|Windows 10 10.0.19042|emscripten-1.39.8|-|-feature-threads|wasm-emscripten|√|√|
+|↑|CentOS 8.3|↑|-|-feature-threads|wasm-emscripten|√|√|
+|↑|macOS 11.0|↑|-|-feature-threads|wasm-emscripten|√|√|
 
 ## Qt 6.0.0 Series
 
