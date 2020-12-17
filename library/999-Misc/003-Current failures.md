@@ -1,20 +1,25 @@
 # Build Failures about the original packages
 
-## Qt 6 - development releases
-
-### CMake support of Qt 6
+## Issues about Qt 6
 
 I have started using CMake to build Qt 6.  
 CMake related problems occurres frequently during test, but I will not return to use configure and qmake to build Qt 6 anymore.  
 CMake is becoming popular among projects. I think we should adopt to it on early stage.
 
-Currently following issue is reported:
+Currently following issue is reported to Qt:
 
-[QTBUG-88126](https://bugreports.qt.io/browse/QTBUG-88126) - CMake error when invoking with "-DFEATURE_schannel=ON -DFEATURE_openssl=OFF"
+<del>[QTBUG-89515](https://bugreports.qt.io/browse/QTBUG-89515) - static build of Qt 6.0.0 using MinGW failes on 2 tools</del> (Closed, affects static builds on Windows of Qt 6.0.0)  
+<del>[QTBUG-89530](https://bugreports.qt.io/browse/QTBUG-89530) - compile error on qsslsocket_schannel.cpp when using MinGW</del> (Closed, affects MinGW builds of Qt 6.0.0)  
+<del>[QTBUG-88126](https://bugreports.qt.io/browse/QTBUG-88126) - CMake error when invoking with "-DFEATURE_schannel=ON -DFEATURE_openssl=OFF"</del> (Closed)  
+<del>[QTBUG-88127](https://bugreports.qt.io/browse/QTBUG-88127) - Cannot build Qt 6.0.0 beta2 with -DFEATURE_schannel=ON</del> (Closed)
 
-### Cannot build Qt 6.0.0-beta2 with SChannel
+MinGW version and Windows hosted cross build version should wait for 6.0.1.  
+Build and package script of other versions are currently under investigation.
 
-[QTBUG-88127](https://bugreports.qt.io/browse/QTBUG-88127) - Cannot build Qt 6.0.0 beta2 with -DFEATURE_schannel=ON
+## WebEngine of Qt 5.15.2 does not build on macOS 11 and Windows 10
+
+See [this post](http://www.qtcn.org/bbs/read.php?tid=85733&ds=1#201581) (Sorry, it's in Chinese)  
+I will not distribute binaries with WebEngine of Qt version 5.15.2.
 
 ## Qt 5.12 wasm builds can't built with OpenSSL
 

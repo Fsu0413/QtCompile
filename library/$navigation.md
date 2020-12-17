@@ -22,10 +22,10 @@
 - [5.12.10 for WebAssembly](?file=004-5.12 Series/004-5.12.10 for WebAssembly "5.12.10 for WebAssembly")
 
 ##### 5.15 Series
-- [5.15.1 for Windows](?file=005-5.15 Series/001-5.15.1 for Windows "5.15.1 for Windows")
-- [5.15.1 for macOS](?file=005-5.15 Series/002-5.15.1 for macOS "5.15.1 for macOS")
-- [5.15.1 for Android](?file=005-5.15 Series/003-5.15.1 for Android "5.15.1 for Android")
-- [5.15.1 for WebAssembly](?file=005-5.15 Series/004-5.15.1 for WebAssembly "5.15.1 for WebAssembly")
+- [5.15.2 for Windows](?file=005-5.15 Series/001-5.15.2 for Windows "5.15.2 for Windows")
+- [5.15.2 for macOS](?file=005-5.15 Series/002-5.15.2 for macOS "5.15.2 for macOS")
+- [5.15.2 for Android](?file=005-5.15 Series/003-5.15.2 for Android "5.15.2 for Android")
+- [5.15.2 for WebAssembly](?file=005-5.15 Series/004-5.15.2 for WebAssembly "5.15.2 for WebAssembly")
 
 ##### Misc
 - [Notes for this repo](?file=999-Misc/001-Notes for this repo "Notes for this repo")

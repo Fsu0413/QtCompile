@@ -14,15 +14,14 @@ I don't want to put the signature file besides the package, I think it will be a
 
 ## Disclaimer
 
-These binaries built by Fsu0413 are __TOTALLY UNTESTED__. Use at your own risk.
-
-The code used is downloaded from [here](http://download.qt.io), I made no changes to the source/generated files.
-
-__THESE PACKAGE ARE PROVIDED "As is", I have no responsibility that you mess up your things with this binaries.__
-
+These binaries built by Fsu0413 are __TOTALLY UNTESTED__. Use at your own risk.  
+The code used is downloaded from [here](http://download.qt.io), I made no changes to the source/generated files.  
+__THESE PACKAGE ARE PROVIDED "As is", I have no responsibility that you mess up your things with this binaries.__  
 Thanks for The Qt Company Ltd. and the programmers of Qt for their fantastic work!!
 
 ## Windows 7 and Windows 8.1 deprecation (IMPORTANT NOTES!!)
+
+Qt 6 supports only Windows 8.1 and later. Build host is only Windows 10.
 
 SINCE 2020.6.3 (Qt 5.15 release and Qt 5.9 deprecation) ONLY VS2015 AND MINGW 7.3 BUILDS SUPPORTS WINDOWS 8.1.  
 WINDOWS 10 IS MORE AND MORE POPULAR, AND RECEIVING MORE AND MORE NEW FEATURES. ONE SHOULD SWITCH TO WINDOWS 10 ASAP.
@@ -46,6 +45,12 @@ Please refer to the content lists in the left area.
 [here](?file=999-Misc/003-Current%20failures)
 
 ## Update History
+
+### 2020.12.17
+Upload 5.15.2 builds. (All builds are without Webengine because of compile failure, see [Current Failures](?file=999-Misc/003-Current%20failures))  
+Update macOS to 11.0.1.  
+VS2019 is updated to the latest version, which is 16.8.3.  
+VS2017 is updated to the latest version, which is 15.9.30.
 
 ### 2020.11.11
 Upload 5.12.10 builds.  
