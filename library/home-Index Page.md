@@ -4,8 +4,8 @@
 
 Since GitHub Pages is slow in China, I made a mirror website using a Chinese code hosting service called Coding.
 
-[GitHub](https://fsu0413.github.io/QtCompile/): Global  
-[Coding](https://alyack.coding-pages.com/): The People's Republic of China
+[GitHub](https://build-qt.fsu0413.me): Global  
+[Coding](https://build-zh.fsu0413.me): The People's Republic of China
 
 ## GPG sign
 
