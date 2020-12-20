@@ -1,5 +1,10 @@
 # Previous Histories
 
+## 2020.9.12
+Upload 5.15.1 builds.  
+macOS is updated to 10.15.6 (19G2021)  
+VS2017/2019 are updated to the latest version, which is 15.9.27/16.7.3.
+
 ## 2020.7.7
 Upload all artifacts, also to Github release in addition to SourceForge.
 
