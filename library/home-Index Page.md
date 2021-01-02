@@ -46,6 +46,13 @@ Please refer to the content lists in the left area.
 
 ## Update History
 
+### 2021.1.2
+Upload 6.0.0 Android builds.  
+Rebuild 6.0.0 Windows and macOS builds with stripped binary.
+
+Note that Android API Level has changed to android-24 since Qt 6.0.0.  
+<font color=red><b>ANDROID BUILDS ARE WITHOUT LINKED OpenSSL SUPPORT due to compile error!!!!!!!!</b></font>
+
 ### 2020.12.20
 Upload 6.0.0 Windows and macOS builds.
 

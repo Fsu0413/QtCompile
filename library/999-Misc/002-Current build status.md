@@ -77,7 +77,10 @@ MinGW builds is "-shared-and-static" so no need to build a seprate static versio
 |1.1.1i|Android|CentOS 8.2|ndk r21d|x86|android-21, -static|
 |1.1.1i|Android|CentOS 8.2|ndk r21d|x86_64|android-21, -static|
 |1.1.1i|Android|CentOS 8.2|ndk r21d|ALL|android-21, -static|
-|1.1.1i|Android|CentOS 8.3|ndk r21d|ALL|android-24, -static|
+|1.1.1i|Android|CentOS 8.3|ndk r21d|arm|android-24, -static|
+|1.1.1i|Android|CentOS 8.3|ndk r21d|arm64|android-24, -static|
+|1.1.1i|Android|CentOS 8.3|ndk r21d|x86|android-24, -static|
+|1.1.1i|Android|CentOS 8.3|ndk r21d|x86_64|android-24, -static|
 
 ## Qt 5.12.10 Series (Previous LTS release)
 
@@ -142,7 +145,7 @@ MinGW builds is "-shared-and-static" so no need to build a seprate static versio
 
 ## Qt 6.0.0 Series
 
-Qt 6.0.0 is released on 2020.12.5.
+Qt 6.0.0 is released on 2020.12.8.
 
 (2020/6/7: Temporary planned configuration)  
 <b>Note: Since Qt dropped support for 32-bit Windows, our Qt 6 builds will drop support for 32-bit Windows either.  
@@ -156,11 +159,11 @@ If there is need of static builds for non-LTS release, please contect me directl
 |↑|↑|MinGW 8.1.0|x86_64||win32-g++|<b>2020.12.17: Compile failure</b>|√|
 |↑|↑|↑|x86_64|-static(Full)|win32-g++||(only for LTS releases)|
 |↑|↑|↑|x86_64|-static(Lite)|win32-g++|Won't upload seprately, used in cross-compiled Qt<br /><b>2020.12.17: Compile failure</b>|√|
-|Linux|CentOS 8.2|GCC 8.3.1|x86_64|-static(Lite)|linux-g++|Won't upload seprately, used in cross-compiled Qt||
+|Linux|CentOS 8.3|GCC 8.3.1|x86_64|-static(Lite)|linux-g++|Won't upload seprately, used in cross-compiled Qt||
 |macOS|macOS 11.0|AppleClang 11.0|x86_64|-framework|macx-clang|√|√|
 |↑|↑|↑|x86_64|-no-framework|macx-clang|√|√|
 |↑|↑|↑|x86_64|-static(Lite)|macx-clang|Won't upload seprately, used in cross-compiled Qt|√|
-|Android|Windows 10 10.0.19041|ndk r21d|arm|android-24|android-clang|||
+|Android|Windows 10 10.0.19042|ndk r21d|arm|android-24|android-clang|||
 |↑|↑|↑|arm64|android-24|android-clang|||
 |↑|↑|↑|x86|android-24|android-clang|||
 |↑|↑|↑|x86_64|android-24|android-clang|||
