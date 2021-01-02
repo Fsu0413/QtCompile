@@ -7,8 +7,8 @@ Other version may work, but also may silently fail.
 
 A valid qbp.json is needed for patching Qt 4 Series since `qmake -query` don't output the makespec.
 
-Qt 5.14 is relocatable as for the [New Features in Qt 5.14](https://wiki.qt.io/New_Features_in_Qt_5.14), so it seems like Qt 5 after 5.14 won't need QQtPatcher anymore.  
-I delivered QQtPatcher for earlier version of 5.14 (as for the fact that I forgot to modify QQtPatcher related code in build scripts).  
+Qt 5.14 is relocatable as announced in [New Features in Qt 5.14](https://wiki.qt.io/New_Features_in_Qt_5.14), so Qt after 5.14 won't need QQtPatcher anymore.  
+I delivered QQtPatcher for earlier version of 5.14 (because of the fact that I forgot to modify QQtPatcher related code in build scripts).  
 This tool won't be thoroughly tested on 5.13.  
 I announced that QQtPatcher will not support Qt 5 after 5.14.
 
@@ -51,7 +51,7 @@ Build Hosts:
 
 ## OpenSSL Status
 
-My Qt builds is with OpenSSL-linked for most platforms.  
+My Qt builds is with linked OpenSSL support for most platforms.  
 Here is a list of OpenSSL builds of mine.
 
 Note:   
@@ -77,10 +77,11 @@ MinGW builds is "-shared-and-static" so no need to build a seprate static versio
 |1.1.1i|Android|CentOS 8.2|ndk r21d|x86|android-21, -static|
 |1.1.1i|Android|CentOS 8.2|ndk r21d|x86_64|android-21, -static|
 |1.1.1i|Android|CentOS 8.2|ndk r21d|ALL|android-21, -static|
+|1.1.1i|Android|CentOS 8.3|ndk r21d|ALL|android-24, -static|
 
 ## Qt 5.12.10 Series (Previous LTS release)
 
-| Platform | Build Host |  Compiler Version | Architecture | Variant | mkspecs | Uploaded | Configuration |
+| Platform | Build Host | Compiler Version | Architecture | Variant | mkspecs | Uploaded | Configuration |
 |-|
 |Windows|Windows 8.1 Update|VS2015 Update 3|x86||win32-msvc|√|√|
 |↑|↑|↑|x86|-static|win32-msvc|√|√|
@@ -101,21 +102,21 @@ MinGW builds is "-shared-and-static" so no need to build a seprate static versio
 |macOS|macOS 10.15|AppleClang 11.0|x86_64|-framework|macx-clang|√|√|
 |↑|↑|↑|x86_64|-no-framework|macx-clang|√|√|
 |↑|↑|↑|x86_64|-static(Lite)|macx-clang|Won't upload, only used in QQtPatcher|√|
-|Android|Windows 10 10.0.19041|ndk r21d|arm||android-clang|√|√|
-|↑|↑|↑|arm64||android-clang|√|√|
-|↑|↑|↑|x86||android-clang|√|√|
-|↑|CentOS 8.2|↑|arm||android-clang|√|√|
-|↑|↑|↑|arm64||android-clang|√|√|
-|↑|↑|↑|x86||android-clang|√|√|
-|↑|macOS 10.15|↑|arm||android-clang|√|√|
-|↑|↑|↑|arm64||android-clang|√|√|
-|↑|↑|↑|x86||android-clang|√|√|
+|Android|Windows 10 10.0.19041|ndk r21d|arm|android-21|android-clang|√|√|
+|↑|↑|↑|arm64|android-21|android-clang|√|√|
+|↑|↑|↑|x86|android-21|android-clang|√|√|
+|↑|CentOS 8.2|↑|arm|android-21|android-clang|√|√|
+|↑|↑|↑|arm64|android-21|android-clang|√|√|
+|↑|↑|↑|x86|android-21|android-clang|√|√|
+|↑|macOS 10.15|↑|arm|android-21|android-clang|√|√|
+|↑|↑|↑|arm64|android-21|android-clang|√|√|
+|↑|↑|↑|x86|android-21|android-clang|√|√|
 |WebAssembly|CentOS 8.2|emscripten-1.38.16|-||wasm-emscripten|√|√|
 |↑|macOS 10.15|↑|-||wasm-emscripten|√|√|
 
 ## Qt 5.15.2 Series (Current LTS release for commerical version only)
 
-| Platform | Build Host |  Compiler Version | Architecture | Variant | mkspecs | Uploaded | Configuration |
+| Platform | Build Host | Compiler Version | Architecture | Variant | mkspecs | Uploaded | Configuration |
 |-|
 |Windows|Windows 8.1 Update|VS2015 Update 3|x86||win32-msvc|√|√|
 |↑|↑|↑|x86_64||win32-msvc|√|√|
@@ -132,36 +133,45 @@ MinGW builds is "-shared-and-static" so no need to build a seprate static versio
 |↑|↑|↑|x86_64|-static(Full)|win32-g++|√|√|
 |macOS|macOS 11.0|AppleClang 12.0|x86_64|-framework|macx-clang|√|√|
 |↑|↑|↑|x86_64|-no-framework|macx-clang|√|√|
-|Android|Windows 10 10.0.19042|ndk r21d|ALL||android-clang|√|√|
-|↑|CentOS 8.3|↑|ALL||android-clang|√|√|
-|↑|macOS 11.0|↑|ALL||android-clang|√|√|
+|Android|Windows 10 10.0.19042|ndk r21d|ALL|android-21|android-clang|√|√|
+|↑|CentOS 8.3|↑|ALL|android-21|android-clang|√|√|
+|↑|macOS 11.0|↑|ALL|android-21|android-clang|√|√|
 |WebAssembly|Windows 10 10.0.19042|emscripten-1.39.8|-|-feature-threads|wasm-emscripten|√|√|
 |↑|CentOS 8.3|↑|-|-feature-threads|wasm-emscripten|√|√|
 |↑|macOS 11.0|↑|-|-feature-threads|wasm-emscripten|√|√|
 
 ## Qt 6.0.0 Series
 
-First alpha release of Qt 6.0.0 [is planned on Sep. 14th, 2020](https://lists.qt-project.org/pipermail/releasing/2020-May/002777.html), but [may be delayed due to bugreports](https://lists.qt-project.org/pipermail/releasing/2020-September/002794.html).
+Qt 6.0.0 is released on 2020.12.5.
 
 (2020/6/7: Temporary planned configuration)  
 <b>Note: Since Qt dropped support for 32-bit Windows, our Qt 6 builds will drop support for 32-bit Windows either.  
 If there is need of static builds for non-LTS release, please contect me directly for commerical customization.</b>
 
-| Platform | Build Host |  Compiler Version | Architecture | Variant | mkspecs | Uploaded | Configuration |
+| Platform | Build Host | Compiler Version | Architecture | Variant | mkspecs | Uploaded | Configuration |
 |-|
-|Windows|Windows 10 10.0.19041|VS2019 16.x.x|x86_64||win32-msvc|||
+|Windows|Windows 10 10.0.19042|VS2019 16.8.3|x86_64||win32-msvc|√|√|
 |↑|↑|↑|x86_64|-static(Full)|win32-msvc||(only for LTS releases)|
 |↑|↑|VS2017 15.x.x|arm64||win32-arm64-msvc2017|||
-|↑|↑|MinGW 8.1.0|x86_64||win32-g++|||
+|↑|↑|MinGW 8.1.0|x86_64||win32-g++|<b>2020.12.17: Compile failure</b>|√|
 |↑|↑|↑|x86_64|-static(Full)|win32-g++||(only for LTS releases)|
-|↑|↑|↑|x86_64|-static(Lite)|win32-g++|Won't upload seprately, used in cross-compiled Qt||
+|↑|↑|↑|x86_64|-static(Lite)|win32-g++|Won't upload seprately, used in cross-compiled Qt<br /><b>2020.12.17: Compile failure</b>|√|
 |Linux|CentOS 8.2|GCC 8.3.1|x86_64|-static(Lite)|linux-g++|Won't upload seprately, used in cross-compiled Qt||
-|macOS|macOS 10.15|AppleClang 11.0|x86_64|-framework|macx-clang|||
-|↑|↑|↑|x86_64|-no-framework|macx-clang|||
-|↑|↑|↑|x86_64|-static(Lite)|macx-clang|Won't upload seprately, used in cross-compiled Qt||
-|Android|Windows 10 10.0.19041|ndk r21d|ALL||android-clang|||
-|↑|CentOS 8.x|↑|ALL||android-clang|||
-|↑|macOS 10.15|↑|ALL||android-clang|||
+|macOS|macOS 11.0|AppleClang 11.0|x86_64|-framework|macx-clang|√|√|
+|↑|↑|↑|x86_64|-no-framework|macx-clang|√|√|
+|↑|↑|↑|x86_64|-static(Lite)|macx-clang|Won't upload seprately, used in cross-compiled Qt|√|
+|Android|Windows 10 10.0.19041|ndk r21d|arm|android-24|android-clang|||
+|↑|↑|↑|arm64|android-24|android-clang|||
+|↑|↑|↑|x86|android-24|android-clang|||
+|↑|↑|↑|x86_64|android-24|android-clang|||
+|↑|CentOS 8.3|↑|arm|android-24|android-clang|||
+|↑|↑|↑|arm64|android-24|android-clang|||
+|↑|↑|↑|x86|android-24|android-clang|||
+|↑|↑|↑|x86_64|android-24|android-clang|||
+|↑|macOS 11.0|↑|arm|android-24|android-clang||<b>2020.12.27: under investigation</b>|
+|↑|↑|↑|arm64|android-24|android-clang|||
+|↑|↑|↑|x86|android-24|android-clang|||
+|↑|↑|↑|x86_64|android-24|android-clang|||
 |WebAssembly|Windows 10 10.0.xxxxx|emscripten-1.39.8|-|-feature-threads|wasm-emscripten||Canceled due to not being supported officially|
 |↑|CentOS 8.x|↑|-|-feature-threads|wasm-emscripten||Canceled due to not being supported officially|
 |↑|macOS 10.15|↑|-|-feature-threads|wasm-emscripten||Canceled due to not being supported officially|

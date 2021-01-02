@@ -45,9 +45,9 @@ I think updating to the latest version of the same branch increases stability. Q
 * Compatibility  
 Binaries of the same major releases are compatible. It is no need to concern.
 * Lazy  
-Don't compare laziness with me. I feel lazy for comparing.
+Don't compare laziness with me, I feel lazy for comparing.
 * Other reasons  
-I have no idea if there is any other reasons.
+I have no idea if there are any other reasons.
 
 ## Notes on the distributed compressed files (Updated 2020.6.4)
 
