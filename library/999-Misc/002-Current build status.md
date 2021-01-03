@@ -159,7 +159,7 @@ If there is need of static builds for non-LTS release, please contect me directl
 |↑|↑|MinGW 8.1.0|x86_64||win32-g++|<b>2020.12.17: Compile failure</b>|√|
 |↑|↑|↑|x86_64|-static(Full)|win32-g++||(only for LTS releases)|
 |↑|↑|↑|x86_64|-static(Lite)|win32-g++|Won't upload seprately, used in cross-compiled Qt<br /><b>2020.12.17: Compile failure</b>|√|
-|Linux|CentOS 8.3|GCC 8.3.1|x86_64|-static(Lite)|linux-g++|Won't upload seprately, used in cross-compiled Qt||
+|Linux|CentOS 8.3|GCC 8.3.1|x86_64|-static(Lite)|linux-g++|Won't upload seprately, used in cross-compiled Qt|√|
 |macOS|macOS 11.0|AppleClang 11.0|x86_64|-framework|macx-clang|√|√|
 |↑|↑|↑|x86_64|-no-framework|macx-clang|√|√|
 |↑|↑|↑|x86_64|-static(Lite)|macx-clang|Won't upload seprately, used in cross-compiled Qt|√|
@@ -167,14 +167,14 @@ If there is need of static builds for non-LTS release, please contect me directl
 |↑|↑|↑|arm64|android-24|android-clang|||
 |↑|↑|↑|x86|android-24|android-clang|||
 |↑|↑|↑|x86_64|android-24|android-clang|||
-|↑|CentOS 8.3|↑|arm|android-24|android-clang|||
-|↑|↑|↑|arm64|android-24|android-clang|||
-|↑|↑|↑|x86|android-24|android-clang|||
-|↑|↑|↑|x86_64|android-24|android-clang|||
-|↑|macOS 11.0|↑|arm|android-24|android-clang||<b>2020.12.27: under investigation</b>|
-|↑|↑|↑|arm64|android-24|android-clang|||
-|↑|↑|↑|x86|android-24|android-clang|||
-|↑|↑|↑|x86_64|android-24|android-clang|||
+|↑|CentOS 8.3|↑|arm|android-24|android-clang|√|√|
+|↑|↑|↑|arm64|android-24|android-clang|√|√|
+|↑|↑|↑|x86|android-24|android-clang|√|√|
+|↑|↑|↑|x86_64|android-24|android-clang|√|√|
+|↑|macOS 11.0|↑|arm|android-24|android-clang|√|√|
+|↑|↑|↑|arm64|android-24|android-clang|√|√|
+|↑|↑|↑|x86|android-24|android-clang|√|√|
+|↑|↑|↑|x86_64|android-24|android-clang|√|√|
 |WebAssembly|Windows 10 10.0.xxxxx|emscripten-1.39.8|-|-feature-threads|wasm-emscripten||Canceled due to not being supported officially|
 |↑|CentOS 8.x|↑|-|-feature-threads|wasm-emscripten||Canceled due to not being supported officially|
 |↑|macOS 10.15|↑|-|-feature-threads|wasm-emscripten||Canceled due to not being supported officially|

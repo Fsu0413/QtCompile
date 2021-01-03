@@ -46,8 +46,11 @@ Please refer to the content lists in the left area.
 
 ## Update History
 
+### 2021.1.3
+Upload 6.0.0 Android builds (Linux host).
+
 ### 2021.1.2
-Upload 6.0.0 Android builds.  
+Upload 6.0.0 Android builds (macOS host).  
 Rebuild 6.0.0 Windows and macOS builds with stripped binary.
 
 Note that Android API Level has changed to android-24 since Qt 6.0.0.  
@@ -62,11 +65,6 @@ Update macOS to 11.0.1.
 VS2019 is updated to the latest version, which is 16.8.3.  
 VS2017 is updated to the latest version, which is 15.9.30.
 
-### 2020.11.11
-Upload 5.12.10 builds.  
-macOS is updated to 10.15.7 and XCode is updated to 12.0.  
-VS2019 is updated to the latest version, which is 16.7.7.
-
-### Before Nov. 2020
+### Before Dec. 2020
 
 [here](?file=999-Misc/004-Histories)

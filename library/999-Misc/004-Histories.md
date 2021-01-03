@@ -1,5 +1,10 @@
 # Previous Histories
 
+## 2020.11.11
+Upload 5.12.10 builds.  
+macOS is updated to 10.15.7 and XCode is updated to 12.0.  
+VS2019 is updated to the latest version, which is 16.7.7.
+
 ## 2020.9.12
 Upload 5.15.1 builds.  
 macOS is updated to 10.15.6 (19G2021)  
