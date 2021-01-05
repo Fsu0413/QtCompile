@@ -10,8 +10,8 @@ Currently following issue is reported to Qt:
 
 <del>[QTBUG-89515](https://bugreports.qt.io/browse/QTBUG-89515) - static build of Qt 6.0.0 using MinGW failes on 2 tools</del> (Closed and patch is in 6.0.1, affects static builds on Windows of Qt 6.0.0)  
 <del>[QTBUG-89530](https://bugreports.qt.io/browse/QTBUG-89530) - compile error on qsslsocket_schannel.cpp when using MinGW</del> (Closed and patch is in 6.0.1, affects MinGW builds of Qt 6.0.0)  
-<del>[QTBUG-88126](https://bugreports.qt.io/browse/QTBUG-88126) - CMake error when invoking with "-DFEATURE_schannel=ON -DFEATURE_openssl=OFF"</del> (Closed and patch is in 6.0.1)  
-<del>[QTBUG-88127](https://bugreports.qt.io/browse/QTBUG-88127) - Cannot build Qt 6.0.0 beta2 with -DFEATURE_schannel=ON</del> (Closed and patch is in 6.0.1)
+<del>[QTBUG-88126](https://bugreports.qt.io/browse/QTBUG-88126) - CMake error when invoking with "-DFEATURE_schannel=ON -DFEATURE_openssl=OFF"</del> (Closed and patch is in 6.0.0)  
+<del>[QTBUG-88127](https://bugreports.qt.io/browse/QTBUG-88127) - Cannot build Qt 6.0.0 beta2 with -DFEATURE_schannel=ON</del> (Closed and patch is in 6.0.0)
 
 MinGW version and Windows hosted cross build version should wait for 6.0.1.  
 Build and package script of other versions are currently under investigation.
