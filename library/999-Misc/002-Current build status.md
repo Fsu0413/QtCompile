@@ -154,19 +154,21 @@ If there is need of static builds for non-LTS release, please contect me directl
 | Platform | Build Host | Compiler Version | Architecture | Variant | mkspecs | Uploaded | Configuration |
 |-|
 |Windows|Windows 10 10.0.19042|VS2019 16.8.3|x86_64||win32-msvc|√|√|
-|↑|↑|↑|x86_64|-static(Full)|win32-msvc||(only for LTS releases)|
-|↑|↑|VS2017 15.x.x|arm64||win32-arm64-msvc2017|||
+|↑|↑|↑|x86_64|-static(Full)|win32-msvc||Wait for Qt 6.2|
+|↑|↑|VS2017 15.x.x|arm64||win32-arm64-msvc||Wait for Qt 6.1|
 |↑|↑|MinGW 8.1.0|x86_64||win32-g++|<b>2020.12.17: Compile failure</b>|√|
-|↑|↑|↑|x86_64|-static(Full)|win32-g++||(only for LTS releases)|
+|↑|↑|↑|x86_64|-static(Full)|win32-g++||Wait for Qt 6.2|
 |↑|↑|↑|x86_64|-static(Lite)|win32-g++|Won't upload seprately, used in cross-compiled Qt<br /><b>2020.12.17: Compile failure</b>|√|
 |Linux|CentOS 8.3|GCC 8.3.1|x86_64|-static(Lite)|linux-g++|Won't upload seprately, used in cross-compiled Qt|√|
 |macOS|macOS 11.0|AppleClang 11.0|x86_64|-framework|macx-clang|√|√|
 |↑|↑|↑|x86_64|-no-framework|macx-clang|√|√|
+|↑|↑|↑|arm64|-framework|macx-clang||Wait for Qt 6.1|
+|↑|↑|↑|arm64|-no-framework|macx-clang||Wait for Qt 6.1|
 |↑|↑|↑|x86_64|-static(Lite)|macx-clang|Won't upload seprately, used in cross-compiled Qt|√|
-|Android|Windows 10 10.0.19042|ndk r21d|arm|android-24|android-clang|||
-|↑|↑|↑|arm64|android-24|android-clang|||
-|↑|↑|↑|x86|android-24|android-clang|||
-|↑|↑|↑|x86_64|android-24|android-clang|||
+|Android|Windows 10 10.0.19042|ndk r21d|arm|android-24|android-clang||Wait for Qt 6.0.1|
+|↑|↑|↑|arm64|android-24|android-clang||Wait for Qt 6.0.1|
+|↑|↑|↑|x86|android-24|android-clang||Wait for Qt 6.0.1|
+|↑|↑|↑|x86_64|android-24|android-clang||Wait for Qt 6.0.1|
 |↑|CentOS 8.3|↑|arm|android-24|android-clang|√|√|
 |↑|↑|↑|arm64|android-24|android-clang|√|√|
 |↑|↑|↑|x86|android-24|android-clang|√|√|
@@ -175,6 +177,6 @@ If there is need of static builds for non-LTS release, please contect me directl
 |↑|↑|↑|arm64|android-24|android-clang|√|√|
 |↑|↑|↑|x86|android-24|android-clang|√|√|
 |↑|↑|↑|x86_64|android-24|android-clang|√|√|
-|WebAssembly|Windows 10 10.0.xxxxx|emscripten-1.39.8|-|-feature-threads|wasm-emscripten||Canceled due to not being supported officially|
-|↑|CentOS 8.x|↑|-|-feature-threads|wasm-emscripten||Canceled due to not being supported officially|
-|↑|macOS 10.15|↑|-|-feature-threads|wasm-emscripten||Canceled due to not being supported officially|
+|WebAssembly|Windows 10 10.0.xxxxx|emscripten-1.39.8|-|-feature-threads|wasm-emscripten||Wait for Qt 6.1|
+|↑|CentOS 8.x|↑|-|-feature-threads|wasm-emscripten||Wait for Qt 6.1|
+|↑|macOS 10.15|↑|-|-feature-threads|wasm-emscripten||Wait for Qt 6.1|

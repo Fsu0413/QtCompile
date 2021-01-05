@@ -125,3 +125,23 @@ Founding a shell company and using this company to buy Qt and distribute softwar
 This will definitely lose money.
 
 I will continue my amateur job of compiling Qt. I hope Qt for MCUs will be open source soon.
+
+## Qt 6 support platforms
+
+See [this bug report](https://bugreports.qt.io/browse/QTBUG-85855).
+
+Currently I am building Qt 6.0 for following platforms:
+
+Windows 10 - VS2019, x86_64 only  
+Windows 10 - MinGW, x86_64 only  
+macOS 11 - toolchain provided by Apple with AppleClang, x86_64 only  
+Android - NDK, arm, arm64, x86, x86_64
+
+With Qt 6.1 I will add build for following platforms:
+
+WebAssembly - emscripten  
+Windows 10 - VS2019 (or 2017), arm64 (if [QTBUG-85820](https://bugreports.qt.io/browse/QTBUG-85820) could be done for 6.1)  
+macOS 11 - toolchain provided by Apple with AppleClang, arm64 (if [QTBUG-85279](https://bugreports.qt.io/browse/QTBUG-85279) could be done for 6.1)
+
+Qt 6.2 is LTS release, but with [Qt offering changes 2020](#Qt%20offering%20changes%202020) I don't know if Qt 6.2 would remain Free and Open Source after Qt 6.3 release.  
+I will add bulid for static version for Qt 6.2, but I don't exactly know how Qt guys operate with their release...
