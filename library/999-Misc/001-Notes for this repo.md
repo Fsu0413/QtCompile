@@ -139,9 +139,19 @@ Android - NDK, arm, arm64, x86, x86_64
 
 With Qt 6.1 I will add build for following platforms:
 
-WebAssembly - emscripten  
-Windows 10 - VS2019 (or 2017), arm64 (if [QTBUG-85820](https://bugreports.qt.io/browse/QTBUG-85820) could be done for 6.1)  
 macOS 11 - toolchain provided by Apple with AppleClang, arm64 (if [QTBUG-85279](https://bugreports.qt.io/browse/QTBUG-85279) could be done for 6.1)
+
+With Qt 6.2 I will add build for following platforms:
+
+WebAssembly - emscripten  
+Windows 10 - VS2019, arm64 (if [QTBUG-85820](https://bugreports.qt.io/browse/QTBUG-85820) could be done for 6.2)
 
 Qt 6.2 is LTS release, but with [Qt offering changes 2020](#Qt%20offering%20changes%202020) I don't know if Qt 6.2 would remain Free and Open Source after Qt 6.3 release.  
 I will add bulid for static version for Qt 6.2, but I don't exactly know how Qt guys operate with their release...
+
+## GPG sign
+
+I am working on a method to GPG sign every package, but I didn't find a good method.  
+I don't want to put the signature file besides the package, I think it will be a waste of upload step......
+
+2021.2.6 update: I haven't found a suitable solution, temporarily put it away....

@@ -7,11 +7,6 @@ Since GitHub Pages is slow in China, I made a mirror website using a Chinese cod
 [GitHub](https://build-qt.fsu0413.me): Global  
 [Coding](https://build-zh.fsu0413.me): The People's Republic of China
 
-## GPG sign
-
-I am working on a method to GPG sign every package, but I didn't find a good method.  
-I don't want to put the signature file besides the package, I think it will be a waste of upload step......
-
 ## Disclaimer
 
 These binaries built by Fsu0413 are __TOTALLY UNTESTED__. Use at your own risk.  
@@ -21,7 +16,7 @@ Thanks for The Qt Company Ltd. and the programmers of Qt for their fantastic wor
 
 ## Windows 7 and Windows 8.1 deprecation (IMPORTANT NOTES!!)
 
-Qt 6 supports only Windows 8.1 and later. Build host is only Windows 10.
+Qt 6 supports only Windows 10 1809 or later, Build host is only Windows 10.
 
 SINCE 2020.6.3 (Qt 5.15 release and Qt 5.9 deprecation) ONLY VS2015 AND MINGW 7.3 BUILDS SUPPORTS WINDOWS 8.1.  
 WINDOWS 10 IS MORE AND MORE POPULAR, AND RECEIVING MORE AND MORE NEW FEATURES. ONE SHOULD SWITCH TO WINDOWS 10 ASAP.
@@ -45,6 +40,12 @@ Please refer to the content lists in the left area.
 [here](?file=999-Misc/003-Current%20failures)
 
 ## Update History
+
+### 2021.2.6
+Upload 6.0.1 builds except Windows crossed Android builds.  
+VS2019 is updated to the latest version, which is 16.8.4.  
+Update macOS to 11.1.  
+<font color=red><b>ANDROID BUILDS ARE WITHOUT LINKED OpenSSL SUPPORT due to compile error!!!!!!!!</b></font>
 
 ### 2021.1.3
 Upload 6.0.0 Android builds (Linux host).

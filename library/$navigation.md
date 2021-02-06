@@ -28,9 +28,9 @@
 - [5.15.2 for WebAssembly](?file=005-5.15 Series/004-5.15.2 for WebAssembly "5.15.2 for WebAssembly")
 
 ##### 6.0 Series
-- [6.0.0 for Windows](?file=006-6.0 Series/001-6.0.0 for Windows "6.0.0 for Windows")
-- [6.0.0 for macOS](?file=006-6.0 Series/002-6.0.0 for macOS "6.0.0 for macOS")
-- [6.0.0 for Android](?file=006-6.0 Series/003-6.0.0 for Android "6.0.0 for Android")
+- [6.0.1 for Windows](?file=006-6.0 Series/001-6.0.1 for Windows "6.0.1 for Windows")
+- [6.0.1 for macOS](?file=006-6.0 Series/002-6.0.1 for macOS "6.0.1 for macOS")
+- [6.0.1 for Android](?file=006-6.0 Series/003-6.0.1 for Android "6.0.1 for Android")
 
 ##### Misc
 - [Notes for this repo](?file=999-Misc/001-Notes for this repo "Notes for this repo")
