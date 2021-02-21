@@ -1,5 +1,14 @@
 # Previous Histories
 
+## 2020.12.20
+Upload 6.0.0 Windows and macOS builds.
+
+## 2020.12.17
+Upload 5.15.2 builds. (All builds are without Webengine because of compile failure, see [Current Failures](?file=999-Misc/003-Current%20failures))  
+Update macOS to 11.0.1.  
+VS2019 is updated to the latest version, which is 16.8.3.  
+VS2017 is updated to the latest version, which is 15.9.30.
+
 ## 2020.11.11
 Upload 5.12.10 builds.  
 macOS is updated to 10.15.7 and XCode is updated to 12.0.  

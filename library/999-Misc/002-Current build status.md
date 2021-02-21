@@ -56,7 +56,8 @@ Here is a list of OpenSSL builds of mine.
 
 Note:   
 OpenSSL 1.1.1 series on Windows is only for Qt 5.12 series. For Qt 5.13 onwards we are using SChannel.  
-MinGW builds is "-shared-and-static" so no need to build a seprate static version.
+MinGW builds is "-shared-and-static" so no need to build a seprate static version.  
+There are no builds of macOS since we are using SecureTransport.
 
 | OpenSSL Version | Platform | Build Host | Compiler Version | Architecture | Variant |
 |-|
@@ -143,7 +144,7 @@ MinGW builds is "-shared-and-static" so no need to build a seprate static versio
 |↑|CentOS 8.3|↑|-|-feature-threads|wasm-emscripten|√|√|
 |↑|macOS 11.0|↑|-|-feature-threads|wasm-emscripten|√|√|
 
-## Qt 6.0.0 Series
+## Qt 6.0.1 Series (Current main release)
 
 <b>Note: Since Qt dropped support for 32-bit Windows, our Qt 6 builds will drop support for 32-bit Windows either.  
 If there is need of static builds for non-LTS release, please contect me directly for commerical customization.</b>
@@ -162,10 +163,10 @@ If there is need of static builds for non-LTS release, please contect me directl
 |↑|↑|↑|arm64|-framework|macx-clang||Wait for Qt 6.1|
 |↑|↑|↑|arm64|-no-framework|macx-clang||Wait for Qt 6.1|
 |↑|↑|↑|x86_64|-static(Lite)|macx-clang|Won't upload seprately, used in cross-compiled Qt|√|
-|Android|Windows 10 10.0.19042|ndk r21e|arm|android-24|android-clang||Wait for Qt 6.0.1|
-|↑|↑|↑|arm64|android-24|android-clang||Wait for Qt 6.0.1|
-|↑|↑|↑|x86|android-24|android-clang||Wait for Qt 6.0.1|
-|↑|↑|↑|x86_64|android-24|android-clang||Wait for Qt 6.0.1|
+|Android|Windows 10 10.0.19042|ndk r21e|arm|android-24|android-clang|√|√|
+|↑|↑|↑|arm64|android-24|android-clang|√|√|
+|↑|↑|↑|x86|android-24|android-clang|√|√|
+|↑|↑|↑|x86_64|android-24|android-clang|√|√|
 |↑|CentOS 8.3|↑|arm|android-24|android-clang|√|√|
 |↑|↑|↑|arm64|android-24|android-clang|√|√|
 |↑|↑|↑|x86|android-24|android-clang|√|√|

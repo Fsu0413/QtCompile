@@ -14,15 +14,6 @@ The code used is downloaded from [here](http://download.qt.io), I made no change
 __THESE PACKAGE ARE PROVIDED "As is", I have no responsibility that you mess up your things with this binaries.__  
 Thanks for The Qt Company Ltd. and the programmers of Qt for their fantastic work!!
 
-## Windows 7 and Windows 8.1 deprecation (IMPORTANT NOTES!!)
-
-Qt 6 supports only Windows 10 1809 or later, Build host is only Windows 10.
-
-SINCE 2020.6.3 (Qt 5.15 release and Qt 5.9 deprecation) ONLY VS2015 AND MINGW 7.3 BUILDS SUPPORTS WINDOWS 8.1.  
-WINDOWS 10 IS MORE AND MORE POPULAR, AND RECEIVING MORE AND MORE NEW FEATURES. ONE SHOULD SWITCH TO WINDOWS 10 ASAP.
-
-SINCE 2020.1.6 (OpenSSL 1.0.2 deprecation) NO LATER BUILD WILL SUPPORT WINDOWS 8 AND EARLIER, PLEASE UPDATE TO WINDOWS 8.1 AND LATER.
-
 ## Notes for this repo
 
 [here](?file=999-Misc/001-Notes%20for%20this%20repo)
@@ -41,6 +32,10 @@ Please refer to the content lists in the left area.
 
 ## Update History
 
+### 2021.2.21
+Upload Windows hosted Android builds of Qt 6.0.1.  
+<font color=red><b>ANDROID BUILDS ARE WITHOUT LINKED OpenSSL SUPPORT due to compile error!!!!!!!!</b></font>
+
 ### 2021.2.6
 Upload 6.0.1 builds except Windows crossed Android builds.  
 VS2019 is updated to the latest version, which is 16.8.4.  
@@ -48,7 +43,8 @@ Update macOS to 11.1.
 <font color=red><b>ANDROID BUILDS ARE WITHOUT LINKED OpenSSL SUPPORT due to compile error!!!!!!!!</b></font>
 
 ### 2021.1.3
-Upload 6.0.0 Android builds (Linux host).
+Upload 6.0.0 Android builds (Linux host).  
+<font color=red><b>ANDROID BUILDS ARE WITHOUT LINKED OpenSSL SUPPORT due to compile error!!!!!!!!</b></font>
 
 ### 2021.1.2
 Upload 6.0.0 Android builds (macOS host).  
@@ -57,15 +53,6 @@ Rebuild 6.0.0 Windows and macOS builds with stripped binary.
 Note that Android API Level has changed to android-24 since Qt 6.0.0.  
 <font color=red><b>ANDROID BUILDS ARE WITHOUT LINKED OpenSSL SUPPORT due to compile error!!!!!!!!</b></font>
 
-### 2020.12.20
-Upload 6.0.0 Windows and macOS builds.
-
-### 2020.12.17
-Upload 5.15.2 builds. (All builds are without Webengine because of compile failure, see [Current Failures](?file=999-Misc/003-Current%20failures))  
-Update macOS to 11.0.1.  
-VS2019 is updated to the latest version, which is 16.8.3.  
-VS2017 is updated to the latest version, which is 15.9.30.
-
-### Before Dec. 2020
+### Before Jan. 2021
 
 [here](?file=999-Misc/004-Histories)

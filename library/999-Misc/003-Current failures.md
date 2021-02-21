@@ -13,9 +13,6 @@ Currently following issue is reported to Qt:
 <del>[QTBUG-88126](https://bugreports.qt.io/browse/QTBUG-88126) - CMake error when invoking with "-DFEATURE_schannel=ON -DFEATURE_openssl=OFF"</del> (Closed and patch is in 6.0.0)  
 <del>[QTBUG-88127](https://bugreports.qt.io/browse/QTBUG-88127) - Cannot build Qt 6.0.0 beta2 with -DFEATURE_schannel=ON</del> (Closed and patch is in 6.0.0)
 
-MinGW version and Windows hosted cross build version should wait for 6.0.1.  
-Build and package script of other versions are currently under investigation.
-
 Linked OpenSSL support on Android is currently broken, due to following issue.
 
 [QTBUG-89473](https://bugreports.qt.io/browse/QTBUG-89473) - Cannot build Android with -openssl-linked (Closed but fix is only on dev branch, not 6.0 branch)
@@ -25,7 +22,8 @@ One should wait for 6.1.0 for linked OpenSSL support on Android.
 ## WebEngine of Qt 5.15.2 does not build on macOS 11 and Windows 10
 
 See [this post](http://www.qtcn.org/bbs/read.php?tid=85733&ds=1#201581) (Sorry, it's in Chinese)  
-I will not distribute binaries with WebEngine of Qt version 5.15.2.
+I will not distribute binaries of QtWebEngine 5.15.2.  
+Since Qt 5.15.3 will soon release and QtWebengine 5.15.3 is still free and open source, I may distribute a verison of 5.15.2 with QtWebEngine 5.15.3 or later in future.
 
 ## Qt 5.12 wasm builds can't built with OpenSSL
 

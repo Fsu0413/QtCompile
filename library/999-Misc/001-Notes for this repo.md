@@ -155,3 +155,12 @@ I am working on a method to GPG sign every package, but I didn't find a good met
 I don't want to put the signature file besides the package, I think it will be a waste of upload step......
 
 2021.2.6 update: I haven't found a suitable solution, temporarily put it away....
+
+## Windows 7 and Windows 8.1 deprecation (IMPORTANT NOTES!!)
+
+Qt 6 supports only Windows 10 1809 or later, Build host is only Windows 10.
+
+SINCE 2020.6.3 (Qt 5.15 release and Qt 5.9 deprecation) ONLY VS2015 AND MINGW 7.3 BUILDS SUPPORTS WINDOWS 8.1.  
+WINDOWS 10 IS MORE AND MORE POPULAR, AND RECEIVING MORE AND MORE NEW FEATURES. ONE SHOULD SWITCH TO WINDOWS 10 ASAP.
+
+SINCE 2020.1.6 (OpenSSL 1.0.2 deprecation) NO LATER BUILD WILL SUPPORT WINDOWS 8 AND EARLIER, PLEASE UPDATE TO WINDOWS 8.1 AND LATER.
