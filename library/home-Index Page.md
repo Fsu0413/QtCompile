@@ -32,6 +32,12 @@ Please refer to the content lists in the left area.
 
 ## Update History
 
+### 2021.3.4
+Upload 6.0.2 builds.  
+VS2019 is updated to the latest version, which is 16.9.0.  
+Update macOS to 11.2.2.  
+<font color=red><b>ANDROID BUILDS ARE WITHOUT LINKED OpenSSL SUPPORT due to compile error!!!!!!!!</b></font>
+
 ### 2021.2.21
 Upload Windows hosted Android builds of Qt 6.0.1.  
 <font color=red><b>ANDROID BUILDS ARE WITHOUT LINKED OpenSSL SUPPORT due to compile error!!!!!!!!</b></font>

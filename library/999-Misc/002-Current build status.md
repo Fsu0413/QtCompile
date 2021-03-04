@@ -61,29 +61,29 @@ There are no builds of macOS since we are using SecureTransport.
 
 | OpenSSL Version | Platform | Build Host | Compiler Version | Architecture | Variant |
 |-|
-|1.1.1i|Windows|Windows 8.1 Update|VS2015 Update 3|x86||
-|1.1.1i|Windows|Windows 8.1 Update|VS2015 Update 3|x86|-static|
-|1.1.1i|Windows|Windows 8.1 Update|VS2015 Update 3|x86_64||
-|1.1.1i|Windows|Windows 8.1 Update|MinGW 7.3.0|x86||
-|1.1.1i|Windows|Windows 8.1 Update|MinGW 7.3.0|x86_64||
-|1.1.1i|Windows|Windows 10 10.0.19041|VS2017 15.9.27|x86||
-|1.1.1i|Windows|Windows 10 10.0.19041|VS2017 15.9.27|x86|-static|
-|1.1.1i|Windows|Windows 10 10.0.19041|VS2017 15.9.27|x86_64||
-|1.1.1i|Windows|Windows 10 10.0.19041|VS2017 15.9.27|x86_64|-static|
-|1.1.1i|Windows|Windows 10 10.0.19041|VS2017 15.9.27|arm64||
-|1.1.1i|Windows|Windows 10 10.0.19041|VS2019 16.7.7|x86||
-|1.1.1i|Windows|Windows 10 10.0.19041|VS2019 16.7.7|x86_64||
-|1.1.1i|Android|CentOS 8.3|ndk r21e|arm|android-21, -static|
-|1.1.1i|Android|CentOS 8.3|ndk r21e|arm64|android-21, -static|
-|1.1.1i|Android|CentOS 8.3|ndk r21e|x86|android-21, -static|
-|1.1.1i|Android|CentOS 8.3|ndk r21e|x86_64|android-21, -static|
-|1.1.1i|Android|CentOS 8.3|ndk r21e|ALL|android-21, -static|
-|1.1.1i|Android|CentOS 8.3|ndk r21e|arm|android-24, -static|
-|1.1.1i|Android|CentOS 8.3|ndk r21e|arm64|android-24, -static|
-|1.1.1i|Android|CentOS 8.3|ndk r21e|x86|android-24, -static|
-|1.1.1i|Android|CentOS 8.3|ndk r21e|x86_64|android-24, -static|
+|1.1.1j|Windows|Windows 8.1 Update|VS2015 Update 3|x86||
+|1.1.1j|Windows|Windows 8.1 Update|VS2015 Update 3|x86|-static|
+|1.1.1j|Windows|Windows 8.1 Update|VS2015 Update 3|x86_64||
+|1.1.1j|Windows|Windows 8.1 Update|MinGW 7.3.0|x86||
+|1.1.1j|Windows|Windows 8.1 Update|MinGW 7.3.0|x86_64||
+|1.1.1j|Windows|Windows 10 10.0.19042|VS2017 15.9.33|x86||
+|1.1.1j|Windows|Windows 10 10.0.19042|VS2017 15.9.33|x86|-static|
+|1.1.1j|Windows|Windows 10 10.0.19042|VS2017 15.9.33|x86_64||
+|1.1.1j|Windows|Windows 10 10.0.19042|VS2017 15.9.33|x86_64|-static|
+|1.1.1j|Windows|Windows 10 10.0.19042|VS2017 15.9.33|arm64||
+|1.1.1j|Windows|Windows 10 10.0.19042|VS2019 16.8.6|x86||
+|1.1.1j|Windows|Windows 10 10.0.19042|VS2019 16.8.6|x86_64||
+|1.1.1j|Android|CentOS 8.3|ndk r21e|arm|android-21, -static|
+|1.1.1j|Android|CentOS 8.3|ndk r21e|arm64|android-21, -static|
+|1.1.1j|Android|CentOS 8.3|ndk r21e|x86|android-21, -static|
+|1.1.1j|Android|CentOS 8.3|ndk r21e|x86_64|android-21, -static|
+|1.1.1j|Android|CentOS 8.3|ndk r21e|ALL|android-21, -static|
+|1.1.1j|Android|CentOS 8.3|ndk r21e|arm|android-24, -static|
+|1.1.1j|Android|CentOS 8.3|ndk r21e|arm64|android-24, -static|
+|1.1.1j|Android|CentOS 8.3|ndk r21e|x86|android-24, -static|
+|1.1.1j|Android|CentOS 8.3|ndk r21e|x86_64|android-24, -static|
 
-## Qt 5.12.10 Series (Previous LTS release)
+## Qt 5.12 Series (Previous LTS release)
 
 | Platform | Build Host | Compiler Version | Architecture | Variant | mkspecs | Uploaded | Configuration |
 |-|
@@ -118,7 +118,7 @@ There are no builds of macOS since we are using SecureTransport.
 |WebAssembly|CentOS 8.2|emscripten-1.38.16|-||wasm-emscripten|√|√|
 |↑|macOS 10.15|↑|-||wasm-emscripten|√|√|
 
-## Qt 5.15.2 Series (Current LTS release for commerical version only)
+## Qt 5.15 Series (Current LTS release for commerical version only)
 
 | Platform | Build Host | Compiler Version | Architecture | Variant | mkspecs | Uploaded | Configuration |
 |-|
@@ -144,21 +144,21 @@ There are no builds of macOS since we are using SecureTransport.
 |↑|CentOS 8.3|↑|-|-feature-threads|wasm-emscripten|√|√|
 |↑|macOS 11.0|↑|-|-feature-threads|wasm-emscripten|√|√|
 
-## Qt 6.0.1 Series (Current main release)
+## Qt 6.0 Series (Current main release)
 
 <b>Note: Since Qt dropped support for 32-bit Windows, our Qt 6 builds will drop support for 32-bit Windows either.  
 If there is need of static builds for non-LTS release, please contect me directly for commerical customization.</b>
 
 | Platform | Build Host | Compiler Version | Architecture | Variant | mkspecs | Uploaded | Configuration |
 |-|
-|Windows|Windows 10 10.0.19042|VS2019 16.8.4|x86_64||win32-msvc|√|√|
+|Windows|Windows 10 10.0.19042|VS2019 16.9.0|x86_64||win32-msvc|√|√|
 |↑|↑|↑|x86_64|-static(Full)|win32-msvc||Wait for Qt 6.2|
-|↑|↑|VS2019 16.x.x|arm64||win32-arm64-msvc||Wait for Qt 6.2|
+|↑|↑|↑|arm64||win32-arm64-msvc||Wait for Qt 6.2|
 |↑|↑|MinGW 8.1.0|x86_64||win32-g++|√|√|
 |↑|↑|↑|x86_64|-static(Full)|win32-g++||Wait for Qt 6.2|
 |↑|↑|↑|x86_64|-static(Lite)|win32-g++|Won't upload seprately, used in cross-compiled Qt|√|
 |Linux|CentOS 8.3|GCC 8.3.1|x86_64|-static(Lite)|linux-g++|Won't upload seprately, used in cross-compiled Qt|√|
-|macOS|macOS 11.0|AppleClang 12.0|x86_64|-framework|macx-clang|√|√|
+|macOS|macOS 11.2.2|AppleClang 12.0|x86_64|-framework|macx-clang|√|√|
 |↑|↑|↑|x86_64|-no-framework|macx-clang|√|√|
 |↑|↑|↑|arm64|-framework|macx-clang||Wait for Qt 6.1|
 |↑|↑|↑|arm64|-no-framework|macx-clang||Wait for Qt 6.1|
@@ -171,7 +171,7 @@ If there is need of static builds for non-LTS release, please contect me directl
 |↑|↑|↑|arm64|android-24|android-clang|√|√|
 |↑|↑|↑|x86|android-24|android-clang|√|√|
 |↑|↑|↑|x86_64|android-24|android-clang|√|√|
-|↑|macOS 11.0|↑|arm|android-24|android-clang|√|√|
+|↑|macOS 11.2.2|↑|arm|android-24|android-clang|√|√|
 |↑|↑|↑|arm64|android-24|android-clang|√|√|
 |↑|↑|↑|x86|android-24|android-clang|√|√|
 |↑|↑|↑|x86_64|android-24|android-clang|√|√|
