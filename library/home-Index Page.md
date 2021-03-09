@@ -32,6 +32,11 @@ Please refer to the content lists in the left area.
 
 ## Update History
 
+### 2021.3.9
+Upload 5.15.2 w/ QtWebEngine 5.15.3 builds for VS2019 / macOS 11.  
+Windows SDK is updated to the latest version, which is 10.0.19041.  
+Upload 5.12.10 Android builds w/ Android NDK r21e.
+
 ### 2021.3.4
 Upload 6.0.2 builds.  
 VS2019 is updated to the latest version, which is 16.9.0.  
@@ -48,17 +53,6 @@ VS2019 is updated to the latest version, which is 16.8.4.
 Update macOS to 11.1.  
 <font color=red><b>ANDROID BUILDS ARE WITHOUT LINKED OpenSSL SUPPORT due to compile error!!!!!!!!</b></font>
 
-### 2021.1.3
-Upload 6.0.0 Android builds (Linux host).  
-<font color=red><b>ANDROID BUILDS ARE WITHOUT LINKED OpenSSL SUPPORT due to compile error!!!!!!!!</b></font>
-
-### 2021.1.2
-Upload 6.0.0 Android builds (macOS host).  
-Rebuild 6.0.0 Windows and macOS builds with stripped binary.
-
-Note that Android API Level has changed to android-24 since Qt 6.0.0.  
-<font color=red><b>ANDROID BUILDS ARE WITHOUT LINKED OpenSSL SUPPORT due to compile error!!!!!!!!</b></font>
-
-### Before Jan. 2021
+### Before Feb. 2021
 
 [here](?file=999-Misc/004-Histories)

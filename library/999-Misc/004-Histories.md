@@ -1,10 +1,20 @@
 # Previous Histories
 
+## 2021.1.3
+Upload 6.0.0 Android builds (Linux host).  
+<font color=red><b>ANDROID BUILDS ARE WITHOUT LINKED OpenSSL SUPPORT due to compile error!!!!!!!!</b></font>
+
+## 2021.1.2
+Upload 6.0.0 Android builds (macOS host).  
+Rebuild 6.0.0 Windows and macOS builds with stripped binary.  
+Note that Android API Level has changed to android-24 since Qt 6.0.0.  
+<font color=red><b>ANDROID BUILDS ARE WITHOUT LINKED OpenSSL SUPPORT due to compile error!!!!!!!!</b></font>
+
 ## 2020.12.20
 Upload 6.0.0 Windows and macOS builds.
 
 ## 2020.12.17
-Upload 5.15.2 builds. (All builds are without Webengine because of compile failure, see [Current Failures](?file=999-Misc/003-Current%20failures))  
+Upload 5.15.2 builds. (All builds are without Webengine because of compile failure<del>, see [Current Failures](?file=999-Misc/003-Current%20failures)</del>(resolved and removed from this page))  
 Update macOS to 11.0.1.  
 VS2019 is updated to the latest version, which is 16.8.3.  
 VS2017 is updated to the latest version, which is 15.9.30.
@@ -34,7 +44,7 @@ Upload 5.15.0 macOS host builds. (macOS host builds of 5.12.8 have compile failu
 Upload 5.15.0 Android builds. (macOS 10.15.5 hosted)
 
 ## 2020.6.3
-Add proprietary codecs support for Qt WebEngine for Qt 5.12.9 and 5.15.0 or later.
+Add proprietary codecs support for Qt WebEngine for Qt 5.12.9 and 5.15.0 or later.  
 Upload 5.15.0 series. (**Except macOS host builds, which encountered some issue while compiling**)  
 Use MinGW-w64 to 8.1.0 for Qt 5.15.0 series, switch the build environment of MinGW 8.1.0 to Win10.  
 Upload 5.9.9 VS2017 builds for newer VS2017 compiler.  

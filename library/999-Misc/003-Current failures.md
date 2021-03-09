@@ -19,12 +19,6 @@ Linked OpenSSL support on Android is currently broken, due to following issue.
 
 One should wait for 6.1.0 for linked OpenSSL support on Android.
 
-## WebEngine of Qt 5.15.2 does not build on macOS 11 and Windows 10
-
-See [this post](http://www.qtcn.org/bbs/read.php?tid=85733&ds=1#201581) (Sorry, it's in Chinese)  
-I will not distribute binaries of QtWebEngine 5.15.2.  
-Since Qt 5.15.3 will soon release and QtWebengine 5.15.3 is still free and open source, I may distribute a verison of 5.15.2 with QtWebEngine 5.15.3 or later in future.
-
 ## Qt 5.12 wasm builds can't built with OpenSSL
 
 Both `qsslsocket_opensslpre11.cpp` and `qsslsocket_openssl11.cpp` includes `qlibrary.h` which is not usable in wasm platform.  

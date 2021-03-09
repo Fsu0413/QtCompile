@@ -106,13 +106,13 @@ There are no builds of macOS since we are using SecureTransport.
 |macOS|macOS 10.15|AppleClang 11.0|x86_64|-framework|macx-clang|√|√|
 |↑|↑|↑|x86_64|-no-framework|macx-clang|√|√|
 |↑|↑|↑|x86_64|-static(Lite)|macx-clang|Won't upload, only used in QQtPatcher|√|
-|Android|Windows 10 10.0.19041|ndk r21d|arm|android-21|android-clang|√|√|
+|Android|Windows 10 10.0.19042|ndk r21e|arm|android-21|android-clang|√|√|
 |↑|↑|↑|arm64|android-21|android-clang|√|√|
 |↑|↑|↑|x86|android-21|android-clang|√|√|
 |↑|CentOS 8.2|↑|arm|android-21|android-clang|√|√|
 |↑|↑|↑|arm64|android-21|android-clang|√|√|
 |↑|↑|↑|x86|android-21|android-clang|√|√|
-|↑|macOS 10.15|↑|arm|android-21|android-clang|√|√|
+|↑|macOS 11|↑|arm|android-21|android-clang|√|√|
 |↑|↑|↑|arm64|android-21|android-clang|√|√|
 |↑|↑|↑|x86|android-21|android-clang|√|√|
 |WebAssembly|CentOS 8.2|emscripten-1.38.16|-||wasm-emscripten|√|√|
@@ -127,7 +127,7 @@ There are no builds of macOS since we are using SecureTransport.
 |↑|Windows 10 10.0.19042|VS2017 15.9.30|x86||win32-msvc|√|√|
 |↑|↑|↑|x86_64||win32-msvc|√|√|
 |↑|↑|↑|arm64||win32-arm64-msvc2017|√|√|
-|↑|↑|VS2019 16.8.3|x86||win32-msvc|√|√|
+|↑|↑|VS2019 16.9.0|x86||win32-msvc|√|√|
 |↑|↑|↑|x86|-static(Full)|win32-msvc|√|√|
 |↑|↑|↑|x86_64||win32-msvc|√|√|
 |↑|↑|↑|x86_64|-static(Full)|win32-msvc|√|√|
@@ -135,14 +135,14 @@ There are no builds of macOS since we are using SecureTransport.
 |↑|↑|↑|x86|-static(Full)|win32-g++|√|√|
 |↑|↑|↑|x86_64||win32-g++|√|√|
 |↑|↑|↑|x86_64|-static(Full)|win32-g++|√|√|
-|macOS|macOS 11.0|AppleClang 12.0|x86_64|-framework|macx-clang|√|√|
+|macOS|macOS 11|AppleClang 12.0|x86_64|-framework|macx-clang|√|√|
 |↑|↑|↑|x86_64|-no-framework|macx-clang|√|√|
 |Android|Windows 10 10.0.19042|ndk r21d|ALL|android-21|android-clang|√|√|
 |↑|CentOS 8.3|↑|ALL|android-21|android-clang|√|√|
 |↑|macOS 11.0|↑|ALL|android-21|android-clang|√|√|
 |WebAssembly|Windows 10 10.0.19042|emscripten-1.39.8|-|-feature-threads|wasm-emscripten|√|√|
 |↑|CentOS 8.3|↑|-|-feature-threads|wasm-emscripten|√|√|
-|↑|macOS 11.0|↑|-|-feature-threads|wasm-emscripten|√|√|
+|↑|macOS 11|↑|-|-feature-threads|wasm-emscripten|√|√|
 
 ## Qt 6.0 Series (Current main release)
 
@@ -171,7 +171,7 @@ If there is need of static builds for non-LTS release, please contect me directl
 |↑|↑|↑|arm64|android-24|android-clang|√|√|
 |↑|↑|↑|x86|android-24|android-clang|√|√|
 |↑|↑|↑|x86_64|android-24|android-clang|√|√|
-|↑|macOS 11.2.2|↑|arm|android-24|android-clang|√|√|
+|↑|macOS 11|↑|arm|android-24|android-clang|√|√|
 |↑|↑|↑|arm64|android-24|android-clang|√|√|
 |↑|↑|↑|x86|android-24|android-clang|√|√|
 |↑|↑|↑|x86_64|android-24|android-clang|√|√|
