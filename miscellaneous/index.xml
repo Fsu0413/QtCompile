@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Miscellaneous on Fsu0413&#39;s Original Qt builds</title>
+    <link>/miscellaneous/</link>
+    <description>Recent content in Miscellaneous on Fsu0413&#39;s Original Qt builds</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/miscellaneous/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Notes for this repo</title>
+      <link>/miscellaneous/notes-for-this-repo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/miscellaneous/notes-for-this-repo/</guid>
+      <description>Reproduciable building I use a set of scripts to do the build and packaging for reproducible building Qt.
+If you are interested in build method, please check the following GitHub repo.
+GitHub
+However unfortunely, this website is manually edited.
+Source of this site is:
+GitHub
+Notes on static builds I don&amp;rsquo;t use static builds in huge projects. I don&amp;rsquo;t think it is wise to use a static build there.
+Maybe you just want to distribute a single portable executable binary file, but there is limitations:</description>
+    </item>
+    <item>
+      <title>Current build status</title>
+      <link>/miscellaneous/current-build-status/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/miscellaneous/current-build-status/</guid>
+      <description>QQtPatcher Support Status This is a list where QQtPatcher is supported and tested on.
+Other version may work, but also may silently fail.
+A valid qbp.json is needed for patching Qt 4 Series since qmake -query don&amp;rsquo;t output the makespec.
+Qt 5.14 is relocatable as announced in New Features in Qt 5.14, so Qt after 5.14 won&amp;rsquo;t need QQtPatcher anymore.
+I delivered QQtPatcher for earlier version of 5.14 (because of the fact that I forgot to modify QQtPatcher related code in build scripts).</description>
+    </item>
+    <item>
+      <title>Current failures</title>
+      <link>/miscellaneous/current-failures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/miscellaneous/current-failures/</guid>
+      <description>Qt 5.12 WebAssembly builds can&amp;rsquo;t built with OpenSSL Both qsslsocket_opensslpre11.cpp and qsslsocket_openssl11.cpp includes qlibrary.h which is not usable in WebAssembly platform.
+Since -openssl and -openssl-linked both use this file, so we can only use -no-ssl&amp;hellip;&amp;hellip;.
+I didn&amp;rsquo;t try with Qt 5.15 series, but qsslsocket_openssl.cpp in Qt 5.15 includes qlibrary.h as well&amp;hellip;
+I didn&amp;rsquo;t try with Qt 6.2 onwards.
+QDoc after Qt 5.12 cannot use static linked clang when using MSVC It uses libclang_static.</description>
+    </item>
+    <item>
+      <title>Previous Histories</title>
+      <link>/miscellaneous/histories/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/miscellaneous/histories/</guid>
+      <description>2022.8.23 Update Qt 5.12.12 with OpenSSL 1.1.1q.
+Update Qt 6.2.4 with patch of CVE-2022-27404-27405-27406 and OpenSSL 3.0.5.
+Update Qt 6.3.1 WebAssembly builds, which are built using emscripten SDK 3.1.6.
+Qt 5.15.5 is not updated since patch of CVE-2022-27404-27405-27406 provided by Qt conflicts with 5.15.5 code base.
+I&amp;rsquo;ll wait for 5.15.6 and will release without the patch if this patch doesn&amp;rsquo;t work on 5.15.6 either.
+Qt 6.3.1 is not updated. Let&amp;rsquo;s wait for 6.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.105.0">
+    <meta name="generator" content="Relearn 5.4.0">
+    <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
+    <meta name="author" content="Fsu0413">
+    <title>5.6.3 for Windows :: Fsu0413&#39;s Original Qt builds</title>
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1667392683" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1667392683" rel="stylesheet"></noscript>
+    <link href="/css/featherlight.min.css?1667392683" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1667392683" rel="stylesheet"></noscript>
+    <link href="/css/auto-complete.css?1667392683" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1667392683" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1667392683" rel="stylesheet">
+    <link href="/css/nucleus.css?1667392683" rel="stylesheet">
+    <link href="/css/fonts.css?1667392683" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1667392683" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1667392683" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css?1667392683" rel="stylesheet" id="variant-style">
+    <link href="/css/ie.css?1667392683" rel="stylesheet">
+    <link href="/css/variant.css?1667392683" rel="stylesheet">
+    <link href="/css/print.css?1667392683" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1667392683"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy to clipboard';
+      window.T_Copied_to_clipboard = 'Copied to clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      // some further base stuff
+      var baseUriFull='/';
+      window.variants && variants.init( [ 'relearn-dark', 'relearn-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
+    </script>
+    <script src="/js/jquery.min.js?1667392683" defer></script><style>
+    a.fsu0413_osdnAddr {
+        color: green;
+    }
+    a.fsu0413_sfAddr {
+        color: orange;
+    }
+    a.fsu0413_githubAddr {
+        color: blue;
+    }
+    p.fsu0413_leftFooter {
+        text-align: center;
+        font-style: italic;
+        font-size: x-small;
+    }
+    p.fsu0413_logo {
+        text-align: left;
+    }
+    p.fsu0413_error {
+        font-weight: 900;
+        font-size: 300%;
+        color: red;
+    }
+    th.fsu0413_qtAddressHeader {
+        text-align: center;
+    }
+    h1 {
+        text-transform: none;
+    }
+</style>
+  </head>
+  <body class="mobile-support default" data-url="/legacy-lts-series/5.6-series/5.6.3-for-windows/">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable">
+        <div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/"><span itemprop="name">Fsu0413&#39;s Original Qt builds</span></a><meta itemprop="position" content="1"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/legacy-lts-series/"><span itemprop="name">Legacy LTS Series</span></a><meta itemprop="position" content="2"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/legacy-lts-series/5.6-series/"><span itemprop="name">5.6 series</span></a><meta itemprop="position" content="3"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">5.6.3 for Windows</span><meta itemprop="position" content="4"></li>
+            </ol>
+          </div>
+          <div class="default-animation progress">
+            <div class="toc-wrapper" dir="ltr">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#dynamic--shared-builds">Dynamic / Shared Builds</a>
+      <ul>
+        <li><a href="#windows-msvc">Windows-MSVC</a></li>
+        <li><a href="#windows-mingw">Windows-MinGW</a></li>
+      </ul>
+    </li>
+    <li><a href="#static-lite-builds">Static <code>Lite</code> Builds</a>
+      <ul>
+        <li><a href="#windows-msvc-1">Windows-MSVC</a></li>
+        <li><a href="#windows-mingw-1">Windows-MinGW</a></li>
+      </ul>
+    </li>
+    <li><a href="#static-full-builds">Static <code>Full</code> Builds</a>
+      <ul>
+        <li><a href="#windows-msvc-2">Windows-MSVC</a></li>
+        <li><a href="#windows-mingw-2">Windows-MinGW</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <div id="head-tags">
+          </div>
+          <article class="default" dir="ltr">
+<h1>5.6.3 for Windows</h1>
+
+
+<div class="box notices cstyle warning">
+    <div class="box-label"><i class="fas fa-exclamation-triangle"></i> Important</div>
+    <div class="box-content">
+<p>FINAL VERSION, NO MORE UPDATES EVEN IF REQUESTED, BUILD ENVIRONMENT HAS BEEN DESTRUCTED</p>
+    </div>
+</div>
+
+<div class="box notices cstyle info">
+    <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
+    <div class="box-content">
+<p>ODBC and SQLite(distributed with Qt) are built in the backage. All Dynamic builds have -plugin-sql-xxx.</p>
+    </div>
+</div>
+
+<div class="box notices cstyle info">
+    <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
+    <div class="box-content">
+<p>All builds have -openssl-linked. It links to an OpenSSL 1.0.2 series which redistributed in the package. Dynamic builds include dynamic OpenSSL while static builds include static OpenSSL.</p>
+    </div>
+</div>
+
+<div class="box notices cstyle info">
+    <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
+    <div class="box-content">
+<p>All builds have -no-icu because I think the ICU library is too big and, in most of the conditions, useless for common users.</p>
+    </div>
+</div>
+<h2 id="dynamic--shared-builds">Dynamic / Shared Builds</h2>
+<h3 id="windows-msvc">Windows-MSVC</h3>
+<table>
+    <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.6.3-Windows-x86-VS2015-20200104.7z</b></th></tr></thead>
+    <tbody>
+        <tr><td width="20%"><b>Download:</b></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle green">
+  <a href="https://osdn.net/downloads/users/30/30727/Qt5.6.3-Windows-x86-VS2015-20200104.7z" target="_blank" rel="noopener">
+    OSDN link
+  </a>
+</span></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Windows-x86/Qt5.6.3-Windows-x86-VS2015-20200104.7z" target="_blank" rel="noopener">
+    SourceForge link
+  </a>
+</span></td>
+        </tr>
+        <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 8.1 Update</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">VS2015 Update 3</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+    </tbody>
+</table>
+<table>
+    <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.6.3-Windows-x86_64-VS2015-20200104.7z</b></th></tr></thead>
+    <tbody>
+        <tr><td width="20%"><b>Download:</b></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle green">
+  <a href="https://osdn.net/downloads/users/30/30719/Qt5.6.3-Windows-x86_64-VS2015-20200104.7z" target="_blank" rel="noopener">
+    OSDN link
+  </a>
+</span></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Windows-x86_64/Qt5.6.3-Windows-x86_64-VS2015-20200104.7z" target="_blank" rel="noopener">
+    SourceForge link
+  </a>
+</span></td>
+        </tr>
+        <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 8.1 Update</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">VS2015 Update 3</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+    </tbody>
+</table>
+<table>
+    <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.6.3-Windows-x86-VS2015-xp-20200104.7z</b></th></tr></thead>
+    <tbody>
+        <tr><td width="20%"><b>Download:</b></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle green">
+  <a href="https://osdn.net/downloads/users/30/30729/Qt5.6.3-Windows-x86-VS2015-xp-20200104.7z" target="_blank" rel="noopener">
+    OSDN link
+  </a>
+</span></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Windows-x86/Qt5.6.3-Windows-x86-VS2015-xp-20200104.7z" target="_blank" rel="noopener">
+    SourceForge link
+  </a>
+</span></td>
+        </tr>
+        <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 8.1 Update</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">VS2015 Update 3</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"><strong>XP COMPATIBLE, NO WEBENGINE/WEBVIEW, 32-bit ONLY, just for the unreconstructed people who want to use XP eagerly</strong></td></tr>
+    </tbody>
+</table>
+<table>
+    <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.6.3-Windows-x86-VS2010-20200104.7z</b></th></tr></thead>
+    <tbody>
+        <tr><td width="20%"><b>Download:</b></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle green">
+  <a href="https://osdn.net/downloads/users/30/30724/Qt5.6.3-Windows-x86-VS2010-20200104.7z" target="_blank" rel="noopener">
+    OSDN link
+  </a>
+</span></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Windows-x86/Qt5.6.3-Windows-x86-VS2010-20200104.7z" target="_blank" rel="noopener">
+    SourceForge link
+  </a>
+</span></td>
+        </tr>
+        <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows XP SP3</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">VS2010 SP1</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"><strong>XP COMPATIBLE, NO WEBENGINE/WEBVIEW, 32-bit ONLY, just for the unreconstructed people who want to use XP eagerly</strong></td></tr>
+    </tbody>
+</table>
+<h3 id="windows-mingw">Windows-MinGW</h3>
+<table>
+    <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.6.3-Windows-x86-MinGW4.9.4-20200104.7z</b></th></tr></thead>
+    <tbody>
+        <tr><td width="20%"><b>Download:</b></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle green">
+  <a href="https://osdn.net/downloads/users/30/30721/Qt5.6.3-Windows-x86-MinGW4.9.4-20200104.7z" target="_blank" rel="noopener">
+    OSDN link
+  </a>
+</span></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Windows-x86/Qt5.6.3-Windows-x86-MinGW4.9.4-20200104.7z" target="_blank" rel="noopener">
+    SourceForge link
+  </a>
+</span></td>
+        </tr>
+        <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows XP SP3</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">MinGW-w64 v5 w/ GCC 4.9.4</td></tr><tr><td width="20%"><b>MinGW Used:</b></td><td colspan="4" width="80%">
+<span class="btn cstyle grey">
+  <a href="https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/4.9.4/threads-posix/dwarf/i686-4.9.4-release-posix-dwarf-rt_v5-rev0.7z" target="_blank" rel="noopener">
+    32-bit MinGW-W64 4.9.4
+  </a>
+</span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+    </tbody>
+</table>
+<table>
+    <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.6.3-Windows-x86_64-MinGW4.9.4-20200104.7z</b></th></tr></thead>
+    <tbody>
+        <tr><td width="20%"><b>Download:</b></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle green">
+  <a href="https://osdn.net/downloads/users/30/30720/Qt5.6.3-Windows-x86_64-MinGW4.9.4-20200104.7z" target="_blank" rel="noopener">
+    OSDN link
+  </a>
+</span></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Windows-x86_64/Qt5.6.3-Windows-x86_64-MinGW4.9.4-20200104.7z" target="_blank" rel="noopener">
+    SourceForge link
+  </a>
+</span></td>
+        </tr>
+        <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 8.1 Update</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">MinGW-w64 v5 w/ GCC 4.9.4</td></tr><tr><td width="20%"><b>MinGW Used:</b></td><td colspan="4" width="80%">
+<span class="btn cstyle grey">
+  <a href="https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/4.9.4/threads-posix/seh/x86_64-4.9.4-release-posix-seh-rt_v5-rev0.7z" target="_blank" rel="noopener">
+    64-bit MinGW-W64 4.9.4
+  </a>
+</span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+    </tbody>
+</table>
+<h2 id="static-lite-builds">Static <code>Lite</code> Builds</h2>
+<h3 id="windows-msvc-1">Windows-MSVC</h3>
+<table>
+    <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.6.3-Windows-x86-VS2010-static-20200104.7z</b></th></tr></thead>
+    <tbody>
+        <tr><td width="20%"><b>Download:</b></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle green">
+  <a href="https://osdn.net/downloads/users/30/30726/Qt5.6.3-Windows-x86-VS2010-static-20200104.7z" target="_blank" rel="noopener">
+    OSDN link
+  </a>
+</span></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Windows-x86/Qt5.6.3-Windows-x86-VS2010-static-20200104.7z" target="_blank" rel="noopener">
+    SourceForge link
+  </a>
+</span></td>
+        </tr>
+        <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows XP SP3</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">VS2010 SP1</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"><strong>XP COMPATIBLE, NO WEBENGINE/WEBVIEW, 32-bit ONLY, just for the unreconstructed people who want to use XP eagerly</strong></td></tr>
+    </tbody>
+</table>
+<table>
+    <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.6.3-Windows-x86-VS2015-static-xp-20200104.7z</b></th></tr></thead>
+    <tbody>
+        <tr><td width="20%"><b>Download:</b></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle green">
+  <a href="https://osdn.net/downloads/users/30/30728/Qt5.6.3-Windows-x86-VS2015-static-xp-20200104.7z" target="_blank" rel="noopener">
+    OSDN link
+  </a>
+</span></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Windows-x86/Qt5.6.3-Windows-x86-VS2015-static-xp-20200104.7z" target="_blank" rel="noopener">
+    SourceForge link
+  </a>
+</span></td>
+        </tr>
+        <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 8.1 Update</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">VS2015 Update 3</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"><strong>XP COMPATIBLE, NO WEBENGINE/WEBVIEW, 32-bit ONLY, just for the unreconstructed people who want to use XP eagerly</strong></td></tr>
+    </tbody>
+</table>
+<h3 id="windows-mingw-1">Windows-MinGW</h3>
+<table>
+    <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.6.3-Windows-x86-MinGW4.9.4-static-20200104.7z</b></th></tr></thead>
+    <tbody>
+        <tr><td width="20%"><b>Download:</b></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle green">
+  <a href="https://osdn.net/downloads/users/30/30722/Qt5.6.3-Windows-x86-MinGW4.9.4-static-20200104.7z" target="_blank" rel="noopener">
+    OSDN link
+  </a>
+</span></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Windows-x86/Qt5.6.3-Windows-x86-MinGW4.9.4-static-20200104.7z" target="_blank" rel="noopener">
+    SourceForge link
+  </a>
+</span></td>
+        </tr>
+        <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows XP SP3</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">MinGW-w64 v5 w/ GCC 4.9.4</td></tr><tr><td width="20%"><b>MinGW Used:</b></td><td colspan="4" width="80%">
+<span class="btn cstyle grey">
+  <a href="https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/4.9.4/threads-posix/dwarf/i686-4.9.4-release-posix-dwarf-rt_v5-rev0.7z" target="_blank" rel="noopener">
+    32-bit MinGW-W64 4.9.4
+  </a>
+</span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+    </tbody>
+</table>
+<h2 id="static-full-builds">Static <code>Full</code> Builds</h2>
+
+<div class="box notices cstyle info">
+    <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
+    <div class="box-content">
+<p>Static full builds are recompressed by hand.<br>
+Since the parameters configured in 7z GUI is different from default command line which is used in script files, these recompressed package become smaller than the original file.<br>
+Nothing is deleted in the packages.</p>
+    </div>
+</div>
+<h3 id="windows-msvc-2">Windows-MSVC</h3>
+<table>
+    <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.6.3-Windows-x86-VS2010-staticFull-20200104-ManualPatchSslLib.7z</b></th></tr></thead>
+    <tbody>
+        <tr><td width="20%"><b>Download:</b></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle green">
+  <a href="https://osdn.net/downloads/users/30/30725/Qt5.6.3-Windows-x86-VS2010-staticFull-20200104-ManualPatchSslLib.7z" target="_blank" rel="noopener">
+    OSDN link
+  </a>
+</span></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Windows-x86/Qt5.6.3-Windows-x86-VS2010-staticFull-20200104-ManualPatchSslLib.7z" target="_blank" rel="noopener">
+    SourceForge link
+  </a>
+</span></td>
+        </tr>
+        <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows XP SP3</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">VS2010 SP1</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"><strong>XP COMPATIBLE, NO WEBENGINE/WEBVIEW, 32-bit ONLY, just for the unreconstructed people who want to use XP eagerly</strong></td></tr>
+    </tbody>
+</table>
+<h3 id="windows-mingw-2">Windows-MinGW</h3>
+<table>
+    <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.6.3-Windows-x86-MinGW4.9.4-staticFull-20200104-ManualPatchSslLib.7z</b></th></tr></thead>
+    <tbody>
+        <tr><td width="20%"><b>Download:</b></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle green">
+  <a href="https://osdn.net/downloads/users/30/30723/Qt5.6.3-Windows-x86-MinGW4.9.4-staticFull-20200104-ManualPatchSslLib.7z" target="_blank" rel="noopener">
+    OSDN link
+  </a>
+</span></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Windows-x86/Qt5.6.3-Windows-x86-MinGW4.9.4-staticFull-20200104-ManualPatchSslLib.7z" target="_blank" rel="noopener">
+    SourceForge link
+  </a>
+</span></td>
+        </tr>
+        <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows XP SP3</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">MinGW-w64 v5 w/ GCC 4.9.4</td></tr><tr><td width="20%"><b>MinGW Used:</b></td><td colspan="4" width="80%">
+<span class="btn cstyle grey">
+  <a href="https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/4.9.4/threads-posix/dwarf/i686-4.9.4-release-posix-dwarf-rt_v5-rev0.7z" target="_blank" rel="noopener">
+    32-bit MinGW-W64 4.9.4
+  </a>
+</span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+    </tbody>
+</table>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="sidebar" class="default-animation">
+      <div id="header-wrapper" class="default-animation">
+        <div id="header" class="default-animation">
+<p class="fsu0413_logo"><img src="https://codereview.qt-project.org/static/logo_qt.png" /></p>
+        </div>
+      </div>
+      <div id="homelinks" class="default-animation">
+        <ul>
+          <li>
+              <a class="padding" href="/"><i class='fas fa-home'></i> Home</a>
+          </li>
+        </ul>
+      </div>
+      <div id="content-wrapper" class="highlightable">
+        <ul class="topics collapsible-menu">
+          <li data-nav-id="/5.12-series/" class="dd-item"><input type="checkbox" id="section-c7d70fc8ca89372c382db6d4c30899e7" aria-controls="subsections-c7d70fc8ca89372c382db6d4c30899e7" class="toggle"><label class="a11y-only toggle" for="section-c7d70fc8ca89372c382db6d4c30899e7" >Submenu 5.12 series</label><a href="/5.12-series/">5.12 series</a><ul id="subsections-c7d70fc8ca89372c382db6d4c30899e7">
+          <li data-nav-id="/5.12-series/5.12.12-for-windows/" class="dd-item"><a href="/5.12-series/5.12.12-for-windows/">5.12.12 for Windows</a></li>
+          <li data-nav-id="/5.12-series/5.12.12-for-android/" class="dd-item"><a href="/5.12-series/5.12.12-for-android/">5.12.12 for Android</a></li></ul></li>
+          <li data-nav-id="/5.15-series/" class="dd-item"><input type="checkbox" id="section-bcd4658ab5bffb3d239c315e5066ab5c" aria-controls="subsections-bcd4658ab5bffb3d239c315e5066ab5c" class="toggle"><label class="a11y-only toggle" for="section-bcd4658ab5bffb3d239c315e5066ab5c" >Submenu 5.15 series</label><a href="/5.15-series/">5.15 series</a><ul id="subsections-bcd4658ab5bffb3d239c315e5066ab5c">
+          <li data-nav-id="/5.15-series/5.15.6-for-windows/" class="dd-item"><a href="/5.15-series/5.15.6-for-windows/">5.15.6 for Windows</a></li>
+          <li data-nav-id="/5.15-series/5.15.6-for-macos/" class="dd-item"><a href="/5.15-series/5.15.6-for-macos/">5.15.6 for macOS</a></li>
+          <li data-nav-id="/5.15-series/5.15.6-for-android/" class="dd-item"><a href="/5.15-series/5.15.6-for-android/">5.15.6 for Android</a></li>
+          <li data-nav-id="/5.15-series/5.15.6-for-webassembly/" class="dd-item"><a href="/5.15-series/5.15.6-for-webassembly/">5.15.6 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/6.2-series/" class="dd-item"><input type="checkbox" id="section-c5056826912fd9cde1cd29be237b7ce4" aria-controls="subsections-c5056826912fd9cde1cd29be237b7ce4" class="toggle"><label class="a11y-only toggle" for="section-c5056826912fd9cde1cd29be237b7ce4" >Submenu 6.2 series</label><a href="/6.2-series/">6.2 series</a><ul id="subsections-c5056826912fd9cde1cd29be237b7ce4">
+          <li data-nav-id="/6.2-series/6.2.4-for-windows/" class="dd-item"><a href="/6.2-series/6.2.4-for-windows/">6.2.4 for Windows</a></li>
+          <li data-nav-id="/6.2-series/6.2.4-for-macos/" class="dd-item"><a href="/6.2-series/6.2.4-for-macos/">6.2.4 for macOS</a></li>
+          <li data-nav-id="/6.2-series/6.2.4-for-android/" class="dd-item"><a href="/6.2-series/6.2.4-for-android/">6.2.4 for Android</a></li>
+          <li data-nav-id="/6.2-series/6.2.4-for-webassembly/" class="dd-item"><a href="/6.2-series/6.2.4-for-webassembly/">6.2.4 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/6.4-series/" class="dd-item"><input type="checkbox" id="section-56bf468aa31d798441ab0cf2e25dea6a" aria-controls="subsections-56bf468aa31d798441ab0cf2e25dea6a" class="toggle"><label class="a11y-only toggle" for="section-56bf468aa31d798441ab0cf2e25dea6a" >Submenu 6.4 series</label><a href="/6.4-series/">6.4 series</a><ul id="subsections-56bf468aa31d798441ab0cf2e25dea6a">
+          <li data-nav-id="/6.4-series/6.4.0-for-windows/" class="dd-item"><a href="/6.4-series/6.4.0-for-windows/">6.4.0 for Windows</a></li>
+          <li data-nav-id="/6.4-series/6.4.0-for-macos/" class="dd-item"><a href="/6.4-series/6.4.0-for-macos/">6.4.0 for macOS</a></li>
+          <li data-nav-id="/6.4-series/6.4.0-for-android/" class="dd-item"><a href="/6.4-series/6.4.0-for-android/">6.4.0 for Android</a></li>
+          <li data-nav-id="/6.4-series/6.4.0-for-webassembly/" class="dd-item"><a href="/6.4-series/6.4.0-for-webassembly/">6.4.0 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/miscellaneous/" class="dd-item"><input type="checkbox" id="section-d31e45d1c25ef2b7d61d374e2ea44694" aria-controls="subsections-d31e45d1c25ef2b7d61d374e2ea44694" class="toggle"><label class="a11y-only toggle" for="section-d31e45d1c25ef2b7d61d374e2ea44694" >Submenu Miscellaneous</label><a href="/miscellaneous/">Miscellaneous</a><ul id="subsections-d31e45d1c25ef2b7d61d374e2ea44694">
+          <li data-nav-id="/miscellaneous/notes-for-this-repo/" class="dd-item"><a href="/miscellaneous/notes-for-this-repo/">Notes for this repo</a></li>
+          <li data-nav-id="/miscellaneous/current-build-status/" class="dd-item"><a href="/miscellaneous/current-build-status/">Current build status</a></li>
+          <li data-nav-id="/miscellaneous/current-failures/" class="dd-item"><a href="/miscellaneous/current-failures/">Current failures</a></li>
+          <li data-nav-id="/miscellaneous/histories/" class="dd-item"><a href="/miscellaneous/histories/">Previous Histories</a></li></ul></li>
+          <li data-nav-id="/legacy-lts-series/" class="dd-item parent"><input type="checkbox" id="section-bfda66967a2d6234e15b8e23584f909c" aria-controls="subsections-bfda66967a2d6234e15b8e23584f909c" class="toggle" checked><label class="a11y-only toggle" for="section-bfda66967a2d6234e15b8e23584f909c" >Submenu Legacy LTS Series</label><a href="/legacy-lts-series/">Legacy LTS Series</a><ul id="subsections-bfda66967a2d6234e15b8e23584f909c">
+          <li data-nav-id="/legacy-lts-series/4.8-series/" class="dd-item alwaysopen"><input type="checkbox" id="section-09595787d164ae1c08e1faa9d3666117" aria-controls="subsections-09595787d164ae1c08e1faa9d3666117" class="toggle" checked><label class="a11y-only toggle" for="section-09595787d164ae1c08e1faa9d3666117" >Submenu 4.8 series</label><a href="/legacy-lts-series/4.8-series/">4.8 series</a><ul id="subsections-09595787d164ae1c08e1faa9d3666117">
+          <li data-nav-id="/legacy-lts-series/4.8-series/4.8.7-for-windows/" class="dd-item"><a href="/legacy-lts-series/4.8-series/4.8.7-for-windows/">4.8.7 for Windows</a></li>
+          <li data-nav-id="/legacy-lts-series/4.8-series/4.8.7-for-macos/" class="dd-item"><a href="/legacy-lts-series/4.8-series/4.8.7-for-macos/">4.8.7 for macOS</a></li></ul></li>
+          <li data-nav-id="/legacy-lts-series/5.6-series/" class="dd-item parent alwaysopen"><input type="checkbox" id="section-fdddc8cd2409319839f83bcbd3e1ee69" aria-controls="subsections-fdddc8cd2409319839f83bcbd3e1ee69" class="toggle" checked><label class="a11y-only toggle" for="section-fdddc8cd2409319839f83bcbd3e1ee69" >Submenu 5.6 series</label><a href="/legacy-lts-series/5.6-series/">5.6 series</a><ul id="subsections-fdddc8cd2409319839f83bcbd3e1ee69">
+          <li data-nav-id="/legacy-lts-series/5.6-series/5.6.3-for-windows/" class="dd-item active"><a href="/legacy-lts-series/5.6-series/5.6.3-for-windows/">5.6.3 for Windows</a></li>
+          <li data-nav-id="/legacy-lts-series/5.6-series/5.6.3-for-macos/" class="dd-item"><a href="/legacy-lts-series/5.6-series/5.6.3-for-macos/">5.6.3 for macOS</a></li>
+          <li data-nav-id="/legacy-lts-series/5.6-series/5.6.3-for-android/" class="dd-item"><a href="/legacy-lts-series/5.6-series/5.6.3-for-android/">5.6.3 for Android</a></li></ul></li>
+          <li data-nav-id="/legacy-lts-series/5.9-series/" class="dd-item alwaysopen"><input type="checkbox" id="section-fe1b06191fb77a46e2526abd90b6aed0" aria-controls="subsections-fe1b06191fb77a46e2526abd90b6aed0" class="toggle" checked><label class="a11y-only toggle" for="section-fe1b06191fb77a46e2526abd90b6aed0" >Submenu 5.9 series</label><a href="/legacy-lts-series/5.9-series/">5.9 series</a><ul id="subsections-fe1b06191fb77a46e2526abd90b6aed0">
+          <li data-nav-id="/legacy-lts-series/5.9-series/5.9.9-for-windows/" class="dd-item"><a href="/legacy-lts-series/5.9-series/5.9.9-for-windows/">5.9.9 for Windows</a></li>
+          <li data-nav-id="/legacy-lts-series/5.9-series/5.9.9-for-macos/" class="dd-item"><a href="/legacy-lts-series/5.9-series/5.9.9-for-macos/">5.9.9 for macOS</a></li>
+          <li data-nav-id="/legacy-lts-series/5.9-series/5.9.9-for-android/" class="dd-item"><a href="/legacy-lts-series/5.9-series/5.9.9-for-android/">5.9.9 for Android</a></li></ul></li>
+          <li data-nav-id="/legacy-lts-series/5.12-series/" class="dd-item alwaysopen"><input type="checkbox" id="section-fecdffd3ca3c1f3d131672710555b06d" aria-controls="subsections-fecdffd3ca3c1f3d131672710555b06d" class="toggle" checked><label class="a11y-only toggle" for="section-fecdffd3ca3c1f3d131672710555b06d" >Submenu 5.12 series</label><a href="/legacy-lts-series/5.12-series/">5.12 series</a><ul id="subsections-fecdffd3ca3c1f3d131672710555b06d">
+          <li data-nav-id="/legacy-lts-series/5.12-series/5.12.12-for-macos/" class="dd-item"><a href="/legacy-lts-series/5.12-series/5.12.12-for-macos/">5.12.12 for macOS</a></li>
+          <li data-nav-id="/legacy-lts-series/5.12-series/5.12.12-for-webassembly/" class="dd-item"><a href="/legacy-lts-series/5.12-series/5.12.12-for-webassembly/">5.12.12 for WebAssembly</a></li></ul></li></ul></li>
+        </ul>
+        <div class="footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter"></div>
+        <hr class="default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter">
+        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showLangSwitch showVariantSwitch">
+          <ul>
+            <li id="select-language-container" class="footerLangSwitch showLangSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-language fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-language">Language</label>
+                  <select id="select-language" onchange="location = baseUri + this.value;">
+                    <option lang="en" id="en" value="/legacy-lts-series/5.6-series/5.6.3-for-windows/" selected>English</option>
+                    <option lang="zh-cn" id="zh-cn" value="/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-windows/">简体中文（中国）</option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+            </li>
+            <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-paint-brush fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-variant">Theme</label>
+                  <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                    <option id="relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
+                    <option id="relearn-light" value="relearn-light">Relearn Light</option>
+                    <option id="learn" value="learn">Learn</option>
+                    <option id="neon" value="neon">Neon</option>
+                    <option id="red" value="red">Red</option>
+                    <option id="blue" value="blue">Blue</option>
+                    <option id="green" value="green">Green</option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+              <script>window.variants && variants.markSelectedVariant();</script>
+            </li>
+            <li class="footerVisitedLinks"><a class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+          </ul>
+        </div>
+        <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.</p>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1667392683" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1667392683" defer></script>
+    <script src="/js/featherlight.min.js?1667392683" defer></script>
+    <script src="/js/theme.js?1667392683" defer></script>
+  </body>
+</html>

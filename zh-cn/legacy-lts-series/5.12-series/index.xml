@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>5.12 系列 on Fsu0413 的原版 Qt 构建</title>
+    <link>/zh-cn/legacy-lts-series/5.12-series/</link>
+    <description>Recent content in 5.12 系列 on Fsu0413 的原版 Qt 构建</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/zh-cn/legacy-lts-series/5.12-series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>5.12.12 的 macOS 版本</title>
+      <link>/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-macos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-macos/</guid>
+      <description>重要 FINAL VERSION, NO MORE UPDATES EVEN IF REQUESTED, BUILD ENVIRONMENT HAS BEEN DESTRUCTED
+备注 SQLite(distributed with Qt) are built in the backage and have -plugin-sql-sqlite
+备注 All builds have -no-openssl -securetransport. It means that we are using Secure Transport library of macOS to provide SSL connections.
+备注 All builds have -no-icu because I think the ICU library is too big and, in most of the conditions, useless for common users.</description>
+    </item>
+    <item>
+      <title>5.12.12 的 WebAssembly 版本</title>
+      <link>/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-webassembly/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-webassembly/</guid>
+      <description>重要 FINAL VERSION, NO MORE UPDATES EVEN IF REQUESTED, BUILD ENVIRONMENT HAS BEEN DESTRUCTED
+备注 SQLite(distributed with Qt) are built in the backage and have -plugin-sql-sqlite
+备注 All packages have -no-ssl because of compile failure with -ssl -openssl-linked.
+备注 All builds have -no-icu because I think the ICU library is too big and, in most of the conditions, useless for common users.
+备注 All builds are using emscripten SDK 1.</description>
+    </item>
+  </channel>
+</rss>

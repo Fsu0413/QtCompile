@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.105.0">
+    <meta name="generator" content="Relearn 5.4.0">
+    <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
+    <meta name="author" content="Fsu0413">
+    <title>4.8 系列 :: Fsu0413 的原版 Qt 构建</title>
+    <link href="/zh-cn/legacy-lts-series/4.8-series/index.xml" rel="alternate" type="application/rss+xml" title="Fsu0413 的原版 Qt 构建">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1667392683" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1667392683" rel="stylesheet"></noscript>
+    <link href="/css/featherlight.min.css?1667392683" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1667392683" rel="stylesheet"></noscript>
+    <link href="/css/auto-complete.css?1667392683" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1667392683" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1667392683" rel="stylesheet">
+    <link href="/css/nucleus.css?1667392683" rel="stylesheet">
+    <link href="/css/fonts.css?1667392683" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1667392683" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1667392683" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css?1667392683" rel="stylesheet" id="variant-style">
+    <link href="/css/ie.css?1667392683" rel="stylesheet">
+    <link href="/css/variant.css?1667392683" rel="stylesheet">
+    <link href="/css/print.css?1667392683" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1667392683"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = '复制到剪贴板';
+      window.T_Copied_to_clipboard = '复制到剪贴板！';
+      window.T_Copy_link_to_clipboard = '将链接复制到剪贴板';
+      window.T_Link_copied_to_clipboard = '链接复制到剪贴板！';
+      // some further base stuff
+      var baseUriFull='/';
+      window.variants && variants.init( [ 'relearn-dark', 'relearn-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
+    </script>
+    <script src="/js/jquery.min.js?1667392683" defer></script><style>
+    a.fsu0413_osdnAddr {
+        color: green;
+    }
+    a.fsu0413_sfAddr {
+        color: orange;
+    }
+    a.fsu0413_githubAddr {
+        color: blue;
+    }
+    p.fsu0413_leftFooter {
+        text-align: center;
+        font-style: italic;
+        font-size: x-small;
+    }
+    p.fsu0413_logo {
+        text-align: left;
+    }
+    p.fsu0413_error {
+        font-weight: 900;
+        font-size: 300%;
+        color: red;
+    }
+    th.fsu0413_qtAddressHeader {
+        text-align: center;
+    }
+    h1 {
+        text-transform: none;
+    }
+</style>
+  </head>
+  <body class="mobile-support html" data-url="/zh-cn/legacy-lts-series/4.8-series/">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable">
+        <div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" title='导航 (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/zh-cn/"><span itemprop="name">Fsu0413 的原版 Qt 构建</span></a><meta itemprop="position" content="1"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/zh-cn/legacy-lts-series/"><span itemprop="name">遗留的长期支持版本系列</span></a><meta itemprop="position" content="2"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">4.8 系列</span><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <div id="head-tags">
+          </div>
+          <article class="default" dir="ltr">
+<h1>4.8 系列</h1>
+
+
+<ul class="children children-li children-sort-weight">
+<li><a href="/zh-cn/legacy-lts-series/4.8-series/4.8.7-for-windows/" >4.8.7 的 Windows 版本</a></li>
+<li><a href="/zh-cn/legacy-lts-series/4.8-series/4.8.7-for-macos/" >4.8.7 的 macOS 版本</a></li>
+</ul>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="sidebar" class="default-animation">
+      <div id="header-wrapper" class="default-animation">
+        <div id="header" class="default-animation">
+<p class="fsu0413_logo"><img src="https://codereview.qt-project.org/static/logo_qt.png" /></p>
+        </div>
+      </div>
+      <div id="homelinks" class="default-animation">
+        <ul>
+          <li>
+              <a class="padding" href="/zh-cn/"><i class='fas fa-home'></i> 主页</a>
+          </li>
+        </ul>
+      </div>
+      <div id="content-wrapper" class="highlightable">
+        <ul class="topics collapsible-menu">
+          <li data-nav-id="/zh-cn/5.12-series/" class="dd-item"><input type="checkbox" id="section-9aeb85270de661fbbb0f6e6b161fbf7c" aria-controls="subsections-9aeb85270de661fbbb0f6e6b161fbf7c" class="toggle"><label class="a11y-only toggle" for="section-9aeb85270de661fbbb0f6e6b161fbf7c" >子菜单5.12 系列</label><a href="/zh-cn/5.12-series/">5.12 系列</a><ul id="subsections-9aeb85270de661fbbb0f6e6b161fbf7c">
+          <li data-nav-id="/zh-cn/5.12-series/5.12.12-for-windows/" class="dd-item"><a href="/zh-cn/5.12-series/5.12.12-for-windows/">5.12.12 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/5.12-series/5.12.12-for-android/" class="dd-item"><a href="/zh-cn/5.12-series/5.12.12-for-android/">5.12.12 的安卓版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/5.15-series/" class="dd-item"><input type="checkbox" id="section-6265c888ec9e92bab195ca36e833839a" aria-controls="subsections-6265c888ec9e92bab195ca36e833839a" class="toggle"><label class="a11y-only toggle" for="section-6265c888ec9e92bab195ca36e833839a" >子菜单5.15 系列</label><a href="/zh-cn/5.15-series/">5.15 系列</a><ul id="subsections-6265c888ec9e92bab195ca36e833839a">
+          <li data-nav-id="/zh-cn/5.15-series/5.15.6-for-windows/" class="dd-item"><a href="/zh-cn/5.15-series/5.15.6-for-windows/">5.15.6 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.6-for-macos/" class="dd-item"><a href="/zh-cn/5.15-series/5.15.6-for-macos/">5.15.6 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.6-for-android/" class="dd-item"><a href="/zh-cn/5.15-series/5.15.6-for-android/">5.15.6 的安卓版本</a></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.6-for-webassembly/" class="dd-item"><a href="/zh-cn/5.15-series/5.15.6-for-webassembly/">5.15.6 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/6.2-series/" class="dd-item"><input type="checkbox" id="section-106fe2487cf90a2754e3f4a06da071f3" aria-controls="subsections-106fe2487cf90a2754e3f4a06da071f3" class="toggle"><label class="a11y-only toggle" for="section-106fe2487cf90a2754e3f4a06da071f3" >子菜单6.2 系列</label><a href="/zh-cn/6.2-series/">6.2 系列</a><ul id="subsections-106fe2487cf90a2754e3f4a06da071f3">
+          <li data-nav-id="/zh-cn/6.2-series/6.2.4-for-windows/" class="dd-item"><a href="/zh-cn/6.2-series/6.2.4-for-windows/">6.2.4 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/6.2-series/6.2.4-for-macos/" class="dd-item"><a href="/zh-cn/6.2-series/6.2.4-for-macos/">6.2.4 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/6.2-series/6.2.4-for-android/" class="dd-item"><a href="/zh-cn/6.2-series/6.2.4-for-android/">6.2.4 的安卓版本</a></li>
+          <li data-nav-id="/zh-cn/6.2-series/6.2.4-for-webassembly/" class="dd-item"><a href="/zh-cn/6.2-series/6.2.4-for-webassembly/">6.2.4 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/6.4-series/" class="dd-item"><input type="checkbox" id="section-4d05ecf5148d75d316f28c139cdfde7d" aria-controls="subsections-4d05ecf5148d75d316f28c139cdfde7d" class="toggle"><label class="a11y-only toggle" for="section-4d05ecf5148d75d316f28c139cdfde7d" >子菜单6.4 系列</label><a href="/zh-cn/6.4-series/">6.4 系列</a><ul id="subsections-4d05ecf5148d75d316f28c139cdfde7d">
+          <li data-nav-id="/zh-cn/6.4-series/6.4.0-for-windows/" class="dd-item"><a href="/zh-cn/6.4-series/6.4.0-for-windows/">6.4.0 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/6.4-series/6.4.0-for-macos/" class="dd-item"><a href="/zh-cn/6.4-series/6.4.0-for-macos/">6.4.0 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/6.4-series/6.4.0-for-android/" class="dd-item"><a href="/zh-cn/6.4-series/6.4.0-for-android/">6.4.0 的安卓版本</a></li>
+          <li data-nav-id="/zh-cn/6.4-series/6.4.0-for-webassembly/" class="dd-item"><a href="/zh-cn/6.4-series/6.4.0-for-webassembly/">6.4.0 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/miscellaneous/" class="dd-item"><input type="checkbox" id="section-caff385dd336661e79f294480ee20799" aria-controls="subsections-caff385dd336661e79f294480ee20799" class="toggle"><label class="a11y-only toggle" for="section-caff385dd336661e79f294480ee20799" >子菜单杂项</label><a href="/zh-cn/miscellaneous/">杂项</a><ul id="subsections-caff385dd336661e79f294480ee20799">
+          <li data-nav-id="/zh-cn/miscellaneous/notes-for-this-repo/" class="dd-item"><a href="/zh-cn/miscellaneous/notes-for-this-repo/">本仓库的一些备注</a></li>
+          <li data-nav-id="/zh-cn/miscellaneous/current-build-status/" class="dd-item"><a href="/zh-cn/miscellaneous/current-build-status/">当前构建状态</a></li>
+          <li data-nav-id="/zh-cn/miscellaneous/current-failures/" class="dd-item"><a href="/zh-cn/miscellaneous/current-failures/">当前的失败项</a></li>
+          <li data-nav-id="/zh-cn/miscellaneous/histories/" class="dd-item"><a href="/zh-cn/miscellaneous/histories/">之前的历史</a></li></ul></li>
+          <li data-nav-id="/zh-cn/legacy-lts-series/" class="dd-item parent"><input type="checkbox" id="section-2da9a100302eca246d29f40ea41d2bf7" aria-controls="subsections-2da9a100302eca246d29f40ea41d2bf7" class="toggle" checked><label class="a11y-only toggle" for="section-2da9a100302eca246d29f40ea41d2bf7" >子菜单遗留的长期支持版本系列</label><a href="/zh-cn/legacy-lts-series/">遗留的长期支持版本系列</a><ul id="subsections-2da9a100302eca246d29f40ea41d2bf7">
+          <li data-nav-id="/zh-cn/legacy-lts-series/4.8-series/" class="dd-item active parent alwaysopen"><input type="checkbox" id="section-6243f73e32eaaf24308f7dbe5cb00e04" aria-controls="subsections-6243f73e32eaaf24308f7dbe5cb00e04" class="toggle" checked><label class="a11y-only toggle" for="section-6243f73e32eaaf24308f7dbe5cb00e04" >子菜单4.8 系列</label><a href="/zh-cn/legacy-lts-series/4.8-series/">4.8 系列</a><ul id="subsections-6243f73e32eaaf24308f7dbe5cb00e04">
+          <li data-nav-id="/zh-cn/legacy-lts-series/4.8-series/4.8.7-for-windows/" class="dd-item"><a href="/zh-cn/legacy-lts-series/4.8-series/4.8.7-for-windows/">4.8.7 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/legacy-lts-series/4.8-series/4.8.7-for-macos/" class="dd-item"><a href="/zh-cn/legacy-lts-series/4.8-series/4.8.7-for-macos/">4.8.7 的 macOS 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.6-series/" class="dd-item alwaysopen"><input type="checkbox" id="section-5ca2792ddc9a9825cf8ec8f6764a4097" aria-controls="subsections-5ca2792ddc9a9825cf8ec8f6764a4097" class="toggle" checked><label class="a11y-only toggle" for="section-5ca2792ddc9a9825cf8ec8f6764a4097" >子菜单5.6 系列</label><a href="/zh-cn/legacy-lts-series/5.6-series/">5.6 系列</a><ul id="subsections-5ca2792ddc9a9825cf8ec8f6764a4097">
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-windows/" class="dd-item"><a href="/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-windows/">5.6.3 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-macos/" class="dd-item"><a href="/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-macos/">5.6.3 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-android/" class="dd-item"><a href="/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-android/">5.6.3 的安卓版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.9-series/" class="dd-item alwaysopen"><input type="checkbox" id="section-b9f9d985d68e657d4e7d74700e7241c3" aria-controls="subsections-b9f9d985d68e657d4e7d74700e7241c3" class="toggle" checked><label class="a11y-only toggle" for="section-b9f9d985d68e657d4e7d74700e7241c3" >子菜单5.9 系列</label><a href="/zh-cn/legacy-lts-series/5.9-series/">5.9 系列</a><ul id="subsections-b9f9d985d68e657d4e7d74700e7241c3">
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.9-series/5.9.9-for-windows/" class="dd-item"><a href="/zh-cn/legacy-lts-series/5.9-series/5.9.9-for-windows/">5.9.9 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.9-series/5.9.9-for-macos/" class="dd-item"><a href="/zh-cn/legacy-lts-series/5.9-series/5.9.9-for-macos/">5.9.9 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.9-series/5.9.9-for-android/" class="dd-item"><a href="/zh-cn/legacy-lts-series/5.9-series/5.9.9-for-android/">5.9.9 的安卓版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.12-series/" class="dd-item alwaysopen"><input type="checkbox" id="section-8f2a6bd86210a6244fd0ff0c916f8279" aria-controls="subsections-8f2a6bd86210a6244fd0ff0c916f8279" class="toggle" checked><label class="a11y-only toggle" for="section-8f2a6bd86210a6244fd0ff0c916f8279" >子菜单5.12 系列</label><a href="/zh-cn/legacy-lts-series/5.12-series/">5.12 系列</a><ul id="subsections-8f2a6bd86210a6244fd0ff0c916f8279">
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-macos/" class="dd-item"><a href="/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-macos/">5.12.12 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-webassembly/" class="dd-item"><a href="/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-webassembly/">5.12.12 的 WebAssembly 版本</a></li></ul></li></ul></li>
+        </ul>
+        <div class="footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter"></div>
+        <hr class="default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter">
+        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showLangSwitch showVariantSwitch">
+          <ul>
+            <li id="select-language-container" class="footerLangSwitch showLangSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-language fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-language">语言</label>
+                  <select id="select-language" onchange="location = baseUri + this.value;">
+                    <option lang="en" id="en" value="/legacy-lts-series/4.8-series/">English</option>
+                    <option lang="zh-cn" id="zh-cn" value="/zh-cn/legacy-lts-series/4.8-series/" selected>简体中文（中国）</option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+            </li>
+            <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-paint-brush fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-variant">主题</label>
+                  <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                    <option id="relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
+                    <option id="relearn-light" value="relearn-light">Relearn Light</option>
+                    <option id="learn" value="learn">Learn</option>
+                    <option id="neon" value="neon">Neon</option>
+                    <option id="red" value="red">Red</option>
+                    <option id="blue" value="blue">Blue</option>
+                    <option id="green" value="green">Green</option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+              <script>window.variants && variants.markSelectedVariant();</script>
+            </li>
+            <li class="footerVisitedLinks"><a class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i> 清理历史记录</a></li>
+          </ul>
+        </div>
+        <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.</p>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1667392683" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1667392683" defer></script>
+    <script src="/js/featherlight.min.js?1667392683" defer></script>
+    <script src="/js/theme.js?1667392683" defer></script>
+  </body>
+</html>

@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.105.0">
+    <meta name="generator" content="Relearn 5.4.0">
+    <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
+    <meta name="author" content="Fsu0413">
+    <title>之前的历史 :: Fsu0413 的原版 Qt 构建</title>
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1667392683" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1667392683" rel="stylesheet"></noscript>
+    <link href="/css/featherlight.min.css?1667392683" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1667392683" rel="stylesheet"></noscript>
+    <link href="/css/auto-complete.css?1667392683" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1667392683" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1667392683" rel="stylesheet">
+    <link href="/css/nucleus.css?1667392683" rel="stylesheet">
+    <link href="/css/fonts.css?1667392683" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1667392683" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1667392683" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css?1667392683" rel="stylesheet" id="variant-style">
+    <link href="/css/ie.css?1667392683" rel="stylesheet">
+    <link href="/css/variant.css?1667392683" rel="stylesheet">
+    <link href="/css/print.css?1667392683" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1667392683"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = '复制到剪贴板';
+      window.T_Copied_to_clipboard = '复制到剪贴板！';
+      window.T_Copy_link_to_clipboard = '将链接复制到剪贴板';
+      window.T_Link_copied_to_clipboard = '链接复制到剪贴板！';
+      // some further base stuff
+      var baseUriFull='/';
+      window.variants && variants.init( [ 'relearn-dark', 'relearn-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
+    </script>
+    <script src="/js/jquery.min.js?1667392683" defer></script><style>
+    a.fsu0413_osdnAddr {
+        color: green;
+    }
+    a.fsu0413_sfAddr {
+        color: orange;
+    }
+    a.fsu0413_githubAddr {
+        color: blue;
+    }
+    p.fsu0413_leftFooter {
+        text-align: center;
+        font-style: italic;
+        font-size: x-small;
+    }
+    p.fsu0413_logo {
+        text-align: left;
+    }
+    p.fsu0413_error {
+        font-weight: 900;
+        font-size: 300%;
+        color: red;
+    }
+    th.fsu0413_qtAddressHeader {
+        text-align: center;
+    }
+    h1 {
+        text-transform: none;
+    }
+</style>
+  </head>
+  <body class="mobile-support default" data-url="/zh-cn/miscellaneous/histories/">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable">
+        <div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" title='导航 (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <span id="toc-menu" title='目录 (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/zh-cn/"><span itemprop="name">Fsu0413 的原版 Qt 构建</span></a><meta itemprop="position" content="1"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/zh-cn/miscellaneous/"><span itemprop="name">杂项</span></a><meta itemprop="position" content="2"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">之前的历史</span><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+          <div class="default-animation progress">
+            <div class="toc-wrapper" dir="ltr">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#翻译">翻译</a></li>
+    <li><a href="#2022823">2022.8.23</a></li>
+    <li><a href="#2022629">2022.6.29</a></li>
+    <li><a href="#2022626">2022.6.26</a></li>
+    <li><a href="#2022413">2022.4.13</a></li>
+    <li><a href="#2022325">2022.3.25</a></li>
+    <li><a href="#2022311">2022.3.11</a></li>
+    <li><a href="#202239">2022.3.9</a></li>
+    <li><a href="#202229">2022.2.9</a></li>
+    <li><a href="#202217">2022.1.7</a></li>
+    <li><a href="#20211229">2021.12.29</a></li>
+    <li><a href="#2021127">2021.12.7</a></li>
+    <li><a href="#2021125">2021.12.5</a></li>
+    <li><a href="#2021124">2021.12.4</a></li>
+    <li><a href="#20211019">2021.10.19</a></li>
+    <li><a href="#2021103">2021.10.3</a></li>
+    <li><a href="#2021929">2021.9.29</a></li>
+    <li><a href="#2021911">2021.9.11</a></li>
+    <li><a href="#202194">2021.9.4</a></li>
+    <li><a href="#202172">2021.7.2</a></li>
+    <li><a href="#2021625">2021.6.25</a></li>
+    <li><a href="#2021619">2021.6.19</a></li>
+    <li><a href="#202169">2021.6.9</a></li>
+    <li><a href="#2021528">2021.5.28</a></li>
+    <li><a href="#2021513">2021.5.13</a></li>
+    <li><a href="#2021511">2021.5.11</a></li>
+    <li><a href="#202149">2021.4.9</a></li>
+    <li><a href="#2021315">2021.3.15</a></li>
+    <li><a href="#202139">2021.3.9</a></li>
+    <li><a href="#202134">2021.3.4</a></li>
+    <li><a href="#2021221">2021.2.21</a></li>
+    <li><a href="#202126">2021.2.6</a></li>
+    <li><a href="#202113">2021.1.3</a></li>
+    <li><a href="#202112">2021.1.2</a></li>
+    <li><a href="#20201220">2020.12.20</a></li>
+    <li><a href="#20201217">2020.12.17</a></li>
+    <li><a href="#20201111">2020.11.11</a></li>
+    <li><a href="#2020912">2020.9.12</a></li>
+    <li><a href="#202077">2020.7.7</a></li>
+    <li><a href="#2020619">2020.6.19</a></li>
+    <li><a href="#2020618">2020.6.18</a></li>
+    <li><a href="#202064">2020.6.4</a></li>
+    <li><a href="#202063">2020.6.3</a></li>
+    <li><a href="#2020518">2020.5.18</a></li>
+    <li><a href="#2020425">2020.4.25</a></li>
+    <li><a href="#2020412">2020.4.12</a></li>
+    <li><a href="#2020411">2020.4.11</a></li>
+    <li><a href="#202043">2020.4.3</a></li>
+    <li><a href="#2020326">2020.3.26</a></li>
+    <li><a href="#202036">2020.3.6</a></li>
+    <li><a href="#202026">2020.2.6</a></li>
+    <li><a href="#202025">2020.2.5</a></li>
+    <li><a href="#202023">2020.2.3</a></li>
+    <li><a href="#202022">2020.2.2</a></li>
+    <li><a href="#202021">2020.2.1</a></li>
+    <li><a href="#2020116">2020.1.16</a></li>
+    <li><a href="#202015">2020.1.5</a></li>
+    <li><a href="#20191226">2019.12.26</a></li>
+    <li><a href="#20191222">2019.12.22</a></li>
+    <li><a href="#2019125">2019.12.5</a></li>
+    <li><a href="#2019122">2019.12.2</a></li>
+    <li><a href="#20191122">2019.11.22</a></li>
+    <li><a href="#2019826">2019.8.26</a></li>
+    <li><a href="#201983">2019.8.3</a></li>
+    <li><a href="#2019713">2019.7.13</a></li>
+    <li><a href="#201979">2019.7.9</a></li>
+    <li><a href="#201978">2019.7.8</a></li>
+    <li><a href="#201976">2019.7.6</a></li>
+    <li><a href="#201975">2019.7.5</a></li>
+    <li><a href="#2019526">2019.5.26</a></li>
+    <li><a href="#2019519">2019.5.19</a></li>
+    <li><a href="#2019515">2019.5.15</a></li>
+    <li><a href="#2019422">2019.4.22</a></li>
+    <li><a href="#2019420">2019.4.20</a></li>
+    <li><a href="#2019419">2019.4.19</a></li>
+    <li><a href="#2017-年以前黑历史">2017 年以前（黑历史）</a>
+      <ul>
+        <li><a href="#2016723">2016.7.23</a></li>
+        <li><a href="#2016717">2016.7.17</a></li>
+        <li><a href="#2016716">2016.7.16</a></li>
+        <li><a href="#2016715">2016.7.15</a></li>
+        <li><a href="#201674">2016.7.4</a></li>
+        <li><a href="#201673">2016.7.3</a></li>
+        <li><a href="#2016629">2016.6.29</a></li>
+        <li><a href="#2016628">2016.6.28</a></li>
+        <li><a href="#2016627">2016.6.27</a></li>
+        <li><a href="#2016622">2016.6.22</a></li>
+        <li><a href="#2016619">2016.6.19</a></li>
+        <li><a href="#2016618">2016.6.18</a></li>
+        <li><a href="#2016613">2016.6.13</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <div id="head-tags">
+          </div>
+          <article class="default" dir="ltr">
+<h1>之前的历史</h1>
+
+<h2 id="翻译">翻译</h2>
+<p>有时间再翻译。</p>
+<h2 id="2022823">2022.8.23</h2>
+<p>Update Qt 5.12.12 with OpenSSL 1.1.1q.<br>
+Update Qt 6.2.4 with patch of CVE-2022-27404-27405-27406 and OpenSSL 3.0.5.<br>
+Update Qt 6.3.1 WebAssembly builds, which are built using emscripten SDK 3.1.6.</p>
+<p>Qt 5.15.5 is not updated since patch of CVE-2022-27404-27405-27406 provided by Qt conflicts with 5.15.5 code base.<br>
+I&rsquo;ll wait for 5.15.6 and will release without the patch if this patch doesn&rsquo;t work on 5.15.6 either.</p>
+<p>Qt 6.3.1 is not updated. Let&rsquo;s wait for 6.3.2.</p>
+<h2 id="2022629">2022.6.29</h2>
+<p>Update Qt 5.15.5 with OpenSSL 1.1.1p and QtWebEngine 5.15.10.<br>
+Resolved by a VirtualBox upgrade. <del>macOS 11 host is currently failing and builds are not updated. May be a problem of VirtualBox. Currently under investigation.</del></p>
+<h2 id="2022626">2022.6.26</h2>
+<p>Remove GitHub links since it is unstable in The Greatest China.<br>
+Update Qt 5.12.12 with OpenSSL 1.1.1p.<br>
+Update Qt 6.2.4 with OpenSSL 3.0.4.<br>
+Update Qt 6.3.1 with OpenSSL 3.0.4.</p>
+<p>Qt 5.15 are not updated for now since security issues of built versions are not patched.</p>
+<h2 id="2022413">2022.4.13</h2>
+<p>Upload Qt 6.3.0 versions.<br>
+Update Qt 5.15 / 6.2 with CVE patches.</p>
+<p>Happy birthday to me!</p>
+<h2 id="2022325">2022.3.25</h2>
+<p>Upload Qt 6.2.4 versions.<br>
+Update Qt 5.12 / 5.15 versions with OpenSSL 1.1.1n / 3.0.2.</p>
+<p>Happy birthday to Iroi Iamgay!</p>
+<h2 id="2022311">2022.3.11</h2>
+<p>Upload Qt 5.12.12 / 5.15.3-5 VS 2017+ versions.</p>
+<h2 id="202239">2022.3.9</h2>
+<p>Upload 5.12.12 macOS (Extra version) / Android versions with CVE-2022-25255 patched.<br>
+Upload Qt 5.15.3 with WebEngine 5.15.8 / QtScript 5.15.8, with CVE-2022-25255 and CVE-2022-25643 patched.<br>
+(VS version is currently undone for now since VS has got an update and Qt is currently rebuilding)</p>
+<p>Code of Qt 5.12.12 in local environment is got CVE patched so newer build will always have CVE patched.<br>
+Code of Qt 5.15.3 in local environment is got CVE patched and will be patched every time before Qt 5.15.9 opensource release. Newer build will always have CVE patched.<br>
+Qt 6.2.4 will have CVE patched in original code and will make opensource release soon. Let&rsquo;s wait for it and do not patch the code.</p>
+<h2 id="202229">2022.2.9</h2>
+<p>Upload 6.2.3 all versions.<br>
+Update VS2017 / VS2019 / VS2022 to their latest version.<br>
+Upload Qt 6.2.3 series built with VS2022.</p>
+<h2 id="202217">2022.1.7</h2>
+<p>Upload Qt 5.15.2 with WebEngine 5.15.8 / QtScript 5.15.8.<br>
+Upload Qt 5.15.2 series built with VS2022.</p>
+<h2 id="20211229">2021.12.29</h2>
+<p>Upload 5.12.12 Android / 5.12.12 Windows / 5.15.2 Android / 6.2.2 Android versions with OpenSSL 1.1.1m.<br>
+Windows hosted versions has their QQtPatcher update to 0.8.1, which support more 5.12 specific hard-code path patching.</p>
+<h2 id="2021127">2021.12.7</h2>
+<p>Upload 6.2.2 macOS / Windows versions with QtPdf.<br>
+QtPdf is not automatically built anymore with QtWebEngine since Qt 6, and should be enabled manually for now.</p>
+<p>Upload 6.2.2 macOS ARM64 version.</p>
+<h2 id="2021125">2021.12.5</h2>
+<p>Upload Qt 5.15.2 with WebEngine 5.15.7 / QtScript 5.15.7.<br>
+Remove 5.15.2 Windows arm64 version since it is not officially supported.<br>
+macOS Qt 5.15 / 5.12 cross builds will stuck at macOS 11 with Xcode 12.5.1 since compile error occurs on Xcode 13.</p>
+<p>Upload Qt 6.2.2 series, including MinGW version.<br>
+Update MinGW to 11.2.0 w/ MinGW-W64 v9, which is same as what Qt is using.<br>
+Update Android SDK for building Qt 6.2.2.</p>
+<p>Remove 6.1.3 Windows hosted Android version and MinGW version since builds of Qt 6.2 of same configuration is available.</p>
+<h2 id="2021124">2021.12.4</h2>
+<p>Upload Qt 5.12.12.<br>
+Remove 5.12.10 Windows arm64 version since it does not build anymore since one year ago.</p>
+<p>Since 5.12 series reaches its EOL and macOS and WebAssembly versions don&rsquo;t use OpenSSL, this build are their final build.<br>
+Other builds where OpenSSL are used will be built until OpenSSL 1.1.1 series reaches EOL, i.e., 2023.9.11.</p>
+<h2 id="20211019">2021.10.19</h2>
+<p>Upload Qt 6.2.0 using mstorsjo&rsquo;s LLVM-based MinGW toolchain.<br>
+Currently only x86_64 build is available, with both UCRT and msvcrt versions.</p>
+<p>These build use newer MinGW-w64 version which is v9, while MinGW 8.1.0 is using v6.<br>
+I&rsquo;d recommend using this version if you want to try something new.</p>
+<h2 id="2021103">2021.10.3</h2>
+<p>Upload Qt 6.2.0.</p>
+<h2 id="2021929">2021.9.29</h2>
+<p>Upload Qt 6.2.0-rc2.</p>
+<h2 id="2021911">2021.9.11</h2>
+<p>Upload Qt 5.15.2 with WebEngine 5.15.6 / QtScript 5.15.6.<br>
+Upload Qt 5.15.2 for VS2017+ without WebEngine for newer VS versions.</p>
+<h2 id="202194">2021.9.4</h2>
+<p>Upload Qt 6.1.3.<br>
+Update OpenSSL to 1.1.1l.<br>
+Rebuild 5.15.2 / 5.12.11 Android version using OpenSSL 1.1.1l.<br>
+Rebuild 5.12.11 Windows version using OpenSSL 1.1.1l. (except for MinGW 64-bit which build failed)</p>
+<h2 id="202172">2021.7.2</h2>
+<p>Upload Qt 6.1.2.</p>
+<h2 id="2021625">2021.6.25</h2>
+<p>Upload archives to OSDN again for better network in the Greatest China.</p>
+<h2 id="2021619">2021.6.19</h2>
+<p>Upload Qt 5.12.11 with QtWebEngine.<br>
+Upload Qt 5.15.2 with WebEngine 5.15.5 / QtScript 5.15.5.</p>
+<h2 id="202169">2021.6.9</h2>
+<p>Upload Qt 6.1.1 with Android versions.<br>
+Re-install RockyLinux 8.4.</p>
+<h2 id="2021528">2021.5.28</h2>
+<p>Upload Qt 5.12.11 (Windows ARM64 version doesn&rsquo;t upload because of compile failure)<br>
+Transited CentOS to (current unstable) RockyLinux.</p>
+<h2 id="2021513">2021.5.13</h2>
+<p>Upload Qt 5.15.2 with WebEngine 5.15.4 / QtScript 5.15.4.<br>
+Rebuild 5.15.2 Android version using OpenSSL 1.1.1k.</p>
+<h2 id="2021511">2021.5.11</h2>
+<p>Upload 6.1.0 (Desktop version)  <strong>Android version build fails</strong><br>
+Qt 6.1 series is shipping with full addon. I don&rsquo;t need to download addon manually.</p>
+<h2 id="202149">2021.4.9</h2>
+<p>Upload 6.0.3 w/ addon.<br>
+Site is re-generated using Hugo.</p>
+<h2 id="2021315">2021.3.15</h2>
+<p>Upload 6.0.2 w/ addon. (Previous versions are without addon)<br>
+Rebuild 5.15.2 Android version using Android NDK r21e.<br>
+Rebuild 5.12.10 VS2019 builds with newer VS2019 and newer OpenSSL.</p>
+<p>I will ship Qt 6 with full addon from now on. There was and will be no <code>lite</code> version of dynamic/shared builds.</p>
+<h2 id="202139">2021.3.9</h2>
+<p>Upload 5.15.2 w/ QtWebEngine 5.15.3 builds for VS2019 / macOS 11.<br>
+Windows SDK is updated to the latest version, which is 10.0.19041.<br>
+Upload 5.12.10 Android builds w/ Android NDK r21e.</p>
+<h2 id="202134">2021.3.4</h2>
+<p>Upload 6.0.2 builds.<br>
+VS2019 is updated to the latest version, which is 16.9.0.<br>
+Update macOS to 11.2.2.<br>
+<font color=red><b>ANDROID BUILDS ARE WITHOUT LINKED OpenSSL SUPPORT due to compile error!!!!!!!!</b></font></p>
+<h2 id="2021221">2021.2.21</h2>
+<p>Upload Windows hosted Android builds of Qt 6.0.1.<br>
+<font color=red><b>ANDROID BUILDS ARE WITHOUT LINKED OpenSSL SUPPORT due to compile error!!!!!!!!</b></font></p>
+<h2 id="202126">2021.2.6</h2>
+<p>Upload 6.0.1 builds except Windows crossed Android builds.<br>
+VS2019 is updated to the latest version, which is 16.8.4.<br>
+Update macOS to 11.1.<br>
+<font color=red><b>ANDROID BUILDS ARE WITHOUT LINKED OpenSSL SUPPORT due to compile error!!!!!!!!</b></font></p>
+<h2 id="202113">2021.1.3</h2>
+<p>Upload 6.0.0 Android builds (Linux host).<br>
+<font color=red><b>ANDROID BUILDS ARE WITHOUT LINKED OpenSSL SUPPORT due to compile error!!!!!!!!</b></font></p>
+<h2 id="202112">2021.1.2</h2>
+<p>Upload 6.0.0 Android builds (macOS host).<br>
+Rebuild 6.0.0 Windows and macOS builds with stripped binary.<br>
+Note that Android API Level has changed to android-24 since Qt 6.0.0.<br>
+<font color=red><b>ANDROID BUILDS ARE WITHOUT LINKED OpenSSL SUPPORT due to compile error!!!!!!!!</b></font></p>
+<h2 id="20201220">2020.12.20</h2>
+<p>Upload 6.0.0 Windows and macOS builds.</p>
+<h2 id="20201217">2020.12.17</h2>
+<p>Upload 5.15.2 builds. (All builds are without Webengine because of compile failure)<br>
+Update macOS to 11.0.1.<br>
+VS2019 is updated to the latest version, which is 16.8.3.<br>
+VS2017 is updated to the latest version, which is 15.9.30.</p>
+<h2 id="20201111">2020.11.11</h2>
+<p>Upload 5.12.10 builds.<br>
+macOS is updated to 10.15.7 and XCode is updated to 12.0.<br>
+VS2019 is updated to the latest version, which is 16.7.7.</p>
+<h2 id="2020912">2020.9.12</h2>
+<p>Upload 5.15.1 builds.<br>
+macOS is updated to 10.15.6 (19G2021)<br>
+VS2017/2019 are updated to the latest version, which is 15.9.27/16.7.3.</p>
+<h2 id="202077">2020.7.7</h2>
+<p>Upload all artifacts, also to Github release in addition to SourceForge.</p>
+<h2 id="2020619">2020.6.19</h2>
+<p>Upload Android NDK to r21d.<br>
+Rebuilt all android packages using new NDK.</p>
+<h2 id="2020618">2020.6.18</h2>
+<p>Upload 5.12.9 builds.</p>
+<h2 id="202064">2020.6.4</h2>
+<p>Upload 5.15.0 macOS host builds. (macOS host builds of 5.12.8 have compile failure, we should wait for 5.12.9)<br>
+Upload 5.15.0 Android builds. (macOS 10.15.5 hosted)</p>
+<h2 id="202063">2020.6.3</h2>
+<p>Add proprietary codecs support for Qt WebEngine for Qt 5.12.9 and 5.15.0 or later.<br>
+Upload 5.15.0 series. (<strong>Except macOS host builds, which encountered some issue while compiling</strong>)<br>
+Use MinGW-w64 to 8.1.0 for Qt 5.15.0 series, switch the build environment of MinGW 8.1.0 to Win10.<br>
+Upload 5.9.9 VS2017 builds for newer VS2017 compiler.<br>
+Upload 5.12.8 WebAssembly builds for newer emsdk definition.<br>
+Upload 5.12.8 Android builds for NDK r21b.<br>
+Remove 5.14 series except macOS ones. (macOS ones will be deleted once 5.15 finishes compiling)</p>
+<p>Since Qt 5.9 series has reached EOL, there will be no further Qt 5.9 builds.<br>
+i.e., this build is the last build of these packages.<br>
+The build script and environment of Qt 5.9 series has been destructed.</p>
+<h2 id="2020518">2020.5.18</h2>
+<p>Upload 5.15.0-rc2 series. (<strong>All macOS version, including cross builds, are not uploaded because of broken environment</strong>)<br>
+Update Win10 to 10.0.19041(2004)</p>
+<h2 id="2020425">2020.4.25</h2>
+<p>Upload 5.15.0-beta4 series. (<strong>All macOS version, including cross builds, are not uploaded because of broken environment</strong>)</p>
+<h2 id="2020412">2020.4.12</h2>
+<p>Upload 5.15.0-beta3 series. (<strong>All macOS version, including cross builds, are not uploaded because of broken environment</strong>)</p>
+<h2 id="2020411">2020.4.11</h2>
+<p>Upload 5.12.8 series. (<strong>All macOS version, including cross builds, are not uploaded because of broken environment</strong>)</p>
+<h2 id="202043">2020.4.3</h2>
+<p>Upload 5.14.2 series. (macOS versions are not provided due to QtWebEngine compile failure, <strong>HOST ONLY</strong>)</p>
+<h2 id="2020326">2020.3.26</h2>
+<p>Upload 5.15.0-beta2 series. (Static <code>full</code> version don&rsquo;t compile)<br>
+Mirror this site on Coding.net for faster browsing in China.</p>
+<h2 id="202036">2020.3.6</h2>
+<p>Upload 5.12.7 Android series with NDK r21.<br>
+Upload 5.15.0-beta1 series. (VS2017 and VS2019 shared builds are not provided due to QtWebEngine compile failure)</p>
+<h2 id="202026">2020.2.6</h2>
+<p>Upload Windows on ARM64 cross build. (for now it only supports Qt 5.12 and later using VS2017.)</p>
+<h2 id="202025">2020.2.5</h2>
+<p>Upload Qt 5.12.7 Series. (Qt 5.12.7 actually released on 31st, Jan., but I didn&rsquo;t mention it&hellip;.)<br>
+Note: QQtPatcher has got an update (to 0.7.0) after the build completed.<br>
+Since most of the modifications affects Windows builds, I only manually recompressed Windows packages.<br>
+Other packages are not recompressed.</p>
+<h2 id="202023">2020.2.3</h2>
+<p>Add new configurations of static <code>full</code> packages of MinGW builds of Qt 5.12 Series.<br>
+Upload Qt 5.12.6 MinGW static <code>full</code> builds.</p>
+<h2 id="202022">2020.2.2</h2>
+<p>Rebuild Qt 5.12.6 VS2017 &amp; VS2019 versions using newer VS.</p>
+<h2 id="202021">2020.2.1</h2>
+<p>I have switched to CentOS 8 for both Android builds and WebAssembly builds.<br>
+For now only 5.14 series is built successfully and uploaded.<br>
+CentOS 7 and Ubuntu 16.04 environment has been destructed.</p>
+<p>Upload Qt 5.14.1 Series.<br>
+Rebuild all Linux hosted Android builds and WebAssembly builds, using CentOS 8.<br>
+Since there is no host tools in OpenSSL packages, most of the OpenSSL packages are not rebuilt.</p>
+<h2 id="2020116">2020.1.16</h2>
+<p>Recompress the Qt 5.6 static <code>full</code> packages due to a script bug which causes the missing of OpenSSL libraries.<br>
+Note that the packages are not rebuilt.<br>
+(Qt 5.12 packages will update later when OpenSSL 1.1 series or Qt 5.12 series updates)</p>
+<h2 id="202015">2020.1.5</h2>
+<p>Packages using OpenSSL 1.0.2 Series rebuilt using OpenSSL 1.0.2u.<br>
+Including all Qt 4 packages and non-macOS Qt 5.6/5.9 packages.</p>
+<p>Since OpenSSL 1.0.2 Series has reached EOL, there will be no further Qt 4 and Qt 5.6 builds.<br>
+i.e., this build is the last build of these packages.<br>
+The build script and environment of Qt 4 and 5.6 series has been destructed.</p>
+<h2 id="20191226">2019.12.26</h2>
+<p>Windows 8.1 Update build environment has been finished, and Windows Server 2008 R2 build environment has been destructed.<br>
+Upload all packages which build on Windows 8.1.</p>
+<h2 id="20191222">2019.12.22</h2>
+<p>Upload 5.9.9 and 5.14.0 packages.<br>
+(Qt 5.14.0 packages for android is missing due to an error during configure)</p>
+<h2 id="2019125">2019.12.5</h2>
+<p>Upload all macOS packages.</p>
+<h2 id="2019122">2019.12.2</h2>
+<p>Uploaded all rebuilt packages after my business trip.</p>
+<h2 id="20191122">2019.11.22</h2>
+<p>Update pending after I return to China&hellip;..<br>
+Qt 5.12 Series =&gt; 5.12.6<br>
+Qt 5.13 Series =&gt; 5.13.2 -&gt; prepare to migrate to Qt 5.14 Series<br>
+OpenSSL 1.0.2 Series =&gt; OpenSSL 1.0.2t (affects Qt 4.8/5.6/5.9 Series)<br>
+OpenSSL 1.1.1 Series =&gt; OpenSSL 1.1.1d (affects Qt 5.12/5.13 Series)<br>
+VS2017 =&gt; 15.9.17<br>
+VS2019 =&gt; 16.3.10<br>
+Android NDK =&gt; r20b</p>
+<p>OS update pending&hellip;..<br>
+Win10 =&gt; 10.0.18363<br>
+CentOS 7 =&gt; 7.7.1908 (Should there be a CentOS 8 environment? Currently Ubuntu 16.04 LTS is used to build the WebAssembly packages. If we change to CentOS 8 then it will become based on newer software)<br>
+macOS 10.14 =&gt; 10.15</p>
+<p>There will be no further build of original Qt 4.8/5.6 after OpenSSL 1.0.2 Series gets EOL (will be at 2019.12.31)<br>
+There will be no further build of original Qt 5.9 after Qt 5.9 Series gets EOL (will be at 2020.5.31)<br>
+There will be no build on Windows 7 (Server 2008 R2) after Windows 7 gets EOL (will be at 2020.1.11), existing Windows 7 builds will migrate to Windows 8.1 (Server 2012 R2)</p>
+<h2 id="2019826">2019.8.26</h2>
+<p>A bug about packaging has been revealed. It affects all versions of Qt 5.12 or later.<br>
+The package of 5.12.5 will fix this issue.</p>
+<h2 id="201983">2019.8.3</h2>
+<p>Re-create this site using amWiki.<br>
+Since there is a builtin content list when using amWiki, it no longer needs to write the downloadable content list manually by now.</p>
+<h2 id="2019713">2019.7.13</h2>
+<p>Rebuild <strong>ALL</strong> packages using updated QQtPatcher due to a bug in QQtPatcher.<br>
+VS2017 is updated to 15.9.14.<br>
+VS2019 is updated to 16.1.6.</p>
+<h2 id="201979">2019.7.9</h2>
+<p>WebAssembly packages are updated to Qt 5.12.4 and Qt 5.13.0.</p>
+<h2 id="201978">2019.7.8</h2>
+<p>Android packages are updated to Qt 5.12.4 and Qt 5.13.0. <font color=red><strong>Used NDK r19c, although the file name is r20</strong></font><br>
+Rebuild Android packages with OpenSSL 1.1.1c and 1.0.2s.<br>
+Page links to Android/Wasm packages are put into main page instead of the &ldquo;XXX-series&rdquo; pages.</p>
+<h2 id="201976">2019.7.6</h2>
+<p>Windows packages are updated to Qt 5.13.0.</p>
+<h2 id="201975">2019.7.5</h2>
+<p>Rebuild Windows packages with OpenSSL 1.1.1c and 1.0.2s.<br>
+Windows packages are updated to Qt 5.12.4.</p>
+<h2 id="2019526">2019.5.26</h2>
+<p>Rebuild VS2017/VS2019 packages with update VS version.</p>
+<h2 id="2019519">2019.5.19</h2>
+<p>Linux hosted Android packages rebuilt with updated configurations.<br>
+Upload Linux hosted WebAssembly package(No &rsquo;s&rsquo;&hellip;)<br>
+Since SF.net reworked, the files are reuploaded to SF.net.</p>
+<p>(Why can&rsquo;t I use SFTP to manage the files on OSDN?????)</p>
+<h2 id="2019515">2019.5.15</h2>
+<p>Windows packages rebuilt with updated configurations.<br>
+Since SF.net can&rsquo;t be accessed using China Telecom in Dalian, China, the files are reuploaded to OSDN.</p>
+<h2 id="2019422">2019.4.22</h2>
+<p>Upload 5.9.8 and 5.12.3 VS2015 packages.</p>
+<h2 id="2019420">2019.4.20</h2>
+<p>Finish 5.9.8 and 5.12.3 series.</p>
+<h2 id="2019419">2019.4.19</h2>
+<p>Removed All old packages.<br>
+Upload new packages built since Mar., 2019.</p>
+<h2 id="2017-年以前黑历史">2017 年以前（黑历史）</h2>
+<p>是的，我想写一些东西，但是不知道怎么写。。。</p>
+<h3 id="2016723">2016.7.23</h3>
+<p>Upload 5.6.1-1/5.7.0 VS2015 static builds again due to link issue.</p>
+<p>From now on, I will not link MySQL/PostgreSQL/ODBC(unix-like only)/OpenSSL in the static packages.<br>
+The configure scripts may be like this:</p>
+<pre tabindex="0"><code>configure xxxxx -static -openssl -qt-sql-sqlite -no-sql-mysql -no-sql-psql -no-sql-odbc(for unix-like)/-qt-sql-odbc(for windows)
+</code></pre><p>I&rsquo;m anti of static builds, see the notes for details.</p>
+<h3 id="2016717">2016.7.17</h3>
+<p>Upload all files to Mega.nz for users who are not in China.</p>
+<h3 id="2016716">2016.7.16</h3>
+<p>Upload 4.8.7 macOS shared packages.<br>
+Upload 4.8.7 Linux shared packages.</p>
+<h3 id="2016715">2016.7.15</h3>
+<p>From now on, I will distribute the config.status(for Unix-like system) or configure.cache(for Windows) in the compressed packages.<br>
+config.status contains all my commands when calling configure, while configure.cache only contains the parameters passed to configure.exe.<br>
+Upload 4.8.7 VS2015 Shared packages. (And are the first and second packages which have configure.cache)<br>
+Update note to suit Qt4.<br>
+Update note about QtBinPatcher.<br>
+Upload 4.8.7 VS2010 Shared packages.<br>
+Update note about old-version Qt.</p>
+<h3 id="201674">2016.7.4</h3>
+<p>Upload 5.6.1-1 VS2015 Static packages.<br>
+Upload 5.6.1-1 Android(Windows x86_64 host) Shared packages.<br>
+Upload 5.6.1-1 VS2010 Shared packages <strong>just for the unreconstructed people using Windows XP</strong>.<br>
+Update note.</p>
+<h3 id="201673">2016.7.3</h3>
+<p>Upload 5.6.1-1 VS2015 Shared packages.<br>
+Upload 5.6.1-1 MinGW Shared packages.<br>
+Upload 5.6.1-1 Linux packages.<br>
+Upload 5.6.1-1 macOS packages.<br>
+Removed 5.6.1 packages.<br>
+Upload 5.6.1-1 Android(Linux x86_64 host) Shared packages.<br>
+Upload 5.6.1-1 Android(macOS x86_64 host) Shared packages.</p>
+<h3 id="2016629">2016.6.29</h3>
+<p>Upload 5.7.0 Android(Windows x86_64 host) Shared packages.</p>
+<h3 id="2016628">2016.6.28</h3>
+<p>Upload 5.7.0 Android(Linux x86_64 host) Shared packages.<br>
+Upload 5.7.0 Android(macOS x86_64 host) Shared packages.</p>
+<h3 id="2016627">2016.6.27</h3>
+<p>Update Disclaimer.</p>
+<h3 id="2016622">2016.6.22</h3>
+<p>Upload 5.7.0 VS2015 Static packages.<br>
+Upload 5.7.0 MinGW Shared packages.<br>
+VS2015-clang packages failed to build, thus cannot upload.</p>
+<h3 id="2016619">2016.6.19</h3>
+<p>Upload 5.7.0 VS2015 Shared packages.<br>
+Upload 5.7.0 macOS packages.</p>
+<h3 id="2016618">2016.6.18</h3>
+<p>Upload 5.7.0 Linux packages.<br>
+Removed 5.6.0 packages.<br>
+Upload 5.6.1 VS2015 Static packages.</p>
+<h3 id="2016613">2016.6.13</h3>
+<p>Initial commit, includes builds of Qt 5.6.0, part of 5.6.1 and 5.7.0-RC.</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="sidebar" class="default-animation">
+      <div id="header-wrapper" class="default-animation">
+        <div id="header" class="default-animation">
+<p class="fsu0413_logo"><img src="https://codereview.qt-project.org/static/logo_qt.png" /></p>
+        </div>
+      </div>
+      <div id="homelinks" class="default-animation">
+        <ul>
+          <li>
+              <a class="padding" href="/zh-cn/"><i class='fas fa-home'></i> 主页</a>
+          </li>
+        </ul>
+      </div>
+      <div id="content-wrapper" class="highlightable">
+        <ul class="topics collapsible-menu">
+          <li data-nav-id="/zh-cn/5.12-series/" class="dd-item"><input type="checkbox" id="section-9aeb85270de661fbbb0f6e6b161fbf7c" aria-controls="subsections-9aeb85270de661fbbb0f6e6b161fbf7c" class="toggle"><label class="a11y-only toggle" for="section-9aeb85270de661fbbb0f6e6b161fbf7c" >子菜单5.12 系列</label><a href="/zh-cn/5.12-series/">5.12 系列</a><ul id="subsections-9aeb85270de661fbbb0f6e6b161fbf7c">
+          <li data-nav-id="/zh-cn/5.12-series/5.12.12-for-windows/" class="dd-item"><a href="/zh-cn/5.12-series/5.12.12-for-windows/">5.12.12 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/5.12-series/5.12.12-for-android/" class="dd-item"><a href="/zh-cn/5.12-series/5.12.12-for-android/">5.12.12 的安卓版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/5.15-series/" class="dd-item"><input type="checkbox" id="section-6265c888ec9e92bab195ca36e833839a" aria-controls="subsections-6265c888ec9e92bab195ca36e833839a" class="toggle"><label class="a11y-only toggle" for="section-6265c888ec9e92bab195ca36e833839a" >子菜单5.15 系列</label><a href="/zh-cn/5.15-series/">5.15 系列</a><ul id="subsections-6265c888ec9e92bab195ca36e833839a">
+          <li data-nav-id="/zh-cn/5.15-series/5.15.6-for-windows/" class="dd-item"><a href="/zh-cn/5.15-series/5.15.6-for-windows/">5.15.6 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.6-for-macos/" class="dd-item"><a href="/zh-cn/5.15-series/5.15.6-for-macos/">5.15.6 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.6-for-android/" class="dd-item"><a href="/zh-cn/5.15-series/5.15.6-for-android/">5.15.6 的安卓版本</a></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.6-for-webassembly/" class="dd-item"><a href="/zh-cn/5.15-series/5.15.6-for-webassembly/">5.15.6 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/6.2-series/" class="dd-item"><input type="checkbox" id="section-106fe2487cf90a2754e3f4a06da071f3" aria-controls="subsections-106fe2487cf90a2754e3f4a06da071f3" class="toggle"><label class="a11y-only toggle" for="section-106fe2487cf90a2754e3f4a06da071f3" >子菜单6.2 系列</label><a href="/zh-cn/6.2-series/">6.2 系列</a><ul id="subsections-106fe2487cf90a2754e3f4a06da071f3">
+          <li data-nav-id="/zh-cn/6.2-series/6.2.4-for-windows/" class="dd-item"><a href="/zh-cn/6.2-series/6.2.4-for-windows/">6.2.4 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/6.2-series/6.2.4-for-macos/" class="dd-item"><a href="/zh-cn/6.2-series/6.2.4-for-macos/">6.2.4 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/6.2-series/6.2.4-for-android/" class="dd-item"><a href="/zh-cn/6.2-series/6.2.4-for-android/">6.2.4 的安卓版本</a></li>
+          <li data-nav-id="/zh-cn/6.2-series/6.2.4-for-webassembly/" class="dd-item"><a href="/zh-cn/6.2-series/6.2.4-for-webassembly/">6.2.4 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/6.4-series/" class="dd-item"><input type="checkbox" id="section-4d05ecf5148d75d316f28c139cdfde7d" aria-controls="subsections-4d05ecf5148d75d316f28c139cdfde7d" class="toggle"><label class="a11y-only toggle" for="section-4d05ecf5148d75d316f28c139cdfde7d" >子菜单6.4 系列</label><a href="/zh-cn/6.4-series/">6.4 系列</a><ul id="subsections-4d05ecf5148d75d316f28c139cdfde7d">
+          <li data-nav-id="/zh-cn/6.4-series/6.4.0-for-windows/" class="dd-item"><a href="/zh-cn/6.4-series/6.4.0-for-windows/">6.4.0 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/6.4-series/6.4.0-for-macos/" class="dd-item"><a href="/zh-cn/6.4-series/6.4.0-for-macos/">6.4.0 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/6.4-series/6.4.0-for-android/" class="dd-item"><a href="/zh-cn/6.4-series/6.4.0-for-android/">6.4.0 的安卓版本</a></li>
+          <li data-nav-id="/zh-cn/6.4-series/6.4.0-for-webassembly/" class="dd-item"><a href="/zh-cn/6.4-series/6.4.0-for-webassembly/">6.4.0 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/miscellaneous/" class="dd-item parent"><input type="checkbox" id="section-caff385dd336661e79f294480ee20799" aria-controls="subsections-caff385dd336661e79f294480ee20799" class="toggle" checked><label class="a11y-only toggle" for="section-caff385dd336661e79f294480ee20799" >子菜单杂项</label><a href="/zh-cn/miscellaneous/">杂项</a><ul id="subsections-caff385dd336661e79f294480ee20799">
+          <li data-nav-id="/zh-cn/miscellaneous/notes-for-this-repo/" class="dd-item"><a href="/zh-cn/miscellaneous/notes-for-this-repo/">本仓库的一些备注</a></li>
+          <li data-nav-id="/zh-cn/miscellaneous/current-build-status/" class="dd-item"><a href="/zh-cn/miscellaneous/current-build-status/">当前构建状态</a></li>
+          <li data-nav-id="/zh-cn/miscellaneous/current-failures/" class="dd-item"><a href="/zh-cn/miscellaneous/current-failures/">当前的失败项</a></li>
+          <li data-nav-id="/zh-cn/miscellaneous/histories/" class="dd-item active"><a href="/zh-cn/miscellaneous/histories/">之前的历史</a></li></ul></li>
+          <li data-nav-id="/zh-cn/legacy-lts-series/" class="dd-item"><input type="checkbox" id="section-2da9a100302eca246d29f40ea41d2bf7" aria-controls="subsections-2da9a100302eca246d29f40ea41d2bf7" class="toggle"><label class="a11y-only toggle" for="section-2da9a100302eca246d29f40ea41d2bf7" >子菜单遗留的长期支持版本系列</label><a href="/zh-cn/legacy-lts-series/">遗留的长期支持版本系列</a><ul id="subsections-2da9a100302eca246d29f40ea41d2bf7">
+          <li data-nav-id="/zh-cn/legacy-lts-series/4.8-series/" class="dd-item alwaysopen"><input type="checkbox" id="section-6243f73e32eaaf24308f7dbe5cb00e04" aria-controls="subsections-6243f73e32eaaf24308f7dbe5cb00e04" class="toggle" checked><label class="a11y-only toggle" for="section-6243f73e32eaaf24308f7dbe5cb00e04" >子菜单4.8 系列</label><a href="/zh-cn/legacy-lts-series/4.8-series/">4.8 系列</a><ul id="subsections-6243f73e32eaaf24308f7dbe5cb00e04">
+          <li data-nav-id="/zh-cn/legacy-lts-series/4.8-series/4.8.7-for-windows/" class="dd-item"><a href="/zh-cn/legacy-lts-series/4.8-series/4.8.7-for-windows/">4.8.7 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/legacy-lts-series/4.8-series/4.8.7-for-macos/" class="dd-item"><a href="/zh-cn/legacy-lts-series/4.8-series/4.8.7-for-macos/">4.8.7 的 macOS 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.6-series/" class="dd-item alwaysopen"><input type="checkbox" id="section-5ca2792ddc9a9825cf8ec8f6764a4097" aria-controls="subsections-5ca2792ddc9a9825cf8ec8f6764a4097" class="toggle" checked><label class="a11y-only toggle" for="section-5ca2792ddc9a9825cf8ec8f6764a4097" >子菜单5.6 系列</label><a href="/zh-cn/legacy-lts-series/5.6-series/">5.6 系列</a><ul id="subsections-5ca2792ddc9a9825cf8ec8f6764a4097">
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-windows/" class="dd-item"><a href="/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-windows/">5.6.3 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-macos/" class="dd-item"><a href="/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-macos/">5.6.3 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-android/" class="dd-item"><a href="/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-android/">5.6.3 的安卓版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.9-series/" class="dd-item alwaysopen"><input type="checkbox" id="section-b9f9d985d68e657d4e7d74700e7241c3" aria-controls="subsections-b9f9d985d68e657d4e7d74700e7241c3" class="toggle" checked><label class="a11y-only toggle" for="section-b9f9d985d68e657d4e7d74700e7241c3" >子菜单5.9 系列</label><a href="/zh-cn/legacy-lts-series/5.9-series/">5.9 系列</a><ul id="subsections-b9f9d985d68e657d4e7d74700e7241c3">
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.9-series/5.9.9-for-windows/" class="dd-item"><a href="/zh-cn/legacy-lts-series/5.9-series/5.9.9-for-windows/">5.9.9 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.9-series/5.9.9-for-macos/" class="dd-item"><a href="/zh-cn/legacy-lts-series/5.9-series/5.9.9-for-macos/">5.9.9 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.9-series/5.9.9-for-android/" class="dd-item"><a href="/zh-cn/legacy-lts-series/5.9-series/5.9.9-for-android/">5.9.9 的安卓版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.12-series/" class="dd-item alwaysopen"><input type="checkbox" id="section-8f2a6bd86210a6244fd0ff0c916f8279" aria-controls="subsections-8f2a6bd86210a6244fd0ff0c916f8279" class="toggle" checked><label class="a11y-only toggle" for="section-8f2a6bd86210a6244fd0ff0c916f8279" >子菜单5.12 系列</label><a href="/zh-cn/legacy-lts-series/5.12-series/">5.12 系列</a><ul id="subsections-8f2a6bd86210a6244fd0ff0c916f8279">
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-macos/" class="dd-item"><a href="/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-macos/">5.12.12 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-webassembly/" class="dd-item"><a href="/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-webassembly/">5.12.12 的 WebAssembly 版本</a></li></ul></li></ul></li>
+        </ul>
+        <div class="footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter"></div>
+        <hr class="default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter">
+        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showLangSwitch showVariantSwitch">
+          <ul>
+            <li id="select-language-container" class="footerLangSwitch showLangSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-language fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-language">语言</label>
+                  <select id="select-language" onchange="location = baseUri + this.value;">
+                    <option lang="en" id="en" value="/miscellaneous/histories/">English</option>
+                    <option lang="zh-cn" id="zh-cn" value="/zh-cn/miscellaneous/histories/" selected>简体中文（中国）</option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+            </li>
+            <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-paint-brush fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-variant">主题</label>
+                  <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                    <option id="relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
+                    <option id="relearn-light" value="relearn-light">Relearn Light</option>
+                    <option id="learn" value="learn">Learn</option>
+                    <option id="neon" value="neon">Neon</option>
+                    <option id="red" value="red">Red</option>
+                    <option id="blue" value="blue">Blue</option>
+                    <option id="green" value="green">Green</option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+              <script>window.variants && variants.markSelectedVariant();</script>
+            </li>
+            <li class="footerVisitedLinks"><a class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i> 清理历史记录</a></li>
+          </ul>
+        </div>
+        <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.</p>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1667392683" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1667392683" defer></script>
+    <script src="/js/featherlight.min.js?1667392683" defer></script>
+    <script src="/js/theme.js?1667392683" defer></script>
+  </body>
+</html>
