@@ -1,0 +1,53 @@
+{
+    ":": {
+        "other": ":"
+    },
+    "Platform": {
+        "other": "Platform"
+    },
+    "Build Host": {
+        "other": "Build Host"
+    },
+    "Toolchain Version": {
+        "other": "Toolchain Version"
+    },
+    "Architecture": {
+        "other": "Architecture"
+    },
+    "Variant": {
+        "other": "Variant"
+    },
+    "Uploaded": {
+        "other": "Uploaded"
+    },
+    "Configuration": {
+        "other": "Configuration"
+    },
+    "Qt Version": {
+        "other": "Qt Version"
+    },
+    "Build Target": {
+        "other": "Build Target"
+    },
+    "Notes": {
+        "other": "Notes"
+    },
+    "Tested": {
+        "other": "Tested"
+    },
+    "QQtPatcher Version": {
+        "other": "QQtPatcher Version"
+    },
+    "OpenSSL Version": {
+        "other": "OpenSSL Version"
+    },
+    "Download": {
+        "other": "Download"
+    },
+    "MinGW Used": {
+        "other": "MinGW Used"
+    },
+    "link": {
+        "other": "link"
+    }
+}

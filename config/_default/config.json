@@ -1,0 +1,36 @@
+{
+	"baseURL": "http://example.org/",
+	"defaultContentLanguage": "en",
+	"title": "Fsu0413's Original Qt builds",
+	"theme": "relearn",
+	"params": {
+		"always-open": true,
+		"author": "Fsu0413",
+		"description": "Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.",
+		"disableSearch": true,
+		"disableNextPrev": true,
+		"themeVariant": ["relearn-dark","relearn-light","learn","neon","red","blue","green"],
+		"collapsibleMenu": true
+	},
+	"markup": {
+		"goldmark": {
+			"renderer": {
+				"unsafe": true
+			}
+		}
+	},
+	"Languages": {
+		"en" : {
+			"title":"Fsu0413's Original Qt builds",
+			"weight": 1,
+			"languageName": "English",
+			"landingPageName": "<i class='fas fa-home'></i> Home"
+		},
+		"zh-cn" : {
+			"title":"Fsu0413 的原版 Qt 构建",
+			"weight": 2,
+			"languageName": "简体中文（中国）",
+			"landingPageName": "<i class='fas fa-home'></i> 主页"
+		}
+	}
+}

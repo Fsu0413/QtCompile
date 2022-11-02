@@ -1,0 +1,53 @@
+{
+    ":": {
+        "other": "："
+    },
+    "Platform": {
+        "other": "平台"
+    },
+    "Build Host" : {
+        "other": "构建主机"
+    },
+    "Toolchain Version": {
+        "other": "工具链版本"
+    },
+    "Architecture": {
+        "other": "架构"
+    },
+    "Variant": {
+        "other": "变体"
+    },
+    "Uploaded": {
+        "other": "已上传"
+    },
+    "Configuration": {
+        "other": "已配置"
+    },
+    "Qt Version": {
+        "other": "Qt 版本"
+    },
+    "Build Target": {
+        "other": "构建目标"
+    },
+    "Notes": {
+        "other": "备注"
+    },
+    "Tested": {
+        "other": "已测试"
+    },
+    "QQtPatcher Version": {
+        "other": "QQtPatcher 版本"
+    },
+    "OpenSSL Version": {
+        "other": "OpenSSL 版本"
+    },
+    "Download": {
+        "other": "下载地址"
+    },
+    "MinGW Used": {
+        "other": "使用的 MinGW"
+    },
+    "link": {
+        "other": "链接"
+    }
+}

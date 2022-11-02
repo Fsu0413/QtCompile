@@ -1,0 +1,49 @@
+name: hugo
+
+on: [push]
+
+env:
+  BUILD_TYPE: Release
+  PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: 'build'
+          path: 'build'
+          submodules: 'recursive'
+      
+      - uses: actions/checkout@v3
+        with:
+          ref: 'gh-pages'
+          path: 'public'
+          fetch-depth: '1'
+      
+      - name: clean
+        run: |
+          find public -name \*.html -delete
+          find public -name \*.xml -delete
+          find public -name \*.css -delete
+          find public -name \*.js -delete
+          rm -rf public/fonts public/images public/js public/webfonts
+          find public -depth -type d -empty -delete
+
+      - uses: jakejarvis/hugo-build-action@master
+        with:
+          args: --ignoreCache --verbose -s build -d ../public -b /
+
+      - name: commit
+        run: |
+          git -C public config --local user.name "update"
+          git -C public config --local user.email "update.bot@github.actions"
+          git -C public add -A
+          git -C public commit -m "`date +%Y%m%d%H%M%S` commit"
+          mkdir $HOME/.ssh && ssh-keyscan -t rsa github.com > $HOME/.ssh/known_hosts
+          echo "${PRIVATE_KEY}" > $HOME/.ssh/id_rsa
+          chmod 600 $HOME/.ssh/id_rsa
+          git -C public push 'git@github.com:Fsu0413/QtCompile.git' HEAD:refs/heads/gh-pages
+
+          

@@ -1,0 +1,65 @@
+{{- $name := .Get 0 -}}
+{{- $buildt := .Get 1 -}}
+{{- $buildtype := cond (eq (len $buildt) 0) "regular" $buildt -}}
+{{- $conf := index (cond (eq $buildtype "legacy") .Site.Data.Fsu0413QtBuildsLegacy (cond (eq $buildtype "preview") .Site.Data.Fsu0413QtBuildsPreview .Site.Data.Fsu0413QtBuilds ) ) $name -}}
+{{- if $conf -}}
+{{- $mingwdata := .Site.Data.MinGWAddr -}}
+{{- with $conf -}}
+<table>
+    <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>{{- .fileName -}}</b></th></tr></thead>
+    <tbody>
+        <tr><td width="20%"><b>{{ T "Download" }}{{ T ":" }}</b></td>
+            <td colspan="2" width="40%">
+                {{- $contentOsdn := print "OSDN " ( T "link" ) -}}
+                {{- partial "shortcodes/button.html" (dict
+                    "context" .
+                    "href" .addrOsdn
+                    "style" "green"
+                    "content" $contentOsdn
+                ) -}}
+            </td>
+            <td colspan="2" width="40%">
+                {{- $contentSf := print "SourceForge " ( T "link" ) -}}
+                {{- partial "shortcodes/button.html" (dict
+                    "context" .
+                    "href" .addrSf
+                    "style" "orange"
+                    "content" $contentSf
+                ) -}}
+            </td>
+        </tr>
+        <tr><td width="20%"><b>{{ T "Build Host" }}{{ T ":" }}</b></td><td width="30%">{{- .data.buildHost -}}</td><td colspan="2" width="20%"><b>{{ T "Toolchain Version" }}{{ T ":" }}</b></td><td width="30%">{{- .data.toolchain -}}</td></tr>
+        {{- if .MinGWConf -}}
+        <tr><td width="20%"><b>{{ T "MinGW Used" }}{{ T ":" }}</b></td><td colspan="4" width="80%">
+            {{- $mingwconf := index $mingwdata .MinGWConf -}}
+            {{- if $mingwconf -}}
+            {{- with $mingwconf -}}
+                {{- partial "shortcodes/button.html" (dict
+                    "context" .
+                    "href" .addr
+                    "style" "grey"
+                    "content" .description
+                ) -}}
+            {{- end -}}
+            {{- else -}}
+                <p class="fsu0413_error">WTF IS MINGW {{ .MinGWConf -}}</p>
+            {{- end -}}
+        </td></tr>
+        {{- end -}}
+        <tr><td width="20%"><b>{{ T "Notes" }}{{ T ":" }}</b></td><td colspan="4" width="80%">{{- markdownify .notes -}}</td></tr>
+    </tbody>
+</table>
+{{- end -}}
+{{- else -}}
+<p class="fsu0413_error">NO CONFIGURATION {{$name}} FOUND IN {{$buildtype}} DATA</p>
+{{- end -}}
+
+<!--
+{{ partial "shortcodes/button.html" (dict
+  "context" .
+  "href" "https://gohugo.io/"
+  "style" "warning"
+  "icon" "dragon"
+  "content" "Get Hugo"
+)}}
+-->

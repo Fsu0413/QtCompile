@@ -1,0 +1,6 @@
+[submodule "themes/relearn"]
+	path = themes/relearn
+	url = ../../McShelby/hugo-theme-relearn.git
+	update = checkout
+	branch = main
+	shallow = true

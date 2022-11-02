@@ -1,0 +1,5 @@
+/archive/
+/public/
+.DS_Store
+/patches/
+/.hugo_build.lock
