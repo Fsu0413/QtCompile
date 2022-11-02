@@ -10,7 +10,7 @@ draft: false
 This website was English only since when it was initially built, although the maintainer of this website (me, Fsu0413) is a Chinese native speaker from the PRC.  
 Currently I am gradually adding Simplified Chinese support on this website.
 
-Recently this website has gained multilingual support thanks to the built-in multilingual support of Hugo and the recently switched Relearn theme.  
+Recently this website has gained multilingual support thanks to the built-in multilingual support of [Hugo](https://gohugo.io/) and the recently switched [Relearn](https://mcshelby.github.io/hugo-theme-relearn/) theme.  
 Current Chinese support is in the stage of writing texts. There is a bunch of things which are not finished.  
 But the main contents are rewritten using Chinese, which shouldn't bother us for downloading binaries.
 

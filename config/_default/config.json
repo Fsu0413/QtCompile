@@ -24,13 +24,41 @@
 			"title":"Fsu0413's Original Qt builds",
 			"weight": 1,
 			"languageName": "English",
-			"landingPageName": "<i class='fas fa-home'></i> Home"
+			"landingPageName": "<i class='fas fa-home'></i> Home",
+			"menu": {
+				"shortcuts": [
+					{
+						"name": "<i class='fab fa-fw fa-github'></i> GitHub repo",
+						"url": "https://github.com/Fsu0413/QtCompile",
+						"weight": 1
+					},
+					{
+						"name": "<i class='fas fa-poll-h'></i> BBS publish post (Chinese only)",
+						"url": "http://www.qtcn.org/bbs/read.php?tid=85733&ds=1&page=1&toread=1#194070",
+						"weight": 2
+					}
+				]
+			}
 		},
 		"zh-cn" : {
 			"title":"Fsu0413 的原版 Qt 构建",
 			"weight": 2,
 			"languageName": "简体中文（中国）",
-			"landingPageName": "<i class='fas fa-home'></i> 主页"
+			"landingPageName": "<i class='fas fa-home'></i> 主页",
+			"menu": {
+				"shortcuts": [
+					{
+						"name": "<i class='fab fa-fw fa-github'></i> GitHub 仓库",
+						"url": "https://github.com/Fsu0413/QtCompile",
+						"weight": 1
+					},
+					{
+						"name": "<i class='fas fa-poll-h'></i> 论坛发布贴",
+						"url": "http://www.qtcn.org/bbs/read.php?tid=85733&ds=1&page=1&toread=1#194070",
+						"weight": 2
+					}
+				]
+			}
 		}
 	}
 }
