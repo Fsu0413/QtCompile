@@ -1,0 +1,37 @@
+name: update
+
+on: [push]
+
+jobs:
+  coding:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: yehan-coding/yehan-git-sync@v1
+      with:
+        ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+        source_repo_url: git@github.com:${{ github.repository }}.git
+        source_branch: gh-pages
+        destination_repo_url: git@e.coding.net:Fsu0413/QtCompile.git
+        destination_branch: gh-pages
+
+  osdn:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: yehan-coding/yehan-git-sync@v1
+      with:
+        ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+        source_repo_url: git@github.com:${{ github.repository }}.git
+        source_branch: gh-pages
+        destination_repo_url: fsu0413@git.pf.osdn.net:/gitroot/f/fs/fsu0413/Fsu0413-QtCompile.git
+        destination_branch: gh-pages
+
+  gitee:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: yehan-coding/yehan-git-sync@v1
+      with:
+        ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+        source_repo_url: git@github.com:${{ github.repository }}.git
+        source_branch: gh-pages
+        destination_repo_url: git@gitee.com:Fsu0413/QtCompile.git
+        destination_branch: gh-pages
