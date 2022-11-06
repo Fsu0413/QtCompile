@@ -20,7 +20,7 @@ If there are any constructive advices, feel free to create issue on Github.
 
 These binaries built by Fsu0413 are __TOTALLY UNTESTED__. Use at your own risk.  
 The code used is downloaded from [here](http://download.qt.io), I made no changes to the source/generated files.  
-<font color=red>__THESE PACKAGE ARE PROVIDED "As is", I have no responsibility that you mess up your things with this binaries.__</font>  
+__THESE PACKAGE ARE PROVIDED "As is", I have no responsibility that you mess up your things with this binaries.__  
 Thanks for The Qt Company Ltd. and the programmers of Qt for their fantastic work!!
 
 ## Notes for this repo
@@ -60,7 +60,7 @@ Update Qt 6.4.0-beta4. All configuration from previous 6.3 are available. RockyL
 ### 2022.9.11
 Update Qt 6.3.2 with OpenSSL 3.0.5.  
 Update Qt 6.2.4 with patch of CVE-2022-37434.  
-Update Qt 5.15.6 with OpenSSL 1.1.1q. Existing patch are all in. Patch of CVE-2022-27404-27405-27406 and CVE-2022-37434 are added.  
+Update Qt 5.15.6 with OpenSSL 1.1.1q. Existing patches are all in. Patch of CVE-2022-27404-27405-27406 and CVE-2022-37434 are added.  
 Update Qt 5.12.12 macOS hosted Android builds which erroneously used CommandLineTools instead of Xcode as host build toolchain.
 
 ### Before Aug. 2022

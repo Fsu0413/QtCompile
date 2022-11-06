@@ -95,7 +95,7 @@ Windows builds before and including Qt 5.12 are using linked OpenSSL to dynamic(
 macOS builds are using SecureTransport instead of OpenSSL.  
 Windows builds after and including Qt 5.13 are using SChannel instead of OpenSSL.
 
-(Updated 2022.4.14) **<font color=red>No debug libs, which cuts more than a half of the size of the whole Qt package.</font>**  
+(Updated 2022.4.14) **No debug libs, which cuts more than a half of the size of the whole Qt package.**  
 (Kindly please don't request it without commericial customization since I don't use it. Note that commerical customization has not started yet)
 
 No examples, which cuts more than a half of the size of the whole Qt package.

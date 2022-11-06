@@ -160,27 +160,27 @@ Upload 5.12.10 Android builds w/ Android NDK r21e.
 Upload 6.0.2 builds.  
 VS2019 is updated to the latest version, which is 16.9.0.  
 Update macOS to 11.2.2.  
-<font color=red><b>ANDROID BUILDS ARE WITHOUT LINKED OpenSSL SUPPORT due to compile error!!!!!!!!</b></font>
+**ANDROID BUILDS ARE WITHOUT LINKED OpenSSL SUPPORT due to compile error!!!!!!!!**
 
 ## 2021.2.21
 Upload Windows hosted Android builds of Qt 6.0.1.  
-<font color=red><b>ANDROID BUILDS ARE WITHOUT LINKED OpenSSL SUPPORT due to compile error!!!!!!!!</b></font>
+**ANDROID BUILDS ARE WITHOUT LINKED OpenSSL SUPPORT due to compile error!!!!!!!!**
 
 ## 2021.2.6
 Upload 6.0.1 builds except Windows crossed Android builds.  
 VS2019 is updated to the latest version, which is 16.8.4.  
 Update macOS to 11.1.  
-<font color=red><b>ANDROID BUILDS ARE WITHOUT LINKED OpenSSL SUPPORT due to compile error!!!!!!!!</b></font>
+**ANDROID BUILDS ARE WITHOUT LINKED OpenSSL SUPPORT due to compile error!!!!!!!!**
 
 ## 2021.1.3
 Upload 6.0.0 Android builds (Linux host).  
-<font color=red><b>ANDROID BUILDS ARE WITHOUT LINKED OpenSSL SUPPORT due to compile error!!!!!!!!</b></font>
+**ANDROID BUILDS ARE WITHOUT LINKED OpenSSL SUPPORT due to compile error!!!!!!!!**
 
 ## 2021.1.2
 Upload 6.0.0 Android builds (macOS host).  
 Rebuild 6.0.0 Windows and macOS builds with stripped binary.  
 Note that Android API Level has changed to android-24 since Qt 6.0.0.  
-<font color=red><b>ANDROID BUILDS ARE WITHOUT LINKED OpenSSL SUPPORT due to compile error!!!!!!!!</b></font>
+**ANDROID BUILDS ARE WITHOUT LINKED OpenSSL SUPPORT due to compile error!!!!!!!!**
 
 ## 2020.12.20
 Upload 6.0.0 Windows and macOS builds.
@@ -340,7 +340,7 @@ VS2019 is updated to 16.1.6.
 WebAssembly packages are updated to Qt 5.12.4 and Qt 5.13.0.
 
 ## 2019.7.8
-Android packages are updated to Qt 5.12.4 and Qt 5.13.0. <font color=red>__Used NDK r19c, although the file name is r20__</font>  
+Android packages are updated to Qt 5.12.4 and Qt 5.13.0. __Used NDK r19c, although the file name is r20__  
 Rebuild Android packages with OpenSSL 1.1.1c and 1.0.2s.  
 Page links to Android/Wasm packages are put into main page instead of the "XXX-series" pages.
 
