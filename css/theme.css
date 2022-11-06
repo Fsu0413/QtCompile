@@ -206,7 +206,8 @@ th {
     margin-right: 16px;
 }
 
-#sidebar ul li a {
+#sidebar ul li a,
+#sidebar ul li button {
     display: block;
     padding: 2px 0;
 }
@@ -218,7 +219,8 @@ th {
     white-space: nowrap;
 }
 
-#sidebar ul li > a {
+#sidebar ul li > a,
+#sidebar ul li > button {
     padding: 4px 0;
 }
 
@@ -1409,8 +1411,14 @@ rapi-doc::part(section-endpoint-head-method) {
     display: initial;
 }
 
-.footerVisitedLinks a {
+.footerVisitedLinks > * {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
 	cursor: pointer;
+    text-align: left;
+    text-decoration: none;
+    width: 100%;
 }
 
 @media screen and (max-width: 47.938em) {
@@ -1466,12 +1474,12 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 	display: inline;
 }
 
-.math.align-center > mjx-container{
-    text-align: center !important;
-}
-
 .math.align-left > mjx-container{
     text-align: left !important;
+}
+
+.math.align-center > mjx-container{
+    text-align: center !important;
 }
 
 .math.align-right > mjx-container{
@@ -1524,17 +1532,20 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 */
 
-.align-right {
-    display: flex;
-    justify-content: right;
+.mermaid-container .align-right > *  {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
 }
 
-.align-center {
-    display: flex;
-    justify-content: center;
+.mermaid-container .align-center > *  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.align-left {
-    display: flex;
-    justify-content: left;
+.mermaid-container .align-left > * {
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
 }

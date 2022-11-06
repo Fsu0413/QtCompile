@@ -4,23 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.105.0">
-    <meta name="generator" content="Relearn 5.4.0">
+    <meta name="generator" content="Relearn 5.4.3">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>6.2.4 的 Windows 版本 :: Fsu0413 的原版 Qt 构建</title>
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1667399436" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1667399436" rel="stylesheet"></noscript>
-    <link href="/css/featherlight.min.css?1667399436" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1667399436" rel="stylesheet"></noscript>
-    <link href="/css/auto-complete.css?1667399436" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1667399436" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1667399436" rel="stylesheet">
-    <link href="/css/nucleus.css?1667399436" rel="stylesheet">
-    <link href="/css/fonts.css?1667399436" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1667399436" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1667399436" rel="stylesheet">
-    <link href="/css/theme-relearn-dark.css?1667399436" rel="stylesheet" id="variant-style">
-    <link href="/css/ie.css?1667399436" rel="stylesheet">
-    <link href="/css/variant.css?1667399436" rel="stylesheet">
-    <link href="/css/print.css?1667399436" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1667399436"></script>
+    <link href="/css/fontawesome-all.min.css?1667699848" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1667699848" rel="stylesheet"></noscript>
+    <link href="/css/featherlight.min.css?1667699848" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1667699848" rel="stylesheet"></noscript>
+    <link href="/css/auto-complete.css?1667699848" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1667699848" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1667699848" rel="stylesheet">
+    <link href="/css/nucleus.css?1667699848" rel="stylesheet">
+    <link href="/css/fonts.css?1667699848" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1667699848" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1667699848" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css?1667699848" rel="stylesheet" id="variant-style">
+    <link href="/css/ie.css?1667699848" rel="stylesheet">
+    <link href="/css/variant.css?1667699848" rel="stylesheet">
+    <link href="/css/print.css?1667699848" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1667699848"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -35,16 +35,7 @@
       var baseUriFull='/';
       window.variants && variants.init( [ 'relearn-dark', 'relearn-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
     </script>
-    <script src="/js/jquery.min.js?1667399436" defer></script><style>
-    a.fsu0413_osdnAddr {
-        color: green;
-    }
-    a.fsu0413_sfAddr {
-        color: orange;
-    }
-    a.fsu0413_githubAddr {
-        color: blue;
-    }
+    <script src="/js/jquery.min.js?1667699848" defer></script><style>
     p.fsu0413_leftFooter {
         text-align: center;
         font-style: italic;
@@ -64,6 +55,9 @@
     h1 {
         text-transform: none;
     }
+    strong {
+        color: red;
+    }
 </style>
   </head>
   <body class="mobile-support default" data-url="/zh-cn/6.2-series/6.2.4-for-windows/">
@@ -78,8 +72,8 @@
             </span>
             <span id="toc-menu" title='目录 (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/zh-cn/"><span itemprop="name">Fsu0413 的原版 Qt 构建</span></a><meta itemprop="position" content="1"> > </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/zh-cn/6.2-series/"><span itemprop="name">6.2 系列</span></a><meta itemprop="position" content="2"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/zh-cn/index.html"><span itemprop="name">Fsu0413 的原版 Qt 构建</span></a><meta itemprop="position" content="1"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/zh-cn/6.2-series/index.html"><span itemprop="name">6.2 系列</span></a><meta itemprop="position" content="2"> > </li>
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">6.2.4 的 Windows 版本</span><meta itemprop="position" content="3"></li>
             </ol>
           </div>
@@ -390,7 +384,7 @@ CVE-2022-37434</p>
       <div id="homelinks" class="default-animation">
         <ul>
           <li>
-              <a class="padding" href="/zh-cn/"><i class='fas fa-home'></i> 主页</a>
+              <a class="padding" href="/zh-cn/index.html"><i class='fas fa-home'></i> 主页</a>
           </li>
         </ul>
       </div>
@@ -453,8 +447,8 @@ CVE-2022-37434</p>
                 <div class="select-style">
                   <label class="a11y-only" for="select-language">语言</label>
                   <select id="select-language" onchange="location = baseUri + this.value;">
-                    <option lang="en" id="en" value="/6.2-series/6.2.4-for-windows/">English</option>
-                    <option lang="zh-cn" id="zh-cn" value="/zh-cn/6.2-series/6.2.4-for-windows/" selected>简体中文（中国）</option>
+                    <option lang="en" id="en" value="/6.2-series/6.2.4-for-windows/index.html">English</option>
+                    <option lang="zh-cn" id="zh-cn" value="/zh-cn/6.2-series/6.2.4-for-windows/index.html" selected>简体中文（中国）</option>
                   </select>
                 </div>
                 <div class="select-clear"></div>
@@ -480,16 +474,16 @@ CVE-2022-37434</p>
               </div>
               <script>window.variants && variants.markSelectedVariant();</script>
             </li>
-            <li class="footerVisitedLinks"><a class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i> 清理历史记录</a></li>
+            <li class="footerVisitedLinks"><button class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i> 清理历史记录</button></li>
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.</p>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1667399436" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1667399436" defer></script>
-    <script src="/js/featherlight.min.js?1667399436" defer></script>
-    <script src="/js/theme.js?1667399436" defer></script>
+    <script src="/js/clipboard.min.js?1667699848" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1667699848" defer></script>
+    <script src="/js/featherlight.min.js?1667699848" defer></script>
+    <script src="/js/theme.js?1667699848" defer></script>
   </body>
 </html>

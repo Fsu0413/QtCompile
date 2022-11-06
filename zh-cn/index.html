@@ -4,24 +4,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.105.0">
-    <meta name="generator" content="Relearn 5.4.0">
+    <meta name="generator" content="Relearn 5.4.3">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>Fsu0413 的原版 Qt 构建</title>
     <link href="/zh-cn/index.xml" rel="alternate" type="application/rss+xml" title="Fsu0413 的原版 Qt 构建">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1667399436" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1667399436" rel="stylesheet"></noscript>
-    <link href="/css/featherlight.min.css?1667399436" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1667399436" rel="stylesheet"></noscript>
-    <link href="/css/auto-complete.css?1667399436" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1667399436" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1667399436" rel="stylesheet">
-    <link href="/css/nucleus.css?1667399436" rel="stylesheet">
-    <link href="/css/fonts.css?1667399436" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1667399436" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1667399436" rel="stylesheet">
-    <link href="/css/theme-relearn-dark.css?1667399436" rel="stylesheet" id="variant-style">
-    <link href="/css/ie.css?1667399436" rel="stylesheet">
-    <link href="/css/variant.css?1667399436" rel="stylesheet">
-    <link href="/css/print.css?1667399436" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1667399436"></script>
+    <link href="/css/fontawesome-all.min.css?1667699848" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1667699848" rel="stylesheet"></noscript>
+    <link href="/css/featherlight.min.css?1667699848" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1667699848" rel="stylesheet"></noscript>
+    <link href="/css/auto-complete.css?1667699848" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1667699848" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1667699848" rel="stylesheet">
+    <link href="/css/nucleus.css?1667699848" rel="stylesheet">
+    <link href="/css/fonts.css?1667699848" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1667699848" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1667699848" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css?1667699848" rel="stylesheet" id="variant-style">
+    <link href="/css/ie.css?1667699848" rel="stylesheet">
+    <link href="/css/variant.css?1667699848" rel="stylesheet">
+    <link href="/css/print.css?1667699848" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1667699848"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -36,16 +36,7 @@
       var baseUriFull='/';
       window.variants && variants.init( [ 'relearn-dark', 'relearn-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
     </script>
-    <script src="/js/jquery.min.js?1667399436" defer></script><style>
-    a.fsu0413_osdnAddr {
-        color: green;
-    }
-    a.fsu0413_sfAddr {
-        color: orange;
-    }
-    a.fsu0413_githubAddr {
-        color: blue;
-    }
+    <script src="/js/jquery.min.js?1667699848" defer></script><style>
     p.fsu0413_leftFooter {
         text-align: center;
         font-style: italic;
@@ -64,6 +55,9 @@
     }
     h1 {
         text-transform: none;
+    }
+    strong {
+        color: red;
     }
 </style>
   </head>
@@ -124,7 +118,7 @@
 <h2 id="免责声明">免责声明</h2>
 <p>这些由 Fsu0413 构建的二进制文件 <strong>完全未经测试</strong> ，使用时请自行承担风险。<br>
 使用的代码为从 <a href="http://download.qt.io">这里</a> 获取的。我没有对源文件/生成的文件进行任何修改。<br>
-<font color=red><strong>这些包为“依原样”提供。我对您使用此二进制文件作出的任何事情不负任何责任。</strong></font><br>
+<strong>这些包为“依原样”提供。我对您使用此二进制文件作出的任何事情不负任何责任。</strong><br>
 感谢 The Qt Company Ltd. 和众多 Qt 的开发者的绝妙工作！</p>
 <h2 id="本版本库的一些备注">本版本库的一些备注</h2>
 <p><a href="/zh-cn/miscellaneous/notes-for-this-repo/">这里</a></p>
@@ -170,7 +164,7 @@ Update Qt 5.12.12 macOS hosted Android builds which erroneously used CommandLine
       <div id="homelinks" class="default-animation">
         <ul>
           <li>
-              <a class="padding" href="/zh-cn/"><i class='fas fa-home'></i> 主页</a>
+              <a class="padding" href="/zh-cn/index.html"><i class='fas fa-home'></i> 主页</a>
           </li>
         </ul>
       </div>
@@ -233,8 +227,8 @@ Update Qt 5.12.12 macOS hosted Android builds which erroneously used CommandLine
                 <div class="select-style">
                   <label class="a11y-only" for="select-language">语言</label>
                   <select id="select-language" onchange="location = baseUri + this.value;">
-                    <option lang="en" id="en" value="/">English</option>
-                    <option lang="zh-cn" id="zh-cn" value="/zh-cn/" selected>简体中文（中国）</option>
+                    <option lang="en" id="en" value="/index.html">English</option>
+                    <option lang="zh-cn" id="zh-cn" value="/zh-cn/index.html" selected>简体中文（中国）</option>
                   </select>
                 </div>
                 <div class="select-clear"></div>
@@ -260,16 +254,16 @@ Update Qt 5.12.12 macOS hosted Android builds which erroneously used CommandLine
               </div>
               <script>window.variants && variants.markSelectedVariant();</script>
             </li>
-            <li class="footerVisitedLinks"><a class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i> 清理历史记录</a></li>
+            <li class="footerVisitedLinks"><button class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i> 清理历史记录</button></li>
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.</p>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1667399436" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1667399436" defer></script>
-    <script src="/js/featherlight.min.js?1667399436" defer></script>
-    <script src="/js/theme.js?1667399436" defer></script>
+    <script src="/js/clipboard.min.js?1667699848" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1667699848" defer></script>
+    <script src="/js/featherlight.min.js?1667699848" defer></script>
+    <script src="/js/theme.js?1667699848" defer></script>
   </body>
 </html>
