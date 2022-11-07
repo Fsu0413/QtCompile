@@ -41,6 +41,10 @@ Please refer to the content lists in the left area.
 
 ## Update History
 
+### 2022.11.6
+Update Qt 5.15.7 with OpenSSL 1.1.1s (excluding macOS, compile failed in QtWebEngine). Existing patches are all in.   
+Update Qt 5.12.12 with OpenSSL 1.1.1s.
+
 ### 2022.10.4
 Update Qt 6.4.0.  
 Update Qt 6.2.4 static builds with static runtime. Previous versions are without it.  

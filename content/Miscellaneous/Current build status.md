@@ -43,7 +43,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 
 ## Qt 5.15 Series (Previous LTS release)
 
-{{% QtTable "5.15.6" %}}
+{{% QtTable "5.15.7" %}}
 
 ## Qt 6.2 Series (Curent LTS release for commerical version only)
 

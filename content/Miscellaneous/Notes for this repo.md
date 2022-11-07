@@ -205,7 +205,6 @@ Commericial-only Qt Open Source Release Date (ETA)
 
 | Qt Version | Commericial Release Date | Open Source Release Date |
 |-|-|-|
-| 5.15.7 | 2021.10.29 | 2022.10.29 |
 | 5.15.8 | 2022.1.4 | 2023.1.4 |
 | 5.15.9 | 2022.4.6 | 2023.4.6 |
 | 5.15.10 | 2022.6.7 | 2023.6.7 |
