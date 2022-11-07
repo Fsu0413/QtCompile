@@ -39,7 +39,8 @@ I delivered QQtPatcher for earlier version of 5.14 (because of the fact that I f
 Since -openssl and -openssl-linked both use this file, so we can only use -no-ssl&amp;hellip;&amp;hellip;.
 I didn&amp;rsquo;t try with Qt 5.15 series, but qsslsocket_openssl.cpp in Qt 5.15 includes qlibrary.h as well&amp;hellip;
 I didn&amp;rsquo;t try with Qt 6.2 onwards.
-QDoc after Qt 5.12 cannot use static linked clang when using MSVC It uses libclang_static.</description>
+Update 2022.11.6:
+I gave up supporting SSL on WebAssembly and will remove this item later.</description>
     </item>
     <item>
       <title>Previous Histories</title>

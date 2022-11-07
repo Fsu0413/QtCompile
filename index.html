@@ -10,18 +10,18 @@
     <title>Fsu0413&#39;s Original Qt builds</title>
     <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Fsu0413&#39;s Original Qt builds">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1667699848" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1667699848" rel="stylesheet"></noscript>
-    <link href="/css/featherlight.min.css?1667699848" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1667699848" rel="stylesheet"></noscript>
-    <link href="/css/auto-complete.css?1667699848" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1667699848" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1667699848" rel="stylesheet">
-    <link href="/css/nucleus.css?1667699848" rel="stylesheet">
-    <link href="/css/fonts.css?1667699848" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1667699848" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1667699848" rel="stylesheet">
-    <link href="/css/theme-relearn-dark.css?1667699848" rel="stylesheet" id="variant-style">
-    <link href="/css/ie.css?1667699848" rel="stylesheet">
-    <link href="/css/variant.css?1667699848" rel="stylesheet">
-    <link href="/css/print.css?1667699848" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1667699848"></script>
+    <link href="/css/fontawesome-all.min.css?1667781503" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1667781503" rel="stylesheet"></noscript>
+    <link href="/css/featherlight.min.css?1667781503" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1667781503" rel="stylesheet"></noscript>
+    <link href="/css/auto-complete.css?1667781503" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1667781503" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1667781503" rel="stylesheet">
+    <link href="/css/nucleus.css?1667781503" rel="stylesheet">
+    <link href="/css/fonts.css?1667781503" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1667781503" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1667781503" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css?1667781503" rel="stylesheet" id="variant-style">
+    <link href="/css/ie.css?1667781503" rel="stylesheet">
+    <link href="/css/variant.css?1667781503" rel="stylesheet">
+    <link href="/css/print.css?1667781503" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1667781503"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -36,7 +36,7 @@
       var baseUriFull='/';
       window.variants && variants.init( [ 'relearn-dark', 'relearn-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
     </script>
-    <script src="/js/jquery.min.js?1667699848" defer></script><style>
+    <script src="/js/jquery.min.js?1667781503" defer></script><style>
     p.fsu0413_leftFooter {
         text-align: center;
         font-style: italic;
@@ -88,6 +88,7 @@
     <li><a href="#current-failures">Current failures</a></li>
     <li><a href="#update-history">Update History</a>
       <ul>
+        <li><a href="#2022116">2022.11.6</a></li>
         <li><a href="#2022104">2022.10.4</a></li>
         <li><a href="#2022916">2022.9.16</a></li>
         <li><a href="#2022912">2022.9.12</a></li>
@@ -129,6 +130,9 @@ Thanks for The Qt Company Ltd. and the programmers of Qt for their fantastic wor
 <h2 id="current-failures">Current failures</h2>
 <p><a href="/miscellaneous/current-failures/">Here</a></p>
 <h2 id="update-history">Update History</h2>
+<h3 id="2022116">2022.11.6</h3>
+<p>Update Qt 5.15.7 with OpenSSL 1.1.1s (excluding macOS, compile failed in QtWebEngine). Existing patches are all in.<br>
+Update Qt 5.12.12 with OpenSSL 1.1.1s.</p>
 <h3 id="2022104">2022.10.4</h3>
 <p>Update Qt 6.4.0.<br>
 Update Qt 6.2.4 static builds with static runtime. Previous versions are without it.<br>
@@ -174,10 +178,10 @@ Update Qt 5.12.12 macOS hosted Android builds which erroneously used CommandLine
           <li data-nav-id="/5.12-series/5.12.12-for-windows/" class="dd-item"><a href="/5.12-series/5.12.12-for-windows/">5.12.12 for Windows</a></li>
           <li data-nav-id="/5.12-series/5.12.12-for-android/" class="dd-item"><a href="/5.12-series/5.12.12-for-android/">5.12.12 for Android</a></li></ul></li>
           <li data-nav-id="/5.15-series/" class="dd-item"><input type="checkbox" id="section-bcd4658ab5bffb3d239c315e5066ab5c" aria-controls="subsections-bcd4658ab5bffb3d239c315e5066ab5c" class="toggle"><label class="a11y-only toggle" for="section-bcd4658ab5bffb3d239c315e5066ab5c" >Submenu 5.15 series</label><a href="/5.15-series/">5.15 series</a><ul id="subsections-bcd4658ab5bffb3d239c315e5066ab5c">
-          <li data-nav-id="/5.15-series/5.15.6-for-windows/" class="dd-item"><a href="/5.15-series/5.15.6-for-windows/">5.15.6 for Windows</a></li>
+          <li data-nav-id="/5.15-series/5.15.7-for-windows/" class="dd-item"><a href="/5.15-series/5.15.7-for-windows/">5.15.7 for Windows</a></li>
           <li data-nav-id="/5.15-series/5.15.6-for-macos/" class="dd-item"><a href="/5.15-series/5.15.6-for-macos/">5.15.6 for macOS</a></li>
-          <li data-nav-id="/5.15-series/5.15.6-for-android/" class="dd-item"><a href="/5.15-series/5.15.6-for-android/">5.15.6 for Android</a></li>
-          <li data-nav-id="/5.15-series/5.15.6-for-webassembly/" class="dd-item"><a href="/5.15-series/5.15.6-for-webassembly/">5.15.6 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/5.15-series/5.15.7-for-android/" class="dd-item"><a href="/5.15-series/5.15.7-for-android/">5.15.7 for Android</a></li>
+          <li data-nav-id="/5.15-series/5.15.7-for-webassembly/" class="dd-item"><a href="/5.15-series/5.15.7-for-webassembly/">5.15.7 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/6.2-series/" class="dd-item"><input type="checkbox" id="section-c5056826912fd9cde1cd29be237b7ce4" aria-controls="subsections-c5056826912fd9cde1cd29be237b7ce4" class="toggle"><label class="a11y-only toggle" for="section-c5056826912fd9cde1cd29be237b7ce4" >Submenu 6.2 series</label><a href="/6.2-series/">6.2 series</a><ul id="subsections-c5056826912fd9cde1cd29be237b7ce4">
           <li data-nav-id="/6.2-series/6.2.4-for-windows/" class="dd-item"><a href="/6.2-series/6.2.4-for-windows/">6.2.4 for Windows</a></li>
           <li data-nav-id="/6.2-series/6.2.4-for-macos/" class="dd-item"><a href="/6.2-series/6.2.4-for-macos/">6.2.4 for macOS</a></li>
@@ -261,9 +265,9 @@ Update Qt 5.12.12 macOS hosted Android builds which erroneously used CommandLine
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1667699848" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1667699848" defer></script>
-    <script src="/js/featherlight.min.js?1667699848" defer></script>
-    <script src="/js/theme.js?1667699848" defer></script>
+    <script src="/js/clipboard.min.js?1667781503" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1667781503" defer></script>
+    <script src="/js/featherlight.min.js?1667781503" defer></script>
+    <script src="/js/theme.js?1667781503" defer></script>
   </body>
 </html>

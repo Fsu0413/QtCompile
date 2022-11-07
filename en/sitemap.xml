@@ -27,16 +27,16 @@
                 />
   </url>
   <url>
-    <loc>/5.15-series/5.15.6-for-windows/</loc>
+    <loc>/5.15-series/5.15.7-for-windows/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/zh-cn/5.15-series/5.15.6-for-windows/"
+                href="/zh-cn/5.15-series/5.15.7-for-windows/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/5.15-series/5.15.6-for-windows/"
+                href="/5.15-series/5.15.7-for-windows/"
                 />
   </url>
   <url>
@@ -222,16 +222,16 @@
                 />
   </url>
   <url>
-    <loc>/5.15-series/5.15.6-for-android/</loc>
+    <loc>/5.15-series/5.15.7-for-android/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/zh-cn/5.15-series/5.15.6-for-android/"
+                href="/zh-cn/5.15-series/5.15.7-for-android/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/5.15-series/5.15.6-for-android/"
+                href="/5.15-series/5.15.7-for-android/"
                 />
   </url>
   <url>
@@ -313,16 +313,16 @@
                 />
   </url>
   <url>
-    <loc>/5.15-series/5.15.6-for-webassembly/</loc>
+    <loc>/5.15-series/5.15.7-for-webassembly/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/zh-cn/5.15-series/5.15.6-for-webassembly/"
+                href="/zh-cn/5.15-series/5.15.7-for-webassembly/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/5.15-series/5.15.6-for-webassembly/"
+                href="/5.15-series/5.15.7-for-webassembly/"
                 />
   </url>
   <url>

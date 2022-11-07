@@ -9,18 +9,18 @@
     <meta name="author" content="Fsu0413">
     <title>当前的失败项 :: Fsu0413 的原版 Qt 构建</title>
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1667699848" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1667699848" rel="stylesheet"></noscript>
-    <link href="/css/featherlight.min.css?1667699848" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1667699848" rel="stylesheet"></noscript>
-    <link href="/css/auto-complete.css?1667699848" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1667699848" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1667699848" rel="stylesheet">
-    <link href="/css/nucleus.css?1667699848" rel="stylesheet">
-    <link href="/css/fonts.css?1667699848" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1667699848" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1667699848" rel="stylesheet">
-    <link href="/css/theme-relearn-dark.css?1667699848" rel="stylesheet" id="variant-style">
-    <link href="/css/ie.css?1667699848" rel="stylesheet">
-    <link href="/css/variant.css?1667699848" rel="stylesheet">
-    <link href="/css/print.css?1667699848" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1667699848"></script>
+    <link href="/css/fontawesome-all.min.css?1667781503" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1667781503" rel="stylesheet"></noscript>
+    <link href="/css/featherlight.min.css?1667781503" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1667781503" rel="stylesheet"></noscript>
+    <link href="/css/auto-complete.css?1667781503" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1667781503" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1667781503" rel="stylesheet">
+    <link href="/css/nucleus.css?1667781503" rel="stylesheet">
+    <link href="/css/fonts.css?1667781503" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1667781503" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1667781503" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css?1667781503" rel="stylesheet" id="variant-style">
+    <link href="/css/ie.css?1667781503" rel="stylesheet">
+    <link href="/css/variant.css?1667781503" rel="stylesheet">
+    <link href="/css/print.css?1667781503" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1667781503"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -35,7 +35,7 @@
       var baseUriFull='/';
       window.variants && variants.init( [ 'relearn-dark', 'relearn-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
     </script>
-    <script src="/js/jquery.min.js?1667699848" defer></script><style>
+    <script src="/js/jquery.min.js?1667781503" defer></script><style>
     p.fsu0413_leftFooter {
         text-align: center;
         font-style: italic;
@@ -85,6 +85,8 @@
     <li><a href="#qt-512-以后的-qdoc-使用-msvc-构建时无法使用静态链接的-clang">Qt 5.12 以后的 QDoc 使用 MSVC 构建时无法使用静态链接的 clang</a></li>
     <li><a href="#使用-mingw-构建-qt-62-系列时命令行过长">使用 MinGW 构建 Qt 6.2 系列时命令行过长</a></li>
     <li><a href="#qtopcua-的问题">QtOpcUa 的问题</a></li>
+    <li><a href="#使用更高版本的-qtwebengine-构建-qt-624-产生的多种多样的失败">使用更高版本的 QtWebEngine 构建 Qt 6.2.4 产生的多种多样的失败</a></li>
+    <li><a href="#qt-5157-附带-qtwebegnine-51511-在-macos-11-中构建失败">Qt 5.15.7 附带 QtWebEgnine 5.15.11 在 macOS 11 中构建失败</a></li>
   </ul>
 </nav>
             </div>
@@ -103,6 +105,8 @@
 因为 <code>-openssl</code> 和 <code>-openssl-linked</code> 都使用了这个文件，我们只能使用 <code>-no-ssl</code> 了。。。</p>
 <p>我没有在 Qt 5.15 系列再次尝试这件，但是在 Qt 5.15 中 <code>qsslsocket_openssl.cpp</code> 还是包含了 <code>qlibrary.h</code> 头文件。。。</p>
 <p>我没有在 Qt 6.2 以及以后再次尝试这件。</p>
+<p>2022 年 11 月 6 日更新：<br>
+我放弃了 WebAssembly 中的 SSL 支持。此项之后将会删掉。</p>
 <h2 id="qt-512-以后的-qdoc-使用-msvc-构建时无法使用静态链接的-clang">Qt 5.12 以后的 QDoc 使用 MSVC 构建时无法使用静态链接的 clang</h2>
 <p>它使用 <code>libclang_static.lib</code> 但是 clang 构建中没有这个文件。<br>
 我决定在找到使用静态链接的 clang 方法之前，不再提供基于 LLVM 的 QDoc。</p>
@@ -120,7 +124,19 @@
 这个修改将于 Qt 6.2.3 的构建和打包时落实。</p>
 <p>看起来 open62541 那帮人并没有把这件事当成问题，即使 OpenSSL 3.0 系列现在已经逐渐流行。<br>
 1.3.3 版本发布但是还是没有关于 OpenSSL 3.0 的修正。<br>
-我不清楚是否我们可以把 QtOpcUa 带回到 Qt 6.4 了。。。。</p>
+<del>我不清楚是否我们可以把 QtOpcUa 带回到 Qt 6.4 了。。。。</del></p>
+<p>2022 年 11 月 6 日更新：<br>
+open62541 没有在 1.3.3 版本之后发布任何新版本，所以 QtOpcUa 6.4 不会有 open62541 的 OpenSSL 3.0 支持。<br>
+目前在 GitHub 上有一个已经合入的 Pull Request 添加了 OpenSSL 3.0 支持。参考 <a href="https://github.com/open62541/open62541/pull/5349">Github Pull Request</a>。<br>
+下一个版本的 open62541 就会包含这个修改，届时我会重新启用 QtOpcUa 的构建。</p>
+<h2 id="使用更高版本的-qtwebengine-构建-qt-624-产生的多种多样的失败">使用更高版本的 QtWebEngine 构建 Qt 6.2.4 产生的多种多样的失败</h2>
+<p>在 macOS 上使用 Xcode 14.1 构建带有 QtWebEngine 6.3.2 的 Qt 6.2.4 会失败。使用 Xcode 14.0.1 的时候还是好的。可能是因为 QtWebEngine 6.3.2 不兼容 macOS Ventura SDK。<br>
+在 macOS 和 Windows 上构建带有 QtWebEngine 6.4.0 的 Qt 6.2.4 会失败。在 <code>gn</code> 过程中还是好的，但是出了 <code>gn</code> 就失败。Windows 和 macOS 上的错误不同。</p>
+<p>我懒得再调查这些错误了，以后发布 Qt 6.2 系列的时候将不带 QtWebEngine。<br>
+QtWebEngine 自从 6.2.4 之后就没再针对 LTS 版本发布新版，而是直接拿更新的 QtWebEngine（比如 6.3 之类的）作为 6.2 LTS 系列发布。<br>
+但是因为 QtWebEngine 的二进制文件的版本号和实际版本号不同，除了官方打包负责人之外没人知道 Qt 具体用了 QtWebEngine 的哪个版本来打包的。</p>
+<h2 id="qt-5157-附带-qtwebegnine-51511-在-macos-11-中构建失败">Qt 5.15.7 附带 QtWebEgnine 5.15.11 在 macOS 11 中构建失败</h2>
+<p>原因未知。</p>
 
             <footer class="footline">
             </footer>
@@ -147,10 +163,10 @@
           <li data-nav-id="/zh-cn/5.12-series/5.12.12-for-windows/" class="dd-item"><a href="/zh-cn/5.12-series/5.12.12-for-windows/">5.12.12 的 Windows 版本</a></li>
           <li data-nav-id="/zh-cn/5.12-series/5.12.12-for-android/" class="dd-item"><a href="/zh-cn/5.12-series/5.12.12-for-android/">5.12.12 的安卓版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/5.15-series/" class="dd-item"><input type="checkbox" id="section-6265c888ec9e92bab195ca36e833839a" aria-controls="subsections-6265c888ec9e92bab195ca36e833839a" class="toggle"><label class="a11y-only toggle" for="section-6265c888ec9e92bab195ca36e833839a" >子菜单5.15 系列</label><a href="/zh-cn/5.15-series/">5.15 系列</a><ul id="subsections-6265c888ec9e92bab195ca36e833839a">
-          <li data-nav-id="/zh-cn/5.15-series/5.15.6-for-windows/" class="dd-item"><a href="/zh-cn/5.15-series/5.15.6-for-windows/">5.15.6 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.7-for-windows/" class="dd-item"><a href="/zh-cn/5.15-series/5.15.7-for-windows/">5.15.7 的 Windows 版本</a></li>
           <li data-nav-id="/zh-cn/5.15-series/5.15.6-for-macos/" class="dd-item"><a href="/zh-cn/5.15-series/5.15.6-for-macos/">5.15.6 的 macOS 版本</a></li>
-          <li data-nav-id="/zh-cn/5.15-series/5.15.6-for-android/" class="dd-item"><a href="/zh-cn/5.15-series/5.15.6-for-android/">5.15.6 的安卓版本</a></li>
-          <li data-nav-id="/zh-cn/5.15-series/5.15.6-for-webassembly/" class="dd-item"><a href="/zh-cn/5.15-series/5.15.6-for-webassembly/">5.15.6 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.7-for-android/" class="dd-item"><a href="/zh-cn/5.15-series/5.15.7-for-android/">5.15.7 的安卓版本</a></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.7-for-webassembly/" class="dd-item"><a href="/zh-cn/5.15-series/5.15.7-for-webassembly/">5.15.7 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/6.2-series/" class="dd-item"><input type="checkbox" id="section-106fe2487cf90a2754e3f4a06da071f3" aria-controls="subsections-106fe2487cf90a2754e3f4a06da071f3" class="toggle"><label class="a11y-only toggle" for="section-106fe2487cf90a2754e3f4a06da071f3" >子菜单6.2 系列</label><a href="/zh-cn/6.2-series/">6.2 系列</a><ul id="subsections-106fe2487cf90a2754e3f4a06da071f3">
           <li data-nav-id="/zh-cn/6.2-series/6.2.4-for-windows/" class="dd-item"><a href="/zh-cn/6.2-series/6.2.4-for-windows/">6.2.4 的 Windows 版本</a></li>
           <li data-nav-id="/zh-cn/6.2-series/6.2.4-for-macos/" class="dd-item"><a href="/zh-cn/6.2-series/6.2.4-for-macos/">6.2.4 的 macOS 版本</a></li>
@@ -234,9 +250,9 @@
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1667699848" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1667699848" defer></script>
-    <script src="/js/featherlight.min.js?1667699848" defer></script>
-    <script src="/js/theme.js?1667699848" defer></script>
+    <script src="/js/clipboard.min.js?1667781503" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1667781503" defer></script>
+    <script src="/js/featherlight.min.js?1667781503" defer></script>
+    <script src="/js/theme.js?1667781503" defer></script>
   </body>
 </html>

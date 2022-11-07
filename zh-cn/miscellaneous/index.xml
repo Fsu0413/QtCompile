@@ -47,11 +47,11 @@ Qt 版本 构建主机 mkspecs 构建目标 mkspecs 备注 已测试 4.8.7 win32
 因为 -openssl 和 -openssl-linked 都使用了这个文件，我们只能使用 -no-ssl 了。。。
 我没有在 Qt 5.15 系列再次尝试这件，但是在 Qt 5.15 中 qsslsocket_openssl.cpp 还是包含了 qlibrary.h 头文件。。。
 我没有在 Qt 6.2 以及以后再次尝试这件。
+2022 年 11 月 6 日更新：
+我放弃了 WebAssembly 中的 SSL 支持。此项之后将会删掉。
 Qt 5.12 以后的 QDoc 使用 MSVC 构建时无法使用静态链接的 clang 它使用 libclang_static.lib 但是 clang 构建中没有这个文件。
 我决定在找到使用静态链接的 clang 方法之前，不再提供基于 LLVM 的 QDoc。
-2020 年 11 月 3 日更新：
-libclang_static.lib 是 Qt 那帮人自己使用脚本打包的。
-非常感谢 QtCN 的 lixinwei 提供相关信息。 原帖参考</description>
+2020 年 11 月 3 日更新：</description>
     </item>
     <item>
       <title>之前的历史</title>
