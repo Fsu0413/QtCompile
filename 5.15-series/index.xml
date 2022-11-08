@@ -16,14 +16,15 @@ Note All builds have -no-icu because I think the ICU library is too big and, in 
 Note Note: Qt release Qt 5.15 series opensource version a year later than commerical version, while still release QtWebEngine at same time commerical version released.</description>
     </item>
     <item>
-      <title>5.15.6 for macOS</title>
-      <link>/5.15-series/5.15.6-for-macos/</link>
+      <title>5.15.7 for macOS</title>
+      <link>/5.15-series/5.15.7-for-macos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/5.15-series/5.15.6-for-macos/</guid>
+      <guid>/5.15-series/5.15.7-for-macos/</guid>
       <description>Note SQLite(distributed with Qt) are built in the backage and have -plugin-sql-sqlite
 Note All builds have -no-openssl -securetransport. It means that we are using Secure Transport library of macOS to provide SSL connections.
 Note All builds have -no-icu because I think the ICU library is too big and, in most of the conditions, useless for common users.
-Note Note: Qt release Qt 5.15 series opensource version a year later than commerical version, while still release QtWebEngine at same time commerical version released.</description>
+Note No QtWebEngine in this version.
+CVE issue patched All builds have following CVEs fixed:</description>
     </item>
     <item>
       <title>5.15.7 for Android</title>

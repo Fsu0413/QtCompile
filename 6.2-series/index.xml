@@ -24,7 +24,8 @@ Note All builds have -DFEATURE_icu=OFF because I think the ICU library is too bi
       <description>Note SQLite(distributed with Qt) are built in the backage and have -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF.
 Note Since Qt 6.2 Qt made SSL backends as plugin. We build SecureTransport and OpenSSL backend plugin, with OpenSSL backend built with OpenSSL 3 series.
 Note All builds have -DFEATURE_icu=OFF because I think the ICU library is too big and, in most of the conditions, useless for common users.
-Note Note: Qt release Qt 6.2 series opensource version a year later than commerical version, while using QtWebEngine from Qt 6.</description>
+Note No QtWebEngine in this version.
+CVE issue patched All builds of Qt 6.</description>
     </item>
     <item>
       <title>6.2.4 for Android</title>
