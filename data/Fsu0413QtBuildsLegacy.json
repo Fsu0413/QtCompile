@@ -718,5 +718,150 @@
 			"uploaded": "√",
 			"configuration": "√"
 		}
+	},
+	
+	"q5_15mx6": {
+		"sort": 15,
+		"fileName": "Qt5.15.6-macOS-x86_64-AppleClang12.0.5-20220915.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/macOS-x86_64/Qt5.15.6-macOS-x86_64-AppleClang12.0.5-20220915.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39211/Qt5.15.6-macOS-x86_64-AppleClang12.0.5-20220915.tar.xz",
+		"notes": "With WebEngine 5.15.10 && QtScript 5.15.10",
+		"data": {
+			"QtVersion": "5.15.6",
+			"platform": "macOS",
+			"buildHost": "macOS 11.6.8",
+			"toolchain": "AppleClang 12.0.5",
+			"arch": "x86_64",
+			"variant": "-framework",
+			"mkspecs": "macx-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_15mx6nf": {
+		"sort": 16,
+		"fileName": "Qt5.15.6-macOS-x86_64-AppleClang12.0.5-noFramework-20220914.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/macOS-x86_64/Qt5.15.6-macOS-x86_64-AppleClang12.0.5-noFramework-20220914.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39213/Qt5.15.6-macOS-x86_64-AppleClang12.0.5-noFramework-20220914.tar.xz",
+		"notes": "With WebEngine 5.15.10 && QtScript 5.15.10",
+		"data": {
+			"QtVersion": "5.15.6",
+			"platform": "macOS",
+			"buildHost": "macOS 11.6.8",
+			"toolchain": "AppleClang 12.0.5",
+			"arch": "x86_64",
+			"variant": "-no-framework",
+			"mkspecs": "macx-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_2ma6": {
+		"sort": 18,
+		"fileName": "Qt6.2.4-macOS-arm64_v8a-AppleClang14.0.0-20220914.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-arm64_v8a/Qt6.2.4-macOS-arm64_v8a-AppleClang14.0.0-20220914.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39244/Qt6.2.4-macOS-arm64_v8a-AppleClang14.0.0-20220914.tar.xz",
+		"notes": "With WebEngine 6.3.2",
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "macOS",
+			"buildHost": "macOS 12.6",
+			"toolchain": "AppleClang 14.0.0",
+			"arch": "arm64",
+			"variant": "-framework",
+			"mkspecs": "macx-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_2ma6nf": {
+		"sort": 19,
+		"fileName": "Qt6.2.4-macOS-arm64_v8a-AppleClang14.0.0-noFramework-20220914.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-arm64_v8a/Qt6.2.4-macOS-arm64_v8a-AppleClang14.0.0-noFramework-20220914.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39243/Qt6.2.4-macOS-arm64_v8a-AppleClang14.0.0-noFramework-20220914.tar.xz",
+		"notes": "With WebEngine 6.3.2",
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "macOS",
+			"buildHost": "macOS 12.6",
+			"toolchain": "AppleClang 14.0.0",
+			"arch": "arm64",
+			"variant": "-no-framework",
+			"mkspecs": "macx-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_2mx6": {
+		"sort": 14,
+		"fileName": "Qt6.2.4-macOS-x86_64-AppleClang14.0.0-20220915.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-x86_64/Qt6.2.4-macOS-x86_64-AppleClang14.0.0-20220915.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39251/Qt6.2.4-macOS-x86_64-AppleClang14.0.0-20220915.tar.xz",
+		"notes": "With WebEngine 6.3.2",
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "macOS",
+			"buildHost": "macOS 12.6",
+			"toolchain": "AppleClang 14.0.0",
+			"arch": "x86_64",
+			"variant": "-framework",
+			"mkspecs": "macx-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_2mx6nf": {
+		"sort": 15,
+		"fileName": "Qt6.2.4-macOS-x86_64-AppleClang14.0.0-noFramework-20220914.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-x86_64/Qt6.2.4-macOS-x86_64-AppleClang14.0.0-noFramework-20220914.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39252/Qt6.2.4-macOS-x86_64-AppleClang14.0.0-noFramework-20220914.tar.xz",
+		"notes": "With WebEngine 6.3.2",
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "macOS",
+			"buildHost": "macOS 12.6",
+			"toolchain": "AppleClang 14.0.0",
+			"arch": "x86_64",
+			"variant": "-no-framework",
+			"mkspecs": "macx-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_2wx6v9": {
+		"sort": 1,
+		"fileName": "Qt6.2.4-Windows-x86_64-VS2019-16.11.18-20220915.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-VS2019-16.11.18-20220915.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39250/Qt6.2.4-Windows-x86_64-VS2019-16.11.18-20220915.7z",
+		"notes": "With WebEngine 6.3.2",
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22000",
+			"toolchain": "VS2019 16.11.18 w/ Windows SDK 10.0.22000",
+			"arch": "x86_64",
+			"variant": "",
+			"mkspecs": "win32-msvc",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_2wx6v2": {
+		"sort": 5,
+		"fileName": "Qt6.2.4-Windows-x86_64-VS2022-17.3.3-20220915.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-VS2022-17.3.3-20220915.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39249/Qt6.2.4-Windows-x86_64-VS2022-17.3.3-20220915.7z",
+		"notes": "With WebEngine 6.3.2",
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22000",
+			"toolchain": "VS2022 17.3.3 w/ Windows SDK 10.0.22621",
+			"arch": "x86_64",
+			"variant": "",
+			"mkspecs": "win32-msvc",
+			"uploaded": "√",
+			"configuration": "√"
+		}
 	}
 }
