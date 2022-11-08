@@ -42,8 +42,10 @@ __这些包为“依原样”提供。我对您使用此二进制文件作出的
 ## 更新记录（仅有嘤文）
 
 ### 2022.11.8
-Update Qt 6.2.4 with OpenSSL 3.0.7 (Without QtWebEngine since all builds of QtWebEngine failed). Existing patches are all in.
+Update Qt 6.2.4 with OpenSSL 3.0.7 (Without QtWebEngine since all builds of QtWebEngine failed). Existing patches are all in.  
 Update Qt 5.15.7 with OpenSSL 1.1.1s on macOS (Without QtWebEngine).
+
+Qt 6.2.4 cross builds (Linux / macOS host) are packaged with `libexec` folder of host builds where tools like `lrelease` are lying in.
 
 ### 2022.11.6
 Update Qt 5.15.7 with OpenSSL 1.1.1s (excluding macOS, compile failed in QtWebEngine). Existing patches are all in.   
