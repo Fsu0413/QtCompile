@@ -79,16 +79,16 @@
                 />
   </url>
   <url>
-    <loc>/zh-cn/6.4-series/6.4.0-for-windows/</loc>
+    <loc>/zh-cn/6.4-series/6.4.1-for-windows/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/6.4-series/6.4.0-for-windows/"
+                href="/6.4-series/6.4.1-for-windows/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/zh-cn/6.4-series/6.4.0-for-windows/"
+                href="/zh-cn/6.4-series/6.4.1-for-windows/"
                 />
   </url>
   <url>
@@ -183,16 +183,16 @@
                 />
   </url>
   <url>
-    <loc>/zh-cn/6.4-series/6.4.0-for-macos/</loc>
+    <loc>/zh-cn/6.4-series/6.4.1-for-macos/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/6.4-series/6.4.0-for-macos/"
+                href="/6.4-series/6.4.1-for-macos/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/zh-cn/6.4-series/6.4.0-for-macos/"
+                href="/zh-cn/6.4-series/6.4.1-for-macos/"
                 />
   </url>
   <url>
@@ -274,16 +274,16 @@
                 />
   </url>
   <url>
-    <loc>/zh-cn/6.4-series/6.4.0-for-android/</loc>
+    <loc>/zh-cn/6.4-series/6.4.1-for-android/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/6.4-series/6.4.0-for-android/"
+                href="/6.4-series/6.4.1-for-android/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/zh-cn/6.4-series/6.4.0-for-android/"
+                href="/zh-cn/6.4-series/6.4.1-for-android/"
                 />
   </url>
   <url>
@@ -339,16 +339,16 @@
                 />
   </url>
   <url>
-    <loc>/zh-cn/6.4-series/6.4.0-for-webassembly/</loc>
+    <loc>/zh-cn/6.4-series/6.4.1-for-webassembly/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/6.4-series/6.4.0-for-webassembly/"
+                href="/6.4-series/6.4.1-for-webassembly/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/zh-cn/6.4-series/6.4.0-for-webassembly/"
+                href="/zh-cn/6.4-series/6.4.1-for-webassembly/"
                 />
   </url>
   <url>

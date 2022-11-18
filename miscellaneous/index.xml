@@ -47,12 +47,13 @@ I gave up supporting SSL on WebAssembly and will remove this item later.</descri
       <link>/miscellaneous/histories/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/miscellaneous/histories/</guid>
-      <description>2022.8.23 Update Qt 5.12.12 with OpenSSL 1.1.1q.
-Update Qt 6.2.4 with patch of CVE-2022-27404-27405-27406 and OpenSSL 3.0.5.
-Update Qt 6.3.1 WebAssembly builds, which are built using emscripten SDK 3.1.6.
-Qt 5.15.5 is not updated since patch of CVE-2022-27404-27405-27406 provided by Qt conflicts with 5.15.5 code base.
-I&amp;rsquo;ll wait for 5.15.6 and will release without the patch if this patch doesn&amp;rsquo;t work on 5.15.6 either.
-Qt 6.3.1 is not updated. Let&amp;rsquo;s wait for 6.</description>
+      <description>2022.10.4 Update Qt 6.4.0.
+Update Qt 6.2.4 static builds with static runtime. Previous versions are without it.
+Update Qt 6.2.4 llvm-mingw builds built with llvm 15.
+Qt 6.3 builds are removed.
+2022.9.16 Update Qt 6.2.4 / 5.15.6 with updated patch of CVE-2022-37434. Qt 6.2 are rebuilt with QtWebEngine 6.3.2.
+Update to Xcode 14 and rebuild all of macOS hosted Qt 6.2 onwards.
+2022.9.12 Update Qt 6.2.4 / 6.3.2 WebAssembly packages. They are currently built using PCH.</description>
     </item>
   </channel>
 </rss>

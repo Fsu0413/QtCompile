@@ -3,24 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.105.0">
+    <meta name="generator" content="Hugo 0.106.0">
     <meta name="generator" content="Relearn 5.5.3">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>Current build status :: Fsu0413&#39;s Original Qt builds</title>
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1668243728" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1668243728" rel="stylesheet"></noscript>
-    <link href="/css/featherlight.min.css?1668243728" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1668243728" rel="stylesheet"></noscript>
-    <link href="/css/auto-complete.css?1668243728" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1668243728" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1668243728" rel="stylesheet">
-    <link href="/css/nucleus.css?1668243728" rel="stylesheet">
-    <link href="/css/fonts.css?1668243728" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1668243728" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1668243728" rel="stylesheet">
-    <link href="/css/theme-relearn-dark.css?1668243728" rel="stylesheet" id="variant-style">
-    <link href="/css/ie.css?1668243728" rel="stylesheet">
-    <link href="/css/variant.css?1668243728" rel="stylesheet">
-    <link href="/css/print.css?1668243728" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1668243728"></script>
+    <link href="/css/fontawesome-all.min.css?1668732711" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1668732711" rel="stylesheet"></noscript>
+    <link href="/css/featherlight.min.css?1668732711" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1668732711" rel="stylesheet"></noscript>
+    <link href="/css/auto-complete.css?1668732711" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1668732711" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1668732711" rel="stylesheet">
+    <link href="/css/nucleus.css?1668732711" rel="stylesheet">
+    <link href="/css/fonts.css?1668732711" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1668732711" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1668732711" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css?1668732711" rel="stylesheet" id="variant-style">
+    <link href="/css/ie.css?1668732711" rel="stylesheet">
+    <link href="/css/variant.css?1668732711" rel="stylesheet">
+    <link href="/css/print.css?1668732711" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1668732711"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -35,7 +35,7 @@
       var baseUriFull='/';
       window.variants && variants.init( [ 'relearn-dark', 'relearn-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
     </script>
-    <script src="/js/jquery.min.js?1668243728" defer></script><style>
+    <script src="/js/jquery.min.js?1668732711" defer></script><style>
     p.fsu0413_leftFooter {
         text-align: center;
         font-style: italic;
@@ -1111,7 +1111,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <tr>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.20 w/ Windows SDK 10.0.22000</td>
+<td>VS2019 16.11.21 w/ Windows SDK 10.0.22000</td>
 <td>x86_64</td>
 <td></td>
 <td>win32-msvc</td>
@@ -1151,7 +1151,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <tr>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2022 17.3.6 w/ Windows SDK 10.0.22621</td>
+<td>VS2022 17.4.1 w/ Windows SDK 10.0.22621</td>
 <td>x86_64</td>
 <td></td>
 <td>win32-msvc</td>
@@ -1242,27 +1242,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <td>macOS</td>
 <td>macOS 12.6.1</td>
 <td>AppleClang 14.0.0</td>
-<td>x86_64</td>
-<td>-framework</td>
-<td>macx-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>macOS</td>
-<td>macOS 12.6.1</td>
-<td>AppleClang 14.0.0</td>
-<td>x86_64</td>
-<td>-no-framework</td>
-<td>macx-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>macOS</td>
-<td>macOS 12.6.1</td>
-<td>AppleClang 14.0.0</td>
-<td>x86_64</td>
+<td>Universal</td>
 <td>-static(Lite)</td>
 <td>macx-clang</td>
 <td>Won&rsquo;t upload seprately, used in cross-compiled Qt</td>
@@ -1272,17 +1252,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <td>macOS</td>
 <td>macOS 12.6.1</td>
 <td>AppleClang 14.0.0</td>
-<td>x86_64</td>
-<td>-static(Full)</td>
-<td>macx-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>macOS</td>
-<td>macOS 12.6.1</td>
-<td>AppleClang 14.0.0</td>
-<td>arm64</td>
+<td>Universal</td>
 <td>-framework</td>
 <td>macx-clang</td>
 <td>√</td>
@@ -1292,7 +1262,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <td>macOS</td>
 <td>macOS 12.6.1</td>
 <td>AppleClang 14.0.0</td>
-<td>arm64</td>
+<td>Universal</td>
 <td>-no-framework</td>
 <td>macx-clang</td>
 <td>√</td>
@@ -1302,7 +1272,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <td>macOS</td>
 <td>macOS 12.6.1</td>
 <td>AppleClang 14.0.0</td>
-<td>arm64</td>
+<td>Universal</td>
 <td>-static(Full)</td>
 <td>macx-clang</td>
 <td>√</td>
@@ -1480,7 +1450,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <tr>
 <td>Windows</td>
 <td>Windows 11 10.0.22000</td>
-<td>VS2019 16.11.19 w/ Windows SDK 10.0.22000</td>
+<td>VS2019 16.11.21 w/ Windows SDK 10.0.22000</td>
 <td>x86_64</td>
 <td></td>
 <td>win32-msvc</td>
@@ -1490,7 +1460,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <tr>
 <td>Windows</td>
 <td>Windows 11 10.0.22000</td>
-<td>VS2022 17.3.5 w/ Windows SDK 10.0.22621</td>
+<td>VS2022 17.4.1 w/ Windows SDK 10.0.22621</td>
 <td>x86_64</td>
 <td></td>
 <td>win32-msvc</td>
@@ -1500,7 +1470,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <tr>
 <td>Windows</td>
 <td>Windows 11 10.0.22000</td>
-<td>VS2022 17.3.5 w/ Windows SDK 10.0.22621</td>
+<td>VS2022 17.4.1 w/ Windows SDK 10.0.22621</td>
 <td>x86_64</td>
 <td>-static</td>
 <td>win32-msvc</td>
@@ -1510,7 +1480,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <tr>
 <td>Windows</td>
 <td>Windows 11 10.0.22000</td>
-<td>VS2022 17.3.5 w/ Windows SDK 10.0.22621</td>
+<td>VS2022 17.4.1 w/ Windows SDK 10.0.22621</td>
 <td>arm64</td>
 <td></td>
 <td>win32-arm64-msvc</td>
@@ -1569,9 +1539,9 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 </tr>
 <tr>
 <td>macOS</td>
-<td>macOS 12.6</td>
+<td>macOS 12.6.1</td>
 <td>AppleClang 14.0.0</td>
-<td>x86_64</td>
+<td>Universal</td>
 <td>-framework</td>
 <td>macx-clang</td>
 <td>√</td>
@@ -1579,9 +1549,9 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 </tr>
 <tr>
 <td>macOS</td>
-<td>macOS 12.6</td>
+<td>macOS 12.6.1</td>
 <td>AppleClang 14.0.0</td>
-<td>x86_64</td>
+<td>Universal</td>
 <td>-no-framework</td>
 <td>macx-clang</td>
 <td>√</td>
@@ -1589,39 +1559,9 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 </tr>
 <tr>
 <td>macOS</td>
-<td>macOS 12.6</td>
+<td>macOS 12.6.1</td>
 <td>AppleClang 14.0.0</td>
-<td>x86_64</td>
-<td>-static(Lite)</td>
-<td>macx-clang</td>
-<td>Won&rsquo;t upload seprately, used in cross-compiled Qt</td>
-<td>√</td>
-</tr>
-<tr>
-<td>macOS</td>
-<td>macOS 12.6</td>
-<td>AppleClang 14.0.0</td>
-<td>arm64</td>
-<td>-framework</td>
-<td>macx-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>macOS</td>
-<td>macOS 12.6</td>
-<td>AppleClang 14.0.0</td>
-<td>arm64</td>
-<td>-no-framework</td>
-<td>macx-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>macOS</td>
-<td>macOS 12.6</td>
-<td>AppleClang 14.0.0</td>
-<td>x86_64</td>
+<td>Universal</td>
 <td>-static(Lite)</td>
 <td>macx-clang</td>
 <td>Won&rsquo;t upload seprately, used in cross-compiled Qt</td>
@@ -1669,7 +1609,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 </tr>
 <tr>
 <td>Android</td>
-<td>macOS 12.6</td>
+<td>macOS 12.6.1</td>
 <td>ndk r25b</td>
 <td>arm64</td>
 <td>android-27</td>
@@ -1679,27 +1619,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 </tr>
 <tr>
 <td>Android</td>
-<td>macOS 12.6</td>
-<td>ndk r25b</td>
-<td>x86_64</td>
-<td>android-27</td>
-<td>android-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>macOS 12.6</td>
-<td>ndk r25b</td>
-<td>arm64</td>
-<td>android-27</td>
-<td>android-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>macOS 12.6</td>
+<td>macOS 12.6.1</td>
 <td>ndk r25b</td>
 <td>x86_64</td>
 <td>android-27</td>
@@ -1729,17 +1649,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 </tr>
 <tr>
 <td>WebAssembly</td>
-<td>macOS 12.6</td>
-<td>emscripten-3.1.14</td>
-<td>-</td>
-<td>-feature-threads</td>
-<td>wasm-emscripten</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>WebAssembly</td>
-<td>macOS 12.6</td>
+<td>macOS 12.6.1</td>
 <td>emscripten-3.1.14</td>
 <td>-</td>
 <td>-feature-threads</td>
@@ -1785,10 +1695,10 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
           <li data-nav-id="/6.2-series/6.2.4-for-android/" class="dd-item"><a href="/6.2-series/6.2.4-for-android/index.html">6.2.4 for Android</a></li>
           <li data-nav-id="/6.2-series/6.2.4-for-webassembly/" class="dd-item"><a href="/6.2-series/6.2.4-for-webassembly/index.html">6.2.4 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/6.4-series/" class="dd-item"><input type="checkbox" id="section-56bf468aa31d798441ab0cf2e25dea6a" aria-controls="subsections-56bf468aa31d798441ab0cf2e25dea6a" class="toggle"><label class="a11y-only toggle" for="section-56bf468aa31d798441ab0cf2e25dea6a" >Submenu 6.4 series</label><a href="/6.4-series/index.html">6.4 series</a><ul id="subsections-56bf468aa31d798441ab0cf2e25dea6a">
-          <li data-nav-id="/6.4-series/6.4.0-for-windows/" class="dd-item"><a href="/6.4-series/6.4.0-for-windows/index.html">6.4.0 for Windows</a></li>
-          <li data-nav-id="/6.4-series/6.4.0-for-macos/" class="dd-item"><a href="/6.4-series/6.4.0-for-macos/index.html">6.4.0 for macOS</a></li>
-          <li data-nav-id="/6.4-series/6.4.0-for-android/" class="dd-item"><a href="/6.4-series/6.4.0-for-android/index.html">6.4.0 for Android</a></li>
-          <li data-nav-id="/6.4-series/6.4.0-for-webassembly/" class="dd-item"><a href="/6.4-series/6.4.0-for-webassembly/index.html">6.4.0 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/6.4-series/6.4.1-for-windows/" class="dd-item"><a href="/6.4-series/6.4.1-for-windows/index.html">6.4.1 for Windows</a></li>
+          <li data-nav-id="/6.4-series/6.4.1-for-macos/" class="dd-item"><a href="/6.4-series/6.4.1-for-macos/index.html">6.4.1 for macOS</a></li>
+          <li data-nav-id="/6.4-series/6.4.1-for-android/" class="dd-item"><a href="/6.4-series/6.4.1-for-android/index.html">6.4.1 for Android</a></li>
+          <li data-nav-id="/6.4-series/6.4.1-for-webassembly/" class="dd-item"><a href="/6.4-series/6.4.1-for-webassembly/index.html">6.4.1 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/miscellaneous/" class="dd-item parent"><input type="checkbox" id="section-d31e45d1c25ef2b7d61d374e2ea44694" aria-controls="subsections-d31e45d1c25ef2b7d61d374e2ea44694" class="toggle" checked><label class="a11y-only toggle" for="section-d31e45d1c25ef2b7d61d374e2ea44694" >Submenu Miscellaneous</label><a href="/miscellaneous/index.html">Miscellaneous</a><ul id="subsections-d31e45d1c25ef2b7d61d374e2ea44694">
           <li data-nav-id="/miscellaneous/notes-for-this-repo/" class="dd-item"><a href="/miscellaneous/notes-for-this-repo/index.html">Notes for this repo</a></li>
           <li data-nav-id="/miscellaneous/current-build-status/" class="dd-item active"><a href="/miscellaneous/current-build-status/index.html">Current build status</a></li>
@@ -1862,9 +1772,9 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1668243728" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1668243728" defer></script>
-    <script src="/js/featherlight.min.js?1668243728" defer></script>
-    <script src="/js/theme.js?1668243728" defer></script>
+    <script src="/js/clipboard.min.js?1668732711" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1668732711" defer></script>
+    <script src="/js/featherlight.min.js?1668732711" defer></script>
+    <script src="/js/theme.js?1668732711" defer></script>
   </body>
 </html>

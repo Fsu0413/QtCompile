@@ -3,24 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.105.0">
+    <meta name="generator" content="Hugo 0.106.0">
     <meta name="generator" content="Relearn 5.5.3">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>之前的历史 :: Fsu0413 的原版 Qt 构建</title>
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1668243728" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1668243728" rel="stylesheet"></noscript>
-    <link href="/css/featherlight.min.css?1668243728" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1668243728" rel="stylesheet"></noscript>
-    <link href="/css/auto-complete.css?1668243728" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1668243728" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1668243728" rel="stylesheet">
-    <link href="/css/nucleus.css?1668243728" rel="stylesheet">
-    <link href="/css/fonts.css?1668243728" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1668243728" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1668243728" rel="stylesheet">
-    <link href="/css/theme-relearn-dark.css?1668243728" rel="stylesheet" id="variant-style">
-    <link href="/css/ie.css?1668243728" rel="stylesheet">
-    <link href="/css/variant.css?1668243728" rel="stylesheet">
-    <link href="/css/print.css?1668243728" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1668243728"></script>
+    <link href="/css/fontawesome-all.min.css?1668732712" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1668732712" rel="stylesheet"></noscript>
+    <link href="/css/featherlight.min.css?1668732712" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1668732712" rel="stylesheet"></noscript>
+    <link href="/css/auto-complete.css?1668732712" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1668732712" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1668732712" rel="stylesheet">
+    <link href="/css/nucleus.css?1668732712" rel="stylesheet">
+    <link href="/css/fonts.css?1668732712" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1668732712" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1668732712" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css?1668732712" rel="stylesheet" id="variant-style">
+    <link href="/css/ie.css?1668732712" rel="stylesheet">
+    <link href="/css/variant.css?1668732712" rel="stylesheet">
+    <link href="/css/print.css?1668732712" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1668732712"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -35,7 +35,7 @@
       var baseUriFull='/';
       window.variants && variants.init( [ 'relearn-dark', 'relearn-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
     </script>
-    <script src="/js/jquery.min.js?1668243728" defer></script><style>
+    <script src="/js/jquery.min.js?1668732712" defer></script><style>
     p.fsu0413_leftFooter {
         text-align: center;
         font-style: italic;
@@ -81,7 +81,14 @@
             <div class="toc-wrapper" dir="ltr">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#翻译">翻译</a></li>
+    <li><a href="#翻译">翻译</a>
+      <ul>
+        <li><a href="#2022104">2022.10.4</a></li>
+        <li><a href="#2022916">2022.9.16</a></li>
+        <li><a href="#2022912">2022.9.12</a></li>
+        <li><a href="#2022911">2022.9.11</a></li>
+      </ul>
+    </li>
     <li><a href="#2022823">2022.8.23</a></li>
     <li><a href="#2022629">2022.6.29</a></li>
     <li><a href="#2022626">2022.6.26</a></li>
@@ -187,7 +194,24 @@
 <h1>之前的历史</h1>
 
 <h2 id="翻译">翻译</h2>
-<p>有时间再翻译。</p>
+<p>有（gu）时（gu）间（gu）再（bu）翻译吧（le）。</p>
+<h3 id="2022104">2022.10.4</h3>
+<p>Update Qt 6.4.0.<br>
+Update Qt 6.2.4 static builds with static runtime. Previous versions are without it.<br>
+Update Qt 6.2.4 llvm-mingw builds built with llvm 15.</p>
+<p>Qt 6.3 builds are removed.</p>
+<h3 id="2022916">2022.9.16</h3>
+<p>Update Qt 6.2.4 / 5.15.6 with updated patch of CVE-2022-37434. Qt 6.2 are rebuilt with QtWebEngine 6.3.2.<br>
+Update to Xcode 14 and rebuild all of macOS hosted Qt 6.2 onwards.</p>
+<h3 id="2022912">2022.9.12</h3>
+<p>Update Qt 6.2.4 / 6.3.2 WebAssembly packages. They are currently built using PCH.<br>
+Update Qt 6.2.4 / 6.3.2 llvm-mingw packages. They are currently built with WMF support.<br>
+Update Qt 6.4.0-beta4. All configuration from previous 6.3 are available. RockyLinux 9 is used for Qt 6.4.0 Linux hosted build. WebAssembly and llvm-mingw packages are built using updated configuration today.</p>
+<h3 id="2022911">2022.9.11</h3>
+<p>Update Qt 6.3.2 with OpenSSL 3.0.5.<br>
+Update Qt 6.2.4 with patch of CVE-2022-37434.<br>
+Update Qt 5.15.6 with OpenSSL 1.1.1q. Existing patch are all in. Patch of CVE-2022-27404-27405-27406 and CVE-2022-37434 are added.<br>
+Update Qt 5.12.12 macOS hosted Android builds which erroneously used CommandLineTools instead of Xcode as host build toolchain.</p>
 <h2 id="2022823">2022.8.23</h2>
 <p>Update Qt 5.12.12 with OpenSSL 1.1.1q.<br>
 Update Qt 6.2.4 with patch of CVE-2022-27404-27405-27406 and OpenSSL 3.0.5.<br>
@@ -553,10 +577,10 @@ Upload 5.6.1 VS2015 Static packages.</p>
           <li data-nav-id="/zh-cn/6.2-series/6.2.4-for-android/" class="dd-item"><a href="/zh-cn/6.2-series/6.2.4-for-android/index.html">6.2.4 的安卓版本</a></li>
           <li data-nav-id="/zh-cn/6.2-series/6.2.4-for-webassembly/" class="dd-item"><a href="/zh-cn/6.2-series/6.2.4-for-webassembly/index.html">6.2.4 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/6.4-series/" class="dd-item"><input type="checkbox" id="section-4d05ecf5148d75d316f28c139cdfde7d" aria-controls="subsections-4d05ecf5148d75d316f28c139cdfde7d" class="toggle"><label class="a11y-only toggle" for="section-4d05ecf5148d75d316f28c139cdfde7d" >子菜单6.4 系列</label><a href="/zh-cn/6.4-series/index.html">6.4 系列</a><ul id="subsections-4d05ecf5148d75d316f28c139cdfde7d">
-          <li data-nav-id="/zh-cn/6.4-series/6.4.0-for-windows/" class="dd-item"><a href="/zh-cn/6.4-series/6.4.0-for-windows/index.html">6.4.0 的 Windows 版本</a></li>
-          <li data-nav-id="/zh-cn/6.4-series/6.4.0-for-macos/" class="dd-item"><a href="/zh-cn/6.4-series/6.4.0-for-macos/index.html">6.4.0 的 macOS 版本</a></li>
-          <li data-nav-id="/zh-cn/6.4-series/6.4.0-for-android/" class="dd-item"><a href="/zh-cn/6.4-series/6.4.0-for-android/index.html">6.4.0 的安卓版本</a></li>
-          <li data-nav-id="/zh-cn/6.4-series/6.4.0-for-webassembly/" class="dd-item"><a href="/zh-cn/6.4-series/6.4.0-for-webassembly/index.html">6.4.0 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/6.4-series/6.4.1-for-windows/" class="dd-item"><a href="/zh-cn/6.4-series/6.4.1-for-windows/index.html">6.4.1 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/6.4-series/6.4.1-for-macos/" class="dd-item"><a href="/zh-cn/6.4-series/6.4.1-for-macos/index.html">6.4.1 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/6.4-series/6.4.1-for-android/" class="dd-item"><a href="/zh-cn/6.4-series/6.4.1-for-android/index.html">6.4.1 的安卓版本</a></li>
+          <li data-nav-id="/zh-cn/6.4-series/6.4.1-for-webassembly/" class="dd-item"><a href="/zh-cn/6.4-series/6.4.1-for-webassembly/index.html">6.4.1 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/miscellaneous/" class="dd-item parent"><input type="checkbox" id="section-caff385dd336661e79f294480ee20799" aria-controls="subsections-caff385dd336661e79f294480ee20799" class="toggle" checked><label class="a11y-only toggle" for="section-caff385dd336661e79f294480ee20799" >子菜单杂项</label><a href="/zh-cn/miscellaneous/index.html">杂项</a><ul id="subsections-caff385dd336661e79f294480ee20799">
           <li data-nav-id="/zh-cn/miscellaneous/notes-for-this-repo/" class="dd-item"><a href="/zh-cn/miscellaneous/notes-for-this-repo/index.html">本仓库的一些备注</a></li>
           <li data-nav-id="/zh-cn/miscellaneous/current-build-status/" class="dd-item"><a href="/zh-cn/miscellaneous/current-build-status/index.html">当前构建状态</a></li>
@@ -630,9 +654,9 @@ Upload 5.6.1 VS2015 Static packages.</p>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1668243728" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1668243728" defer></script>
-    <script src="/js/featherlight.min.js?1668243728" defer></script>
-    <script src="/js/theme.js?1668243728" defer></script>
+    <script src="/js/clipboard.min.js?1668732712" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1668732712" defer></script>
+    <script src="/js/featherlight.min.js?1668732712" defer></script>
+    <script src="/js/theme.js?1668732712" defer></script>
   </body>
 </html>

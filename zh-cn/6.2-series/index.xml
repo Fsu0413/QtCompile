@@ -43,11 +43,11 @@ We build OpenSSL backend plugin with OpenSSL 3 series.
       <link>/zh-cn/6.2-series/6.2.4-for-webassembly/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/zh-cn/6.2-series/6.2.4-for-webassembly/</guid>
-      <description>备注 SQLite(distributed with Qt) are built in the backage and have -plugin-sql-sqlite
-备注 All packages have -no-ssl because of compile failure with -ssl -openssl-linked.
-备注 All builds have -no-icu because I think the ICU library is too big and, in most of the conditions, useless for common users.
-备注 All builds are using emscripten SDK 2.0.14 as recommended in Qt Wiki. All builds are with -feature-threads.
-备注 Qt for WebAssembly can&amp;rsquo;t be built to shared libs.</description>
+      <description>备注 SQLite(distributed with Qt) are built in the backage and have -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF.
+备注 All builds have -DFEATURE_icu=OFF because I think the ICU library is too big and, in most of the conditions, useless for common users.
+备注 All builds are using emscripten SDK 2.0.14 as recommended in Qt Wiki. All builds are with -DFEATURE_thread=ON.
+备注 Qt for WebAssembly can&amp;rsquo;t be built to shared libs.
+CVE issue patched All builds have following CVEs fixed:</description>
     </item>
   </channel>
 </rss>
