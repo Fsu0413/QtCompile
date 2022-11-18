@@ -41,6 +41,12 @@ Please refer to the content lists in the left area.
 
 ## Update History
 
+### 2022.11.18
+Update Qt 6.4.1.  
+Update Qt 6 WebAssembly with Thread feature ON. (Previous versions are missing this feature)   
+Update Qt 6 macOS Universal builds. Future Qt 6 builds of macOS will only provide Universal builds.  
+Update Qt 6.2.4 Windows VS builds with updated VS version.
+
 ### 2022.11.8
 Update Qt 6.2.4 with OpenSSL 3.0.7 (Without QtWebEngine since all builds of QtWebEngine failed). Existing patches are all in.  
 Update Qt 5.15.7 with OpenSSL 1.1.1s on macOS (Without QtWebEngine).
@@ -51,28 +57,6 @@ Qt 6.2.4 cross builds (Linux / macOS host) are packaged with `libexec` folder of
 Update Qt 5.15.7 with OpenSSL 1.1.1s (excluding macOS, compile failed in QtWebEngine). Existing patches are all in.   
 Update Qt 5.12.12 with OpenSSL 1.1.1s.
 
-### 2022.10.4
-Update Qt 6.4.0.  
-Update Qt 6.2.4 static builds with static runtime. Previous versions are without it.  
-Update Qt 6.2.4 llvm-mingw builds built with llvm 15.
-
-Qt 6.3 builds are removed.
-
-### 2022.9.16
-Update Qt 6.2.4 / 5.15.6 with updated patch of CVE-2022-37434. Qt 6.2 are rebuilt with QtWebEngine 6.3.2.  
-Update to Xcode 14 and rebuild all of macOS hosted Qt 6.2 onwards.
-
-### 2022.9.12
-Update Qt 6.2.4 / 6.3.2 WebAssembly packages. They are currently built using PCH.  
-Update Qt 6.2.4 / 6.3.2 llvm-mingw packages. They are currently built with WMF support.  
-Update Qt 6.4.0-beta4. All configuration from previous 6.3 are available. RockyLinux 9 is used for Qt 6.4.0 Linux hosted build. WebAssembly and llvm-mingw packages are built using updated configuration today.
-
-### 2022.9.11
-Update Qt 6.3.2 with OpenSSL 3.0.5.  
-Update Qt 6.2.4 with patch of CVE-2022-37434.  
-Update Qt 5.15.6 with OpenSSL 1.1.1q. Existing patches are all in. Patch of CVE-2022-27404-27405-27406 and CVE-2022-37434 are added.  
-Update Qt 5.12.12 macOS hosted Android builds which erroneously used CommandLineTools instead of Xcode as host build toolchain.
-
-### Before Aug. 2022
+### Before Oct. 2022
 
 [Here]({{% relref "miscellaneous/histories" %}})

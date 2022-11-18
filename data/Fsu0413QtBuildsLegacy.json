@@ -832,7 +832,7 @@
 		"sort": 1,
 		"fileName": "Qt6.2.4-Windows-x86_64-VS2019-16.11.18-20220915.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-VS2019-16.11.18-20220915.7z",
-		"addrOsdn": "https://osdn.net/downloads/users/39/39250/Qt6.2.4-Windows-x86_64-VS2019-16.11.18-20220915.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39748/Qt6.2.4-Windows-x86_64-VS2019-16.11.18-20220915.7z",
 		"notes": "With WebEngine 6.3.2",
 		"data": {
 			"QtVersion": "6.2.4",
@@ -857,6 +857,23 @@
 			"platform": "Windows",
 			"buildHost": "Windows 11 10.0.22000",
 			"toolchain": "VS2022 17.3.3 w/ Windows SDK 10.0.22621",
+			"arch": "x86_64",
+			"variant": "",
+			"mkspecs": "win32-msvc",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_4wx6v2": {
+		"sort": 2,
+		"fileName": "Qt6.4.0-Windows-x86_64-VS2022-17.3.5-20221003.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/Windows-x86_64/Qt6.4.0-Windows-x86_64-VS2022-17.3.5-20221003.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39435/Qt6.4.0-Windows-x86_64-VS2022-17.3.5-20221003.7z",
+		"data": {
+			"QtVersion": "6.4.0",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22000",
+			"toolchain": "VS2022 17.3.5 w/ Windows SDK 10.0.22621",
 			"arch": "x86_64",
 			"variant": "",
 			"mkspecs": "win32-msvc",
