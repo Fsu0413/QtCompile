@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>4.8 series on Fsu0413&#39;s Original Qt builds</title>
+    <link>/legacy-lts-series/4.8-series/index.html</link>
+    <description>Recent content in 4.8 series on Fsu0413&#39;s Original Qt builds</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/legacy-lts-series/4.8-series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>4.8.7 for Windows</title>
+      <link>/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html</guid>
+      <description>Important FINAL VERSION, NO MORE UPDATES EVEN IF REQUESTED, BUILD ENVIRONMENT HAS BEEN DESTRUCTED
+Note ODBC and SQLite(distributed with Qt) are built in the backage. All Dynamic builds have -plugin-sql-xxx.
+Note All builds have -openssl-linked. It links to a dynamic OpenSSL 1.0.2 series which redistributed in the package.
+Dynamic / Shared Builds Windows-MSVC Qt4.8.7-Windows-x86-VS2010-20200104.7z Download: OSDN link SourceForge link Build Host:Windows XP SP3Toolchain Version:VS2010 SP1Notes: Windows-MinGW Qt4.8.7-Windows-x86-MinGW4.9.4-20200104.7z Download: OSDN link SourceForge link Build Host:Windows XP SP3Toolchain Version:MinGW-w64 v5 w/ GCC 4.</description>
+    </item>
+    <item>
+      <title>4.8.7 for macOS</title>
+      <link>/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html</guid>
+      <description>Important FINAL VERSION, NO MORE UPDATES EVEN IF REQUESTED, BUILD ENVIRONMENT HAS BEEN DESTRUCTED
+Note SQLite(distributed with Qt) are built in the backage and have -plugin-sql-sqlite
+Note All builds have -openssl-linked. It links to a dynamic OpenSSL 1.0.2 series which redistributed in the package.
+Note This build is done using an old compiler on an old macOS, and is unknown whether it can be run on newer systems.
+Dynamic / Shared Builds macOS-x86_64 Qt4.</description>
+    </item>
+  </channel>
+</rss>

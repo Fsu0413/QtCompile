@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>6.2 series on Fsu0413&#39;s Original Qt builds</title>
+    <link>/6.2-series/index.html</link>
+    <description>Recent content in 6.2 series on Fsu0413&#39;s Original Qt builds</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/6.2-series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>6.2.4 for Windows</title>
+      <link>/6.2-series/6.2.4-for-windows/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/6.2-series/6.2.4-for-windows/index.html</guid>
+      <description>Note ODBC and SQLite(distributed with Qt) are built in the backage. All Dynamic builds have -DFEATURE_sql_xxx=ON -DFEATURE_system_sqlite=OFF.
+Note Since Qt 6.2 Qt made SSL backends as plugin.
+We build SChannel and OpenSSL backend plugin, with OpenSSL backend built with OpenSSL 3 series.
+Additionally, Visual Studio versions of Qt builds supports TLS 1.3 using SecureTransport.
+Note All builds have -DFEATURE_icu=OFF because I think the ICU library is too big and, in most of the conditions, useless for common users.</description>
+    </item>
+    <item>
+      <title>6.2.4 for macOS</title>
+      <link>/6.2-series/6.2.4-for-macos/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/6.2-series/6.2.4-for-macos/index.html</guid>
+      <description>Note SQLite(distributed with Qt) are built in the backage and have -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF.
+Note Since Qt 6.2 Qt made SSL backends as plugin. We build SecureTransport and OpenSSL backend plugin, with OpenSSL backend built with OpenSSL 3 series.
+Note All builds have -DFEATURE_icu=OFF because I think the ICU library is too big and, in most of the conditions, useless for common users.
+Note No QtWebEngine in this version.
+CVE issue patched All builds of Qt 6.</description>
+    </item>
+    <item>
+      <title>6.2.4 for Android</title>
+      <link>/6.2-series/6.2.4-for-android/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/6.2-series/6.2.4-for-android/index.html</guid>
+      <description>Note SQLite(distributed with Qt) are built in the backage and have -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF.
+Note Since Qt 6.2 Qt made SSL backends as plugin.
+We build OpenSSL backend plugin with OpenSSL 3 series.
+Note All builds have -DFEATURE_icu=OFF because I think the ICU library is too big and, in most of the conditions, useless for common users.
+Note All builds are using NDK r23c with -DANDROID_NATIVE_API_LEVEL=24, it means the APK built using these packages may be not able to run on Android 7.</description>
+    </item>
+    <item>
+      <title>6.2.4 for WebAssembly</title>
+      <link>/6.2-series/6.2.4-for-webassembly/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/6.2-series/6.2.4-for-webassembly/index.html</guid>
+      <description>Note SQLite(distributed with Qt) are built in the backage and have -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF.
+Note All builds have -DFEATURE_icu=OFF because I think the ICU library is too big and, in most of the conditions, useless for common users.
+Note All builds are using emscripten SDK 2.0.14 as recommended in Qt Wiki. All builds are with -DFEATURE_thread=ON.
+Note Qt for WebAssembly can&amp;rsquo;t be built to shared libs.
+CVE issue patched All builds have following CVEs fixed:</description>
+    </item>
+  </channel>
+</rss>
