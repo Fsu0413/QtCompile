@@ -20,11 +20,6 @@
 			}
 		}
 	},
-	"outputs": {
-		"home": ["HTML", "RSS"],
-		"section": ["HTML", "RSS"],
-		"page": ["HTML", "RSS"]
-	},
 	"Languages": {
 		"en" : {
 			"title":"Fsu0413's Original Qt builds",
