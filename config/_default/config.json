@@ -19,6 +19,11 @@
 			}
 		}
 	},
+	"outputs": {
+		"home": ["HTML", "PRINT"],
+		"section": ["HTML", "PRINT"],
+		"page": ["HTML", "PRINT"]
+	},
 	"Languages": {
 		"en" : {
 			"title":"Fsu0413's Original Qt builds",
