@@ -21,9 +21,9 @@
 		}
 	},
 	"outputs": {
-		"home": ["HTML", "PRINT"],
-		"section": ["HTML", "PRINT"],
-		"page": ["HTML", "PRINT"]
+		"home": ["HTML", "RSS"],
+		"section": ["HTML", "RSS"],
+		"page": ["HTML", "RSS"]
 	},
 	"Languages": {
 		"en" : {
