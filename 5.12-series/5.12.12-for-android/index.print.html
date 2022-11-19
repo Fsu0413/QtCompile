@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.106.0">
+    <meta name="generator" content="Relearn 5.6.1">
+    <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
+    <meta name="author" content="Fsu0413">
+    <title>5.12.12 for Android :: Fsu0413&#39;s Original Qt builds</title>
+    <link href="/5.12-series/5.12.12-for-android/index.html" rel="canonical" type="text/html" title="5.12.12 for Android :: Fsu0413&#39;s Original Qt builds">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css" rel="stylesheet"></noscript>
+    <link href="/css/featherlight.min.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css" rel="stylesheet"></noscript>
+    <link href="/css/auto-complete.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css" rel="stylesheet">
+    <link href="/css/nucleus.css" rel="stylesheet">
+    <link href="/css/fonts.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css" rel="stylesheet"></noscript>
+    <link href="/css/theme.css" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css" rel="stylesheet" id="variant-style">
+    <link href="/css/ie.css" rel="stylesheet">
+    <link href="/css/variant.css" rel="stylesheet">
+    <link href="/css/print.css" rel="stylesheet" media="print">
+    <link href="/css/format-print.css" rel="stylesheet">
+    <script src="/js/url.js"></script>
+    <script src="/js/variant.js"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy to clipboard';
+      window.T_Copied_to_clipboard = 'Copied to clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      window.T_No_results_found = 'No results found for \u0022{0}\u0022';
+      window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
+      // some further base stuff
+      var baseUriFull='/';
+      window.variants && variants.init( [ 'relearn-dark', 'relearn-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
+    </script>
+    <script src="/js/jquery.min.js" defer></script><style>
+    p.fsu0413_leftFooter {
+        text-align: center;
+        font-style: italic;
+        font-size: x-small;
+    }
+    p.fsu0413_logo {
+        text-align: left;
+    }
+    p.fsu0413_error {
+        font-weight: 900;
+        font-size: 300%;
+        color: red;
+    }
+    th.fsu0413_qtAddressHeader {
+        text-align: center;
+    }
+    h1 {
+        text-transform: none;
+    }
+    strong {
+        color: red;
+    }
+</style>
+  </head>
+  <body class="mobile-support print" data-url="/5.12-series/5.12.12-for-android/index.html">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable" dir="ltr">
+        <div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Fsu0413&#39;s Original Qt builds</span></a><meta itemprop="position" content="1"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/5.12-series/index.html"><span itemprop="name">5.12 series</span></a><meta itemprop="position" content="2"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">5.12.12 for Android</span><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <div id="head-tags">
+          </div>
+          <article class="default">
+<h1 id="5.12.12-for-android">5.12.12 for Android</h1>
+
+
+<div class="box notices cstyle info">
+    <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
+    <div class="box-content">
+<p>SQLite(distributed with Qt) are built in the backage and have <code>-plugin-sql-sqlite</code></p>
+    </div>
+</div>
+
+<div class="box notices cstyle info">
+    <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
+    <div class="box-content">
+<p>All packages have <code>-openssl-linked</code>, Since BoringSSL, which is used in Android 6.0 or later, is NOT API COMPATIBLE WITH OPENSSL, we link it to a static OpenSSL 1.1.1 series instead of system SSL library.</p>
+    </div>
+</div>
+
+<div class="box notices cstyle info">
+    <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
+    <div class="box-content">
+<p>All builds have <code>-no-icu</code> because I think the ICU library is too big and, in most of the conditions, useless for common users.</p>
+    </div>
+</div>
+
+<div class="box notices cstyle info">
+    <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
+    <div class="box-content">
+<p>All builds are using NDK r21e with <code>-android-ndk-platform android-21</code>, it means the APK built using these packages may be not able to run on Android 5.0.x and earlier.</p>
+    </div>
+</div>
+
+<div class="box notices cstyle primary">
+    <div class="box-label"><i class="fas fa-check-square"></i> CVE issue patched</div>
+    <div class="box-content">
+<p>This version have CVE-2022-25255 patched using <a href="https://codereview.qt-project.org/c/qt/qtbase/+/396020">this patch</a>.</p>
+    </div>
+</div>
+<h2 id="dynamic-builds">Dynamic Builds</h2>
+<h3 id="windows-host">Windows Host</h3>
+<table>
+    <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.12.12-Android-arm-Clang-NDKr21e-XWindows-x86_64-MinGW7.3.0-20221104.7z</b></th></tr></thead>
+    <tbody>
+        <tr><td width="20%"><b>Download:</b></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle green">
+  <a href="https://osdn.net/downloads/users/39/39628/Qt5.12.12-Android-arm-Clang-NDKr21e-XWindows-x86_64-MinGW7.3.0-20221104.7z" target="_blank" rel="noopener">
+    OSDN link
+  </a>
+</span></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-arm-Clang-NDKr21e-XWindows-x86_64-MinGW7.3.0-20221104.7z" target="_blank" rel="noopener">
+    SourceForge link
+  </a>
+</span></td>
+        </tr>
+        <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r21e</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+    </tbody>
+</table>
+<table>
+    <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.12.12-Android-arm64-Clang-NDKr21e-XWindows-x86_64-MinGW7.3.0-20221104.7z</b></th></tr></thead>
+    <tbody>
+        <tr><td width="20%"><b>Download:</b></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle green">
+  <a href="https://osdn.net/downloads/users/39/39627/Qt5.12.12-Android-arm64-Clang-NDKr21e-XWindows-x86_64-MinGW7.3.0-20221104.7z" target="_blank" rel="noopener">
+    OSDN link
+  </a>
+</span></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-arm64-Clang-NDKr21e-XWindows-x86_64-MinGW7.3.0-20221104.7z" target="_blank" rel="noopener">
+    SourceForge link
+  </a>
+</span></td>
+        </tr>
+        <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r21e</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+    </tbody>
+</table>
+<table>
+    <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.12.12-Android-x86-Clang-NDKr21e-XWindows-x86_64-MinGW7.3.0-20221104.7z</b></th></tr></thead>
+    <tbody>
+        <tr><td width="20%"><b>Download:</b></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle green">
+  <a href="https://osdn.net/downloads/users/39/39631/Qt5.12.12-Android-x86-Clang-NDKr21e-XWindows-x86_64-MinGW7.3.0-20221104.7z" target="_blank" rel="noopener">
+    OSDN link
+  </a>
+</span></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-x86-Clang-NDKr21e-XWindows-x86_64-MinGW7.3.0-20221104.7z" target="_blank" rel="noopener">
+    SourceForge link
+  </a>
+</span></td>
+        </tr>
+        <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r21e</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+    </tbody>
+</table>
+<h3 id="linux-host">Linux Host</h3>
+<table>
+    <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.12.12-Android-arm-Clang-NDKr21e-xLinux-x86_64-gcc8.5.0-20221104.tar.xz</b></th></tr></thead>
+    <tbody>
+        <tr><td width="20%"><b>Download:</b></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle green">
+  <a href="https://osdn.net/downloads/users/39/39635/Qt5.12.12-Android-arm-Clang-NDKr21e-xLinux-x86_64-gcc8.5.0-20221104.tar.xz" target="_blank" rel="noopener">
+    OSDN link
+  </a>
+</span></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-arm-Clang-NDKr21e-xLinux-x86_64-gcc8.5.0-20221104.tar.xz" target="_blank" rel="noopener">
+    SourceForge link
+  </a>
+</span></td>
+        </tr>
+        <tr><td width="20%"><b>Build Host:</b></td><td width="30%">RockyLinux 8.6</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r21e</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+    </tbody>
+</table>
+<table>
+    <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.12.12-Android-arm64-Clang-NDKr21e-xLinux-x86_64-gcc8.5.0-20221103.tar.xz</b></th></tr></thead>
+    <tbody>
+        <tr><td width="20%"><b>Download:</b></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle green">
+  <a href="https://osdn.net/downloads/users/39/39636/Qt5.12.12-Android-arm64-Clang-NDKr21e-xLinux-x86_64-gcc8.5.0-20221103.tar.xz" target="_blank" rel="noopener">
+    OSDN link
+  </a>
+</span></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-arm64-Clang-NDKr21e-xLinux-x86_64-gcc8.5.0-20221103.tar.xz" target="_blank" rel="noopener">
+    SourceForge link
+  </a>
+</span></td>
+        </tr>
+        <tr><td width="20%"><b>Build Host:</b></td><td width="30%">RockyLinux 8.6</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r21e</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+    </tbody>
+</table>
+<table>
+    <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.12.12-Android-x86-Clang-NDKr21e-xLinux-x86_64-gcc8.5.0-20221103.tar.xz</b></th></tr></thead>
+    <tbody>
+        <tr><td width="20%"><b>Download:</b></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle green">
+  <a href="https://osdn.net/downloads/users/39/39637/Qt5.12.12-Android-x86-Clang-NDKr21e-xLinux-x86_64-gcc8.5.0-20221103.tar.xz" target="_blank" rel="noopener">
+    OSDN link
+  </a>
+</span></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-x86-Clang-NDKr21e-xLinux-x86_64-gcc8.5.0-20221103.tar.xz" target="_blank" rel="noopener">
+    SourceForge link
+  </a>
+</span></td>
+        </tr>
+        <tr><td width="20%"><b>Build Host:</b></td><td width="30%">RockyLinux 8.6</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r21e</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+    </tbody>
+</table>
+<h3 id="macos-host">macOS Host</h3>
+<table>
+    <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.12.12-Android-arm-Clang-NDKr21e-xmacOS-x86_64-AppleClang12.0.5-20221104.tar.xz</b></th></tr></thead>
+    <tbody>
+        <tr><td width="20%"><b>Download:</b></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle green">
+  <a href="https://osdn.net/downloads/users/39/39625/Qt5.12.12-Android-arm-Clang-NDKr21e-xmacOS-x86_64-AppleClang12.0.5-20221104.tar.xz" target="_blank" rel="noopener">
+    OSDN link
+  </a>
+</span></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-arm-Clang-NDKr21e-xmacOS-x86_64-AppleClang12.0.5-20221104.tar.xz" target="_blank" rel="noopener">
+    SourceForge link
+  </a>
+</span></td>
+        </tr>
+        <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 11.6.8</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r21e</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+    </tbody>
+</table>
+<table>
+    <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.12.12-Android-arm64-Clang-NDKr21e-xmacOS-x86_64-AppleClang12.0.5-20221104.tar.xz</b></th></tr></thead>
+    <tbody>
+        <tr><td width="20%"><b>Download:</b></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle green">
+  <a href="https://osdn.net/downloads/users/39/39629/Qt5.12.12-Android-arm64-Clang-NDKr21e-xmacOS-x86_64-AppleClang12.0.5-20221104.tar.xz" target="_blank" rel="noopener">
+    OSDN link
+  </a>
+</span></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-arm64-Clang-NDKr21e-xmacOS-x86_64-AppleClang12.0.5-20221104.tar.xz" target="_blank" rel="noopener">
+    SourceForge link
+  </a>
+</span></td>
+        </tr>
+        <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 11.6.8</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r21e</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+    </tbody>
+</table>
+<table>
+    <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.12.12-Android-x86-Clang-NDKr21e-xmacOS-x86_64-AppleClang12.0.5-20221104.tar.xz</b></th></tr></thead>
+    <tbody>
+        <tr><td width="20%"><b>Download:</b></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle green">
+  <a href="https://osdn.net/downloads/users/39/39630/Qt5.12.12-Android-x86-Clang-NDKr21e-xmacOS-x86_64-AppleClang12.0.5-20221104.tar.xz" target="_blank" rel="noopener">
+    OSDN link
+  </a>
+</span></td>
+            <td colspan="2" width="40%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-x86-Clang-NDKr21e-xmacOS-x86_64-AppleClang12.0.5-20221104.tar.xz" target="_blank" rel="noopener">
+    SourceForge link
+  </a>
+</span></td>
+        </tr>
+        <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 11.6.8</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r21e</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+    </tbody>
+</table>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <script src="/js/clipboard.min.js" defer></script>
+    <script src="/js/perfect-scrollbar.min.js" defer></script>
+    <script src="/js/featherlight.min.js" defer></script>
+    <script src="/js/theme.js" defer></script>
+  </body>
+</html>
