@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>当前的失败项 on Fsu0413 的原版 Qt 构建</title>
-    <link>/zh-cn/miscellaneous/current-failures/index.html</link>
-    <description>Recent content in 当前的失败项 on Fsu0413 的原版 Qt 构建</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="/zh-cn/miscellaneous/current-failures/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>
