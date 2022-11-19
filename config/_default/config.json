@@ -10,7 +10,8 @@
 		"disableSearch": true,
 		"disableNextPrev": true,
 		"themeVariant": ["relearn-dark","relearn-light","learn","neon","red","blue","green"],
-		"collapsibleMenu": true
+		"collapsibleMenu": true,
+		"disableAssetsBusting": true
 	},
 	"markup": {
 		"goldmark": {
