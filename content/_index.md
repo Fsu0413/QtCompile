@@ -41,6 +41,9 @@ Please refer to the content lists in the left area.
 
 ## Update History
 
+### 2022.11.19
+Update Qt 6.4.1 WebAssembly macOS host with Thread feature ON. (I did only modified x86_64 build and... I am using arm64 build for base of cross builds and it's gone)
+
 ### 2022.11.18
 Update Qt 6.4.1.  
 Update Qt 6 WebAssembly with Thread feature ON. (Previous versions are missing this feature)   

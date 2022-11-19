@@ -1494,9 +1494,9 @@
 	},
 	"q6_4mal_W": {
 		"sort": 28,
-		"fileName": "Qt6.4.1-WebAssembly-emscripten3.1.14-xmacOS-Universal-AppleClang14.0.0-20221116.tar.xz",
-		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/WebAssembly/Qt6.4.1-WebAssembly-emscripten3.1.14-xmacOS-Universal-AppleClang14.0.0-20221116.tar.xz",
-		"addrOsdn": "https://osdn.net/downloads/users/39/39769/Qt6.4.1-WebAssembly-emscripten3.1.14-xmacOS-Universal-AppleClang14.0.0-20221116.tar.xz",
+		"fileName": "Qt6.4.1-WebAssembly-emscripten3.1.14-xmacOS-Universal-AppleClang14.0.0-20221119.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/WebAssembly/Qt6.4.1-WebAssembly-emscripten3.1.14-xmacOS-Universal-AppleClang14.0.0-20221119.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39783/Qt6.4.1-WebAssembly-emscripten3.1.14-xmacOS-Universal-AppleClang14.0.0-20221119.tar.xz",
 		"data": {
 			"QtVersion": "6.4.1",
 			"platform": "WebAssembly",
