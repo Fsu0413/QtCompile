@@ -10,8 +10,9 @@
 		"disableSearch": true,
 		"disableNextPrev": true,
 		"themeVariant": ["relearn-dark","relearn-light","learn","neon","red","blue","green"],
-		"collapsibleMenu": true,
-		"disableAssetsBusting": true
+		"collapsibleMenu": false,
+		"disableAssetsBusting": true,
+		"disableInlineCopyToClipBoard": true
 	},
 	"markup": {
 		"goldmark": {
