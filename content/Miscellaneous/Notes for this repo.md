@@ -212,3 +212,9 @@ Commericial-only Qt Open Source Release Date (ETA)
 | 6.2.5 | 2022.7.19 | 2023.7.19 |
 | 6.2.6 | 2022.9.27 | 2023.9.27 |
 
+## Incoming update for future release
+
+~~Use Android NDK r23 series for building Qt 5.15.7 onwards.~~ (Build failed. Will test it on 5.15.8)  
+Use GCC 11 with MinGW-w64 v9 for building Qt 5.15.9 onwards.  
+Use macOS 12 for building Qt 5.15.9 onwards. (No more VM anymore!! we have achieved building Qt 6 macOS universal binary. Will downgrade Xcode to 14.0.1 for macOS SDK 12)  
+Use macOS 13 for building Qt 6.5 onwards. Will check if Qt 6.2 series can be built on it.  

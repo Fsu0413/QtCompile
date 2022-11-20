@@ -41,6 +41,12 @@ Please refer to the content lists in the left area.
 
 ## Update History
 
+### 2022.11.20
+Update all cross built package with CMake toolchain refactored. Currently it can automatically use the bundled host tool using bundled 'qt-cmake' script.  
+The updated packages are following:  
+Qt 6.2.4 Android / WebAssembly packages  
+Qt 6.4.1 Android / WebAssembly packages
+
 ### 2022.11.19
 Update Qt 6.4.1 WebAssembly macOS host with Thread feature ON. (I did only modified x86_64 build and... I am using arm64 build for base of cross builds and it's gone)
 
