@@ -5,7 +5,7 @@ on: [push]
 env:
   BUILD_TYPE: Release
   PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-  
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,13 +15,18 @@ jobs:
           ref: 'build'
           path: 'build'
           submodules: 'recursive'
-      
+
       - uses: actions/checkout@v3
         with:
           ref: 'gh-pages'
           path: 'public'
           fetch-depth: '1'
-      
+
+      - name: set time zone
+        run: |
+          sudo rm /etc/localtime
+          sudo ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
       - name: clean
         run: |
           find public -name \*.html -delete
@@ -45,5 +50,3 @@ jobs:
           echo "${PRIVATE_KEY}" > $HOME/.ssh/id_rsa
           chmod 600 $HOME/.ssh/id_rsa
           git -C public push 'git@github.com:Fsu0413/QtCompile.git' HEAD:refs/heads/gh-pages
-
-          
