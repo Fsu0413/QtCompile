@@ -53,6 +53,6 @@ I'm tired of investigating them and will distribute Qt 6.2 series without QtWebE
 QtWebEngine has not released as LTS since Qt 6.2.4 and the Qt guys are simply taking QtWebEngine from later version (6.3, etc) for their 6.2 LTS series releases.  
 But no one else knows what version Qt guys are using for their Qt 6.2 LTS Releases except for the official packagers, as the QtWebEngine version is always different than the binary files.
 
-## Qt 5.15.7 with QtWebEgnine 5.15.11 build fails on macOS 11
+## Qt 5.15.7 with QtWebEngine 5.15.11 build fails on macOS 11
 
 Reason is unknown.

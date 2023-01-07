@@ -135,7 +135,7 @@ LTS 只给商业许可，那么 LTS 的源码包是什么许可？
 
 还有，我会继续我编译Qt的业余工作，希望 QT for MCUs 早日开源。
 
-## Qt 6 支持的平台（2022 年 8 月 21 日更新）
+## Qt 6 支持的平台（2023 年 1 月 7 日更新）
 
 参考 {{% QtBug 104266 "Qt 6.5 TQC Supported Targets" %}} 和它的前置任务。
 
@@ -143,7 +143,7 @@ LTS 只给商业许可，那么 LTS 的源码包是什么许可？
 
 Windows 11 - VS2019, x86_64, host and target  
 Windows 11 - MinGW, x86_64, host and target  
-macOS 12 - toolchain provided by Apple with AppleClang, x86_64 / arm64_v8a, host and target  
+macOS 13 - toolchain provided by Apple with AppleClang, x86_64 / arm64_v8a, host and target, universal  
 Android - NDK, arm / x86 / arm64 / x86_64, target only. No 32bit builds after 6.3  
 WebAssembly - emscripten, target only  
 Linux - toolchain provided by RedHat modified by RockyLinux developers with GCC, x86_64, host only
@@ -173,7 +173,7 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 
 从 2020 年 1 月 6 日（OpenSSL 1.0.2 系列结束支持）开始，我不再支持 Windows 8 以及更早的版本。请升级到 Windows 8.1 或更新版本。
 
-## 对当前构建的 Qt 版本的已经决定的结束支持日期（2022 年 3 月 8 日更新）
+## 对当前构建的 Qt 版本的已经决定的结束支持日期（2023 年 1 月 7 日更新）
 
 Qt 公司之前突然发布了开源的 5.15.3 版本，从那以后所有事情都变了。  
 我们之前的结束支持计划都没了意义。我们需要重新考虑 5.15 的结束支持日期。
@@ -181,6 +181,10 @@ Qt 公司之前突然发布了开源的 5.15.3 版本，从那以后所有事情
 注：我们在除了 WebAssembly 以外的平台上构建 OpenSSL，所有我们的构建都需要至少支持到那个 OpenSSL 支持的日期。  
 当前正在使用的是 OpenSSL 1.1.1 系列和 3.0 系列。  
 OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 系列则是 2026 年 9 月 7 日。
+
+由于 Qt 5.15 开始支持使用 OpenSSL 3.0 系列，在 OpenSSL 1.1 系列结束支持之后，我们可能会在 Qt 5.15 的安卓版构建中切换到 OpenSSL 3.0 系列。  
+现在可以确定的是 Qt 5.15 有 5 年的支持，不过目前不清楚 Qt 公司是否会在 2024 年 5 月 26 日之后释放 Qt 5.15 后续版本的代码。  
+如果 Qt 5.15 后续版本的代码不公开的话，我们不会再升级到 OpenSSL 3.0 以后的版本。
 
 | Qt 版本 | 构建目标 | 终止支持日期 | 备注 |
 |-|-|-|-|
@@ -191,7 +195,7 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
 | 5.15 系列 | Windows 11 with VS2019 (动态) / VS2022 | 2024.5.26 | 与 Qt 开源版 5.15 系列的终止支持日期保持一致。提前更新 WebEngine 和 Script。包含 VS2017/9/22 的 VS 版本升级。 |
 | | Windows with VS2015 / VS2017 / VS2019 (静态) / MinGW 8.1.0 | 2024.5.26 | 与 Qt 开源版 5.15 系列的终止支持日期保持一致。提前更新 Script。包含 VS2017/9/22 的 VS 版本升级。 |
 | | macOS | 2024.5.26 | 与 Qt 开源版 5.15 系列的终止支持日期保持一致。提前更新 WebEngine 和 Script。（尽可能）包含 Xcode 和 macOS 更新 |
-| | 安卓 | 2024.5.26 | 与 Qt 开源版 5.15 系列的终止支持日期保持一致。会一直使用安卓 NDK r21 LTS 系列。 |
+| | 安卓 | 2026.9.7 | 与 OpenSSL 3.0 的终止支持日期保持一致。 |
 | | WebAssembly | 2024.5.26 | 与 Qt 开源版 5.15 系列的终止支持日期保持一致。 |
 | 6.2 Series | Windows 11 with VS2019 (动态) / VS2022 | 2026.9.7 | 与 OpenSSL 3.0 的终止支持日期保持一致。提前更新 WebEngine。包含 VS 版本升级。 |
 | | Windows 11 with VS2019 (静态) | 2026.9.7 |  与 OpenSSL 3.0 的终止支持日期保持一致。包含 VS 版本升级。  |
@@ -205,12 +209,13 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
 
 | Qt 版本 | 商业专属发布日 | 开源发布日 |
 |-|-|-|
-| 5.15.8 | 2022.1.4 | 2023.1.4 |
 | 5.15.9 | 2022.4.6 | 2023.4.6 |
 | 5.15.10 | 2022.6.7 | 2023.6.7 |
 | 5.15.11 | 2022.10.5 | 2023.10.5 |
+| 5.15.12 | 2022.12.27 | 2023.12.27 |
 | 6.2.5 | 2022.7.19 | 2023.7.19 |
 | 6.2.6 | 2022.9.27 | 2023.9.27 |
+| 6.2.7 | 2023.1.2 | 2024.1.2 |
 
 ## 之后可能会更新的内容
 

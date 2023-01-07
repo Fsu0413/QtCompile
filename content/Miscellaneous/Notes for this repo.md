@@ -135,7 +135,7 @@ This will definitely lose money.
 
 I will continue my amateur job of building Qt. I hope Qt for MCUs will be open source soon.
 
-## Qt 6 support platforms (updated 2022.8.21)
+## Qt 6 support platforms (updated 2023.1.7)
 
 See {{% QtBug 104266 "Qt 6.5 TQC Supported Targets" %}} and its predecessors.
 
@@ -143,7 +143,7 @@ Currently I am building Qt 6 for following platforms:
 
 Windows 11 - VS2019, x86_64, host and target  
 Windows 11 - MinGW, x86_64, host and target  
-macOS 12 - toolchain provided by Apple with AppleClang, x86_64 / arm64_v8a, host and target  
+macOS 13 - toolchain provided by Apple with AppleClang, x86_64 / arm64_v8a, host and target, universal  
 Android - NDK, arm / x86 / arm64 / x86_64, target only. No 32bit builds after 6.3  
 WebAssembly - emscripten, target only  
 Linux - toolchain provided by RedHat modified by RockyLinux developers with GCC, x86_64, host only
@@ -173,7 +173,7 @@ WINDOWS 10 IS MORE AND MORE POPULAR, AND RECEIVING MORE AND MORE NEW FEATURES. O
 
 SINCE 2020.1.6 (OpenSSL 1.0.2 EOL) NO LATER BUILD WILL SUPPORT WINDOWS 8 AND EARLIER BY ME, PLEASE UPDATE TO WINDOWS 8.1 AND LATER.
 
-## Decided EOL of current building Qt LTS versions (Updated 2022.3.8)
+## Decided EOL of current building Qt LTS versions (Updated 2023.1.7)
 
 tQtC released Qt opensource 5.15.3 for a sudden and all the things changed since then.  
 All of our EOL schedule becomes meaningless. We should re-consider the EOL date since Qt 5.15.
@@ -181,6 +181,10 @@ All of our EOL schedule becomes meaningless. We should re-consider the EOL date 
 Note: since OpenSSL is currently built on all versions of my build except for WebAssembly, all of my builds should persist until EOL of that specific OpenSSL version.  
 Currently OpenSSL 1.1.1 and 3.0 series are used.  
 OpenSSL 1.1.1 series reaches EOL until 2023.9.11, while OpenSSL 3.0 series does until 2026.9.7.
+
+Since Qt 5.15 starts supporting OpenSSL 3.0 series we may switch to OpenSSL 3.0 series on our Qt 5.15 Android builds after EOL of OpenSSL 1.1 series.  
+Currently it is certain that Qt 5.15 will be supported for 5 years, but it is unknown that tQtC will provide source code of Qt 5.15 after 2024.5.26.  
+If subsequent version of Qt 5.15 remains private we won't upgrade OpenSSL to post-3.0 version.
 
 | Qt version | Build Target | EOL date | Notes |
 |-|-|-|-|
@@ -191,7 +195,7 @@ OpenSSL 1.1.1 series reaches EOL until 2023.9.11, while OpenSSL 3.0 series does 
 | 5.15 Series | Windows 11 with VS2019 (Shared) / VS2022 | 2024.5.26 | Same as EOL of Qt opensource 5.15, with WebEngine and Script got update ahead of time, with VS version update within VS2017/9/22 |
 | | Windows with VS2015 / VS2017 / VS2019 (static) / MinGW 8.1.0 | 2024.5.26 | Same as EOL of Qt opensource 5.15, with Script update ahead of time, with VS version update within VS2017/9/22 |
 | | macOS | 2024.5.26 | Same as EOL of Qt opensource 5.15, with WebEngine and Script got update ahead of time, with (at best effort) Xcode and macOS update |
-| | Android | 2024.5.26 | Same as EOL of Qt opensource 5.15. Will stuck at Android NDK r21 LTS series |
+| | Android | 2026.9.7 | Same as EOL of OpenSSL 3.0 series. |
 | | WebAssembly | 2024.5.26 | Same as EOL of Qt opensource 5.15 |
 | 6.2 Series | Windows 11 with VS2019 (Shared) / VS2022 | 2026.9.7 | Same as EOL of OpenSSL 3.0 series, with WebEngine update ahead of time, with VS version update |
 | | Windows 11 with VS2019 (static) | 2026.9.7 | Same as EOL of OpenSSL 3.0 series, with VS version update |
@@ -205,12 +209,13 @@ Commericial-only Qt Open Source Release Date (ETA)
 
 | Qt Version | Commericial Release Date | Open Source Release Date |
 |-|-|-|
-| 5.15.8 | 2022.1.4 | 2023.1.4 |
 | 5.15.9 | 2022.4.6 | 2023.4.6 |
 | 5.15.10 | 2022.6.7 | 2023.6.7 |
 | 5.15.11 | 2022.10.5 | 2023.10.5 |
+| 5.15.12 | 2022.12.27 | 2023.12.27 |
 | 6.2.5 | 2022.7.19 | 2023.7.19 |
 | 6.2.6 | 2022.9.27 | 2023.9.27 |
+| 6.2.7 | 2023.1.2 | 2024.1.2 |
 
 ## Incoming update for future release
 

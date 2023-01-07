@@ -53,6 +53,6 @@ open62541 没有在 1.3.3 版本之后发布任何新版本，所以 QtOpcUa 6.4
 QtWebEngine 自从 6.2.4 之后就没再针对 LTS 版本发布新版，而是直接拿更新的 QtWebEngine（比如 6.3 之类的）作为 6.2 LTS 系列发布。  
 但是因为 QtWebEngine 的二进制文件的版本号和实际版本号不同，除了官方打包负责人之外没人知道 Qt 具体用了 QtWebEngine 的哪个版本来打包的。
 
-## Qt 5.15.7 附带 QtWebEgnine 5.15.11 在 macOS 11 中构建失败
+## Qt 5.15.7 附带 QtWebEngine 5.15.11 在 macOS 11 中构建失败
 
 原因未知。
