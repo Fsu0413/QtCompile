@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.106.0">
-    <meta name="generator" content="Relearn 5.6.5">
+    <meta name="generator" content="Hugo 0.109.0">
+    <meta name="generator" content="Relearn 5.9.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>6.2.4 的安卓版本 :: Fsu0413 的原版 Qt 构建</title>
@@ -106,42 +106,42 @@
 
 
 <div class="box notices cstyle info">
-    <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
-    <div class="box-content">
+  <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
+  <div class="box-content">
 <p>SQLite(distributed with Qt) are built in the backage and have <code>-DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF</code>.</p>
-    </div>
+  </div>
 </div>
 
 <div class="box notices cstyle info">
-    <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
-    <div class="box-content">
+  <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
+  <div class="box-content">
 <p>Since Qt 6.2 Qt made SSL backends as plugin.<br>
 We build OpenSSL backend plugin with OpenSSL 3 series.</p>
-    </div>
+  </div>
 </div>
 
 <div class="box notices cstyle info">
-    <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
-    <div class="box-content">
+  <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
+  <div class="box-content">
 <p>All builds have <code>-DFEATURE_icu=OFF</code> because I think the ICU library is too big and, in most of the conditions, useless for common users.</p>
-    </div>
+  </div>
 </div>
 
 <div class="box notices cstyle info">
-    <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
-    <div class="box-content">
+  <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
+  <div class="box-content">
 <p>All builds are using NDK r23c with <code>-DANDROID_NATIVE_API_LEVEL=24</code>, it means the APK built using these packages may be not able to run on Android 7.0.x and earlier.</p>
-    </div>
+  </div>
 </div>
 
 <div class="box notices cstyle primary">
-    <div class="box-label"><i class="fas fa-check-square"></i> CVE issue patched</div>
-    <div class="box-content">
+  <div class="box-label"><i class="fas fa-check-square"></i> CVE issue patched</div>
+  <div class="box-content">
 <p>All builds have following CVEs fixed:<br>
 CVE-2018-25032<br>
 CVE-2022-27404-27405-27406<br>
 CVE-2022-37434</p>
-    </div>
+  </div>
 </div>
 <h2 id="dynamic-builds">Dynamic Builds</h2>
 <h3 id="windows-host">Windows Host</h3>
@@ -151,13 +151,13 @@ CVE-2022-37434</p>
         <tr><td width="20%"><b>下载地址：</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/39/39799/Qt6.2.4-Android-arm-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20221120.7z" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/39/39799/Qt6.2.4-Android-arm-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20221120.7z" target="_blank">
     OSDN 链接
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-arm-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20221120.7z" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-arm-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20221120.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -171,13 +171,13 @@ CVE-2022-37434</p>
         <tr><td width="20%"><b>下载地址：</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/39/39801/Qt6.2.4-Android-arm64-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20221120.7z" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/39/39801/Qt6.2.4-Android-arm64-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20221120.7z" target="_blank">
     OSDN 链接
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-arm64-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20221120.7z" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-arm64-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20221120.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -191,13 +191,13 @@ CVE-2022-37434</p>
         <tr><td width="20%"><b>下载地址：</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/39/39800/Qt6.2.4-Android-x86-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20221120.7z" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/39/39800/Qt6.2.4-Android-x86-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20221120.7z" target="_blank">
     OSDN 链接
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-x86-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20221120.7z" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-x86-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20221120.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -211,13 +211,13 @@ CVE-2022-37434</p>
         <tr><td width="20%"><b>下载地址：</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/39/39797/Qt6.2.4-Android-x86_64-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20221120.7z" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/39/39797/Qt6.2.4-Android-x86_64-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20221120.7z" target="_blank">
     OSDN 链接
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-x86_64-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20221120.7z" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-x86_64-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20221120.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -232,13 +232,13 @@ CVE-2022-37434</p>
         <tr><td width="20%"><b>下载地址：</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/39/39789/Qt6.2.4-Android-arm-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20221120.tar.xz" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/39/39789/Qt6.2.4-Android-arm-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20221120.tar.xz" target="_blank">
     OSDN 链接
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-arm-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20221120.tar.xz" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-arm-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20221120.tar.xz" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -252,13 +252,13 @@ CVE-2022-37434</p>
         <tr><td width="20%"><b>下载地址：</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/39/39791/Qt6.2.4-Android-arm64-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20221120.tar.xz" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/39/39791/Qt6.2.4-Android-arm64-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20221120.tar.xz" target="_blank">
     OSDN 链接
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-arm64-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20221120.tar.xz" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-arm64-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20221120.tar.xz" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -272,13 +272,13 @@ CVE-2022-37434</p>
         <tr><td width="20%"><b>下载地址：</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/39/39792/Qt6.2.4-Android-x86-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20221120.tar.xz" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/39/39792/Qt6.2.4-Android-x86-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20221120.tar.xz" target="_blank">
     OSDN 链接
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-x86-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20221120.tar.xz" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-x86-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20221120.tar.xz" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -292,13 +292,13 @@ CVE-2022-37434</p>
         <tr><td width="20%"><b>下载地址：</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/39/39811/Qt6.2.4-Android-x86_64-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20221120.tar.xz" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/39/39811/Qt6.2.4-Android-x86_64-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20221120.tar.xz" target="_blank">
     OSDN 链接
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-x86_64-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20221120.tar.xz" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-x86_64-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20221120.tar.xz" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -313,13 +313,13 @@ CVE-2022-37434</p>
         <tr><td width="20%"><b>下载地址：</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/39/39798/Qt6.2.4-Android-arm-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.0-20221120.tar.xz" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/39/39798/Qt6.2.4-Android-arm-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.0-20221120.tar.xz" target="_blank">
     OSDN 链接
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-arm-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.0-20221120.tar.xz" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-arm-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.0-20221120.tar.xz" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -333,13 +333,13 @@ CVE-2022-37434</p>
         <tr><td width="20%"><b>下载地址：</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/39/39803/Qt6.2.4-Android-arm64-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.0-20221120.tar.xz" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/39/39803/Qt6.2.4-Android-arm64-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.0-20221120.tar.xz" target="_blank">
     OSDN 链接
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-arm64-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.0-20221120.tar.xz" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-arm64-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.0-20221120.tar.xz" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -353,13 +353,13 @@ CVE-2022-37434</p>
         <tr><td width="20%"><b>下载地址：</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/39/39805/Qt6.2.4-Android-x86-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.0-20221120.tar.xz" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/39/39805/Qt6.2.4-Android-x86-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.0-20221120.tar.xz" target="_blank">
     OSDN 链接
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-x86-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.0-20221120.tar.xz" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-x86-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.0-20221120.tar.xz" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -373,13 +373,13 @@ CVE-2022-37434</p>
         <tr><td width="20%"><b>下载地址：</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/39/39802/Qt6.2.4-Android-x86_64-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.0-20221120.tar.xz" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/39/39802/Qt6.2.4-Android-x86_64-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.0-20221120.tar.xz" target="_blank">
     OSDN 链接
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-x86_64-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.0-20221120.tar.xz" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-x86_64-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.0-20221120.tar.xz" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -402,9 +402,7 @@ CVE-2022-37434</p>
       </div>
       <div id="homelinks" class="default-animation">
         <ul>
-          <li>
-              <a class="padding" href="/zh-cn/index.html"><i class='fas fa-home'></i> 主页</a>
-          </li>
+          <li><a class="padding" href="/zh-cn/index.html"><i class='fas fa-home'></i> 主页</a></li>
         </ul>
       </div>
       <div id="content-wrapper" class="highlightable">
@@ -497,7 +495,7 @@ CVE-2022-37434</p>
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sun, 20 Nov 2022 05:21:27 UTC</p>
+Site generated: Sat, 07 Jan 2023 08:38:45 UTC</p>
 
         </div>
       </div>

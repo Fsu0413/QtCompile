@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.106.0">
-    <meta name="generator" content="Relearn 5.6.5">
+    <meta name="generator" content="Hugo 0.109.0">
+    <meta name="generator" content="Relearn 5.9.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>6.2.4 for macOS :: Fsu0413&#39;s Original Qt builds</title>
@@ -115,49 +115,49 @@
 
 
 <div class="box notices cstyle info">
-    <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
-    <div class="box-content">
+  <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
+  <div class="box-content">
 <p>SQLite(distributed with Qt) are built in the backage and have <code>-DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF</code>.</p>
-    </div>
+  </div>
 </div>
 
 <div class="box notices cstyle info">
-    <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
-    <div class="box-content">
+  <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
+  <div class="box-content">
 <p>Since Qt 6.2 Qt made SSL backends as plugin.
 We build SecureTransport and OpenSSL backend plugin, with OpenSSL backend built with OpenSSL 3 series.</p>
-    </div>
+  </div>
 </div>
 
 <div class="box notices cstyle info">
-    <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
-    <div class="box-content">
+  <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
+  <div class="box-content">
 <p>All builds have <code>-DFEATURE_icu=OFF</code> because I think the ICU library is too big and, in most of the conditions, useless for common users.</p>
-    </div>
+  </div>
 </div>
 
 <div class="box notices cstyle info">
-    <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
-    <div class="box-content">
+  <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
+  <div class="box-content">
 <p>No QtWebEngine in this version.</p>
-    </div>
+  </div>
 </div>
 
 <div class="box notices cstyle primary">
-    <div class="box-label"><i class="fas fa-check-square"></i> CVE issue patched</div>
-    <div class="box-content">
+  <div class="box-label"><i class="fas fa-check-square"></i> CVE issue patched</div>
+  <div class="box-content">
 <p>All builds of Qt 6.2.4 have following CVEs fixed:<br>
 CVE-2018-25032<br>
 CVE-2022-27404-27405-27406<br>
 CVE-2022-37434</p>
-    </div>
+  </div>
 </div>
 
 <div class="box notices cstyle info">
-    <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
-    <div class="box-content">
+  <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
+  <div class="box-content">
 <p>Since 2022/11/18 I&rsquo;ll provide only Universal builds of macOS, which will run natively on Intel Macs and ARM Macs.</p>
-    </div>
+  </div>
 </div>
 <h2 id="dynamic--shared-builds">Dynamic / Shared Builds</h2>
 <h3 id="macos-universal">macOS-Universal</h3>
@@ -167,13 +167,13 @@ CVE-2022-37434</p>
         <tr><td width="20%"><b>Download:</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/39/39753/Qt6.2.4-macOS-Universal-AppleClang14.0.0-20221116.tar.xz" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/39/39753/Qt6.2.4-macOS-Universal-AppleClang14.0.0-20221116.tar.xz" target="_blank">
     OSDN link
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-Universal/Qt6.2.4-macOS-Universal-AppleClang14.0.0-20221116.tar.xz" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-Universal/Qt6.2.4-macOS-Universal-AppleClang14.0.0-20221116.tar.xz" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -187,13 +187,13 @@ CVE-2022-37434</p>
         <tr><td width="20%"><b>Download:</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/39/39755/Qt6.2.4-macOS-Universal-AppleClang14.0.0-noFramework-20221116.tar.xz" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/39/39755/Qt6.2.4-macOS-Universal-AppleClang14.0.0-noFramework-20221116.tar.xz" target="_blank">
     OSDN link
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-Universal/Qt6.2.4-macOS-Universal-AppleClang14.0.0-noFramework-20221116.tar.xz" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-Universal/Qt6.2.4-macOS-Universal-AppleClang14.0.0-noFramework-20221116.tar.xz" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -209,13 +209,13 @@ CVE-2022-37434</p>
         <tr><td width="20%"><b>Download:</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/39/39770/Qt6.2.4-macOS-Universal-AppleClang14.0.0-staticFull-20221113.tar.xz" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/39/39770/Qt6.2.4-macOS-Universal-AppleClang14.0.0-staticFull-20221113.tar.xz" target="_blank">
     OSDN link
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-Universal/Qt6.2.4-macOS-Universal-AppleClang14.0.0-staticFull-20221113.tar.xz" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-Universal/Qt6.2.4-macOS-Universal-AppleClang14.0.0-staticFull-20221113.tar.xz" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -226,23 +226,23 @@ CVE-2022-37434</p>
 <h2 id="legacy-builds">Legacy Builds</h2>
 
 <div class="box notices cstyle info">
-    <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
-    <div class="box-content">
+  <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
+  <div class="box-content">
 <p>Note: Qt release Qt 6.2 series opensource version a year later than commerical version, while using QtWebEngine from Qt 6.3 series.<br>
 That is because QtWebEngine use a thirdparty project which features a license which don&rsquo;t allow closed source.<br>
 Qt 6.3 series has released Qt 6.3.2 so this version is built with QtWebEngine 6.3.2.<br>
-Since <a href="https://bugreports.qt.io/browse/QTBUG-106630">QTBUG-106630</a>
+Since <a href="https://bugreports.qt.io/browse/QTBUG-106630" target="_blank">QTBUG-106630</a>
 the binaries are marked as version 6.2.4.</p>
-    </div>
+  </div>
 </div>
 
 <div class="box notices cstyle warning">
-    <div class="box-label"><i class="fas fa-exclamation-triangle"></i> Important</div>
-    <div class="box-content">
+  <div class="box-label"><i class="fas fa-exclamation-triangle"></i> Important</div>
+  <div class="box-content">
 <p>These builds are only for users who needs QtWebEngine.<br>
 These builds are legacy and have some important security issues.<br>
 I don&rsquo;t recommand using these builds.</p>
-    </div>
+  </div>
 </div>
 <h3 id="macos-x86_64">macOS-x86_64</h3>
 <table>
@@ -251,13 +251,13 @@ I don&rsquo;t recommand using these builds.</p>
         <tr><td width="20%"><b>Download:</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/39/39251/Qt6.2.4-macOS-x86_64-AppleClang14.0.0-20220915.tar.xz" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/39/39251/Qt6.2.4-macOS-x86_64-AppleClang14.0.0-20220915.tar.xz" target="_blank">
     OSDN link
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-x86_64/Qt6.2.4-macOS-x86_64-AppleClang14.0.0-20220915.tar.xz" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-x86_64/Qt6.2.4-macOS-x86_64-AppleClang14.0.0-20220915.tar.xz" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -271,13 +271,13 @@ I don&rsquo;t recommand using these builds.</p>
         <tr><td width="20%"><b>Download:</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/39/39252/Qt6.2.4-macOS-x86_64-AppleClang14.0.0-noFramework-20220914.tar.xz" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/39/39252/Qt6.2.4-macOS-x86_64-AppleClang14.0.0-noFramework-20220914.tar.xz" target="_blank">
     OSDN link
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-x86_64/Qt6.2.4-macOS-x86_64-AppleClang14.0.0-noFramework-20220914.tar.xz" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-x86_64/Qt6.2.4-macOS-x86_64-AppleClang14.0.0-noFramework-20220914.tar.xz" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -292,13 +292,13 @@ I don&rsquo;t recommand using these builds.</p>
         <tr><td width="20%"><b>Download:</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/39/39244/Qt6.2.4-macOS-arm64_v8a-AppleClang14.0.0-20220914.tar.xz" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/39/39244/Qt6.2.4-macOS-arm64_v8a-AppleClang14.0.0-20220914.tar.xz" target="_blank">
     OSDN link
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-arm64_v8a/Qt6.2.4-macOS-arm64_v8a-AppleClang14.0.0-20220914.tar.xz" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-arm64_v8a/Qt6.2.4-macOS-arm64_v8a-AppleClang14.0.0-20220914.tar.xz" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -312,13 +312,13 @@ I don&rsquo;t recommand using these builds.</p>
         <tr><td width="20%"><b>Download:</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/39/39243/Qt6.2.4-macOS-arm64_v8a-AppleClang14.0.0-noFramework-20220914.tar.xz" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/39/39243/Qt6.2.4-macOS-arm64_v8a-AppleClang14.0.0-noFramework-20220914.tar.xz" target="_blank">
     OSDN link
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-arm64_v8a/Qt6.2.4-macOS-arm64_v8a-AppleClang14.0.0-noFramework-20220914.tar.xz" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-arm64_v8a/Qt6.2.4-macOS-arm64_v8a-AppleClang14.0.0-noFramework-20220914.tar.xz" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -341,9 +341,7 @@ I don&rsquo;t recommand using these builds.</p>
       </div>
       <div id="homelinks" class="default-animation">
         <ul>
-          <li>
-              <a class="padding" href="/index.html"><i class='fas fa-home'></i> Home</a>
-          </li>
+          <li><a class="padding" href="/index.html"><i class='fas fa-home'></i> Home</a></li>
         </ul>
       </div>
       <div id="content-wrapper" class="highlightable">
@@ -436,7 +434,7 @@ I don&rsquo;t recommand using these builds.</p>
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sun, 20 Nov 2022 05:21:27 UTC</p>
+Site generated: Sat, 07 Jan 2023 08:38:44 UTC</p>
 
         </div>
       </div>

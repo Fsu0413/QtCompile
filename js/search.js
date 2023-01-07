@@ -117,17 +117,29 @@ function search(term) {
     // Find the item in our index corresponding to the lunr one to have more info
     // Remove Lunr special search characters: https://lunrjs.com/guides/searching.html
     var searchTerm = lunr.tokenizer(term.replace(/[*:^~+-]/, ' ')).reduce( function(a,token){return a.concat(searchPatterns(token.str))}, []).join(' ');
-    return !searchTerm ? [] : lunrIndex.search(searchTerm).map(function(result) {
+    return !searchTerm || !lunrIndex ? [] : lunrIndex.search(searchTerm).map(function(result) {
         return { index: result.ref, matches: Object.keys(result.matchData.metadata) }
     });
 }
 
 function searchPatterns(word) {
+    // for short words high amounts of typos doesn't make sense
+    // for long words we allow less typos because this largly increases search time
+    var typos = [
+        { len:  -1, typos: 1 },
+        { len:  60, typos: 2 },
+        { len:  40, typos: 3 },
+        { len:  20, typos: 4 },
+        { len:  16, typos: 3 },
+        { len:  12, typos: 2 },
+        { len:   8, typos: 1 },
+        { len:   4, typos: 0 },
+    ];
     return [
         word + '^100',
         word + '*^10',
         '*' + word + '^10',
-        word + '~' + Math.floor(word.length / 4) + '^1' // allow 1 in 4 letters to have a typo
+        word + '~' + typos.reduce( function( a, c, i ){ return word.length < c.len ? c : a; } ).typos + '^1'
     ];
 }
 

@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.106.0">
-    <meta name="generator" content="Relearn 5.6.5">
+    <meta name="generator" content="Hugo 0.109.0">
+    <meta name="generator" content="Relearn 5.9.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>5.9.9 for Android :: Fsu0413&#39;s Original Qt builds</title>
@@ -107,39 +107,39 @@
 
 
 <div class="box notices cstyle warning">
-    <div class="box-label"><i class="fas fa-exclamation-triangle"></i> Important</div>
-    <div class="box-content">
+  <div class="box-label"><i class="fas fa-exclamation-triangle"></i> Important</div>
+  <div class="box-content">
 <p>FINAL VERSION, NO MORE UPDATES EVEN IF REQUESTED, BUILD ENVIRONMENT HAS BEEN DESTRUCTED</p>
-    </div>
+  </div>
 </div>
 
 <div class="box notices cstyle info">
-    <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
-    <div class="box-content">
+  <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
+  <div class="box-content">
 <p>SQLite(distributed with Qt) are built in the backage and have -plugin-sql-sqlite</p>
-    </div>
+  </div>
 </div>
 
 <div class="box notices cstyle info">
-    <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
-    <div class="box-content">
+  <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
+  <div class="box-content">
 <p>All packages have -openssl-linked, Since BoringSSL, which is used in Android 6.0 or later, is NOT API COMPATIBLE WITH OPENSSL, we link it to a static OpenSSL 1.0.2 series instead of system SSL library.</p>
-    </div>
+  </div>
 </div>
 
 <div class="box notices cstyle info">
-    <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
-    <div class="box-content">
+  <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
+  <div class="box-content">
 <p>All builds have -no-icu because I think the ICU library is too big and, in most of the conditions, useless for common users.</p>
-    </div>
+  </div>
 </div>
 
 <div class="box notices cstyle info">
-    <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
-    <div class="box-content">
+  <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
+  <div class="box-content">
 <p>All builds except arm64 are using NDK r10e with -android-ndk-platform android-16, it means the APK built using these packages may be not able to run on Android 4.1.x and earlier.<br>
 arm64 builds are using NDK r10e with -android-ndk-platform android-21 and OpenSSL ./Configure linux-aarch64.</p>
-    </div>
+  </div>
 </div>
 <h2 id="dynamic-builds">Dynamic Builds</h2>
 <h3 id="windows-host">Windows Host</h3>
@@ -149,13 +149,13 @@ arm64 builds are using NDK r10e with -android-ndk-platform android-21 and OpenSS
         <tr><td width="20%"><b>Download:</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/30/30737/Qt5.9.9-Android-arm-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/30/30737/Qt5.9.9-Android-arm-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z" target="_blank">
     OSDN link
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/Windows-x86_64-hosted/Qt5.9.9-Android-arm-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/Windows-x86_64-hosted/Qt5.9.9-Android-arm-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -169,13 +169,13 @@ arm64 builds are using NDK r10e with -android-ndk-platform android-21 and OpenSS
         <tr><td width="20%"><b>Download:</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/30/30738/Qt5.9.9-Android-arm64-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/30/30738/Qt5.9.9-Android-arm64-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z" target="_blank">
     OSDN link
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/Windows-x86_64-hosted/Qt5.9.9-Android-arm64-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/Windows-x86_64-hosted/Qt5.9.9-Android-arm64-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -189,13 +189,13 @@ arm64 builds are using NDK r10e with -android-ndk-platform android-21 and OpenSS
         <tr><td width="20%"><b>Download:</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/30/30739/Qt5.9.9-Android-x86-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/30/30739/Qt5.9.9-Android-x86-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z" target="_blank">
     OSDN link
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/Windows-x86_64-hosted/Qt5.9.9-Android-x86-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/Windows-x86_64-hosted/Qt5.9.9-Android-x86-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -210,13 +210,13 @@ arm64 builds are using NDK r10e with -android-ndk-platform android-21 and OpenSS
         <tr><td width="20%"><b>Download:</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/30/30732/Qt5.9.9-Android-arm-gcc-NDKr10e-xLinux-x86_64-gcc8.3.1-20200201.tar.xz" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/30/30732/Qt5.9.9-Android-arm-gcc-NDKr10e-xLinux-x86_64-gcc8.3.1-20200201.tar.xz" target="_blank">
     OSDN link
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/Linux-x86_64-hosted/Qt5.9.9-Android-arm-gcc-NDKr10e-xLinux-x86_64-gcc8.3.1-20200201.tar.xz" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/Linux-x86_64-hosted/Qt5.9.9-Android-arm-gcc-NDKr10e-xLinux-x86_64-gcc8.3.1-20200201.tar.xz" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -230,13 +230,13 @@ arm64 builds are using NDK r10e with -android-ndk-platform android-21 and OpenSS
         <tr><td width="20%"><b>Download:</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/30/30731/Qt5.9.9-Android-arm64-gcc-NDKr10e-xLinux-x86_64-gcc8.3.1-20200201.tar.xz" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/30/30731/Qt5.9.9-Android-arm64-gcc-NDKr10e-xLinux-x86_64-gcc8.3.1-20200201.tar.xz" target="_blank">
     OSDN link
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/Linux-x86_64-hosted/Qt5.9.9-Android-arm64-gcc-NDKr10e-xLinux-x86_64-gcc8.3.1-20200201.tar.xz" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/Linux-x86_64-hosted/Qt5.9.9-Android-arm64-gcc-NDKr10e-xLinux-x86_64-gcc8.3.1-20200201.tar.xz" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -250,13 +250,13 @@ arm64 builds are using NDK r10e with -android-ndk-platform android-21 and OpenSS
         <tr><td width="20%"><b>Download:</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/30/30733/Qt5.9.9-Android-x86-gcc-NDKr10e-xLinux-x86_64-gcc8.3.1-20200201.tar.xz" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/30/30733/Qt5.9.9-Android-x86-gcc-NDKr10e-xLinux-x86_64-gcc8.3.1-20200201.tar.xz" target="_blank">
     OSDN link
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/Linux-x86_64-hosted/Qt5.9.9-Android-x86-gcc-NDKr10e-xLinux-x86_64-gcc8.3.1-20200201.tar.xz" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/Linux-x86_64-hosted/Qt5.9.9-Android-x86-gcc-NDKr10e-xLinux-x86_64-gcc8.3.1-20200201.tar.xz" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -271,13 +271,13 @@ arm64 builds are using NDK r10e with -android-ndk-platform android-21 and OpenSS
         <tr><td width="20%"><b>Download:</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/30/30734/Qt5.9.9-Android-arm-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/30/30734/Qt5.9.9-Android-arm-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz" target="_blank">
     OSDN link
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/macOS-x86_64-hosted/Qt5.9.9-Android-arm-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/macOS-x86_64-hosted/Qt5.9.9-Android-arm-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -291,13 +291,13 @@ arm64 builds are using NDK r10e with -android-ndk-platform android-21 and OpenSS
         <tr><td width="20%"><b>Download:</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/30/30736/Qt5.9.9-Android-arm64-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/30/30736/Qt5.9.9-Android-arm64-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz" target="_blank">
     OSDN link
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/macOS-x86_64-hosted/Qt5.9.9-Android-arm64-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/macOS-x86_64-hosted/Qt5.9.9-Android-arm64-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -311,13 +311,13 @@ arm64 builds are using NDK r10e with -android-ndk-platform android-21 and OpenSS
         <tr><td width="20%"><b>Download:</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/30/30735/Qt5.9.9-Android-x86-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/30/30735/Qt5.9.9-Android-x86-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz" target="_blank">
     OSDN link
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/macOS-x86_64-hosted/Qt5.9.9-Android-x86-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/macOS-x86_64-hosted/Qt5.9.9-Android-x86-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -340,9 +340,7 @@ arm64 builds are using NDK r10e with -android-ndk-platform android-21 and OpenSS
       </div>
       <div id="homelinks" class="default-animation">
         <ul>
-          <li>
-              <a class="padding" href="/index.html"><i class='fas fa-home'></i> Home</a>
-          </li>
+          <li><a class="padding" href="/index.html"><i class='fas fa-home'></i> Home</a></li>
         </ul>
       </div>
       <div id="content-wrapper" class="highlightable">
@@ -435,7 +433,7 @@ arm64 builds are using NDK r10e with -android-ndk-platform android-21 and OpenSS
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sun, 20 Nov 2022 05:21:27 UTC</p>
+Site generated: Sat, 07 Jan 2023 08:38:44 UTC</p>
 
         </div>
       </div>

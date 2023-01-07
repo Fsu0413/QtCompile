@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.106.0">
-    <meta name="generator" content="Relearn 5.6.5">
+    <meta name="generator" content="Hugo 0.109.0">
+    <meta name="generator" content="Relearn 5.9.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>Notes for this repo :: Fsu0413&#39;s Original Qt builds</title>
@@ -92,10 +92,10 @@
     <li><a href="#difference-of-this-qt-and-offically-distributed-qt-updated-2022414">Difference of this Qt and offically distributed Qt (Updated 2022.4.14)</a></li>
     <li><a href="#notes-for-qt-versions-before-514">Notes for Qt versions before 5.14</a></li>
     <li><a href="#qt-offering-changes-2020-updated-2022414">Qt offering changes 2020 (updated 2022.4.14)</a></li>
-    <li><a href="#qt-6-support-platforms-updated-2022821">Qt 6 support platforms (updated 2022.8.21)</a></li>
+    <li><a href="#qt-6-support-platforms-updated-202317">Qt 6 support platforms (updated 2023.1.7)</a></li>
     <li><a href="#gpg-sign-updated-202126">GPG sign (Updated 2021.2.6)</a></li>
     <li><a href="#windows-10-before-version-1809-and-32-bit-windows-deprecation-important-notes-updated-2022821">Windows 10 before version 1809 and 32-bit Windows deprecation (IMPORTANT NOTES!!) (updated 2022.8.21)</a></li>
-    <li><a href="#decided-eol-of-current-building-qt-lts-versions-updated-202238">Decided EOL of current building Qt LTS versions (Updated 2022.3.8)</a></li>
+    <li><a href="#decided-eol-of-current-building-qt-lts-versions-updated-202317">Decided EOL of current building Qt LTS versions (Updated 2023.1.7)</a></li>
     <li><a href="#incoming-update-for-future-release">Incoming update for future release</a></li>
   </ul>
 </nav>
@@ -111,12 +111,12 @@
 <h1 id="notes-for-this-repo">Notes for this repo</h1>
 
 <h2 id="reproduciable-building">Reproduciable building</h2>
-<p>I use a set of scripts to do the build and packaging for <a href="https://reproducible-builds.org/">reproducible building</a> Qt.<br>
+<p>I use a set of scripts to do the build and packaging for <a href="https://reproducible-builds.org/" target="_blank">reproducible building</a> Qt.<br>
 If you are interested in build method, please check the following GitHub repo.</p>
-<p><a href="https://github.com/Fsu0413/Fs-scripts">GitHub</a></p>
+<p><a href="https://github.com/Fsu0413/Fs-scripts" target="_blank">GitHub</a></p>
 <p>However unfortunely, this website is manually edited.<br>
 Source of this site is:</p>
-<p><a href="https://github.com/Fsu0413/QtCompile">GitHub</a></p>
+<p><a href="https://github.com/Fsu0413/QtCompile" target="_blank">GitHub</a></p>
 <h2 id="notes-on-static-builds">Notes on static builds</h2>
 <p>I don&rsquo;t use static builds in huge projects. I don&rsquo;t think it is wise to use a static build there.</p>
 <p>Maybe you just want to distribute a single portable executable binary file, but there is limitations:</p>
@@ -175,16 +175,16 @@ Windows builds after and including Qt 5.13 are using SChannel instead of OpenSSL
 <p>(Updated 2022.4.14) <strong>No debug libs, which cuts more than a half of the size of the whole Qt package.</strong><br>
 (Kindly please don&rsquo;t request it without commericial customization since I don&rsquo;t use it. Note that commerical customization has not started yet)</p>
 <p>No examples, which cuts more than a half of the size of the whole Qt package.</p>
-<p>No docs (and no <code>QDoc</code> for Qt 5.12 and later since it depends on Clang), since Qt docs can be read from <a href="http://doc.qt.io">http://doc.qt.io</a> at any time, it is no need to bondle doc to the package.</p>
+<p>No docs (and no <code>QDoc</code> for Qt 5.12 and later since it depends on Clang), since Qt docs can be read from <a href="http://doc.qt.io" target="_blank">http://doc.qt.io</a> at any time, it is no need to bondle doc to the package.</p>
 <h2 id="notes-for-qt-versions-before-514">Notes for Qt versions before 5.14</h2>
 <p>Qt before 5.14 should reject using the binary files which were just uncompressed from the tarball.<br>
 It should report &ldquo;Qt is not properly installed, please run <em>make install</em>&rdquo; or something like this in Qt creator.</p>
 <p>I redistributed a version of QQtPatcher in the package, you should run it to make Qt running.</p>
-<p>The source code of the distributed QQtPatcher is on <a href="https://github.com/Fsu0413/QQtPatcher">GitHub</a>. It is a free software and distributed in public domain.</p>
+<p>The source code of the distributed QQtPatcher is on <a href="https://github.com/Fsu0413/QQtPatcher" target="_blank">GitHub</a>. It is a free software and distributed in public domain.</p>
 <p>Do not put the library in a directory which contains non-ascii character or spaces.<br>
 Bug will cause that the path of qmake cannot be properly parsed by Qt Creator.</p>
 <h2 id="qt-offering-changes-2020-updated-2022414">Qt offering changes 2020 (updated 2022.4.14)</h2>
-<p>Qt just announced <a href="https://www.qt.io/blog/qt-offering-changes-2020">Qt offering changes 2020</a>.<br>
+<p>Qt just announced <a href="https://www.qt.io/blog/qt-offering-changes-2020" target="_blank">Qt offering changes 2020</a>.<br>
 Following is my opinion of this blog.</p>
 <p>First of all, I have a Qt account, but I don’t understand why I need a Qt account to install the Qt development kit.<br>
 All files are compiled and linked from the same set of source code. It will not change even if you log in to your Qt account. It will not add any features to Qt. &ldquo;This can help optimize Qt&rdquo; is simply nonsense.</p>
@@ -197,13 +197,13 @@ Besides, their LTS support time is not too long. Windows has 10 years of support
 Founding a shell company and using this company to buy Qt and distribute software, for only $499 per year? While other employees who work together use the open source version in private?<br>
 This will definitely lose money.</p>
 <p>I will continue my amateur job of building Qt. I hope Qt for MCUs will be open source soon.</p>
-<h2 id="qt-6-support-platforms-updated-2022821">Qt 6 support platforms (updated 2022.8.21)</h2>
-<p>See <a href="https://bugreports.qt.io/browse/QTBUG-104266">Qt 6.5 TQC Supported Targets</a>
+<h2 id="qt-6-support-platforms-updated-202317">Qt 6 support platforms (updated 2023.1.7)</h2>
+<p>See <a href="https://bugreports.qt.io/browse/QTBUG-104266" target="_blank">Qt 6.5 TQC Supported Targets</a>
 and its predecessors.</p>
 <p>Currently I am building Qt 6 for following platforms:</p>
 <p>Windows 11 - VS2019, x86_64, host and target<br>
 Windows 11 - MinGW, x86_64, host and target<br>
-macOS 12 - toolchain provided by Apple with AppleClang, x86_64 / arm64_v8a, host and target<br>
+macOS 13 - toolchain provided by Apple with AppleClang, x86_64 / arm64_v8a, host and target, universal<br>
 Android - NDK, arm / x86 / arm64 / x86_64, target only. No 32bit builds after 6.3<br>
 WebAssembly - emscripten, target only<br>
 Linux - toolchain provided by RedHat modified by RockyLinux developers with GCC, x86_64, host only</p>
@@ -221,12 +221,15 @@ I don&rsquo;t want to put the signature file besides the package, I think it wil
 <p>SINCE 2020.6.3 (Qt 5.15 release and Qt 5.9 EOL) ONLY VS2015 AND MINGW 7.3 BUILDS SUPPORTS WINDOWS 8.1 by me.<br>
 WINDOWS 10 IS MORE AND MORE POPULAR, AND RECEIVING MORE AND MORE NEW FEATURES. ONE SHOULD SWITCH TO WINDOWS 10 ASAP.</p>
 <p>SINCE 2020.1.6 (OpenSSL 1.0.2 EOL) NO LATER BUILD WILL SUPPORT WINDOWS 8 AND EARLIER BY ME, PLEASE UPDATE TO WINDOWS 8.1 AND LATER.</p>
-<h2 id="decided-eol-of-current-building-qt-lts-versions-updated-202238">Decided EOL of current building Qt LTS versions (Updated 2022.3.8)</h2>
+<h2 id="decided-eol-of-current-building-qt-lts-versions-updated-202317">Decided EOL of current building Qt LTS versions (Updated 2023.1.7)</h2>
 <p>tQtC released Qt opensource 5.15.3 for a sudden and all the things changed since then.<br>
 All of our EOL schedule becomes meaningless. We should re-consider the EOL date since Qt 5.15.</p>
 <p>Note: since OpenSSL is currently built on all versions of my build except for WebAssembly, all of my builds should persist until EOL of that specific OpenSSL version.<br>
 Currently OpenSSL 1.1.1 and 3.0 series are used.<br>
 OpenSSL 1.1.1 series reaches EOL until 2023.9.11, while OpenSSL 3.0 series does until 2026.9.7.</p>
+<p>Since Qt 5.15 starts supporting OpenSSL 3.0 series we may switch to OpenSSL 3.0 series on our Qt 5.15 Android builds after EOL of OpenSSL 1.1 series.<br>
+Currently it is certain that Qt 5.15 will be supported for 5 years, but it is unknown that tQtC will provide source code of Qt 5.15 after 2024.5.26.<br>
+If subsequent version of Qt 5.15 remains private we won&rsquo;t upgrade OpenSSL to post-3.0 version.</p>
 <table>
 <thead>
 <tr>
@@ -282,8 +285,8 @@ OpenSSL 1.1.1 series reaches EOL until 2023.9.11, while OpenSSL 3.0 series does 
 <tr>
 <td></td>
 <td>Android</td>
-<td>2024.5.26</td>
-<td>Same as EOL of Qt opensource 5.15. Will stuck at Android NDK r21 LTS series</td>
+<td>2026.9.7</td>
+<td>Same as EOL of OpenSSL 3.0 series.</td>
 </tr>
 <tr>
 <td></td>
@@ -346,11 +349,6 @@ OpenSSL 1.1.1 series reaches EOL until 2023.9.11, while OpenSSL 3.0 series does 
 </thead>
 <tbody>
 <tr>
-<td>5.15.8</td>
-<td>2022.1.4</td>
-<td>2023.1.4</td>
-</tr>
-<tr>
 <td>5.15.9</td>
 <td>2022.4.6</td>
 <td>2023.4.6</td>
@@ -366,6 +364,11 @@ OpenSSL 1.1.1 series reaches EOL until 2023.9.11, while OpenSSL 3.0 series does 
 <td>2023.10.5</td>
 </tr>
 <tr>
+<td>5.15.12</td>
+<td>2022.12.27</td>
+<td>2023.12.27</td>
+</tr>
+<tr>
 <td>6.2.5</td>
 <td>2022.7.19</td>
 <td>2023.7.19</td>
@@ -374,6 +377,11 @@ OpenSSL 1.1.1 series reaches EOL until 2023.9.11, while OpenSSL 3.0 series does 
 <td>6.2.6</td>
 <td>2022.9.27</td>
 <td>2023.9.27</td>
+</tr>
+<tr>
+<td>6.2.7</td>
+<td>2023.1.2</td>
+<td>2024.1.2</td>
 </tr>
 </tbody>
 </table>
@@ -397,9 +405,7 @@ Use macOS 13 for building Qt 6.5 onwards. Will check if Qt 6.2 series can be bui
       </div>
       <div id="homelinks" class="default-animation">
         <ul>
-          <li>
-              <a class="padding" href="/index.html"><i class='fas fa-home'></i> Home</a>
-          </li>
+          <li><a class="padding" href="/index.html"><i class='fas fa-home'></i> Home</a></li>
         </ul>
       </div>
       <div id="content-wrapper" class="highlightable">
@@ -492,7 +498,7 @@ Use macOS 13 for building Qt 6.5 onwards. Will check if Qt 6.2 series can be bui
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sun, 20 Nov 2022 05:21:27 UTC</p>
+Site generated: Sat, 07 Jan 2023 08:38:44 UTC</p>
 
         </div>
       </div>

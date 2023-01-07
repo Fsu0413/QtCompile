@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.106.0">
-    <meta name="generator" content="Relearn 5.6.5">
+    <meta name="generator" content="Hugo 0.109.0">
+    <meta name="generator" content="Relearn 5.9.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>6.2.4 的 Windows 版本 :: Fsu0413 的原版 Qt 构建</title>
@@ -117,43 +117,43 @@
 
 
 <div class="box notices cstyle info">
-    <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
-    <div class="box-content">
+  <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
+  <div class="box-content">
 <p>ODBC and SQLite(distributed with Qt) are built in the backage. All Dynamic builds have <code>-DFEATURE_sql_xxx=ON -DFEATURE_system_sqlite=OFF</code>.</p>
-    </div>
+  </div>
 </div>
 
 <div class="box notices cstyle info">
-    <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
-    <div class="box-content">
+  <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
+  <div class="box-content">
 <p>Since Qt 6.2 Qt made SSL backends as plugin.<br>
 We build SChannel and OpenSSL backend plugin, with OpenSSL backend built with OpenSSL 3 series.<br>
 Additionally, Visual Studio versions of Qt builds supports TLS 1.3 using SecureTransport.</p>
-    </div>
+  </div>
 </div>
 
 <div class="box notices cstyle info">
-    <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
-    <div class="box-content">
+  <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
+  <div class="box-content">
 <p>All builds have <code>-DFEATURE_icu=OFF</code> because I think the ICU library is too big and, in most of the conditions, useless for common users.</p>
-    </div>
+  </div>
 </div>
 
 <div class="box notices cstyle info">
-    <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
-    <div class="box-content">
+  <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
+  <div class="box-content">
 <p>No QtWebEngine in this version.</p>
-    </div>
+  </div>
 </div>
 
 <div class="box notices cstyle primary">
-    <div class="box-label"><i class="fas fa-check-square"></i> CVE issue patched</div>
-    <div class="box-content">
+  <div class="box-label"><i class="fas fa-check-square"></i> CVE issue patched</div>
+  <div class="box-content">
 <p>All builds have following CVEs fixed:<br>
 CVE-2018-25032<br>
 CVE-2022-27404-27405-27406<br>
 CVE-2022-37434</p>
-    </div>
+  </div>
 </div>
 <h2 id="dynamic--shared-builds">Dynamic / Shared Builds</h2>
 <h3 id="windows-msvc">Windows-MSVC</h3>
@@ -163,13 +163,13 @@ CVE-2022-37434</p>
         <tr><td width="20%"><b>下载地址：</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/39/39749/Qt6.2.4-Windows-x86_64-VS2019-16.11.21-20221117.7z" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/39/39749/Qt6.2.4-Windows-x86_64-VS2019-16.11.21-20221117.7z" target="_blank">
     OSDN 链接
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-VS2019-16.11.21-20221117.7z" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-VS2019-16.11.21-20221117.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -183,13 +183,13 @@ CVE-2022-37434</p>
         <tr><td width="20%"><b>下载地址：</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/39/39750/Qt6.2.4-Windows-x86_64-VS2022-17.4.1-20221117.7z" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/39/39750/Qt6.2.4-Windows-x86_64-VS2022-17.4.1-20221117.7z" target="_blank">
     OSDN 链接
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-VS2022-17.4.1-20221117.7z" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-VS2022-17.4.1-20221117.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -204,20 +204,20 @@ CVE-2022-37434</p>
         <tr><td width="20%"><b>下载地址：</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/39/39677/Qt6.2.4-Windows-x86_64-MinGW11.2.0-20221105.7z" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/39/39677/Qt6.2.4-Windows-x86_64-MinGW11.2.0-20221105.7z" target="_blank">
     OSDN 链接
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW11.2.0-20221105.7z" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW11.2.0-20221105.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
         </tr>
         <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 v9 w/ GCC 11.2.0</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
 <span class="btn cstyle grey">
-  <a href="https://github.com/cristianadam/mingw-builds/releases/download/v11.2.0-rev4/x86_64-11.2.0-release-posix-seh-rt_v9-rev4.7z" target="_blank" rel="noopener">
+  <a href="https://github.com/cristianadam/mingw-builds/releases/download/v11.2.0-rev4/x86_64-11.2.0-release-posix-seh-rt_v9-rev4.7z" target="_blank">
     64-bit MinGW-W64 11.2.0
   </a>
 </span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
@@ -229,20 +229,20 @@ CVE-2022-37434</p>
         <tr><td width="20%"><b>下载地址：</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/39/39676/Qt6.2.4-Windows-x86_64-MinGW12.1.0-20221105.7z" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/39/39676/Qt6.2.4-Windows-x86_64-MinGW12.1.0-20221105.7z" target="_blank">
     OSDN 链接
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW12.1.0-20221105.7z" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW12.1.0-20221105.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
         </tr>
         <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 v10 w/ GCC 12.1.0</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
 <span class="btn cstyle grey">
-  <a href="https://github.com/cristianadam/mingw-builds/releases/download/v12.1.0-rev0/x86_64-12.1.0-release-posix-seh-rt_v10-rev0.7z" target="_blank" rel="noopener">
+  <a href="https://github.com/cristianadam/mingw-builds/releases/download/v12.1.0-rev0/x86_64-12.1.0-release-posix-seh-rt_v10-rev0.7z" target="_blank">
     64-bit MinGW-W64 12.1.0
   </a>
 </span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
@@ -255,20 +255,20 @@ CVE-2022-37434</p>
         <tr><td width="20%"><b>下载地址：</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/39/39674/Qt6.2.4-Windows-x86_64-llvm-mingw-15.0.0-ucrt-20221105.7z" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/39/39674/Qt6.2.4-Windows-x86_64-llvm-mingw-15.0.0-ucrt-20221105.7z" target="_blank">
     OSDN 链接
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-llvm-mingw-15.0.0-ucrt-20221105.7z" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-llvm-mingw-15.0.0-ucrt-20221105.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
         </tr>
         <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 v9 w/ LLVM 15.0.0 (ucrt)</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
 <span class="btn cstyle grey">
-  <a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20220906/llvm-mingw-20220906-ucrt-x86_64.zip" target="_blank" rel="noopener">
+  <a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20220906/llvm-mingw-20220906-ucrt-x86_64.zip" target="_blank">
     64-bit MinGW-W64 LLVM 15.0.0 UCRT
   </a>
 </span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
@@ -280,20 +280,20 @@ CVE-2022-37434</p>
         <tr><td width="20%"><b>下载地址：</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/39/39675/Qt6.2.4-Windows-x86_64-llvm-mingw-15.0.0-msvcrt-20221105.7z" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/39/39675/Qt6.2.4-Windows-x86_64-llvm-mingw-15.0.0-msvcrt-20221105.7z" target="_blank">
     OSDN 链接
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-llvm-mingw-15.0.0-msvcrt-20221105.7z" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-llvm-mingw-15.0.0-msvcrt-20221105.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
         </tr>
         <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 v9 w/ LLVM 15.0.0 (msvcrt)</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
 <span class="btn cstyle grey">
-  <a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20220906/llvm-mingw-20220906-msvcrt-x86_64.zip" target="_blank" rel="noopener">
+  <a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20220906/llvm-mingw-20220906-msvcrt-x86_64.zip" target="_blank">
     64-bit MinGW-W64 LLVM 15.0.0 msvcrt
   </a>
 </span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
@@ -307,13 +307,13 @@ CVE-2022-37434</p>
         <tr><td width="20%"><b>下载地址：</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/39/39699/Qt6.2.4-Windows-x86_64-VS2019-16.11.20-staticFull-20221105.7z" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/39/39699/Qt6.2.4-Windows-x86_64-VS2019-16.11.20-staticFull-20221105.7z" target="_blank">
     OSDN 链接
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-VS2019-16.11.20-staticFull-20221105.7z" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-VS2019-16.11.20-staticFull-20221105.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -328,20 +328,20 @@ CVE-2022-37434</p>
         <tr><td width="20%"><b>下载地址：</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/39/39698/Qt6.2.4-Windows-x86_64-MinGW11.2.0-staticFull-20221105.7z" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/39/39698/Qt6.2.4-Windows-x86_64-MinGW11.2.0-staticFull-20221105.7z" target="_blank">
     OSDN 链接
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW11.2.0-staticFull-20221105.7z" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW11.2.0-staticFull-20221105.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
         </tr>
         <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 v9 w/ GCC 11.2.0</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
 <span class="btn cstyle grey">
-  <a href="https://github.com/cristianadam/mingw-builds/releases/download/v11.2.0-rev4/x86_64-11.2.0-release-posix-seh-rt_v9-rev4.7z" target="_blank" rel="noopener">
+  <a href="https://github.com/cristianadam/mingw-builds/releases/download/v11.2.0-rev4/x86_64-11.2.0-release-posix-seh-rt_v9-rev4.7z" target="_blank">
     64-bit MinGW-W64 11.2.0
   </a>
 </span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
@@ -353,20 +353,20 @@ CVE-2022-37434</p>
         <tr><td width="20%"><b>下载地址：</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/39/39697/Qt6.2.4-Windows-x86_64-MinGW12.1.0-staticFull-20221105.7z" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/39/39697/Qt6.2.4-Windows-x86_64-MinGW12.1.0-staticFull-20221105.7z" target="_blank">
     OSDN 链接
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW12.1.0-staticFull-20221105.7z" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW12.1.0-staticFull-20221105.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
         </tr>
         <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 v10 w/ GCC 12.1.0</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
 <span class="btn cstyle grey">
-  <a href="https://github.com/cristianadam/mingw-builds/releases/download/v12.1.0-rev0/x86_64-12.1.0-release-posix-seh-rt_v10-rev0.7z" target="_blank" rel="noopener">
+  <a href="https://github.com/cristianadam/mingw-builds/releases/download/v12.1.0-rev0/x86_64-12.1.0-release-posix-seh-rt_v10-rev0.7z" target="_blank">
     64-bit MinGW-W64 12.1.0
   </a>
 </span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
@@ -375,23 +375,23 @@ CVE-2022-37434</p>
 <h2 id="legacy-builds">Legacy Builds</h2>
 
 <div class="box notices cstyle info">
-    <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
-    <div class="box-content">
+  <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
+  <div class="box-content">
 <p>Note: Qt release Qt 6.2 series opensource version a year later than commerical version, while using QtWebEngine from Qt 6.3 series.<br>
 That is because QtWebEngine use a thirdparty project which features a license which don&rsquo;t allow closed source.<br>
 Qt 6.3 series has released Qt 6.3.2 so this version is built with QtWebEngine 6.3.2.<br>
-Since <a href="https://bugreports.qt.io/browse/QTBUG-106630">QTBUG-106630</a>
+Since <a href="https://bugreports.qt.io/browse/QTBUG-106630" target="_blank">QTBUG-106630</a>
 the binaries are marked as version 6.2.4.</p>
-    </div>
+  </div>
 </div>
 
 <div class="box notices cstyle warning">
-    <div class="box-label"><i class="fas fa-exclamation-triangle"></i> Important</div>
-    <div class="box-content">
+  <div class="box-label"><i class="fas fa-exclamation-triangle"></i> Important</div>
+  <div class="box-content">
 <p>These builds are only for users who needs QtWebEngine.<br>
 These builds are legacy and have some important security issues.<br>
 I don&rsquo;t recommand using these builds.</p>
-    </div>
+  </div>
 </div>
 <h3 id="windows-msvc-2">Windows-MSVC</h3>
 <table>
@@ -400,13 +400,13 @@ I don&rsquo;t recommand using these builds.</p>
         <tr><td width="20%"><b>下载地址：</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/39/39748/Qt6.2.4-Windows-x86_64-VS2019-16.11.18-20220915.7z" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/39/39748/Qt6.2.4-Windows-x86_64-VS2019-16.11.18-20220915.7z" target="_blank">
     OSDN 链接
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-VS2019-16.11.18-20220915.7z" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-VS2019-16.11.18-20220915.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -420,13 +420,13 @@ I don&rsquo;t recommand using these builds.</p>
         <tr><td width="20%"><b>下载地址：</b></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/39/39249/Qt6.2.4-Windows-x86_64-VS2022-17.3.3-20220915.7z" target="_blank" rel="noopener">
+  <a href="https://osdn.net/downloads/users/39/39249/Qt6.2.4-Windows-x86_64-VS2022-17.3.3-20220915.7z" target="_blank">
     OSDN 链接
   </a>
 </span></td>
             <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-VS2022-17.3.3-20220915.7z" target="_blank" rel="noopener">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-VS2022-17.3.3-20220915.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -449,9 +449,7 @@ I don&rsquo;t recommand using these builds.</p>
       </div>
       <div id="homelinks" class="default-animation">
         <ul>
-          <li>
-              <a class="padding" href="/zh-cn/index.html"><i class='fas fa-home'></i> 主页</a>
-          </li>
+          <li><a class="padding" href="/zh-cn/index.html"><i class='fas fa-home'></i> 主页</a></li>
         </ul>
       </div>
       <div id="content-wrapper" class="highlightable">
@@ -544,7 +542,7 @@ I don&rsquo;t recommand using these builds.</p>
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sun, 20 Nov 2022 05:21:27 UTC</p>
+Site generated: Sat, 07 Jan 2023 08:38:45 UTC</p>
 
         </div>
       </div>

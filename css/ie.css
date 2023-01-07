@@ -54,6 +54,21 @@
 		margin-left: 1em;
 	}
 
+	.badge > .badge-title {
+		border-right: 0;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	.badge.badge-with-title > .badge-content {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+
+	article ul li:has(input[type="checkbox"]) {
+		margin-left: -1rem;
+	}
+
 	/* set default colors as in variant.css for IE11 */
 	body {
 		background-color: #ffffff; /* var(--MAIN-BG-color) */
@@ -137,6 +152,10 @@
 
 	#footer {
 		color: #bababa; /* var(--MENU-SECTIONS-LINK-color) */
+	}
+
+	mark {
+		background-color: #ffff00;
 	}
 
 	h1 {
@@ -282,6 +301,10 @@
 		color: #000000; /* var(--CODE-BLOCK-color) */
 	}
 
+	table {
+		background-color: #ffffff; /* var(--INTERNAL-MAIN-BG-color) */
+	}
+
 	div.featherlight .featherlight-content{
 		background-color: #ffffff /* var(--INTERNAL-MAIN-BG-color); */
 	}
@@ -324,7 +347,7 @@
 	}
 
 	#homelinks a {
-		color: #323232 /* var(--MENU-HOME-LINK-color) */
+		color: #404040 /* var(--MENU-HOME-LINK-color) */
 	}
 
 	#homelinks a:hover {
@@ -481,6 +504,84 @@
 		border-bottom-color: #ffffff !important; /* var(--MAIN-BG-color) */
 	}
 
+	.badge > * {
+		border-color: rgba( 16, 16, 16, 1 ); /* var(--BOX-TEXT-color) */
+	}
+
+	.badge > .badge-content {
+		background-color: rgba( 128, 128, 128, 1 ); /* var(--INTERNAL-BOX-NEUTRAL-color) */
+		color: rgba( 255, 255, 255, 1 ); /* var(--BOX-CAPTION-color) */
+	}
+
+	.badge.info > .badge-content {
+		background-color: rgba( 48, 117, 229, 1 ); /* var(--INTERNAL-BOX-INFO-color) */
+		color: rgba( 16, 16, 16, 1 ); /* var(--INTERNAL-BOX-INFO-TEXT-color) */
+	}
+
+	.badge.warning > .badge-content {
+		background-color: rgba( 224, 62, 62, 1 ); /* var(--INTERNAL-BOX-WARNING-color) */
+		color: rgba( 16, 16, 16, 1 ); /* var(--INTERNAL-BOX-WARNING-TEXT-color) */
+	}
+
+	.badge.note > .badge-content {
+		background-color: rgba( 237, 153, 9, 1 ); /* var(--INTERNAL-BOX-NOTE-color) */
+		color: rgba( 16, 16, 16, 1 ); /* var(--INTERNAL-BOX-NOTE-TEXT-color) */
+	}
+
+	.badge.tip > .badge-content {
+		background-color: rgba( 42, 178, 24, 1 ); /* var(--INTERNAL-BOX-TIP-color) */
+		color: rgba( 16, 16, 16, 1 ); /* var(--INTERNAL-BOX-TIP-TEXT-color) */
+	}
+
+	.badge.primary > .badge-content {
+		background-color: #7dc903; /* var(--INTERNAL-PRIMARY-color) */
+		color: #101010; /* var(--INTERNAL-MAIN-TEXT-color) */
+	}
+
+	.badge.secondary > .badge-content {
+		background-color: #486ac9; /* var(--INTERNAL-SECONDARY-color) */
+		color: #101010; /* var(--INTERNAL-MAIN-TEXT-color) */
+	}
+
+	.badge.blue > .badge-content {
+		background-color: rgba( 48, 117, 229, 1 ); /* var(--INTERNAL-BOX-BLUE-color) */
+		color: rgba( 16, 16, 16, 1 ); /* var(--INTERNAL-BOX-BLUE-TEXT-color) */
+	}
+
+	.badge.green > .badge-content {
+		background-color: rgba( 42, 178, 24, 1 ); /* var(--INTERNAL-BOX-GREEN-color) */
+		color: rgba( 16, 16, 16, 1 ); /* var(--INTERNAL-BOX-GREEN-TEXT-color) */
+	}
+
+	.badge.grey > .badge-content {
+		background-color: rgba( 128, 128, 128, 1 ); /* var(--INTERNAL-BOX-GREY-color) */
+		color: rgba( 16, 16, 16, 1 ); /* var(--INTERNAL-BOX-GREY-TEXT-color) */
+	}
+
+	.badge.orange > .badge-content {
+		background-color: rgba( 237, 153, 9, 1 ); /* var(--INTERNAL-BOX-ORANGE-color) */
+		color: rgba( 16, 16, 16, 1 ); /* var(--INTERNAL-BOX-ORANGE-TEXT-color) */
+	}
+
+	.badge.red > .badge-content {
+		background-color: rgba( 224, 62, 62, 1 ); /* var(--INTERNAL-BOX-RED-color) */
+		color: rgba( 16, 16, 16, 1 ); /* var(--INTERNAL-BOX-RED-TEXT-color) */
+	}
+
+	.badge.transparent > .badge-content {
+		background-color: transparent;
+		color: #4a4a4a; /* var(--MAIN-TITLES-TEXT-color) */
+	}
+
+	article ul li input[type="checkbox"] {
+		background-color: #ffffff; /* var(--INTERNAL-MAIN-BG-color); */
+		color: #101010; /* var(--INTERNAL-MAIN-TEXT-color) */
+	}
+
+	article ul li input[type="checkbox"]::before {
+		box-shadow: inset 1em 1em #7dc903; /* var(--INTERNAL-PRIMARY-color) */
+	}
+
 	/* set further styles to fix broken stuff in IE11 */
 
 	/* turn off animiation in IE because this causes the menu
@@ -510,4 +611,19 @@
     .showFooter {
         display: block;
     }
+
+	.select-style select::-ms-expand {
+		/* hide the triangle */
+		display: none;
+	}
+
+	.searchbox input:-ms-input-placeholder {
+		color: rgba( 255, 255, 255, .4 );
+		opacity: 1;
+	}
+
+	.searchform input:-ms-input-placeholder {
+		color: rgba( 134, 134, 134, .666 );
+		opacity: 1;
+	}
 }
