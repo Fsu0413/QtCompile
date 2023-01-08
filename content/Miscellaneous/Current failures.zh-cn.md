@@ -4,18 +4,6 @@ draft: false
 weight: 3
 ---
 
-## 无法在 Qt 5.12 WebAssembly 构建中使用 OpenSSL
-
-`qsslsocket_opensslpre11.cpp` 和 `qsslsocket_openssl11.cpp` 两方均包含了 `qlibrary.h` 头文件，不过该文件在 WebAssembly 平台上无法使用。  
-因为 `-openssl` 和 `-openssl-linked` 都使用了这个文件，我们只能使用 `-no-ssl` 了。。。
-
-我没有在 Qt 5.15 系列再次尝试这件，但是在 Qt 5.15 中 `qsslsocket_openssl.cpp` 还是包含了 `qlibrary.h` 头文件。。。
-
-我没有在 Qt 6.2 以及以后再次尝试这件。
-
-2022 年 11 月 6 日更新：  
-我放弃了 WebAssembly 中的 SSL 支持。此项之后将会删掉。
-
 ## Qt 5.12 以后的 QDoc 使用 MSVC 构建时无法使用静态链接的 clang
 
 它使用 `libclang_static.lib` 但是 clang 构建中没有这个文件。  
@@ -53,6 +41,6 @@ open62541 没有在 1.3.3 版本之后发布任何新版本，所以 QtOpcUa 6.4
 QtWebEngine 自从 6.2.4 之后就没再针对 LTS 版本发布新版，而是直接拿更新的 QtWebEngine（比如 6.3 之类的）作为 6.2 LTS 系列发布。  
 但是因为 QtWebEngine 的二进制文件的版本号和实际版本号不同，除了官方打包负责人之外没人知道 Qt 具体用了 QtWebEngine 的哪个版本来打包的。
 
-## Qt 5.15.7 附带 QtWebEngine 5.15.11 在 macOS 11 中构建失败
+## Qt 5.15.8 附带 QtWebEngine 5.15.12 在 macOS 和 VS2022 中构建失败
 
 原因未知。

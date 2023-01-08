@@ -80,7 +80,7 @@ tar -cf - xxx | 7zr a -txz -m0=LZMA2:d256m:fb273 -mmt=3 -myx -si -- xxx.tar.xz
 只有较新的 GNU `tar`（1.31 以及更新）和较新的 `bsdtar`（3.3.3 以及更新）直接支持 `.tar.zst` 压缩方法。  
 我不会在此仓库使用 zstd，因为压缩比不如 LZMA2。
 
-## 这份 Qt 和官方发布的 Qt 的区别（2022 年 4 月 14 日更新）
+## 这份 Qt 和官方发布的 Qt 的区别（2023 年 1 月 8 日更新）
 
 我只提供供各个系统使用的 Qt 的二进制压缩文件。  
 这份二进制文件应该开箱可用（Qt 5.14 及更新） / 在对 Qt 打补丁后可用（Qt 5.13 及以前）。  
@@ -101,6 +101,13 @@ Qt 5.13 及以后的版本的 Windows 构建使用 SChannel 代替 OpenSSL 库�
 没有示例程序，这大约节省了整个 Qt 包的大半部分空间。
 
 没有文档（而且在 Qt 5.12 之后由于 `QDoc` 依赖 `clang` 导致 `QDoc` 也没有了）。因为 Qt 文档可以在 [http://doc.qt.io](http://doc.qt.io) 随时查阅，没有必要在包里面再放一份文档。
+
+（2023 年 1 月 8 日更新） **没有证书** 。这对某些非开发人员来说可能是灾难性的。  
+由于二进制程序证书需要非常昂贵的价格购买，而我作为个人开发者不可能购买如此昂贵的应用程序证书来进行可信度校验。  
+所以在运行我构建的 Qt 的时候，会提示程序不被信任的问题。  
+此问题在我这里暂时无法解决，除非以后开始进行商务化定制，拿到收入后，再去购买证书进行校验。  
+在此之前，可能会实现基于 GPG 的校验。（虽然咕咕咕了）  
+（由于 Qt 5.14 以前的版本需要在安装后对 Qt 打补丁，所以无法校验。Qt 5.14 以及以后的版本可以重定位，解决了这个问题）
 
 ## 对于 Qt 5.14 以前的备注
 
@@ -133,7 +140,7 @@ LTS 只给商业许可，那么 LTS 的源码包是什么许可？
 一个人开一家空壳公司，这种企业算非常小非常小的企业吧？用这种企业来买 Qt 发布软件，共事的其他员工在私底下用开源版，每年只用 499 美元？  
 这样做肯定会赔钱的。
 
-还有，我会继续我编译Qt的业余工作，希望 QT for MCUs 早日开源。
+还有，我会继续我编译 Qt 的业余工作，希望 QT for MCUs 早日开源。
 
 ## Qt 6 支持的平台（2023 年 1 月 7 日更新）
 
@@ -143,7 +150,7 @@ LTS 只给商业许可，那么 LTS 的源码包是什么许可？
 
 Windows 11 - VS2019, x86_64, host and target  
 Windows 11 - MinGW, x86_64, host and target  
-macOS 13 - toolchain provided by Apple with AppleClang, x86_64 / arm64_v8a, host and target, universal  
+macOS 12 - toolchain provided by Apple with AppleClang, x86_64 / arm64_v8a, host and target, universal  
 Android - NDK, arm / x86 / arm64 / x86_64, target only. No 32bit builds after 6.3  
 WebAssembly - emscripten, target only  
 Linux - toolchain provided by RedHat modified by RockyLinux developers with GCC, x86_64, host only
@@ -166,7 +173,7 @@ Qt 6.2 是 LTS 发布，但是在 Qt offering changes 2020 的影响下，Qt 6.2
 
 ## 弃用 Windows 10 1809 之前的版本以及 32 位 Windows （重要备注！！）（2022 年 8 月 21 日更新）
 
-Qt 6 在 6.2 以前只支持 64 位 Windows 10 1809 以及以后的版本， 6.3 以后只支持最新版本的 Windows 10。
+Qt 6 在 6.2 以前只支持 64 位 Windows 10 1809 以及以后的版本， 6.3 以后只支持最新版本的 Windows 10 （也即 2004 以后的版本，因为这些版本的系统文件均一致）。
 
 从 2020 年 6 月 3 日（Qt 5.15 发布和 Qt 5.9 结束支持）开始，Windows 8.1 上我只支持 VS2015 和 MinGW 7.3 的构建。  
 Windows 10 已经变得越来越流行，而且添加更多更多的新特性。大家可以尽快切换到 Windows 10 了。
@@ -182,7 +189,7 @@ Qt 公司之前突然发布了开源的 5.15.3 版本，从那以后所有事情
 当前正在使用的是 OpenSSL 1.1.1 系列和 3.0 系列。  
 OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 系列则是 2026 年 9 月 7 日。
 
-由于 Qt 5.15 开始支持使用 OpenSSL 3.0 系列，在 OpenSSL 1.1 系列结束支持之后，我们可能会在 Qt 5.15 的安卓版构建中切换到 OpenSSL 3.0 系列。  
+由于 Qt 5.15.8 开始支持使用 OpenSSL 3.0 系列，在 OpenSSL 1.1 系列结束支持之后，我们可能会在 Qt 5.15 的安卓版构建中切换到 OpenSSL 3.0 系列。  
 现在可以确定的是 Qt 5.15 有 5 年的支持，不过目前不清楚 Qt 公司是否会在 2024 年 5 月 26 日之后释放 Qt 5.15 后续版本的代码。  
 如果 Qt 5.15 后续版本的代码不公开的话，我们不会再升级到 OpenSSL 3.0 以后的版本。
 
@@ -219,7 +226,6 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
 
 ## 之后可能会更新的内容
 
-~~使用安卓 NDK r23 系列构建 Qt 5.15.7 以及之后的版本。~~ （构建失败了，将于 5.15.8 再次尝试）  
+~~使用安卓 NDK r23 系列构建 Qt 5.15.7 以及之后的版本。~~ （构建失败了，包括 5.15.8 也失败了，将于 5.15.9 再次尝试）  
 使用带 MinGW-w64 v9 的 GCC 11 来构建 Qt 5.15.9 以及之后的版本。  
-使用 macOS 12 来构建 Qt 5.15.9 以及之后的版本。（不需要再弄虚拟机了！！我们已经实现了构建 Qt 6 的 macOS 一体化二进制文件。为了 macOS SDK 12 将会降级 Xcode 到 14.0.1）  
 使用 macOS 13 来构建 Qt 6.5 以及之后的版本。届时也会尝试在上面构建 Qt 6.2 系列。  

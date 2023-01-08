@@ -80,7 +80,7 @@ Arch Linux and MSYS2 switched to zst for their package manager recently.
 Only recent GNU `tar` (1.31 or later) and recent `bsdtar` (3.3.3 or later) directly supports `.tar.zst` compress method.  
 I will not use zst because the compress ratio is not as good as LZMA2(xz).
 
-## Difference of this Qt and offically distributed Qt (Updated 2022.4.14)
+## Difference of this Qt and offically distributed Qt (Updated 2023.1.8)
 
 I provide only binary tarball, which contains only built Qt binary for each OS.  
 It should work out of box (for Qt 5.14 or later) or work after patches to Qt (for Qt 5.13 and before).  
@@ -101,6 +101,13 @@ Windows builds after and including Qt 5.13 are using SChannel instead of OpenSSL
 No examples, which cuts more than a half of the size of the whole Qt package.
 
 No docs (and no `QDoc` for Qt 5.12 and later since it depends on Clang), since Qt docs can be read from [http://doc.qt.io](http://doc.qt.io) at any time, it is no need to bondle doc to the package.
+
+(Updated 2023.1.8) **No certificate** which may be devastating for especially non-developers.  
+Binary program certificate must be bought on expensive price, yet I as a personal developer can't afford it for only a simple trust verification.  
+This leads to a problem that the program is reported to be not trusted when running my build of Qt.  
+There is no solution for this problem at the moment. I won't buy certificate for verification until commericial customization started and I earned some money by it in the future.  
+It is possible to implement GPG verifiiation before certificate can be bought. (Although it has been put away for a long time...)  
+(Qt before 5.14 can't be trusted due to patch of Qt after install. Qt 5.14 and later can be relocated which resolves this problem)
 
 ## Notes for Qt versions before 5.14
 
@@ -143,14 +150,14 @@ Currently I am building Qt 6 for following platforms:
 
 Windows 11 - VS2019, x86_64, host and target  
 Windows 11 - MinGW, x86_64, host and target  
-macOS 13 - toolchain provided by Apple with AppleClang, x86_64 / arm64_v8a, host and target, universal  
+macOS 12 - toolchain provided by Apple with AppleClang, x86_64 / arm64_v8a, host and target, universal  
 Android - NDK, arm / x86 / arm64 / x86_64, target only. No 32bit builds after 6.3  
 WebAssembly - emscripten, target only  
 Linux - toolchain provided by RedHat modified by RockyLinux developers with GCC, x86_64, host only
 
 I will add build for following platforms:
 
-Windows 11 - VS2019, arm64, target only (gugugule)
+Windows 11 - VS2019, arm64, target only (been put away)
 
 Qt 6.2 is LTS release, but with Qt offering changes 2020 Qt 6.2 release to community comes one year later than it is released to commericial users.  
 I will add bulid for static version for Qt 6.2, but I don't exactly know how Qt guys operate with their release...
@@ -166,7 +173,7 @@ I don't want to put the signature file besides the package, I think it will be a
 
 ## Windows 10 before version 1809 and 32-bit Windows deprecation (IMPORTANT NOTES!!) (updated 2022.8.21)
 
-Qt 6 builds before 6.2 supports only 64-bit Windows 10 1809 and later, while builds after 6.3 supports only latest Windows 10.
+Qt 6 builds before 6.2 supports only 64-bit Windows 10 1809 and later, while builds after 6.3 supports only latest Windows 10 (i.e. version after 2004 since they has same system files).
 
 SINCE 2020.6.3 (Qt 5.15 release and Qt 5.9 EOL) ONLY VS2015 AND MINGW 7.3 BUILDS SUPPORTS WINDOWS 8.1 by me.  
 WINDOWS 10 IS MORE AND MORE POPULAR, AND RECEIVING MORE AND MORE NEW FEATURES. ONE SHOULD SWITCH TO WINDOWS 10 ASAP.
@@ -182,7 +189,7 @@ Note: since OpenSSL is currently built on all versions of my build except for We
 Currently OpenSSL 1.1.1 and 3.0 series are used.  
 OpenSSL 1.1.1 series reaches EOL until 2023.9.11, while OpenSSL 3.0 series does until 2026.9.7.
 
-Since Qt 5.15 starts supporting OpenSSL 3.0 series we may switch to OpenSSL 3.0 series on our Qt 5.15 Android builds after EOL of OpenSSL 1.1 series.  
+Since Qt 5.15.8 starts supporting OpenSSL 3.0 series we may switch to OpenSSL 3.0 series on our Qt 5.15 Android builds after EOL of OpenSSL 1.1 series.  
 Currently it is certain that Qt 5.15 will be supported for 5 years, but it is unknown that tQtC will provide source code of Qt 5.15 after 2024.5.26.  
 If subsequent version of Qt 5.15 remains private we won't upgrade OpenSSL to post-3.0 version.
 
@@ -219,7 +226,6 @@ Commericial-only Qt Open Source Release Date (ETA)
 
 ## Incoming update for future release
 
-~~Use Android NDK r23 series for building Qt 5.15.7 onwards.~~ (Build failed. Will test it on 5.15.8)  
+~~Use Android NDK r23 series for building Qt 5.15.7 onwards.~~ (Build failed also on 5.15.8. Will test it on 5.15.9)  
 Use GCC 11 with MinGW-w64 v9 for building Qt 5.15.9 onwards.  
-Use macOS 12 for building Qt 5.15.9 onwards. (No more VM anymore!! we have achieved building Qt 6 macOS universal binary. Will downgrade Xcode to 14.0.1 for macOS SDK 12)  
 Use macOS 13 for building Qt 6.5 onwards. Will check if Qt 6.2 series can be built on it.  

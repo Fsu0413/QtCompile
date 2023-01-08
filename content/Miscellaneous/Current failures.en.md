@@ -4,18 +4,6 @@ draft: false
 weight: 3
 ---
 
-## Qt 5.12 WebAssembly builds can't built with OpenSSL
-
-Both `qsslsocket_opensslpre11.cpp` and `qsslsocket_openssl11.cpp` includes `qlibrary.h` which is not usable in WebAssembly platform.  
-Since `-openssl` and `-openssl-linked` both use this file, so we can only use `-no-ssl`.......
-
-I didn't try with Qt 5.15 series, but `qsslsocket_openssl.cpp` in Qt 5.15 includes `qlibrary.h` as well...
-
-I didn't try with Qt 6.2 onwards.
-
-Update 2022.11.6:  
-I gave up supporting SSL on WebAssembly and will remove this item later.
-
 ## QDoc after Qt 5.12 cannot use static linked clang when using MSVC
 
 It uses `libclang_static.lib` but clang don't provide this one.  
@@ -53,6 +41,6 @@ I'm tired of investigating them and will distribute Qt 6.2 series without QtWebE
 QtWebEngine has not released as LTS since Qt 6.2.4 and the Qt guys are simply taking QtWebEngine from later version (6.3, etc) for their 6.2 LTS series releases.  
 But no one else knows what version Qt guys are using for their Qt 6.2 LTS Releases except for the official packagers, as the QtWebEngine version is always different than the binary files.
 
-## Qt 5.15.7 with QtWebEngine 5.15.11 build fails on macOS 11
+## Qt 5.15.8 with QtWebEngine 5.15.12 build fails on macOS / VS2022
 
 Reason is unknown.

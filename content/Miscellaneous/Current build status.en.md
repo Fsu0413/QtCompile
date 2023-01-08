@@ -43,7 +43,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 
 ## Qt 5.15 Series (Previous LTS release)
 
-{{% QtTable "5.15.7" %}}
+{{% QtTable "5.15.8" %}}
 
 ## Qt 6.2 Series (Curent LTS release for commerical version only)
 
@@ -56,4 +56,4 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 **Note: Since Qt dropped support for 32-bit Windows, our Qt 6 builds will drop support for 32-bit Windows either.**  
 **If there is need of static builds for non-LTS release, please contect me directly for commerical customization.**
 
-{{% QtTable "6.4.1" %}}
+{{% QtTable "6.4.2" %}}

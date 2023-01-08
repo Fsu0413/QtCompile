@@ -41,6 +41,14 @@ __这些包为“依原样”提供。我对您使用此二进制文件作出的
 
 ## 更新记录（仅有嘤文）
 
+### 2023.1.8
+Update Qt 6.4.2 / Qt 5.15.8 packages.  
+Update Qt 6.2.4 packages built with OpenSSL 3.0.7 with the minor fix.
+
+Qt 6 Linux hosted cross built packages has a problem where the host tool was not properly deployed.  
+This time the package is rebuilt with fix.  
+Only Qt 6.2.4 Linux hosted WebAssembly package is rebuilt without other modification.
+
 ### 2022.11.20
 Update all cross built package with CMake toolchain refactored. Currently it can automatically use the bundled host tool using bundled 'qt-cmake' script.  
 The updated packages are following:  
