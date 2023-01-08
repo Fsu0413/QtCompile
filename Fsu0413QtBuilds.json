@@ -1,0 +1,1687 @@
+{
+	"q5_12lx6_aa6nl": {
+		"sort": 25,
+		"fileName": "Qt5.12.12-Android-arm64-Clang-NDKr21e-xLinux-x86_64-gcc8.5.0-20221103.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-arm64-Clang-NDKr21e-xLinux-x86_64-gcc8.5.0-20221103.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39636/Qt5.12.12-Android-arm64-Clang-NDKr21e-xLinux-x86_64-gcc8.5.0-20221103.tar.xz",
+		"data": {
+			"QtVersion": "5.12.12",
+			"platform": "Android",
+			"buildHost": "RockyLinux 8.6",
+			"toolchain": "ndk r21e",
+			"arch": "arm64",
+			"variant": "android-21",
+			"mkspecs": "android-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_12mx6_aa6nl": {
+		"sort": 28,
+		"fileName": "Qt5.12.12-Android-arm64-Clang-NDKr21e-xmacOS-x86_64-AppleClang12.0.5-20221104.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-arm64-Clang-NDKr21e-xmacOS-x86_64-AppleClang12.0.5-20221104.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39629/Qt5.12.12-Android-arm64-Clang-NDKr21e-xmacOS-x86_64-AppleClang12.0.5-20221104.tar.xz",
+		"data": {
+			"QtVersion": "5.12.12",
+			"platform": "Android",
+			"buildHost": "macOS 11.6.8",
+			"toolchain": "ndk r21e",
+			"arch": "arm64",
+			"variant": "android-21",
+			"mkspecs": "android-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_12wx6m7_aa6nl": {
+		"sort": 22,
+		"fileName": "Qt5.12.12-Android-arm64-Clang-NDKr21e-XWindows-x86_64-MinGW7.3.0-20221104.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-arm64-Clang-NDKr21e-XWindows-x86_64-MinGW7.3.0-20221104.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39627/Qt5.12.12-Android-arm64-Clang-NDKr21e-XWindows-x86_64-MinGW7.3.0-20221104.7z",
+		"data": {
+			"QtVersion": "5.12.12",
+			"platform": "Android",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "ndk r21e",
+			"arch": "arm64",
+			"variant": "android-21",
+			"mkspecs": "android-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_12lx6_aa3nl": {
+		"sort": 24,
+		"fileName": "Qt5.12.12-Android-arm-Clang-NDKr21e-xLinux-x86_64-gcc8.5.0-20221104.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-arm-Clang-NDKr21e-xLinux-x86_64-gcc8.5.0-20221104.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39635/Qt5.12.12-Android-arm-Clang-NDKr21e-xLinux-x86_64-gcc8.5.0-20221104.tar.xz",
+		"data": {
+			"QtVersion": "5.12.12",
+			"platform": "Android",
+			"buildHost": "RockyLinux 8.6",
+			"toolchain": "ndk r21e",
+			"arch": "arm",
+			"variant": "android-21",
+			"mkspecs": "android-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_12mx6_aa3nl": {
+		"sort": 27,
+		"fileName": "Qt5.12.12-Android-arm-Clang-NDKr21e-xmacOS-x86_64-AppleClang12.0.5-20221104.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-arm-Clang-NDKr21e-xmacOS-x86_64-AppleClang12.0.5-20221104.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39625/Qt5.12.12-Android-arm-Clang-NDKr21e-xmacOS-x86_64-AppleClang12.0.5-20221104.tar.xz",
+		"data": {
+			"QtVersion": "5.12.12",
+			"platform": "Android",
+			"buildHost": "macOS 11.6.8",
+			"toolchain": "ndk r21e",
+			"arch": "arm",
+			"variant": "android-21",
+			"mkspecs": "android-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_12wx6m7_aa3nl": {
+		"sort": 21,
+		"fileName": "Qt5.12.12-Android-arm-Clang-NDKr21e-XWindows-x86_64-MinGW7.3.0-20221104.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-arm-Clang-NDKr21e-XWindows-x86_64-MinGW7.3.0-20221104.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39628/Qt5.12.12-Android-arm-Clang-NDKr21e-XWindows-x86_64-MinGW7.3.0-20221104.7z",
+		"data": {
+			"QtVersion": "5.12.12",
+			"platform": "Android",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "ndk r21e",
+			"arch": "arm",
+			"variant": "android-21",
+			"mkspecs": "android-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_12lx6_ax3nl": {
+		"sort": 26,
+		"fileName": "Qt5.12.12-Android-x86-Clang-NDKr21e-xLinux-x86_64-gcc8.5.0-20221103.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-x86-Clang-NDKr21e-xLinux-x86_64-gcc8.5.0-20221103.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39637/Qt5.12.12-Android-x86-Clang-NDKr21e-xLinux-x86_64-gcc8.5.0-20221103.tar.xz",
+		"data": {
+			"QtVersion": "5.12.12",
+			"platform": "Android",
+			"buildHost": "RockyLinux 8.6",
+			"toolchain": "ndk r21e",
+			"arch": "x86",
+			"variant": "android-21",
+			"mkspecs": "android-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_12mx6_ax3nl": {
+		"sort": 29,
+		"fileName": "Qt5.12.12-Android-x86-Clang-NDKr21e-xmacOS-x86_64-AppleClang12.0.5-20221104.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-x86-Clang-NDKr21e-xmacOS-x86_64-AppleClang12.0.5-20221104.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39630/Qt5.12.12-Android-x86-Clang-NDKr21e-xmacOS-x86_64-AppleClang12.0.5-20221104.tar.xz",
+		"data": {
+			"QtVersion": "5.12.12",
+			"platform": "Android",
+			"buildHost": "macOS 11.6.8",
+			"toolchain": "ndk r21e",
+			"arch": "x86",
+			"variant": "android-21",
+			"mkspecs": "android-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_12wx6m7_ax3nl": {
+		"sort": 23,
+		"fileName": "Qt5.12.12-Android-x86-Clang-NDKr21e-XWindows-x86_64-MinGW7.3.0-20221104.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-x86-Clang-NDKr21e-XWindows-x86_64-MinGW7.3.0-20221104.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39631/Qt5.12.12-Android-x86-Clang-NDKr21e-XWindows-x86_64-MinGW7.3.0-20221104.7z",
+		"data": {
+			"QtVersion": "5.12.12",
+			"platform": "Android",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "ndk r21e",
+			"arch": "x86",
+			"variant": "android-21",
+			"mkspecs": "android-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_12wx3m7": {
+		"sort": 12,
+		"fileName": "Qt5.12.12-Windows-x86-MinGW7.3.0-20221104.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86/Qt5.12.12-Windows-x86-MinGW7.3.0-20221104.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39644/Qt5.12.12-Windows-x86-MinGW7.3.0-20221104.7z",
+		"MinGWConf": "wx3g7",
+		"data": {
+			"QtVersion": "5.12.12",
+			"platform": "Windows",
+			"buildHost": "Windows 8.1 Update",
+			"toolchain": "MinGW-w64 v5 w/ GCC 7.3.0",
+			"arch": "x86",
+			"variant": "",
+			"mkspecs": "win32-g++",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_12wx3m7sf": {
+		"sort": 13,
+		"fileName": "Qt5.12.12-Windows-x86-MinGW7.3.0-staticFull-20221104.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86/Qt5.12.12-Windows-x86-MinGW7.3.0-staticFull-20221104.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39657/Qt5.12.12-Windows-x86-MinGW7.3.0-staticFull-20221104.7z",
+		"MinGWConf": "wx3g7",
+		"data": {
+			"QtVersion": "5.12.12",
+			"platform": "Windows",
+			"buildHost": "Windows 8.1 Update",
+			"toolchain": "MinGW-w64 v5 w/ GCC 7.3.0",
+			"arch": "x86",
+			"variant": "-static(Full)",
+			"mkspecs": "win32-g++",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_12wx3v5": {
+		"sort": 1,
+		"fileName": "Qt5.12.12-Windows-x86-VS2015-20221104.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86/Qt5.12.12-Windows-x86-VS2015-20221104.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39626/Qt5.12.12-Windows-x86-VS2015-20221104.7z",
+		"notes": "__NO WEBENGINE__ because Qt has no support for QtWebEngine 5.12 for Visual Studio 2015",
+		"data": {
+			"QtVersion": "5.12.12",
+			"platform": "Windows",
+			"buildHost": "Windows 8.1 Update",
+			"toolchain": "VS2015 Update 3",
+			"arch": "x86",
+			"variant": "",
+			"mkspecs": "win32-msvc",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_12wx3v5st": {
+		"sort": 2,
+		"fileName": "Qt5.12.12-Windows-x86-VS2015-static-20221104.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86/Qt5.12.12-Windows-x86-VS2015-static-20221104.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39649/Qt5.12.12-Windows-x86-VS2015-static-20221104.7z",
+		"data": {
+			"QtVersion": "5.12.12",
+			"platform": "Windows",
+			"buildHost": "Windows 8.1 Update",
+			"toolchain": "VS2015 Update 3",
+			"arch": "x86",
+			"variant": "-static",
+			"mkspecs": "win32-msvc",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_12wx3v7": {
+		"sort": 4,
+		"fileName": "Qt5.12.12-Windows-x86-VS2017-15.9.50-20221104.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86/Qt5.12.12-Windows-x86-VS2017-15.9.50-20221104.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39651/Qt5.12.12-Windows-x86-VS2017-15.9.50-20221104.7z",
+		"data": {
+			"QtVersion": "5.12.12",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "VS2017 15.9.50 w/ Windows SDK 10.0.17763",
+			"arch": "x86",
+			"variant": "",
+			"mkspecs": "win32-msvc",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_12wx3v7st": {
+		"sort": 5,
+		"fileName": "Qt5.12.12-Windows-x86-VS2017-15.9.50-static-20221104.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86/Qt5.12.12-Windows-x86-VS2017-15.9.50-static-20221104.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39650/Qt5.12.12-Windows-x86-VS2017-15.9.50-static-20221104.7z",
+		"data": {
+			"QtVersion": "5.12.12",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "VS2017 15.9.50 w/ Windows SDK 10.0.17763",
+			"arch": "x86",
+			"variant": "-static(Lite)",
+			"mkspecs": "win32-msvc",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_12wx3v7sf": {
+		"sort": 6,
+		"fileName": "Qt5.12.12-Windows-x86-VS2017-15.9.50-staticFull-20221104.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86/Qt5.12.12-Windows-x86-VS2017-15.9.50-staticFull-20221104.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39656/Qt5.12.12-Windows-x86-VS2017-15.9.50-staticFull-20221104.7z",
+		"data": {
+			"QtVersion": "5.12.12",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "VS2017 15.9.50 w/ Windows SDK 10.0.17763",
+			"arch": "x86",
+			"variant": "-static(Full)",
+			"mkspecs": "win32-msvc",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_12wx3v9": {
+		"sort": 9,
+		"fileName": "Qt5.12.12-Windows-x86-VS2019-16.11.20-20221104.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86/Qt5.12.12-Windows-x86-VS2019-16.11.20-20221104.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39634/Qt5.12.12-Windows-x86-VS2019-16.11.20-20221104.7z",
+		"notes": "__NO WEBENGINE__ because of compile failure",
+		"data": {
+			"QtVersion": "5.12.12",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "VS2019 16.11.20 w/ Windows SDK 10.0.22000",
+			"arch": "x86",
+			"variant": "",
+			"mkspecs": "win32-msvc",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_12wx6m7": {
+		"sort": 14,
+		"fileName": "Qt5.12.12-Windows-x86_64-MinGW7.3.0-20221104.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86_64/Qt5.12.12-Windows-x86_64-MinGW7.3.0-20221104.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39643/Qt5.12.12-Windows-x86_64-MinGW7.3.0-20221104.7z",
+		"MinGWConf": "wx6g7",
+		"data": {
+			"QtVersion": "5.12.12",
+			"platform": "Windows",
+			"buildHost": "Windows 8.1 Update",
+			"toolchain": "MinGW-w64 v5 w/ GCC 7.3.0",
+			"arch": "x86_64",
+			"variant": "",
+			"mkspecs": "win32-g++",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_12wx6m7sf": {
+		"sort": 15,
+		"fileName": "Qt5.12.12-Windows-x86_64-MinGW7.3.0-staticFull-20221103.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86_64/Qt5.12.12-Windows-x86_64-MinGW7.3.0-staticFull-20221103.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39660/Qt5.12.12-Windows-x86_64-MinGW7.3.0-staticFull-20221103.7z",
+		"MinGWConf": "wx6g7",
+		"data": {
+			"QtVersion": "5.12.12",
+			"platform": "Windows",
+			"buildHost": "Windows 8.1 Update",
+			"toolchain": "MinGW-w64 v5 w/ GCC 7.3.0",
+			"arch": "x86_64",
+			"variant": "-static(Full)",
+			"mkspecs": "win32-g++",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_12wx6v5": {
+		"sort": 3,
+		"fileName": "Qt5.12.12-Windows-x86_64-VS2015-20221103.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86_64/Qt5.12.12-Windows-x86_64-VS2015-20221103.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39641/Qt5.12.12-Windows-x86_64-VS2015-20221103.7z",
+		"notes": "__NO WEBENGINE__ because Qt has no support for QtWebEngine 5.12 for Visual Studio 2015",
+		"data": {
+			"QtVersion": "5.12.12",
+			"platform": "Windows",
+			"buildHost": "Windows 8.1 Update",
+			"toolchain": "VS2015 Update 3",
+			"arch": "x86_64",
+			"variant": "",
+			"mkspecs": "win32-msvc",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_12wx6v7": {
+		"sort": 7,
+		"fileName": "Qt5.12.12-Windows-x86_64-VS2017-15.9.50-20221104.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86_64/Qt5.12.12-Windows-x86_64-VS2017-15.9.50-20221104.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39652/Qt5.12.12-Windows-x86_64-VS2017-15.9.50-20221104.7z",
+		"data": {
+			"QtVersion": "5.12.12",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "VS2017 15.9.50 w/ Windows SDK 10.0.17763",
+			"arch": "x86_64",
+			"variant": "",
+			"mkspecs": "win32-msvc",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_12wx6v7sf": {
+		"sort": 8,
+		"fileName": "Qt5.12.12-Windows-x86_64-VS2017-15.9.50-staticFull-20221104.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86_64/Qt5.12.12-Windows-x86_64-VS2017-15.9.50-staticFull-20221104.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39663/Qt5.12.12-Windows-x86_64-VS2017-15.9.50-staticFull-20221104.7z",
+		"data": {
+			"QtVersion": "5.12.12",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "VS2017 15.9.50 w/ Windows SDK 10.0.17763",
+			"arch": "x86_64",
+			"variant": "-static(Full)",
+			"mkspecs": "win32-msvc",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_12wx6v9": {
+		"sort": 10,
+		"fileName": "Qt5.12.12-Windows-x86_64-VS2019-16.11.20-20221104.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86_64/Qt5.12.12-Windows-x86_64-VS2019-16.11.20-20221104.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39639/Qt5.12.12-Windows-x86_64-VS2019-16.11.20-20221104.7z",
+		"notes": "__NO WEBENGINE__ because of compile failure",
+		"data": {
+			"QtVersion": "5.12.12",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "VS2019 16.11.20 w/ Windows SDK 10.0.22000",
+			"arch": "x86_64",
+			"variant": "",
+			"mkspecs": "win32-msvc",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_12lx6st": {
+		"sort": 16,
+		"data": {
+			"QtVersion": "5.12.12",
+			"platform": "Linux",
+			"buildHost": "RockyLinux 8.6",
+			"toolchain": "GCC 8.5.0",
+			"arch": "x86_64",
+			"variant": "-static(Lite)",
+			"mkspecs": "linux-g++",
+			"uploaded": "Won't upload, only used in QQtPatcher",
+			"configuration": "√"
+		}
+	},
+	"q5_12mLx6st": {
+		"sort": 19,
+		"data": {
+			"QtVersion": "5.12.12",
+			"platform": "macOS",
+			"buildHost": "macOS 11.6.1",
+			"toolchain": "AppleClang 12.0.5",
+			"arch": "x86_64",
+			"variant": "-static(Lite)",
+			"mkspecs": "macx-clang",
+			"uploaded": "Won't upload, only used in QQtPatcher",
+			"configuration": "√"
+		}
+	},
+
+	"q5_15lx6_aalnl": {
+		"sort": 18,
+		"fileName": "Qt5.15.7-Android-ALL-Clang-NDKr21e-xLinux-x86_64-gcc8.5.0-20221103.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Android/Qt5.15.7-Android-ALL-Clang-NDKr21e-xLinux-x86_64-gcc8.5.0-20221103.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39661/Qt5.15.7-Android-ALL-Clang-NDKr21e-xLinux-x86_64-gcc8.5.0-20221103.tar.xz",
+		"data": {
+			"QtVersion": "5.15.7",
+			"platform": "Android",
+			"buildHost": "RockyLinux 8.6",
+			"toolchain": "ndk r21e",
+			"arch": "ALL",
+			"variant": "android-21",
+			"mkspecs": "android-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_15mx6_aalnl": {
+		"sort": 19,
+		"fileName": "Qt5.15.7-Android-ALL-Clang-NDKr21e-xmacOS-x86_64-AppleClang12.0.5-20221104.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Android/Qt5.15.7-Android-ALL-Clang-NDKr21e-xmacOS-x86_64-AppleClang12.0.5-20221104.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39658/Qt5.15.7-Android-ALL-Clang-NDKr21e-xmacOS-x86_64-AppleClang12.0.5-20221104.tar.xz",
+		"data": {
+			"QtVersion": "5.15.7",
+			"platform": "Android",
+			"buildHost": "macOS 11.6.8",
+			"toolchain": "ndk r21e",
+			"arch": "ALL",
+			"variant": "android-21",
+			"mkspecs": "android-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_15wx6m8_aalnl": {
+		"sort": 17,
+		"fileName": "Qt5.15.7-Android-ALL-Clang-NDKr21e-XWindows-x86_64-MinGW8.1.0-20221104.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Android/Qt5.15.7-Android-ALL-Clang-NDKr21e-XWindows-x86_64-MinGW8.1.0-20221104.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39662/Qt5.15.7-Android-ALL-Clang-NDKr21e-XWindows-x86_64-MinGW8.1.0-20221104.7z",
+		"data": {
+			"QtVersion": "5.15.7",
+			"platform": "Android",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "ndk r21e",
+			"arch": "ALL",
+			"variant": "android-21",
+			"mkspecs": "android-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_15mx6": {
+		"sort": 15,
+		"fileName": "Qt5.15.7-macOS-x86_64-AppleClang13.0.0-20221107.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/macOS-x86_64/Qt5.15.7-macOS-x86_64-AppleClang13.0.0-20221107.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39669/Qt5.15.7-macOS-x86_64-AppleClang13.0.0-20221107.tar.xz",
+		"notes": "__NO WEBENGINE__ because of compile failure",
+		"data": {
+			"QtVersion": "5.15.7",
+			"platform": "macOS",
+			"buildHost": "macOS 11.7.1",
+			"toolchain": "AppleClang 13.0.0",
+			"arch": "x86_64",
+			"variant": "-framework",
+			"mkspecs": "macx-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_15mx6nf": {
+		"sort": 16,
+		"fileName": "Qt5.15.7-macOS-x86_64-AppleClang13.0.0-noFramework-20221107.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/macOS-x86_64/Qt5.15.7-macOS-x86_64-AppleClang13.0.0-noFramework-20221107.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39668/Qt5.15.7-macOS-x86_64-AppleClang13.0.0-noFramework-20221107.tar.xz",
+		"notes": "__NO WEBENGINE__ because of compile failure",
+		"data": {
+			"QtVersion": "5.15.7",
+			"platform": "macOS",
+			"buildHost": "macOS 11.7.1",
+			"toolchain": "AppleClang 13.0.0",
+			"arch": "x86_64",
+			"variant": "-no-framework",
+			"mkspecs": "macx-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_15lx6_W": {
+		"sort": 21,
+		"fileName": "Qt5.15.7-WebAssembly-emscripten1.39.8-xLinux-x86_64-gcc8.5.0-20221103.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/WebAssembly/Qt5.15.7-WebAssembly-emscripten1.39.8-xLinux-x86_64-gcc8.5.0-20221103.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39638/Qt5.15.7-WebAssembly-emscripten1.39.8-xLinux-x86_64-gcc8.5.0-20221103.tar.xz",
+		"data": {
+			"QtVersion": "5.15.7",
+			"platform": "WebAssembly",
+			"buildHost": "RockyLinux 8.6",
+			"toolchain": "emscripten-1.39.8",
+			"arch": "-",
+			"variant": "-feature-threads",
+			"mkspecs": "wasm-emscripten",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_15mx6_W": {
+		"sort": 22,
+		"fileName": "Qt5.15.7-WebAssembly-emscripten1.39.8-xmacOS-x86_64-AppleClang12.0.5-20221104.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/WebAssembly/Qt5.15.7-WebAssembly-emscripten1.39.8-xmacOS-x86_64-AppleClang12.0.5-20221104.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39633/Qt5.15.7-WebAssembly-emscripten1.39.8-xmacOS-x86_64-AppleClang12.0.5-20221104.tar.xz",
+		"data": {
+			"QtVersion": "5.15.7",
+			"platform": "WebAssembly",
+			"buildHost": "macOS 11.6.8",
+			"toolchain": "emscripten-1.39.8",
+			"arch": "-",
+			"variant": "-feature-threads",
+			"mkspecs": "wasm-emscripten",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_15wx6m8_W": {
+		"sort": 20,
+		"fileName": "Qt5.15.7-WebAssembly-emscripten1.39.8-xWindows-x86_64-MinGW8.1.0-20221104.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/WebAssembly/Qt5.15.7-WebAssembly-emscripten1.39.8-xWindows-x86_64-MinGW8.1.0-20221104.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39632/Qt5.15.7-WebAssembly-emscripten1.39.8-xWindows-x86_64-MinGW8.1.0-20221104.7z",
+		"data": {
+			"QtVersion": "5.15.7",
+			"platform": "WebAssembly",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "emscripten-1.39.8",
+			"arch": "-",
+			"variant": "-feature-threads",
+			"mkspecs": "wasm-emscripten",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_15wx3m8": {
+		"sort": 11,
+		"fileName": "Qt5.15.7-Windows-x86-MinGW8.1.0-20221104.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86/Qt5.15.7-Windows-x86-MinGW8.1.0-20221104.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39648/Qt5.15.7-Windows-x86-MinGW8.1.0-20221104.7z",
+		"MinGWConf": "wx3g8",
+		"data": {
+			"QtVersion": "5.15.7",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "MinGW-w64 v6 w/ GCC 8.1.0",
+			"arch": "x86",
+			"variant": "",
+			"mkspecs": "win32-g++",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_15wx3m8sf": {
+		"sort": 12,
+		"fileName": "Qt5.15.7-Windows-x86-MinGW8.1.0-staticFull-20221104.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86/Qt5.15.7-Windows-x86-MinGW8.1.0-staticFull-20221104.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39665/Qt5.15.7-Windows-x86-MinGW8.1.0-staticFull-20221104.7z",
+		"MinGWConf": "wx3g8",
+		"data": {
+			"QtVersion": "5.15.7",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "MinGW-w64 v6 w/ GCC 8.1.0",
+			"arch": "x86",
+			"variant": "-static(Full)",
+			"mkspecs": "win32-g++",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_15wx3v5": {
+		"sort": 1,
+		"fileName": "Qt5.15.7-Windows-x86-VS2015-20221103.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86/Qt5.15.7-Windows-x86-VS2015-20221103.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39640/Qt5.15.7-Windows-x86-VS2015-20221103.7z",
+		"notes": "__NO WEBENGINE__ because Qt has no support for QtWebEngine 5.15 for Visual Studio 2015",
+		"data": {
+			"QtVersion": "5.15.7",
+			"platform": "Windows",
+			"buildHost": "Windows 8.1 Update",
+			"toolchain": "VS2015 Update 3",
+			"arch": "x86",
+			"variant": "",
+			"mkspecs": "win32-msvc",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_15wx3v7": {
+		"sort": 3,
+		"fileName": "Qt5.15.7-Windows-x86-VS2017-15.9.50-20221104.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86/Qt5.15.7-Windows-x86-VS2017-15.9.50-20221104.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39642/Qt5.15.7-Windows-x86-VS2017-15.9.50-20221104.7z",
+		"notes": "__NO WEBENGINE__ because of compile failure",
+		"data": {
+			"QtVersion": "5.15.7",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "VS2017 15.9.50 w/ Windows SDK 10.0.17763",
+			"arch": "x86",
+			"variant": "",
+			"mkspecs": "win32-msvc",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_15wx3v9": {
+		"sort": 6,
+		"fileName": "Qt5.15.7-Windows-x86-VS2019-16.11.20-20221104.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86/Qt5.15.7-Windows-x86-VS2019-16.11.20-20221104.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39653/Qt5.15.7-Windows-x86-VS2019-16.11.20-20221104.7z",
+		"notes": "With WebEngine 5.15.11 && QtScript 5.15.11",
+		"data": {
+			"QtVersion": "5.15.7",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "VS2019 16.11.20 w/ Windows SDK 10.0.22000",
+			"arch": "x86",
+			"variant": "",
+			"mkspecs": "win32-msvc",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_15wx3v9sf": {
+		"sort": 7,
+		"fileName": "Qt5.15.7-Windows-x86-VS2019-16.11.20-staticFull-20221104.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86/Qt5.15.7-Windows-x86-VS2019-16.11.20-staticFull-20221104.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39659/Qt5.15.7-Windows-x86-VS2019-16.11.20-staticFull-20221104.7z",
+		"data": {
+			"QtVersion": "5.15.7",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "VS2019 16.11.20 w/ Windows SDK 10.0.22000",
+			"arch": "x86",
+			"variant": "-static(Full)",
+			"mkspecs": "win32-msvc",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_15wx6m8": {
+		"sort": 13,
+		"fileName": "Qt5.15.7-Windows-x86_64-MinGW8.1.0-20221104.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/Qt5.15.7-Windows-x86_64-MinGW8.1.0-20221104.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39646/Qt5.15.7-Windows-x86_64-MinGW8.1.0-20221104.7z",
+		"MinGWConf": "wx6g8",
+		"data": {
+			"QtVersion": "5.15.7",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "MinGW-w64 v6 w/ GCC 8.1.0",
+			"arch": "x86_64",
+			"variant": "",
+			"mkspecs": "win32-g++",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_15wx6m8sf": {
+		"sort": 14,
+		"fileName": "Qt5.15.7-Windows-x86_64-MinGW8.1.0-staticFull-20221104.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/Qt5.15.7-Windows-x86_64-MinGW8.1.0-staticFull-20221104.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39664/Qt5.15.7-Windows-x86_64-MinGW8.1.0-staticFull-20221104.7z",
+		"MinGWConf": "wx6g8",
+		"data": {
+			"QtVersion": "5.15.7",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "MinGW-w64 v6 w/ GCC 8.1.0",
+			"arch": "x86_64",
+			"variant": "-static(Full)",
+			"mkspecs": "win32-g++",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_15wx6v5": {
+		"sort": 2,
+		"fileName": "Qt5.15.7-Windows-x86_64-VS2015-20221103.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/Qt5.15.7-Windows-x86_64-VS2015-20221103.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39645/Qt5.15.7-Windows-x86_64-VS2015-20221103.7z",
+		"notes": "__NO WEBENGINE__ because Qt has no support for QtWebEngine 5.15 for Visual Studio 2015",
+		"data": {
+			"QtVersion": "5.15.7",
+			"platform": "Windows",
+			"buildHost": "Windows 8.1 Update",
+			"toolchain": "VS2015 Update 3",
+			"arch": "x86_64",
+			"variant": "",
+			"mkspecs": "win32-msvc",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_15wx6v7": {
+		"sort": 4,
+		"fileName": "Qt5.15.7-Windows-x86_64-VS2017-15.9.50-20221104.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/Qt5.15.7-Windows-x86_64-VS2017-15.9.50-20221104.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39647/Qt5.15.7-Windows-x86_64-VS2017-15.9.50-20221104.7z",
+		"notes": "__NO WEBENGINE__ because of compile failure",
+		"data": {
+			"QtVersion": "5.15.7",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "VS2017 15.9.50 w/ Windows SDK 10.0.17763",
+			"arch": "x86_64",
+			"variant": "",
+			"mkspecs": "win32-msvc",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_15wx6v9": {
+		"sort": 8,
+		"fileName": "Qt5.15.7-Windows-x86_64-VS2019-16.11.20-20221103.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/Qt5.15.7-Windows-x86_64-VS2019-16.11.20-20221103.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39655/Qt5.15.7-Windows-x86_64-VS2019-16.11.20-20221103.7z",
+		"notes": "With WebEngine 5.15.11 && QtScript 5.15.11",
+		"data": {
+			"QtVersion": "5.15.7",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "VS2019 16.11.20 w/ Windows SDK 10.0.22000",
+			"arch": "x86_64",
+			"variant": "",
+			"mkspecs": "win32-msvc",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_15wx6v9sf": {
+		"sort": 9,
+		"fileName": "Qt5.15.7-Windows-x86_64-VS2019-16.11.20-staticFull-20221103.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/Qt5.15.7-Windows-x86_64-VS2019-16.11.20-staticFull-20221103.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39666/Qt5.15.7-Windows-x86_64-VS2019-16.11.20-staticFull-20221103.7z",
+		"data": {
+			"QtVersion": "5.15.7",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "VS2019 16.11.20 w/ Windows SDK 10.0.22000",
+			"arch": "x86_64",
+			"variant": "-static(Full)",
+			"mkspecs": "win32-msvc",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q5_15wx6v2": {
+		"sort": 10,
+		"fileName": "Qt5.15.7-Windows-x86_64-VS2022-17.3.6-20221104.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/Qt5.15.7-Windows-x86_64-VS2022-17.3.6-20221104.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39654/Qt5.15.7-Windows-x86_64-VS2022-17.3.6-20221104.7z",
+		"notes": "With WebEngine 5.15.11 && QtScript 5.15.11",
+		"data": {
+			"QtVersion": "5.15.7",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "VS2022 17.3.6 w/ Windows SDK 10.0.22621",
+			"arch": "x86_64",
+			"variant": "",
+			"mkspecs": "win32-msvc",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+
+	"q6_2lx6_aa6n3": {
+		"sort": 26,
+		"fileName": "Qt6.2.4-Android-arm64-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20221120.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-arm64-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20221120.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39791/Qt6.2.4-Android-arm64-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20221120.tar.xz",
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "Android",
+			"buildHost": "RockyLinux 8.6",
+			"toolchain": "ndk r23c",
+			"arch": "arm64",
+			"variant": "android-24",
+			"mkspecs": "android-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_2mal_aa6n3": {
+		"sort": 30,
+		"fileName": "Qt6.2.4-Android-arm64-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.0-20221120.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-arm64-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.0-20221120.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39803/Qt6.2.4-Android-arm64-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.0-20221120.tar.xz",
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "Android",
+			"buildHost": "macOS 12.6.1",
+			"toolchain": "ndk r23c",
+			"arch": "arm64",
+			"variant": "android-24",
+			"mkspecs": "android-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_2wx6m1_aa6n3": {
+		"sort": 22,
+		"fileName": "Qt6.2.4-Android-arm64-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20221120.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-arm64-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20221120.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39801/Qt6.2.4-Android-arm64-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20221120.7z",
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "Android",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "ndk r23c",
+			"arch": "arm64",
+			"variant": "android-24",
+			"mkspecs": "android-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_2lx6_aa3n3": {
+		"sort": 25,
+		"fileName": "Qt6.2.4-Android-arm-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20221120.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-arm-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20221120.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39789/Qt6.2.4-Android-arm-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20221120.tar.xz",
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "Android",
+			"buildHost": "RockyLinux 8.6",
+			"toolchain": "ndk r23c",
+			"arch": "arm",
+			"variant": "android-24",
+			"mkspecs": "android-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_2mal_aa3n3": {
+		"sort": 29,
+		"fileName": "Qt6.2.4-Android-arm-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.0-20221120.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-arm-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.0-20221120.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39798/Qt6.2.4-Android-arm-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.0-20221120.tar.xz",
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "Android",
+			"buildHost": "macOS 12.6.1",
+			"toolchain": "ndk r23c",
+			"arch": "arm",
+			"variant": "android-24",
+			"mkspecs": "android-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_2wx6m1_aa3n3": {
+		"sort": 21,
+		"fileName": "Qt6.2.4-Android-arm-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20221120.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-arm-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20221120.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39799/Qt6.2.4-Android-arm-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20221120.7z",
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "Android",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "ndk r23c",
+			"arch": "arm",
+			"variant": "android-24",
+			"mkspecs": "android-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_2lx6_ax6n3": {
+		"sort": 28,
+		"fileName": "Qt6.2.4-Android-x86_64-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20221120.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-x86_64-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20221120.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39811/Qt6.2.4-Android-x86_64-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20221120.tar.xz",
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "Android",
+			"buildHost": "RockyLinux 8.6",
+			"toolchain": "ndk r23c",
+			"arch": "x86_64",
+			"variant": "android-24",
+			"mkspecs": "android-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_2mal_ax6n3": {
+		"sort": 32,
+		"fileName": "Qt6.2.4-Android-x86_64-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.0-20221120.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-x86_64-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.0-20221120.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39802/Qt6.2.4-Android-x86_64-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.0-20221120.tar.xz",
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "Android",
+			"buildHost": "macOS 12.6.1",
+			"toolchain": "ndk r23c",
+			"arch": "x86_64",
+			"variant": "android-24",
+			"mkspecs": "android-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_2wx6m1_ax6n3": {
+		"sort": 24,
+		"fileName": "Qt6.2.4-Android-x86_64-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20221120.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-x86_64-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20221120.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39797/Qt6.2.4-Android-x86_64-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20221120.7z",
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "Android",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "ndk r23c",
+			"arch": "x86_64",
+			"variant": "android-24",
+			"mkspecs": "android-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_2lx6_ax3n3": {
+		"sort": 27,
+		"fileName": "Qt6.2.4-Android-x86-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20221120.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-x86-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20221120.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39792/Qt6.2.4-Android-x86-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20221120.tar.xz",
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "Android",
+			"buildHost": "RockyLinux 8.6",
+			"toolchain": "ndk r23c",
+			"arch": "x86",
+			"variant": "android-24",
+			"mkspecs": "android-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_2mal_ax3n3": {
+		"sort": 31,
+		"fileName": "Qt6.2.4-Android-x86-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.0-20221120.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-x86-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.0-20221120.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39805/Qt6.2.4-Android-x86-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.0-20221120.tar.xz",
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "Android",
+			"buildHost": "macOS 12.6.1",
+			"toolchain": "ndk r23c",
+			"arch": "x86",
+			"variant": "android-24",
+			"mkspecs": "android-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_2wx6m1_ax3n3": {
+		"sort": 23,
+		"fileName": "Qt6.2.4-Android-x86-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20221120.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-x86-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20221120.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39800/Qt6.2.4-Android-x86-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20221120.7z",
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "Android",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "ndk r23c",
+			"arch": "x86",
+			"variant": "android-24",
+			"mkspecs": "android-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_2mal": {
+		"sort": 18,
+		"fileName": "Qt6.2.4-macOS-Universal-AppleClang14.0.0-20221116.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-Universal/Qt6.2.4-macOS-Universal-AppleClang14.0.0-20221116.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39753/Qt6.2.4-macOS-Universal-AppleClang14.0.0-20221116.tar.xz",
+		"notes": "__NO WEBENGINE__ because of compile failure",
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "macOS",
+			"buildHost": "macOS 12.6.1",
+			"toolchain": "AppleClang 14.0.0",
+			"arch": "Universal",
+			"variant": "-framework",
+			"mkspecs": "macx-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_2malnf": {
+		"sort": 19,
+		"fileName": "Qt6.2.4-macOS-Universal-AppleClang14.0.0-noFramework-20221116.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-Universal/Qt6.2.4-macOS-Universal-AppleClang14.0.0-noFramework-20221116.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39755/Qt6.2.4-macOS-Universal-AppleClang14.0.0-noFramework-20221116.tar.xz",
+		"notes": "__NO WEBENGINE__ because of compile failure",
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "macOS",
+			"buildHost": "macOS 12.6.1",
+			"toolchain": "AppleClang 14.0.0",
+			"arch": "Universal",
+			"variant": "-no-framework",
+			"mkspecs": "macx-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_2malsf": {
+		"sort": 20,
+		"fileName": "Qt6.2.4-macOS-Universal-AppleClang14.0.0-staticFull-20221113.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-Universal/Qt6.2.4-macOS-Universal-AppleClang14.0.0-staticFull-20221113.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39770/Qt6.2.4-macOS-Universal-AppleClang14.0.0-staticFull-20221113.tar.xz",
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "macOS",
+			"buildHost": "macOS 12.6.1",
+			"toolchain": "AppleClang 14.0.0",
+			"arch": "Universal",
+			"variant": "-static(Full)",
+			"mkspecs": "macx-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_2lx6_W": {
+		"sort": 34,
+		"fileName": "Qt6.2.4-WebAssembly-emscripten2.0.14-xLinux-x86_64-gcc8.5.0-20221120.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/WebAssembly/Qt6.2.4-WebAssembly-emscripten2.0.14-xLinux-x86_64-gcc8.5.0-20221120.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39788/Qt6.2.4-WebAssembly-emscripten2.0.14-xLinux-x86_64-gcc8.5.0-20221120.tar.xz",
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "WebAssembly",
+			"buildHost": "RockyLinux 8.6",
+			"toolchain": "emscripten-2.0.14",
+			"arch": "-",
+			"variant": "-feature-threads",
+			"mkspecs": "wasm-emscripten",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_2mal_W": {
+		"sort": 35,
+		"fileName": "Qt6.2.4-WebAssembly-emscripten2.0.14-xmacOS-Universal-AppleClang14.0.0-20221120.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/WebAssembly/Qt6.2.4-WebAssembly-emscripten2.0.14-xmacOS-Universal-AppleClang14.0.0-20221120.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39794/Qt6.2.4-WebAssembly-emscripten2.0.14-xmacOS-Universal-AppleClang14.0.0-20221120.tar.xz",
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "WebAssembly",
+			"buildHost": "macOS 12.6.1",
+			"toolchain": "emscripten-2.0.14",
+			"arch": "-",
+			"variant": "-feature-threads",
+			"mkspecs": "wasm-emscripten",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_2wx6m1_W": {
+		"sort": 33,
+		"fileName": "Qt6.2.4-WebAssembly-emscripten2.0.14-xWindows-x86_64-MinGW11.2.0-20221120.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/WebAssembly/Qt6.2.4-WebAssembly-emscripten2.0.14-xWindows-x86_64-MinGW11.2.0-20221120.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39793/Qt6.2.4-WebAssembly-emscripten2.0.14-xWindows-x86_64-MinGW11.2.0-20221120.7z",
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "WebAssembly",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "emscripten-2.0.14",
+			"arch": "-",
+			"variant": "-feature-threads",
+			"mkspecs": "wasm-emscripten",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_2wx6s5": {
+		"sort": 12,
+		"fileName": "Qt6.2.4-Windows-x86_64-llvm-mingw-15.0.0-msvcrt-20221105.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-llvm-mingw-15.0.0-msvcrt-20221105.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39675/Qt6.2.4-Windows-x86_64-llvm-mingw-15.0.0-msvcrt-20221105.7z",
+		"MinGWConf": "wx6s5",
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "MinGW-w64 v9 w/ LLVM 15.0.0 (msvcrt)",
+			"arch": "x86_64",
+			"variant": "",
+			"mkspecs": "win32-clang-g++",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_2wx6u5": {
+		"sort": 11,
+		"fileName": "Qt6.2.4-Windows-x86_64-llvm-mingw-15.0.0-ucrt-20221105.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-llvm-mingw-15.0.0-ucrt-20221105.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39674/Qt6.2.4-Windows-x86_64-llvm-mingw-15.0.0-ucrt-20221105.7z",
+		"MinGWConf": "wx6u5",
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "MinGW-w64 v9 w/ LLVM 15.0.0 (ucrt)",
+			"arch": "x86_64",
+			"variant": "",
+			"mkspecs": "win32-clang-g++",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_2wx6m1": {
+		"sort": 6,
+		"fileName": "Qt6.2.4-Windows-x86_64-MinGW11.2.0-20221105.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW11.2.0-20221105.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39677/Qt6.2.4-Windows-x86_64-MinGW11.2.0-20221105.7z",
+		"MinGWConf": "wx6g1",
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "MinGW-w64 v9 w/ GCC 11.2.0",
+			"arch": "x86_64",
+			"variant": "",
+			"mkspecs": "win32-g++",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_2wx6m1sf": {
+		"sort": 8,
+		"fileName": "Qt6.2.4-Windows-x86_64-MinGW11.2.0-staticFull-20221105.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW11.2.0-staticFull-20221105.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39698/Qt6.2.4-Windows-x86_64-MinGW11.2.0-staticFull-20221105.7z",
+		"MinGWConf": "wx6g1",
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "MinGW-w64 v9 w/ GCC 11.2.0",
+			"arch": "x86_64",
+			"variant": "-static(Full)",
+			"mkspecs": "win32-g++",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_2wx6g2": {
+		"sort": 9,
+		"fileName": "Qt6.2.4-Windows-x86_64-MinGW12.1.0-20221105.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW12.1.0-20221105.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39676/Qt6.2.4-Windows-x86_64-MinGW12.1.0-20221105.7z",
+		"MinGWConf": "wx6g2",
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "MinGW-w64 v10 w/ GCC 12.1.0",
+			"arch": "x86_64",
+			"variant": "",
+			"mkspecs": "win32-g++",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_2wx6g2sf": {
+		"sort": 10,
+		"fileName": "Qt6.2.4-Windows-x86_64-MinGW12.1.0-staticFull-20221105.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW12.1.0-staticFull-20221105.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39697/Qt6.2.4-Windows-x86_64-MinGW12.1.0-staticFull-20221105.7z",
+		"MinGWConf": "wx6g2",
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "MinGW-w64 v10 w/ GCC 12.1.0",
+			"arch": "x86_64",
+			"variant": "-static(Full)",
+			"mkspecs": "win32-g++",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_2wx6v9": {
+		"sort": 1,
+		"fileName": "Qt6.2.4-Windows-x86_64-VS2019-16.11.21-20221117.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-VS2019-16.11.21-20221117.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39749/Qt6.2.4-Windows-x86_64-VS2019-16.11.21-20221117.7z",
+		"notes": "__NO WEBENGINE__ because of compile failure",
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "VS2019 16.11.21 w/ Windows SDK 10.0.22000",
+			"arch": "x86_64",
+			"variant": "",
+			"mkspecs": "win32-msvc",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_2wx6v9sf": {
+		"sort": 3,
+		"fileName": "Qt6.2.4-Windows-x86_64-VS2019-16.11.20-staticFull-20221105.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-VS2019-16.11.20-staticFull-20221105.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39699/Qt6.2.4-Windows-x86_64-VS2019-16.11.20-staticFull-20221105.7z",
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "VS2019 16.11.20 w/ Windows SDK 10.0.22000",
+			"arch": "x86_64",
+			"variant": "-static(Full)",
+			"mkspecs": "win32-msvc",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_2wx6v2": {
+		"sort": 5,
+		"fileName": "Qt6.2.4-Windows-x86_64-VS2022-17.4.1-20221117.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-VS2022-17.4.1-20221117.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39750/Qt6.2.4-Windows-x86_64-VS2022-17.4.1-20221117.7z",
+		"notes": "__NO WEBENGINE__ because of compile failure",
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "VS2022 17.4.1 w/ Windows SDK 10.0.22621",
+			"arch": "x86_64",
+			"variant": "",
+			"mkspecs": "win32-msvc",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_2wx6v9_wa6v9": {
+		"sort": 4,
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "VS2019 16.11.20 w/ Windows SDK 10.0.22000",
+			"arch": "arm64",
+			"variant": "",
+			"mkspecs": "win32-arm64-msvc",
+			"uploaded": "Didn't build since the static version of VS2019 failed (as of 2021/12/7)",
+			"configuration": "√"
+		}
+	},
+	"q6_2wx6v9st": {
+		"sort": 2,
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "VS2019 16.11.20 w/ Windows SDK 10.0.22000",
+			"arch": "x86_64",
+			"variant": "-static",
+			"mkspecs": "win32-msvc",
+			"uploaded": "Won't upload seprately, used in cross-compiled Qt",
+			"configuration": "√"
+		}
+	},
+	"q6_2wx6m1st": {
+		"sort": 7,
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22621",
+			"toolchain": "MinGW-w64 v9 w/ GCC 11.2.0",
+			"arch": "x86_64",
+			"variant": "-static(Lite)",
+			"mkspecs": "win32-g++",
+			"uploaded": "Won't upload seprately, used in cross-compiled Qt",
+			"configuration": "√"
+		}
+	},
+	"q6_2lx6st": {
+		"sort": 13,
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "Linux",
+			"buildHost": "RockyLinux 8.6",
+			"toolchain": "GCC 8.5.0",
+			"arch": "x86_64",
+			"variant": "-static(Lite)",
+			"mkspecs": "linux-g++",
+			"uploaded": "Won't upload seprately, used in cross-compiled Qt",
+			"configuration": "√"
+		}
+	},
+	"q6_2malst": {
+		"sort": 16,
+		"data": {
+			"QtVersion": "6.2.4",
+			"platform": "macOS",
+			"buildHost": "macOS 12.6.1",
+			"toolchain": "AppleClang 14.0.0",
+			"arch": "Universal",
+			"variant": "-static(Lite)",
+			"mkspecs": "macx-clang",
+			"uploaded": "Won't upload seprately, used in cross-compiled Qt",
+			"configuration": "√"
+		}
+	},
+
+	"q6_4lx6_aa6n3": {
+		"sort": 19,
+		"fileName": "Qt6.4.1-Android-arm64-Clang-NDKr25b-xLinux-x86_64-gcc11.2.1-20221119.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/Android/Qt6.4.1-Android-arm64-Clang-NDKr25b-xLinux-x86_64-gcc11.2.1-20221119.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39795/Qt6.4.1-Android-arm64-Clang-NDKr25b-xLinux-x86_64-gcc11.2.1-20221119.tar.xz",
+		"data": {
+			"QtVersion": "6.4.1",
+			"platform": "Android",
+			"buildHost": "RockyLinux 9",
+			"toolchain": "ndk r25b",
+			"arch": "arm64",
+			"variant": "android-27",
+			"mkspecs": "android-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_4mal_aa6n3": {
+		"sort": 23,
+		"fileName": "Qt6.4.1-Android-arm64-Clang-NDKr25b-xmacOS-Universal-AppleClang14.0.0-20221119.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/Android/Qt6.4.1-Android-arm64-Clang-NDKr25b-xmacOS-Universal-AppleClang14.0.0-20221119.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39810/Qt6.4.1-Android-arm64-Clang-NDKr25b-xmacOS-Universal-AppleClang14.0.0-20221119.tar.xz",
+		"data": {
+			"QtVersion": "6.4.1",
+			"platform": "Android",
+			"buildHost": "macOS 12.6.1",
+			"toolchain": "ndk r25b",
+			"arch": "arm64",
+			"variant": "android-27",
+			"mkspecs": "android-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_4wx6g2_aa6n3": {
+		"sort": 17,
+		"fileName": "Qt6.4.1-Android-arm64-Clang-NDKr25b-XWindows-x86_64-MinGW12.1.0-20221119.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/Android/Qt6.4.1-Android-arm64-Clang-NDKr25b-XWindows-x86_64-MinGW12.1.0-20221119.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39809/Qt6.4.1-Android-arm64-Clang-NDKr25b-XWindows-x86_64-MinGW12.1.0-20221119.7z",
+		"data": {
+			"QtVersion": "6.4.1",
+			"platform": "Android",
+			"buildHost": "Windows 11 10.0.22000",
+			"toolchain": "ndk r25b",
+			"arch": "arm64",
+			"variant": "android-27",
+			"mkspecs": "android-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_4lx6_ax6n3": {
+		"sort": 20,
+		"fileName": "Qt6.4.1-Android-x86_64-Clang-NDKr25b-xLinux-x86_64-gcc11.2.1-20221119.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/Android/Qt6.4.1-Android-x86_64-Clang-NDKr25b-xLinux-x86_64-gcc11.2.1-20221119.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39796/Qt6.4.1-Android-x86_64-Clang-NDKr25b-xLinux-x86_64-gcc11.2.1-20221119.tar.xz",
+		"data": {
+			"QtVersion": "6.4.1",
+			"platform": "Android",
+			"buildHost": "RockyLinux 9",
+			"toolchain": "ndk r25b",
+			"arch": "x86_64",
+			"variant": "android-27",
+			"mkspecs": "android-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_4mal_ax6n3": {
+		"sort": 24,
+		"fileName": "Qt6.4.1-Android-x86_64-Clang-NDKr25b-xmacOS-Universal-AppleClang14.0.0-20221119.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/Android/Qt6.4.1-Android-x86_64-Clang-NDKr25b-xmacOS-Universal-AppleClang14.0.0-20221119.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39808/Qt6.4.1-Android-x86_64-Clang-NDKr25b-xmacOS-Universal-AppleClang14.0.0-20221119.tar.xz",
+		"data": {
+			"QtVersion": "6.4.1",
+			"platform": "Android",
+			"buildHost": "macOS 12.6.1",
+			"toolchain": "ndk r25b",
+			"arch": "x86_64",
+			"variant": "android-27",
+			"mkspecs": "android-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_4wx6g2_ax6n3": {
+		"sort": 18,
+		"fileName": "Qt6.4.1-Android-x86_64-Clang-NDKr25b-XWindows-x86_64-MinGW12.1.0-20221119.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/Android/Qt6.4.1-Android-x86_64-Clang-NDKr25b-XWindows-x86_64-MinGW12.1.0-20221119.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39807/Qt6.4.1-Android-x86_64-Clang-NDKr25b-XWindows-x86_64-MinGW12.1.0-20221119.7z",
+		"data": {
+			"QtVersion": "6.4.1",
+			"platform": "Android",
+			"buildHost": "Windows 11 10.0.22000",
+			"toolchain": "ndk r25b",
+			"arch": "x86_64",
+			"variant": "android-27",
+			"mkspecs": "android-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_4mal": {
+		"sort": 14,
+		"fileName": "Qt6.4.1-macOS-Universal-AppleClang14.0.0-20221116.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/macOS-Universal/Qt6.4.1-macOS-Universal-AppleClang14.0.0-20221116.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39775/Qt6.4.1-macOS-Universal-AppleClang14.0.0-20221116.tar.xz",
+		"data": {
+			"QtVersion": "6.4.1",
+			"platform": "macOS",
+			"buildHost": "macOS 12.6.1",
+			"toolchain": "AppleClang 14.0.0",
+			"arch": "Universal",
+			"variant": "-framework",
+			"mkspecs": "macx-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_4malnf": {
+		"sort": 15,
+		"fileName": "Qt6.4.1-macOS-Universal-AppleClang14.0.0-noFramework-20221116.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/macOS-Universal/Qt6.4.1-macOS-Universal-AppleClang14.0.0-noFramework-20221116.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39776/Qt6.4.1-macOS-Universal-AppleClang14.0.0-noFramework-20221116.tar.xz",
+		"data": {
+			"QtVersion": "6.4.1",
+			"platform": "macOS",
+			"buildHost": "macOS 12.6.1",
+			"toolchain": "AppleClang 14.0.0",
+			"arch": "Universal",
+			"variant": "-no-framework",
+			"mkspecs": "macx-clang",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_4lx6_W": {
+		"sort": 26,
+		"fileName": "Qt6.4.1-WebAssembly-emscripten3.1.14-xLinux-x86_64-gcc11.2.1-20221119.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/WebAssembly/Qt6.4.1-WebAssembly-emscripten3.1.14-xLinux-x86_64-gcc11.2.1-20221119.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39790/Qt6.4.1-WebAssembly-emscripten3.1.14-xLinux-x86_64-gcc11.2.1-20221119.tar.xz",
+		"data": {
+			"QtVersion": "6.4.1",
+			"platform": "WebAssembly",
+			"buildHost": "RockyLinux 9",
+			"toolchain": "emscripten-3.1.14",
+			"arch": "-",
+			"variant": "-feature-threads",
+			"mkspecs": "wasm-emscripten",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_4mal_W": {
+		"sort": 28,
+		"fileName": "Qt6.4.1-WebAssembly-emscripten3.1.14-xmacOS-Universal-AppleClang14.0.0-20221120.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/WebAssembly/Qt6.4.1-WebAssembly-emscripten3.1.14-xmacOS-Universal-AppleClang14.0.0-20221120.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39806/Qt6.4.1-WebAssembly-emscripten3.1.14-xmacOS-Universal-AppleClang14.0.0-20221120.tar.xz",
+		"data": {
+			"QtVersion": "6.4.1",
+			"platform": "WebAssembly",
+			"buildHost": "macOS 12.6.1",
+			"toolchain": "emscripten-3.1.14",
+			"arch": "-",
+			"variant": "-feature-threads",
+			"mkspecs": "wasm-emscripten",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_4wx6g2_W": {
+		"sort": 25,
+		"fileName": "Qt6.4.1-WebAssembly-emscripten3.1.14-xWindows-x86_64-MinGW12.1.0-20221119.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/WebAssembly/Qt6.4.1-WebAssembly-emscripten3.1.14-xWindows-x86_64-MinGW12.1.0-20221119.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39804/Qt6.4.1-WebAssembly-emscripten3.1.14-xWindows-x86_64-MinGW12.1.0-20221119.7z",
+		"data": {
+			"QtVersion": "6.4.1",
+			"platform": "WebAssembly",
+			"buildHost": "Windows 11 10.0.22000",
+			"toolchain": "emscripten-3.1.14",
+			"arch": "-",
+			"variant": "-feature-threads",
+			"mkspecs": "wasm-emscripten",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_4wx6s5": {
+		"sort": 9,
+		"fileName": "Qt6.4.1-Windows-x86_64-llvm-mingw-15.0.0-msvcrt-20221116.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/Windows-x86_64/Qt6.4.1-Windows-x86_64-llvm-mingw-15.0.0-msvcrt-20221116.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39751/Qt6.4.1-Windows-x86_64-llvm-mingw-15.0.0-msvcrt-20221116.7z",
+		"MinGWConf": "wx6s5",
+		"data": {
+			"QtVersion": "6.4.1",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22000",
+			"toolchain": "MinGW-w64 v9 w/ LLVM 15.0.0 (msvcrt)",
+			"arch": "x86_64",
+			"variant": "",
+			"mkspecs": "win32-clang-g++",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_4wx6u5": {
+		"sort": 8,
+		"fileName": "Qt6.4.1-Windows-x86_64-llvm-mingw-15.0.0-ucrt-20221116.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/Windows-x86_64/Qt6.4.1-Windows-x86_64-llvm-mingw-15.0.0-ucrt-20221116.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39752/Qt6.4.1-Windows-x86_64-llvm-mingw-15.0.0-ucrt-20221116.7z",
+		"MinGWConf": "wx6u5",
+		"data": {
+			"QtVersion": "6.4.1",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22000",
+			"toolchain": "MinGW-w64 v9 w/ LLVM 15.0.0 (ucrt)",
+			"arch": "x86_64",
+			"variant": "",
+			"mkspecs": "win32-clang-g++",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_4wx6g2": {
+		"sort": 7,
+		"fileName": "Qt6.4.1-Windows-x86_64-MinGW12.1.0-20221116.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/Windows-x86_64/Qt6.4.1-Windows-x86_64-MinGW12.1.0-20221116.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39754/Qt6.4.1-Windows-x86_64-MinGW12.1.0-20221116.7z",
+		"MinGWConf": "wx6g2",
+		"data": {
+			"QtVersion": "6.4.1",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22000",
+			"toolchain": "MinGW-w64 v9 w/ GCC 12.1.0",
+			"arch": "x86_64",
+			"variant": "",
+			"mkspecs": "win32-g++",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_4wx6v9": {
+		"sort": 1,
+		"fileName": "Qt6.4.1-Windows-x86_64-VS2019-16.11.21-20221116.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/Windows-x86_64/Qt6.4.1-Windows-x86_64-VS2019-16.11.21-20221116.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39766/Qt6.4.1-Windows-x86_64-VS2019-16.11.21-20221116.7z",
+		"data": {
+			"QtVersion": "6.4.1",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22000",
+			"toolchain": "VS2019 16.11.21 w/ Windows SDK 10.0.22000",
+			"arch": "x86_64",
+			"variant": "",
+			"mkspecs": "win32-msvc",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_4wx6v2": {
+		"sort": 2,
+		"fileName": "Qt6.4.1-Windows-x86_64-VS2022-17.4.1-20221117.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/Windows-x86_64/Qt6.4.1-Windows-x86_64-VS2022-17.4.1-20221117.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/39/39756/Qt6.4.1-Windows-x86_64-VS2022-17.4.1-20221117.7z",
+		"notes": "__NO WEBENGINE__ because of compile failure",
+		"data": {
+			"QtVersion": "6.4.1",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22000",
+			"toolchain": "VS2022 17.4.1 w/ Windows SDK 10.0.22621",
+			"arch": "x86_64",
+			"variant": "",
+			"mkspecs": "win32-msvc",
+			"uploaded": "√",
+			"configuration": "√"
+		}
+	},
+	"q6_4wx6v2st": {
+		"sort": 3,
+		"data": {
+			"QtVersion": "6.4.1",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22000",
+			"toolchain": "VS2022 17.4.1 w/ Windows SDK 10.0.22621",
+			"arch": "x86_64",
+			"variant": "-static",
+			"mkspecs": "win32-msvc",
+			"uploaded": "Won't upload seprately, used in cross-compiled Qt",
+			"configuration": "√"
+		}
+	},
+	"q6_4wx6v2_wa6v2": {
+		"sort": 4,
+		"data": {
+			"QtVersion": "6.4.1",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22000",
+			"toolchain": "VS2022 17.4.1 w/ Windows SDK 10.0.22621",
+			"arch": "arm64",
+			"variant": "",
+			"mkspecs": "win32-arm64-msvc",
+			"uploaded": "Didn't build since the static version of VS2019 failed (as of 2021/12/7)",
+			"configuration": "√"
+		}
+	},
+	"q6_4wx6g2st": {
+		"sort": 6,
+		"data": {
+			"QtVersion": "6.4.1",
+			"platform": "Windows",
+			"buildHost": "Windows 11 10.0.22000",
+			"toolchain": "MinGW-w64 v9 w/ GCC 12.1.0",
+			"arch": "x86_64",
+			"variant": "-static(Lite)",
+			"mkspecs": "win32-g++",
+			"uploaded": "Won't upload seprately, used in cross-compiled Qt",
+			"configuration": "√"
+		}
+	},
+	"q6_4lx6st": {
+		"sort": 10,
+		"data": {
+			"QtVersion": "6.4.1",
+			"platform": "Linux",
+			"buildHost": "RockyLinux 9",
+			"toolchain": "GCC 11.2.1",
+			"arch": "x86_64",
+			"variant": "-static(Lite)",
+			"mkspecs": "linux-g++",
+			"uploaded": "Won't upload seprately, used in cross-compiled Qt",
+			"configuration": "√"
+		}
+	},
+	"q6_4malst": {
+		"sort": 16,
+		"data": {
+			"QtVersion": "6.4.1",
+			"platform": "macOS",
+			"buildHost": "macOS 12.6.1",
+			"toolchain": "AppleClang 14.0.0",
+			"arch": "Universal",
+			"variant": "-static(Lite)",
+			"mkspecs": "macx-clang",
+			"uploaded": "Won't upload seprately, used in cross-compiled Qt",
+			"configuration": "√"
+		}
+	}
+}
