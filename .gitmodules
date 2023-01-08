@@ -4,3 +4,7 @@
 	update = checkout
 	branch = main
 	shallow = true
+[submodule "data"]
+	path = data
+	url = ../QtCompile
+	branch = data
