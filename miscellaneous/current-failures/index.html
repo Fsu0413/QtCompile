@@ -84,12 +84,11 @@
             <div class="toc-wrapper" dir="ltr">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#qt-512-webassembly-builds-cant-built-with-openssl">Qt 5.12 WebAssembly builds can&rsquo;t built with OpenSSL</a></li>
     <li><a href="#qdoc-after-qt-512-cannot-use-static-linked-clang-when-using-msvc">QDoc after Qt 5.12 cannot use static linked clang when using MSVC</a></li>
     <li><a href="#command-line-too-long-when-building-qt-62-series-for-mingw">Command line too long when building Qt 6.2 series for MinGW</a></li>
     <li><a href="#qtopcua-issues">QtOpcUa issues</a></li>
     <li><a href="#various-failures-building-higher-version-of-qtwebengine-on-qt-624">Various failures building higher version of QtWebEngine on Qt 6.2.4</a></li>
-    <li><a href="#qt-5157-with-qtwebengine-51511-build-fails-on-macos-11">Qt 5.15.7 with QtWebEngine 5.15.11 build fails on macOS 11</a></li>
+    <li><a href="#qt-5158-with-qtwebengine-51512-build-fails-on-macos--vs2022">Qt 5.15.8 with QtWebEngine 5.15.12 build fails on macOS / VS2022</a></li>
   </ul>
 </nav>
             </div>
@@ -103,13 +102,6 @@
           <article class="default">
 <h1 id="current-failures">Current failures</h1>
 
-<h2 id="qt-512-webassembly-builds-cant-built-with-openssl">Qt 5.12 WebAssembly builds can&rsquo;t built with OpenSSL</h2>
-<p>Both <code>qsslsocket_opensslpre11.cpp</code> and <code>qsslsocket_openssl11.cpp</code> includes <code>qlibrary.h</code> which is not usable in WebAssembly platform.<br>
-Since <code>-openssl</code> and <code>-openssl-linked</code> both use this file, so we can only use <code>-no-ssl</code>&hellip;&hellip;.</p>
-<p>I didn&rsquo;t try with Qt 5.15 series, but <code>qsslsocket_openssl.cpp</code> in Qt 5.15 includes <code>qlibrary.h</code> as well&hellip;</p>
-<p>I didn&rsquo;t try with Qt 6.2 onwards.</p>
-<p>Update 2022.11.6:<br>
-I gave up supporting SSL on WebAssembly and will remove this item later.</p>
 <h2 id="qdoc-after-qt-512-cannot-use-static-linked-clang-when-using-msvc">QDoc after Qt 5.12 cannot use static linked clang when using MSVC</h2>
 <p>It uses <code>libclang_static.lib</code> but clang don&rsquo;t provide this one.<br>
 I have decided not provide LLVM-based QDoc until I find a way to static link it.</p>
@@ -138,7 +130,7 @@ QtWebEngine 6.4.0 on Qt 6.2.4 fails on macOS and Windows. All of them succeeds i
 <p>I&rsquo;m tired of investigating them and will distribute Qt 6.2 series without QtWebEngine.<br>
 QtWebEngine has not released as LTS since Qt 6.2.4 and the Qt guys are simply taking QtWebEngine from later version (6.3, etc) for their 6.2 LTS series releases.<br>
 But no one else knows what version Qt guys are using for their Qt 6.2 LTS Releases except for the official packagers, as the QtWebEngine version is always different than the binary files.</p>
-<h2 id="qt-5157-with-qtwebengine-51511-build-fails-on-macos-11">Qt 5.15.7 with QtWebEngine 5.15.11 build fails on macOS 11</h2>
+<h2 id="qt-5158-with-qtwebengine-51512-build-fails-on-macos--vs2022">Qt 5.15.8 with QtWebEngine 5.15.12 build fails on macOS / VS2022</h2>
 <p>Reason is unknown.</p>
 
             <footer class="footline">
@@ -164,20 +156,20 @@ But no one else knows what version Qt guys are using for their Qt 6.2 LTS Releas
           <li data-nav-id="/5.12-series/5.12.12-for-windows/index.html" class="dd-item"><a href="/5.12-series/5.12.12-for-windows/index.html">5.12.12 for Windows</a></li>
           <li data-nav-id="/5.12-series/5.12.12-for-android/index.html" class="dd-item"><a href="/5.12-series/5.12.12-for-android/index.html">5.12.12 for Android</a></li></ul></li>
           <li data-nav-id="/5.15-series/index.html" class="dd-item"><a href="/5.15-series/index.html">5.15 series</a><ul id="subsections-dfde3005aa1a1a9f4665d82e5e9612d8">
-          <li data-nav-id="/5.15-series/5.15.7-for-windows/index.html" class="dd-item"><a href="/5.15-series/5.15.7-for-windows/index.html">5.15.7 for Windows</a></li>
-          <li data-nav-id="/5.15-series/5.15.7-for-macos/index.html" class="dd-item"><a href="/5.15-series/5.15.7-for-macos/index.html">5.15.7 for macOS</a></li>
-          <li data-nav-id="/5.15-series/5.15.7-for-android/index.html" class="dd-item"><a href="/5.15-series/5.15.7-for-android/index.html">5.15.7 for Android</a></li>
-          <li data-nav-id="/5.15-series/5.15.7-for-webassembly/index.html" class="dd-item"><a href="/5.15-series/5.15.7-for-webassembly/index.html">5.15.7 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/5.15-series/5.15.8-for-windows/index.html" class="dd-item"><a href="/5.15-series/5.15.8-for-windows/index.html">5.15.8 for Windows</a></li>
+          <li data-nav-id="/5.15-series/5.15.8-for-macos/index.html" class="dd-item"><a href="/5.15-series/5.15.8-for-macos/index.html">5.15.8 for macOS</a></li>
+          <li data-nav-id="/5.15-series/5.15.8-for-android/index.html" class="dd-item"><a href="/5.15-series/5.15.8-for-android/index.html">5.15.8 for Android</a></li>
+          <li data-nav-id="/5.15-series/5.15.8-for-webassembly/index.html" class="dd-item"><a href="/5.15-series/5.15.8-for-webassembly/index.html">5.15.8 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/6.2-series/index.html" class="dd-item"><a href="/6.2-series/index.html">6.2 series</a><ul id="subsections-c2b87e4570db0ee260cc7de2c4b80e99">
           <li data-nav-id="/6.2-series/6.2.4-for-windows/index.html" class="dd-item"><a href="/6.2-series/6.2.4-for-windows/index.html">6.2.4 for Windows</a></li>
           <li data-nav-id="/6.2-series/6.2.4-for-macos/index.html" class="dd-item"><a href="/6.2-series/6.2.4-for-macos/index.html">6.2.4 for macOS</a></li>
           <li data-nav-id="/6.2-series/6.2.4-for-android/index.html" class="dd-item"><a href="/6.2-series/6.2.4-for-android/index.html">6.2.4 for Android</a></li>
           <li data-nav-id="/6.2-series/6.2.4-for-webassembly/index.html" class="dd-item"><a href="/6.2-series/6.2.4-for-webassembly/index.html">6.2.4 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/6.4-series/index.html" class="dd-item"><a href="/6.4-series/index.html">6.4 series</a><ul id="subsections-6d83ded247ba4c263177d411aee127e5">
-          <li data-nav-id="/6.4-series/6.4.1-for-windows/index.html" class="dd-item"><a href="/6.4-series/6.4.1-for-windows/index.html">6.4.1 for Windows</a></li>
-          <li data-nav-id="/6.4-series/6.4.1-for-macos/index.html" class="dd-item"><a href="/6.4-series/6.4.1-for-macos/index.html">6.4.1 for macOS</a></li>
-          <li data-nav-id="/6.4-series/6.4.1-for-android/index.html" class="dd-item"><a href="/6.4-series/6.4.1-for-android/index.html">6.4.1 for Android</a></li>
-          <li data-nav-id="/6.4-series/6.4.1-for-webassembly/index.html" class="dd-item"><a href="/6.4-series/6.4.1-for-webassembly/index.html">6.4.1 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/6.4-series/6.4.2-for-windows/index.html" class="dd-item"><a href="/6.4-series/6.4.2-for-windows/index.html">6.4.2 for Windows</a></li>
+          <li data-nav-id="/6.4-series/6.4.2-for-macos/index.html" class="dd-item"><a href="/6.4-series/6.4.2-for-macos/index.html">6.4.2 for macOS</a></li>
+          <li data-nav-id="/6.4-series/6.4.2-for-android/index.html" class="dd-item"><a href="/6.4-series/6.4.2-for-android/index.html">6.4.2 for Android</a></li>
+          <li data-nav-id="/6.4-series/6.4.2-for-webassembly/index.html" class="dd-item"><a href="/6.4-series/6.4.2-for-webassembly/index.html">6.4.2 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/miscellaneous/index.html" class="dd-item parent"><a href="/miscellaneous/index.html">Miscellaneous</a><ul id="subsections-59c45accf7e43befe663d68447543959">
           <li data-nav-id="/miscellaneous/notes-for-this-repo/index.html" class="dd-item"><a href="/miscellaneous/notes-for-this-repo/index.html">Notes for this repo</a></li>
           <li data-nav-id="/miscellaneous/current-build-status/index.html" class="dd-item"><a href="/miscellaneous/current-build-status/index.html">Current build status</a></li>
@@ -248,7 +240,7 @@ But no one else knows what version Qt guys are using for their Qt 6.2 LTS Releas
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sun, 08 Jan 2023 02:59:56 UTC</p>
+Site generated: Sun, 08 Jan 2023 10:35:17 UTC</p>
 
         </div>
       </div>

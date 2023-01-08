@@ -35,12 +35,12 @@ I delivered QQtPatcher for earlier version of 5.14 (because of the fact that I f
       <link>/miscellaneous/current-failures/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/miscellaneous/current-failures/index.html</guid>
-      <description>Qt 5.12 WebAssembly builds can&amp;rsquo;t built with OpenSSL Both qsslsocket_opensslpre11.cpp and qsslsocket_openssl11.cpp includes qlibrary.h which is not usable in WebAssembly platform.
-Since -openssl and -openssl-linked both use this file, so we can only use -no-ssl&amp;hellip;&amp;hellip;.
-I didn&amp;rsquo;t try with Qt 5.15 series, but qsslsocket_openssl.cpp in Qt 5.15 includes qlibrary.h as well&amp;hellip;
-I didn&amp;rsquo;t try with Qt 6.2 onwards.
-Update 2022.11.6:
-I gave up supporting SSL on WebAssembly and will remove this item later.</description>
+      <description>QDoc after Qt 5.12 cannot use static linked clang when using MSVC It uses libclang_static.lib but clang don&amp;rsquo;t provide this one.
+I have decided not provide LLVM-based QDoc until I find a way to static link it.
+Update 2020.11.3:
+libclang_static.lib is packed seprately using script by Qt guys.
+Thanks &amp;ldquo;lixinwei&amp;rdquo; on QTCN.org for telling me related info. Original post (Sorry, it&amp;rsquo;s in Chinese)
+Command line too long when building Qt 6.</description>
     </item>
     <item>
       <title>Previous Histories</title>

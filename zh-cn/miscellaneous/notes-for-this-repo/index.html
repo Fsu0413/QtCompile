@@ -89,7 +89,7 @@
     <li><a href="#静态-lite-构建和静态-full-构建-2022-年-3-月-8-日更新">静态 <code>Lite</code> 构建和静态 <code>Full</code> 构建 （2022 年 3 月 8 日更新）</a></li>
     <li><a href="#对使用旧版本-qt-的备注">对使用旧版本 Qt 的备注</a></li>
     <li><a href="#对于发布的压缩文件的备注">对于发布的压缩文件的备注</a></li>
-    <li><a href="#这份-qt-和官方发布的-qt-的区别2022-年-4-月-14-日更新">这份 Qt 和官方发布的 Qt 的区别（2022 年 4 月 14 日更新）</a></li>
+    <li><a href="#这份-qt-和官方发布的-qt-的区别2023-年-1-月-8-日更新">这份 Qt 和官方发布的 Qt 的区别（2023 年 1 月 8 日更新）</a></li>
     <li><a href="#对于-qt-514-以前的备注">对于 Qt 5.14 以前的备注</a></li>
     <li><a href="#qt-offering-changes-2020-2022-年-4-月-14-日更新">Qt offering changes 2020 （2022 年 4 月 14 日更新）</a></li>
     <li><a href="#qt-6-支持的平台2023-年-1-月-7-日更新">Qt 6 支持的平台（2023 年 1 月 7 日更新）</a></li>
@@ -162,7 +162,7 @@
 <p>近期 Arch Linux 和 MSYS2 在将他们的包管理工具的压缩算法改为了 zstd。<br>
 只有较新的 GNU <code>tar</code>（1.31 以及更新）和较新的 <code>bsdtar</code>（3.3.3 以及更新）直接支持 <code>.tar.zst</code> 压缩方法。<br>
 我不会在此仓库使用 zstd，因为压缩比不如 LZMA2。</p>
-<h2 id="这份-qt-和官方发布的-qt-的区别2022-年-4-月-14-日更新">这份 Qt 和官方发布的 Qt 的区别（2022 年 4 月 14 日更新）</h2>
+<h2 id="这份-qt-和官方发布的-qt-的区别2023-年-1-月-8-日更新">这份 Qt 和官方发布的 Qt 的区别（2023 年 1 月 8 日更新）</h2>
 <p>我只提供供各个系统使用的 Qt 的二进制压缩文件。<br>
 这份二进制文件应该开箱可用（Qt 5.14 及更新） / 在对 Qt 打补丁后可用（Qt 5.13 及以前）。<br>
 （2022 年 4 月 14 日更新）因为安装包经常会被怀疑捆绑不需要的软件（我不会干这种事），我永远不会使用安装包。</p>
@@ -176,6 +176,12 @@ Qt 5.13 及以后的版本的 Windows 构建使用 SChannel 代替 OpenSSL 库�
 （不要在没有商业定制化的情况下请求添加这个东西，主要是我不用。注：商业定制化还没有开始运营）</p>
 <p>没有示例程序，这大约节省了整个 Qt 包的大半部分空间。</p>
 <p>没有文档（而且在 Qt 5.12 之后由于 <code>QDoc</code> 依赖 <code>clang</code> 导致 <code>QDoc</code> 也没有了）。因为 Qt 文档可以在 <a href="http://doc.qt.io" target="_blank">http://doc.qt.io</a> 随时查阅，没有必要在包里面再放一份文档。</p>
+<p>（2023 年 1 月 8 日更新） <strong>没有证书</strong> 。这对某些非开发人员来说可能是灾难性的。<br>
+由于二进制程序证书需要非常昂贵的价格购买，而我作为个人开发者不可能购买如此昂贵的应用程序证书来进行可信度校验。<br>
+所以在运行我构建的 Qt 的时候，会提示程序不被信任的问题。<br>
+此问题在我这里暂时无法解决，除非以后开始进行商务化定制，拿到收入后，再去购买证书进行校验。<br>
+在此之前，可能会实现基于 GPG 的校验。（虽然咕咕咕了）<br>
+（由于 Qt 5.14 以前的版本需要在安装后对 Qt 打补丁，所以无法校验。Qt 5.14 以及以后的版本可以重定位，解决了这个问题）</p>
 <h2 id="对于-qt-514-以前的备注">对于 Qt 5.14 以前的备注</h2>
 <p>Qt 5.14 以前的版本拒绝使用刚刚从包中解压出来的二进制文件。<br>
 它会在 Qt Creator 里报告类似“Qt 未正确安装，请运行 <em>make install</em> ”这样的内容。</p>
@@ -196,14 +202,14 @@ Qt 5.13 及以后的版本的 Windows 构建使用 SChannel 代替 OpenSSL 库�
 <p>什么样的企业算小企业？<br>
 一个人开一家空壳公司，这种企业算非常小非常小的企业吧？用这种企业来买 Qt 发布软件，共事的其他员工在私底下用开源版，每年只用 499 美元？<br>
 这样做肯定会赔钱的。</p>
-<p>还有，我会继续我编译Qt的业余工作，希望 QT for MCUs 早日开源。</p>
+<p>还有，我会继续我编译 Qt 的业余工作，希望 QT for MCUs 早日开源。</p>
 <h2 id="qt-6-支持的平台2023-年-1-月-7-日更新">Qt 6 支持的平台（2023 年 1 月 7 日更新）</h2>
 <p>参考 <a href="https://bugreports.qt.io/browse/QTBUG-104266" target="_blank">Qt 6.5 TQC Supported Targets</a>
 和它的前置任务。</p>
 <p>现在我为如下平台构建 Qt 6。</p>
 <p>Windows 11 - VS2019, x86_64, host and target<br>
 Windows 11 - MinGW, x86_64, host and target<br>
-macOS 13 - toolchain provided by Apple with AppleClang, x86_64 / arm64_v8a, host and target, universal<br>
+macOS 12 - toolchain provided by Apple with AppleClang, x86_64 / arm64_v8a, host and target, universal<br>
 Android - NDK, arm / x86 / arm64 / x86_64, target only. No 32bit builds after 6.3<br>
 WebAssembly - emscripten, target only<br>
 Linux - toolchain provided by RedHat modified by RockyLinux developers with GCC, x86_64, host only</p>
@@ -217,7 +223,7 @@ Linux - toolchain provided by RedHat modified by RockyLinux developers with GCC,
 我不想在上传包的时候还要再上传一个签名文件，我觉得浪费上传步骤。。。。</p>
 <p>（2021 年 2 月 6 日更新）还是没有找到好方法，暂时放放吧。。。</p>
 <h2 id="弃用-windows-10-1809-之前的版本以及-32-位-windows-重要备注2022-年-8-月-21-日更新">弃用 Windows 10 1809 之前的版本以及 32 位 Windows （重要备注！！）（2022 年 8 月 21 日更新）</h2>
-<p>Qt 6 在 6.2 以前只支持 64 位 Windows 10 1809 以及以后的版本， 6.3 以后只支持最新版本的 Windows 10。</p>
+<p>Qt 6 在 6.2 以前只支持 64 位 Windows 10 1809 以及以后的版本， 6.3 以后只支持最新版本的 Windows 10 （也即 2004 以后的版本，因为这些版本的系统文件均一致）。</p>
 <p>从 2020 年 6 月 3 日（Qt 5.15 发布和 Qt 5.9 结束支持）开始，Windows 8.1 上我只支持 VS2015 和 MinGW 7.3 的构建。<br>
 Windows 10 已经变得越来越流行，而且添加更多更多的新特性。大家可以尽快切换到 Windows 10 了。</p>
 <p>从 2020 年 1 月 6 日（OpenSSL 1.0.2 系列结束支持）开始，我不再支持 Windows 8 以及更早的版本。请升级到 Windows 8.1 或更新版本。</p>
@@ -227,7 +233,7 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 <p>注：我们在除了 WebAssembly 以外的平台上构建 OpenSSL，所有我们的构建都需要至少支持到那个 OpenSSL 支持的日期。<br>
 当前正在使用的是 OpenSSL 1.1.1 系列和 3.0 系列。<br>
 OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 系列则是 2026 年 9 月 7 日。</p>
-<p>由于 Qt 5.15 开始支持使用 OpenSSL 3.0 系列，在 OpenSSL 1.1 系列结束支持之后，我们可能会在 Qt 5.15 的安卓版构建中切换到 OpenSSL 3.0 系列。<br>
+<p>由于 Qt 5.15.8 开始支持使用 OpenSSL 3.0 系列，在 OpenSSL 1.1 系列结束支持之后，我们可能会在 Qt 5.15 的安卓版构建中切换到 OpenSSL 3.0 系列。<br>
 现在可以确定的是 Qt 5.15 有 5 年的支持，不过目前不清楚 Qt 公司是否会在 2024 年 5 月 26 日之后释放 Qt 5.15 后续版本的代码。<br>
 如果 Qt 5.15 后续版本的代码不公开的话，我们不会再升级到 OpenSSL 3.0 以后的版本。</p>
 <table>
@@ -386,9 +392,8 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
 </tbody>
 </table>
 <h2 id="之后可能会更新的内容">之后可能会更新的内容</h2>
-<p><del>使用安卓 NDK r23 系列构建 Qt 5.15.7 以及之后的版本。</del> （构建失败了，将于 5.15.8 再次尝试）<br>
+<p><del>使用安卓 NDK r23 系列构建 Qt 5.15.7 以及之后的版本。</del> （构建失败了，包括 5.15.8 也失败了，将于 5.15.9 再次尝试）<br>
 使用带 MinGW-w64 v9 的 GCC 11 来构建 Qt 5.15.9 以及之后的版本。<br>
-使用 macOS 12 来构建 Qt 5.15.9 以及之后的版本。（不需要再弄虚拟机了！！我们已经实现了构建 Qt 6 的 macOS 一体化二进制文件。为了 macOS SDK 12 将会降级 Xcode 到 14.0.1）<br>
 使用 macOS 13 来构建 Qt 6.5 以及之后的版本。届时也会尝试在上面构建 Qt 6.2 系列。</p>
 
             <footer class="footline">
@@ -414,20 +419,20 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
           <li data-nav-id="/zh-cn/5.12-series/5.12.12-for-windows/index.html" class="dd-item"><a href="/zh-cn/5.12-series/5.12.12-for-windows/index.html">5.12.12 的 Windows 版本</a></li>
           <li data-nav-id="/zh-cn/5.12-series/5.12.12-for-android/index.html" class="dd-item"><a href="/zh-cn/5.12-series/5.12.12-for-android/index.html">5.12.12 的安卓版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/5.15-series/index.html" class="dd-item"><a href="/zh-cn/5.15-series/index.html">5.15 系列</a><ul id="subsections-6265c888ec9e92bab195ca36e833839a">
-          <li data-nav-id="/zh-cn/5.15-series/5.15.7-for-windows/index.html" class="dd-item"><a href="/zh-cn/5.15-series/5.15.7-for-windows/index.html">5.15.7 的 Windows 版本</a></li>
-          <li data-nav-id="/zh-cn/5.15-series/5.15.7-for-macos/index.html" class="dd-item"><a href="/zh-cn/5.15-series/5.15.7-for-macos/index.html">5.15.7 的 macOS 版本</a></li>
-          <li data-nav-id="/zh-cn/5.15-series/5.15.7-for-android/index.html" class="dd-item"><a href="/zh-cn/5.15-series/5.15.7-for-android/index.html">5.15.7 的安卓版本</a></li>
-          <li data-nav-id="/zh-cn/5.15-series/5.15.7-for-webassembly/index.html" class="dd-item"><a href="/zh-cn/5.15-series/5.15.7-for-webassembly/index.html">5.15.7 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.8-for-windows/index.html" class="dd-item"><a href="/zh-cn/5.15-series/5.15.8-for-windows/index.html">5.15.8 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.8-for-macos/index.html" class="dd-item"><a href="/zh-cn/5.15-series/5.15.8-for-macos/index.html">5.15.8 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.8-for-android/index.html" class="dd-item"><a href="/zh-cn/5.15-series/5.15.8-for-android/index.html">5.15.8 的安卓版本</a></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.8-for-webassembly/index.html" class="dd-item"><a href="/zh-cn/5.15-series/5.15.8-for-webassembly/index.html">5.15.8 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/6.2-series/index.html" class="dd-item"><a href="/zh-cn/6.2-series/index.html">6.2 系列</a><ul id="subsections-106fe2487cf90a2754e3f4a06da071f3">
           <li data-nav-id="/zh-cn/6.2-series/6.2.4-for-windows/index.html" class="dd-item"><a href="/zh-cn/6.2-series/6.2.4-for-windows/index.html">6.2.4 的 Windows 版本</a></li>
           <li data-nav-id="/zh-cn/6.2-series/6.2.4-for-macos/index.html" class="dd-item"><a href="/zh-cn/6.2-series/6.2.4-for-macos/index.html">6.2.4 的 macOS 版本</a></li>
           <li data-nav-id="/zh-cn/6.2-series/6.2.4-for-android/index.html" class="dd-item"><a href="/zh-cn/6.2-series/6.2.4-for-android/index.html">6.2.4 的安卓版本</a></li>
           <li data-nav-id="/zh-cn/6.2-series/6.2.4-for-webassembly/index.html" class="dd-item"><a href="/zh-cn/6.2-series/6.2.4-for-webassembly/index.html">6.2.4 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/6.4-series/index.html" class="dd-item"><a href="/zh-cn/6.4-series/index.html">6.4 系列</a><ul id="subsections-4d05ecf5148d75d316f28c139cdfde7d">
-          <li data-nav-id="/zh-cn/6.4-series/6.4.1-for-windows/index.html" class="dd-item"><a href="/zh-cn/6.4-series/6.4.1-for-windows/index.html">6.4.1 的 Windows 版本</a></li>
-          <li data-nav-id="/zh-cn/6.4-series/6.4.1-for-macos/index.html" class="dd-item"><a href="/zh-cn/6.4-series/6.4.1-for-macos/index.html">6.4.1 的 macOS 版本</a></li>
-          <li data-nav-id="/zh-cn/6.4-series/6.4.1-for-android/index.html" class="dd-item"><a href="/zh-cn/6.4-series/6.4.1-for-android/index.html">6.4.1 的安卓版本</a></li>
-          <li data-nav-id="/zh-cn/6.4-series/6.4.1-for-webassembly/index.html" class="dd-item"><a href="/zh-cn/6.4-series/6.4.1-for-webassembly/index.html">6.4.1 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/6.4-series/6.4.2-for-windows/index.html" class="dd-item"><a href="/zh-cn/6.4-series/6.4.2-for-windows/index.html">6.4.2 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/6.4-series/6.4.2-for-macos/index.html" class="dd-item"><a href="/zh-cn/6.4-series/6.4.2-for-macos/index.html">6.4.2 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/6.4-series/6.4.2-for-android/index.html" class="dd-item"><a href="/zh-cn/6.4-series/6.4.2-for-android/index.html">6.4.2 的安卓版本</a></li>
+          <li data-nav-id="/zh-cn/6.4-series/6.4.2-for-webassembly/index.html" class="dd-item"><a href="/zh-cn/6.4-series/6.4.2-for-webassembly/index.html">6.4.2 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/miscellaneous/index.html" class="dd-item parent"><a href="/zh-cn/miscellaneous/index.html">杂项</a><ul id="subsections-caff385dd336661e79f294480ee20799">
           <li data-nav-id="/zh-cn/miscellaneous/notes-for-this-repo/index.html" class="dd-item active"><a href="/zh-cn/miscellaneous/notes-for-this-repo/index.html">本仓库的一些备注</a></li>
           <li data-nav-id="/zh-cn/miscellaneous/current-build-status/index.html" class="dd-item"><a href="/zh-cn/miscellaneous/current-build-status/index.html">当前构建状态</a></li>
@@ -498,7 +503,7 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sun, 08 Jan 2023 02:59:56 UTC</p>
+Site generated: Sun, 08 Jan 2023 10:35:17 UTC</p>
 
         </div>
       </div>

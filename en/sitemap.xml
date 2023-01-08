@@ -27,16 +27,16 @@
                 />
   </url>
   <url>
-    <loc>/5.15-series/5.15.7-for-windows/index.html</loc>
+    <loc>/5.15-series/5.15.8-for-windows/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/zh-cn/5.15-series/5.15.7-for-windows/index.html"
+                href="/zh-cn/5.15-series/5.15.8-for-windows/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/5.15-series/5.15.7-for-windows/index.html"
+                href="/5.15-series/5.15.8-for-windows/index.html"
                 />
   </url>
   <url>
@@ -79,16 +79,16 @@
                 />
   </url>
   <url>
-    <loc>/6.4-series/6.4.1-for-windows/index.html</loc>
+    <loc>/6.4-series/6.4.2-for-windows/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/zh-cn/6.4-series/6.4.1-for-windows/index.html"
+                href="/zh-cn/6.4-series/6.4.2-for-windows/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/6.4-series/6.4.1-for-windows/index.html"
+                href="/6.4-series/6.4.2-for-windows/index.html"
                 />
   </url>
   <url>
@@ -131,16 +131,16 @@
                 />
   </url>
   <url>
-    <loc>/5.15-series/5.15.7-for-macos/index.html</loc>
+    <loc>/5.15-series/5.15.8-for-macos/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/zh-cn/5.15-series/5.15.7-for-macos/index.html"
+                href="/zh-cn/5.15-series/5.15.8-for-macos/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/5.15-series/5.15.7-for-macos/index.html"
+                href="/5.15-series/5.15.8-for-macos/index.html"
                 />
   </url>
   <url>
@@ -183,16 +183,16 @@
                 />
   </url>
   <url>
-    <loc>/6.4-series/6.4.1-for-macos/index.html</loc>
+    <loc>/6.4-series/6.4.2-for-macos/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/zh-cn/6.4-series/6.4.1-for-macos/index.html"
+                href="/zh-cn/6.4-series/6.4.2-for-macos/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/6.4-series/6.4.1-for-macos/index.html"
+                href="/6.4-series/6.4.2-for-macos/index.html"
                 />
   </url>
   <url>
@@ -222,16 +222,16 @@
                 />
   </url>
   <url>
-    <loc>/5.15-series/5.15.7-for-android/index.html</loc>
+    <loc>/5.15-series/5.15.8-for-android/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/zh-cn/5.15-series/5.15.7-for-android/index.html"
+                href="/zh-cn/5.15-series/5.15.8-for-android/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/5.15-series/5.15.7-for-android/index.html"
+                href="/5.15-series/5.15.8-for-android/index.html"
                 />
   </url>
   <url>
@@ -274,16 +274,16 @@
                 />
   </url>
   <url>
-    <loc>/6.4-series/6.4.1-for-android/index.html</loc>
+    <loc>/6.4-series/6.4.2-for-android/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/zh-cn/6.4-series/6.4.1-for-android/index.html"
+                href="/zh-cn/6.4-series/6.4.2-for-android/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/6.4-series/6.4.1-for-android/index.html"
+                href="/6.4-series/6.4.2-for-android/index.html"
                 />
   </url>
   <url>
@@ -313,16 +313,16 @@
                 />
   </url>
   <url>
-    <loc>/5.15-series/5.15.7-for-webassembly/index.html</loc>
+    <loc>/5.15-series/5.15.8-for-webassembly/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/zh-cn/5.15-series/5.15.7-for-webassembly/index.html"
+                href="/zh-cn/5.15-series/5.15.8-for-webassembly/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/5.15-series/5.15.7-for-webassembly/index.html"
+                href="/5.15-series/5.15.8-for-webassembly/index.html"
                 />
   </url>
   <url>
@@ -339,16 +339,16 @@
                 />
   </url>
   <url>
-    <loc>/6.4-series/6.4.1-for-webassembly/index.html</loc>
+    <loc>/6.4-series/6.4.2-for-webassembly/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/zh-cn/6.4-series/6.4.1-for-webassembly/index.html"
+                href="/zh-cn/6.4-series/6.4.2-for-webassembly/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/6.4-series/6.4.1-for-webassembly/index.html"
+                href="/6.4-series/6.4.2-for-webassembly/index.html"
                 />
   </url>
   <url>
