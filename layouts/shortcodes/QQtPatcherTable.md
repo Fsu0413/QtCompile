@@ -1,6 +1,6 @@
 | {{ T "Qt Version" }} | {{ T "Build Host" }} `mkspecs` | {{ T "Build Target" }} `mkspecs` | {{ T "Notes" }} | {{ T "Tested" }} |
 |-|-|-|-|-|
-{{- range .Site.Data.QQtPatcher.Table }}
+{{- range site.Data.QQtPatcher.Table }}
 |{{- .QtVersion -}}
 |{{- .host -}}
 |{{- if .target -}}{{- .target -}}{{- else -}}-{{- end -}}

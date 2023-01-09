@@ -1,6 +1,6 @@
 | {{ T "OpenSSL Version" }} | {{ T "Platform" }} | {{ T "Build Host" }} | {{ T "Toolchain Version" }} | {{ T "Architecture" }} | {{ T "Variant" }} |
 |-|-|-|-|-|-|
-{{- range .Site.Data.opensslBuilds }}
+{{- range site.Data.opensslBuilds }}
 |{{- .version -}}
 |{{- .platform -}}
 |{{- .host -}}

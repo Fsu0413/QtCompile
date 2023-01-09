@@ -1,6 +1,6 @@
 | {{ T "Qt Version" }} | {{ T "Build Host" }} `mkspecs` | {{ T "Build Host" }} | {{ T "Toolchain Version" }} | {{ T "QQtPatcher Version" }} |
 |-|-|-|-|-|
-{{- range .Site.Data.QQtPatcher.Build }}
+{{- range site.Data.QQtPatcher.Build }}
 |{{- .QtVersion -}}
 |{{- .mkspec -}}
 |{{- .os -}}

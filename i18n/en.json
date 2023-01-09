@@ -49,5 +49,11 @@
     },
     "link": {
         "other": "link"
+    },
+    "32-bit": {
+        "other": "32-bit"
+    },
+    "64-bit": {
+        "other": "64-bit"
     }
 }
