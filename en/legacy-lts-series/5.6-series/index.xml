@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>5.6 series on Fsu0413&#39;s Original Qt builds</title>
-    <link>/en/legacy-lts-series/5.6-series/index.html</link>
+    <link>/qtcompile/en/legacy-lts-series/5.6-series/index.html</link>
     <description>Recent content in 5.6 series on Fsu0413&#39;s Original Qt builds</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="/en/legacy-lts-series/5.6-series/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/qtcompile/en/legacy-lts-series/5.6-series/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>5.6.3 for Windows</title>
-      <link>/en/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html</link>
+      <link>/qtcompile/en/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html</guid>
+      <guid>/qtcompile/en/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html</guid>
       <description>Important FINAL VERSION, NO MORE UPDATES EVEN IF REQUESTED, BUILD ENVIRONMENT HAS BEEN DESTRUCTED
 Note ODBC and SQLite(distributed with Qt) are built in the backage. All Dynamic builds have -plugin-sql-xxx.
 Note All builds have -openssl-linked. It links to an OpenSSL 1.0.2 series which redistributed in the package. Dynamic builds include dynamic OpenSSL while static builds include static OpenSSL.
@@ -17,9 +17,9 @@ Note All builds have -no-icu because I think the ICU library is too big and, in 
     </item>
     <item>
       <title>5.6.3 for macOS</title>
-      <link>/en/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html</link>
+      <link>/qtcompile/en/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html</guid>
+      <guid>/qtcompile/en/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html</guid>
       <description>Important FINAL VERSION, NO MORE UPDATES EVEN IF REQUESTED, BUILD ENVIRONMENT HAS BEEN DESTRUCTED
 Note SQLite(distributed with Qt) are built in the backage and have -plugin-sql-sqlite
 Note All builds have -no-openssl -securetransport. It means that we are using Secure Transport library of macOS to provide SSL connections.
@@ -27,9 +27,9 @@ Note All builds have -no-icu because I think the ICU library is too big and, in 
     </item>
     <item>
       <title>5.6.3 for Android</title>
-      <link>/en/legacy-lts-series/5.6-series/5.6.3-for-android/index.html</link>
+      <link>/qtcompile/en/legacy-lts-series/5.6-series/5.6.3-for-android/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/legacy-lts-series/5.6-series/5.6.3-for-android/index.html</guid>
+      <guid>/qtcompile/en/legacy-lts-series/5.6-series/5.6.3-for-android/index.html</guid>
       <description>Important FINAL VERSION, NO MORE UPDATES EVEN IF REQUESTED, BUILD ENVIRONMENT HAS BEEN DESTRUCTED
 Note SQLite(distributed with Qt) are built in the backage and have -plugin-sql-sqlite
 Note All packages have -openssl-linked, Since BoringSSL, which is used in Android 6.0 or later, is NOT API COMPATIBLE WITH OPENSSL, we link it to a static OpenSSL 1.0.2 series instead of system SSL library.

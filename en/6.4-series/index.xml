@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>6.4 series on Fsu0413&#39;s Original Qt builds</title>
-    <link>/en/6.4-series/index.html</link>
+    <link>/qtcompile/en/6.4-series/index.html</link>
     <description>Recent content in 6.4 series on Fsu0413&#39;s Original Qt builds</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="/en/6.4-series/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/qtcompile/en/6.4-series/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>6.4.2 for Windows</title>
-      <link>/en/6.4-series/6.4.2-for-windows/index.html</link>
+      <link>/qtcompile/en/6.4-series/6.4.2-for-windows/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/6.4-series/6.4.2-for-windows/index.html</guid>
+      <guid>/qtcompile/en/6.4-series/6.4.2-for-windows/index.html</guid>
       <description>Note ODBC and SQLite(distributed with Qt) are built in the backage. All Dynamic builds have -DFEATURE_sql_xxx=ON -DFEATURE_system_sqlite=OFF.
 Note Since Qt 6.2 Qt made SSL backends as plugin. We build SChannel and OpenSSL backend plugin, with OpenSSL backend built with OpenSSL 3 series. Additionally, Visual Studio versions of Qt builds supports TLS 1.3 using SecureTransport.
 Note All builds have -DFEATURE_icu=OFF because I think the ICU library is too big and, in most of the conditions, useless for common users.</description>
     </item>
     <item>
       <title>6.4.2 for macOS</title>
-      <link>/en/6.4-series/6.4.2-for-macos/index.html</link>
+      <link>/qtcompile/en/6.4-series/6.4.2-for-macos/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/6.4-series/6.4.2-for-macos/index.html</guid>
+      <guid>/qtcompile/en/6.4-series/6.4.2-for-macos/index.html</guid>
       <description>Note SQLite(distributed with Qt) are built in the backage and have -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF.
 Note Since Qt 6.2 Qt made SSL backends as plugin. We build SecureTransport and OpenSSL backend plugin, with OpenSSL backend built with OpenSSL 3 series.
 Note All builds have -DFEATURE_icu=OFF because I think the ICU library is too big and, in most of the conditions, useless for common users.
@@ -26,9 +26,9 @@ Note Since 2022/11/18 I&amp;rsquo;ll provide only Universal builds of macOS, whi
     </item>
     <item>
       <title>6.4.2 for Android</title>
-      <link>/en/6.4-series/6.4.2-for-android/index.html</link>
+      <link>/qtcompile/en/6.4-series/6.4.2-for-android/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/6.4-series/6.4.2-for-android/index.html</guid>
+      <guid>/qtcompile/en/6.4-series/6.4.2-for-android/index.html</guid>
       <description>Note SQLite(distributed with Qt) are built in the backage and have -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF.
 Note Since Qt 6.2 Qt made SSL backends as plugin. We build OpenSSL backend plugin with OpenSSL 3 series.
 Note Since Qt 6.3 I drop 32-bit builds for community.
@@ -37,9 +37,9 @@ Note All builds are using NDK r25b with -DANDROID_NATIVE_API_LEVEL=27, it means 
     </item>
     <item>
       <title>6.4.2 for WebAssembly</title>
-      <link>/en/6.4-series/6.4.2-for-webassembly/index.html</link>
+      <link>/qtcompile/en/6.4-series/6.4.2-for-webassembly/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/6.4-series/6.4.2-for-webassembly/index.html</guid>
+      <guid>/qtcompile/en/6.4-series/6.4.2-for-webassembly/index.html</guid>
       <description>Note SQLite(distributed with Qt) are built in the backage and have -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF.
 Note All builds have -DFEATURE_icu=OFF because I think the ICU library is too big and, in most of the conditions, useless for common users.
 Note All builds are using emscripten SDK 3.1.14 as recommended in Qt Wiki. All builds are with -DFEATURE_thread=ON.
