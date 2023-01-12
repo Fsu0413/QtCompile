@@ -9,6 +9,14 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        target:
+          - branch: gh
+            root: /
+          - branch: ge
+            root: /qtcompile/
     steps:
       - uses: actions/checkout@v3
         with:
@@ -18,14 +26,15 @@ jobs:
 
       - uses: actions/checkout@v3
         with:
-          ref: 'gh-pages'
+          ref: ${{ matrix.target.branch }}-pages
           path: 'public'
           fetch-depth: '1'
 
-      - name: set time zone
-        run: |
-          sudo rm /etc/localtime
-          sudo ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+# of no use?
+#      - name: set time zone
+#        run: |
+#          sudo rm /etc/localtime
+#          sudo ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
       - name: clean
         run: |
@@ -38,7 +47,7 @@ jobs:
 
       - uses: jakejarvis/hugo-build-action@master
         with:
-          args: --ignoreCache --verbose -s build -d ../public -b /
+          args: --ignoreCache --verbose --configDir config_${{ matrix.target.branch }} -s build -d ../public -b ${{ matrix.target.root }}
 
       - name: commit
         run: |
@@ -49,4 +58,4 @@ jobs:
           mkdir $HOME/.ssh && ssh-keyscan -t rsa github.com > $HOME/.ssh/known_hosts
           echo "${PRIVATE_KEY}" > $HOME/.ssh/id_rsa
           chmod 600 $HOME/.ssh/id_rsa
-          git -C public push 'git@github.com:Fsu0413/QtCompile.git' HEAD:refs/heads/gh-pages
+          git -C public push 'git@github.com:Fsu0413/QtCompile.git' HEAD:refs/heads/${{ matrix.target.branch }}-pages

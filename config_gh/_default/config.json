@@ -1,7 +1,6 @@
 {
 	"baseURL": "http://example.org/",
 	"defaultContentLanguage": "en",
-	"title": "Fsu0413's Original Qt builds",
 	"theme": "relearn",
 	"params": {
 		"always-open": true,
