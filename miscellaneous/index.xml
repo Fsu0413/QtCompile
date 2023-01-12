@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>杂项 on Fsu0413 的原版 Qt 构建</title>
-    <link>/qtcompile/miscellaneous/index.html</link>
+    <link>/miscellaneous/index.html</link>
     <description>Recent content in 杂项 on Fsu0413 的原版 Qt 构建</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="/qtcompile/miscellaneous/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/miscellaneous/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>本仓库的一些备注</title>
-      <link>/qtcompile/miscellaneous/notes-for-this-repo/index.html</link>
+      <link>/miscellaneous/notes-for-this-repo/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/qtcompile/miscellaneous/notes-for-this-repo/index.html</guid>
+      <guid>/miscellaneous/notes-for-this-repo/index.html</guid>
       <description>可复现的构建 为了实现对 Qt 的可复现的构建，我使用一系列脚本进行构建和打包。
 如果您对构建方法感兴趣的话，可以参考下面的 GitHub 仓库。
 GitHub
@@ -26,9 +26,9 @@ GitHub
     </item>
     <item>
       <title>当前构建状态</title>
-      <link>/qtcompile/miscellaneous/current-build-status/index.html</link>
+      <link>/miscellaneous/current-build-status/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/qtcompile/miscellaneous/current-build-status/index.html</guid>
+      <guid>/miscellaneous/current-build-status/index.html</guid>
       <description>QQtPatcher 支持状态 这是一个 QQtPatcher 支持和测试的版本的列表。
 其他版本可能工作，但是也可能静默得失败。
 因为 Qt 4 的 qmake -query 不输出 makespec，一个有效的 qbp.json 在为 Qt 4 进行修补时是必要的。
@@ -40,9 +40,9 @@ Qt 版本 构建主机 mkspecs 构建目标 mkspecs 备注 已测试 4.8.7 win32
     </item>
     <item>
       <title>当前的失败项</title>
-      <link>/qtcompile/miscellaneous/current-failures/index.html</link>
+      <link>/miscellaneous/current-failures/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/qtcompile/miscellaneous/current-failures/index.html</guid>
+      <guid>/miscellaneous/current-failures/index.html</guid>
       <description>Qt 5.12 以后的 QDoc 使用 MSVC 构建时无法使用静态链接的 clang 它使用 libclang_static.lib 但是 clang 构建中没有这个文件。
 我决定在找到使用静态链接的 clang 方法之前，不再提供基于 LLVM 的 QDoc。
 2020 年 11 月 3 日更新：
@@ -56,9 +56,9 @@ libclang_static.lib 是 Qt 那帮人自己使用脚本打包的。
     </item>
     <item>
       <title>之前的历史</title>
-      <link>/qtcompile/miscellaneous/histories/index.html</link>
+      <link>/miscellaneous/histories/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/qtcompile/miscellaneous/histories/index.html</guid>
+      <guid>/miscellaneous/histories/index.html</guid>
       <description>翻译 有（gu）时（gu）间（gu）再（bu）翻译吧（le）。
 2022.10.4 Update Qt 6.4.0.
 Update Qt 6.2.4 static builds with static runtime. Previous versions are without it.

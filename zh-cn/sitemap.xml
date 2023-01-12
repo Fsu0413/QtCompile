@@ -1,536 +1,536 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/qtcompile/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html</loc>
+    <loc>/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html"
+                href="/en/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html"
+                href="/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/5.12-series/5.12.12-for-windows/index.html</loc>
+    <loc>/5.12-series/5.12.12-for-windows/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/5.12-series/5.12.12-for-windows/index.html"
+                href="/en/5.12-series/5.12.12-for-windows/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/5.12-series/5.12.12-for-windows/index.html"
+                href="/5.12-series/5.12.12-for-windows/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/5.15-series/5.15.8-for-windows/index.html</loc>
+    <loc>/5.15-series/5.15.8-for-windows/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/5.15-series/5.15.8-for-windows/index.html"
+                href="/en/5.15-series/5.15.8-for-windows/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/5.15-series/5.15.8-for-windows/index.html"
+                href="/5.15-series/5.15.8-for-windows/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html</loc>
+    <loc>/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html"
+                href="/en/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html"
+                href="/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/legacy-lts-series/5.9-series/5.9.9-for-windows/index.html</loc>
+    <loc>/legacy-lts-series/5.9-series/5.9.9-for-windows/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/legacy-lts-series/5.9-series/5.9.9-for-windows/index.html"
+                href="/en/legacy-lts-series/5.9-series/5.9.9-for-windows/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/legacy-lts-series/5.9-series/5.9.9-for-windows/index.html"
+                href="/legacy-lts-series/5.9-series/5.9.9-for-windows/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/6.2-series/6.2.4-for-windows/index.html</loc>
+    <loc>/6.2-series/6.2.4-for-windows/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/6.2-series/6.2.4-for-windows/index.html"
+                href="/en/6.2-series/6.2.4-for-windows/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/6.2-series/6.2.4-for-windows/index.html"
+                href="/6.2-series/6.2.4-for-windows/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/6.4-series/6.4.2-for-windows/index.html</loc>
+    <loc>/6.4-series/6.4.2-for-windows/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/6.4-series/6.4.2-for-windows/index.html"
+                href="/en/6.4-series/6.4.2-for-windows/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/6.4-series/6.4.2-for-windows/index.html"
+                href="/6.4-series/6.4.2-for-windows/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/miscellaneous/notes-for-this-repo/index.html</loc>
+    <loc>/miscellaneous/notes-for-this-repo/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/miscellaneous/notes-for-this-repo/index.html"
+                href="/en/miscellaneous/notes-for-this-repo/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/miscellaneous/notes-for-this-repo/index.html"
+                href="/miscellaneous/notes-for-this-repo/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html</loc>
+    <loc>/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html"
+                href="/en/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html"
+                href="/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html</loc>
+    <loc>/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html"
+                href="/en/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html"
+                href="/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/5.15-series/5.15.8-for-macos/index.html</loc>
+    <loc>/5.15-series/5.15.8-for-macos/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/5.15-series/5.15.8-for-macos/index.html"
+                href="/en/5.15-series/5.15.8-for-macos/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/5.15-series/5.15.8-for-macos/index.html"
+                href="/5.15-series/5.15.8-for-macos/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html</loc>
+    <loc>/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html"
+                href="/en/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html"
+                href="/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/legacy-lts-series/5.9-series/5.9.9-for-macos/index.html</loc>
+    <loc>/legacy-lts-series/5.9-series/5.9.9-for-macos/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/legacy-lts-series/5.9-series/5.9.9-for-macos/index.html"
+                href="/en/legacy-lts-series/5.9-series/5.9.9-for-macos/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/legacy-lts-series/5.9-series/5.9.9-for-macos/index.html"
+                href="/legacy-lts-series/5.9-series/5.9.9-for-macos/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/6.2-series/6.2.4-for-macos/index.html</loc>
+    <loc>/6.2-series/6.2.4-for-macos/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/6.2-series/6.2.4-for-macos/index.html"
+                href="/en/6.2-series/6.2.4-for-macos/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/6.2-series/6.2.4-for-macos/index.html"
+                href="/6.2-series/6.2.4-for-macos/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/6.4-series/6.4.2-for-macos/index.html</loc>
+    <loc>/6.4-series/6.4.2-for-macos/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/6.4-series/6.4.2-for-macos/index.html"
+                href="/en/6.4-series/6.4.2-for-macos/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/6.4-series/6.4.2-for-macos/index.html"
+                href="/6.4-series/6.4.2-for-macos/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/miscellaneous/current-build-status/index.html</loc>
+    <loc>/miscellaneous/current-build-status/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/miscellaneous/current-build-status/index.html"
+                href="/en/miscellaneous/current-build-status/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/miscellaneous/current-build-status/index.html"
+                href="/miscellaneous/current-build-status/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/5.12-series/5.12.12-for-android/index.html</loc>
+    <loc>/5.12-series/5.12.12-for-android/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/5.12-series/5.12.12-for-android/index.html"
+                href="/en/5.12-series/5.12.12-for-android/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/5.12-series/5.12.12-for-android/index.html"
+                href="/5.12-series/5.12.12-for-android/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/5.15-series/5.15.8-for-android/index.html</loc>
+    <loc>/5.15-series/5.15.8-for-android/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/5.15-series/5.15.8-for-android/index.html"
+                href="/en/5.15-series/5.15.8-for-android/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/5.15-series/5.15.8-for-android/index.html"
+                href="/5.15-series/5.15.8-for-android/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/legacy-lts-series/5.6-series/5.6.3-for-android/index.html</loc>
+    <loc>/legacy-lts-series/5.6-series/5.6.3-for-android/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/legacy-lts-series/5.6-series/5.6.3-for-android/index.html"
+                href="/en/legacy-lts-series/5.6-series/5.6.3-for-android/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/legacy-lts-series/5.6-series/5.6.3-for-android/index.html"
+                href="/legacy-lts-series/5.6-series/5.6.3-for-android/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/legacy-lts-series/5.9-series/5.9.9-for-android/index.html</loc>
+    <loc>/legacy-lts-series/5.9-series/5.9.9-for-android/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/legacy-lts-series/5.9-series/5.9.9-for-android/index.html"
+                href="/en/legacy-lts-series/5.9-series/5.9.9-for-android/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/legacy-lts-series/5.9-series/5.9.9-for-android/index.html"
+                href="/legacy-lts-series/5.9-series/5.9.9-for-android/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/6.2-series/6.2.4-for-android/index.html</loc>
+    <loc>/6.2-series/6.2.4-for-android/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/6.2-series/6.2.4-for-android/index.html"
+                href="/en/6.2-series/6.2.4-for-android/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/6.2-series/6.2.4-for-android/index.html"
+                href="/6.2-series/6.2.4-for-android/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/6.4-series/6.4.2-for-android/index.html</loc>
+    <loc>/6.4-series/6.4.2-for-android/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/6.4-series/6.4.2-for-android/index.html"
+                href="/en/6.4-series/6.4.2-for-android/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/6.4-series/6.4.2-for-android/index.html"
+                href="/6.4-series/6.4.2-for-android/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/miscellaneous/current-failures/index.html</loc>
+    <loc>/miscellaneous/current-failures/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/miscellaneous/current-failures/index.html"
+                href="/en/miscellaneous/current-failures/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/miscellaneous/current-failures/index.html"
+                href="/miscellaneous/current-failures/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html</loc>
+    <loc>/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html"
+                href="/en/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html"
+                href="/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/5.15-series/5.15.8-for-webassembly/index.html</loc>
+    <loc>/5.15-series/5.15.8-for-webassembly/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/5.15-series/5.15.8-for-webassembly/index.html"
+                href="/en/5.15-series/5.15.8-for-webassembly/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/5.15-series/5.15.8-for-webassembly/index.html"
+                href="/5.15-series/5.15.8-for-webassembly/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/6.2-series/6.2.4-for-webassembly/index.html</loc>
+    <loc>/6.2-series/6.2.4-for-webassembly/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/6.2-series/6.2.4-for-webassembly/index.html"
+                href="/en/6.2-series/6.2.4-for-webassembly/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/6.2-series/6.2.4-for-webassembly/index.html"
+                href="/6.2-series/6.2.4-for-webassembly/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/6.4-series/6.4.2-for-webassembly/index.html</loc>
+    <loc>/6.4-series/6.4.2-for-webassembly/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/6.4-series/6.4.2-for-webassembly/index.html"
+                href="/en/6.4-series/6.4.2-for-webassembly/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/6.4-series/6.4.2-for-webassembly/index.html"
+                href="/6.4-series/6.4.2-for-webassembly/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/miscellaneous/histories/index.html</loc>
+    <loc>/miscellaneous/histories/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/miscellaneous/histories/index.html"
+                href="/en/miscellaneous/histories/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/miscellaneous/histories/index.html"
+                href="/miscellaneous/histories/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/legacy-lts-series/4.8-series/index.html</loc>
+    <loc>/legacy-lts-series/4.8-series/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/legacy-lts-series/4.8-series/index.html"
+                href="/en/legacy-lts-series/4.8-series/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/legacy-lts-series/4.8-series/index.html"
+                href="/legacy-lts-series/4.8-series/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/legacy-lts-series/5.6-series/index.html</loc>
+    <loc>/legacy-lts-series/5.6-series/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/legacy-lts-series/5.6-series/index.html"
+                href="/en/legacy-lts-series/5.6-series/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/legacy-lts-series/5.6-series/index.html"
+                href="/legacy-lts-series/5.6-series/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/legacy-lts-series/5.9-series/index.html</loc>
+    <loc>/legacy-lts-series/5.9-series/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/legacy-lts-series/5.9-series/index.html"
+                href="/en/legacy-lts-series/5.9-series/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/legacy-lts-series/5.9-series/index.html"
+                href="/legacy-lts-series/5.9-series/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/5.12-series/index.html</loc>
+    <loc>/5.12-series/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/5.12-series/index.html"
+                href="/en/5.12-series/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/5.12-series/index.html"
+                href="/5.12-series/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/legacy-lts-series/5.12-series/index.html</loc>
+    <loc>/legacy-lts-series/5.12-series/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/legacy-lts-series/5.12-series/index.html"
+                href="/en/legacy-lts-series/5.12-series/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/legacy-lts-series/5.12-series/index.html"
+                href="/legacy-lts-series/5.12-series/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/5.15-series/index.html</loc>
+    <loc>/5.15-series/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/5.15-series/index.html"
+                href="/en/5.15-series/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/5.15-series/index.html"
+                href="/5.15-series/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/6.2-series/index.html</loc>
+    <loc>/6.2-series/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/6.2-series/index.html"
+                href="/en/6.2-series/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/6.2-series/index.html"
+                href="/6.2-series/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/6.4-series/index.html</loc>
+    <loc>/6.4-series/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/6.4-series/index.html"
+                href="/en/6.4-series/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/6.4-series/index.html"
+                href="/6.4-series/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/miscellaneous/index.html</loc>
+    <loc>/miscellaneous/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/miscellaneous/index.html"
+                href="/en/miscellaneous/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/miscellaneous/index.html"
+                href="/miscellaneous/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/legacy-lts-series/index.html</loc>
+    <loc>/legacy-lts-series/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/legacy-lts-series/index.html"
+                href="/en/legacy-lts-series/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/legacy-lts-series/index.html"
+                href="/legacy-lts-series/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/categories/index.html</loc>
+    <loc>/categories/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/categories/index.html"
+                href="/en/categories/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/categories/index.html"
+                href="/categories/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/index.html</loc>
+    <loc>/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/index.html"
+                href="/en/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/index.html"
+                href="/index.html"
                 />
   </url>
   <url>
-    <loc>/qtcompile/tags/index.html</loc>
+    <loc>/tags/index.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/qtcompile/en/tags/index.html"
+                href="/en/tags/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/qtcompile/tags/index.html"
+                href="/tags/index.html"
                 />
   </url>
 </urlset>

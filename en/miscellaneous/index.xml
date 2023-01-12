@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Miscellaneous on Fsu0413&#39;s Original Qt builds</title>
-    <link>/qtcompile/en/miscellaneous/index.html</link>
+    <link>/en/miscellaneous/index.html</link>
     <description>Recent content in Miscellaneous on Fsu0413&#39;s Original Qt builds</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="/qtcompile/en/miscellaneous/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/en/miscellaneous/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Notes for this repo</title>
-      <link>/qtcompile/en/miscellaneous/notes-for-this-repo/index.html</link>
+      <link>/en/miscellaneous/notes-for-this-repo/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/qtcompile/en/miscellaneous/notes-for-this-repo/index.html</guid>
+      <guid>/en/miscellaneous/notes-for-this-repo/index.html</guid>
       <description>Reproduciable building I use a set of scripts to do the build and packaging for reproducible building Qt.
 If you are interested in build method, please check the following GitHub repo.
 GitHub
@@ -21,9 +21,9 @@ Maybe you just want to distribute a single portable executable binary file, but 
     </item>
     <item>
       <title>Current build status</title>
-      <link>/qtcompile/en/miscellaneous/current-build-status/index.html</link>
+      <link>/en/miscellaneous/current-build-status/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/qtcompile/en/miscellaneous/current-build-status/index.html</guid>
+      <guid>/en/miscellaneous/current-build-status/index.html</guid>
       <description>QQtPatcher Support Status This is a list where QQtPatcher is supported and tested on.
 Other version may work, but also may silently fail.
 A valid qbp.json is needed for patching Qt 4 Series since qmake -query don&amp;rsquo;t output the makespec.
@@ -32,9 +32,9 @@ I delivered QQtPatcher for earlier version of 5.14 (because of the fact that I f
     </item>
     <item>
       <title>Current failures</title>
-      <link>/qtcompile/en/miscellaneous/current-failures/index.html</link>
+      <link>/en/miscellaneous/current-failures/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/qtcompile/en/miscellaneous/current-failures/index.html</guid>
+      <guid>/en/miscellaneous/current-failures/index.html</guid>
       <description>QDoc after Qt 5.12 cannot use static linked clang when using MSVC It uses libclang_static.lib but clang don&amp;rsquo;t provide this one.
 I have decided not provide LLVM-based QDoc until I find a way to static link it.
 Update 2020.11.3:
@@ -44,9 +44,9 @@ Command line too long when building Qt 6.</description>
     </item>
     <item>
       <title>Previous Histories</title>
-      <link>/qtcompile/en/miscellaneous/histories/index.html</link>
+      <link>/en/miscellaneous/histories/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/qtcompile/en/miscellaneous/histories/index.html</guid>
+      <guid>/en/miscellaneous/histories/index.html</guid>
       <description>2022.10.4 Update Qt 6.4.0.
 Update Qt 6.2.4 static builds with static runtime. Previous versions are without it.
 Update Qt 6.2.4 llvm-mingw builds built with llvm 15.

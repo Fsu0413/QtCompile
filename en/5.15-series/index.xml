@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>5.15 series on Fsu0413&#39;s Original Qt builds</title>
-    <link>/qtcompile/en/5.15-series/index.html</link>
+    <link>/en/5.15-series/index.html</link>
     <description>Recent content in 5.15 series on Fsu0413&#39;s Original Qt builds</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="/qtcompile/en/5.15-series/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/en/5.15-series/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>5.15.8 for Windows</title>
-      <link>/qtcompile/en/5.15-series/5.15.8-for-windows/index.html</link>
+      <link>/en/5.15-series/5.15.8-for-windows/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/qtcompile/en/5.15-series/5.15.8-for-windows/index.html</guid>
-      <description>NoteODBC and SQLite(distributed with Qt) are built in the backage. All Dynamic builds have -plugin-sql-xxx.
-NoteAll builds have -schannel which use Windows Secure Channel SSL backend.
-NoteAll builds have -no-icu because I think the ICU library is too big and, in most of the conditions, useless for common users.
-NoteNote: Qt release Qt 5.15 series opensource version a year later than commerical version, while still release QtWebEngine at same time commerical version released.</description>
+      <guid>/en/5.15-series/5.15.8-for-windows/index.html</guid>
+      <description>Note ODBC and SQLite(distributed with Qt) are built in the backage. All Dynamic builds have -plugin-sql-xxx.
+Note All builds have -schannel which use Windows Secure Channel SSL backend.
+Note All builds have -no-icu because I think the ICU library is too big and, in most of the conditions, useless for common users.
+Note Note: Qt release Qt 5.15 series opensource version a year later than commerical version, while still release QtWebEngine at same time commerical version released.</description>
     </item>
     <item>
       <title>5.15.8 for macOS</title>
-      <link>/qtcompile/en/5.15-series/5.15.8-for-macos/index.html</link>
+      <link>/en/5.15-series/5.15.8-for-macos/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/qtcompile/en/5.15-series/5.15.8-for-macos/index.html</guid>
-      <description>NoteSQLite(distributed with Qt) are built in the backage and have -plugin-sql-sqlite
-NoteAll builds have -no-openssl -securetransport. It means that we are using Secure Transport library of macOS to provide SSL connections.
-NoteAll builds have -no-icu because I think the ICU library is too big and, in most of the conditions, useless for common users.
-NoteNo QtWebEngine in this version.
-CVE issue patchedAll builds have following CVEs fixed:</description>
+      <guid>/en/5.15-series/5.15.8-for-macos/index.html</guid>
+      <description>Note SQLite(distributed with Qt) are built in the backage and have -plugin-sql-sqlite
+Note All builds have -no-openssl -securetransport. It means that we are using Secure Transport library of macOS to provide SSL connections.
+Note All builds have -no-icu because I think the ICU library is too big and, in most of the conditions, useless for common users.
+Note No QtWebEngine in this version.
+CVE issue patched All builds have following CVEs fixed:</description>
     </item>
     <item>
       <title>5.15.8 for Android</title>
-      <link>/qtcompile/en/5.15-series/5.15.8-for-android/index.html</link>
+      <link>/en/5.15-series/5.15.8-for-android/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/qtcompile/en/5.15-series/5.15.8-for-android/index.html</guid>
-      <description>NoteSQLite(distributed with Qt) are built in the backage and have -plugin-sql-sqlite
-NoteAll packages have -openssl-linked, Since BoringSSL, which is used in Android 6.0 or later, is NOT API COMPATIBLE WITH OPENSSL, we link it to a static OpenSSL 1.1.1 series instead of system SSL library.
-NoteAll builds have -no-icu because I think the ICU library is too big and, in most of the conditions, useless for common users.</description>
+      <guid>/en/5.15-series/5.15.8-for-android/index.html</guid>
+      <description>Note SQLite(distributed with Qt) are built in the backage and have -plugin-sql-sqlite
+Note All packages have -openssl-linked, Since BoringSSL, which is used in Android 6.0 or later, is NOT API COMPATIBLE WITH OPENSSL, we link it to a static OpenSSL 1.1.1 series instead of system SSL library.
+Note All builds have -no-icu because I think the ICU library is too big and, in most of the conditions, useless for common users.</description>
     </item>
     <item>
       <title>5.15.8 for WebAssembly</title>
-      <link>/qtcompile/en/5.15-series/5.15.8-for-webassembly/index.html</link>
+      <link>/en/5.15-series/5.15.8-for-webassembly/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/qtcompile/en/5.15-series/5.15.8-for-webassembly/index.html</guid>
-      <description>NoteSQLite(distributed with Qt) are built in the backage and have -plugin-sql-sqlite
-NoteAll builds have -no-icu because I think the ICU library is too big and, in most of the conditions, useless for common users.
-NoteAll builds are using emscripten SDK 1.39.8 as recommended in Qt Wiki. All builds are with -feature-threads.
-NoteQt for WebAssembly can&amp;rsquo;t be built to shared libs.
-CVE issue patchedAll builds have following CVEs fixed:</description>
+      <guid>/en/5.15-series/5.15.8-for-webassembly/index.html</guid>
+      <description>Note SQLite(distributed with Qt) are built in the backage and have -plugin-sql-sqlite
+Note All builds have -no-icu because I think the ICU library is too big and, in most of the conditions, useless for common users.
+Note All builds are using emscripten SDK 1.39.8 as recommended in Qt Wiki. All builds are with -feature-threads.
+Note Qt for WebAssembly can&amp;rsquo;t be built to shared libs.
+CVE issue patched All builds have following CVEs fixed:</description>
     </item>
   </channel>
 </rss>
