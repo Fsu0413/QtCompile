@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.102.3">
+    <meta name="generator" content="Relearn 5.9.2">
+    <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
+    <meta name="author" content="Fsu0413">
+    <title>杂项 :: Fsu0413 的原版 Qt 构建</title>
+    <link href="/qtcompile/miscellaneous/index.xml" rel="alternate" type="application/rss+xml" title="杂项 :: Fsu0413 的原版 Qt 构建">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/qtcompile/css/fontawesome-all.min.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/qtcompile/css/fontawesome-all.min.css" rel="stylesheet"></noscript>
+    <link href="/qtcompile/css/featherlight.min.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/qtcompile/css/featherlight.min.css" rel="stylesheet"></noscript>
+    <link href="/qtcompile/css/auto-complete.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/qtcompile/css/auto-complete.css" rel="stylesheet"></noscript>
+    <link href="/qtcompile/css/perfect-scrollbar.min.css" rel="stylesheet">
+    <link href="/qtcompile/css/nucleus.css" rel="stylesheet">
+    <link href="/qtcompile/css/fonts.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/qtcompile/css/fonts.css" rel="stylesheet"></noscript>
+    <link href="/qtcompile/css/theme.css" rel="stylesheet">
+    <link href="/qtcompile/css/theme-relearn-dark.css" rel="stylesheet" id="variant-style">
+    <link href="/qtcompile/css/ie.css" rel="stylesheet">
+    <link href="/qtcompile/css/variant.css" rel="stylesheet">
+    <link href="/qtcompile/css/print.css" rel="stylesheet" media="print">
+    <script src="/qtcompile/js/url.js"></script>
+    <script src="/qtcompile/js/variant.js"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = '复制到剪贴板';
+      window.T_Copied_to_clipboard = '复制到剪贴板！';
+      window.T_Copy_link_to_clipboard = '将链接复制到剪贴板';
+      window.T_Link_copied_to_clipboard = '链接复制到剪贴板！';
+      window.T_No_results_found = '找不到\u0022{0}\u0022的结果';
+      window.T_N_results_found = '为\u0022{0}\u0022找到 {1} 个结果';
+      // some further base stuff
+      var baseUriFull='qtcompile/';
+      window.variants && variants.init( [ 'relearn-dark', 'relearn-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
+    </script>
+    <script src="/qtcompile/js/jquery.min.js" defer></script><style>
+    p.fsu0413_leftFooter {
+        text-align: center;
+        font-style: italic;
+        font-size: x-small;
+    }
+    p.fsu0413_logo {
+        text-align: left;
+    }
+    p.fsu0413_error {
+        font-weight: 900;
+        font-size: 300%;
+        color: red;
+    }
+    th.fsu0413_qtAddressHeader {
+        text-align: center;
+    }
+    h1 {
+        text-transform: none;
+    }
+    strong {
+        color: red;
+    }
+</style>
+  </head>
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/qtcompile/miscellaneous/index.html">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable" dir="ltr">
+        <div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" title='导航 (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/qtcompile/index.html"><span itemprop="name">Fsu0413 的原版 Qt 构建</span></a><meta itemprop="position" content="1"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">杂项</span><meta itemprop="position" content="2"></li>
+            </ol>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <div id="head-tags">
+          </div>
+          <article class="default">
+<h1 id="%E6%9D%82%E9%A1%B9">杂项</h1>
+
+<p>这个路径下包含一些杂项。</p>
+
+<ul class="children children-li children-sort-weight">
+	
+<li><a href="/qtcompile/miscellaneous/notes-for-this-repo/index.html">本仓库的一些备注</a></li>
+<li><a href="/qtcompile/miscellaneous/current-build-status/index.html">当前构建状态</a></li>
+<li><a href="/qtcompile/miscellaneous/current-failures/index.html">当前的失败项</a></li>
+<li><a href="/qtcompile/miscellaneous/histories/index.html">之前的历史</a></li>
+</ul>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="sidebar" class="default-animation" dir="ltr">
+      <div id="header-wrapper" class="default-animation">
+        <div id="header" class="default-animation">
+<p class="fsu0413_logo"><img src="https://codereview.qt-project.org/static/logo_qt.png" /></p>
+        </div>
+      </div>
+      <div id="homelinks" class="default-animation">
+        <ul>
+          <li><a class="padding" href="/qtcompile/index.html"><i class='fas fa-home'></i> 主页</a></li>
+        </ul>
+      </div>
+      <div id="content-wrapper" class="highlightable">
+        <ul class="topics">
+          <li data-nav-id="/qtcompile/5.12-series/index.html" class="dd-item"><a href="/qtcompile/5.12-series/index.html">5.12 系列</a><ul id="subsections-9aeb85270de661fbbb0f6e6b161fbf7c">
+          <li data-nav-id="/qtcompile/5.12-series/5.12.12-for-windows/index.html" class="dd-item"><a href="/qtcompile/5.12-series/5.12.12-for-windows/index.html">5.12.12 的 Windows 版本</a></li>
+          <li data-nav-id="/qtcompile/5.12-series/5.12.12-for-android/index.html" class="dd-item"><a href="/qtcompile/5.12-series/5.12.12-for-android/index.html">5.12.12 的安卓版本</a></li></ul></li>
+          <li data-nav-id="/qtcompile/5.15-series/index.html" class="dd-item"><a href="/qtcompile/5.15-series/index.html">5.15 系列</a><ul id="subsections-6265c888ec9e92bab195ca36e833839a">
+          <li data-nav-id="/qtcompile/5.15-series/5.15.8-for-windows/index.html" class="dd-item"><a href="/qtcompile/5.15-series/5.15.8-for-windows/index.html">5.15.8 的 Windows 版本</a></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.8-for-macos/index.html" class="dd-item"><a href="/qtcompile/5.15-series/5.15.8-for-macos/index.html">5.15.8 的 macOS 版本</a></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.8-for-android/index.html" class="dd-item"><a href="/qtcompile/5.15-series/5.15.8-for-android/index.html">5.15.8 的安卓版本</a></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.8-for-webassembly/index.html" class="dd-item"><a href="/qtcompile/5.15-series/5.15.8-for-webassembly/index.html">5.15.8 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/qtcompile/6.2-series/index.html" class="dd-item"><a href="/qtcompile/6.2-series/index.html">6.2 系列</a><ul id="subsections-106fe2487cf90a2754e3f4a06da071f3">
+          <li data-nav-id="/qtcompile/6.2-series/6.2.4-for-windows/index.html" class="dd-item"><a href="/qtcompile/6.2-series/6.2.4-for-windows/index.html">6.2.4 的 Windows 版本</a></li>
+          <li data-nav-id="/qtcompile/6.2-series/6.2.4-for-macos/index.html" class="dd-item"><a href="/qtcompile/6.2-series/6.2.4-for-macos/index.html">6.2.4 的 macOS 版本</a></li>
+          <li data-nav-id="/qtcompile/6.2-series/6.2.4-for-android/index.html" class="dd-item"><a href="/qtcompile/6.2-series/6.2.4-for-android/index.html">6.2.4 的安卓版本</a></li>
+          <li data-nav-id="/qtcompile/6.2-series/6.2.4-for-webassembly/index.html" class="dd-item"><a href="/qtcompile/6.2-series/6.2.4-for-webassembly/index.html">6.2.4 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/qtcompile/6.4-series/index.html" class="dd-item"><a href="/qtcompile/6.4-series/index.html">6.4 系列</a><ul id="subsections-4d05ecf5148d75d316f28c139cdfde7d">
+          <li data-nav-id="/qtcompile/6.4-series/6.4.2-for-windows/index.html" class="dd-item"><a href="/qtcompile/6.4-series/6.4.2-for-windows/index.html">6.4.2 的 Windows 版本</a></li>
+          <li data-nav-id="/qtcompile/6.4-series/6.4.2-for-macos/index.html" class="dd-item"><a href="/qtcompile/6.4-series/6.4.2-for-macos/index.html">6.4.2 的 macOS 版本</a></li>
+          <li data-nav-id="/qtcompile/6.4-series/6.4.2-for-android/index.html" class="dd-item"><a href="/qtcompile/6.4-series/6.4.2-for-android/index.html">6.4.2 的安卓版本</a></li>
+          <li data-nav-id="/qtcompile/6.4-series/6.4.2-for-webassembly/index.html" class="dd-item"><a href="/qtcompile/6.4-series/6.4.2-for-webassembly/index.html">6.4.2 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/qtcompile/miscellaneous/index.html" class="dd-item active parent"><a href="/qtcompile/miscellaneous/index.html">杂项</a><ul id="subsections-caff385dd336661e79f294480ee20799">
+          <li data-nav-id="/qtcompile/miscellaneous/notes-for-this-repo/index.html" class="dd-item"><a href="/qtcompile/miscellaneous/notes-for-this-repo/index.html">本仓库的一些备注</a></li>
+          <li data-nav-id="/qtcompile/miscellaneous/current-build-status/index.html" class="dd-item"><a href="/qtcompile/miscellaneous/current-build-status/index.html">当前构建状态</a></li>
+          <li data-nav-id="/qtcompile/miscellaneous/current-failures/index.html" class="dd-item"><a href="/qtcompile/miscellaneous/current-failures/index.html">当前的失败项</a></li>
+          <li data-nav-id="/qtcompile/miscellaneous/histories/index.html" class="dd-item"><a href="/qtcompile/miscellaneous/histories/index.html">之前的历史</a></li></ul></li>
+          <li data-nav-id="/qtcompile/legacy-lts-series/index.html" class="dd-item"><a href="/qtcompile/legacy-lts-series/index.html">遗留的长期支持版本系列</a><ul id="subsections-2da9a100302eca246d29f40ea41d2bf7">
+          <li data-nav-id="/qtcompile/legacy-lts-series/4.8-series/index.html" class="dd-item alwaysopen"><a href="/qtcompile/legacy-lts-series/4.8-series/index.html">4.8 系列</a><ul id="subsections-6243f73e32eaaf24308f7dbe5cb00e04">
+          <li data-nav-id="/qtcompile/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html" class="dd-item"><a href="/qtcompile/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html">4.8.7 的 Windows 版本</a></li>
+          <li data-nav-id="/qtcompile/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html" class="dd-item"><a href="/qtcompile/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html">4.8.7 的 macOS 版本</a></li></ul></li>
+          <li data-nav-id="/qtcompile/legacy-lts-series/5.6-series/index.html" class="dd-item alwaysopen"><a href="/qtcompile/legacy-lts-series/5.6-series/index.html">5.6 系列</a><ul id="subsections-5ca2792ddc9a9825cf8ec8f6764a4097">
+          <li data-nav-id="/qtcompile/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html" class="dd-item"><a href="/qtcompile/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html">5.6.3 的 Windows 版本</a></li>
+          <li data-nav-id="/qtcompile/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html" class="dd-item"><a href="/qtcompile/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html">5.6.3 的 macOS 版本</a></li>
+          <li data-nav-id="/qtcompile/legacy-lts-series/5.6-series/5.6.3-for-android/index.html" class="dd-item"><a href="/qtcompile/legacy-lts-series/5.6-series/5.6.3-for-android/index.html">5.6.3 的安卓版本</a></li></ul></li>
+          <li data-nav-id="/qtcompile/legacy-lts-series/5.9-series/index.html" class="dd-item alwaysopen"><a href="/qtcompile/legacy-lts-series/5.9-series/index.html">5.9 系列</a><ul id="subsections-b9f9d985d68e657d4e7d74700e7241c3">
+          <li data-nav-id="/qtcompile/legacy-lts-series/5.9-series/5.9.9-for-windows/index.html" class="dd-item"><a href="/qtcompile/legacy-lts-series/5.9-series/5.9.9-for-windows/index.html">5.9.9 的 Windows 版本</a></li>
+          <li data-nav-id="/qtcompile/legacy-lts-series/5.9-series/5.9.9-for-macos/index.html" class="dd-item"><a href="/qtcompile/legacy-lts-series/5.9-series/5.9.9-for-macos/index.html">5.9.9 的 macOS 版本</a></li>
+          <li data-nav-id="/qtcompile/legacy-lts-series/5.9-series/5.9.9-for-android/index.html" class="dd-item"><a href="/qtcompile/legacy-lts-series/5.9-series/5.9.9-for-android/index.html">5.9.9 的安卓版本</a></li></ul></li>
+          <li data-nav-id="/qtcompile/legacy-lts-series/5.12-series/index.html" class="dd-item alwaysopen"><a href="/qtcompile/legacy-lts-series/5.12-series/index.html">5.12 系列</a><ul id="subsections-8f2a6bd86210a6244fd0ff0c916f8279">
+          <li data-nav-id="/qtcompile/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html" class="dd-item"><a href="/qtcompile/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html">5.12.12 的 macOS 版本</a></li>
+          <li data-nav-id="/qtcompile/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html" class="dd-item"><a href="/qtcompile/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html">5.12.12 的 WebAssembly 版本</a></li></ul></li></ul></li>
+        </ul>
+        <div id="shortcuts">
+          <div class="nav-title">更多</div>
+          <ul>
+            <li><a class="padding" href="https://github.com/Fsu0413/QtCompile"><i class='fab fa-fw fa-github'></i> GitHub 仓库</a></li>
+            <li><a class="padding" href="http://www.qtcn.org/bbs/read.php?tid=85733&amp;ds=1&amp;page=1&amp;toread=1#194070"><i class='fas fa-poll-h'></i> 论坛发布贴</a></li>
+          </ul>
+        </div>
+        <div class="footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter"></div>
+        <hr class="default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter">
+        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showLangSwitch showVariantSwitch">
+          <ul>
+            <li id="select-language-container" class="footerLangSwitch showLangSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-language fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-language">语言</label>
+                  <select id="select-language" onchange="location = baseUri + this.value;">
+                    <option lang="en" id="en" value="/qtcompile/en/miscellaneous/index.html">English</option>
+                    <option lang="zh-cn" id="zh-cn" value="/qtcompile/miscellaneous/index.html" selected>简体中文（中国）</option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+            </li>
+            <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-paint-brush fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-variant">主题</label>
+                  <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                    <option id="relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
+                    <option id="relearn-light" value="relearn-light">Relearn Light</option>
+                    <option id="learn" value="learn">Learn</option>
+                    <option id="neon" value="neon">Neon</option>
+                    <option id="red" value="red">Red</option>
+                    <option id="blue" value="blue">Blue</option>
+                    <option id="green" value="green">Green</option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+              <script>window.variants && variants.markSelectedVariant();</script>
+            </li>
+            <li class="footerVisitedLinks"><button class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i> 清理历史记录</button></li>
+          </ul>
+        </div>
+        <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
+Site generated: Thu, 12 Jan 2023 22:17:19 CST</p>
+
+        </div>
+      </div>
+    </aside>
+    <script src="/qtcompile/js/clipboard.min.js" defer></script>
+    <script src="/qtcompile/js/perfect-scrollbar.min.js" defer></script>
+    <script src="/qtcompile/js/featherlight.min.js" defer></script>
+    <script src="/qtcompile/js/theme.js" defer></script>
+  </body>
+</html>
