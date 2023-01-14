@@ -4,6 +4,17 @@ draft: false
 weight: 1
 ---
 
+## Chinese / Multilingual Support
+
+This website was English only since when it was initially built, although the maintainer of this website (me, Fsu0413) is a Chinese native speaker from the PRC.  
+Currently I am gradually adding Simplified Chinese support on this website.
+
+Recently this website has gained multilingual support thanks to the built-in multilingual support of [Hugo](https://gohugo.io/) and the recently switched [Relearn](https://mcshelby.github.io/hugo-theme-relearn/) theme.  
+Current Chinese support is in the stage of writing texts. There is a bunch of things which are not finished.  
+But the main contents are rewritten using Chinese, which shouldn't bother us for downloading binaries.
+
+If there are any constructive advices, feel free to [create issue on Github](https://github.com/Fsu0413/QtCompile/issues/new).
+
 ## Reproduciable building
 
 I use a set of scripts to do the build and packaging for [reproducible building](https://reproducible-builds.org/) Qt.  

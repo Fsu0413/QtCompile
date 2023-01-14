@@ -4,6 +4,17 @@ draft: false
 weight: 1
 ---
 
+## 中文 / 多语言支持
+
+虽然这个网站的维护者（Fsu0413，也就是我）是中国人，是中文母语使用者，不过此网站最初做成的时候是只有嘤文版的。  
+目前我正在逐步在此网站上添加简体中文支持。
+
+得益于 [Hugo](https://gohugo.io/) 自带的多语言支持和近期新换的 [Relearn](https://mcshelby.github.io/hugo-theme-relearn/) 主题，本网站近期刚刚支持多语言。  
+目前的中文也仅仅处于刚刚开始组织语言的阶段。有一些内容还没有写完。  
+不过主要内容均使用中文重新写了一遍，应该不会影响大家下载二进制文件了。
+
+对网站建设有建议和意见的可以[去 GitHub 上提出 issue](https://github.com/Fsu0413/QtCompile/issues/new)。
+
 ## 可复现的构建
 
 为了实现对 Qt 的[可复现的构建](https://reproducible-builds.org/)，我使用一系列脚本进行构建和打包。  
