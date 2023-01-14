@@ -84,6 +84,7 @@
             <div class="toc-wrapper" dir="ltr">
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#中文--多语言支持">中文 / 多语言支持</a></li>
     <li><a href="#可复现的构建">可复现的构建</a></li>
     <li><a href="#对静态构建的备注">对静态构建的备注</a></li>
     <li><a href="#静态-lite-构建和静态-full-构建-2022-年-3-月-8-日更新">静态 <code>Lite</code> 构建和静态 <code>Full</code> 构建 （2022 年 3 月 8 日更新）</a></li>
@@ -110,6 +111,13 @@
           <article class="default">
 <h1 id="%E6%9C%AC%E4%BB%93%E5%BA%93%E7%9A%84%E4%B8%80%E4%BA%9B%E5%A4%87%E6%B3%A8">本仓库的一些备注</h1>
 
+<h2 id="中文--多语言支持">中文 / 多语言支持</h2>
+<p>虽然这个网站的维护者（Fsu0413，也就是我）是中国人，是中文母语使用者，不过此网站最初做成的时候是只有嘤文版的。<br>
+目前我正在逐步在此网站上添加简体中文支持。</p>
+<p>得益于 <a href="https://gohugo.io/" target="_blank">Hugo</a> 自带的多语言支持和近期新换的 <a href="https://mcshelby.github.io/hugo-theme-relearn/" target="_blank">Relearn</a> 主题，本网站近期刚刚支持多语言。<br>
+目前的中文也仅仅处于刚刚开始组织语言的阶段。有一些内容还没有写完。<br>
+不过主要内容均使用中文重新写了一遍，应该不会影响大家下载二进制文件了。</p>
+<p>对网站建设有建议和意见的可以<a href="https://github.com/Fsu0413/QtCompile/issues/new" target="_blank">去 GitHub 上提出 issue</a>。</p>
 <h2 id="可复现的构建">可复现的构建</h2>
 <p>为了实现对 Qt 的<a href="https://reproducible-builds.org/" target="_blank">可复现的构建</a>，我使用一系列脚本进行构建和打包。<br>
 如果您对构建方法感兴趣的话，可以参考下面的 GitHub 仓库。</p>
@@ -472,8 +480,8 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
                 <div class="select-style">
                   <label class="a11y-only" for="select-language">语言</label>
                   <select id="select-language" onchange="location = baseUri + this.value;">
-                    <option lang="en" id="en" value="/qtcompile/en/miscellaneous/notes-for-this-repo/index.html">English</option>
                     <option lang="zh-cn" id="zh-cn" value="/qtcompile/miscellaneous/notes-for-this-repo/index.html" selected>简体中文（中国）</option>
+                    <option lang="en" id="en" value="/qtcompile/en/miscellaneous/notes-for-this-repo/index.html">English</option>
                   </select>
                 </div>
                 <div class="select-clear"></div>
@@ -503,7 +511,7 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Thu, 12 Jan 2023 14:34:34 UTC</p>
+Site generated: Sat, 14 Jan 2023 07:27:31 UTC</p>
 
         </div>
       </div>
