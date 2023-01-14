@@ -10,7 +10,13 @@
       <link>/zh-cn/miscellaneous/notes-for-this-repo/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/zh-cn/miscellaneous/notes-for-this-repo/index.html</guid>
-      <description>可复现的构建 为了实现对 Qt 的可复现的构建，我使用一系列脚本进行构建和打包。
+      <description>中文 / 多语言支持 虽然这个网站的维护者（Fsu0413，也就是我）是中国人，是中文母语使用者，不过此网站最初做成的时候是只有嘤文版的。
+目前我正在逐步在此网站上添加简体中文支持。
+得益于 Hugo 自带的多语言支持和近期新换的 Relearn 主题，本网站近期刚刚支持多语言。
+目前的中文也仅仅处于刚刚开始组织语言的阶段。有一些内容还没有写完。
+不过主要内容均使用中文重新写了一遍，应该不会影响大家下载二进制文件了。
+对网站建设有建议和意见的可以去 GitHub 上提出 issue。
+可复现的构建 为了实现对 Qt 的可复现的构建，我使用一系列脚本进行构建和打包。
 如果您对构建方法感兴趣的话，可以参考下面的 GitHub 仓库。
 GitHub
 但是不太好的一点是这个网站是手工编辑的。
@@ -21,8 +27,7 @@ GitHub
 在程序不以 (L)GPLv3 许可协议发布的情况下，使用静态构建并不免费。 部分模块无法构建。（比如 WebEngine 之类的） 不能使用动态链接的插件。 在构建期不执行链接操作，会在后续过程中导致可能的链接问题 这边还是建议在大型项目中停止使用静态构建。相信我，这么做更加自由。
 静态 Lite 构建和静态 Full 构建 （2022 年 3 月 8 日更新） 静态 Lite 构建跳过了大多数 Qt 模块。只对 QtCore、QtDeclarative（QtQml 2），QtXmlPatterns 和 QtXXXExtras 进行了构建。
 对于在不静态构建整个 Qt 的情况下构建 QtIFW 来说是很有用的。
-（2022 年 3 月 8 日更新）Qt 5 静态 Lite 构建也用于我的 QQtPatcher。
-（2021 年 12 月 4 日更新）因为 Qt 6 的交叉构建需要一套相同版本的 Qt 6 的主机工具，我们通过这一套静态 Lite 的版本的 Qt 来构建主机工具。</description>
+（2022 年 3 月 8 日更新）Qt 5 静态 Lite 构建也用于我的 QQtPatcher。</description>
     </item>
     <item>
       <title>当前构建状态</title>
