@@ -19,7 +19,7 @@ I may purchage the service later when the service seems good enough for me.
 ## Disclaimer
 
 These binaries built by Fsu0413 are __TOTALLY UNTESTED__. Use at your own risk.  
-The code used is downloaded from [here](http://download.qt.io), I made no changes to the source/generated files.  
+The code used is downloaded from [here](http://download.qt.io), I made no changes to the source/generated files, except for officially announced patches.  
 __THESE PACKAGE ARE PROVIDED "As is", I have no responsibility that you mess up your things with this binaries.__  
 Thanks for The Qt Company Ltd. and the programmers of Qt for their fantastic work!!
 
@@ -43,20 +43,17 @@ Please refer to the content lists in the left area.
 
 ### 2023.1.8
 Update Qt 6.4.2 / Qt 5.15.8 packages.  
-Update Qt 6.2.4 packages built with OpenSSL 3.0.7 with the minor fix.
+Update Qt 6.2.4 packages built with OpenSSL 3.0.7 with [the minor fix](https://www.openssl.org/news/secadv/20221213.txt).
 
 Qt 6 Linux hosted cross built packages has a problem where the host tool was not properly deployed.  
-This time the package is rebuilt with fix.  
-Only Qt 6.2.4 Linux hosted WebAssembly package is rebuilt without other modification.
+This time the package is rebuilt with fix.
 
 ### 2022.11.20
-Update all cross built package with CMake toolchain refactored. Currently it can automatically use the bundled host tool using bundled 'qt-cmake' script.  
-The updated packages are following:  
-Qt 6.2.4 Android / WebAssembly packages  
-Qt 6.4.1 Android / WebAssembly packages
+Update all cross built package with CMake toolchain refactored. Currently it can automatically use the bundled host tool using bundled `qt-cmake` script.  
+Qt 6.2.4 / 6.4.1, Android / WebAssembly packages are all updated.
 
 ### 2022.11.19
-Update Qt 6.4.1 WebAssembly macOS host with Thread feature ON. (I did only modified x86_64 build and... I am using arm64 build for base of cross builds and it's gone)
+Update Qt 6.4.1 WebAssembly macOS host with Thread feature ON. (I did only modified x86_64 build and... I am using arm64 build for base of universal builds and it's gone)
 
 ### 2022.11.18
 Update Qt 6.4.1.  

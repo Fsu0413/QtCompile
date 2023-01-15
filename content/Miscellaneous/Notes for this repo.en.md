@@ -240,3 +240,19 @@ Commericial-only Qt Open Source Release Date (ETA)
 ~~Use Android NDK r23 series for building Qt 5.15.7 onwards.~~ (Build failed also on 5.15.8. Will test it on 5.15.9)  
 Use GCC 11 with MinGW-w64 v9 for building Qt 5.15.9 onwards.  
 Use macOS 13 for building Qt 6.5 onwards. Will check if Qt 6.2 series can be built on it.  
+Build Qt 5.15.9 and later for macOS on / for Apple Silicon.  
+
+## Existing Patches
+
+Starting from 2022.3.12 I am shipping Qt with patches from Qt.  
+Most of them are CVE patches which can be downloaded from [Qt Downloads](https://download.qt.io/), others are build fixes which are download from Qt Gerrit.
+
+Following is a table for patches of each version I am currently building.  
+Note that I won't patch an active version of Qt and will simply wait for future release. So only Commericial LTS and EOL version are patched.
+
+| Qt Version | (6.2.4 specific)<br />MinGW host fix | CVE-2022-<br />25255 | CVE-2022-<br />25643 | CVE-2018-<br />25032 | CVE-2022-27404-<br />27405-27406 | CVE-2022-<br />37434 |
+|-|-|-|-|-|-|-|
+| 5.12.12 | - | [√](https://codereview.qt-project.org/c/qt/qtbase/+/396020) | - | - | - | - |
+| 5.15.8 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2022-25255-qprocess5-15.diff) | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2022-25643-5.15.diff) | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2018-25032-qtbase-5.15.diff) | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2022-27404-27405-27406-qtbase-5.15.diff) | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2022-37434-qtbase-5.15.patch) |
+| 6.2.4 | [√](https://codereview.qt-project.org/c/qt/qtbase/+/401758) | shipped | shipped | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2018-25032-qtbase-6.2.diff) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2022-27404-27405-27406-qtbase-6.2.diff) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2022-37434-qtbase-6.2.patch) |
+

@@ -19,7 +19,7 @@ draft: false
 ## 免责声明
 
 这些由 Fsu0413 构建的二进制文件 __完全未经测试__ ，使用时请自行承担风险。  
-使用的代码为从 [这里](http://download.qt.io) 获取的。我没有对源文件/生成的文件进行任何修改。  
+使用的代码为从 [这里](http://download.qt.io) 获取的。我没有对源文件/生成的文件进行官方发布的补丁以外的任何修改。  
 __这些包为“依原样”提供。我对您使用此二进制文件作出的任何事情不负任何责任。__  
 感谢 The Qt Company Ltd. 和众多 Qt 的开发者的绝妙工作！
 
@@ -39,40 +39,37 @@ __这些包为“依原样”提供。我对您使用此二进制文件作出的
 
 [这里]({{% relref "miscellaneous/current failures" %}})
 
-## 更新记录（仅有嘤文）
+## 更新记录
 
 ### 2023.1.8
-Update Qt 6.4.2 / Qt 5.15.8 packages.  
-Update Qt 6.2.4 packages built with OpenSSL 3.0.7 with the minor fix.
+更新 Qt 6.4.2 / 5.15.8 包。  
+更新 Qt 6.2.4 包，构建时使用带 [微小更新](https://www.openssl.org/news/secadv/20221213.txt) 的 OpenSSL 3.0.7。
 
-Qt 6 Linux hosted cross built packages has a problem where the host tool was not properly deployed.  
-This time the package is rebuilt with fix.  
-Only Qt 6.2.4 Linux hosted WebAssembly package is rebuilt without other modification.
+此前 Qt 6 Linux 主机版的交叉构建包存在问题，导致主机工具没有正确部署。  
+本次的包修复了此问题。
 
 ### 2022.11.20
-Update all cross built package with CMake toolchain refactored. Currently it can automatically use the bundled host tool using bundled 'qt-cmake' script.  
-The updated packages are following:  
-Qt 6.2.4 Android / WebAssembly packages  
-Qt 6.4.1 Android / WebAssembly packages
+更新所有的交叉构建包，重构 CMake 工具链。现在可以用包里附带的 `qt-cmake` 脚本自动调用在同一个包中分发的主机工具了。  
+Qt 6.2.4 / 6.4.1，安卓 / WebAssembly 包全部进行了更新。
 
 ### 2022.11.19
-Update Qt 6.4.1 WebAssembly macOS host with Thread feature ON. (I did only modified x86_64 build and... I am using arm64 build for base of cross builds and it's gone)
+更新 Qt 6.4.1 WebAssembly macOS 主机构建，打开线程功能。（我之前只修改了 x86_64 构建，然后在我构建统一架构版本时用了 arm64 当基础，然后这个功能就不见了）
 
 ### 2022.11.18
-Update Qt 6.4.1.  
-Update Qt 6 WebAssembly with Thread feature ON. (Previous versions are missing this feature)   
-Update Qt 6 macOS Universal builds. Future Qt 6 builds of macOS will only provide Universal builds.  
-Update Qt 6.2.4 Windows VS builds with updated VS version.
+更新 Qt 6.4.1。  
+更新 Qt 6 WebAssembly 构建，打开线程功能。（之前的版本缺失这个功能）  
+更新 Qt 6 macOS 统一架构构建。以后的 Qt 6 macOS 构建均会是统一架构构建。  
+更新 Qt 6 Windows VS 构建，升级 VS 版本。
 
 ### 2022.11.8
-Update Qt 6.2.4 with OpenSSL 3.0.7 (Without QtWebEngine since all builds of QtWebEngine failed). Existing patches are all in.  
-Update Qt 5.15.7 with OpenSSL 1.1.1s on macOS (Without QtWebEngine).
+更新 Qt 6.2.4，附带 OpenSSL 3.0.7（不再附带 QtWebEngine 因为所有的 QtWebEngine 构建均失败了）。现有补丁全部应用。  
+更新 Qt 5.15.7，附带 OpenSSL 1.1.1s（不附带 QtWebEngine）。
 
-Qt 6.2.4 cross builds (Linux / macOS host) are packaged with `libexec` folder of host builds where tools like `lrelease` are lying in.
+Qt 6.2.4 的 Linux 和 macOS 主机交叉构建版在打包时额外附带主机版的 `libexec` 文件夹。一些诸如 `lrelease` 一类的工具在这个文件夹里面。
 
 ### 2022.11.6
-Update Qt 5.15.7 with OpenSSL 1.1.1s (excluding macOS, compile failed in QtWebEngine). Existing patches are all in.   
-Update Qt 5.12.12 with OpenSSL 1.1.1s.
+更新 Qt 5.15.7，附带 OpenSSL 1.1.1s（macOS 除外，QtWebEngine 编译失败了）。现有补丁全部应用。  
+更新 Qt 5.12.12，附带 OpenSSL 1.1.1s。
 
 ### 2022 年 10 月以前
 

@@ -240,3 +240,19 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
 ~~使用安卓 NDK r23 系列构建 Qt 5.15.7 以及之后的版本。~~ （构建失败了，包括 5.15.8 也失败了，将于 5.15.9 再次尝试）  
 使用带 MinGW-w64 v9 的 GCC 11 来构建 Qt 5.15.9 以及之后的版本。  
 使用 macOS 13 来构建 Qt 6.5 以及之后的版本。届时也会尝试在上面构建 Qt 6.2 系列。  
+在 M1 芯片上 / 为了 M1 芯片，构建 Qt 5.15.9 以及之后的版本的 macOS 版本。  
+
+## 已有的补丁
+
+从 2022 年 3 月 12 日开始我的 Qt 构建包含部分 Qt 提供的补丁。  
+多数是可以从 [Qt 下载站](https://download.qt.io/) 下载的 CVE 补丁，另外一些是可以从 Qt Gerrit 下载的一些修复构建的补丁。
+
+下面这个表列出了我构建每个版本时所应用的补丁。  
+注：我不会对当前正在活跃开发的 Qt 应用补丁，而是单纯等待新版本发布。所以应用补丁的只有商业 LTS 版本和结束生命周期的版本。
+
+| Qt 版本 | （仅限 6.2.4）<br />MinGW 主机修复 | CVE-2022-<br />25255 | CVE-2022-<br />25643 | CVE-2018-<br />25032 | CVE-2022-27404-<br />27405-27406 | CVE-2022-<br />37434 |
+|-|-|-|-|-|-|-|
+| 5.12.12 | - | [√](https://codereview.qt-project.org/c/qt/qtbase/+/396020) | - | - | - | - |
+| 5.15.8 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2022-25255-qprocess5-15.diff) | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2022-25643-5.15.diff) | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2018-25032-qtbase-5.15.diff) | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2022-27404-27405-27406-qtbase-5.15.diff) | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2022-37434-qtbase-5.15.patch) |
+| 6.2.4 | [√](https://codereview.qt-project.org/c/qt/qtbase/+/401758) | 附带 | 附带 | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2018-25032-qtbase-6.2.diff) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2022-27404-27405-27406-qtbase-6.2.diff) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2022-37434-qtbase-6.2.patch) |
+
