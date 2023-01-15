@@ -84,7 +84,7 @@
             <div class="toc-wrapper" dir="ltr">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#翻译">翻译</a>
+    <li>
       <ul>
         <li><a href="#2022104">2022.10.4</a></li>
         <li><a href="#2022916">2022.9.16</a></li>
@@ -166,7 +166,7 @@
     <li><a href="#2019422">2019.4.22</a></li>
     <li><a href="#2019420">2019.4.20</a></li>
     <li><a href="#2019419">2019.4.19</a></li>
-    <li><a href="#2017-年以前黑历史">2017 年以前（黑历史）</a>
+    <li><a href="#2017-年以前黑历史仅有嘤文">2017 年以前（黑历史，仅有嘤文）</a>
       <ul>
         <li><a href="#2016723">2016.7.23</a></li>
         <li><a href="#2016717">2016.7.17</a></li>
@@ -196,301 +196,305 @@
           <article class="default">
 <h1 id="%E4%B9%8B%E5%89%8D%E7%9A%84%E5%8E%86%E5%8F%B2">之前的历史</h1>
 
-<h2 id="翻译">翻译</h2>
-<p>有（gu）时（gu）间（gu）再（bu）翻译吧（le）。</p>
 <h3 id="2022104">2022.10.4</h3>
-<p>Update Qt 6.4.0.<br>
-Update Qt 6.2.4 static builds with static runtime. Previous versions are without it.<br>
-Update Qt 6.2.4 llvm-mingw builds built with llvm 15.</p>
-<p>Qt 6.3 builds are removed.</p>
+<p>更新 Qt 6.4.0。<br>
+更新 Qt 6.2.4 静态构建，使用静态运行时。以前的版本不使用静态运行时。<br>
+更新 Qt 6.2.4 LLVM-MinGW 构建。使用 LLVM 15。</p>
+<p>删除 Qt 6.3 系列的构建。</p>
 <h3 id="2022916">2022.9.16</h3>
-<p>Update Qt 6.2.4 / 5.15.6 with updated patch of CVE-2022-37434. Qt 6.2 are rebuilt with QtWebEngine 6.3.2.<br>
-Update to Xcode 14 and rebuild all of macOS hosted Qt 6.2 onwards.</p>
+<p>更新 Qt 6.2.4 和 5.15.6，附带更新的 CVE-2022-37434 的补丁。Qt 6.2 系列重新构建，附带 QtWebEngine 6.3.2。<br>
+升级到 Xcode 14，重新构建所有的 Qt 6.2 以上的 macOS 主机 / 交叉构建。</p>
 <h3 id="2022912">2022.9.12</h3>
-<p>Update Qt 6.2.4 / 6.3.2 WebAssembly packages. They are currently built using PCH.<br>
-Update Qt 6.2.4 / 6.3.2 llvm-mingw packages. They are currently built with WMF support.<br>
-Update Qt 6.4.0-beta4. All configuration from previous 6.3 are available. RockyLinux 9 is used for Qt 6.4.0 Linux hosted build. WebAssembly and llvm-mingw packages are built using updated configuration today.</p>
+<p>更新 Qt 6.2.4 / 6.3.2 WebAssembly 包。现在启用了预编译头文件支持。<br>
+更新 Qt 6.2.4 / 6.3.2 LLVM-MinGW 包。现在启用了 WMF 支持。<br>
+更新 Qt 6.4.0-beta4。所有原来在 6.3 上的配置全部可用。使用 RockyLinux 9 进行 Qt 6.4.0 的 Linux 交叉构建主机。WebAssembly 和 LLVM-MinGW 包都使用了今天更新的配置进行构建。</p>
 <h3 id="2022911">2022.9.11</h3>
-<p>Update Qt 6.3.2 with OpenSSL 3.0.5.<br>
-Update Qt 6.2.4 with patch of CVE-2022-37434.<br>
-Update Qt 5.15.6 with OpenSSL 1.1.1q. Existing patch are all in. Patch of CVE-2022-27404-27405-27406 and CVE-2022-37434 are added.<br>
-Update Qt 5.12.12 macOS hosted Android builds which erroneously used CommandLineTools instead of Xcode as host build toolchain.</p>
+<p>更新 Qt 6.3.2，使用 OpenSSL 3.0.5。<br>
+更新 Qt 6.2.4，附带 CVE-2022-37434 的补丁。<br>
+更新 Qt 5.15.6，附带 OpenSSL 1.1.1q。所有的已有补丁全部都在。添加了 CVE-2022-27404-27405-27406 和 CVE-2022-37434 的补丁。<br>
+更新 Qt 5.12.12 macOS 主机版安卓构建。上一版误使用了 CommandLineTools 当作主机构建工具链，而不是 Xcode。</p>
 <h2 id="2022823">2022.8.23</h2>
-<p>Update Qt 5.12.12 with OpenSSL 1.1.1q.<br>
-Update Qt 6.2.4 with patch of CVE-2022-27404-27405-27406 and OpenSSL 3.0.5.<br>
-Update Qt 6.3.1 WebAssembly builds, which are built using emscripten SDK 3.1.6.</p>
-<p>Qt 5.15.5 is not updated since patch of CVE-2022-27404-27405-27406 provided by Qt conflicts with 5.15.5 code base.<br>
-I&rsquo;ll wait for 5.15.6 and will release without the patch if this patch doesn&rsquo;t work on 5.15.6 either.</p>
-<p>Qt 6.3.1 is not updated. Let&rsquo;s wait for 6.3.2.</p>
+<p>更新 Qt 5.12.12， 使用 OpenSSL 1.1.1q。<br>
+更新 Qt 6.2.4，附带 Qt 官方提供的 CVE-2022-27404-27405-27406 的补丁和 OpenSSL 3.0.5。<br>
+更新 Qt 6.3.1 WebAssembly 构建，使用 emsdk 3.1.6。</p>
+<p>Qt 5.15.5 没有更新，原因是 Qt 官方提供的 CVE-2022-27404-27405-27406 的补丁与 Qt 5.15.5 的代码基准冲突。<br>
+我会等 5.15.6，并且如果这个补丁与 5.15.6 还是冲突的话，我将发布不带这个补丁的版本。</p>
+<p>Qt 6.3.1 不会更新。等 6.3.2 发布。</p>
 <h2 id="2022629">2022.6.29</h2>
-<p>Update Qt 5.15.5 with OpenSSL 1.1.1p and QtWebEngine 5.15.10.<br>
-Resolved by a VirtualBox upgrade. <del>macOS 11 host is currently failing and builds are not updated. May be a problem of VirtualBox. Currently under investigation.</del></p>
+<p>更新 Qt 5.15.5，附带 OpenSSL 1.1.1p 和 QtWebEngine 5.15.10。<br>
+<del>macOS 11 主机目前出现故障，构建无法更新。可能是 VirtualBox 的问题。目前正在调查。</del> VirtualBox 的更新解决了这个问题。</p>
 <h2 id="2022626">2022.6.26</h2>
-<p>Remove GitHub links since it is unstable in The Greatest China.<br>
-Update Qt 5.12.12 with OpenSSL 1.1.1p.<br>
-Update Qt 6.2.4 with OpenSSL 3.0.4.<br>
-Update Qt 6.3.1 with OpenSSL 3.0.4.</p>
-<p>Qt 5.15 are not updated for now since security issues of built versions are not patched.</p>
+<p>删除 GitHub 链接，在中国大陆并不稳定。<br>
+更新 Qt 5.12.12，使用 OpenSSL 1.1.1p。<br>
+更新 Qt 6.2.4 / 6.3.1，使用 OpenSSL 3.0.4。</p>
+<p>Qt 5.15.5 暂时没有更新。之前构建的版本没有安全补丁。</p>
 <h2 id="2022413">2022.4.13</h2>
-<p>Upload Qt 6.3.0 versions.<br>
-Update Qt 5.15 / 6.2 with CVE patches.</p>
-<p>Happy birthday to me!</p>
+<p>上传 Qt 6.3.0 版本。<br>
+上传 Qt 5.15 / Qt 6.2，带 CVE 补丁。</p>
+<p>祝我生日快乐！</p>
 <h2 id="2022325">2022.3.25</h2>
-<p>Upload Qt 6.2.4 versions.<br>
-Update Qt 5.12 / 5.15 versions with OpenSSL 1.1.1n / 3.0.2.</p>
-<p>Happy birthday to Iroi Iamgay!</p>
+<p>上传 Qt 6.2.4 版本。<br>
+更新 Qt 5.12 / 5.15 版本，使用 OpenSSL 1.1.1n / 3.0.2。</p>
+<p>祝基神奄（Iori Imagay）生日快乐！</p>
 <h2 id="2022311">2022.3.11</h2>
-<p>Upload Qt 5.12.12 / 5.15.3-5 VS 2017+ versions.</p>
+<p>上传 Qt 5.12.12 / 5.15.3-5 VS2017+ 版本。</p>
 <h2 id="202239">2022.3.9</h2>
-<p>Upload 5.12.12 macOS (Extra version) / Android versions with CVE-2022-25255 patched.<br>
-Upload Qt 5.15.3 with WebEngine 5.15.8 / QtScript 5.15.8, with CVE-2022-25255 and CVE-2022-25643 patched.<br>
-(VS version is currently undone for now since VS has got an update and Qt is currently rebuilding)</p>
-<p>Code of Qt 5.12.12 in local environment is got CVE patched so newer build will always have CVE patched.<br>
-Code of Qt 5.15.3 in local environment is got CVE patched and will be patched every time before Qt 5.15.9 opensource release. Newer build will always have CVE patched.<br>
-Qt 6.2.4 will have CVE patched in original code and will make opensource release soon. Let&rsquo;s wait for it and do not patch the code.</p>
+<p>上传 5.12.12 macOS （额外版本） / 安卓版本，包含 CVE-2022-25255 补丁。<br>
+上传 Qt 5.15.3，附带 QtWebEngine 5.15.8 和 QtScript 5.15.8，包含 CVE-2022-25255 和 CVE-2022-25643 补丁。<br>
+（VS 版本现在还没做完。在制作过程中 VS 更新了，需要重新构建）</p>
+<p>（2023 年 1 月 14 日补充修改）修改免责声明，后续代码会包含官方发布的 CVE 补丁。<br>
+Qt 5.12.12 的本地代码中已经包含 CVE 补丁，更新的构建会一直包含 CVE 补丁。<br>
+Qt 5.15.3 的本地代码中已经包含 CVE 补丁。并且补丁会在每次 Qt 版本更新过程中都会进行应用。更新的构建会一直包含 CVE 补丁。<br>
+Qt 6.2.4 将会在最近的开源发布中包含 CVE 补丁。我会等 Qt 6.2.4 的官方发布，暂时不应用补丁。</p>
 <h2 id="202229">2022.2.9</h2>
-<p>Upload 6.2.3 all versions.<br>
-Update VS2017 / VS2019 / VS2022 to their latest version.<br>
-Upload Qt 6.2.3 series built with VS2022.</p>
+<p>上传 6.2.3 所有版本。<br>
+更新 VS2017 / VS2019 / VS2022 到各自的最新版。<br>
+上传 VS2022 构建的 Qt 6.2.3。</p>
 <h2 id="202217">2022.1.7</h2>
-<p>Upload Qt 5.15.2 with WebEngine 5.15.8 / QtScript 5.15.8.<br>
-Upload Qt 5.15.2 series built with VS2022.</p>
+<p>上传 Qt 5.15.2，附带 QtWebEngine 5.15.8 和 QtScript 5.15.8。<br>
+上传 VS2022 构建的 Qt 5.15.2。</p>
 <h2 id="20211229">2021.12.29</h2>
-<p>Upload 5.12.12 Android / 5.12.12 Windows / 5.15.2 Android / 6.2.2 Android versions with OpenSSL 1.1.1m.<br>
-Windows hosted versions has their QQtPatcher update to 0.8.1, which support more 5.12 specific hard-code path patching.</p>
+<p>上传 5.12.12 安卓 / 5.12.12 Windows / 5.15.2 安卓 / 6.2.2 安卓版，使用OpenSSL 1.1.1m。<br>
+Windows 主机版升级了 QQtPatcher 到 0.8.1，支持更多 5.12 特有的硬编码路径补丁。</p>
 <h2 id="2021127">2021.12.7</h2>
-<p>Upload 6.2.2 macOS / Windows versions with QtPdf.<br>
-QtPdf is not automatically built anymore with QtWebEngine since Qt 6, and should be enabled manually for now.</p>
-<p>Upload 6.2.2 macOS ARM64 version.</p>
+<p>上传 6.2.2 macOS 和 Windows 版本。附带 QtPdf。<br>
+从 Qt 6 开始 QtPdf 并不自动随着 QtWebEngine 进行构建，需要手动启用。</p>
+<p>上传 6.2.2 macOS arm64 版本。</p>
 <h2 id="2021125">2021.12.5</h2>
-<p>Upload Qt 5.15.2 with WebEngine 5.15.7 / QtScript 5.15.7.<br>
-Remove 5.15.2 Windows arm64 version since it is not officially supported.<br>
-macOS Qt 5.15 / 5.12 cross builds will stuck at macOS 11 with Xcode 12.5.1 since compile error occurs on Xcode 13.</p>
-<p>Upload Qt 6.2.2 series, including MinGW version.<br>
-Update MinGW to 11.2.0 w/ MinGW-W64 v9, which is same as what Qt is using.<br>
-Update Android SDK for building Qt 6.2.2.</p>
-<p>Remove 6.1.3 Windows hosted Android version and MinGW version since builds of Qt 6.2 of same configuration is available.</p>
+<p>上传 Qt 5.15.2 附带 QtWebEngine 5.15.7 和 QtScript 5.15.7。<br>
+删除 5.15.2 Windows arm64 版本，原因是官方并未支持。<br>
+由于 Xcode 13 下的编译错误，macOS 版本的 Qt 5.15 和 5.12 交叉构建版本将会保持在 macOS 11 和 Xcode 12.5.1。</p>
+<p>上传 Qt 6.2.2 系列版本，包括 MinGW 版本。<br>
+更新 MinGW-w64 v9 附带 GCC 11.2.0。这个版本也是 Qt 官方现在在用的。<br>
+为了构建 Qt 6.2.2 升级了安卓 SDK。</p>
+<p>删除所有 Qt 6.1.3 的版本。相同配置的 6.2 系列已经全部可用了。</p>
 <h2 id="2021124">2021.12.4</h2>
-<p>Upload Qt 5.12.12.<br>
-Remove 5.12.10 Windows arm64 version since it does not build anymore since one year ago.</p>
-<p>Since 5.12 series reaches its EOL and macOS and WebAssembly versions don&rsquo;t use OpenSSL, this build are their final build.<br>
-Other builds where OpenSSL are used will be built until OpenSSL 1.1.1 series reaches EOL, i.e., 2023.9.11.</p>
+<p>上传 Qt 5.12.12。<br>
+删除 5.12.10 Windows arm64 版本，原因是这个版本从大约一年以前就开始编译失败了。</p>
+<p>由于 Qt 5.12 系列已经结束生命周期，并且 macOS 和 WebAssembly 版本不使用 OpenSSL，这次构建是这些平台的最后一次构建。<br>
+其他使用 OpenSSL 的构建将会持续构建到 OpenSSL 1.1.1 系列结束生命周期，也就是 2023 年 9 月 11 日。</p>
 <h2 id="20211019">2021.10.19</h2>
-<p>Upload Qt 6.2.0 using mstorsjo&rsquo;s LLVM-based MinGW toolchain.<br>
-Currently only x86_64 build is available, with both UCRT and msvcrt versions.</p>
-<p>These build use newer MinGW-w64 version which is v9, while MinGW 8.1.0 is using v6.<br>
-I&rsquo;d recommend using this version if you want to try something new.</p>
+<p>上传 Qt 6.2.0，使用 <a href="https://github.com/mstorsjo/llvm-mingw" target="_blank">mstorsjo 的基于 LLVM 的 MinGW-w64 工具链</a>。<br>
+目前只实现了 x86_64 的构建，包含 UCRT 和 msvcrt 两个版本。</p>
+<p>这个构建使用了更新的 v9 版本的 MinGW-w64，以前的基于 GCC 8.1.0 的版本还在用 v6。<br>
+如果想尝试一些新事物的话，我推荐使用这个版本。</p>
 <h2 id="2021103">2021.10.3</h2>
-<p>Upload Qt 6.2.0.</p>
+<p>上传 Qt 6.2.0。</p>
 <h2 id="2021929">2021.9.29</h2>
-<p>Upload Qt 6.2.0-rc2.</p>
+<p>上传 Qt 6.2.0-rc2。</p>
 <h2 id="2021911">2021.9.11</h2>
-<p>Upload Qt 5.15.2 with WebEngine 5.15.6 / QtScript 5.15.6.<br>
-Upload Qt 5.15.2 for VS2017+ without WebEngine for newer VS versions.</p>
+<p>上传 Qt 5.15.2 附带 QtWebEngine 5.15.6 和 QtScript 5.15.6。<br>
+上传 Qt 5.15.2 VS2017+ 版本，更新 VS 版本。</p>
 <h2 id="202194">2021.9.4</h2>
-<p>Upload Qt 6.1.3.<br>
-Update OpenSSL to 1.1.1l.<br>
-Rebuild 5.15.2 / 5.12.11 Android version using OpenSSL 1.1.1l.<br>
-Rebuild 5.12.11 Windows version using OpenSSL 1.1.1l. (except for MinGW 64-bit which build failed)</p>
+<p>上传 Qt 6.1.3。<br>
+更新 OpenSSL 1.1.1l。<br>
+重新构建 5.15.2 和 5.12.11 安卓版，使用 OpenSSL 1.1.1l。<br>
+重新构建 5.12.11 Windows 版，使用 OpenSSL 1.1.1l。（MinGW 64位版本除外，构建失败了）</p>
 <h2 id="202172">2021.7.2</h2>
-<p>Upload Qt 6.1.2.</p>
+<p>上传 Qt 6.1.2。</p>
 <h2 id="2021625">2021.6.25</h2>
-<p>Upload archives to OSDN again for better network in the Greatest China.</p>
+<p>再次将包上传到 OSDN 因为 OSDN 有更好的在中国大陆的下载体验。</p>
 <h2 id="2021619">2021.6.19</h2>
-<p>Upload Qt 5.12.11 with QtWebEngine.<br>
-Upload Qt 5.15.2 with WebEngine 5.15.5 / QtScript 5.15.5.</p>
+<p>上传 Qt 5.15.2 附带 QtWebEngine 5.15.5 和 QtScript 5.15.5。<br>
+更新 Qt 5.12.11 附带 QtWebEngine。为了 QtWebEngine 降级 macOS 至 10.15.7，之后的 Qt 5.12 系列全部使用 macOS 10.15 构建。</p>
 <h2 id="202169">2021.6.9</h2>
-<p>Upload Qt 6.1.1 with Android versions.<br>
-Re-install RockyLinux 8.4.</p>
+<p>上传 Qt 6.1.1，包括之前没有构建通过的安卓版本。</p>
 <h2 id="2021528">2021.5.28</h2>
-<p>Upload Qt 5.12.11 (Windows ARM64 version doesn&rsquo;t upload because of compile failure)<br>
-Transited CentOS to (current unstable) RockyLinux.</p>
+<p>上传 Qt 5.12.11 （Windows ARM64 版本没有上传，因为编译失败了）<br>
+用于编译 Linux 版本的发行版就地重装为 RockyLinux，除了发行版本身之外所有配置和环境均保留</p>
 <h2 id="2021513">2021.5.13</h2>
-<p>Upload Qt 5.15.2 with WebEngine 5.15.4 / QtScript 5.15.4.<br>
-Rebuild 5.15.2 Android version using OpenSSL 1.1.1k.</p>
+<p>上传 Qt 5.15.2 附带 QtWebEngine 5.15.4 和 QtScript 5.15.4。<br>
+重新构建 5.15.2 安卓版本，使用 OpenSSL 1.1.1k。</p>
 <h2 id="2021511">2021.5.11</h2>
-<p>Upload 6.1.0 (Desktop version)  <strong>Android version build fails</strong><br>
-Qt 6.1 series is shipping with full addon. I don&rsquo;t need to download addon manually.</p>
+<p>上传 6.1.0 （桌面端） <strong>安卓版构建失败了</strong><br>
+Qt 6.1 系列直接附带所有 addon。我不用每次手工下载 addon 了。</p>
 <h2 id="202149">2021.4.9</h2>
-<p>Upload 6.0.3 w/ addon.<br>
-Site is re-generated using Hugo.</p>
+<p>上传包含 addon 的 6.0.3。<br>
+下载站使用 <a href="https://gohugo.io" target="_blank">Hugo</a> 重新生成，使用 <a href="https://thingsym.github.io/hugo-theme-techdoc/" target="_blank">techdoc</a> 主题。（<a href="http://amwiki.org/doc/" target="_blank">amWiki</a> 是基于 GitHub Atom 的，而且已经好久没更新了）</p>
 <h2 id="2021315">2021.3.15</h2>
-<p>Upload 6.0.2 w/ addon. (Previous versions are without addon)<br>
-Rebuild 5.15.2 Android version using Android NDK r21e.<br>
-Rebuild 5.12.10 VS2019 builds with newer VS2019 and newer OpenSSL.</p>
-<p>I will ship Qt 6 with full addon from now on. There was and will be no <code>lite</code> version of dynamic/shared builds.</p>
+<p>上传包含 addon 的 6.0.2。（之前的版本没有 addon）<br>
+重新构建 5.15.2 安卓版本，使用 NDK r21e。<br>
+重新构建 5.12.0 VS2019 版本，使用更新的 VS2019 和更新的 OpenSSL。</p>
+<p>我今后将会提供包含所有 addon 的 Qt6。之前的动态/共享构建为 <code>Lite</code> 版本。之后将不会有 <code>Lite</code> 版本的动态/共享构建。</p>
 <h2 id="202139">2021.3.9</h2>
-<p>Upload 5.15.2 w/ QtWebEngine 5.15.3 builds for VS2019 / macOS 11.<br>
-Windows SDK is updated to the latest version, which is 10.0.19041.<br>
-Upload 5.12.10 Android builds w/ Android NDK r21e.</p>
+<p>上传 VS2019 和 macOS 11 的 Qt 5.15.2 附带 QtWebEngine 5.15.3 版本。<br>
+Windows SDK 更新到最新版，为 10.0.19041。<br>
+上传 5.12.10 安卓版本，使用 NDK r21e。</p>
 <h2 id="202134">2021.3.4</h2>
-<p>Upload 6.0.2 builds.<br>
-VS2019 is updated to the latest version, which is 16.9.0.<br>
-Update macOS to 11.2.2.<br>
-<strong>ANDROID BUILDS ARE WITHOUT LINKED OpenSSL SUPPORT due to compile error!!!!!!!!</strong></p>
+<p>上传 6.0.2 构建。<br>
+VS2019 更新到最新版本，为 16.9.0。<br>
+更新 macOS 为 11.2.2。<br>
+<strong>由于编译失败，安卓版本未使用链接的 OpenSSL 支持。</strong></p>
 <h2 id="2021221">2021.2.21</h2>
-<p>Upload Windows hosted Android builds of Qt 6.0.1.<br>
-<strong>ANDROID BUILDS ARE WITHOUT LINKED OpenSSL SUPPORT due to compile error!!!!!!!!</strong></p>
+<p>上传 6.0.1 Windows 主机的安卓版构建。<br>
+<strong>由于编译失败，安卓版本未使用链接的 OpenSSL 支持。</strong></p>
 <h2 id="202126">2021.2.6</h2>
-<p>Upload 6.0.1 builds except Windows crossed Android builds.<br>
-VS2019 is updated to the latest version, which is 16.8.4.<br>
-Update macOS to 11.1.<br>
-<strong>ANDROID BUILDS ARE WITHOUT LINKED OpenSSL SUPPORT due to compile error!!!!!!!!</strong></p>
+<p>上传 6.0.1 版本，添加 MinGW 版本（Windows 主机的安卓版构建没有更新）<br>
+VS2019 更新到最新版本，为 16.8.4。<br>
+更新 macOS 为 11.1。<br>
+<strong>由于编译失败，安卓版本未使用链接的 OpenSSL 支持。</strong></p>
 <h2 id="202113">2021.1.3</h2>
-<p>Upload 6.0.0 Android builds (Linux host).<br>
-<strong>ANDROID BUILDS ARE WITHOUT LINKED OpenSSL SUPPORT due to compile error!!!!!!!!</strong></p>
+<p>上传 6.0.0 Linux 主机的安卓版构建。<br>
+<strong>由于编译失败，安卓版本未使用链接的 OpenSSL 支持。</strong></p>
 <h2 id="202112">2021.1.2</h2>
-<p>Upload 6.0.0 Android builds (macOS host).<br>
-Rebuild 6.0.0 Windows and macOS builds with stripped binary.<br>
-Note that Android API Level has changed to android-24 since Qt 6.0.0.<br>
-<strong>ANDROID BUILDS ARE WITHOUT LINKED OpenSSL SUPPORT due to compile error!!!!!!!!</strong></p>
+<p>上传 6.0.0 macOS 主机的安卓版构建。<br>
+重新构建 6.0.0 Windows 和 macOS 构建，使用 strip 的二进制。<br>
+注：安卓 API Level 在 Qt 6.0.0 开始切换到 android-24。<br>
+<strong>由于编译失败，安卓版本未使用链接的 OpenSSL 支持。</strong></p>
 <h2 id="20201220">2020.12.20</h2>
-<p>Upload 6.0.0 Windows and macOS builds.</p>
+<p>上传 6.0.0 Windows 和 macOS 构建。</p>
 <h2 id="20201217">2020.12.17</h2>
-<p>Upload 5.15.2 builds. (All builds are without Webengine because of compile failure)<br>
-Update macOS to 11.0.1.<br>
-VS2019 is updated to the latest version, which is 16.8.3.<br>
-VS2017 is updated to the latest version, which is 15.9.30.</p>
+<p>上传 5.15.2 构建。（所有构建都没有 QtWebEngine，因为编译失败了）<br>
+macOS 更新到 11.0.1。<br>
+VS2017/2019 更新到各自的最新版本，分别是 15.9.30 / 16.8.3。</p>
 <h2 id="20201111">2020.11.11</h2>
-<p>Upload 5.12.10 builds.<br>
-macOS is updated to 10.15.7 and XCode is updated to 12.0.<br>
-VS2019 is updated to the latest version, which is 16.7.7.</p>
+<p>上传 5.12.10 构建。<br>
+macOS 更新到 10.15.7，Xcode 升级到 12.0。<br>
+VS2019 升级到最新版本，为 16.7.7。</p>
+<p><strong>注：</strong> 此次更新引入了一些为了适配 Qt6 做出的修改，此次更新的压缩文件解压后的文件夹名将不带有构建日期。
+如果使用脚本操作本库的童鞋，请修改脚本。</p>
 <h2 id="2020912">2020.9.12</h2>
-<p>Upload 5.15.1 builds.<br>
-macOS is updated to 10.15.6 (19G2021)<br>
-VS2017/2019 are updated to the latest version, which is 15.9.27/16.7.3.</p>
+<p>上传 5.15.1 构建。
+macOS 更新到 10.15.6 （19G2021）。
+VS2017/2019 更新到各自的最新版本，分别是 15.9.27 / 16.7.3。</p>
 <h2 id="202077">2020.7.7</h2>
-<p>Upload all artifacts, also to Github release in addition to SourceForge.</p>
+<p><del>同时上传所有的成果到 GitHub Release，作为 SourceForge 的镜像。</del> （已弃用）</p>
 <h2 id="2020619">2020.6.19</h2>
-<p>Upload Android NDK to r21d.<br>
-Rebuilt all android packages using new NDK.</p>
+<p>更新安卓 NDK 到 r21d。<br>
+使用新版 NDK 重新构建所有安卓包。</p>
 <h2 id="2020618">2020.6.18</h2>
-<p>Upload 5.12.9 builds.</p>
+<p>上传 Qt 5.12.9 构建。</p>
 <h2 id="202064">2020.6.4</h2>
-<p>Upload 5.15.0 macOS host builds. (macOS host builds of 5.12.8 have compile failure, we should wait for 5.12.9)<br>
-Upload 5.15.0 Android builds. (macOS 10.15.5 hosted)</p>
+<p>上传 Qt 5.15.0 macOS 版本 （Qt 5.12.8 macOS 版本 WebEngine 编译不过，要等 5.12.9）<br>
+Qt 5.15.0 Android 版本 macOS host 重传</p>
 <h2 id="202063">2020.6.3</h2>
-<p>Add proprietary codecs support for Qt WebEngine for Qt 5.12.9 and 5.15.0 or later.<br>
-Upload 5.15.0 series. (<strong>Except macOS host builds, which encountered some issue while compiling</strong>)<br>
-Use MinGW-w64 to 8.1.0 for Qt 5.15.0 series, switch the build environment of MinGW 8.1.0 to Win10.<br>
-Upload 5.9.9 VS2017 builds for newer VS2017 compiler.<br>
-Upload 5.12.8 WebAssembly builds for newer emsdk definition.<br>
-Upload 5.12.8 Android builds for NDK r21b.<br>
-Remove 5.14 series except macOS ones. (macOS ones will be deleted once 5.15 finishes compiling)</p>
-<p>Since Qt 5.9 series has reached EOL, there will be no further Qt 5.9 builds.<br>
-i.e., this build is the last build of these packages.<br>
-The build script and environment of Qt 5.9 series has been destructed.</p>
+<p>从 Qt 5.15.0 和 Qt 5.12.9 开始，Qt WebEngine 将会支持 proprietary codecs。<br>
+上传 5.15.0 系列。（ <strong>所有包括交叉构建在内的 macOS 版本均没有上传。构建环境正在进行修复</strong> ）<br>
+Qt 5.15.0 系列上使用更新的 MinGW-w64，附带 GCC 8.1.0，并切换 MinGW-w64 w/ GCC 8.1.0 的构建环境为 Win10。<br>
+上传 Qt 5.9.9 VS2017 版，使用更新的 VS2017 版本<br>
+上传 Qt 5.12.8 WebAssembly 版，更新 emsdk<br>
+上传 Qt 5.12.8 安卓版，更新 NDK r21b （包含 macOS 主机的交叉构建）。<br>
+删除 5.14 系列，macOS 版本除外（macOS 版本将会在 Qt 5.15 构建完成并上传后删除）</p>
+<p>由于 Qt 5.9 系列已经结束生命周期，不会再有 Qt 5.9 的构建了。<br>
+也就是说这次的构建是这些包的最后一次构建了。<br>
+Qt 5.9 系列的构建脚本和环境都爆破了。</p>
 <h2 id="2020518">2020.5.18</h2>
-<p>Upload 5.15.0-rc2 series. (<strong>All macOS version, including cross builds, are not uploaded because of broken environment</strong>)<br>
-Update Win10 to 10.0.19041(2004)</p>
+<p>上传 5.15.0-rc2 系列。（ <strong>所有包括交叉构建在内的 macOS 版本均没有上传。构建环境有问题了</strong> ）<br>
+升级 Win10 到 19041 （2004）</p>
 <h2 id="2020425">2020.4.25</h2>
-<p>Upload 5.15.0-beta4 series. (<strong>All macOS version, including cross builds, are not uploaded because of broken environment</strong>)</p>
+<p>上传 5.15.0-beta4 系列。（ <strong>所有包括交叉构建在内的 macOS 版本均没有上传。构建环境有问题了</strong> ）</p>
 <h2 id="2020412">2020.4.12</h2>
-<p>Upload 5.15.0-beta3 series. (<strong>All macOS version, including cross builds, are not uploaded because of broken environment</strong>)</p>
+<p>上传 5.15.0-beta3 系列。（ <strong>所有包括交叉构建在内的 macOS 版本均没有上传。构建环境有问题了</strong> ）</p>
 <h2 id="2020411">2020.4.11</h2>
-<p>Upload 5.12.8 series. (<strong>All macOS version, including cross builds, are not uploaded because of broken environment</strong>)</p>
+<p>上传 5.12.8 系列。（ <strong>所有包括交叉构建在内的 macOS 版本均没有上传。构建环境有问题了</strong> ）</p>
 <h2 id="202043">2020.4.3</h2>
-<p>Upload 5.14.2 series. (macOS versions are not provided due to QtWebEngine compile failure, <strong>HOST ONLY</strong>)</p>
+<p>上传 5.14.2 系列。（macOS 版本没有提供，由于 QtWebEngine 编译出错）</p>
 <h2 id="2020326">2020.3.26</h2>
-<p>Upload 5.15.0-beta2 series. (Static <code>full</code> version don&rsquo;t compile)<br>
-Mirror this site on Coding.net for faster browsing in China.</p>
+<p>上传 5.15.0-beta2 系列。（静态 <code>Full</code> 版本编译失败了）<br>
+<del>在 Coding.net 上建立网站镜像，以更快浏览网页。</del> （不好使了）</p>
 <h2 id="202036">2020.3.6</h2>
-<p>Upload 5.12.7 Android series with NDK r21.<br>
-Upload 5.15.0-beta1 series. (VS2017 and VS2019 shared builds are not provided due to QtWebEngine compile failure)</p>
+<p>上传 5.12.7 使用 NDK r21 的安卓版本。
+上传 5.15.0-beta1 系列版本。（VS2017 和 VS2019 动态构建还没有提供，QtWebEngine编译出错了）</p>
 <h2 id="202026">2020.2.6</h2>
-<p>Upload Windows on ARM64 cross build. (for now it only supports Qt 5.12 and later using VS2017.)</p>
+<p>上传 Windows on ARM64 的构建。（目前只支持使用 VS2017 构建 5.12 及更新版本）</p>
 <h2 id="202025">2020.2.5</h2>
-<p>Upload Qt 5.12.7 Series. (Qt 5.12.7 actually released on 31st, Jan., but I didn&rsquo;t mention it&hellip;.)<br>
-Note: QQtPatcher has got an update (to 0.7.0) after the build completed.<br>
-Since most of the modifications affects Windows builds, I only manually recompressed Windows packages.<br>
-Other packages are not recompressed.</p>
+<p>上传 Qt 5.12.7 系列。（本来 Qt 5.12.7 在 1 月 31 日就发布了，但是我没注意到。。。）</p>
+<p>注：QQtPatcher 在构建完成后进行过一波更新（到 0.7.0）。<br>
+多数修改影响 Windows 构建，所以我只重新压缩了 Windows 的包。<br>
+其余的包没有重新压缩，保持原样。</p>
 <h2 id="202023">2020.2.3</h2>
-<p>Add new configurations of static <code>full</code> packages of MinGW builds of Qt 5.12 Series.<br>
-Upload Qt 5.12.6 MinGW static <code>full</code> builds.</p>
+<p>添加新的使用 MinGW 构建 Qt 5.12 系列的静态 <code>Full</code> 版本包的配置。<br>
+上传 Qt 5.12.6 的 MinGW 静态 <code>Full</code> 构建。</p>
 <h2 id="202022">2020.2.2</h2>
-<p>Rebuild Qt 5.12.6 VS2017 &amp; VS2019 versions using newer VS.</p>
+<p>Qt5.12.6 的 VS2017 和 VS2019 版本重新构建，使用新版 VS。<br>
+解决 5.12.6 的静态 <code>Full</code> 版本没有附带 OpenSSL 库的问题。</p>
 <h2 id="202021">2020.2.1</h2>
-<p>I have switched to CentOS 8 for both Android builds and WebAssembly builds.<br>
-For now only 5.14 series is built successfully and uploaded.<br>
-CentOS 7 and Ubuntu 16.04 environment has been destructed.</p>
-<p>Upload Qt 5.14.1 Series.<br>
-Rebuild all Linux hosted Android builds and WebAssembly builds, using CentOS 8.<br>
-Since there is no host tools in OpenSSL packages, most of the OpenSSL packages are not rebuilt.</p>
+<p>Linux 主机全面切换到 CentOS 8。影响 Android 和 WebAssembly 构建。<br>
+现在只有 5.14 系列成功的构建及上传了。<br>
+CentOS 7 和 Ubuntu 16.04 的环境都爆破了。</p>
+<p>更新 Qt 5.14.1 系列。<br>
+使用 CentOS 8 重新构建所有 Linux 主机的 Android 和 WebAssembly 版本。<br>
+由于 OpenSSL 包里没有主机工具，多数 OpenSSL 包没有重新构建。</p>
 <h2 id="2020116">2020.1.16</h2>
-<p>Recompress the Qt 5.6 static <code>full</code> packages due to a script bug which causes the missing of OpenSSL libraries.<br>
-Note that the packages are not rebuilt.<br>
-(Qt 5.12 packages will update later when OpenSSL 1.1 series or Qt 5.12 series updates)</p>
+<p>由于脚本 bug，Qt 5.6 的静态 <code>Full</code> 构建的包缺少了 OpenSSL 库。目前通过手工重新压缩补回。<br>
+包并没有重新构建。<br>
+（Qt 5.12 系列将于 OpenSSL 1.1 系列或者 Qt 5.12 系列更新后进行修复）</p>
 <h2 id="202015">2020.1.5</h2>
-<p>Packages using OpenSSL 1.0.2 Series rebuilt using OpenSSL 1.0.2u.<br>
-Including all Qt 4 packages and non-macOS Qt 5.6/5.9 packages.</p>
-<p>Since OpenSSL 1.0.2 Series has reached EOL, there will be no further Qt 4 and Qt 5.6 builds.<br>
-i.e., this build is the last build of these packages.<br>
-The build script and environment of Qt 4 and 5.6 series has been destructed.</p>
+<p>使用 OpenSSL 1.0.2 系列的包重新构建，使用 OpenSSL 1.0.2u。<br>
+包括所有的 Qt 4 的包和非 macOS 的 Qt 5.6/5.9 包。</p>
+<p>由于 OpenSSL 1.0.2 已经结束生命周期，不会再有 Qt 4 和 Qt 5.6 的构建了。<br>
+也就是说这次的构建是这些包的最后一次构建了。<br>
+Qt 4 和 5.6 系列的构建脚本和环境都爆破了。</p>
 <h2 id="20191226">2019.12.26</h2>
-<p>Windows 8.1 Update build environment has been finished, and Windows Server 2008 R2 build environment has been destructed.<br>
-Upload all packages which build on Windows 8.1.</p>
+<p>Windows 8.1 的构建环境搞定了，正好删除 Windows Server 2008 R2 的构建环境。<br>
+更新所有在 Windows 8.1 上构建的包。<br>
+因 Windows SDK 版本原因编译失败的 QtSpeech 模块和 QtConnectivity 模块得以重新加入。</p>
 <h2 id="20191222">2019.12.22</h2>
-<p>Upload 5.9.9 and 5.14.0 packages.<br>
-(Qt 5.14.0 packages for android is missing due to an error during configure)</p>
+<p>更新 Qt 5.9.9 和 5.14.0 的包。<br>
+（由于 Configure 过程中发生错误，Qt 5.14.0 的安卓版本暂缺）</p>
 <h2 id="2019125">2019.12.5</h2>
-<p>Upload all macOS packages.</p>
+<p>增加对 macOS 构建的支持，目前支持 Qt 4.8.7 / 5.6.3 / 5.9.8 / 5.12.6 / 5.13.2</p>
+<p>Qt 4.8.7 / 5.6.3 使用 OS X 10.10 构建<br>
+Qt 5.9.8 / 5.12.6 使用 macOS 10.14 构建<br>
+Qt 5.13.2 使用 macOS 10.15 构建</p>
 <h2 id="2019122">2019.12.2</h2>
-<p>Uploaded all rebuilt packages after my business trip.</p>
+<p>上传了我从出差归来之后构建的所有包。<br>
+现在上传的 Qt 5.12 以后的版本附带 OpenSSL 1.1 系列的动态库。此前因疏忽而没有在构建时附带。</p>
 <h2 id="20191122">2019.11.22</h2>
-<p>Update pending after I return to China&hellip;..<br>
-Qt 5.12 Series =&gt; 5.12.6<br>
-Qt 5.13 Series =&gt; 5.13.2 -&gt; prepare to migrate to Qt 5.14 Series<br>
-OpenSSL 1.0.2 Series =&gt; OpenSSL 1.0.2t (affects Qt 4.8/5.6/5.9 Series)<br>
-OpenSSL 1.1.1 Series =&gt; OpenSSL 1.1.1d (affects Qt 5.12/5.13 Series)<br>
+<p>在我返回中国之后预计的更新。。。<br>
+Qt 5.12 系列 =&gt; 5.12.6<br>
+Qt 5.13 系列 =&gt; 5.13.2 -&gt; 准备移动到 Qt 5.14 系列<br>
+OpenSSL 1.0.2 系列 =&gt; OpenSSL 1.0.2t （影响 Qt 4.8/5.6/5.9 系列）<br>
+OpenSSL 1.1.1 系列 =&gt; OpenSSL 1.1.1d （影响 Qt 5.12/5.13 系列）<br>
 VS2017 =&gt; 15.9.17<br>
 VS2019 =&gt; 16.3.10<br>
 Android NDK =&gt; r20b</p>
-<p>OS update pending&hellip;..<br>
+<p>操作系统升级。。。。<br>
 Win10 =&gt; 10.0.18363<br>
-CentOS 7 =&gt; 7.7.1908 (Should there be a CentOS 8 environment? Currently Ubuntu 16.04 LTS is used to build the WebAssembly packages. If we change to CentOS 8 then it will become based on newer software)<br>
+CentOS 7 =&gt; 7.7.1908 （应该构建 CentOS 8 的环境了吧？现在 WebAssembly 的包使用 Ubuntu 16.04 LTS 进行构建。如果我们移动到 CentOS 8 它将使用更新的软件）<br>
 macOS 10.14 =&gt; 10.15</p>
-<p>There will be no further build of original Qt 4.8/5.6 after OpenSSL 1.0.2 Series gets EOL (will be at 2019.12.31)<br>
-There will be no further build of original Qt 5.9 after Qt 5.9 Series gets EOL (will be at 2020.5.31)<br>
-There will be no build on Windows 7 (Server 2008 R2) after Windows 7 gets EOL (will be at 2020.1.11), existing Windows 7 builds will migrate to Windows 8.1 (Server 2012 R2)</p>
+<p>OpenSSL 1.0.2 结束生命周期后，Qt 4.8/5.6 的构建将会停止（时间是 2019 年 12 月 31 日）<br>
+Qt 5.9 系列结束生命周期后，Qt 5.9 的构建将会停止（时间是 2020 年 5 月 31 日）<br>
+Windows 7 结束生命周期后，将不会再有构建在 Windows 7 (Server 2008 R2) 上运行（时间是 2020 年 1 月 11 日）。现有的 Windows 7 上的构建会迁移到 Windows 8.1 (Server 2012 R2)</p>
 <h2 id="2019826">2019.8.26</h2>
-<p>A bug about packaging has been revealed. It affects all versions of Qt 5.12 or later.<br>
-The package of 5.12.5 will fix this issue.</p>
+<p>发现了一个打包的 bug。影响 5.12 以后的所有版本。<br>
+5.12.5 版本上会修复这个问题。</p>
 <h2 id="201983">2019.8.3</h2>
-<p>Re-create this site using amWiki.<br>
-Since there is a builtin content list when using amWiki, it no longer needs to write the downloadable content list manually by now.</p>
+<p>使用 <a href="http://amwiki.org/doc/" target="_blank">amWiki</a> 重新构建网站。<br>
+因为 <a href="http://amwiki.org/doc/" target="_blank">amWiki</a> 有内置的目录，所以没有必要再手写一遍下载内容列表了。</p>
 <h2 id="2019713">2019.7.13</h2>
-<p>Rebuild <strong>ALL</strong> packages using updated QQtPatcher due to a bug in QQtPatcher.<br>
-VS2017 is updated to 15.9.14.<br>
-VS2019 is updated to 16.1.6.</p>
+<p>因为之前发现的 QQtPatcher 的 bug， <strong>所有</strong> 的包都重做了。<br>
+VS2017 更新至 15.9.14。<br>
+VS2019 更新至 16.1.6。</p>
 <h2 id="201979">2019.7.9</h2>
-<p>WebAssembly packages are updated to Qt 5.12.4 and Qt 5.13.0.</p>
+<p>WebAssembly 版本更新至 Qt 5.12.4 和 5.13.0。</p>
 <h2 id="201978">2019.7.8</h2>
-<p>Android packages are updated to Qt 5.12.4 and Qt 5.13.0. <strong>Used NDK r19c, although the file name is r20</strong><br>
-Rebuild Android packages with OpenSSL 1.1.1c and 1.0.2s.<br>
-Page links to Android/Wasm packages are put into main page instead of the &ldquo;XXX-series&rdquo; pages.</p>
+<p>Android 版本更新至 Qt 5.12.4 和 5.13.0。 <strong>因为修改构建脚本的问题文件名为 NDK r20，实际上是使用 NDK r19c 构建的，r20 构建不过</strong><br>
+Android 版本全部重新构建，使用 OpenSSL 1.0.2s 和 OpenSSL 1.1.1c。<br>
+重新整理了一下主页，防止安卓和 Wasm 平台版本找不到</p>
 <h2 id="201976">2019.7.6</h2>
-<p>Windows packages are updated to Qt 5.13.0.</p>
+<p>Windows 版本 Qt5.13.0 上传。 <strong>SSL 后端为 SChannel！！！！不是 OpenSSL 了！！！！</strong></p>
 <h2 id="201975">2019.7.5</h2>
-<p>Rebuild Windows packages with OpenSSL 1.1.1c and 1.0.2s.<br>
-Windows packages are updated to Qt 5.12.4.</p>
+<p>Windows 版本重新构建，使用 OpenSSL 1.0.2s 和 OpenSSL 1.1.1c。<br>
+Windows 版本更新至 Qt 5.12.4。</p>
 <h2 id="2019526">2019.5.26</h2>
-<p>Rebuild VS2017/VS2019 packages with update VS version.</p>
+<p>使用更新的 VS 版本重新构建 VS2017 和 VS2019 的包。</p>
 <h2 id="2019519">2019.5.19</h2>
-<p>Linux hosted Android packages rebuilt with updated configurations.<br>
-Upload Linux hosted WebAssembly package(No &rsquo;s&rsquo;&hellip;)<br>
-Since SF.net reworked, the files are reuploaded to SF.net.</p>
-<p>(Why can&rsquo;t I use SFTP to manage the files on OSDN?????)</p>
+<p>更新了配置，重新构建了 Linux 主机的安卓版本的包。<br>
+上传 Linux 主机的 WebAssembly 版本的包。<br>
+SF.net 恢复，文件重新上传到 SF.net。</p>
+<p>（为什么我不能在 OSDN 上使用 SFTP 去管理文件？）</p>
 <h2 id="2019515">2019.5.15</h2>
-<p>Windows packages rebuilt with updated configurations.<br>
-Since SF.net can&rsquo;t be accessed using China Telecom in Dalian, China, the files are reuploaded to OSDN.</p>
+<p>更新了配置，重新构建了 Windows 版本的包。<br>
+由于中国大连的中国电信暂时无法访问 SF.net，文件在 OSDN 上重新传了一份。</p>
 <h2 id="2019422">2019.4.22</h2>
-<p>Upload 5.9.8 and 5.12.3 VS2015 packages.</p>
+<p>上传 5.9.8 和 5.12.3 的 VS2015 版本的包。</p>
 <h2 id="2019420">2019.4.20</h2>
-<p>Finish 5.9.8 and 5.12.3 series.</p>
+<p>完成 5.9.8 和 5.12.3 系列版本。</p>
 <h2 id="2019419">2019.4.19</h2>
-<p>Removed All old packages.<br>
-Upload new packages built since Mar., 2019.</p>
-<h2 id="2017-年以前黑历史">2017 年以前（黑历史）</h2>
+<p>删除旧包。<br>
+上传自 2019 年 3 月以来的所有新构建的包。</p>
+<h2 id="2017-年以前黑历史仅有嘤文">2017 年以前（黑历史，仅有嘤文）</h2>
 <p>是的，我想写一些东西，但是不知道怎么写。。。</p>
 <h3 id="2016723">2016.7.23</h3>
 <p>Upload 5.6.1-1/5.7.0 VS2015 static builds again due to link issue.</p>
@@ -652,7 +656,7 @@ Upload 5.6.1 VS2015 Static packages.</p>
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 14 Jan 2023 07:27:31 UTC</p>
+Site generated: Sun, 15 Jan 2023 02:16:53 UTC</p>
 
         </div>
       </div>

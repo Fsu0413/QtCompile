@@ -98,6 +98,7 @@
     <li><a href="#弃用-windows-10-1809-之前的版本以及-32-位-windows-重要备注2022-年-8-月-21-日更新">弃用 Windows 10 1809 之前的版本以及 32 位 Windows （重要备注！！）（2022 年 8 月 21 日更新）</a></li>
     <li><a href="#对当前构建的-qt-版本的已经决定的结束支持日期2023-年-1-月-7-日更新">对当前构建的 Qt 版本的已经决定的结束支持日期（2023 年 1 月 7 日更新）</a></li>
     <li><a href="#之后可能会更新的内容">之后可能会更新的内容</a></li>
+    <li><a href="#已有的补丁">已有的补丁</a></li>
   </ul>
 </nav>
             </div>
@@ -402,7 +403,55 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
 <h2 id="之后可能会更新的内容">之后可能会更新的内容</h2>
 <p><del>使用安卓 NDK r23 系列构建 Qt 5.15.7 以及之后的版本。</del> （构建失败了，包括 5.15.8 也失败了，将于 5.15.9 再次尝试）<br>
 使用带 MinGW-w64 v9 的 GCC 11 来构建 Qt 5.15.9 以及之后的版本。<br>
-使用 macOS 13 来构建 Qt 6.5 以及之后的版本。届时也会尝试在上面构建 Qt 6.2 系列。</p>
+使用 macOS 13 来构建 Qt 6.5 以及之后的版本。届时也会尝试在上面构建 Qt 6.2 系列。<br>
+在 M1 芯片上 / 为了 M1 芯片，构建 Qt 5.15.9 以及之后的版本的 macOS 版本。</p>
+<h2 id="已有的补丁">已有的补丁</h2>
+<p>从 2022 年 3 月 12 日开始我的 Qt 构建包含部分 Qt 提供的补丁。<br>
+多数是可以从 <a href="https://download.qt.io/" target="_blank">Qt 下载站</a> 下载的 CVE 补丁，另外一些是可以从 Qt Gerrit 下载的一些修复构建的补丁。</p>
+<p>下面这个表列出了我构建每个版本时所应用的补丁。<br>
+注：我不会对当前正在活跃开发的 Qt 应用补丁，而是单纯等待新版本发布。所以应用补丁的只有商业 LTS 版本和结束生命周期的版本。</p>
+<table>
+<thead>
+<tr>
+<th>Qt 版本</th>
+<th>（仅限 6.2.4）<br />MinGW 主机修复</th>
+<th>CVE-2022-<br />25255</th>
+<th>CVE-2022-<br />25643</th>
+<th>CVE-2018-<br />25032</th>
+<th>CVE-2022-27404-<br />27405-27406</th>
+<th>CVE-2022-<br />37434</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5.12.12</td>
+<td>-</td>
+<td><a href="https://codereview.qt-project.org/c/qt/qtbase/&#43;/396020" target="_blank">√</a></td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>5.15.8</td>
+<td>-</td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2022-25255-qprocess5-15.diff" target="_blank">√</a></td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2022-25643-5.15.diff" target="_blank">√</a></td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2018-25032-qtbase-5.15.diff" target="_blank">√</a></td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2022-27404-27405-27406-qtbase-5.15.diff" target="_blank">√</a></td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2022-37434-qtbase-5.15.patch" target="_blank">√</a></td>
+</tr>
+<tr>
+<td>6.2.4</td>
+<td><a href="https://codereview.qt-project.org/c/qt/qtbase/&#43;/401758" target="_blank">√</a></td>
+<td>附带</td>
+<td>附带</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2018-25032-qtbase-6.2.diff" target="_blank">√</a></td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2022-27404-27405-27406-qtbase-6.2.diff" target="_blank">√</a></td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2022-37434-qtbase-6.2.patch" target="_blank">√</a></td>
+</tr>
+</tbody>
+</table>
 
             <footer class="footline">
             </footer>
@@ -511,7 +560,7 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 14 Jan 2023 07:27:31 UTC</p>
+Site generated: Sun, 15 Jan 2023 02:16:53 UTC</p>
 
         </div>
       </div>

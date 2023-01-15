@@ -122,7 +122,7 @@ I may purchage the service later when the service seems good enough for me.</p>
 <a href="https://fsu0413.gitee.io/qtcompile/" target="_blank">Gitee Pages (The Greatest China, with Chinese-S as default language)</a></p>
 <h2 id="disclaimer">Disclaimer</h2>
 <p>These binaries built by Fsu0413 are <strong>TOTALLY UNTESTED</strong>. Use at your own risk.<br>
-The code used is downloaded from <a href="http://download.qt.io" target="_blank">here</a>, I made no changes to the source/generated files.<br>
+The code used is downloaded from <a href="http://download.qt.io" target="_blank">here</a>, I made no changes to the source/generated files, except for officially announced patches.<br>
 <strong>THESE PACKAGE ARE PROVIDED &ldquo;As is&rdquo;, I have no responsibility that you mess up your things with this binaries.</strong><br>
 Thanks for The Qt Company Ltd. and the programmers of Qt for their fantastic work!!</p>
 <h2 id="notes-for-this-repo">Notes for this repo</h2>
@@ -136,17 +136,14 @@ Thanks for The Qt Company Ltd. and the programmers of Qt for their fantastic wor
 <h2 id="update-history">Update History</h2>
 <h3 id="202318">2023.1.8</h3>
 <p>Update Qt 6.4.2 / Qt 5.15.8 packages.<br>
-Update Qt 6.2.4 packages built with OpenSSL 3.0.7 with the minor fix.</p>
+Update Qt 6.2.4 packages built with OpenSSL 3.0.7 with <a href="https://www.openssl.org/news/secadv/20221213.txt" target="_blank">the minor fix</a>.</p>
 <p>Qt 6 Linux hosted cross built packages has a problem where the host tool was not properly deployed.<br>
-This time the package is rebuilt with fix.<br>
-Only Qt 6.2.4 Linux hosted WebAssembly package is rebuilt without other modification.</p>
+This time the package is rebuilt with fix.</p>
 <h3 id="20221120">2022.11.20</h3>
-<p>Update all cross built package with CMake toolchain refactored. Currently it can automatically use the bundled host tool using bundled &lsquo;qt-cmake&rsquo; script.<br>
-The updated packages are following:<br>
-Qt 6.2.4 Android / WebAssembly packages<br>
-Qt 6.4.1 Android / WebAssembly packages</p>
+<p>Update all cross built package with CMake toolchain refactored. Currently it can automatically use the bundled host tool using bundled <code>qt-cmake</code> script.<br>
+Qt 6.2.4 / 6.4.1, Android / WebAssembly packages are all updated.</p>
 <h3 id="20221119">2022.11.19</h3>
-<p>Update Qt 6.4.1 WebAssembly macOS host with Thread feature ON. (I did only modified x86_64 build and&hellip; I am using arm64 build for base of cross builds and it&rsquo;s gone)</p>
+<p>Update Qt 6.4.1 WebAssembly macOS host with Thread feature ON. (I did only modified x86_64 build and&hellip; I am using arm64 build for base of universal builds and it&rsquo;s gone)</p>
 <h3 id="20221118">2022.11.18</h3>
 <p>Update Qt 6.4.1.<br>
 Update Qt 6 WebAssembly with Thread feature ON. (Previous versions are missing this feature)<br>
@@ -269,7 +266,7 @@ Update Qt 5.12.12 with OpenSSL 1.1.1s.</p>
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 14 Jan 2023 07:27:32 UTC</p>
+Site generated: Sun, 15 Jan 2023 02:16:53 UTC</p>
 
         </div>
       </div>
