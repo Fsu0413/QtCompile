@@ -98,6 +98,7 @@
     <li><a href="#windows-10-before-version-1809-and-32-bit-windows-deprecation-important-notes-updated-2022821">Windows 10 before version 1809 and 32-bit Windows deprecation (IMPORTANT NOTES!!) (updated 2022.8.21)</a></li>
     <li><a href="#decided-eol-of-current-building-qt-lts-versions-updated-202317">Decided EOL of current building Qt LTS versions (Updated 2023.1.7)</a></li>
     <li><a href="#incoming-update-for-future-release">Incoming update for future release</a></li>
+    <li><a href="#existing-patches">Existing Patches</a></li>
   </ul>
 </nav>
             </div>
@@ -402,7 +403,55 @@ If subsequent version of Qt 5.15 remains private we won&rsquo;t upgrade OpenSSL 
 <h2 id="incoming-update-for-future-release">Incoming update for future release</h2>
 <p><del>Use Android NDK r23 series for building Qt 5.15.7 onwards.</del> (Build failed also on 5.15.8. Will test it on 5.15.9)<br>
 Use GCC 11 with MinGW-w64 v9 for building Qt 5.15.9 onwards.<br>
-Use macOS 13 for building Qt 6.5 onwards. Will check if Qt 6.2 series can be built on it.</p>
+Use macOS 13 for building Qt 6.5 onwards. Will check if Qt 6.2 series can be built on it.<br>
+Build Qt 5.15.9 and later for macOS on / for Apple Silicon.</p>
+<h2 id="existing-patches">Existing Patches</h2>
+<p>Starting from 2022.3.12 I am shipping Qt with patches from Qt.<br>
+Most of them are CVE patches which can be downloaded from <a href="https://download.qt.io/" target="_blank">Qt Downloads</a>, others are build fixes which are download from Qt Gerrit.</p>
+<p>Following is a table for patches of each version I am currently building.<br>
+Note that I won&rsquo;t patch an active version of Qt and will simply wait for future release. So only Commericial LTS and EOL version are patched.</p>
+<table>
+<thead>
+<tr>
+<th>Qt Version</th>
+<th>(6.2.4 specific)<br />MinGW host fix</th>
+<th>CVE-2022-<br />25255</th>
+<th>CVE-2022-<br />25643</th>
+<th>CVE-2018-<br />25032</th>
+<th>CVE-2022-27404-<br />27405-27406</th>
+<th>CVE-2022-<br />37434</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5.12.12</td>
+<td>-</td>
+<td><a href="https://codereview.qt-project.org/c/qt/qtbase/&#43;/396020" target="_blank">√</a></td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>5.15.8</td>
+<td>-</td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2022-25255-qprocess5-15.diff" target="_blank">√</a></td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2022-25643-5.15.diff" target="_blank">√</a></td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2018-25032-qtbase-5.15.diff" target="_blank">√</a></td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2022-27404-27405-27406-qtbase-5.15.diff" target="_blank">√</a></td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2022-37434-qtbase-5.15.patch" target="_blank">√</a></td>
+</tr>
+<tr>
+<td>6.2.4</td>
+<td><a href="https://codereview.qt-project.org/c/qt/qtbase/&#43;/401758" target="_blank">√</a></td>
+<td>shipped</td>
+<td>shipped</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2018-25032-qtbase-6.2.diff" target="_blank">√</a></td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2022-27404-27405-27406-qtbase-6.2.diff" target="_blank">√</a></td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2022-37434-qtbase-6.2.patch" target="_blank">√</a></td>
+</tr>
+</tbody>
+</table>
 
             <footer class="footline">
             </footer>
@@ -511,7 +560,7 @@ Use macOS 13 for building Qt 6.5 onwards. Will check if Qt 6.2 series can be bui
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 14 Jan 2023 07:27:33 UTC</p>
+Site generated: Sun, 15 Jan 2023 02:16:50 UTC</p>
 
         </div>
       </div>

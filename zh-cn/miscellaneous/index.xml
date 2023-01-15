@@ -64,14 +64,15 @@ libclang_static.lib 是 Qt 那帮人自己使用脚本打包的。
       <link>/zh-cn/miscellaneous/histories/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/zh-cn/miscellaneous/histories/index.html</guid>
-      <description>翻译 有（gu）时（gu）间（gu）再（bu）翻译吧（le）。
-2022.10.4 Update Qt 6.4.0.
-Update Qt 6.2.4 static builds with static runtime. Previous versions are without it.
-Update Qt 6.2.4 llvm-mingw builds built with llvm 15.
-Qt 6.3 builds are removed.
-2022.9.16 Update Qt 6.2.4 / 5.15.6 with updated patch of CVE-2022-37434. Qt 6.2 are rebuilt with QtWebEngine 6.3.2.
-Update to Xcode 14 and rebuild all of macOS hosted Qt 6.2 onwards.
-2022.9.12 Update Qt 6.2.4 / 6.3.2 WebAssembly packages.</description>
+      <description>2022.10.4 更新 Qt 6.4.0。
+更新 Qt 6.2.4 静态构建，使用静态运行时。以前的版本不使用静态运行时。
+更新 Qt 6.2.4 LLVM-MinGW 构建。使用 LLVM 15。
+删除 Qt 6.3 系列的构建。
+2022.9.16 更新 Qt 6.2.4 和 5.15.6，附带更新的 CVE-2022-37434 的补丁。Qt 6.2 系列重新构建，附带 QtWebEngine 6.3.2。
+升级到 Xcode 14，重新构建所有的 Qt 6.2 以上的 macOS 主机 / 交叉构建。
+2022.9.12 更新 Qt 6.2.4 / 6.3.2 WebAssembly 包。现在启用了预编译头文件支持。
+更新 Qt 6.2.4 / 6.3.2 LLVM-MinGW 包。现在启用了 WMF 支持。
+更新 Qt 6.4.0-beta4。所有原来在 6.3 上的配置全部可用。使用 RockyLinux 9 进行 Qt 6.4.0 的 Linux 交叉构建主机。WebAssembly 和 LLVM-MinGW 包都使用了今天更新的配置进行构建。</description>
     </item>
   </channel>
 </rss>
