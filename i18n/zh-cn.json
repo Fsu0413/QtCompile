@@ -71,5 +71,17 @@
     },
     "fsqtbuild_i18n_odbc_sqlite": {
         "other": "ODBC 和 SQLite（随 Qt 一起分发）通过使用 `%s` 内建在这份包里。"
+    },
+    "fsqtbuild_i18n_icu": {
+        "other": "所有构建配置了 `%s` 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。"
+    },
+    "fsqtbuild_i18n_emsdk": {
+        "other": "所有包使用了于 Qt Wiki 中推荐的 emscripten SDK 版本 %s。  \nWebAssembly 不支持二进制兼容性。在构建自己的代码的时候必须要使用 SDK 版本 %s，否则会出现不可预料的错误。"
+    },
+    "fsqtbuild_i18n_emsdk_thread": {
+        "other": "所有构建通过使用 `%s` 启用了线程支持。"
+    },
+    "fsqtbuild_i18n_wasm_static": {
+        "other": "Qt 在 WebAssembly 平台上只能构建静态库。"
     }
 }

@@ -1,0 +1,16 @@
+{{- $emsdkver := .Get 0 -}}
+{{- $fsqtbuildwasmcontent := printf (T "fsqtbuild_i18n_emsdk") $emsdkver $emsdkver -}}
+{{- if .Get 1 -}}
+{{- $qtver := .Get 2 -}}
+{{- $threadInstruction := cond (eq $qtver 6) "-DFEATURE_thread=ON" "-feature-threads" -}}
+{{- $fsqtbuildwasmthreadcontent := printf (T "fsqtbuild_i18n_emsdk_thread") $threadInstruction -}}
+{{- $fsqtbuildwasmcontent2 := print $fsqtbuildwasmcontent -}}
+{{- $fsqtbuildwasmcontent = print $fsqtbuildwasmcontent2 "\n\n" $fsqtbuildwasmthreadcontent -}}
+{{- end -}}
+{{ partial "shortcodes/notice.html" (dict
+  "context" .
+  "style" "info"
+  "title" (T "Note")
+  "icon" "fas fa-info-circle"
+  "content" ((print $fsqtbuildwasmcontent) | markdownify)
+)}}

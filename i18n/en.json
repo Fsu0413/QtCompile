@@ -71,5 +71,17 @@
     },
     "fsqtbuild_i18n_odbc_sqlite": {
         "other": "ODBC and SQLite (distributed with Qt) are built in the package using `%s`"
+    },
+    "fsqtbuild_i18n_icu": {
+        "other": "All builds have `%s` because I think the ICU library is too big and, in most of the conditions, useless for common users."
+    },
+    "fsqtbuild_i18n_emsdk": {
+        "other": "All packages are built using emscripten SDK %s as recommended in Qt Wiki.  \nWebAssembly doesn't support ABI compatibility. You MUST use SDK %s for building your own code, otherwise unpredicted error may occur."
+    },
+    "fsqtbuild_i18n_emsdk_thread": {
+        "other": "All builds have thread feature enabled using `%s`."
+    },
+    "fsqtbuild_i18n_wasm_static": {
+        "other": "Qt for WebAssembly can only be built to static libs."
     }
 }
