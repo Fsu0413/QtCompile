@@ -108,37 +108,38 @@
 <div class="box notices cstyle warning">
   <div class="box-label"><i class="fas fa-exclamation-triangle"></i> 重要</div>
   <div class="box-content">
-<p>FINAL VERSION, NO MORE UPDATES EVEN IF REQUESTED, BUILD ENVIRONMENT HAS BEEN DESTRUCTED</p>
-  </div>
+这是最终版。即使有需求也不会再更新。构建环境已经爆破  </div>
 </div>
+
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
   <div class="box-content">
-<p>SQLite(distributed with Qt) are built in the backage and have -plugin-sql-sqlite</p>
-  </div>
+SQLite（随 Qt 一起分发）通过使用 <code>-sql-sqlite</code> 内建在这份包里。  </div>
 </div>
+
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
   <div class="box-content">
-<p>All builds have -no-icu because I think the ICU library is too big and, in most of the conditions, useless for common users.</p>
-  </div>
+所有构建配置了 <code>-no-icu</code> 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。  </div>
 </div>
+
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
   <div class="box-content">
-<p>All builds are using emscripten SDK 1.38.16 as recommended in Qt Wiki.</p>
-  </div>
+所有包使用了于 Qt Wiki 中推荐的 emscripten SDK 版本 1.38.16。<br>
+WebAssembly 不支持二进制兼容性。在构建自己的代码的时候必须要使用 SDK 版本 1.38.16，否则会出现不可预料的错误。  </div>
 </div>
+
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
   <div class="box-content">
-<p>Qt for WebAssembly can&rsquo;t be built to shared libs.</p>
-  </div>
+Qt 在 WebAssembly 平台上只能构建静态库。  </div>
 </div>
+
 <h2 id="static-builds">Static Builds</h2>
 <h3 id="linux-host">Linux Host</h3>
 <table>
@@ -290,7 +291,7 @@
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sun, 15 Jan 2023 02:16:53 UTC</p>
+Site generated: Mon, 16 Jan 2023 15:13:33 UTC</p>
 
         </div>
       </div>

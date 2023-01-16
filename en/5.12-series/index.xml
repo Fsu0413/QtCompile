@@ -10,18 +10,15 @@
       <link>/qtcompile/en/5.12-series/5.12.12-for-windows/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/qtcompile/en/5.12-series/5.12.12-for-windows/index.html</guid>
-      <description>Note ODBC and SQLite(distributed with Qt) are built in the backage. All Dynamic builds have -plugin-sql-xxx.
-Note All builds have -openssl-linked. It links to an OpenSSL 1.1.1 series which redistributed in the package. Dynamic builds include dynamic OpenSSL while static builds include static OpenSSL.
-Note All builds have -no-icu because I think the ICU library is too big and, in most of the conditions, useless for common users.
-Dynamic / Shared Builds Windows-MSVC Qt5.</description>
+      <description>Note ODBC and SQLite (distributed with Qt) are built in the package using -sql-*** Note All builds have -openssl-linked. It links to an OpenSSL 1.1.1 series which redistributed in the package. Dynamic builds include dynamic OpenSSL while static builds include static OpenSSL.
+Note All builds have -no-icu because I think the ICU library is too big and, in most of the conditions, useless for common users. Dynamic / Shared Builds Windows-MSVC Qt5.</description>
     </item>
     <item>
       <title>5.12.12 for Android</title>
       <link>/qtcompile/en/5.12-series/5.12.12-for-android/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/qtcompile/en/5.12-series/5.12.12-for-android/index.html</guid>
-      <description>Note SQLite(distributed with Qt) are built in the backage and have -plugin-sql-sqlite
-Note All packages have -openssl-linked, Since BoringSSL, which is used in Android 6.0 or later, is NOT API COMPATIBLE WITH OPENSSL, we link it to a static OpenSSL 1.1.1 series instead of system SSL library.
+      <description>Note SQLite (distributed with Qt) are built in the package using -sql-sqlite Note All packages have -openssl-linked, Since BoringSSL, which is used in Android 6.0 or later, is NOT API COMPATIBLE WITH OPENSSL, we link it to a static OpenSSL 1.1.1 series instead of system SSL library.
 Note All builds have -no-icu because I think the ICU library is too big and, in most of the conditions, useless for common users.</description>
     </item>
   </channel>

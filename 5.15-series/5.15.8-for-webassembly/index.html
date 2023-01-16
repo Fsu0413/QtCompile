@@ -108,30 +108,33 @@
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
   <div class="box-content">
-<p>SQLite(distributed with Qt) are built in the backage and have <code>-plugin-sql-sqlite</code></p>
-  </div>
+SQLite（随 Qt 一起分发）通过使用 <code>-sql-sqlite</code> 内建在这份包里。  </div>
 </div>
+
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
   <div class="box-content">
-<p>All builds have <code>-no-icu</code> because I think the ICU library is too big and, in most of the conditions, useless for common users.</p>
-  </div>
+所有构建配置了 <code>-no-icu</code> 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。  </div>
 </div>
+
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
   <div class="box-content">
-<p>All builds are using emscripten SDK 1.39.8 as recommended in Qt Wiki. All builds are with <code>-feature-threads</code>.</p>
+<p>所有包使用了于 Qt Wiki 中推荐的 emscripten SDK 版本 1.39.8。<br>
+WebAssembly 不支持二进制兼容性。在构建自己的代码的时候必须要使用 SDK 版本 1.39.8，否则会出现不可预料的错误。</p>
+<p>所有构建通过使用 <code>-feature-threads</code> 启用了线程支持。</p>
   </div>
 </div>
+
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
   <div class="box-content">
-<p>Qt for WebAssembly can&rsquo;t be built to shared libs.</p>
-  </div>
+Qt 在 WebAssembly 平台上只能构建静态库。  </div>
 </div>
+
 
 <div class="box notices cstyle primary">
   <div class="box-label"><i class="fas fa-check-square"></i> CVE issue patched</div>
@@ -316,7 +319,7 @@ CVE-2022-37434</p>
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sun, 15 Jan 2023 02:16:52 UTC</p>
+Site generated: Mon, 16 Jan 2023 15:13:33 UTC</p>
 
         </div>
       </div>

@@ -10,41 +10,49 @@
       <link>/qtcompile/5.15-series/5.15.8-for-windows/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/qtcompile/5.15-series/5.15.8-for-windows/index.html</guid>
-      <description>备注 ODBC and SQLite(distributed with Qt) are built in the backage. All Dynamic builds have -plugin-sql-xxx.
-备注 All builds have -schannel which use Windows Secure Channel SSL backend.
-备注 All builds have -no-icu because I think the ICU library is too big and, in most of the conditions, useless for common users.
-备注 Note: Qt release Qt 5.15 series opensource version a year later than commerical version, while still release QtWebEngine at same time commerical version released.</description>
+      <description>备注 ODBC 和 SQLite（随 Qt 一起分发）通过使用 -sql-*** 内建在这份包里。 备注 All builds have -schannel which use Windows Secure Channel SSL backend.
+备注 所有构建配置了 -no-icu 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 Note: Qt release Qt 5.15 series opensource version a year later than commerical version, while still release QtWebEngine at same time commerical version released.
+That is because QtWebEngine use a thirdparty project which features a license which don&amp;rsquo;t allow closed source.
+Qt Commerical-Only LTS version has had its version up to 5.</description>
     </item>
     <item>
       <title>5.15.8 的 macOS 版本</title>
       <link>/qtcompile/5.15-series/5.15.8-for-macos/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/qtcompile/5.15-series/5.15.8-for-macos/index.html</guid>
-      <description>备注 SQLite(distributed with Qt) are built in the backage and have -plugin-sql-sqlite
-备注 All builds have -no-openssl -securetransport. It means that we are using Secure Transport library of macOS to provide SSL connections.
-备注 All builds have -no-icu because I think the ICU library is too big and, in most of the conditions, useless for common users.
-备注 No QtWebEngine in this version.
-CVE issue patched All builds have following CVEs fixed:</description>
+      <description>备注 SQLite（随 Qt 一起分发）通过使用 -sql-sqlite 内建在这份包里。 备注 All builds have -no-openssl -securetransport. It means that we are using Secure Transport library of macOS to provide SSL connections.
+备注 所有构建配置了 -no-icu 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 No QtWebEngine in this version.
+CVE issue patched All builds have following CVEs fixed:
+CVE-2022-25255
+CVE-2022-25643
+CVE-2018-25032
+CVE-2022-27404-27405-27406
+CVE-2022-37434
+Dynamic / Shared Builds macOS-x86_64 Qt5.15.8-macOS-x86_64-AppleClang14.0.0-20230108.tar.xz 下载地址： OSDN 链接 SourceForge 链接 构建主机：macOS 12.6.2工具链版本：AppleClang 14.0.0备注：NO WEBENGINE because of compile failure Qt5.</description>
     </item>
     <item>
       <title>5.15.8 的安卓版本</title>
       <link>/qtcompile/5.15-series/5.15.8-for-android/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/qtcompile/5.15-series/5.15.8-for-android/index.html</guid>
-      <description>备注 SQLite(distributed with Qt) are built in the backage and have -plugin-sql-sqlite
-备注 All packages have -openssl-linked, Since BoringSSL, which is used in Android 6.0 or later, is NOT API COMPATIBLE WITH OPENSSL, we link it to a static OpenSSL 1.1.1 series instead of system SSL library.
-备注 All builds have -no-icu because I think the ICU library is too big and, in most of the conditions, useless for common users.</description>
+      <description>备注 SQLite（随 Qt 一起分发）通过使用 -sql-sqlite 内建在这份包里。 备注 All packages have -openssl-linked, Since BoringSSL, which is used in Android 6.0 or later, is NOT API COMPATIBLE WITH OPENSSL, we link it to a static OpenSSL 1.1.1 series instead of system SSL library.
+备注 所有构建配置了 -no-icu 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 All builds are using NDK r21e with -android-ndk-platform android-21, it means the APK built using these packages may be not able to run on Android 5.</description>
     </item>
     <item>
       <title>5.15.8 的 WebAssembly 版本</title>
       <link>/qtcompile/5.15-series/5.15.8-for-webassembly/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/qtcompile/5.15-series/5.15.8-for-webassembly/index.html</guid>
-      <description>备注 SQLite(distributed with Qt) are built in the backage and have -plugin-sql-sqlite
-备注 All builds have -no-icu because I think the ICU library is too big and, in most of the conditions, useless for common users.
-备注 All builds are using emscripten SDK 1.39.8 as recommended in Qt Wiki. All builds are with -feature-threads.
-备注 Qt for WebAssembly can&amp;rsquo;t be built to shared libs.
-CVE issue patched All builds have following CVEs fixed:</description>
+      <description>备注 SQLite（随 Qt 一起分发）通过使用 -sql-sqlite 内建在这份包里。 备注 所有构建配置了 -no-icu 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 所有包使用了于 Qt Wiki 中推荐的 emscripten SDK 版本 1.39.8。
+WebAssembly 不支持二进制兼容性。在构建自己的代码的时候必须要使用 SDK 版本 1.39.8，否则会出现不可预料的错误。
+所有构建通过使用 -feature-threads 启用了线程支持。
+备注 Qt 在 WebAssembly 平台上只能构建静态库。 CVE issue patched All builds have following CVEs fixed:
+CVE-2022-25255
+CVE-2022-25643
+CVE-2018-25032
+CVE-2022-27404-27405-27406
+CVE-2022-37434
+Static Builds Windows host Qt5.15.8-WebAssembly-emscripten1.39.8-xWindows-x86_64-MinGW8.1.0-20230108.7z 下载地址： OSDN 链接 SourceForge 链接 构建主机：Windows 11 10.0.22621工具链版本：emscripten-1.39.8备注： Linux Host Qt5.15.8-WebAssembly-emscripten1.39.8-xLinux-x86_64-gcc8.5.0-20230107.tar.xz 下载地址： OSDN 链接 SourceForge 链接 构建主机：RockyLinux 8.</description>
     </item>
   </channel>
 </rss>

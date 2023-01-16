@@ -108,30 +108,33 @@
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
   <div class="box-content">
-<p>SQLite(distributed with Qt) are built in the backage and have <code>-plugin-sql-sqlite</code></p>
-  </div>
+SQLite (distributed with Qt) are built in the package using <code>-sql-sqlite</code>  </div>
 </div>
+
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
   <div class="box-content">
-<p>All builds have <code>-no-icu</code> because I think the ICU library is too big and, in most of the conditions, useless for common users.</p>
-  </div>
+All builds have <code>-no-icu</code> because I think the ICU library is too big and, in most of the conditions, useless for common users.  </div>
 </div>
+
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
   <div class="box-content">
-<p>All builds are using emscripten SDK 1.39.8 as recommended in Qt Wiki. All builds are with <code>-feature-threads</code>.</p>
+<p>All packages are built using emscripten SDK 1.39.8 as recommended in Qt Wiki.<br>
+WebAssembly doesn&rsquo;t support ABI compatibility. You MUST use SDK 1.39.8 for building your own code, otherwise unpredicted error may occur.</p>
+<p>All builds have thread feature enabled using <code>-feature-threads</code>.</p>
   </div>
 </div>
+
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
   <div class="box-content">
-<p>Qt for WebAssembly can&rsquo;t be built to shared libs.</p>
-  </div>
+Qt for WebAssembly can only be built to static libs.  </div>
 </div>
+
 
 <div class="box notices cstyle primary">
   <div class="box-label"><i class="fas fa-check-square"></i> CVE issue patched</div>
@@ -316,7 +319,7 @@ CVE-2022-37434</p>
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sun, 15 Jan 2023 02:16:53 UTC</p>
+Site generated: Mon, 16 Jan 2023 15:13:34 UTC</p>
 
         </div>
       </div>
