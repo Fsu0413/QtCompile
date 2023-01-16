@@ -10,19 +10,16 @@
       <link>/zh-cn/5.12-series/5.12.12-for-windows/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/zh-cn/5.12-series/5.12.12-for-windows/index.html</guid>
-      <description>备注 ODBC and SQLite(distributed with Qt) are built in the backage. All Dynamic builds have -plugin-sql-xxx.
-备注 All builds have -openssl-linked. It links to an OpenSSL 1.1.1 series which redistributed in the package. Dynamic builds include dynamic OpenSSL while static builds include static OpenSSL.
-备注 All builds have -no-icu because I think the ICU library is too big and, in most of the conditions, useless for common users.
-Dynamic / Shared Builds Windows-MSVC Qt5.</description>
+      <description>备注 ODBC 和 SQLite（随 Qt 一起分发）通过使用 -sql-*** 内建在这份包里。 备注 All builds have -openssl-linked. It links to an OpenSSL 1.1.1 series which redistributed in the package. Dynamic builds include dynamic OpenSSL while static builds include static OpenSSL.
+备注 所有构建配置了 -no-icu 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 Dynamic / Shared Builds Windows-MSVC Qt5.12.12-Windows-x86-VS2015-20221104.7z 下载地址： OSDN 链接 SourceForge 链接 构建主机：Windows 8.1 Update工具链版本：VS2015 Update 3备注：NO WEBENGINE because Qt has no support for QtWebEngine 5.12 for Visual Studio 2015 Qt5.</description>
     </item>
     <item>
       <title>5.12.12 的安卓版本</title>
       <link>/zh-cn/5.12-series/5.12.12-for-android/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/zh-cn/5.12-series/5.12.12-for-android/index.html</guid>
-      <description>备注 SQLite(distributed with Qt) are built in the backage and have -plugin-sql-sqlite
-备注 All packages have -openssl-linked, Since BoringSSL, which is used in Android 6.0 or later, is NOT API COMPATIBLE WITH OPENSSL, we link it to a static OpenSSL 1.1.1 series instead of system SSL library.
-备注 All builds have -no-icu because I think the ICU library is too big and, in most of the conditions, useless for common users.</description>
+      <description>备注 SQLite（随 Qt 一起分发）通过使用 -sql-sqlite 内建在这份包里。 备注 All packages have -openssl-linked, Since BoringSSL, which is used in Android 6.0 or later, is NOT API COMPATIBLE WITH OPENSSL, we link it to a static OpenSSL 1.1.1 series instead of system SSL library.
+备注 所有构建配置了 -no-icu 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 All builds are using NDK r21e with -android-ndk-platform android-21, it means the APK built using these packages may be not able to run on Android 5.</description>
     </item>
   </channel>
 </rss>

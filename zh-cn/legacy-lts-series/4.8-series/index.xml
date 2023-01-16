@@ -10,21 +10,17 @@
       <link>/zh-cn/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/zh-cn/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html</guid>
-      <description>重要 FINAL VERSION, NO MORE UPDATES EVEN IF REQUESTED, BUILD ENVIRONMENT HAS BEEN DESTRUCTED
-备注 ODBC and SQLite(distributed with Qt) are built in the backage. All Dynamic builds have -plugin-sql-xxx.
-备注 All builds have -openssl-linked. It links to a dynamic OpenSSL 1.0.2 series which redistributed in the package.
-Dynamic / Shared Builds Windows-MSVC Qt4.8.7-Windows-x86-VS2010-20200104.7z 下载地址： OSDN 链接 SourceForge 链接 构建主机：Windows XP SP3工具链版本：VS2010 SP1备注： Windows-MinGW Qt4.8.7-Windows-x86-MinGW4.9.4-20200104.7z 下载地址： OSDN 链接 SourceForge 链接 构建主机：Windows XP SP3工具链版本：MinGW-w64 v5 w/ GCC 4.</description>
+      <description> 重要 这是最终版。即使有需求也不会再更新。构建环境已经爆破 备注 ODBC 和 SQLite（随 Qt 一起分发）通过使用 -plugin-sql-*** 内建在这份包里。 备注 All builds have -openssl-linked. It links to a dynamic OpenSSL 1.0.2 series which redistributed in the package.
+Dynamic / Shared Builds Windows-MSVC Qt4.8.7-Windows-x86-VS2010-20200104.7z 下载地址： OSDN 链接 SourceForge 链接 构建主机：Windows XP SP3工具链版本：VS2010 SP1备注： Windows-MinGW Qt4.8.7-Windows-x86-MinGW4.9.4-20200104.7z 下载地址： OSDN 链接 SourceForge 链接 构建主机：Windows XP SP3工具链版本：MinGW-w64 v5 w/ GCC 4.9.4使用的 MinGW： 32 位 MinGW-w64 v5 w/ GCC 4.9.4 备注： </description>
     </item>
     <item>
       <title>4.8.7 的 macOS 版本</title>
       <link>/zh-cn/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/zh-cn/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html</guid>
-      <description>重要 FINAL VERSION, NO MORE UPDATES EVEN IF REQUESTED, BUILD ENVIRONMENT HAS BEEN DESTRUCTED
-备注 SQLite(distributed with Qt) are built in the backage and have -plugin-sql-sqlite
-备注 All builds have -openssl-linked. It links to a dynamic OpenSSL 1.0.2 series which redistributed in the package.
+      <description>重要 这是最终版。即使有需求也不会再更新。构建环境已经爆破 备注 SQLite（随 Qt 一起分发）通过使用 -plugin-sql-sqlite 内建在这份包里。 备注 All builds have -openssl-linked. It links to a dynamic OpenSSL 1.0.2 series which redistributed in the package.
 备注 This build is done using an old compiler on an old macOS, and is unknown whether it can be run on newer systems.
-Dynamic / Shared Builds macOS-x86_64 Qt4.</description>
+Dynamic / Shared Builds macOS-x86_64 Qt4.8.7-macOS-x86_64-AppleClang6.1.0-20200103.tar.xz 下载地址： OSDN 链接 SourceForge 链接 构建主机：OS X 10.10工具链版本：AppleClang 6.1备注： Qt4.8.7-macOS-x86_64-AppleClang6.1.0-noFramework-20200103.tar.xz 下载地址： OSDN 链接 SourceForge 链接 构建主机：OS X 10.</description>
     </item>
   </channel>
 </rss>

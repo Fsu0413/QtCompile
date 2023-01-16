@@ -10,21 +10,17 @@
       <link>/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html</guid>
-      <description>重要 FINAL VERSION, NO MORE UPDATES EVEN IF REQUESTED, BUILD ENVIRONMENT HAS BEEN DESTRUCTED
-备注 SQLite(distributed with Qt) are built in the backage and have -plugin-sql-sqlite
-备注 All builds have -no-openssl -securetransport. It means that we are using Secure Transport library of macOS to provide SSL connections.
-备注 All builds have -no-icu because I think the ICU library is too big and, in most of the conditions, useless for common users.</description>
+      <description> 重要 这是最终版。即使有需求也不会再更新。构建环境已经爆破 备注 SQLite（随 Qt 一起分发）通过使用 -sql-sqlite 内建在这份包里。 备注 All builds have -no-openssl -securetransport. It means that we are using Secure Transport library of macOS to provide SSL connections.
+备注 所有构建配置了 -no-icu 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 CVE issue patched This version have CVE-2022-25255 patched using this patch.
+Dynamic / Shared Builds macOS-x86_64 Qt5.12.12-macOS-x86_64-AppleClang12.0.0-20220308.tar.xz 下载地址： OSDN 链接 SourceForge 链接 构建主机：macOS 10.15.7工具链版本：AppleClang 12.0.0备注： Qt5.12.12-macOS-x86_64-AppleClang12.0.0-noFramework-20220307.tar.xz 下载地址： OSDN 链接 SourceForge 链接 构建主机：macOS 10.15.7工具链版本：AppleClang 12.0.0备注： </description>
     </item>
     <item>
       <title>5.12.12 的 WebAssembly 版本</title>
       <link>/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html</guid>
-      <description>重要 FINAL VERSION, NO MORE UPDATES EVEN IF REQUESTED, BUILD ENVIRONMENT HAS BEEN DESTRUCTED
-备注 SQLite(distributed with Qt) are built in the backage and have -plugin-sql-sqlite
-备注 All builds have -no-icu because I think the ICU library is too big and, in most of the conditions, useless for common users.
-备注 All builds are using emscripten SDK 1.38.16 as recommended in Qt Wiki.
-备注 Qt for WebAssembly can&amp;rsquo;t be built to shared libs.</description>
+      <description> 重要 这是最终版。即使有需求也不会再更新。构建环境已经爆破 备注 SQLite（随 Qt 一起分发）通过使用 -sql-sqlite 内建在这份包里。 备注 所有构建配置了 -no-icu 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 所有包使用了于 Qt Wiki 中推荐的 emscripten SDK 版本 1.38.16。
+WebAssembly 不支持二进制兼容性。在构建自己的代码的时候必须要使用 SDK 版本 1.38.16，否则会出现不可预料的错误。 备注 Qt 在 WebAssembly 平台上只能构建静态库。 Static Builds Linux Host Qt5.12.12-WebAssembly-emscripten1.38.16-xLinux-x86_64-gcc8.5.0-20211203.tar.xz 下载地址： OSDN 链接 SourceForge 链接 构建主机：RockyLinux 8.4工具链版本：emscripten-1.38.16备注： macOS Host Qt5.12.12-WebAssembly-emscripten1.38.16-xmacOS-x86_64-AppleClang12.0.5-20211204.tar.xz 下载地址： OSDN 链接 SourceForge 链接 构建主机：macOS 11.6.1工具链版本：emscripten-1.38.16备注： </description>
     </item>
   </channel>
 </rss>
