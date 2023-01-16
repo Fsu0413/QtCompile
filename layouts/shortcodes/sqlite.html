@@ -1,0 +1,9 @@
+{{- $qtver := .Get 0 -}}
+{{- $sqliteInstruction := cond (eq $qtver 6) "-DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF" ( cond (eq $qtver 5) "-sql-sqlite" "-plugin-sql-sqlite" ) -}}
+{{ partial "shortcodes/notice.html" (dict
+  "context" .
+  "style" "info"
+  "title" (T "Note")
+  "icon" "fas fa-info-circle"
+  "content" ((printf (T "fsqtbuild_i18n_sqlite") $sqliteInstruction) | markdownify)
+)}}

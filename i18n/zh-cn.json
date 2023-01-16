@@ -55,5 +55,21 @@
     },
     "64-bit": {
         "other": "64 位"
+    },
+    "Important": {
+        "other": "重要"
+    },
+    "Note": {
+        "other": "备注"
+    },
+
+    "fsqtbuild_i18n_finalVersion": {
+        "other": "这是最终版。即使有需求也不会再更新。构建环境已经爆破"
+    },
+    "fsqtbuild_i18n_sqlite": {
+        "other": "SQLite（随 Qt 一起分发）通过使用 `%s` 内建在这份包里。"
+    },
+    "fsqtbuild_i18n_odbc_sqlite": {
+        "other": "ODBC 和 SQLite（随 Qt 一起分发）通过使用 `%s` 内建在这份包里。"
     }
 }
