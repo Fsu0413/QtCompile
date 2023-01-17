@@ -8,7 +8,7 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     strategy:
       fail-fast: false
       matrix:
@@ -30,11 +30,10 @@ jobs:
           path: 'public'
           fetch-depth: '1'
 
-# of no use?
-#      - name: set time zone
-#        run: |
-#          sudo rm /etc/localtime
-#          sudo ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+      - name: set time zone
+        run: |
+          sudo rm /etc/localtime
+          sudo ln -s /var/db/timezone/zoneinfo/Asia/Shanghai /etc/localtime
 
       - name: clean
         run: |
@@ -45,9 +44,12 @@ jobs:
           rm -rf public/fonts public/images public/js public/webfonts
           find public -depth -type d -empty -delete
 
-      - uses: jakejarvis/hugo-build-action@master
-        with:
-          args: --ignoreCache --verbose --configDir config_${{ matrix.target.branch }} -s build -d ../public -b ${{ matrix.target.root }}
+      - name: install hugo and build site
+        run: |
+          brew update
+          brew install hugo
+          cd build
+          hugo --ignoreCache --verbose --configDir config_${{ matrix.target.branch }} -d ../public -b ${{ matrix.target.root }}
 
       - name: commit
         run: |
