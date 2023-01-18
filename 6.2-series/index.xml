@@ -10,28 +10,27 @@
       <link>/6.2-series/6.2.4-for-windows/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/6.2-series/6.2.4-for-windows/index.html</guid>
-      <description>Note ODBC and SQLite (distributed with Qt) are built in the package using -DFEATURE_sql_***=ON -DFEATURE_system_sqlite=OFF Note Since Qt 6.2 Qt made SSL backends as plugin.
-We build SChannel and OpenSSL backend plugin, with OpenSSL backend built with OpenSSL 3 series.
-Additionally, Visual Studio versions of Qt builds supports TLS 1.3 using SecureTransport.
-Note All builds have -DFEATURE_icu=OFF because I think the ICU library is too big and, in most of the conditions, useless for common users.</description>
+      <description>Note ODBC and SQLite (distributed with Qt) are built in the package using -DFEATURE_sql_***=ON -DFEATURE_system_sqlite=OFF Note Since Qt 6.2 Qt made TLS backends as plugin.
+Following backend(s) are built in the package:
+OpenSSL 3.0 series using -DFEATURE_openssl=ON -DINPUT_openssl=linked for enabling linked OpenSSL support Windows Secure Channel using -DFEATURE_schannel=ON with TLS 1.3 support on MSVC version Note All builds have -DFEATURE_icu=OFF because I think the ICU library is too big and, in most of the conditions, useless for common users.</description>
     </item>
     <item>
       <title>6.2.4 for macOS</title>
       <link>/6.2-series/6.2.4-for-macos/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/6.2-series/6.2.4-for-macos/index.html</guid>
-      <description>Note SQLite (distributed with Qt) are built in the package using -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF Note Since Qt 6.2 Qt made SSL backends as plugin. We build SecureTransport and OpenSSL backend plugin, with OpenSSL backend built with OpenSSL 3 series.
-Note All builds have -DFEATURE_icu=OFF because I think the ICU library is too big and, in most of the conditions, useless for common users. Note No QtWebEngine in this version.
-CVE issue patched All builds of Qt 6.</description>
+      <description>Note SQLite (distributed with Qt) are built in the package using -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF Note Since Qt 6.2 Qt made TLS backends as plugin.
+Following backend(s) are built in the package:
+OpenSSL 3.0 series using -DFEATURE_openssl=ON -DINPUT_openssl=linked for enabling linked OpenSSL support Secure Transport library provided by macOS using -DFEATURE_securetransport=ON Note All builds have -DFEATURE_icu=OFF because I think the ICU library is too big and, in most of the conditions, useless for common users.</description>
     </item>
     <item>
       <title>6.2.4 for Android</title>
       <link>/6.2-series/6.2.4-for-android/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/6.2-series/6.2.4-for-android/index.html</guid>
-      <description>Note SQLite (distributed with Qt) are built in the package using -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF Note Since Qt 6.2 Qt made SSL backends as plugin.
-We build OpenSSL backend plugin with OpenSSL 3 series.
-Note All builds have -DFEATURE_icu=OFF because I think the ICU library is too big and, in most of the conditions, useless for common users. Note All builds are using NDK r23c with -DANDROID_NATIVE_API_LEVEL=24, it means the APK built using these packages may be not able to run on Android 7.</description>
+      <description>Note SQLite (distributed with Qt) are built in the package using -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF Note Since Qt 6.2 Qt made TLS backends as plugin.
+Following backend(s) are built in the package:
+OpenSSL 3.0 series using -DFEATURE_openssl=ON -DINPUT_openssl=linked for enabling linked OpenSSL support Note All builds have -DFEATURE_icu=OFF because I think the ICU library is too big and, in most of the conditions, useless for common users. Note All builds are using NDK r23c with -DANDROID_NATIVE_API_LEVEL=24, it means the APK built using these packages may be not able to run on Android 7.</description>
     </item>
     <item>
       <title>6.2.4 for WebAssembly</title>

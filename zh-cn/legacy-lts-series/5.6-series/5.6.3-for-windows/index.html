@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.109.0">
+    <meta name="generator" content="Hugo 0.110.0">
     <meta name="generator" content="Relearn 5.9.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
@@ -134,9 +134,12 @@ ODBC 和 SQLite（随 Qt 一起分发）通过使用 <code>-plugin-sql-***</code
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
   <div class="box-content">
-<p>All builds have -openssl-linked. It links to an OpenSSL 1.0.2 series which redistributed in the package. Dynamic builds include dynamic OpenSSL while static builds include static OpenSSL.</p>
+<p>所有构建使用 <code>-openssl-linked</code>，意味着 OpenSSL 链接到了 Qt，作为 TLS 后端来使用。<br>
+它链接到了随包一起分发的 OpenSSL 1.0.2 系列库。</p>
+<p>动态和静态的 OpenSSL 分别包含在动态和静态的 Qt 库中。</p>
   </div>
 </div>
+
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
@@ -510,7 +513,7 @@ Nothing is deleted in the packages.</p>
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Tue, 17 Jan 2023 22:35:37 CST</p>
+Site generated: Wed, 18 Jan 2023 19:48:03 CST</p>
 
         </div>
       </div>

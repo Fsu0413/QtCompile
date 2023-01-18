@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.109.0">
+    <meta name="generator" content="Hugo 0.110.0">
     <meta name="generator" content="Relearn 5.9.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
@@ -118,9 +118,10 @@ SQLite（随 Qt 一起分发）通过使用 <code>-sql-sqlite</code> 内建在�
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
   <div class="box-content">
-<p>All builds have <code>-no-openssl -securetransport</code>. It means that we are using Secure Transport library of macOS to provide SSL connections.</p>
-  </div>
+所有构建使用 <code>-no-openssl -securetransport</code>，意味着 macOS 提供的 Secure Transport 库作为 TLS 后端来使用。<br>
+这个后端从 Qt 5.6 版本开始支持。  </div>
 </div>
+
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
@@ -357,7 +358,7 @@ I don&rsquo;t recommand using these builds.</p>
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Tue, 17 Jan 2023 22:35:37 CST</p>
+Site generated: Wed, 18 Jan 2023 19:48:03 CST</p>
 
         </div>
       </div>

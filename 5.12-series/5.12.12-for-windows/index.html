@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.109.0">
+    <meta name="generator" content="Hugo 0.110.0">
     <meta name="generator" content="Relearn 5.9.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
@@ -125,9 +125,12 @@ ODBC and SQLite (distributed with Qt) are built in the package using <code>-sql-
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
   <div class="box-content">
-<p>All builds have <code>-openssl-linked</code>. It links to an OpenSSL 1.1.1 series which redistributed in the package. Dynamic builds include dynamic OpenSSL while static builds include static OpenSSL.</p>
+<p>All builds have <code>-openssl-linked</code>, which means that OpenSSL is linked to Qt and is used for TLS Backend.<br>
+It links to an OpenSSL 1.1.1 series which redistributed in the package.</p>
+<p>Dynamic builds include dynamic OpenSSL while static builds include static OpenSSL.</p>
   </div>
 </div>
+
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
@@ -551,7 +554,7 @@ All builds have <code>-no-icu</code> because I think the ICU library is too big 
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Tue, 17 Jan 2023 22:35:36 CST</p>
+Site generated: Wed, 18 Jan 2023 19:48:02 CST</p>
 
         </div>
       </div>

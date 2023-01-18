@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.109.0">
+    <meta name="generator" content="Hugo 0.110.0">
     <meta name="generator" content="Relearn 5.9.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
@@ -123,14 +123,22 @@ ODBC and SQLite (distributed with Qt) are built in the package using <code>-DFEA
 </div>
 
 
+
+
+
+
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
   <div class="box-content">
-<p>Since Qt 6.2 Qt made SSL backends as plugin.<br>
-We build SChannel and OpenSSL backend plugin, with OpenSSL backend built with OpenSSL 3 series.<br>
-Additionally, Visual Studio versions of Qt builds supports TLS 1.3 using SecureTransport.</p>
+<p>Since Qt 6.2 Qt made TLS backends as plugin.<br>
+Following backend(s) are built in the package:</p>
+<ol>
+<li>OpenSSL 3.0 series using <code>-DFEATURE_openssl=ON -DINPUT_openssl=linked</code> for enabling linked OpenSSL support</li>
+<li>Windows Secure Channel using <code>-DFEATURE_schannel=ON</code> with TLS 1.3 support on MSVC version</li>
+</ol>
   </div>
 </div>
+
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
@@ -542,7 +550,7 @@ I don&rsquo;t recommand using these builds.</p>
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Tue, 17 Jan 2023 22:35:37 CST</p>
+Site generated: Wed, 18 Jan 2023 19:48:02 CST</p>
 
         </div>
       </div>
