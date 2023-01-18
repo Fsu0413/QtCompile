@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.109.0">
+    <meta name="generator" content="Hugo 0.110.0">
     <meta name="generator" content="Relearn 5.9.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
@@ -123,9 +123,13 @@ SQLite (distributed with Qt) are built in the package using <code>-plugin-sql-sq
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
   <div class="box-content">
-<p>All packages have -openssl-linked, Since BoringSSL, which is used in Android 6.0 or later, is NOT API COMPATIBLE WITH OPENSSL, we link it to a static OpenSSL 1.0.2 series instead of system SSL library.</p>
+<p>All builds have <code>-openssl-linked</code>, which means that OpenSSL is linked to Qt and is used for TLS Backend.<br>
+It links to a static OpenSSL 1.0.2 series.</p>
+<p>Android since version 6.0 is using BoringSSL for its builtin SSL / TLS library.<br>
+It is NOT API COMPATIBLE WITH OpenSSL and can&rsquo;t be used.</p>
   </div>
 </div>
+
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
@@ -372,7 +376,7 @@ All builds have <code>-no-icu</code> because I think the ICU library is too big 
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Tue, 17 Jan 2023 22:35:33 CST</p>
+Site generated: Wed, 18 Jan 2023 19:47:03 CST</p>
 
         </div>
       </div>

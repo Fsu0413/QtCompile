@@ -10,24 +10,27 @@
       <link>/qtcompile/en/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/qtcompile/en/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html</guid>
-      <description>Important FINAL VERSION, NO MORE UPDATES EVEN IF REQUESTED, BUILD ENVIRONMENT HAS BEEN DESTRUCTED Note ODBC and SQLite (distributed with Qt) are built in the package using -plugin-sql-*** Note All builds have -openssl-linked. It links to an OpenSSL 1.0.2 series which redistributed in the package. Dynamic builds include dynamic OpenSSL while static builds include static OpenSSL.
-Note All builds have -no-icu because I think the ICU library is too big and, in most of the conditions, useless for common users.</description>
+      <description>Important FINAL VERSION, NO MORE UPDATES EVEN IF REQUESTED, BUILD ENVIRONMENT HAS BEEN DESTRUCTED Note ODBC and SQLite (distributed with Qt) are built in the package using -plugin-sql-*** Note All builds have -openssl-linked, which means that OpenSSL is linked to Qt and is used for TLS Backend.
+It links to an OpenSSL 1.0.2 series which redistributed in the package.
+Dynamic builds include dynamic OpenSSL while static builds include static OpenSSL.</description>
     </item>
     <item>
       <title>5.6.3 for macOS</title>
       <link>/qtcompile/en/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/qtcompile/en/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html</guid>
-      <description>Important FINAL VERSION, NO MORE UPDATES EVEN IF REQUESTED, BUILD ENVIRONMENT HAS BEEN DESTRUCTED Note SQLite (distributed with Qt) are built in the package using -plugin-sql-sqlite Note All builds have -no-openssl -securetransport. It means that we are using Secure Transport library of macOS to provide SSL connections.
-Note All builds have -no-icu because I think the ICU library is too big and, in most of the conditions, useless for common users.</description>
+      <description>Important FINAL VERSION, NO MORE UPDATES EVEN IF REQUESTED, BUILD ENVIRONMENT HAS BEEN DESTRUCTED Note SQLite (distributed with Qt) are built in the package using -plugin-sql-sqlite Note All builds have -no-openssl -securetransport, which means that Secure Transport library provided by macOS is used for TLS Backend.
+This backend is supported by Qt since Qt 5.6. Note All builds have -no-icu because I think the ICU library is too big and, in most of the conditions, useless for common users.</description>
     </item>
     <item>
       <title>5.6.3 for Android</title>
       <link>/qtcompile/en/legacy-lts-series/5.6-series/5.6.3-for-android/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/qtcompile/en/legacy-lts-series/5.6-series/5.6.3-for-android/index.html</guid>
-      <description>Important FINAL VERSION, NO MORE UPDATES EVEN IF REQUESTED, BUILD ENVIRONMENT HAS BEEN DESTRUCTED Note SQLite (distributed with Qt) are built in the package using -plugin-sql-sqlite Note All packages have -openssl-linked, Since BoringSSL, which is used in Android 6.0 or later, is NOT API COMPATIBLE WITH OPENSSL, we link it to a static OpenSSL 1.0.2 series instead of system SSL library.
-Note All builds have -no-icu because I think the ICU library is too big and, in most of the conditions, useless for common users.</description>
+      <description>Important FINAL VERSION, NO MORE UPDATES EVEN IF REQUESTED, BUILD ENVIRONMENT HAS BEEN DESTRUCTED Note SQLite (distributed with Qt) are built in the package using -plugin-sql-sqlite Note All builds have -openssl-linked, which means that OpenSSL is linked to Qt and is used for TLS Backend.
+It links to a static OpenSSL 1.0.2 series.
+Android since version 6.0 is using BoringSSL for its builtin SSL / TLS library.
+It is NOT API COMPATIBLE WITH OpenSSL and can&amp;rsquo;t be used.</description>
     </item>
   </channel>
 </rss>

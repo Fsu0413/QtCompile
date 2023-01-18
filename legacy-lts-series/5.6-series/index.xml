@@ -10,25 +10,30 @@
       <link>/qtcompile/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/qtcompile/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html</guid>
-      <description>重要 这是最终版。即使有需求也不会再更新。构建环境已经爆破 备注 ODBC 和 SQLite（随 Qt 一起分发）通过使用 -plugin-sql-*** 内建在这份包里。 备注 All builds have -openssl-linked. It links to an OpenSSL 1.0.2 series which redistributed in the package. Dynamic builds include dynamic OpenSSL while static builds include static OpenSSL.
-备注 所有构建配置了 -no-icu 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 Dynamic / Shared Builds Windows-MSVC Qt5.6.3-Windows-x86-VS2015-20200104.7z 下载地址： OSDN 链接 SourceForge 链接 构建主机：Windows 8.1 Update工具链版本：VS2015 Update 3备注： Qt5.6.3-Windows-x86_64-VS2015-20200104.7z 下载地址： OSDN 链接 SourceForge 链接 构建主机：Windows 8.1 Update工具链版本：VS2015 Update 3备注： Qt5.</description>
+      <description>重要 这是最终版。即使有需求也不会再更新。构建环境已经爆破 备注 ODBC 和 SQLite（随 Qt 一起分发）通过使用 -plugin-sql-*** 内建在这份包里。 备注 所有构建使用 -openssl-linked，意味着 OpenSSL 链接到了 Qt，作为 TLS 后端来使用。
+它链接到了随包一起分发的 OpenSSL 1.0.2 系列库。
+动态和静态的 OpenSSL 分别包含在动态和静态的 Qt 库中。
+备注 所有构建配置了 -no-icu 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 Dynamic / Shared Builds Windows-MSVC Qt5.6.3-Windows-x86-VS2015-20200104.7z 下载地址： OSDN 链接 SourceForge 链接 构建主机：Windows 8.1 Update工具链版本：VS2015 Update 3备注： Qt5.6.3-Windows-x86_64-VS2015-20200104.7z 下载地址： OSDN 链接 SourceForge 链接 构建主机：Windows 8.1 Update工具链版本：VS2015 Update 3备注： Qt5.6.3-Windows-x86-VS2015-xp-20200104.7z 下载地址： OSDN 链接 SourceForge 链接 构建主机：Windows 8.1 Update工具链版本：VS2015 Update 3备注：XP COMPATIBLE, NO WEBENGINE/WEBVIEW, 32-bit ONLY, just for the unreconstructed people who want to use XP eagerly Qt5.</description>
     </item>
     <item>
       <title>5.6.3 的 macOS 版本</title>
       <link>/qtcompile/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/qtcompile/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html</guid>
-      <description>重要 这是最终版。即使有需求也不会再更新。构建环境已经爆破 备注 SQLite（随 Qt 一起分发）通过使用 -plugin-sql-sqlite 内建在这份包里。 备注 All builds have -no-openssl -securetransport. It means that we are using Secure Transport library of macOS to provide SSL connections.
-备注 所有构建配置了 -no-icu 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 This build is done using an old compiler on an old macOS, and is unknown whether it can be run on newer systems.
-Dynamic / Shared Builds macOS-x86_64 Qt5.6.3-macOS-x86_64-AppleClang6.1.0-20191202.tar.xz 下载地址： OSDN 链接 SourceForge 链接 构建主机：OS X 10.</description>
+      <description>重要 这是最终版。即使有需求也不会再更新。构建环境已经爆破 备注 SQLite（随 Qt 一起分发）通过使用 -plugin-sql-sqlite 内建在这份包里。 备注 所有构建使用 -no-openssl -securetransport，意味着 macOS 提供的 Secure Transport 库作为 TLS 后端来使用。
+这个后端从 Qt 5.6 版本开始支持。 备注 所有构建配置了 -no-icu 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 This build is done using an old compiler on an old macOS, and is unknown whether it can be run on newer systems.
+Dynamic / Shared Builds macOS-x86_64 Qt5.6.3-macOS-x86_64-AppleClang6.1.0-20191202.tar.xz 下载地址： OSDN 链接 SourceForge 链接 构建主机：OS X 10.10工具链版本：AppleClang 6.1备注： Qt5.6.3-macOS-x86_64-AppleClang6.1.0-noFramework-20191202.tar.xz 下载地址： OSDN 链接 SourceForge 链接 构建主机：OS X 10.</description>
     </item>
     <item>
       <title>5.6.3 的安卓版本</title>
       <link>/qtcompile/legacy-lts-series/5.6-series/5.6.3-for-android/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/qtcompile/legacy-lts-series/5.6-series/5.6.3-for-android/index.html</guid>
-      <description>重要 这是最终版。即使有需求也不会再更新。构建环境已经爆破 备注 SQLite（随 Qt 一起分发）通过使用 -plugin-sql-sqlite 内建在这份包里。 备注 All packages have -openssl-linked, Since BoringSSL, which is used in Android 6.0 or later, is NOT API COMPATIBLE WITH OPENSSL, we link it to a static OpenSSL 1.0.2 series instead of system SSL library.
-备注 所有构建配置了 -no-icu 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 All builds are using NDK r10e with -android-ndk-platform android-9, it means the APK built using these packages may be not able to run on Android 2.</description>
+      <description>重要 这是最终版。即使有需求也不会再更新。构建环境已经爆破 备注 SQLite（随 Qt 一起分发）通过使用 -plugin-sql-sqlite 内建在这份包里。 备注 所有构建使用 -openssl-linked，意味着 OpenSSL 链接到了 Qt，作为 TLS 后端来使用。
+它链接到了静态的 OpenSSL 1.0.2 系列库。
+安卓从 6.0 版本开始使用 BoringSSL 作为内建的 SSL / TLS 库。
+此库与 OpenSSL 的 API 不兼容！！所以无法使用。
+备注 所有构建配置了 -no-icu 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 All builds are using NDK r10e with -android-ndk-platform android-9, it means the APK built using these packages may be not able to run on Android 2.3.x and earlier.</description>
     </item>
   </channel>
 </rss>

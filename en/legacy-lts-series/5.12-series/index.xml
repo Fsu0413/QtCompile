@@ -10,8 +10,8 @@
       <link>/qtcompile/en/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/qtcompile/en/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html</guid>
-      <description>Important FINAL VERSION, NO MORE UPDATES EVEN IF REQUESTED, BUILD ENVIRONMENT HAS BEEN DESTRUCTED Note SQLite (distributed with Qt) are built in the package using -sql-sqlite Note All builds have -no-openssl -securetransport. It means that we are using Secure Transport library of macOS to provide SSL connections.
-Note All builds have -no-icu because I think the ICU library is too big and, in most of the conditions, useless for common users.</description>
+      <description>Important FINAL VERSION, NO MORE UPDATES EVEN IF REQUESTED, BUILD ENVIRONMENT HAS BEEN DESTRUCTED Note SQLite (distributed with Qt) are built in the package using -sql-sqlite Note All builds have -no-openssl -securetransport, which means that Secure Transport library provided by macOS is used for TLS Backend.
+This backend is supported by Qt since Qt 5.6. Note All builds have -no-icu because I think the ICU library is too big and, in most of the conditions, useless for common users.</description>
     </item>
     <item>
       <title>5.12.12 for WebAssembly</title>

@@ -10,16 +10,22 @@
       <link>/qtcompile/5.12-series/5.12.12-for-windows/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/qtcompile/5.12-series/5.12.12-for-windows/index.html</guid>
-      <description>备注 ODBC 和 SQLite（随 Qt 一起分发）通过使用 -sql-*** 内建在这份包里。 备注 All builds have -openssl-linked. It links to an OpenSSL 1.1.1 series which redistributed in the package. Dynamic builds include dynamic OpenSSL while static builds include static OpenSSL.
-备注 所有构建配置了 -no-icu 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 Dynamic / Shared Builds Windows-MSVC Qt5.12.12-Windows-x86-VS2015-20221104.7z 下载地址： OSDN 链接 SourceForge 链接 构建主机：Windows 8.1 Update工具链版本：VS2015 Update 3备注：NO WEBENGINE because Qt has no support for QtWebEngine 5.12 for Visual Studio 2015 Qt5.</description>
+      <description>备注 ODBC 和 SQLite（随 Qt 一起分发）通过使用 -sql-*** 内建在这份包里。 备注 所有构建使用 -openssl-linked，意味着 OpenSSL 链接到了 Qt，作为 TLS 后端来使用。
+它链接到了随包一起分发的 OpenSSL 1.1.1 系列库。
+动态和静态的 OpenSSL 分别包含在动态和静态的 Qt 库中。
+备注 所有构建配置了 -no-icu 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 Dynamic / Shared Builds Windows-MSVC Qt5.12.12-Windows-x86-VS2015-20221104.7z 下载地址： OSDN 链接 SourceForge 链接 构建主机：Windows 8.1 Update工具链版本：VS2015 Update 3备注：NO WEBENGINE because Qt has no support for QtWebEngine 5.12 for Visual Studio 2015 Qt5.12.12-Windows-x86_64-VS2015-20221103.7z 下载地址： OSDN 链接 SourceForge 链接 构建主机：Windows 8.1 Update工具链版本：VS2015 Update 3备注：NO WEBENGINE because Qt has no support for QtWebEngine 5.</description>
     </item>
     <item>
       <title>5.12.12 的安卓版本</title>
       <link>/qtcompile/5.12-series/5.12.12-for-android/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/qtcompile/5.12-series/5.12.12-for-android/index.html</guid>
-      <description>备注 SQLite（随 Qt 一起分发）通过使用 -sql-sqlite 内建在这份包里。 备注 All packages have -openssl-linked, Since BoringSSL, which is used in Android 6.0 or later, is NOT API COMPATIBLE WITH OPENSSL, we link it to a static OpenSSL 1.1.1 series instead of system SSL library.
-备注 所有构建配置了 -no-icu 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 All builds are using NDK r21e with -android-ndk-platform android-21, it means the APK built using these packages may be not able to run on Android 5.</description>
+      <description>备注 SQLite（随 Qt 一起分发）通过使用 -sql-sqlite 内建在这份包里。 备注 所有构建使用 -openssl-linked，意味着 OpenSSL 链接到了 Qt，作为 TLS 后端来使用。
+它链接到了静态的 OpenSSL 1.1.1 系列库。
+安卓从 6.0 版本开始使用 BoringSSL 作为内建的 SSL / TLS 库。
+此库与 OpenSSL 的 API 不兼容！！所以无法使用。
+备注 所有构建配置了 -no-icu 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 All builds are using NDK r21e with -android-ndk-platform android-21, it means the APK built using these packages may be not able to run on Android 5.0.x and earlier.
+CVE issue patched This version have CVE-2022-25255 patched using this patch.</description>
     </item>
   </channel>
 </rss>
