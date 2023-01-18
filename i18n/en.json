@@ -83,5 +83,32 @@
     },
     "fsqtbuild_i18n_wasm_static": {
         "other": "Qt for WebAssembly can only be built to static libs."
+    },
+    "fsqtbuild_i18n_qt5tls_openssl_dynamiconly": {
+        "other": "All builds have `-openssl-linked`, which means that OpenSSL is linked to Qt and is used for TLS Backend.  \nIt links to a dynamic OpenSSL %s series which redistributed in the package."
+    },
+    "fsqtbuild_i18n_qt5tls_openssl_dynamicstatic": {
+        "other": "All builds have `-openssl-linked`, which means that OpenSSL is linked to Qt and is used for TLS Backend.  \nIt links to an OpenSSL %s series which redistributed in the package.\n\nDynamic builds include dynamic OpenSSL while static builds include static OpenSSL."
+    },
+    "fsqtbuild_i18n_qt5tls_openssl_android": {
+        "other": "All builds have `-openssl-linked`, which means that OpenSSL is linked to Qt and is used for TLS Backend.  \nIt links to a static OpenSSL %s series.\n\nAndroid since version 6.0 is using BoringSSL for its builtin SSL / TLS library.  \nIt is NOT API COMPATIBLE WITH OpenSSL and can't be used."
+    },
+    "fsqtbuild_i18n_qt5tls_securetransport": {
+        "other": "All builds have `-no-openssl -securetransport`, which means that Secure Transport library provided by macOS is used for TLS Backend.  \nThis backend is supported by Qt since Qt 5.6."
+    },
+    "fsqtbuild_i18n_qt5tls_schannel": {
+        "other": "All builds have `-no-openssl -schannel`, which means that Windows Secure Channel is used for TLS Backend.  \nThis backend is supported by Qt since Qt 5.13."
+    },
+    "fsqtbuild_i18n_qt6tls": {
+        "other": "Since Qt 6.2 Qt made TLS backends as plugin.  \nFollowing backend(s) are built in the package:\n"
+    },
+    "fsqtbuild_i18n_qt6tls_openssl3": {
+        "other": "OpenSSL 3.0 series using `-DFEATURE_openssl=ON -DINPUT_openssl=linked` for enabling linked OpenSSL support"
+    },
+    "fsqtbuild_i18n_qt6tls_schannel": {
+        "other": "Windows Secure Channel using `-DFEATURE_schannel=ON` with TLS 1.3 support on MSVC version"
+    },
+    "fsqtbuild_i18n_qt6tls_securetransport": {
+        "other": "Secure Transport library provided by macOS using `-DFEATURE_securetransport=ON`"
     }
 }

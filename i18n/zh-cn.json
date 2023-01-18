@@ -83,5 +83,32 @@
     },
     "fsqtbuild_i18n_wasm_static": {
         "other": "Qt 在 WebAssembly 平台上只能构建静态库。"
+    },
+    "fsqtbuild_i18n_qt5tls_openssl_dynamiconly": {
+        "other": "所有构建使用 `-openssl-linked`，意味着 OpenSSL 链接到了 Qt，作为 TLS 后端来使用。  \n它链接到了随包一起分发的动态的 OpenSSL %s 系列库。"
+    },
+    "fsqtbuild_i18n_qt5tls_openssl_dynamicstatic": {
+        "other": "所有构建使用 `-openssl-linked`，意味着 OpenSSL 链接到了 Qt，作为 TLS 后端来使用。  \n它链接到了随包一起分发的 OpenSSL %s 系列库。\n\n动态和静态的 OpenSSL 分别包含在动态和静态的 Qt 库中。"
+    },
+    "fsqtbuild_i18n_qt5tls_openssl_android": {
+        "other": "所有构建使用 `-openssl-linked`，意味着 OpenSSL 链接到了 Qt，作为 TLS 后端来使用。  \n它链接到了静态的 OpenSSL %s 系列库。\n\n安卓从 6.0 版本开始使用 BoringSSL 作为内建的 SSL / TLS 库。  \n此库与 OpenSSL 的 API 不兼容！！所以无法使用。"
+    },
+    "fsqtbuild_i18n_qt5tls_securetransport": {
+        "other": "所有构建使用 `-no-openssl -securetransport`，意味着 macOS 提供的 Secure Transport 库作为 TLS 后端来使用。  \n这个后端从 Qt 5.6 版本开始支持。"
+    },
+    "fsqtbuild_i18n_qt5tls_schannel": {
+        "other": "所有构建使用 `-no-openssl -schannel`，意味着 Windows Secure Channel 作为 TLS 后端来使用。  \n这个后端从 Qt 5.13 版本开始支持。"
+    },
+    "fsqtbuild_i18n_qt6tls": {
+        "other": "从 Qt 6.2 开始 Qt 将 TLS 后端改成插件的形式。  \n这个版本包含下列后端：\n"
+    },
+    "fsqtbuild_i18n_qt6tls_openssl3": {
+        "other": "OpenSSL 3.0 系列，使用 `-DFEATURE_openssl=ON -DINPUT_openssl=linked` 来启用链接的 OpenSSL 支持"
+    },
+    "fsqtbuild_i18n_qt6tls_schannel": {
+        "other": "Windows Secure Channel，使用 `-DFEATURE_schannel=ON`。在 MSVC 版本中支持 TLS 1.3"
+    },
+    "fsqtbuild_i18n_qt6tls_securetransport": {
+        "other": "macOS 提供的 Secure Transport library，使用 `-DFEATURE_securetransport=ON`"
     }
 }
