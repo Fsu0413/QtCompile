@@ -1,0 +1,17 @@
+{{- $type := .Get 0 -}}
+{{- $tlsInstruction := "" -}}
+{{- if eq $type "openssl" -}}
+    {{- $opensslVersion := .Get 1 -}}
+    {{- $opensslLinkage := .Get 2 -}}
+    {{- $tlsInstruction2 := printf "fsqtbuild_i18n_qt5tls_openssl_%s" $opensslLinkage -}}
+    {{- $tlsInstruction = printf (T $tlsInstruction2) $opensslVersion -}}
+{{- else -}}
+    {{- $tlsInstruction = T (printf "fsqtbuild_i18n_qt5tls_%s" $type ) -}}
+{{- end -}}
+{{ partial "shortcodes/notice.html" (dict
+  "context" .
+  "style" "info"
+  "title" (T "Note")
+  "icon" "fas fa-info-circle"
+  "content" ((print $tlsInstruction ) | markdownify)
+)}}

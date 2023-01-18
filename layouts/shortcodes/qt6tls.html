@@ -1,0 +1,32 @@
+<!-- Since limitation of shortcode we can only pass a set of backends -->
+<!-- so "OpenSSL-3" need to be a single argument.... -->
+
+<!-- acceptable args are openssl3 schannel securetransport -->
+<!-- 
+Since Qt 6.2 Qt made TLS backends as plugin.  
+Following backend(s) are built in the package:
+
+1. OpenSSL 3.0 series with `-DFEATURE_openssl=ON -DINPUT_openssl=linked` for enabling linked OpenSSL support
+1. Windows Secure Channel with `-DFEATURE_schannel=ON` with TLS 1.3 support on MSVC version
+1. Secure Transport library provided by macOS with `-DFEATURE_securetransport=ON`.
+-->
+{{- $tlsInstruction := T "fsqtbuild_i18n_qt6tls" -}}
+{{- range .Params -}}
+    {{- $tlsType := print "fsqtbuild_i18n_qt6tls_" . -}}
+    {{- $tlsInstruction2 := print $tlsInstruction "\n1. " (T $tlsType) -}}
+    {{- $tlsInstruction = $tlsInstruction2 -}}
+{{ end -}}
+{{ partial "shortcodes/notice.html" (dict
+  "context" .
+  "style" "info"
+  "title" (T "Note")
+  "icon" "fas fa-info-circle"
+  "content" ((print $tlsInstruction ) | markdownify)
+)}}
+<!--
+fsqtbuild_i18n_qt6tls
+fsqtbuild_i18n_qt6tls_openssl3
+fsqtbuild_i18n_qt6tls_schannel
+fsqtbuild_i18n_qt6tls_securetransport
+
+-->
