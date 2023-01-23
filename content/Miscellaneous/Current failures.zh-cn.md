@@ -32,6 +32,10 @@ open62541 没有在 1.3.3 版本之后发布任何新版本，所以 QtOpcUa 6.4
 目前在 GitHub 上有一个已经合入的 Pull Request 添加了 OpenSSL 3.0 支持。参考 [Github Pull Request](https://github.com/open62541/open62541/pull/5349)。  
 下一个版本的 open62541 就会包含这个修改，届时我会重新启用 QtOpcUa 的构建。
 
+2023 年 1 月 23 日更新：  
+open62541 于 2022 年 11 月 14 日发布了 1.3.4 版本。QtOpcUa 6.5 更新附带的 open62541 附带的就是这个版本。  
+我将于 Qt 6.5 的构建上重新尝试启用 QtOpcUa 模块进行构建。（2023 年 1 月 23 日之前的构建中没有此模块）
+
 ## 使用更高版本的 QtWebEngine 构建 Qt 6.2.4 产生的多种多样的失败
 
 在 macOS 上使用 Xcode 14.1 构建带有 QtWebEngine 6.3.2 的 Qt 6.2.4 会失败。使用 Xcode 14.0.1 的时候还是好的。可能是因为 QtWebEngine 6.3.2 不兼容 macOS Ventura SDK。  

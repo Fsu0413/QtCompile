@@ -32,6 +32,10 @@ open62541 hasn't release any version after 1.3.3 so there is no OpenSSL 3.0 supp
 There is a merged Pull Request on Github which added OpenSSL 3.0 support. Reference: [Github Pull Request](https://github.com/open62541/open62541/pull/5349).  
 I will restart building with QtOpcUa when this change is got integrated in next released version of open62541.
 
+Update 2023.1.23:  
+open62541 released 1.3.4 at 14th, Nov., 2022. QtOpcUa 6.5 ships this version of open62541.  
+I'll try building with QtOpcUa enabled on build of Qt 6.5. (Packages built before 23rd, Jan., 2023 are without QtOpcUa)
+
 ## Various failures building higher version of QtWebEngine on Qt 6.2.4
 
 QtWebEngine 6.3.2 on Qt 6.2.4 fails on macOS when using Xcode 14.1. It was OK using Xcode 14.0.1. Probably because QtWebEngine 6.3.2 is incompatible with macOS Ventura SDK.  

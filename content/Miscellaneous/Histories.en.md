@@ -4,6 +4,29 @@ draft: false
 weight: 4
 ---
 
+## 2022.11.20
+Update all cross built package with CMake toolchain refactored. Currently it can automatically use the bundled host tool using bundled `qt-cmake` script.  
+Qt 6.2.4 / 6.4.1, Android / WebAssembly packages are all updated.
+
+## 2022.11.19
+Update Qt 6.4.1 WebAssembly macOS host with Thread feature ON. (I did only modified x86_64 build and... I am using arm64 build for base of universal builds and it's gone)
+
+## 2022.11.18
+Update Qt 6.4.1.  
+Update Qt 6 WebAssembly with Thread feature ON. (Previous versions are missing this feature)   
+Update Qt 6 macOS Universal builds. Future Qt 6 builds of macOS will only provide Universal builds.  
+Update Qt 6.2.4 Windows VS builds with updated VS version.
+
+## 2022.11.8
+Update Qt 6.2.4 with OpenSSL 3.0.7 (Without QtWebEngine since all builds of QtWebEngine failed). Existing patches are all in.  
+Update Qt 5.15.7 with OpenSSL 1.1.1s on macOS (Without QtWebEngine).
+
+Qt 6.2.4 cross builds (Linux / macOS host) are packaged with `libexec` folder of host builds where tools like `lrelease` are lying in.
+
+## 2022.11.6
+Update Qt 5.15.7 with OpenSSL 1.1.1s (excluding macOS, compile failed in QtWebEngine). Existing patches are all in.   
+Update Qt 5.12.12 with OpenSSL 1.1.1s.
+
 ## 2022.10.4
 Update Qt 6.4.0.  
 Update Qt 6.2.4 static builds with static runtime. Previous versions are without it.  
