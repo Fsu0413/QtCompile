@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>6.5 系列 on Fsu0413 的原版 Qt 构建</title>
+    <link>/zh-cn/6.5-series/index.html</link>
+    <description>Recent content in 6.5 系列 on Fsu0413 的原版 Qt 构建</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/zh-cn/6.5-series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>6.5.0 的 Windows 版本</title>
+      <link>/zh-cn/6.5-series/6.5.0-for-windows/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/zh-cn/6.5-series/6.5.0-for-windows/index.html</guid>
+      <description>备注 ODBC 和 SQLite（随 Qt 一起分发）通过使用 -DFEATURE_sql_***=ON -DFEATURE_system_sqlite=OFF 内建在这份包里。 备注 从 Qt 6.2 开始 Qt 将 TLS 后端改成插件的形式。
+这个版本包含下列后端：
+OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启用链接的 OpenSSL 支持 Windows Secure Channel，使用 -DFEATURE_schannel=ON。在 MSVC 版本中支持 TLS 1.3 备注 所有构建配置了 -DFEATURE_icu=OFF 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 Dynamic / Shared Builds Windows-MSVC Qt6.5.0-beta1-Windows-x86_64-VS2022-17.4.4-20230122.7z 下载地址： OSDN 链接 SourceForge 链接 构建主机：Windows 11 10.0.22621工具链版本：VS2022 17.4.4 w/ Windows SDK 10.0.22621备注： Windows-MinGW Qt6.5.0-beta1-Windows-x86_64-MinGW12.1.0-20230122.7z 下载地址： OSDN 链接 SourceForge 链接 构建主机：Windows 11 10.</description>
+    </item>
+    <item>
+      <title>6.5.0 的 macOS 版本</title>
+      <link>/zh-cn/6.5-series/6.5.0-for-macos/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/zh-cn/6.5-series/6.5.0-for-macos/index.html</guid>
+      <description>备注 SQLite（随 Qt 一起分发）通过使用 -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF 内建在这份包里。 备注 从 Qt 6.2 开始 Qt 将 TLS 后端改成插件的形式。
+这个版本包含下列后端：
+OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启用链接的 OpenSSL 支持 macOS 提供的 Secure Transport library，使用 -DFEATURE_securetransport=ON 备注 所有构建配置了 -DFEATURE_icu=OFF 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 Since 2022/11/18 I&amp;rsquo;ll provide only Universal builds of macOS, which will run natively on Intel Macs and ARM Macs.
+Dynamic / Shared Builds macOS-Universal Qt6.5.0-beta1-macOS-Universal-AppleClang14.0.0-20230123.tar.xz 下载地址： OSDN 链接 SourceForge 链接 构建主机：macOS 12.</description>
+    </item>
+    <item>
+      <title>6.5.0 的安卓版本</title>
+      <link>/zh-cn/6.5-series/6.5.0-for-android/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/zh-cn/6.5-series/6.5.0-for-android/index.html</guid>
+      <description>备注 SQLite（随 Qt 一起分发）通过使用 -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF 内建在这份包里。 备注 从 Qt 6.2 开始 Qt 将 TLS 后端改成插件的形式。
+这个版本包含下列后端：
+OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启用链接的 OpenSSL 支持 备注 Since Qt 6.3 I drop 32-bit builds for community.
+备注 所有构建配置了 -DFEATURE_icu=OFF 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 All builds are using NDK r25b with -DANDROID_NATIVE_API_LEVEL=27, it means the APK built using these packages may be not able to run on Android 8.0 and earlier.</description>
+    </item>
+    <item>
+      <title>6.5.0 的 WebAssembly 版本</title>
+      <link>/zh-cn/6.5-series/6.5.0-for-webassembly/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/zh-cn/6.5-series/6.5.0-for-webassembly/index.html</guid>
+      <description> 备注 SQLite（随 Qt 一起分发）通过使用 -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF 内建在这份包里。 备注 所有构建配置了 -DFEATURE_icu=OFF 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 所有包使用了于 Qt Wiki 中推荐的 emscripten SDK 版本 3.1.25。
+WebAssembly 不支持二进制兼容性。在构建自己的代码的时候必须要使用 SDK 版本 3.1.25，否则会出现不可预料的错误。
+所有构建通过使用 -DFEATURE_thread=ON 启用了线程支持。
+备注 Qt 在 WebAssembly 平台上只能构建静态库。 Static Builds Windows host Qt6.5.0-beta1-WebAssembly-emscripten3.1.25-xWindows-x86_64-MinGW12.1.0-20230122.7z 下载地址： OSDN 链接 SourceForge 链接 构建主机：Windows 11 10.0.22621工具链版本：emscripten-3.1.25备注： Linux Host Qt6.5.0-beta1-WebAssembly-emscripten3.1.25-xLinux-x86_64-gcc11.3.1-20230122.tar.xz 下载地址： OSDN 链接 SourceForge 链接 构建主机：RockyLinux 9.1工具链版本：emscripten-3.1.25备注： macOS Host Qt6.5.0-beta1-WebAssembly-emscripten3.1.25-xmacOS-Universal-AppleClang14.0.0-20230122.tar.xz 下载地址： OSDN 链接 SourceForge 链接 构建主机：macOS 12.6.2工具链版本：emscripten-3.1.25备注： </description>
+    </item>
+  </channel>
+</rss>

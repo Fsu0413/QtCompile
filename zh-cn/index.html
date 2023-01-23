@@ -91,13 +91,9 @@
     <li><a href="#当前的失败项">当前的失败项</a></li>
     <li><a href="#更新记录">更新记录</a>
       <ul>
+        <li><a href="#2023123">2023.1.23</a></li>
         <li><a href="#202318">2023.1.8</a></li>
-        <li><a href="#20221120">2022.11.20</a></li>
-        <li><a href="#20221119">2022.11.19</a></li>
-        <li><a href="#20221118">2022.11.18</a></li>
-        <li><a href="#2022118">2022.11.8</a></li>
-        <li><a href="#2022116">2022.11.6</a></li>
-        <li><a href="#2022-年-10-月以前">2022 年 10 月以前</a></li>
+        <li><a href="#2022-年-11-月以前">2022 年 11 月以前</a></li>
       </ul>
     </li>
   </ul>
@@ -134,29 +130,15 @@
 <h2 id="当前的失败项">当前的失败项</h2>
 <p><a href="/zh-cn/miscellaneous/current-failures/">这里</a></p>
 <h2 id="更新记录">更新记录</h2>
+<h3 id="2023123">2023.1.23</h3>
+<p>更新 Qt 6.5.0-beta1 包。（没有 QtOpcUa）<br>
+更新 Qt 6.2.4 / Qt 6.4.2，在 Windows 上带上静态的 <code>libgcc</code> 。之前的版本依赖 <code>libgcc</code> 的 DLL。受影响的版本是所有的交叉构建版和静态 <code>full</code> 构建。</p>
 <h3 id="202318">2023.1.8</h3>
 <p>更新 Qt 6.4.2 / 5.15.8 包。<br>
 更新 Qt 6.2.4 包，构建时使用带 <a href="https://www.openssl.org/news/secadv/20221213.txt" target="_blank">微小更新</a> 的 OpenSSL 3.0.7。</p>
 <p>此前 Qt 6 Linux 主机版的交叉构建包存在问题，导致主机工具没有正确部署。<br>
 本次的包修复了此问题。</p>
-<h3 id="20221120">2022.11.20</h3>
-<p>更新所有的交叉构建包，重构 CMake 工具链。现在可以用包里附带的 <code>qt-cmake</code> 脚本自动调用在同一个包中分发的主机工具了。<br>
-Qt 6.2.4 / 6.4.1，安卓 / WebAssembly 包全部进行了更新。</p>
-<h3 id="20221119">2022.11.19</h3>
-<p>更新 Qt 6.4.1 WebAssembly macOS 主机构建，打开线程功能。（我之前只修改了 x86_64 构建，然后在我构建统一架构版本时用了 arm64 当基础，然后这个功能就不见了）</p>
-<h3 id="20221118">2022.11.18</h3>
-<p>更新 Qt 6.4.1。<br>
-更新 Qt 6 WebAssembly 构建，打开线程功能。（之前的版本缺失这个功能）<br>
-更新 Qt 6 macOS 统一架构构建。以后的 Qt 6 macOS 构建均会是统一架构构建。<br>
-更新 Qt 6 Windows VS 构建，升级 VS 版本。</p>
-<h3 id="2022118">2022.11.8</h3>
-<p>更新 Qt 6.2.4，附带 OpenSSL 3.0.7（不再附带 QtWebEngine 因为所有的 QtWebEngine 构建均失败了）。现有补丁全部应用。<br>
-更新 Qt 5.15.7，附带 OpenSSL 1.1.1s（不附带 QtWebEngine）。</p>
-<p>Qt 6.2.4 的 Linux 和 macOS 主机交叉构建版在打包时额外附带主机版的 <code>libexec</code> 文件夹。一些诸如 <code>lrelease</code> 一类的工具在这个文件夹里面。</p>
-<h3 id="2022116">2022.11.6</h3>
-<p>更新 Qt 5.15.7，附带 OpenSSL 1.1.1s（macOS 除外，QtWebEngine 编译失败了）。现有补丁全部应用。<br>
-更新 Qt 5.12.12，附带 OpenSSL 1.1.1s。</p>
-<h3 id="2022-年-10-月以前">2022 年 10 月以前</h3>
+<h3 id="2022-年-11-月以前">2022 年 11 月以前</h3>
 <p><a href="/zh-cn/miscellaneous/histories/">这里</a></p>
 
             <footer class="footline">
@@ -196,6 +178,11 @@ Qt 6.2.4 / 6.4.1，安卓 / WebAssembly 包全部进行了更新。</p>
           <li data-nav-id="/zh-cn/6.4-series/6.4.2-for-macos/index.html" class="dd-item"><a href="/zh-cn/6.4-series/6.4.2-for-macos/index.html">6.4.2 的 macOS 版本</a></li>
           <li data-nav-id="/zh-cn/6.4-series/6.4.2-for-android/index.html" class="dd-item"><a href="/zh-cn/6.4-series/6.4.2-for-android/index.html">6.4.2 的安卓版本</a></li>
           <li data-nav-id="/zh-cn/6.4-series/6.4.2-for-webassembly/index.html" class="dd-item"><a href="/zh-cn/6.4-series/6.4.2-for-webassembly/index.html">6.4.2 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/6.5-series/index.html" class="dd-item"><a href="/zh-cn/6.5-series/index.html">6.5 系列</a><ul id="subsections-a4a8142fcca3c91cc086ca3a4afab485">
+          <li data-nav-id="/zh-cn/6.5-series/6.5.0-for-windows/index.html" class="dd-item"><a href="/zh-cn/6.5-series/6.5.0-for-windows/index.html">6.5.0 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/6.5-series/6.5.0-for-macos/index.html" class="dd-item"><a href="/zh-cn/6.5-series/6.5.0-for-macos/index.html">6.5.0 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/6.5-series/6.5.0-for-android/index.html" class="dd-item"><a href="/zh-cn/6.5-series/6.5.0-for-android/index.html">6.5.0 的安卓版本</a></li>
+          <li data-nav-id="/zh-cn/6.5-series/6.5.0-for-webassembly/index.html" class="dd-item"><a href="/zh-cn/6.5-series/6.5.0-for-webassembly/index.html">6.5.0 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/miscellaneous/index.html" class="dd-item"><a href="/zh-cn/miscellaneous/index.html">杂项</a><ul id="subsections-caff385dd336661e79f294480ee20799">
           <li data-nav-id="/zh-cn/miscellaneous/notes-for-this-repo/index.html" class="dd-item"><a href="/zh-cn/miscellaneous/notes-for-this-repo/index.html">本仓库的一些备注</a></li>
           <li data-nav-id="/zh-cn/miscellaneous/current-build-status/index.html" class="dd-item"><a href="/zh-cn/miscellaneous/current-build-status/index.html">当前构建状态</a></li>
@@ -266,7 +253,7 @@ Qt 6.2.4 / 6.4.1，安卓 / WebAssembly 包全部进行了更新。</p>
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Wed, 18 Jan 2023 19:52:46 CST</p>
+Site generated: Tue, 24 Jan 2023 00:12:13 CST</p>
 
         </div>
       </div>

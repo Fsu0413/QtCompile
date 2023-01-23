@@ -43,13 +43,11 @@ Command line too long when building Qt 6.</description>
       <link>/miscellaneous/histories/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/miscellaneous/histories/index.html</guid>
-      <description>2022.10.4 Update Qt 6.4.0.
-Update Qt 6.2.4 static builds with static runtime. Previous versions are without it.
-Update Qt 6.2.4 LLVM-MinGW builds built with llvm 15.
-Qt 6.3 builds are removed.
-2022.9.16 Update Qt 6.2.4 / 5.15.6 with updated patch of CVE-2022-37434. Qt 6.2 are rebuilt with QtWebEngine 6.3.2.
-Update to Xcode 14 and rebuild all of macOS hosted Qt 6.2 onwards.
-2022.9.12 Update Qt 6.2.4 / 6.3.2 WebAssembly packages. They are currently built using PCH.</description>
+      <description>2022.11.20 Update all cross built package with CMake toolchain refactored. Currently it can automatically use the bundled host tool using bundled qt-cmake script.
+Qt 6.2.4 / 6.4.1, Android / WebAssembly packages are all updated.
+2022.11.19 Update Qt 6.4.1 WebAssembly macOS host with Thread feature ON. (I did only modified x86_64 build and&amp;hellip; I am using arm64 build for base of universal builds and it&amp;rsquo;s gone)
+2022.11.18 Update Qt 6.4.1.
+Update Qt 6 WebAssembly with Thread feature ON.</description>
     </item>
   </channel>
 </rss>

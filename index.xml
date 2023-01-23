@@ -34,6 +34,13 @@
       <description> 6.4.2 for Windows 6.4.2 for macOS 6.4.2 for Android 6.4.2 for WebAssembly </description>
     </item>
     <item>
+      <title>6.5 series</title>
+      <link>/6.5-series/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/6.5-series/index.html</guid>
+      <description> 6.5.0 for Windows 6.5.0 for macOS 6.5.0 for Android 6.5.0 for WebAssembly </description>
+    </item>
+    <item>
       <title>Miscellaneous</title>
       <link>/miscellaneous/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
