@@ -124,6 +124,9 @@
 open62541 没有在 1.3.3 版本之后发布任何新版本，所以 QtOpcUa 6.4 不会有 open62541 的 OpenSSL 3.0 支持。<br>
 目前在 GitHub 上有一个已经合入的 Pull Request 添加了 OpenSSL 3.0 支持。参考 <a href="https://github.com/open62541/open62541/pull/5349" target="_blank">Github Pull Request</a>。<br>
 下一个版本的 open62541 就会包含这个修改，届时我会重新启用 QtOpcUa 的构建。</p>
+<p>2023 年 1 月 23 日更新：<br>
+open62541 于 2022 年 11 月 14 日发布了 1.3.4 版本。QtOpcUa 6.5 更新附带的 open62541 附带的就是这个版本。<br>
+我将于 Qt 6.5 的构建上重新尝试启用 QtOpcUa 模块进行构建。（2023 年 1 月 23 日之前的构建中没有此模块）</p>
 <h2 id="使用更高版本的-qtwebengine-构建-qt-624-产生的多种多样的失败">使用更高版本的 QtWebEngine 构建 Qt 6.2.4 产生的多种多样的失败</h2>
 <p>在 macOS 上使用 Xcode 14.1 构建带有 QtWebEngine 6.3.2 的 Qt 6.2.4 会失败。使用 Xcode 14.0.1 的时候还是好的。可能是因为 QtWebEngine 6.3.2 不兼容 macOS Ventura SDK。<br>
 在 macOS 和 Windows 上构建带有 QtWebEngine 6.4.0 的 Qt 6.2.4 会失败。在 <code>gn</code> 过程中还是好的，但是出了 <code>gn</code> 就失败。Windows 和 macOS 上的错误不同。</p>
@@ -170,6 +173,11 @@ QtWebEngine 自从 6.2.4 之后就没再针对 LTS 版本发布新版，而是�
           <li data-nav-id="/qtcompile/6.4-series/6.4.2-for-macos/index.html" class="dd-item"><a href="/qtcompile/6.4-series/6.4.2-for-macos/index.html">6.4.2 的 macOS 版本</a></li>
           <li data-nav-id="/qtcompile/6.4-series/6.4.2-for-android/index.html" class="dd-item"><a href="/qtcompile/6.4-series/6.4.2-for-android/index.html">6.4.2 的安卓版本</a></li>
           <li data-nav-id="/qtcompile/6.4-series/6.4.2-for-webassembly/index.html" class="dd-item"><a href="/qtcompile/6.4-series/6.4.2-for-webassembly/index.html">6.4.2 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/qtcompile/6.5-series/index.html" class="dd-item"><a href="/qtcompile/6.5-series/index.html">6.5 系列</a><ul id="subsections-a4a8142fcca3c91cc086ca3a4afab485">
+          <li data-nav-id="/qtcompile/6.5-series/6.5.0-for-windows/index.html" class="dd-item"><a href="/qtcompile/6.5-series/6.5.0-for-windows/index.html">6.5.0 的 Windows 版本</a></li>
+          <li data-nav-id="/qtcompile/6.5-series/6.5.0-for-macos/index.html" class="dd-item"><a href="/qtcompile/6.5-series/6.5.0-for-macos/index.html">6.5.0 的 macOS 版本</a></li>
+          <li data-nav-id="/qtcompile/6.5-series/6.5.0-for-android/index.html" class="dd-item"><a href="/qtcompile/6.5-series/6.5.0-for-android/index.html">6.5.0 的安卓版本</a></li>
+          <li data-nav-id="/qtcompile/6.5-series/6.5.0-for-webassembly/index.html" class="dd-item"><a href="/qtcompile/6.5-series/6.5.0-for-webassembly/index.html">6.5.0 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/miscellaneous/index.html" class="dd-item parent"><a href="/qtcompile/miscellaneous/index.html">杂项</a><ul id="subsections-caff385dd336661e79f294480ee20799">
           <li data-nav-id="/qtcompile/miscellaneous/notes-for-this-repo/index.html" class="dd-item"><a href="/qtcompile/miscellaneous/notes-for-this-repo/index.html">本仓库的一些备注</a></li>
           <li data-nav-id="/qtcompile/miscellaneous/current-build-status/index.html" class="dd-item"><a href="/qtcompile/miscellaneous/current-build-status/index.html">当前构建状态</a></li>
@@ -240,7 +248,7 @@ QtWebEngine 自从 6.2.4 之后就没再针对 LTS 版本发布新版，而是�
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Wed, 18 Jan 2023 19:52:53 CST</p>
+Site generated: Tue, 24 Jan 2023 00:13:28 CST</p>
 
         </div>
       </div>

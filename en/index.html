@@ -91,13 +91,9 @@
     <li><a href="#current-failures">Current failures</a></li>
     <li><a href="#update-history">Update History</a>
       <ul>
+        <li><a href="#2023123">2023.1.23</a></li>
         <li><a href="#202318">2023.1.8</a></li>
-        <li><a href="#20221120">2022.11.20</a></li>
-        <li><a href="#20221119">2022.11.19</a></li>
-        <li><a href="#20221118">2022.11.18</a></li>
-        <li><a href="#2022118">2022.11.8</a></li>
-        <li><a href="#2022116">2022.11.6</a></li>
-        <li><a href="#before-oct-2022">Before Oct. 2022</a></li>
+        <li><a href="#before-nov-2022">Before Nov. 2022</a></li>
       </ul>
     </li>
   </ul>
@@ -134,29 +130,15 @@ Thanks for The Qt Company Ltd. and the programmers of Qt for their fantastic wor
 <h2 id="current-failures">Current failures</h2>
 <p><a href="/qtcompile/en/miscellaneous/current-failures/">Here</a></p>
 <h2 id="update-history">Update History</h2>
+<h3 id="2023123">2023.1.23</h3>
+<p>Update Qt 6.5.0-beta1 packages (without QtOpcUa)<br>
+Update Qt 6.2.4 / Qt 6.4.2 with static <code>libgcc</code> on Windows. Previous version relies on the <code>libgcc</code> DLL. Affected versions are all cross built version and the static <code>full</code> builds.</p>
 <h3 id="202318">2023.1.8</h3>
 <p>Update Qt 6.4.2 / Qt 5.15.8 packages.<br>
 Update Qt 6.2.4 packages built with OpenSSL 3.0.7 with <a href="https://www.openssl.org/news/secadv/20221213.txt" target="_blank">the minor fix</a>.</p>
 <p>Qt 6 Linux hosted cross built packages has a problem where the host tool was not properly deployed.<br>
 This time the package is rebuilt with fix.</p>
-<h3 id="20221120">2022.11.20</h3>
-<p>Update all cross built package with CMake toolchain refactored. Currently it can automatically use the bundled host tool using bundled <code>qt-cmake</code> script.<br>
-Qt 6.2.4 / 6.4.1, Android / WebAssembly packages are all updated.</p>
-<h3 id="20221119">2022.11.19</h3>
-<p>Update Qt 6.4.1 WebAssembly macOS host with Thread feature ON. (I did only modified x86_64 build and&hellip; I am using arm64 build for base of universal builds and it&rsquo;s gone)</p>
-<h3 id="20221118">2022.11.18</h3>
-<p>Update Qt 6.4.1.<br>
-Update Qt 6 WebAssembly with Thread feature ON. (Previous versions are missing this feature)<br>
-Update Qt 6 macOS Universal builds. Future Qt 6 builds of macOS will only provide Universal builds.<br>
-Update Qt 6.2.4 Windows VS builds with updated VS version.</p>
-<h3 id="2022118">2022.11.8</h3>
-<p>Update Qt 6.2.4 with OpenSSL 3.0.7 (Without QtWebEngine since all builds of QtWebEngine failed). Existing patches are all in.<br>
-Update Qt 5.15.7 with OpenSSL 1.1.1s on macOS (Without QtWebEngine).</p>
-<p>Qt 6.2.4 cross builds (Linux / macOS host) are packaged with <code>libexec</code> folder of host builds where tools like <code>lrelease</code> are lying in.</p>
-<h3 id="2022116">2022.11.6</h3>
-<p>Update Qt 5.15.7 with OpenSSL 1.1.1s (excluding macOS, compile failed in QtWebEngine). Existing patches are all in.<br>
-Update Qt 5.12.12 with OpenSSL 1.1.1s.</p>
-<h3 id="before-oct-2022">Before Oct. 2022</h3>
+<h3 id="before-nov-2022">Before Nov. 2022</h3>
 <p><a href="/qtcompile/en/miscellaneous/histories/">Here</a></p>
 
             <footer class="footline">
@@ -196,6 +178,11 @@ Update Qt 5.12.12 with OpenSSL 1.1.1s.</p>
           <li data-nav-id="/qtcompile/en/6.4-series/6.4.2-for-macos/index.html" class="dd-item"><a href="/qtcompile/en/6.4-series/6.4.2-for-macos/index.html">6.4.2 for macOS</a></li>
           <li data-nav-id="/qtcompile/en/6.4-series/6.4.2-for-android/index.html" class="dd-item"><a href="/qtcompile/en/6.4-series/6.4.2-for-android/index.html">6.4.2 for Android</a></li>
           <li data-nav-id="/qtcompile/en/6.4-series/6.4.2-for-webassembly/index.html" class="dd-item"><a href="/qtcompile/en/6.4-series/6.4.2-for-webassembly/index.html">6.4.2 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/qtcompile/en/6.5-series/index.html" class="dd-item"><a href="/qtcompile/en/6.5-series/index.html">6.5 series</a><ul id="subsections-1870fa5a2d192ec83aafe29160552269">
+          <li data-nav-id="/qtcompile/en/6.5-series/6.5.0-for-windows/index.html" class="dd-item"><a href="/qtcompile/en/6.5-series/6.5.0-for-windows/index.html">6.5.0 for Windows</a></li>
+          <li data-nav-id="/qtcompile/en/6.5-series/6.5.0-for-macos/index.html" class="dd-item"><a href="/qtcompile/en/6.5-series/6.5.0-for-macos/index.html">6.5.0 for macOS</a></li>
+          <li data-nav-id="/qtcompile/en/6.5-series/6.5.0-for-android/index.html" class="dd-item"><a href="/qtcompile/en/6.5-series/6.5.0-for-android/index.html">6.5.0 for Android</a></li>
+          <li data-nav-id="/qtcompile/en/6.5-series/6.5.0-for-webassembly/index.html" class="dd-item"><a href="/qtcompile/en/6.5-series/6.5.0-for-webassembly/index.html">6.5.0 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/qtcompile/en/miscellaneous/index.html" class="dd-item"><a href="/qtcompile/en/miscellaneous/index.html">Miscellaneous</a><ul id="subsections-59c45accf7e43befe663d68447543959">
           <li data-nav-id="/qtcompile/en/miscellaneous/notes-for-this-repo/index.html" class="dd-item"><a href="/qtcompile/en/miscellaneous/notes-for-this-repo/index.html">Notes for this repo</a></li>
           <li data-nav-id="/qtcompile/en/miscellaneous/current-build-status/index.html" class="dd-item"><a href="/qtcompile/en/miscellaneous/current-build-status/index.html">Current build status</a></li>
@@ -266,7 +253,7 @@ Update Qt 5.12.12 with OpenSSL 1.1.1s.</p>
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Wed, 18 Jan 2023 19:52:53 CST</p>
+Site generated: Tue, 24 Jan 2023 00:13:28 CST</p>
 
         </div>
       </div>

@@ -84,6 +84,11 @@
             <div class="toc-wrapper" dir="ltr">
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#20221120">2022.11.20</a></li>
+    <li><a href="#20221119">2022.11.19</a></li>
+    <li><a href="#20221118">2022.11.18</a></li>
+    <li><a href="#2022118">2022.11.8</a></li>
+    <li><a href="#2022116">2022.11.6</a></li>
     <li><a href="#2022104">2022.10.4</a></li>
     <li><a href="#2022916">2022.9.16</a></li>
     <li><a href="#2022912">2022.9.12</a></li>
@@ -192,6 +197,23 @@
           <article class="default">
 <h1 id="previous-histories">Previous Histories</h1>
 
+<h2 id="20221120">2022.11.20</h2>
+<p>Update all cross built package with CMake toolchain refactored. Currently it can automatically use the bundled host tool using bundled <code>qt-cmake</code> script.<br>
+Qt 6.2.4 / 6.4.1, Android / WebAssembly packages are all updated.</p>
+<h2 id="20221119">2022.11.19</h2>
+<p>Update Qt 6.4.1 WebAssembly macOS host with Thread feature ON. (I did only modified x86_64 build and&hellip; I am using arm64 build for base of universal builds and it&rsquo;s gone)</p>
+<h2 id="20221118">2022.11.18</h2>
+<p>Update Qt 6.4.1.<br>
+Update Qt 6 WebAssembly with Thread feature ON. (Previous versions are missing this feature)<br>
+Update Qt 6 macOS Universal builds. Future Qt 6 builds of macOS will only provide Universal builds.<br>
+Update Qt 6.2.4 Windows VS builds with updated VS version.</p>
+<h2 id="2022118">2022.11.8</h2>
+<p>Update Qt 6.2.4 with OpenSSL 3.0.7 (Without QtWebEngine since all builds of QtWebEngine failed). Existing patches are all in.<br>
+Update Qt 5.15.7 with OpenSSL 1.1.1s on macOS (Without QtWebEngine).</p>
+<p>Qt 6.2.4 cross builds (Linux / macOS host) are packaged with <code>libexec</code> folder of host builds where tools like <code>lrelease</code> are lying in.</p>
+<h2 id="2022116">2022.11.6</h2>
+<p>Update Qt 5.15.7 with OpenSSL 1.1.1s (excluding macOS, compile failed in QtWebEngine). Existing patches are all in.<br>
+Update Qt 5.12.12 with OpenSSL 1.1.1s.</p>
 <h2 id="2022104">2022.10.4</h2>
 <p>Update Qt 6.4.0.<br>
 Update Qt 6.2.4 static builds with static runtime. Previous versions are without it.<br>
@@ -582,6 +604,11 @@ Upload 5.6.1 VS2015 Static packages.</p>
           <li data-nav-id="/qtcompile/en/6.4-series/6.4.2-for-macos/index.html" class="dd-item"><a href="/qtcompile/en/6.4-series/6.4.2-for-macos/index.html">6.4.2 for macOS</a></li>
           <li data-nav-id="/qtcompile/en/6.4-series/6.4.2-for-android/index.html" class="dd-item"><a href="/qtcompile/en/6.4-series/6.4.2-for-android/index.html">6.4.2 for Android</a></li>
           <li data-nav-id="/qtcompile/en/6.4-series/6.4.2-for-webassembly/index.html" class="dd-item"><a href="/qtcompile/en/6.4-series/6.4.2-for-webassembly/index.html">6.4.2 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/qtcompile/en/6.5-series/index.html" class="dd-item"><a href="/qtcompile/en/6.5-series/index.html">6.5 series</a><ul id="subsections-1870fa5a2d192ec83aafe29160552269">
+          <li data-nav-id="/qtcompile/en/6.5-series/6.5.0-for-windows/index.html" class="dd-item"><a href="/qtcompile/en/6.5-series/6.5.0-for-windows/index.html">6.5.0 for Windows</a></li>
+          <li data-nav-id="/qtcompile/en/6.5-series/6.5.0-for-macos/index.html" class="dd-item"><a href="/qtcompile/en/6.5-series/6.5.0-for-macos/index.html">6.5.0 for macOS</a></li>
+          <li data-nav-id="/qtcompile/en/6.5-series/6.5.0-for-android/index.html" class="dd-item"><a href="/qtcompile/en/6.5-series/6.5.0-for-android/index.html">6.5.0 for Android</a></li>
+          <li data-nav-id="/qtcompile/en/6.5-series/6.5.0-for-webassembly/index.html" class="dd-item"><a href="/qtcompile/en/6.5-series/6.5.0-for-webassembly/index.html">6.5.0 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/qtcompile/en/miscellaneous/index.html" class="dd-item parent"><a href="/qtcompile/en/miscellaneous/index.html">Miscellaneous</a><ul id="subsections-59c45accf7e43befe663d68447543959">
           <li data-nav-id="/qtcompile/en/miscellaneous/notes-for-this-repo/index.html" class="dd-item"><a href="/qtcompile/en/miscellaneous/notes-for-this-repo/index.html">Notes for this repo</a></li>
           <li data-nav-id="/qtcompile/en/miscellaneous/current-build-status/index.html" class="dd-item"><a href="/qtcompile/en/miscellaneous/current-build-status/index.html">Current build status</a></li>
@@ -652,7 +679,7 @@ Upload 5.6.1 VS2015 Static packages.</p>
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Wed, 18 Jan 2023 19:52:53 CST</p>
+Site generated: Tue, 24 Jan 2023 00:13:28 CST</p>
 
         </div>
       </div>
