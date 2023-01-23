@@ -834,9 +834,9 @@
 	},
 	"q6_2wx6m1_aa6n3": {
 		"sort": 22,
-		"fileName": "Qt6.2.4-Android-arm64-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20230107.7z",
-		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-arm64-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20230107.7z",
-		"addrOsdn": "https://osdn.net/downloads/users/40/40111/Qt6.2.4-Android-arm64-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20230107.7z",
+		"fileName": "Qt6.2.4-Android-arm64-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20230123.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-arm64-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20230123.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/40/40585/Qt6.2.4-Android-arm64-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20230123.7z",
 		"data": {
 			"QtVersion": "6.2.4",
 			"platform": "Android",
@@ -885,9 +885,9 @@
 	},
 	"q6_2wx6m1_aa3n3": {
 		"sort": 21,
-		"fileName": "Qt6.2.4-Android-arm-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20230107.7z",
-		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-arm-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20230107.7z",
-		"addrOsdn": "https://osdn.net/downloads/users/40/40110/Qt6.2.4-Android-arm-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20230107.7z",
+		"fileName": "Qt6.2.4-Android-arm-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20230123.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-arm-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20230123.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/40/40582/Qt6.2.4-Android-arm-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20230123.7z",
 		"data": {
 			"QtVersion": "6.2.4",
 			"platform": "Android",
@@ -936,9 +936,9 @@
 	},
 	"q6_2wx6m1_ax6n3": {
 		"sort": 24,
-		"fileName": "Qt6.2.4-Android-x86_64-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20230107.7z",
-		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-x86_64-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20230107.7z",
-		"addrOsdn": "https://osdn.net/downloads/users/40/40113/Qt6.2.4-Android-x86_64-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20230107.7z",
+		"fileName": "Qt6.2.4-Android-x86_64-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20230123.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-x86_64-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20230123.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/40/40584/Qt6.2.4-Android-x86_64-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20230123.7z",
 		"data": {
 			"QtVersion": "6.2.4",
 			"platform": "Android",
@@ -987,9 +987,9 @@
 	},
 	"q6_2wx6m1_ax3n3": {
 		"sort": 23,
-		"fileName": "Qt6.2.4-Android-x86-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20230107.7z",
-		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-x86-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20230107.7z",
-		"addrOsdn": "https://osdn.net/downloads/users/40/40115/Qt6.2.4-Android-x86-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20230107.7z",
+		"fileName": "Qt6.2.4-Android-x86-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20230123.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-x86-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20230123.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/40/40586/Qt6.2.4-Android-x86-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20230123.7z",
 		"data": {
 			"QtVersion": "6.2.4",
 			"platform": "Android",
@@ -1091,9 +1091,9 @@
 	},
 	"q6_2wx6m1_W": {
 		"sort": 33,
-		"fileName": "Qt6.2.4-WebAssembly-emscripten2.0.14-xWindows-x86_64-MinGW11.2.0-20221120.7z",
-		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/WebAssembly/Qt6.2.4-WebAssembly-emscripten2.0.14-xWindows-x86_64-MinGW11.2.0-20221120.7z",
-		"addrOsdn": "https://osdn.net/downloads/users/39/39793/Qt6.2.4-WebAssembly-emscripten2.0.14-xWindows-x86_64-MinGW11.2.0-20221120.7z",
+		"fileName": "Qt6.2.4-WebAssembly-emscripten2.0.14-xWindows-x86_64-MinGW11.2.0-20230123.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/WebAssembly/Qt6.2.4-WebAssembly-emscripten2.0.14-xWindows-x86_64-MinGW11.2.0-20230123.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/40/40583/Qt6.2.4-WebAssembly-emscripten2.0.14-xWindows-x86_64-MinGW11.2.0-20230123.7z",
 		"data": {
 			"QtVersion": "6.2.4",
 			"platform": "WebAssembly",
@@ -1162,9 +1162,9 @@
 	},
 	"q6_2wx6m1sf": {
 		"sort": 8,
-		"fileName": "Qt6.2.4-Windows-x86_64-MinGW11.2.0-staticFull-20230107.7z",
-		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW11.2.0-staticFull-20230107.7z",
-		"addrOsdn": "https://osdn.net/downloads/users/40/40128/Qt6.2.4-Windows-x86_64-MinGW11.2.0-staticFull-20230107.7z",
+		"fileName": "Qt6.2.4-Windows-x86_64-MinGW11.2.0-staticFull-20230122.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW11.2.0-staticFull-20230122.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/40/40592/Qt6.2.4-Windows-x86_64-MinGW11.2.0-staticFull-20230122.7z",
 		"MinGWConf": "wx6g1",
 		"data": {
 			"QtVersion": "6.2.4",
@@ -1198,9 +1198,9 @@
 	},
 	"q6_2wx6g2sf": {
 		"sort": 10,
-		"fileName": "Qt6.2.4-Windows-x86_64-MinGW12.1.0-staticFull-20230107.7z",
-		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW12.1.0-staticFull-20230107.7z",
-		"addrOsdn": "https://osdn.net/downloads/users/40/40129/Qt6.2.4-Windows-x86_64-MinGW12.1.0-staticFull-20230107.7z",
+		"fileName": "Qt6.2.4-Windows-x86_64-MinGW12.1.0-staticFull-20230122.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW12.1.0-staticFull-20230122.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/40/40593/Qt6.2.4-Windows-x86_64-MinGW12.1.0-staticFull-20230122.7z",
 		"MinGWConf": "wx6g2",
 		"data": {
 			"QtVersion": "6.2.4",
@@ -1374,9 +1374,9 @@
 	},
 	"q6_4wx6g2_aa6n3": {
 		"sort": 17,
-		"fileName": "Qt6.4.2-Android-arm64-Clang-NDKr25b-XWindows-x86_64-MinGW12.1.0-20230107.7z",
-		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/Android/Qt6.4.2-Android-arm64-Clang-NDKr25b-XWindows-x86_64-MinGW12.1.0-20230107.7z",
-		"addrOsdn": "https://osdn.net/downloads/users/40/40133/Qt6.4.2-Android-arm64-Clang-NDKr25b-XWindows-x86_64-MinGW12.1.0-20230107.7z",
+		"fileName": "Qt6.4.2-Android-arm64-Clang-NDKr25b-XWindows-x86_64-MinGW12.1.0-20230123.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/Android/Qt6.4.2-Android-arm64-Clang-NDKr25b-XWindows-x86_64-MinGW12.1.0-20230123.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/40/40596/Qt6.4.2-Android-arm64-Clang-NDKr25b-XWindows-x86_64-MinGW12.1.0-20230123.7z",
 		"data": {
 			"QtVersion": "6.4.2",
 			"platform": "Android",
@@ -1425,9 +1425,9 @@
 	},
 	"q6_4wx6g2_ax6n3": {
 		"sort": 18,
-		"fileName": "Qt6.4.2-Android-x86_64-Clang-NDKr25b-XWindows-x86_64-MinGW12.1.0-20230107.7z",
-		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/Android/Qt6.4.2-Android-x86_64-Clang-NDKr25b-XWindows-x86_64-MinGW12.1.0-20230107.7z",
-		"addrOsdn": "https://osdn.net/downloads/users/40/40134/Qt6.4.2-Android-x86_64-Clang-NDKr25b-XWindows-x86_64-MinGW12.1.0-20230107.7z",
+		"fileName": "Qt6.4.2-Android-x86_64-Clang-NDKr25b-XWindows-x86_64-MinGW12.1.0-20230123.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/Android/Qt6.4.2-Android-x86_64-Clang-NDKr25b-XWindows-x86_64-MinGW12.1.0-20230123.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/40/40595/Qt6.4.2-Android-x86_64-Clang-NDKr25b-XWindows-x86_64-MinGW12.1.0-20230123.7z",
 		"data": {
 			"QtVersion": "6.4.2",
 			"platform": "Android",
@@ -1510,9 +1510,9 @@
 	},
 	"q6_4wx6g2_W": {
 		"sort": 25,
-		"fileName": "Qt6.4.2-WebAssembly-emscripten3.1.14-xWindows-x86_64-MinGW12.1.0-20230107.7z",
-		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/WebAssembly/Qt6.4.2-WebAssembly-emscripten3.1.14-xWindows-x86_64-MinGW12.1.0-20230107.7z",
-		"addrOsdn": "https://osdn.net/downloads/users/40/40140/Qt6.4.2-WebAssembly-emscripten3.1.14-xWindows-x86_64-MinGW12.1.0-20230107.7z",
+		"fileName": "Qt6.4.2-WebAssembly-emscripten3.1.14-xWindows-x86_64-MinGW12.1.0-20230122.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/WebAssembly/Qt6.4.2-WebAssembly-emscripten3.1.14-xWindows-x86_64-MinGW12.1.0-20230122.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/40/40594/Qt6.4.2-WebAssembly-emscripten3.1.14-xWindows-x86_64-MinGW12.1.0-20230122.7z",
 		"data": {
 			"QtVersion": "6.4.2",
 			"platform": "WebAssembly",
