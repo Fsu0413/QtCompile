@@ -21,8 +21,7 @@ OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启�
       <guid>/qtcompile/6.5-series/6.5.0-for-macos/index.html</guid>
       <description>备注 SQLite（随 Qt 一起分发）通过使用 -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF 内建在这份包里。 备注 从 Qt 6.2 开始 Qt 将 TLS 后端改成插件的形式。
 这个版本包含下列后端：
-OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启用链接的 OpenSSL 支持 macOS 提供的 Secure Transport library，使用 -DFEATURE_securetransport=ON 备注 所有构建配置了 -DFEATURE_icu=OFF 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 Since 2022/11/18 I&amp;rsquo;ll provide only Universal builds of macOS, which will run natively on Intel Macs and ARM Macs.
-Dynamic / Shared Builds macOS-Universal Qt6.5.0-beta1-macOS-Universal-AppleClang14.0.0-20230123.tar.xz 下载地址： OSDN 链接 SourceForge 链接 构建主机：macOS 12.</description>
+OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启用链接的 OpenSSL 支持 macOS 提供的 Secure Transport library，使用 -DFEATURE_securetransport=ON 备注 所有构建配置了 -DFEATURE_icu=OFF 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 这个版本我只会提供统一二进制构建。 统一二进制 在 Intel 和 Apple 芯片的 Mac 上都能原生运行。 Dynamic / Shared Builds macOS-Universal Qt6.5.0-beta1-macOS-Universal-AppleClang14.0.0-20230123.tar.xz 下载地址： OSDN 链接 SourceForge 链接 构建主机：macOS 12.6.2工具链版本：AppleClang 14.0.0备注： Qt6.5.0-beta1-macOS-Universal-AppleClang14.0.0-noFramework-20230123.tar.xz 下载地址： OSDN 链接 SourceForge 链接 构建主机：macOS 12.6.2工具链版本：AppleClang 14.</description>
     </item>
     <item>
       <title>6.5.0 的安卓版本</title>
@@ -32,7 +31,8 @@ Dynamic / Shared Builds macOS-Universal Qt6.5.0-beta1-macOS-Universal-AppleClang
       <description>备注 SQLite（随 Qt 一起分发）通过使用 -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF 内建在这份包里。 备注 从 Qt 6.2 开始 Qt 将 TLS 后端改成插件的形式。
 这个版本包含下列后端：
 OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启用链接的 OpenSSL 支持 备注 Since Qt 6.3 I drop 32-bit builds for community.
-备注 所有构建配置了 -DFEATURE_icu=OFF 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 All builds are using NDK r25b with -DANDROID_NATIVE_API_LEVEL=27, it means the APK built using these packages may be not able to run on Android 8.0 and earlier.</description>
+备注 所有构建配置了 -DFEATURE_icu=OFF 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 使用 NDK r25b 版本，使用参数 -DANDROID_NATIVE_API_LEVEL=27 进行构建。
+这意味着这些构建可能只能在安卓 8.1 以及之后的版本上运行。 Dynamic Builds Windows Host Qt6.5.0-beta1-Android-arm64-Clang-NDKr25b-XWindows-x86_64-MinGW12.1.0-20230122.7z 下载地址： OSDN 链接 SourceForge 链接 构建主机：Windows 11 10.0.22621工具链版本：ndk r25b备注： Qt6.5.0-beta1-Android-x86_64-Clang-NDKr25b-XWindows-x86_64-MinGW12.1.0-20230122.7z 下载地址： OSDN 链接 SourceForge 链接 构建主机：Windows 11 10.</description>
     </item>
     <item>
       <title>6.5.0 的 WebAssembly 版本</title>
