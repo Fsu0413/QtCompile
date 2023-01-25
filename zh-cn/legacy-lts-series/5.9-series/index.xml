@@ -32,7 +32,11 @@
 它链接到了静态的 OpenSSL 1.0.2 系列库。
 安卓从 6.0 版本开始使用 BoringSSL 作为内建的 SSL / TLS 库。
 此库与 OpenSSL 的 API 不兼容！！所以无法使用。
-备注 所有构建配置了 -no-icu 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 All builds except arm64 are using NDK r10e with -android-ndk-platform android-16, it means the APK built using these packages may be not able to run on Android 4.1.x and earlier.</description>
+备注 所有构建配置了 -no-icu 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 使用 NDK r10e 版本，使用参数 -android-ndk-platform android-16 进行 32 位版本的构建。
+这意味着这些构建可能只能在安卓 4.1 以及之后的版本上运行。
+64 位版则使用参数 -android-ndk-platform android-21。
+由于 OpenSSL 1.0.2 系列还不支持 64 位安卓，我们临时使用 ./Configure linux-aarch64 对 OpenSSL 进行配置。
+Dynamic Builds Windows Host Qt5.</description>
     </item>
   </channel>
 </rss>

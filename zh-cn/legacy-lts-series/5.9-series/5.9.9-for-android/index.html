@@ -141,8 +141,10 @@ SQLite（随 Qt 一起分发）通过使用 <code>-sql-sqlite</code> 内建在�
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
   <div class="box-content">
-<p>All builds except arm64 are using NDK r10e with -android-ndk-platform android-16, it means the APK built using these packages may be not able to run on Android 4.1.x and earlier.<br>
-arm64 builds are using NDK r10e with -android-ndk-platform android-21 and OpenSSL ./Configure linux-aarch64.</p>
+<p>使用 NDK r10e 版本，使用参数 <code>-android-ndk-platform android-16</code> 进行 32 位版本的构建。<br>
+这意味着这些构建可能只能在安卓 4.1 以及之后的版本上运行。</p>
+<p>64 位版则使用参数 <code>-android-ndk-platform android-21</code>。<br>
+由于 OpenSSL 1.0.2 系列还不支持 64 位安卓，我们临时使用 <code>./Configure linux-aarch64</code> 对 OpenSSL 进行配置。</p>
   </div>
 </div>
 <h2 id="dynamic-builds">Dynamic Builds</h2>
@@ -442,7 +444,7 @@ arm64 builds are using NDK r10e with -android-ndk-platform android-21 and OpenSS
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Tue, 24 Jan 2023 00:12:13 CST</p>
+Site generated: Wed, 25 Jan 2023 19:43:23 CST</p>
 
         </div>
       </div>

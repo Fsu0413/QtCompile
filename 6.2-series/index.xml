@@ -30,7 +30,7 @@ OpenSSL 3.0 series using -DFEATURE_openssl=ON -DINPUT_openssl=linked for enablin
       <guid>/6.2-series/6.2.4-for-android/index.html</guid>
       <description>Note SQLite (distributed with Qt) are built in the package using -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF Note Since Qt 6.2 Qt made TLS backends as plugin.
 Following backend(s) are built in the package:
-OpenSSL 3.0 series using -DFEATURE_openssl=ON -DINPUT_openssl=linked for enabling linked OpenSSL support Note All builds have -DFEATURE_icu=OFF because I think the ICU library is too big and, in most of the conditions, useless for common users. Note All builds are using NDK r23c with -DANDROID_NATIVE_API_LEVEL=24, it means the APK built using these packages may be not able to run on Android 7.</description>
+OpenSSL 3.0 series using -DFEATURE_openssl=ON -DINPUT_openssl=linked for enabling linked OpenSSL support Note All builds have -DFEATURE_icu=OFF because I think the ICU library is too big and, in most of the conditions, useless for common users. Note Built using NDK r23c with -DANDROID_NATIVE_API_LEVEL=24 argument.</description>
     </item>
     <item>
       <title>6.2.4 for WebAssembly</title>
