@@ -13,6 +13,9 @@
 		"disableAssetsBusting": true,
 		"disableInlineCopyToClipBoard": true
 	},
+	"disableKinds": [
+	   "sitemap"
+	], 
 	"markup": {
 		"goldmark": {
 			"renderer": {
