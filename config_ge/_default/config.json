@@ -14,7 +14,7 @@
 		"disableInlineCopyToClipBoard": true
 	},
 	"disableKinds": [
-	   "sitemap"
+		"sitemap", "RSS"
 	], 
 	"markup": {
 		"goldmark": {
