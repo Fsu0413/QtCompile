@@ -2,600 +2,278 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/zh-cn/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html" />
   </url>
   <url>
     <loc>/zh-cn/5.12-series/5.12.12-for-windows/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/5.12-series/5.12.12-for-windows/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/5.12-series/5.12.12-for-windows/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/5.12-series/5.12.12-for-windows/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/5.12-series/5.12.12-for-windows/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/5.12-series/5.12.12-for-windows/index.html" />
   </url>
   <url>
     <loc>/zh-cn/5.15-series/5.15.8-for-windows/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/5.15-series/5.15.8-for-windows/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/5.15-series/5.15.8-for-windows/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/5.15-series/5.15.8-for-windows/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/5.15-series/5.15.8-for-windows/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/5.15-series/5.15.8-for-windows/index.html" />
   </url>
   <url>
     <loc>/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html" />
   </url>
   <url>
     <loc>/zh-cn/legacy-lts-series/5.9-series/5.9.9-for-windows/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/legacy-lts-series/5.9-series/5.9.9-for-windows/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/legacy-lts-series/5.9-series/5.9.9-for-windows/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/legacy-lts-series/5.9-series/5.9.9-for-windows/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/legacy-lts-series/5.9-series/5.9.9-for-windows/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/legacy-lts-series/5.9-series/5.9.9-for-windows/index.html" />
   </url>
   <url>
     <loc>/zh-cn/6.2-series/6.2.4-for-windows/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/6.2-series/6.2.4-for-windows/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/6.2-series/6.2.4-for-windows/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/6.2-series/6.2.4-for-windows/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/6.2-series/6.2.4-for-windows/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/6.2-series/6.2.4-for-windows/index.html" />
   </url>
   <url>
     <loc>/zh-cn/6.4-series/6.4.2-for-windows/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/6.4-series/6.4.2-for-windows/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/6.4-series/6.4.2-for-windows/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/6.4-series/6.4.2-for-windows/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/6.4-series/6.4.2-for-windows/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/6.4-series/6.4.2-for-windows/index.html" />
   </url>
   <url>
     <loc>/zh-cn/6.5-series/6.5.0-for-windows/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/6.5-series/6.5.0-for-windows/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/6.5-series/6.5.0-for-windows/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/6.5-series/6.5.0-for-windows/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/6.5-series/6.5.0-for-windows/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/6.5-series/6.5.0-for-windows/index.html" />
   </url>
   <url>
     <loc>/zh-cn/miscellaneous/notes-for-this-repo/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/miscellaneous/notes-for-this-repo/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/miscellaneous/notes-for-this-repo/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/miscellaneous/notes-for-this-repo/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/miscellaneous/notes-for-this-repo/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/miscellaneous/notes-for-this-repo/index.html" />
   </url>
   <url>
     <loc>/zh-cn/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html" />
   </url>
   <url>
     <loc>/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html" />
   </url>
   <url>
     <loc>/zh-cn/5.15-series/5.15.8-for-macos/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/5.15-series/5.15.8-for-macos/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/5.15-series/5.15.8-for-macos/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/5.15-series/5.15.8-for-macos/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/5.15-series/5.15.8-for-macos/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/5.15-series/5.15.8-for-macos/index.html" />
   </url>
   <url>
     <loc>/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html" />
   </url>
   <url>
     <loc>/zh-cn/legacy-lts-series/5.9-series/5.9.9-for-macos/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/legacy-lts-series/5.9-series/5.9.9-for-macos/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/legacy-lts-series/5.9-series/5.9.9-for-macos/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/legacy-lts-series/5.9-series/5.9.9-for-macos/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/legacy-lts-series/5.9-series/5.9.9-for-macos/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/legacy-lts-series/5.9-series/5.9.9-for-macos/index.html" />
   </url>
   <url>
     <loc>/zh-cn/6.2-series/6.2.4-for-macos/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/6.2-series/6.2.4-for-macos/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/6.2-series/6.2.4-for-macos/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/6.2-series/6.2.4-for-macos/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/6.2-series/6.2.4-for-macos/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/6.2-series/6.2.4-for-macos/index.html" />
   </url>
   <url>
     <loc>/zh-cn/6.4-series/6.4.2-for-macos/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/6.4-series/6.4.2-for-macos/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/6.4-series/6.4.2-for-macos/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/6.4-series/6.4.2-for-macos/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/6.4-series/6.4.2-for-macos/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/6.4-series/6.4.2-for-macos/index.html" />
   </url>
   <url>
     <loc>/zh-cn/6.5-series/6.5.0-for-macos/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/6.5-series/6.5.0-for-macos/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/6.5-series/6.5.0-for-macos/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/6.5-series/6.5.0-for-macos/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/6.5-series/6.5.0-for-macos/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/6.5-series/6.5.0-for-macos/index.html" />
   </url>
   <url>
     <loc>/zh-cn/miscellaneous/current-build-status/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/miscellaneous/current-build-status/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/miscellaneous/current-build-status/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/miscellaneous/current-build-status/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/miscellaneous/current-build-status/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/miscellaneous/current-build-status/index.html" />
   </url>
   <url>
     <loc>/zh-cn/5.12-series/5.12.12-for-android/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/5.12-series/5.12.12-for-android/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/5.12-series/5.12.12-for-android/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/5.12-series/5.12.12-for-android/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/5.12-series/5.12.12-for-android/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/5.12-series/5.12.12-for-android/index.html" />
   </url>
   <url>
     <loc>/zh-cn/5.15-series/5.15.8-for-android/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/5.15-series/5.15.8-for-android/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/5.15-series/5.15.8-for-android/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/5.15-series/5.15.8-for-android/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/5.15-series/5.15.8-for-android/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/5.15-series/5.15.8-for-android/index.html" />
   </url>
   <url>
     <loc>/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-android/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/legacy-lts-series/5.6-series/5.6.3-for-android/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-android/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/legacy-lts-series/5.6-series/5.6.3-for-android/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/legacy-lts-series/5.6-series/5.6.3-for-android/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-android/index.html" />
   </url>
   <url>
     <loc>/zh-cn/legacy-lts-series/5.9-series/5.9.9-for-android/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/legacy-lts-series/5.9-series/5.9.9-for-android/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/legacy-lts-series/5.9-series/5.9.9-for-android/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/legacy-lts-series/5.9-series/5.9.9-for-android/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/legacy-lts-series/5.9-series/5.9.9-for-android/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/legacy-lts-series/5.9-series/5.9.9-for-android/index.html" />
   </url>
   <url>
     <loc>/zh-cn/6.2-series/6.2.4-for-android/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/6.2-series/6.2.4-for-android/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/6.2-series/6.2.4-for-android/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/6.2-series/6.2.4-for-android/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/6.2-series/6.2.4-for-android/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/6.2-series/6.2.4-for-android/index.html" />
   </url>
   <url>
     <loc>/zh-cn/6.4-series/6.4.2-for-android/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/6.4-series/6.4.2-for-android/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/6.4-series/6.4.2-for-android/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/6.4-series/6.4.2-for-android/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/6.4-series/6.4.2-for-android/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/6.4-series/6.4.2-for-android/index.html" />
   </url>
   <url>
     <loc>/zh-cn/6.5-series/6.5.0-for-android/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/6.5-series/6.5.0-for-android/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/6.5-series/6.5.0-for-android/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/6.5-series/6.5.0-for-android/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/6.5-series/6.5.0-for-android/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/6.5-series/6.5.0-for-android/index.html" />
   </url>
   <url>
     <loc>/zh-cn/miscellaneous/current-failures/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/miscellaneous/current-failures/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/miscellaneous/current-failures/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/miscellaneous/current-failures/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/miscellaneous/current-failures/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/miscellaneous/current-failures/index.html" />
   </url>
   <url>
     <loc>/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html" />
   </url>
   <url>
     <loc>/zh-cn/5.15-series/5.15.8-for-webassembly/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/5.15-series/5.15.8-for-webassembly/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/5.15-series/5.15.8-for-webassembly/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/5.15-series/5.15.8-for-webassembly/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/5.15-series/5.15.8-for-webassembly/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/5.15-series/5.15.8-for-webassembly/index.html" />
   </url>
   <url>
     <loc>/zh-cn/6.2-series/6.2.4-for-webassembly/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/6.2-series/6.2.4-for-webassembly/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/6.2-series/6.2.4-for-webassembly/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/6.2-series/6.2.4-for-webassembly/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/6.2-series/6.2.4-for-webassembly/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/6.2-series/6.2.4-for-webassembly/index.html" />
   </url>
   <url>
     <loc>/zh-cn/6.4-series/6.4.2-for-webassembly/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/6.4-series/6.4.2-for-webassembly/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/6.4-series/6.4.2-for-webassembly/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/6.4-series/6.4.2-for-webassembly/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/6.4-series/6.4.2-for-webassembly/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/6.4-series/6.4.2-for-webassembly/index.html" />
   </url>
   <url>
     <loc>/zh-cn/6.5-series/6.5.0-for-webassembly/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/6.5-series/6.5.0-for-webassembly/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/6.5-series/6.5.0-for-webassembly/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/6.5-series/6.5.0-for-webassembly/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/6.5-series/6.5.0-for-webassembly/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/6.5-series/6.5.0-for-webassembly/index.html" />
   </url>
   <url>
     <loc>/zh-cn/miscellaneous/histories/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/miscellaneous/histories/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/miscellaneous/histories/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/miscellaneous/histories/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/miscellaneous/histories/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/miscellaneous/histories/index.html" />
   </url>
   <url>
     <loc>/zh-cn/legacy-lts-series/4.8-series/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/legacy-lts-series/4.8-series/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/legacy-lts-series/4.8-series/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/legacy-lts-series/4.8-series/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/legacy-lts-series/4.8-series/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/legacy-lts-series/4.8-series/index.html" />
   </url>
   <url>
     <loc>/zh-cn/legacy-lts-series/5.6-series/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/legacy-lts-series/5.6-series/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/legacy-lts-series/5.6-series/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/legacy-lts-series/5.6-series/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/legacy-lts-series/5.6-series/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/legacy-lts-series/5.6-series/index.html" />
   </url>
   <url>
     <loc>/zh-cn/legacy-lts-series/5.9-series/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/legacy-lts-series/5.9-series/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/legacy-lts-series/5.9-series/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/legacy-lts-series/5.9-series/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/legacy-lts-series/5.9-series/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/legacy-lts-series/5.9-series/index.html" />
   </url>
   <url>
     <loc>/zh-cn/5.12-series/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/5.12-series/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/5.12-series/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/5.12-series/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/5.12-series/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/5.12-series/index.html" />
   </url>
   <url>
     <loc>/zh-cn/legacy-lts-series/5.12-series/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/legacy-lts-series/5.12-series/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/legacy-lts-series/5.12-series/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/legacy-lts-series/5.12-series/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/legacy-lts-series/5.12-series/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/legacy-lts-series/5.12-series/index.html" />
   </url>
   <url>
     <loc>/zh-cn/5.15-series/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/5.15-series/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/5.15-series/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/5.15-series/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/5.15-series/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/5.15-series/index.html" />
   </url>
   <url>
     <loc>/zh-cn/6.2-series/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/6.2-series/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/6.2-series/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/6.2-series/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/6.2-series/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/6.2-series/index.html" />
   </url>
   <url>
     <loc>/zh-cn/6.4-series/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/6.4-series/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/6.4-series/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/6.4-series/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/6.4-series/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/6.4-series/index.html" />
   </url>
   <url>
     <loc>/zh-cn/6.5-series/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/6.5-series/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/6.5-series/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/6.5-series/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/6.5-series/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/6.5-series/index.html" />
   </url>
   <url>
     <loc>/zh-cn/miscellaneous/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/miscellaneous/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/miscellaneous/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/miscellaneous/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/miscellaneous/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/miscellaneous/index.html" />
   </url>
   <url>
     <loc>/zh-cn/legacy-lts-series/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/legacy-lts-series/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/legacy-lts-series/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/legacy-lts-series/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/legacy-lts-series/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/legacy-lts-series/index.html" />
   </url>
   <url>
     <loc>/zh-cn/categories/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/categories/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/categories/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/categories/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/categories/index.html" />
   </url>
   <url>
     <loc>/zh-cn/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/index.html" />
   </url>
   <url>
     <loc>/zh-cn/tags/index.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/tags/index.html"
-                />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/tags/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="/tags/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="/zh-cn/tags/index.html" />
   </url>
 </urlset>
