@@ -110,5 +110,14 @@
     },
     "fsqtbuild_i18n_qt6tls_securetransport": {
         "other": "macOS 提供的 Secure Transport library，使用 `-DFEATURE_securetransport=ON`"
+    },
+    "fsqtbuild_i18n_ndk": {
+        "other": "使用 NDK %s 版本，使用参数 `%s` 进行构建。  \n这意味着这些构建可能只能在安卓 %s 以及之后的版本上运行。"
+    },
+    "fsqtbuild_i18n_ndk59": {
+        "other": "使用 NDK %s 版本，使用参数 `%s` 进行 32 位版本的构建。  \n这意味着这些构建可能只能在安卓 %s 以及之后的版本上运行。\n\n64 位版则使用参数 `-android-ndk-platform android-21`。  \n由于 OpenSSL 1.0.2 系列还不支持 64 位安卓，我们临时使用 `./Configure linux-aarch64` 对 OpenSSL 进行配置。"
+    },
+    "fsqtbuild_i18n_macOSUniversal": {
+        "other": "这个版本我只会提供统一二进制构建。 [统一二进制](https://developer.apple.com/documentation/apple-silicon/building-a-universal-macos-binary) 在 Intel 和 Apple 芯片的 Mac 上都能原生运行。"
     }
 }
