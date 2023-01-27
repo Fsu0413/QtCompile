@@ -39,16 +39,6 @@
 		"description": "MinGW-w64 v10 w/ GCC 12.1.0",
 		"addr": "https://github.com/cristianadam/mingw-builds/releases/download/v12.1.0-rev0/x86_64-12.1.0-release-posix-seh-rt_v10-rev0.7z"
 	},
-	"wx6u4": {
-		"bits": "64",
-		"description": "MinGW-W64 LLVM 14.0.0 UCRT",
-		"addr": "https://github.com/mstorsjo/llvm-mingw/releases/download/20220323/llvm-mingw-20220323-ucrt-x86_64.zip"
-	},
-	"wx6m4": {
-		"bits": "64",
-		"description": "MinGW-W64 LLVM 14.0.0 msvcrt",
-		"addr": "https://github.com/mstorsjo/llvm-mingw/releases/download/20220323/llvm-mingw-20220323-msvcrt-x86_64.zip"
-	},
 	"wx6u5": {
 		"bits": "64",
 		"description": "MinGW-W64 LLVM 15.0.0 UCRT",

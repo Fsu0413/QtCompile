@@ -15,7 +15,7 @@
 			"configuration": "√"
 		}
 	},
-	"q4_8wx3m4": {
+	"q4_8wx3g4": {
 		"fileName": "Qt4.8.7-Windows-x86-MinGW4.9.4-20200104.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt4.8/Windows-x86/Qt4.8.7-Windows-x86-MinGW4.9.4-20200104.7z",
 		"addrOsdn": "https://osdn.net/downloads/users/30/30828/Qt4.8.7-Windows-x86-MinGW4.9.4-20200104.7z",
@@ -115,7 +115,7 @@
 			"configuration": "√"
 		}
 	},
-	"q5_6wx3m4": {
+	"q5_6wx3g4": {
 		"fileName": "Qt5.6.3-Windows-x86-MinGW4.9.4-20200104.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Windows-x86/Qt5.6.3-Windows-x86-MinGW4.9.4-20200104.7z",
 		"addrOsdn": "https://osdn.net/downloads/users/30/30721/Qt5.6.3-Windows-x86-MinGW4.9.4-20200104.7z",
@@ -132,7 +132,7 @@
 			"configuration": "√"
 		}
 	},
-	"q5_6wx6m4": {
+	"q5_6wx6g4": {
 		"fileName": "Qt5.6.3-Windows-x86_64-MinGW4.9.4-20200104.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Windows-x86_64/Qt5.6.3-Windows-x86_64-MinGW4.9.4-20200104.7z",
 		"addrOsdn": "https://osdn.net/downloads/users/30/30720/Qt5.6.3-Windows-x86_64-MinGW4.9.4-20200104.7z",
@@ -149,7 +149,7 @@
 			"configuration": "√"
 		}
 	},
-	"q5_6wx3m4st": {
+	"q5_6wx3g4st": {
 		"fileName": "Qt5.6.3-Windows-x86-MinGW4.9.4-static-20200104.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Windows-x86/Qt5.6.3-Windows-x86-MinGW4.9.4-static-20200104.7z",
 		"addrOsdn": "https://osdn.net/downloads/users/30/30722/Qt5.6.3-Windows-x86-MinGW4.9.4-static-20200104.7z",
@@ -166,7 +166,7 @@
 			"configuration": "√"
 		}
 	},
-	"q5_6wx3m4sf": {
+	"q5_6wx3g4sf": {
 		"fileName": "Qt5.6.3-Windows-x86-MinGW4.9.4-staticFull-20200104-ManualPatchSslLib.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Windows-x86/Qt5.6.3-Windows-x86-MinGW4.9.4-staticFull-20200104-ManualPatchSslLib.7z",
 		"addrOsdn": "https://osdn.net/downloads/users/30/30723/Qt5.6.3-Windows-x86-MinGW4.9.4-staticFull-20200104-ManualPatchSslLib.7z",
@@ -281,7 +281,7 @@
 			"configuration": "√"
 		}
 	},
-	"q5_6wx6m4_aa3n0": {
+	"q5_6wx6g4_aa3n0": {
 		"fileName": "Qt5.6.3-Android-arm-gcc-NDKr10e-XWindows-x86_64-MinGW4.9.4-20200105.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Android/Windows-x86_64-hosted/Qt5.6.3-Android-arm-gcc-NDKr10e-XWindows-x86_64-MinGW4.9.4-20200105.7z",
 		"addrOsdn": "https://osdn.net/downloads/users/30/30715/Qt5.6.3-Android-arm-gcc-NDKr10e-XWindows-x86_64-MinGW4.9.4-20200105.7z",
@@ -297,7 +297,7 @@
 			"configuration": "√"
 		}
 	},
-	"q5_6wx6m4_ax3n0": {
+	"q5_6wx6g4_ax3n0": {
 		"fileName": "Qt5.6.3-Android-x86-gcc-NDKr10e-XWindows-x86_64-MinGW4.9.4-20200105.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Android/Windows-x86_64-hosted/Qt5.6.3-Android-x86-gcc-NDKr10e-XWindows-x86_64-MinGW4.9.4-20200105.7z",
 		"addrOsdn": "https://osdn.net/downloads/users/30/30716/Qt5.6.3-Android-x86-gcc-NDKr10e-XWindows-x86_64-MinGW4.9.4-20200105.7z",
@@ -441,7 +441,7 @@
 			"configuration": "√"
 		}
 	},
-	"q5_9wx3m7": {
+	"q5_9wx3g7": {
 		"fileName": "Qt5.9.9-Windows-x86-MinGW7.3.0-20200104.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Windows-x86/Qt5.9.9-Windows-x86-MinGW7.3.0-20200104.7z",
 		"addrOsdn": "https://osdn.net/downloads/users/30/30741/Qt5.9.9-Windows-x86-MinGW7.3.0-20200104.7z",
@@ -458,7 +458,7 @@
 			"configuration": "√"
 		}
 	},
-	"q5_9wx6m7": {
+	"q5_9wx6g7": {
 		"fileName": "Qt5.9.9-Windows-x86_64-MinGW7.3.0-20200104.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Windows-x86_64/Qt5.9.9-Windows-x86_64-MinGW7.3.0-20200104.7z",
 		"addrOsdn": "https://osdn.net/downloads/users/30/30746/Qt5.9.9-Windows-x86_64-MinGW7.3.0-20200104.7z",
@@ -507,7 +507,7 @@
 			"configuration": "√"
 		}
 	},
-	"q5_9wx6m7_aa3n0": {
+	"q5_9wx6g7_aa3n0": {
 		"fileName": "Qt5.9.9-Android-arm-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/Windows-x86_64-hosted/Qt5.9.9-Android-arm-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z",
 		"addrOsdn": "https://osdn.net/downloads/users/30/30737/Qt5.9.9-Android-arm-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z",
@@ -523,7 +523,7 @@
 			"configuration": "√"
 		}
 	},
-	"q5_9wx6m7_aa6n0": {
+	"q5_9wx6g7_aa6n0": {
 		"fileName": "Qt5.9.9-Android-arm64-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/Windows-x86_64-hosted/Qt5.9.9-Android-arm64-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z",
 		"addrOsdn": "https://osdn.net/downloads/users/30/30738/Qt5.9.9-Android-arm64-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z",
@@ -539,7 +539,7 @@
 			"configuration": "√"
 		}
 	},
-	"q5_9wx6m7_ax3n0": {
+	"q5_9wx6g7_ax3n0": {
 		"fileName": "Qt5.9.9-Android-x86-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/Windows-x86_64-hosted/Qt5.9.9-Android-x86-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z",
 		"addrOsdn": "https://osdn.net/downloads/users/30/30739/Qt5.9.9-Android-x86-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z",

@@ -33,7 +33,7 @@
 			"configuration": "√"
 		}
 	},
-	"q5_12wx6m7_aa6nl": {
+	"q5_12wx6g7_aa6nl": {
 		"sort": 22,
 		"fileName": "Qt5.12.12-Android-arm64-Clang-NDKr21e-XWindows-x86_64-MinGW7.3.0-20221104.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-arm64-Clang-NDKr21e-XWindows-x86_64-MinGW7.3.0-20221104.7z",
@@ -84,7 +84,7 @@
 			"configuration": "√"
 		}
 	},
-	"q5_12wx6m7_aa3nl": {
+	"q5_12wx6g7_aa3nl": {
 		"sort": 21,
 		"fileName": "Qt5.12.12-Android-arm-Clang-NDKr21e-XWindows-x86_64-MinGW7.3.0-20221104.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-arm-Clang-NDKr21e-XWindows-x86_64-MinGW7.3.0-20221104.7z",
@@ -135,7 +135,7 @@
 			"configuration": "√"
 		}
 	},
-	"q5_12wx6m7_ax3nl": {
+	"q5_12wx6g7_ax3nl": {
 		"sort": 23,
 		"fileName": "Qt5.12.12-Android-x86-Clang-NDKr21e-XWindows-x86_64-MinGW7.3.0-20221104.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-x86-Clang-NDKr21e-XWindows-x86_64-MinGW7.3.0-20221104.7z",
@@ -152,7 +152,7 @@
 			"configuration": "√"
 		}
 	},
-	"q5_12wx3m7": {
+	"q5_12wx3g7": {
 		"sort": 12,
 		"fileName": "Qt5.12.12-Windows-x86-MinGW7.3.0-20221104.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86/Qt5.12.12-Windows-x86-MinGW7.3.0-20221104.7z",
@@ -170,7 +170,7 @@
 			"configuration": "√"
 		}
 	},
-	"q5_12wx3m7sf": {
+	"q5_12wx3g7sf": {
 		"sort": 13,
 		"fileName": "Qt5.12.12-Windows-x86-MinGW7.3.0-staticFull-20221104.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86/Qt5.12.12-Windows-x86-MinGW7.3.0-staticFull-20221104.7z",
@@ -292,7 +292,7 @@
 			"configuration": "√"
 		}
 	},
-	"q5_12wx6m7": {
+	"q5_12wx6g7": {
 		"sort": 14,
 		"fileName": "Qt5.12.12-Windows-x86_64-MinGW7.3.0-20221104.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86_64/Qt5.12.12-Windows-x86_64-MinGW7.3.0-20221104.7z",
@@ -310,7 +310,7 @@
 			"configuration": "√"
 		}
 	},
-	"q5_12wx6m7sf": {
+	"q5_12wx6g7sf": {
 		"sort": 15,
 		"fileName": "Qt5.12.12-Windows-x86_64-MinGW7.3.0-staticFull-20221103.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86_64/Qt5.12.12-Windows-x86_64-MinGW7.3.0-staticFull-20221103.7z",
@@ -461,7 +461,7 @@
 			"configuration": "√"
 		}
 	},
-	"q5_15wx6m8_aalnl": {
+	"q5_15wx6g8_aalnl": {
 		"sort": 17,
 		"fileName": "Qt5.15.8-Android-ALL-Clang-NDKr21e-XWindows-x86_64-MinGW8.1.0-20230108.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Android/Qt5.15.8-Android-ALL-Clang-NDKr21e-XWindows-x86_64-MinGW8.1.0-20230108.7z",
@@ -548,7 +548,7 @@
 			"configuration": "√"
 		}
 	},
-	"q5_15wx6m8_W": {
+	"q5_15wx6g8_W": {
 		"sort": 20,
 		"fileName": "Qt5.15.8-WebAssembly-emscripten1.39.8-xWindows-x86_64-MinGW8.1.0-20230108.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/WebAssembly/Qt5.15.8-WebAssembly-emscripten1.39.8-xWindows-x86_64-MinGW8.1.0-20230108.7z",
@@ -565,7 +565,7 @@
 			"configuration": "√"
 		}
 	},
-	"q5_15wx3m8": {
+	"q5_15wx3g8": {
 		"sort": 11,
 		"fileName": "Qt5.15.8-Windows-x86-MinGW8.1.0-20230108.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86/Qt5.15.8-Windows-x86-MinGW8.1.0-20230108.7z",
@@ -583,7 +583,7 @@
 			"configuration": "√"
 		}
 	},
-	"q5_15wx3m8sf": {
+	"q5_15wx3g8sf": {
 		"sort": 12,
 		"fileName": "Qt5.15.8-Windows-x86-MinGW8.1.0-staticFull-20230108.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86/Qt5.15.8-Windows-x86-MinGW8.1.0-staticFull-20230108.7z",
@@ -672,7 +672,7 @@
 			"configuration": "√"
 		}
 	},
-	"q5_15wx6m8": {
+	"q5_15wx6g8": {
 		"sort": 13,
 		"fileName": "Qt5.15.8-Windows-x86_64-MinGW8.1.0-20230108.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/Qt5.15.8-Windows-x86_64-MinGW8.1.0-20230108.7z",
@@ -690,7 +690,7 @@
 			"configuration": "√"
 		}
 	},
-	"q5_15wx6m8sf": {
+	"q5_15wx6g8sf": {
 		"sort": 14,
 		"fileName": "Qt5.15.8-Windows-x86_64-MinGW8.1.0-staticFull-20230108.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/Qt5.15.8-Windows-x86_64-MinGW8.1.0-staticFull-20230108.7z",
