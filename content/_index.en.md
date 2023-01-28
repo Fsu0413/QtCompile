@@ -41,6 +41,10 @@ Please refer to the content lists in the left area.
 
 ## Update History
 
+### 2023.1.28
+Update Qt 6.5.0-beta2 packages (with QtOpcUa)  
+Update Qt 6.2.4 static `full` builds with a workaround of {{% QtBug 102877 %}} .
+
 ### 2023.1.23
 Update Qt 6.5.0-beta1 packages (without QtOpcUa)  
 Update Qt 6.2.4 / Qt 6.4.2 with static `libgcc` on Windows. Previous version relies on the `libgcc` DLL. Affected versions are all cross built version and the static `full` builds.
