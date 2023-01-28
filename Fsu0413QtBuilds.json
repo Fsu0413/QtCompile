@@ -1040,13 +1040,13 @@
 	},
 	"q6_2malsf": {
 		"sort": 20,
-		"fileName": "Qt6.2.4-macOS-Universal-AppleClang14.0.0-staticFull-20230107.tar.xz",
-		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-Universal/Qt6.2.4-macOS-Universal-AppleClang14.0.0-staticFull-20230107.tar.xz",
-		"addrOsdn": "https://osdn.net/downloads/users/40/40120/Qt6.2.4-macOS-Universal-AppleClang14.0.0-staticFull-20230107.tar.xz",
+		"fileName": "Qt6.2.4-macOS-Universal-AppleClang14.0.0-staticFull-20230128.tar.xz",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-Universal/Qt6.2.4-macOS-Universal-AppleClang14.0.0-staticFull-20230128.tar.xz",
+		"addrOsdn": "https://osdn.net/downloads/users/40/40647/Qt6.2.4-macOS-Universal-AppleClang14.0.0-staticFull-20230128.tar.xz",
 		"data": {
 			"QtVersion": "6.2.4",
 			"platform": "macOS",
-			"buildHost": "macOS 12.6.2",
+			"buildHost": "macOS 12.6.3",
 			"toolchain": "AppleClang 14.0.0",
 			"arch": "Universal",
 			"variant": "-static(Full)",
@@ -1162,9 +1162,9 @@
 	},
 	"q6_2wx6m1sf": {
 		"sort": 8,
-		"fileName": "Qt6.2.4-Windows-x86_64-MinGW11.2.0-staticFull-20230122.7z",
-		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW11.2.0-staticFull-20230122.7z",
-		"addrOsdn": "https://osdn.net/downloads/users/40/40592/Qt6.2.4-Windows-x86_64-MinGW11.2.0-staticFull-20230122.7z",
+		"fileName": "Qt6.2.4-Windows-x86_64-MinGW11.2.0-staticFull-20230128.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW11.2.0-staticFull-20230128.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/40/40638/Qt6.2.4-Windows-x86_64-MinGW11.2.0-staticFull-20230128.7z",
 		"MinGWConf": "wx6g1",
 		"data": {
 			"QtVersion": "6.2.4",
@@ -1198,9 +1198,9 @@
 	},
 	"q6_2wx6g2sf": {
 		"sort": 10,
-		"fileName": "Qt6.2.4-Windows-x86_64-MinGW12.1.0-staticFull-20230122.7z",
-		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW12.1.0-staticFull-20230122.7z",
-		"addrOsdn": "https://osdn.net/downloads/users/40/40593/Qt6.2.4-Windows-x86_64-MinGW12.1.0-staticFull-20230122.7z",
+		"fileName": "Qt6.2.4-Windows-x86_64-MinGW12.1.0-staticFull-20230128.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW12.1.0-staticFull-20230128.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/40/40639/Qt6.2.4-Windows-x86_64-MinGW12.1.0-staticFull-20230128.7z",
 		"MinGWConf": "wx6g2",
 		"data": {
 			"QtVersion": "6.2.4",
@@ -1234,14 +1234,14 @@
 	},
 	"q6_2wx6v9sf": {
 		"sort": 3,
-		"fileName": "Qt6.2.4-Windows-x86_64-VS2019-16.11.22-staticFull-20230107.7z",
-		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-VS2019-16.11.22-staticFull-20230107.7z",
-		"addrOsdn": "https://osdn.net/downloads/users/40/40130/Qt6.2.4-Windows-x86_64-VS2019-16.11.22-staticFull-20230107.7z",
+		"fileName": "Qt6.2.4-Windows-x86_64-VS2019-16.11.23-staticFull-20230128.7z",
+		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-VS2019-16.11.23-staticFull-20230128.7z",
+		"addrOsdn": "https://osdn.net/downloads/users/40/40642/Qt6.2.4-Windows-x86_64-VS2019-16.11.23-staticFull-20230128.7z",
 		"data": {
 			"QtVersion": "6.2.4",
 			"platform": "Windows",
 			"buildHost": "Windows 11 10.0.22621",
-			"toolchain": "VS2019 16.11.22 w/ Windows SDK 10.0.22000",
+			"toolchain": "VS2019 16.11.23 w/ Windows SDK 10.0.22000",
 			"arch": "x86_64",
 			"variant": "-static(Full)",
 			"mkspecs": "win32-msvc",
