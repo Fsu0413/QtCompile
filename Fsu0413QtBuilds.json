@@ -832,7 +832,7 @@
 			"configuration": "√"
 		}
 	},
-	"q6_2wx6m1_aa6n3": {
+	"q6_2wx6g1_aa6n3": {
 		"sort": 22,
 		"fileName": "Qt6.2.4-Android-arm64-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20230123.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-arm64-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20230123.7z",
@@ -883,7 +883,7 @@
 			"configuration": "√"
 		}
 	},
-	"q6_2wx6m1_aa3n3": {
+	"q6_2wx6g1_aa3n3": {
 		"sort": 21,
 		"fileName": "Qt6.2.4-Android-arm-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20230123.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-arm-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20230123.7z",
@@ -934,7 +934,7 @@
 			"configuration": "√"
 		}
 	},
-	"q6_2wx6m1_ax6n3": {
+	"q6_2wx6g1_ax6n3": {
 		"sort": 24,
 		"fileName": "Qt6.2.4-Android-x86_64-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20230123.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-x86_64-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20230123.7z",
@@ -985,7 +985,7 @@
 			"configuration": "√"
 		}
 	},
-	"q6_2wx6m1_ax3n3": {
+	"q6_2wx6g1_ax3n3": {
 		"sort": 23,
 		"fileName": "Qt6.2.4-Android-x86-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20230123.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/Qt6.2.4-Android-x86-Clang-NDKr23c-XWindows-x86_64-MinGW11.2.0-20230123.7z",
@@ -1089,7 +1089,7 @@
 			"configuration": "√"
 		}
 	},
-	"q6_2wx6m1_W": {
+	"q6_2wx6g1_W": {
 		"sort": 33,
 		"fileName": "Qt6.2.4-WebAssembly-emscripten2.0.14-xWindows-x86_64-MinGW11.2.0-20230123.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/WebAssembly/Qt6.2.4-WebAssembly-emscripten2.0.14-xWindows-x86_64-MinGW11.2.0-20230123.7z",
@@ -1142,7 +1142,7 @@
 			"configuration": "√"
 		}
 	},
-	"q6_2wx6m1": {
+	"q6_2wx6g1": {
 		"sort": 6,
 		"fileName": "Qt6.2.4-Windows-x86_64-MinGW11.2.0-20230107.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW11.2.0-20230107.7z",
@@ -1160,7 +1160,7 @@
 			"configuration": "√"
 		}
 	},
-	"q6_2wx6m1sf": {
+	"q6_2wx6g1sf": {
 		"sort": 8,
 		"fileName": "Qt6.2.4-Windows-x86_64-MinGW11.2.0-staticFull-20230128.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW11.2.0-staticFull-20230128.7z",
@@ -1295,7 +1295,7 @@
 			"configuration": "√"
 		}
 	},
-	"q6_2wx6m1st": {
+	"q6_2wx6g1st": {
 		"sort": 7,
 		"data": {
 			"QtVersion": "6.2.4",
