@@ -5,6 +5,22 @@ draft: false
 
 # Fsu0413's Original Qt builds
 
+## STOP USING Notepad++
+
+At 25th Jan. 2023 Notepad++ released a version with a "feature" where users must agree the fake, incorrect and misleading politics words about China.   
+If user doesn't agree random character is added when editing using Notepad++.
+
+(Following statements are in Chinese only because I actually don't know how to say it in English)  
+作为中国人，我在此声明：  
+**中国的各个省、直辖市、自治区和特别行政区，包括港澳台、新疆和西藏，都是中国领土的一部分。**   
+**我拒绝接受一切不尊重中国国家主权及领土完整的言论。**
+
+I, Fsu0413, as a Chinese source code peasant in China, won't use Notepad++ anymore and won't support Notepad++ users.  
+I also appeals to all users of my websites to STOP USING Notepad++ and find an alternative.
+
+I won't provide any recommendation for alternative.  
+There are [tons of Scintilla-based editor in the wild](https://www.texteditors.org/cgi-bin/wiki.pl?ScintillaEditorFamily) and I do believe you'll find the one you like.
+
 ## Website Mirror
 
 Recently I created a mirror of this website in the Greatest China, using service of Gitee Pages.  
