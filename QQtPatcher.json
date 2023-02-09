@@ -142,28 +142,28 @@
 			"mkspec": "win32-msvc",
 			"os": "Windows 8.1 Update",
 			"toolchain": "VS2015 Update 3",
-			"version": "0.8.1"
+			"version": "0.8.2"
 		},
 		{
 			"QtVersion": "5.12.12",
 			"mkspec": "win32-msvc",
 			"os": "Windows 11 10.0.22000",
-			"toolchain": "VS2017 15.9.50",
-			"version": "0.8.1"
+			"toolchain": "VS2017 15.9.51",
+			"version": "0.8.2"
 		},
 		{
 			"QtVersion": "5.12.12",
 			"mkspec": "macx-clang",
-			"os": "macOS 11.6.5",
+			"os": "macOS 11.7.2",
 			"toolchain": "AppleClang 12.0.0",
-			"version": "0.8.1"
+			"version": "0.8.2"
 		},
 		{
 			"QtVersion": "5.12.12",
 			"mkspec": "linux-g++",
-			"os": "RockyLinux 8.6",
+			"os": "RockyLinux 8.7",
 			"toolchain": "GCC 8.5.0",
-			"version": "0.8.1"
+			"version": "0.8.2"
 		}
 	]
 }
