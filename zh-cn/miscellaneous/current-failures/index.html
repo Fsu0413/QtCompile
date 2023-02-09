@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.110.0">
-    <meta name="generator" content="Relearn 5.10.2">
+    <meta name="generator" content="Relearn 5.11.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>当前的失败项 :: Fsu0413 的原版 Qt 构建</title>
@@ -13,7 +13,6 @@
     <link href="/zh-cn/miscellaneous/current-failures/index.html" rel="alternate" hreflang="zh-cn">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/css/fontawesome-all.min.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css" rel="stylesheet"></noscript>
-    <link href="/css/featherlight.min.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css" rel="stylesheet"></noscript>
     <link href="/css/auto-complete.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css" rel="stylesheet"></noscript>
     <link href="/css/perfect-scrollbar.min.css" rel="stylesheet">
     <link href="/css/nucleus.css" rel="stylesheet">
@@ -40,8 +39,7 @@
       // some further base stuff
       var baseUriFull='/';
       window.variants && variants.init( [ 'relearn-dark', 'relearn-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
-    </script>
-    <script src="/js/jquery.min.js" defer></script><style>
+    </script><style>
     p.fsu0413_leftFooter {
         text-align: center;
         font-style: italic;
@@ -74,7 +72,7 @@
         <div>
           <div id="breadcrumbs">
             <span id="sidebar-toggle-span">
-              <a href="#" id="sidebar-toggle" title='导航 (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+              <a href="#" id="sidebar-toggle" class="topbar-link" title='导航 (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
             </span>
             <span id="toc-menu" title='目录 (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
@@ -103,7 +101,7 @@
           <div id="head-tags">
           </div>
           <article class="default">
-<h1 id="%E5%BD%93%E5%89%8D%E7%9A%84%E5%A4%B1%E8%B4%A5%E9%A1%B9">当前的失败项</h1>
+<h1 id="当前的失败项">当前的失败项</h1>
 
 <h2 id="qt-512-以后的-qdoc-使用-msvc-构建时无法使用静态链接的-clang">Qt 5.12 以后的 QDoc 使用 MSVC 构建时无法使用静态链接的 clang</h2>
 <p>它使用 <code>libclang_static.lib</code> 但是 clang 构建中没有这个文件。<br>
@@ -251,14 +249,13 @@ QtWebEngine 自从 6.2.4 之后就没再针对 LTS 版本发布新版，而是�
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sun, 29 Jan 2023 08:57:39 CST</p>
+Site generated: Thu, 09 Feb 2023 22:45:24 CST</p>
 
         </div>
       </div>
     </aside>
     <script src="/js/clipboard.min.js" defer></script>
     <script src="/js/perfect-scrollbar.min.js" defer></script>
-    <script src="/js/featherlight.min.js" defer></script>
     <script src="/js/theme.js" defer></script>
   </body>
 </html>

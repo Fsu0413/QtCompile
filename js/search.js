@@ -10,7 +10,7 @@ var lunrIndex, pagesIndex;
 
 function initLunrIndex( index ){
     pagesIndex = index;
-    // Set up lunrjs by declaring the fields we use
+    // Set up Lunr by declaring the fields we use
     // Also provide their boost level for the ranking
     lunrIndex = lunr(function() {
         this.use(lunr.multiLanguage.apply(null, contentLangs));
@@ -28,7 +28,7 @@ function initLunrIndex( index ){
         this.pipeline.remove(lunr.stemmer);
         this.searchPipeline.remove(lunr.stemmer);
 
-        // Feed lunr with each file and let lunr actually index them
+        // Feed Lunr with each file and let LUnr actually index them
         pagesIndex.forEach(function(page, idx) {
             page.index = idx;
             this.add(page);
@@ -80,14 +80,20 @@ function initLunrJson() {
     // backward compatiblity if the user did not
     // define the SEARCH output format for the homepage
     if( window.index_json_url && !window.index_js_url ){
-        $.getJSON(index_json_url)
-        .done(function(index) {
-            initLunrIndex(index);
-        })
-        .fail(function(jqxhr, textStatus, error) {
-            var err = textStatus + ', ' + error;
-            console.error('Error getting Hugo index file:', err);
-        });
+        xhr = new XMLHttpRequest;
+        xhr.onreadystatechange = function(){
+            if( xhr.readyState == 4 ){
+                if( xhr.status == 200 ){
+                    initLunrIndex( JSON.parse( xhr.responseText ) );
+                }
+                else{
+                    var err = xhr.status;
+                    console.error( 'Error getting Hugo index file: ', err );
+                }
+            }
+        }
+        xhr.open( 'GET', index_json_url );
+        xhr.send();
     }
 }
 
@@ -108,13 +114,13 @@ function initLunrJs() {
 }
 
 /**
- * Trigger a search in lunr and transform the result
+ * Trigger a search in Lunr and transform the result
  *
  * @param  {String} term
  * @return {Array}  results
  */
 function search(term) {
-    // Find the item in our index corresponding to the lunr one to have more info
+    // Find the item in our index corresponding to the Lunr one to have more info
     // Remove Lunr special search characters: https://lunrjs.com/guides/searching.html
     var searchTerm = lunr.tokenizer(term.replace(/[*:^~+-]/, ' ')).reduce( function(a,token){return a.concat(searchPatterns(token.str))}, []).join(' ');
     return !searchTerm || !lunrIndex ? [] : lunrIndex.search(searchTerm).map(function(result) {
@@ -197,10 +203,10 @@ function searchDetail() {
     setTimeout( adjustContentWidth, 0 );
 }
 
-// Let's get started
 initLunrJson();
 initLunrJs();
-$(function() {
+
+function startSearch(){
     var url = new URL( window.location );
     window.history.replaceState(url.toString(), '', url);
 
@@ -239,9 +245,6 @@ $(function() {
             e.preventDefault();
         }
     });
+};
 
-    // JavaScript-autoComplete only registers the focus event when minChars is 0 which doesn't make sense, let's do it ourselves
-    // https://github.com/Pixabay/JavaScript-autoComplete/blob/master/auto-complete.js#L191
-    var selector = $('#search-by').get(0);
-    $(selector).focus(selector.focusHandler);
-});
+ready( startSearch );

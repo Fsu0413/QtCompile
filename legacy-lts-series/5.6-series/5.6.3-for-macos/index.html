@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.110.0">
-    <meta name="generator" content="Relearn 5.10.2">
+    <meta name="generator" content="Relearn 5.11.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>5.6.3 for macOS :: Fsu0413&#39;s Original Qt builds</title>
@@ -13,7 +13,6 @@
     <link href="/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html" rel="alternate" hreflang="zh-cn">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/css/fontawesome-all.min.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css" rel="stylesheet"></noscript>
-    <link href="/css/featherlight.min.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css" rel="stylesheet"></noscript>
     <link href="/css/auto-complete.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css" rel="stylesheet"></noscript>
     <link href="/css/perfect-scrollbar.min.css" rel="stylesheet">
     <link href="/css/nucleus.css" rel="stylesheet">
@@ -40,8 +39,7 @@
       // some further base stuff
       var baseUriFull='/';
       window.variants && variants.init( [ 'relearn-dark', 'relearn-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
-    </script>
-    <script src="/js/jquery.min.js" defer></script><style>
+    </script><style>
     p.fsu0413_leftFooter {
         text-align: center;
         font-style: italic;
@@ -74,7 +72,7 @@
         <div>
           <div id="breadcrumbs">
             <span id="sidebar-toggle-span">
-              <a href="#" id="sidebar-toggle" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+              <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
             </span>
             <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
@@ -104,7 +102,7 @@
           <div id="head-tags">
           </div>
           <article class="default">
-<h1 id="5.6.3-for-macos">5.6.3 for macOS</h1>
+<h1 id="563-for-macos">5.6.3 for macOS</h1>
 
 
 <div class="box notices cstyle warning">
@@ -117,7 +115,11 @@ FINAL VERSION, NO MORE UPDATES EVEN IF REQUESTED, BUILD ENVIRONMENT HAS BEEN DES
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
   <div class="box-content">
-SQLite (distributed with Qt) are built in the package using <code>-plugin-sql-sqlite</code>  </div>
+<p>Following database backend is distributed with this version:</p>
+<ol>
+<li>SQLite (distributed with Qt): Built in the package using command <code>-plugin-sql-sqlite</code>.</li>
+</ol>
+  </div>
 </div>
 
 
@@ -297,14 +299,13 @@ All builds have <code>-no-icu</code> because I think the ICU library is too big 
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sun, 29 Jan 2023 08:57:39 CST</p>
+Site generated: Thu, 09 Feb 2023 22:45:23 CST</p>
 
         </div>
       </div>
     </aside>
     <script src="/js/clipboard.min.js" defer></script>
     <script src="/js/perfect-scrollbar.min.js" defer></script>
-    <script src="/js/featherlight.min.js" defer></script>
     <script src="/js/theme.js" defer></script>
   </body>
 </html>
