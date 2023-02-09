@@ -25,7 +25,7 @@ weight: 2
 ## OpenSSL 状态
 
 我的 Qt 构建在大部分平台上使用链接的 OpenSSL。  
-这是一个我构建 OpenSSL 的列表。
+下面是我构建 OpenSSL 的列表。
 
 注：  
 Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的 Qt 5 开始我们使用 SChannel。  
@@ -36,6 +36,21 @@ OpenSSL 3 系列在 6.2.3 以及更新的 Qt 6 版本上使用。
 在 Windows 上我们使用 OpenSSL 和 SChannel，而在 macOS 上我们使用 OpenSSL 和 SecureTransport。
 
 {{% OpenSSLSeries %}}
+
+## MariaDB 状态
+
+从 2023 年 2 月 8 日开始，Qt 5.15 及以上的桌面版构建中附带 MariaDB connector/c 的动态库。
+这个动态库用来构建 MySQL 数据库插件。  
+不使用 MySQL 提供的库的原因有以下几个。
+
+1. MariaDB 是真正的“原来的” MySQL
+1. 使用新版 MySQL （8.0 及以后的版本）需要下载并构建整个 MySQL 数据库。而 MySQL 数据库太大，构建较费事。
+1. MySQL 出自 Oracle。而 Oracle 有打击开源社区的历史。
+
+在 Qt 5.15 版本上，我们使用 MariaDB connector/c 3.1 系列的版本。  
+在 Qt 6.2 以及更高的版本上，我们使用 MariaDB connector/c 3.3 系列的版本。
+
+(Under construction)
 
 ## Qt 5.12 系列（以前的 LTS 发布版本，Qt 已经结束支持）
 
