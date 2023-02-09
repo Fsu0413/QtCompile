@@ -1,0 +1,2 @@
+@import "theme-relearn-dark.css" screen;
+@import "theme-relearn-light.css" screen and (prefers-color-scheme: dark);

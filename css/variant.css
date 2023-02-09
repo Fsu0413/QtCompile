@@ -332,7 +332,7 @@ table {
     background-color: var(--INTERNAL-MAIN-BG-color);
 }
 
-div.featherlight .featherlight-content{
+.lightbox img{
     background-color: var(--INTERNAL-MAIN-BG-color);
 }
 
@@ -366,6 +366,18 @@ pre .copy-to-clipboard-button:hover {
     background-color: var(--INTERNAL-MAIN-LINK-color);
     border-color: var(--INTERNAL-MAIN-LINK-color);
     color: var(--INTERNAL-CODE-BLOCK-BG-color);
+}
+
+.expand > label {
+    color: var(--INTERNAL-MAIN-LINK-color);
+}
+
+.expand > label:hover {
+    color: var(--INTERNAL-MAIN-LINK-HOVER-color);
+}
+
+.expand > label:after {
+    background-color: var(--INTERNAL-MAIN-LINK-HOVER-color);
 }
 
 #homelinks {
