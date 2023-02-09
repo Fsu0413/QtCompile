@@ -1,132 +1,135 @@
 {
-    ":": {
-        "other": "："
-    },
-    "Platform": {
-        "other": "平台"
-    },
-    "Build Host" : {
-        "other": "构建主机"
-    },
-    "Toolchain Version": {
-        "other": "工具链版本"
-    },
-    "Architecture": {
-        "other": "架构"
-    },
-    "Variant": {
-        "other": "变体"
-    },
-    "Uploaded": {
-        "other": "已上传"
-    },
-    "Configuration": {
-        "other": "已配置"
-    },
-    "Qt Version": {
-        "other": "Qt 版本"
-    },
-    "Build Target": {
-        "other": "构建目标"
-    },
-    "Notes": {
-        "other": "备注"
-    },
-    "Tested": {
-        "other": "已测试"
-    },
-    "QQtPatcher Version": {
-        "other": "QQtPatcher 版本"
-    },
-    "OpenSSL Version": {
-        "other": "OpenSSL 版本"
-    },
-    "Download": {
-        "other": "下载地址"
-    },
-    "MinGW Used": {
-        "other": "使用的 MinGW"
-    },
-    "link": {
-        "other": "链接"
-    },
-    "32-bit": {
-        "other": "32 位"
-    },
-    "64-bit": {
-        "other": "64 位"
-    },
-    "Important": {
-        "other": "重要"
-    },
-    "Note": {
-        "other": "备注"
-    },
-    "SQLite (distributed with Qt)": {
-        "other": "SQLite （随 Qt 一起分发）"
-    },
-    "MariaDB Connector/C 3.1 series": {
-        "other": "MariaDB Connector/C 3.1 系列"
-    },
-    "MariaDB Connector/C 3.3 series": {
-        "other": "MariaDB Connector/C 3.3 系列"
-    },
+	":": {
+		"other": "："
+	},
+	"Platform": {
+		"other": "平台"
+	},
+	"Build Host" : {
+		"other": "构建主机"
+	},
+	"Toolchain Version": {
+		"other": "工具链版本"
+	},
+	"Architecture": {
+		"other": "架构"
+	},
+	"Variant": {
+		"other": "变体"
+	},
+	"Uploaded": {
+		"other": "已上传"
+	},
+	"Configuration": {
+		"other": "已配置"
+	},
+	"Qt Version": {
+		"other": "Qt 版本"
+	},
+	"Build Target": {
+		"other": "构建目标"
+	},
+	"Notes": {
+		"other": "备注"
+	},
+	"Tested": {
+		"other": "已测试"
+	},
+	"QQtPatcher Version": {
+		"other": "QQtPatcher 版本"
+	},
+	"OpenSSL Version": {
+		"other": "OpenSSL 版本"
+	},
+	"MariaDB Version": {
+		"other": "MariaDB 版本"
+	},
+	"Download": {
+		"other": "下载地址"
+	},
+	"MinGW Used": {
+		"other": "使用的 MinGW"
+	},
+	"link": {
+		"other": "链接"
+	},
+	"32-bit": {
+		"other": "32 位"
+	},
+	"64-bit": {
+		"other": "64 位"
+	},
+	"Important": {
+		"other": "重要"
+	},
+	"Note": {
+		"other": "备注"
+	},
+	"SQLite (distributed with Qt)": {
+		"other": "SQLite （随 Qt 一起分发）"
+	},
+	"MariaDB Connector/C 3.1 series": {
+		"other": "MariaDB Connector/C 3.1 系列"
+	},
+	"MariaDB Connector/C 3.3 series": {
+		"other": "MariaDB Connector/C 3.3 系列"
+	},
 
-    "fsqtbuild_i18n_finalVersion": {
-        "other": "这是最终版。即使有需求也不会再更新。构建环境已经爆破"
-    },
-    "fsqtbuild_i18n_databaseBackend": {
-        "other": "此版本中附带下列数据库："
-    },
-    "fsqtbuild_i18n_databaseBackendSingle": {
-        "other": "%s：使用 `%s` 内建在这份包里。"
-    },
-    "fsqtbuild_i18n_icu": {
-        "other": "所有构建配置了 `%s` 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。"
-    },
-    "fsqtbuild_i18n_emsdk": {
-        "other": "所有包使用了于 Qt Wiki 中推荐的 emscripten SDK 版本 %s。  \nWebAssembly 不支持二进制兼容性。在构建自己的代码的时候必须要使用 SDK 版本 %s，否则会出现不可预料的错误。"
-    },
-    "fsqtbuild_i18n_emsdk_thread": {
-        "other": "所有构建通过使用 `%s` 启用了线程支持。"
-    },
-    "fsqtbuild_i18n_wasm_static": {
-        "other": "Qt 在 WebAssembly 平台上只能构建静态库。"
-    },
-    "fsqtbuild_i18n_qt5tls_openssl_dynamiconly": {
-        "other": "所有构建使用 `-openssl-linked`，意味着 OpenSSL 链接到了 Qt，作为 TLS 后端来使用。  \n它链接到了随包一起分发的动态的 OpenSSL %s 系列库。"
-    },
-    "fsqtbuild_i18n_qt5tls_openssl_dynamicstatic": {
-        "other": "所有构建使用 `-openssl-linked`，意味着 OpenSSL 链接到了 Qt，作为 TLS 后端来使用。  \n它链接到了随包一起分发的 OpenSSL %s 系列库。\n\n动态和静态的 OpenSSL 分别包含在动态和静态的 Qt 库中。"
-    },
-    "fsqtbuild_i18n_qt5tls_openssl_android": {
-        "other": "所有构建使用 `-openssl-linked`，意味着 OpenSSL 链接到了 Qt，作为 TLS 后端来使用。  \n它链接到了静态的 OpenSSL %s 系列库。\n\n安卓从 6.0 版本开始使用 BoringSSL 作为内建的 SSL / TLS 库。  \n此库与 OpenSSL 的 API 不兼容！！所以无法使用。"
-    },
-    "fsqtbuild_i18n_qt5tls_securetransport": {
-        "other": "所有构建使用 `-no-openssl -securetransport`，意味着 macOS 提供的 Secure Transport 库作为 TLS 后端来使用。  \n这个后端从 Qt 5.6 版本开始支持。"
-    },
-    "fsqtbuild_i18n_qt5tls_schannel": {
-        "other": "所有构建使用 `-no-openssl -schannel`，意味着 Windows Secure Channel 作为 TLS 后端来使用。  \n这个后端从 Qt 5.13 版本开始支持。"
-    },
-    "fsqtbuild_i18n_qt6tls": {
-        "other": "从 Qt 6.2 开始 Qt 将 TLS 后端改成插件的形式。  \n这个版本包含下列后端：\n"
-    },
-    "fsqtbuild_i18n_qt6tls_openssl3": {
-        "other": "OpenSSL 3.0 系列，使用 `-DFEATURE_openssl=ON -DINPUT_openssl=linked` 来启用链接的 OpenSSL 支持"
-    },
-    "fsqtbuild_i18n_qt6tls_schannel": {
-        "other": "Windows Secure Channel，使用 `-DFEATURE_schannel=ON`。在 MSVC 版本中支持 TLS 1.3"
-    },
-    "fsqtbuild_i18n_qt6tls_securetransport": {
-        "other": "macOS 提供的 Secure Transport library，使用 `-DFEATURE_securetransport=ON`"
-    },
-    "fsqtbuild_i18n_ndk": {
-        "other": "使用 NDK %s 版本，使用参数 `%s` 进行构建。  \n这意味着这些构建可能只能在安卓 %s 以及之后的版本上运行。"
-    },
-    "fsqtbuild_i18n_ndk59": {
-        "other": "使用 NDK %s 版本，使用参数 `%s` 进行 32 位版本的构建。  \n这意味着这些构建可能只能在安卓 %s 以及之后的版本上运行。\n\n64 位版则使用参数 `-android-ndk-platform android-21`。  \n由于 OpenSSL 1.0.2 系列还不支持 64 位安卓，我们临时使用 `./Configure linux-aarch64` 对 OpenSSL 进行配置。"
-    },
-    "fsqtbuild_i18n_macOSUniversal": {
-        "other": "这个版本我只会提供统一二进制构建。 [统一二进制](https://developer.apple.com/documentation/apple-silicon/building-a-universal-macos-binary) 在 Intel 和 Apple 芯片的 Mac 上都能原生运行。"
-    }
+	"fsqtbuild_i18n_finalVersion": {
+		"other": "这是最终版。即使有需求也不会再更新。构建环境已经爆破"
+	},
+	"fsqtbuild_i18n_databaseBackend": {
+		"other": "此版本中附带下列数据库："
+	},
+	"fsqtbuild_i18n_databaseBackendSingle": {
+		"other": "%s：使用 `%s` 内建在这份包里。"
+	},
+	"fsqtbuild_i18n_icu": {
+		"other": "所有构建配置了 `%s` 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。"
+	},
+	"fsqtbuild_i18n_emsdk": {
+		"other": "所有包使用了于 Qt Wiki 中推荐的 emscripten SDK 版本 %s。  \nWebAssembly 不支持二进制兼容性。在构建自己的代码的时候必须要使用 SDK 版本 %s，否则会出现不可预料的错误。"
+	},
+	"fsqtbuild_i18n_emsdk_thread": {
+		"other": "所有构建通过使用 `%s` 启用了线程支持。"
+	},
+	"fsqtbuild_i18n_wasm_static": {
+		"other": "Qt 在 WebAssembly 平台上只能构建静态库。"
+	},
+	"fsqtbuild_i18n_qt5tls_openssl_dynamiconly": {
+		"other": "所有构建使用 `-openssl-linked`，意味着 OpenSSL 链接到了 Qt，作为 TLS 后端来使用。  \n它链接到了随包一起分发的动态的 OpenSSL %s 系列库。"
+	},
+	"fsqtbuild_i18n_qt5tls_openssl_dynamicstatic": {
+		"other": "所有构建使用 `-openssl-linked`，意味着 OpenSSL 链接到了 Qt，作为 TLS 后端来使用。  \n它链接到了随包一起分发的 OpenSSL %s 系列库。\n\n动态和静态的 OpenSSL 分别包含在动态和静态的 Qt 库中。"
+	},
+	"fsqtbuild_i18n_qt5tls_openssl_android": {
+		"other": "所有构建使用 `-openssl-linked`，意味着 OpenSSL 链接到了 Qt，作为 TLS 后端来使用。  \n它链接到了静态的 OpenSSL %s 系列库。\n\n安卓从 6.0 版本开始使用 BoringSSL 作为内建的 SSL / TLS 库。  \n此库与 OpenSSL 的 API 不兼容！！所以无法使用。"
+	},
+	"fsqtbuild_i18n_qt5tls_securetransport": {
+		"other": "所有构建使用 `-no-openssl -securetransport`，意味着 macOS 提供的 Secure Transport 库作为 TLS 后端来使用。  \n这个后端从 Qt 5.6 版本开始支持。"
+	},
+	"fsqtbuild_i18n_qt5tls_schannel": {
+		"other": "所有构建使用 `-no-openssl -schannel`，意味着 Windows Secure Channel 作为 TLS 后端来使用。  \n这个后端从 Qt 5.13 版本开始支持。"
+	},
+	"fsqtbuild_i18n_qt6tls": {
+		"other": "从 Qt 6.2 开始 Qt 将 TLS 后端改成插件的形式。  \n这个版本包含下列后端：\n"
+	},
+	"fsqtbuild_i18n_qt6tls_openssl3": {
+		"other": "OpenSSL 3.0 系列，使用 `-DFEATURE_openssl=ON -DINPUT_openssl=linked` 来启用链接的 OpenSSL 支持"
+	},
+	"fsqtbuild_i18n_qt6tls_schannel": {
+		"other": "Windows Secure Channel，使用 `-DFEATURE_schannel=ON`。在 MSVC 版本中支持 TLS 1.3"
+	},
+	"fsqtbuild_i18n_qt6tls_securetransport": {
+		"other": "macOS 提供的 Secure Transport library，使用 `-DFEATURE_securetransport=ON`"
+	},
+	"fsqtbuild_i18n_ndk": {
+		"other": "使用 NDK %s 版本，使用参数 `%s` 进行构建。  \n这意味着这些构建可能只能在安卓 %s 以及之后的版本上运行。"
+	},
+	"fsqtbuild_i18n_ndk59": {
+		"other": "使用 NDK %s 版本，使用参数 `%s` 进行 32 位版本的构建。  \n这意味着这些构建可能只能在安卓 %s 以及之后的版本上运行。\n\n64 位版则使用参数 `-android-ndk-platform android-21`。  \n由于 OpenSSL 1.0.2 系列还不支持 64 位安卓，我们临时使用 `./Configure linux-aarch64` 对 OpenSSL 进行配置。"
+	},
+	"fsqtbuild_i18n_macOSUniversal": {
+		"other": "这个版本我只会提供统一二进制构建。 [统一二进制](https://developer.apple.com/documentation/apple-silicon/building-a-universal-macos-binary) 在 Intel 和 Apple 芯片的 Mac 上都能原生运行。"
+	}
 }
