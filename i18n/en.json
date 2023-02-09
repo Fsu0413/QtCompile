@@ -62,15 +62,24 @@
     "Note": {
         "other": "Note"
     },
+    "SQLite (distributed with Qt)": {
+        "other": "SQLite (distributed with Qt)"
+    },
+    "MariaDB Connector/C 3.1 series": {
+        "other": "MariaDB Connector/C 3.1 series"
+    },
+    "MariaDB Connector/C 3.3 series": {
+        "other": "MariaDB Connector/C 3.3 series"
+    },
 
     "fsqtbuild_i18n_finalVersion": {
         "other": "FINAL VERSION, NO MORE UPDATES EVEN IF REQUESTED, BUILD ENVIRONMENT HAS BEEN DESTRUCTED"
     },
-    "fsqtbuild_i18n_sqlite": {
-        "other": "SQLite (distributed with Qt) are built in the package using `%s`"
+    "fsqtbuild_i18n_databaseBackend": {
+        "other": "Following database backend is distributed with this version:"
     },
-    "fsqtbuild_i18n_odbc_sqlite": {
-        "other": "ODBC and SQLite (distributed with Qt) are built in the package using `%s`"
+    "fsqtbuild_i18n_databaseBackendSingle": {
+        "other": "%s: Built in the package using command `%s`."
     },
     "fsqtbuild_i18n_icu": {
         "other": "All builds have `%s` because I think the ICU library is too big and, in most of the conditions, useless for common users."

@@ -62,15 +62,24 @@
     "Note": {
         "other": "备注"
     },
+    "SQLite (distributed with Qt)": {
+        "other": "SQLite （随 Qt 一起分发）"
+    },
+    "MariaDB Connector/C 3.1 series": {
+        "other": "MariaDB Connector/C 3.1 系列"
+    },
+    "MariaDB Connector/C 3.3 series": {
+        "other": "MariaDB Connector/C 3.3 系列"
+    },
 
     "fsqtbuild_i18n_finalVersion": {
         "other": "这是最终版。即使有需求也不会再更新。构建环境已经爆破"
     },
-    "fsqtbuild_i18n_sqlite": {
-        "other": "SQLite（随 Qt 一起分发）通过使用 `%s` 内建在这份包里。"
+    "fsqtbuild_i18n_databaseBackend": {
+        "other": "此版本中附带下列数据库："
     },
-    "fsqtbuild_i18n_odbc_sqlite": {
-        "other": "ODBC 和 SQLite（随 Qt 一起分发）通过使用 `%s` 内建在这份包里。"
+    "fsqtbuild_i18n_databaseBackendSingle": {
+        "other": "%s：使用 `%s` 内建在这份包里。"
     },
     "fsqtbuild_i18n_icu": {
         "other": "所有构建配置了 `%s` 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。"

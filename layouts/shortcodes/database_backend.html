@@ -1,0 +1,45 @@
+{{- $sqlNameDefinition := dict
+    "sqlite" (T "SQLite (distributed with Qt)")
+    "odbc" "ODBC"
+    "unixodbc" "unixODBC"
+    "mariadb31" (T "MariaDB Connector/C 3.1 series")
+    "mariadb33" (T "MariaDB Connector/C 3.3 series")
+-}}
+{{- $sqlCommandReplacement := dict
+    "unixodbc" "odbc"
+    "mariadb31" "mysql"
+    "mariadb33" "mysql"
+-}}
+{{- $sqlCommandPrefix := "-DFEATURE_sql_" -}}
+{{- $qtVer := .Get 0 -}}
+{{- if eq $qtVer "5" -}}
+{{- $sqlCommandPrefix = "-sql-" -}}
+{{- else -}}
+{{- if eq $qtVer "4" -}}
+{{- $sqlCommandPrefix = "-plugin-sql-" -}}
+{{- end -}}
+{{- end -}}
+{{- $params := .Params -}}
+{{- $paramsLen := len .Params -}}
+{{- $paramsLenMinus1 := sub $paramsLen 1 -}}
+{{- $paramsExceptFirst := last $paramsLenMinus1 $params -}}
+{{- $sqlInstruction := (T "fsqtbuild_i18n_databaseBackend") -}}
+{{- range $paramsExceptFirst -}}
+{{- $sqlCommand := print $sqlCommandPrefix (index $sqlCommandReplacement . | default .) -}}
+{{- $sqlCommandSqlite := "" -}}
+{{- if and (eq . "sqlite") (eq $qtVer "6") -}}
+{{- $sqlCommandSqlite = " -DFEATURE_system_sqlite=OFF" -}}
+{{- $sqlCommandWithSqlite := print $sqlCommand $sqlCommandSqlite -}}
+{{- $sqlCommand = $sqlCommandWithSqlite -}}
+{{- end -}}
+{{- $sqlSingleLine := printf (T "fsqtbuild_i18n_databaseBackendSingle") (index $sqlNameDefinition .) $sqlCommand -}}
+{{- $sqlInstruction2 := print $sqlInstruction "\n1. " $sqlSingleLine -}}
+{{- $sqlInstruction = $sqlInstruction2 -}}
+{{- end -}}
+{{ partial "shortcodes/notice.html" (dict
+  "context" .
+  "style" "info"
+  "title" (T "Note")
+  "icon" "fas fa-info-circle"
+  "content" ( $sqlInstruction | markdownify )
+)}}
