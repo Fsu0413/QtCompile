@@ -68,11 +68,11 @@
 	"SQLite (distributed with Qt)": {
 		"other": "SQLite (distributed with Qt)"
 	},
-	"MariaDB Connector/C 3.1 series": {
-		"other": "MariaDB Connector/C 3.1 series"
+	"MariaDB Connector/C 3.1 series (Dynamic builds only)": {
+		"other": "MariaDB Connector/C 3.1 series (Dynamic builds only)"
 	},
-	"MariaDB Connector/C 3.3 series": {
-		"other": "MariaDB Connector/C 3.3 series"
+	"MariaDB Connector/C 3.3 series (Dynamic builds only)": {
+		"other": "MariaDB Connector/C 3.3 series (Dynamic builds only)"
 	},
 
 	"fsqtbuild_i18n_finalVersion": {

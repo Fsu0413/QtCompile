@@ -57,6 +57,11 @@ Please refer to the content lists in the left area.
 
 ## Update History
 
+### 2023.2.10
+Update Qt 5.12.12 / 5.15.8 / 6.2.4 / 6.4.2 series with OpenSSL 1.1.1t / 3.0.8.  
+Update Qt 5.15 / 6.2 / 6.4 series with builtin MySQL (MariaDB) Database Backend and plugin.  
+Update Qt 5.15 static `full` series with more Visual Studio version. Discontinue Qt 5.12 static `full` versions.
+
 ### 2023.1.28
 Update Qt 6.5.0-beta2 packages (with QtOpcUa)  
 Update Qt 6.2.4 static `full` builds with a workaround of {{% QtBug 102877 %}} .

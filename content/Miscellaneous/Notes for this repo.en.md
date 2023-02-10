@@ -210,7 +210,7 @@ If subsequent version of Qt 5.15 remains private we won't upgrade OpenSSL to pos
 | | ~~macOS~~ | ~~2021.11.25~~ (EOLed) | ~~Same as EOL of Qt 5.12~~ **A patch has released after 5.12 EOL and an extra package is made for it on macOS**. |
 | | Android | 2023.9.11 | Same as EOL of OpenSSL 1.1.1 series. Will stuck at Android NDK r21 LTS series |
 | | ~~WebAssembly~~ | ~~2021.11.25~~ (EOLed) | ~~Same as EOL of Qt 5.12~~ |
-| 5.15 Series | Windows 11 with VS2019 (Shared) / VS2022 | 2024.5.26 | Same as EOL of Qt opensource 5.15, with WebEngine and Script got update ahead of time, with VS version update within VS2017/9/22 |
+| 5.15 Series | Windows 11 with VS2019 (Shared) / VS2022 | 2024.5.26 | Same as EOL of Qt opensource 5.15, with WebEngine and Script got update ahead of time, with VS version update within VS2019/22 |
 | | Windows with VS2015 / VS2017 / VS2019 (static) / MinGW 8.1.0 | 2024.5.26 | Same as EOL of Qt opensource 5.15, with Script update ahead of time, with VS version update within VS2017/9/22 |
 | | macOS | 2024.5.26 | Same as EOL of Qt opensource 5.15, with WebEngine and Script got update ahead of time, with (at best effort) Xcode and macOS update |
 | | Android | 2026.9.7 | Same as EOL of OpenSSL 3.0 series. |
@@ -255,4 +255,3 @@ Note that I won't patch an active version of Qt and will simply wait for future 
 | 5.12.12 | - | [√](https://codereview.qt-project.org/c/qt/qtbase/+/396020) | - | - | - | - | - |
 | 5.15.8 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2022-25255-qprocess5-15.diff) | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2022-25643-5.15.diff) | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2018-25032-qtbase-5.15.diff) | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2022-27404-27405-27406-qtbase-5.15.diff) | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2022-37434-qtbase-5.15.patch) | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-24607-qtbase-5.15.diff) |
 | 6.2.4 | [√](https://codereview.qt-project.org/c/qt/qtbase/+/401758) | shipped | shipped | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2018-25032-qtbase-6.2.diff) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2022-27404-27405-27406-qtbase-6.2.diff) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2022-37434-qtbase-6.2.patch) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-24607-qtbase-6.2.diff) |
-
