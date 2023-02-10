@@ -121,6 +121,7 @@
 <p>此版本中附带下列数据库：</p>
 <ol>
 <li>SQLite （随 Qt 一起分发）：使用 <code>-DFEATURE_sql_sqlite -DFEATURE_system_sqlite=OFF</code> 内建在这份包里。</li>
+<li>MariaDB Connector/C 3.3 系列（仅动态构建）：使用 <code>-DFEATURE_sql_mysql</code> 内建在这份包里。</li>
 </ol>
   </div>
 </div>
@@ -172,60 +173,60 @@ CVE-2022-37434</p>
 <h2 id="dynamic--shared-builds">Dynamic / Shared Builds</h2>
 <h3 id="macos-universal">macOS-Universal</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.4-macOS-Universal-AppleClang14.0.0-20230107.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.4-macOS-Universal-AppleClang14.0.0-20230208.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/40/40119/Qt6.2.4-macOS-Universal-AppleClang14.0.0-20230107.tar.xz" target="_blank">
+  <a href="https://osdn.net/downloads/users/47/47474/Qt6.2.4-macOS-Universal-AppleClang14.0.0-20230208.tar.xz" target="_blank">
     OSDN 链接
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-Universal/Qt6.2.4-macOS-Universal-AppleClang14.0.0-20230107.tar.xz" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-Universal/Qt6.2.4-macOS-Universal-AppleClang14.0.0-20230208.tar.xz" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 12.6.2</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">AppleClang 14.0.0</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"><strong>NO WEBENGINE</strong> because of compile failure</td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 12.6.3</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">AppleClang 14.0.0</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"><strong>NO WEBENGINE</strong> because of compile failure</td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.4-macOS-Universal-AppleClang14.0.0-noFramework-20230107.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.4-macOS-Universal-AppleClang14.0.0-noFramework-20230208.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/40/40118/Qt6.2.4-macOS-Universal-AppleClang14.0.0-noFramework-20230107.tar.xz" target="_blank">
+  <a href="https://osdn.net/downloads/users/47/47475/Qt6.2.4-macOS-Universal-AppleClang14.0.0-noFramework-20230208.tar.xz" target="_blank">
     OSDN 链接
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-Universal/Qt6.2.4-macOS-Universal-AppleClang14.0.0-noFramework-20230107.tar.xz" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-Universal/Qt6.2.4-macOS-Universal-AppleClang14.0.0-noFramework-20230208.tar.xz" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 12.6.2</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">AppleClang 14.0.0</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"><strong>NO WEBENGINE</strong> because of compile failure</td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 12.6.3</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">AppleClang 14.0.0</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"><strong>NO WEBENGINE</strong> because of compile failure</td></tr>
         </tbody>
     </table>
 <h2 id="static-full-builds">Static <code>Full</code> Builds</h2>
 <h3 id="macos-universal-1">macOS-Universal</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.4-macOS-Universal-AppleClang14.0.0-staticFull-20230128.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.4-macOS-Universal-AppleClang14.0.0-staticFull-20230208.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/40/40647/Qt6.2.4-macOS-Universal-AppleClang14.0.0-staticFull-20230128.tar.xz" target="_blank">
+  <a href="https://osdn.net/downloads/users/47/47497/Qt6.2.4-macOS-Universal-AppleClang14.0.0-staticFull-20230208.tar.xz" target="_blank">
     OSDN 链接
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-Universal/Qt6.2.4-macOS-Universal-AppleClang14.0.0-staticFull-20230128.tar.xz" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-Universal/Qt6.2.4-macOS-Universal-AppleClang14.0.0-staticFull-20230208.tar.xz" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -449,7 +450,7 @@ I don&rsquo;t recommand using these builds.</p>
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Thu, 09 Feb 2023 23:11:20 CST</p>
+Site generated: Fri, 10 Feb 2023 09:27:26 CST</p>
 
         </div>
       </div>
