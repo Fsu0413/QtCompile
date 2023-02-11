@@ -1,5 +1,5 @@
 {
-	"q6_5lx6_aa6n3": {
+	"q6_5lx6_aa6n5": {
 		"sort": 19,
 		"fileName": "Qt6.5.0-beta2-Android-arm64-Clang-NDKr25b-xLinux-x86_64-gcc11.3.1-20230127.tar.xz",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/Qt6.5.0-beta2-Android-arm64-Clang-NDKr25b-xLinux-x86_64-gcc11.3.1-20230127.tar.xz",
@@ -16,7 +16,7 @@
 			"configuration": "√"
 		}
 	},
-	"q6_5mal_aa6n3": {
+	"q6_5mal_aa6n5": {
 		"sort": 23,
 		"fileName": "Qt6.5.0-beta2-Android-arm64-Clang-NDKr25b-xmacOS-Universal-AppleClang14.0.0-20230128.tar.xz",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/Qt6.5.0-beta2-Android-arm64-Clang-NDKr25b-xmacOS-Universal-AppleClang14.0.0-20230128.tar.xz",
@@ -33,7 +33,7 @@
 			"configuration": "√"
 		}
 	},
-	"q6_5wx6g2_aa6n3": {
+	"q6_5wx6g2_aa6n5": {
 		"sort": 17,
 		"fileName": "Qt6.5.0-beta2-Android-arm64-Clang-NDKr25b-XWindows-x86_64-MinGW12.1.0-20230128.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/Qt6.5.0-beta2-Android-arm64-Clang-NDKr25b-XWindows-x86_64-MinGW12.1.0-20230128.7z",
@@ -50,7 +50,7 @@
 			"configuration": "√"
 		}
 	},
-	"q6_5lx6_ax6n3": {
+	"q6_5lx6_ax6n5": {
 		"sort": 20,
 		"fileName": "Qt6.5.0-beta2-Android-x86_64-Clang-NDKr25b-xLinux-x86_64-gcc11.3.1-20230127.tar.xz",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/Qt6.5.0-beta2-Android-x86_64-Clang-NDKr25b-xLinux-x86_64-gcc11.3.1-20230127.tar.xz",
@@ -67,7 +67,7 @@
 			"configuration": "√"
 		}
 	},
-	"q6_5mal_ax6n3": {
+	"q6_5mal_ax6n5": {
 		"sort": 24,
 		"fileName": "Qt6.5.0-beta2-Android-x86_64-Clang-NDKr25b-xmacOS-Universal-AppleClang14.0.0-20230128.tar.xz",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/Qt6.5.0-beta2-Android-x86_64-Clang-NDKr25b-xmacOS-Universal-AppleClang14.0.0-20230128.tar.xz",
@@ -84,7 +84,7 @@
 			"configuration": "√"
 		}
 	},
-	"q6_5wx6g2_ax6n3": {
+	"q6_5wx6g2_ax6n5": {
 		"sort": 18,
 		"fileName": "Qt6.5.0-beta2-Android-x86_64-Clang-NDKr25b-XWindows-x86_64-MinGW12.1.0-20230128.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/Qt6.5.0-beta2-Android-x86_64-Clang-NDKr25b-XWindows-x86_64-MinGW12.1.0-20230128.7z",
