@@ -88,10 +88,7 @@
     <li><a href="#qqtpatcher-支持状态">QQtPatcher 支持状态</a></li>
     <li><a href="#openssl-状态">OpenSSL 状态</a></li>
     <li><a href="#mariadb-状态">MariaDB 状态</a></li>
-    <li><a href="#qt-512-系列以前的-lts-发布版本qt-已经结束支持">Qt 5.12 系列（以前的 LTS 发布版本，Qt 已经结束支持）</a></li>
-    <li><a href="#qt-515-系列以前的-lts-发布版本">Qt 5.15 系列（以前的 LTS 发布版本）</a></li>
-    <li><a href="#qt-62-系列当前的商业专属的-lts-发布版本">Qt 6.2 系列（当前的商业专属的 LTS 发布版本）</a></li>
-    <li><a href="#qt-64-系列当前的主线发布版本">Qt 6.4 系列（当前的主线发布版本）</a></li>
+    <li><a href="#qt-构建表">Qt 构建表</a></li>
   </ul>
 </nav>
             </div>
@@ -810,1063 +807,811 @@ MinGW 的构建是 <code>-shared-and-static</code> 的，所以不用单独构�
 </tr>
 </tbody>
 </table>
-<h2 id="qt-512-系列以前的-lts-发布版本qt-已经结束支持">Qt 5.12 系列（以前的 LTS 发布版本，Qt 已经结束支持）</h2>
-<table>
-<thead>
-<tr>
-<th>平台</th>
-<th>构建主机</th>
-<th>工具链版本</th>
-<th>架构</th>
-<th>变体</th>
-<th><code>mkspecs</code></th>
-<th>已上传</th>
-<th>已配置</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Windows</td>
-<td>Windows 8.1 Update</td>
-<td>VS2015 Update 3</td>
-<td>x86</td>
-<td></td>
-<td>win32-msvc</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 8.1 Update</td>
-<td>VS2015 Update 3</td>
-<td>x86</td>
-<td>-static(Lite)</td>
-<td>win32-msvc</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 8.1 Update</td>
-<td>VS2015 Update 3</td>
-<td>x86_64</td>
-<td></td>
-<td>win32-msvc</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2017 15.9.51 w/ Windows SDK 10.0.17763</td>
-<td>x86</td>
-<td></td>
-<td>win32-msvc</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2017 15.9.51 w/ Windows SDK 10.0.17763</td>
-<td>x86</td>
-<td>-static(Lite)</td>
-<td>win32-msvc</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2017 15.9.51 w/ Windows SDK 10.0.17763</td>
-<td>x86_64</td>
-<td></td>
-<td>win32-msvc</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.23 w/ Windows SDK 10.0.22000</td>
-<td>x86</td>
-<td></td>
-<td>win32-msvc</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.23 w/ Windows SDK 10.0.22000</td>
-<td>x86_64</td>
-<td></td>
-<td>win32-msvc</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 8.1 Update</td>
-<td>MinGW-w64 v5 w/ GCC 7.3.0</td>
-<td>x86</td>
-<td></td>
-<td>win32-g++</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 8.1 Update</td>
-<td>MinGW-w64 v5 w/ GCC 7.3.0</td>
-<td>x86_64</td>
-<td></td>
-<td>win32-g++</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Linux</td>
-<td>RockyLinux 8.7</td>
-<td>GCC 8.5.0</td>
-<td>x86_64</td>
-<td>-static(Lite)</td>
-<td>linux-g++</td>
-<td>Won&rsquo;t upload, only used in QQtPatcher</td>
-<td>√</td>
-</tr>
-<tr>
-<td>macOS</td>
-<td>macOS 11.7.2</td>
-<td>AppleClang 12.0.5</td>
-<td>x86_64</td>
-<td>-static(Lite)</td>
-<td>macx-clang</td>
-<td>Won&rsquo;t upload, only used in QQtPatcher</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>Windows 11 10.0.22621</td>
-<td>ndk r21e</td>
-<td>arm</td>
-<td>android-21</td>
-<td>android-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>Windows 11 10.0.22621</td>
-<td>ndk r21e</td>
-<td>arm64</td>
-<td>android-21</td>
-<td>android-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>Windows 11 10.0.22621</td>
-<td>ndk r21e</td>
-<td>x86</td>
-<td>android-21</td>
-<td>android-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>RockyLinux 8.7</td>
-<td>ndk r21e</td>
-<td>arm</td>
-<td>android-21</td>
-<td>android-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>RockyLinux 8.7</td>
-<td>ndk r21e</td>
-<td>arm64</td>
-<td>android-21</td>
-<td>android-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>RockyLinux 8.7</td>
-<td>ndk r21e</td>
-<td>x86</td>
-<td>android-21</td>
-<td>android-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>macOS 11.7.2</td>
-<td>ndk r21e</td>
-<td>arm</td>
-<td>android-21</td>
-<td>android-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>macOS 11.7.2</td>
-<td>ndk r21e</td>
-<td>arm64</td>
-<td>android-21</td>
-<td>android-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>macOS 11.7.2</td>
-<td>ndk r21e</td>
-<td>x86</td>
-<td>android-21</td>
-<td>android-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-</tbody>
-</table>
-<h2 id="qt-515-系列以前的-lts-发布版本">Qt 5.15 系列（以前的 LTS 发布版本）</h2>
-<table>
-<thead>
-<tr>
-<th>平台</th>
-<th>构建主机</th>
-<th>工具链版本</th>
-<th>架构</th>
-<th>变体</th>
-<th><code>mkspecs</code></th>
-<th>已上传</th>
-<th>已配置</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Windows</td>
-<td>Windows 8.1 Update</td>
-<td>VS2015 Update 3</td>
-<td>x86</td>
-<td></td>
-<td>win32-msvc</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 8.1 Update</td>
-<td>VS2015 Update 3</td>
-<td>x86</td>
-<td>-static(Full)</td>
-<td>win32-msvc</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 8.1 Update</td>
-<td>VS2015 Update 3</td>
-<td>x86_64</td>
-<td></td>
-<td>win32-msvc</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 8.1 Update</td>
-<td>VS2015 Update 3</td>
-<td>x86_64</td>
-<td>-static(Full)</td>
-<td>win32-msvc</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2017 15.9.51 w/ Windows SDK 10.0.17763</td>
-<td>x86</td>
-<td></td>
-<td>win32-msvc</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2017 15.9.51 w/ Windows SDK 10.0.17763</td>
-<td>x86</td>
-<td>-static(Full)</td>
-<td>win32-msvc</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2017 15.9.51 w/ Windows SDK 10.0.17763</td>
-<td>x86_64</td>
-<td></td>
-<td>win32-msvc</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2017 15.9.51 w/ Windows SDK 10.0.17763</td>
-<td>x86_64</td>
-<td>-static(Full)</td>
-<td>win32-msvc</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.23 w/ Windows SDK 10.0.22000</td>
-<td>x86</td>
-<td></td>
-<td>win32-msvc</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.23 w/ Windows SDK 10.0.22000</td>
-<td>x86</td>
-<td>-static(Full)</td>
-<td>win32-msvc</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.23 w/ Windows SDK 10.0.22000</td>
-<td>x86_64</td>
-<td></td>
-<td>win32-msvc</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.23 w/ Windows SDK 10.0.22000</td>
-<td>x86_64</td>
-<td>-static(Full)</td>
-<td>win32-msvc</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2022 17.4.4 w/ Windows SDK 10.0.22621</td>
-<td>x86_64</td>
-<td></td>
-<td>win32-msvc</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>MinGW-w64 v6 w/ GCC 8.1.0</td>
-<td>x86</td>
-<td></td>
-<td>win32-g++</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>MinGW-w64 v6 w/ GCC 8.1.0</td>
-<td>x86</td>
-<td>-static(Full)</td>
-<td>win32-g++</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>MinGW-w64 v6 w/ GCC 8.1.0</td>
-<td>x86_64</td>
-<td></td>
-<td>win32-g++</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>MinGW-w64 v6 w/ GCC 8.1.0</td>
-<td>x86_64</td>
-<td>-static(Full)</td>
-<td>win32-g++</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>macOS</td>
-<td>macOS 12.6.3</td>
-<td>AppleClang 14.0.0</td>
-<td>x86_64</td>
-<td>-framework</td>
-<td>macx-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>macOS</td>
-<td>macOS 12.6.3</td>
-<td>AppleClang 14.0.0</td>
-<td>x86_64</td>
-<td>-no-framework</td>
-<td>macx-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>Windows 11 10.0.22621</td>
-<td>ndk r21e</td>
-<td>ALL</td>
-<td>android-21</td>
-<td>android-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>RockyLinux 8.7</td>
-<td>ndk r21e</td>
-<td>ALL</td>
-<td>android-21</td>
-<td>android-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>macOS 12.6.3</td>
-<td>ndk r21e</td>
-<td>ALL</td>
-<td>android-21</td>
-<td>android-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>WebAssembly</td>
-<td>Windows 11 10.0.22621</td>
-<td>emscripten-1.39.8</td>
-<td>-</td>
-<td>-feature-threads</td>
-<td>wasm-emscripten</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>WebAssembly</td>
-<td>RockyLinux 8.7</td>
-<td>emscripten-1.39.8</td>
-<td>-</td>
-<td>-feature-threads</td>
-<td>wasm-emscripten</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>WebAssembly</td>
-<td>macOS 12.6.2</td>
-<td>emscripten-1.39.8</td>
-<td>-</td>
-<td>-feature-threads</td>
-<td>wasm-emscripten</td>
-<td>√</td>
-<td>√</td>
-</tr>
-</tbody>
-</table>
-<h2 id="qt-62-系列当前的商业专属的-lts-发布版本">Qt 6.2 系列（当前的商业专属的 LTS 发布版本）</h2>
-<p><strong>注：因为 Qt 移除了对 32 位 Windows 的支持，我们的 Qt 6 构建也移除了 32 位 Windows 的支持。</strong></p>
-<table>
-<thead>
-<tr>
-<th>平台</th>
-<th>构建主机</th>
-<th>工具链版本</th>
-<th>架构</th>
-<th>变体</th>
-<th><code>mkspecs</code></th>
-<th>已上传</th>
-<th>已配置</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.23 w/ Windows SDK 10.0.22000</td>
-<td>x86_64</td>
-<td></td>
-<td>win32-msvc</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.23 w/ Windows SDK 10.0.22000</td>
-<td>x86_64</td>
-<td>-static</td>
-<td>win32-msvc</td>
-<td>Won&rsquo;t upload seprately, used in cross-compiled Qt</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.23 w/ Windows SDK 10.0.22000</td>
-<td>x86_64</td>
-<td>-static(Full)</td>
-<td>win32-msvc</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.23 w/ Windows SDK 10.0.22000</td>
-<td>arm64</td>
-<td></td>
-<td>win32-arm64-msvc</td>
-<td>Didn&rsquo;t build since the static version of VS2019 failed (as of 2021/12/7)</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2022 17.4.4 w/ Windows SDK 10.0.22621</td>
-<td>x86_64</td>
-<td></td>
-<td>win32-msvc</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>MinGW-w64 v9 w/ GCC 11.2.0</td>
-<td>x86_64</td>
-<td></td>
-<td>win32-g++</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>MinGW-w64 v9 w/ GCC 11.2.0</td>
-<td>x86_64</td>
-<td>-static(Lite)</td>
-<td>win32-g++</td>
-<td>Won&rsquo;t upload seprately, used in cross-compiled Qt</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>MinGW-w64 v9 w/ GCC 11.2.0</td>
-<td>x86_64</td>
-<td>-static(Full)</td>
-<td>win32-g++</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>MinGW-w64 v10 w/ GCC 12.1.0</td>
-<td>x86_64</td>
-<td></td>
-<td>win32-g++</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>MinGW-w64 v10 w/ GCC 12.1.0</td>
-<td>x86_64</td>
-<td>-static(Full)</td>
-<td>win32-g++</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>MinGW-w64 v9 w/ LLVM 15.0.0 (ucrt)</td>
-<td>x86_64</td>
-<td></td>
-<td>win32-clang-g++</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>MinGW-w64 v9 w/ LLVM 15.0.0 (msvcrt)</td>
-<td>x86_64</td>
-<td></td>
-<td>win32-clang-g++</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Linux</td>
-<td>RockyLinux 8.7</td>
-<td>GCC 8.5.0</td>
-<td>x86_64</td>
-<td>-static(Lite)</td>
-<td>linux-g++</td>
-<td>Won&rsquo;t upload seprately, used in cross-compiled Qt</td>
-<td>√</td>
-</tr>
-<tr>
-<td>macOS</td>
-<td>macOS 12.6.3</td>
-<td>AppleClang 14.0.0</td>
-<td>Universal</td>
-<td>-static(Lite)</td>
-<td>macx-clang</td>
-<td>Won&rsquo;t upload seprately, used in cross-compiled Qt</td>
-<td>√</td>
-</tr>
-<tr>
-<td>macOS</td>
-<td>macOS 12.6.3</td>
-<td>AppleClang 14.0.0</td>
-<td>Universal</td>
-<td>-framework</td>
-<td>macx-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>macOS</td>
-<td>macOS 12.6.3</td>
-<td>AppleClang 14.0.0</td>
-<td>Universal</td>
-<td>-no-framework</td>
-<td>macx-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>macOS</td>
-<td>macOS 12.6.3</td>
-<td>AppleClang 14.0.0</td>
-<td>Universal</td>
-<td>-static(Full)</td>
-<td>macx-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>Windows 11 10.0.22621</td>
-<td>ndk r23c</td>
-<td>arm</td>
-<td>android-24</td>
-<td>android-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>Windows 11 10.0.22621</td>
-<td>ndk r23c</td>
-<td>arm64</td>
-<td>android-24</td>
-<td>android-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>Windows 11 10.0.22621</td>
-<td>ndk r23c</td>
-<td>x86</td>
-<td>android-24</td>
-<td>android-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>Windows 11 10.0.22621</td>
-<td>ndk r23c</td>
-<td>x86_64</td>
-<td>android-24</td>
-<td>android-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>RockyLinux 8.7</td>
-<td>ndk r23c</td>
-<td>arm</td>
-<td>android-24</td>
-<td>android-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>RockyLinux 8.7</td>
-<td>ndk r23c</td>
-<td>arm64</td>
-<td>android-24</td>
-<td>android-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>RockyLinux 8.7</td>
-<td>ndk r23c</td>
-<td>x86</td>
-<td>android-24</td>
-<td>android-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>RockyLinux 8.7</td>
-<td>ndk r23c</td>
-<td>x86_64</td>
-<td>android-24</td>
-<td>android-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>macOS 12.6.3</td>
-<td>ndk r23c</td>
-<td>arm</td>
-<td>android-24</td>
-<td>android-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>macOS 12.6.3</td>
-<td>ndk r23c</td>
-<td>arm64</td>
-<td>android-24</td>
-<td>android-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>macOS 12.6.3</td>
-<td>ndk r23c</td>
-<td>x86</td>
-<td>android-24</td>
-<td>android-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>macOS 12.6.3</td>
-<td>ndk r23c</td>
-<td>x86_64</td>
-<td>android-24</td>
-<td>android-clang</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>WebAssembly</td>
-<td>Windows 11 10.0.22621</td>
-<td>emscripten-2.0.14</td>
-<td>-</td>
-<td>-feature-threads</td>
-<td>wasm-emscripten</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>WebAssembly</td>
-<td>RockyLinux 8.7</td>
-<td>emscripten-2.0.14</td>
-<td>-</td>
-<td>-feature-threads</td>
-<td>wasm-emscripten</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>WebAssembly</td>
-<td>macOS 12.6.1</td>
-<td>emscripten-2.0.14</td>
-<td>-</td>
-<td>-feature-threads</td>
-<td>wasm-emscripten</td>
-<td>√</td>
-<td>√</td>
-</tr>
-</tbody>
-</table>
-<h2 id="qt-64-系列当前的主线发布版本">Qt 6.4 系列（当前的主线发布版本）</h2>
-<p><strong>注：因为 Qt 移除了对 32 位 Windows 的支持，我们的 Qt 6 构建也移除了 32 位 Windows 的支持。</strong><br>
+<h2 id="qt-构建表">Qt 构建表</h2>
+<p><strong>注：因为 Qt 移除了对 32 位 Windows 的支持，我们也不会为 32 位 Windows 提供 Qt 6 的构建。</strong>
 <strong>如果需要非 LTS 版本的静态构建，请直接联系我寻求商业定制。</strong></p>
 <table>
 <thead>
 <tr>
-<th>平台</th>
+<th>Qt 版本</th>
 <th>构建主机</th>
 <th>工具链版本</th>
 <th>架构</th>
 <th>变体</th>
-<th><code>mkspecs</code></th>
 <th>已上传</th>
-<th>已配置</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Windows</td>
+<td>5.12.12</td>
+<td>Windows 8.1 Update</td>
+<td>VS2015 Update 3</td>
+<td>x86</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>Windows 8.1 Update</td>
+<td>VS2015 Update 3</td>
+<td>x86</td>
+<td>-static(Lite)</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>Windows 8.1 Update</td>
+<td>VS2015 Update 3</td>
+<td>x86_64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>Windows 11 10.0.22621</td>
+<td>VS2017 15.9.51 w/ Windows SDK 10.0.17763</td>
+<td>x86</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>Windows 11 10.0.22621</td>
+<td>VS2017 15.9.51 w/ Windows SDK 10.0.17763</td>
+<td>x86</td>
+<td>-static(Lite)</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>Windows 11 10.0.22621</td>
+<td>VS2017 15.9.51 w/ Windows SDK 10.0.17763</td>
+<td>x86_64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>Windows 11 10.0.22621</td>
+<td>VS2019 16.11.23 w/ Windows SDK 10.0.22000</td>
+<td>x86</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
 <td>Windows 11 10.0.22621</td>
 <td>VS2019 16.11.23 w/ Windows SDK 10.0.22000</td>
 <td>x86_64</td>
 <td></td>
-<td>win32-msvc</td>
-<td>√</td>
 <td>√</td>
 </tr>
 <tr>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2022 17.4.4 w/ Windows SDK 10.0.22621</td>
+<td>5.12.12</td>
+<td>Windows 8.1 Update</td>
+<td>MinGW-w64 v5 w/ GCC 7.3.0</td>
+<td>x86</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>Windows 8.1 Update</td>
+<td>MinGW-w64 v5 w/ GCC 7.3.0</td>
 <td>x86_64</td>
 <td></td>
-<td>win32-msvc</td>
-<td>√</td>
 <td>√</td>
 </tr>
 <tr>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2022 17.4.4 w/ Windows SDK 10.0.22621</td>
-<td>x86_64</td>
-<td>-static</td>
-<td>win32-msvc</td>
-<td>Won&rsquo;t upload seprately, used in cross-compiled Qt</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2022 17.4.4 w/ Windows SDK 10.0.22621</td>
-<td>arm64</td>
-<td></td>
-<td>win32-arm64-msvc</td>
-<td>Didn&rsquo;t build since the static version of VS2019 failed (as of 2021/12/7)</td>
-<td>√</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>MinGW-w64 v10 w/ GCC 12.1.0</td>
+<td>5.12.12</td>
+<td>RockyLinux 8.7</td>
+<td>GCC 8.5.0</td>
 <td>x86_64</td>
 <td>-static(Lite)</td>
-<td>win32-g++</td>
-<td>Won&rsquo;t upload seprately, used in cross-compiled Qt</td>
+<td>Won&rsquo;t upload, only used in QQtPatcher</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>macOS 11.7.2</td>
+<td>AppleClang 12.0.5</td>
+<td>x86_64</td>
+<td>-static(Lite)</td>
+<td>Won&rsquo;t upload, only used in QQtPatcher</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>Windows 11 10.0.22621</td>
+<td>ndk r21e</td>
+<td>arm</td>
+<td>android-21</td>
 <td>√</td>
 </tr>
 <tr>
-<td>Windows</td>
+<td>5.12.12</td>
+<td>Windows 11 10.0.22621</td>
+<td>ndk r21e</td>
+<td>arm64</td>
+<td>android-21</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>Windows 11 10.0.22621</td>
+<td>ndk r21e</td>
+<td>x86</td>
+<td>android-21</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>RockyLinux 8.7</td>
+<td>ndk r21e</td>
+<td>arm</td>
+<td>android-21</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>RockyLinux 8.7</td>
+<td>ndk r21e</td>
+<td>arm64</td>
+<td>android-21</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>RockyLinux 8.7</td>
+<td>ndk r21e</td>
+<td>x86</td>
+<td>android-21</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>macOS 11.7.2</td>
+<td>ndk r21e</td>
+<td>arm</td>
+<td>android-21</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>macOS 11.7.2</td>
+<td>ndk r21e</td>
+<td>arm64</td>
+<td>android-21</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>macOS 11.7.2</td>
+<td>ndk r21e</td>
+<td>x86</td>
+<td>android-21</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.15.8</td>
+<td>Windows 8.1 Update</td>
+<td>VS2015 Update 3</td>
+<td>x86</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.15.8</td>
+<td>Windows 8.1 Update</td>
+<td>VS2015 Update 3</td>
+<td>x86</td>
+<td>-static(Full)</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.15.8</td>
+<td>Windows 8.1 Update</td>
+<td>VS2015 Update 3</td>
+<td>x86_64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.15.8</td>
+<td>Windows 8.1 Update</td>
+<td>VS2015 Update 3</td>
+<td>x86_64</td>
+<td>-static(Full)</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.15.8</td>
+<td>Windows 11 10.0.22621</td>
+<td>VS2017 15.9.51 w/ Windows SDK 10.0.17763</td>
+<td>x86</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.15.8</td>
+<td>Windows 11 10.0.22621</td>
+<td>VS2017 15.9.51 w/ Windows SDK 10.0.17763</td>
+<td>x86</td>
+<td>-static(Full)</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.15.8</td>
+<td>Windows 11 10.0.22621</td>
+<td>VS2017 15.9.51 w/ Windows SDK 10.0.17763</td>
+<td>x86_64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.15.8</td>
+<td>Windows 11 10.0.22621</td>
+<td>VS2017 15.9.51 w/ Windows SDK 10.0.17763</td>
+<td>x86_64</td>
+<td>-static(Full)</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.15.8</td>
+<td>Windows 11 10.0.22621</td>
+<td>VS2019 16.11.23 w/ Windows SDK 10.0.22000</td>
+<td>x86</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.15.8</td>
+<td>Windows 11 10.0.22621</td>
+<td>VS2019 16.11.23 w/ Windows SDK 10.0.22000</td>
+<td>x86</td>
+<td>-static(Full)</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.15.8</td>
+<td>Windows 11 10.0.22621</td>
+<td>VS2019 16.11.23 w/ Windows SDK 10.0.22000</td>
+<td>x86_64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.15.8</td>
+<td>Windows 11 10.0.22621</td>
+<td>VS2019 16.11.23 w/ Windows SDK 10.0.22000</td>
+<td>x86_64</td>
+<td>-static(Full)</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.15.8</td>
+<td>Windows 11 10.0.22621</td>
+<td>VS2022 17.4.4 w/ Windows SDK 10.0.22621</td>
+<td>x86_64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.15.8</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 v6 w/ GCC 8.1.0</td>
+<td>x86</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.15.8</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 v6 w/ GCC 8.1.0</td>
+<td>x86</td>
+<td>-static(Full)</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.15.8</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 v6 w/ GCC 8.1.0</td>
+<td>x86_64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.15.8</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 v6 w/ GCC 8.1.0</td>
+<td>x86_64</td>
+<td>-static(Full)</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.15.8</td>
+<td>macOS 12.6.3</td>
+<td>AppleClang 14.0.0</td>
+<td>x86_64</td>
+<td>-framework</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.15.8</td>
+<td>macOS 12.6.3</td>
+<td>AppleClang 14.0.0</td>
+<td>x86_64</td>
+<td>-no-framework</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.15.8</td>
+<td>Windows 11 10.0.22621</td>
+<td>ndk r21e</td>
+<td>ALL</td>
+<td>android-21</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.15.8</td>
+<td>RockyLinux 8.7</td>
+<td>ndk r21e</td>
+<td>ALL</td>
+<td>android-21</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.15.8</td>
+<td>macOS 12.6.3</td>
+<td>ndk r21e</td>
+<td>ALL</td>
+<td>android-21</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.15.8</td>
+<td>Windows 11 10.0.22621</td>
+<td>emscripten-1.39.8</td>
+<td>-</td>
+<td>-feature-threads</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.15.8</td>
+<td>RockyLinux 8.7</td>
+<td>emscripten-1.39.8</td>
+<td>-</td>
+<td>-feature-threads</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.15.8</td>
+<td>macOS 12.6.2</td>
+<td>emscripten-1.39.8</td>
+<td>-</td>
+<td>-feature-threads</td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.2.4</td>
+<td>Windows 11 10.0.22621</td>
+<td>VS2019 16.11.23 w/ Windows SDK 10.0.22000</td>
+<td>x86_64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.2.4</td>
+<td>Windows 11 10.0.22621</td>
+<td>VS2019 16.11.23 w/ Windows SDK 10.0.22000</td>
+<td>x86_64</td>
+<td>-static</td>
+<td>Won&rsquo;t upload seprately, used in cross-compiled Qt</td>
+</tr>
+<tr>
+<td>6.2.4</td>
+<td>Windows 11 10.0.22621</td>
+<td>VS2019 16.11.23 w/ Windows SDK 10.0.22000</td>
+<td>x86_64</td>
+<td>-static(Full)</td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.2.4</td>
+<td>Windows 11 10.0.22621</td>
+<td>VS2019 16.11.23 w/ Windows SDK 10.0.22000</td>
+<td>arm64</td>
+<td></td>
+<td>Didn&rsquo;t build since the static version of VS2019 failed (as of 2021/12/7)</td>
+</tr>
+<tr>
+<td>6.2.4</td>
+<td>Windows 11 10.0.22621</td>
+<td>VS2022 17.4.4 w/ Windows SDK 10.0.22621</td>
+<td>x86_64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.2.4</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 v9 w/ GCC 11.2.0</td>
+<td>x86_64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.2.4</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 v9 w/ GCC 11.2.0</td>
+<td>x86_64</td>
+<td>-static(Lite)</td>
+<td>Won&rsquo;t upload seprately, used in cross-compiled Qt</td>
+</tr>
+<tr>
+<td>6.2.4</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 v9 w/ GCC 11.2.0</td>
+<td>x86_64</td>
+<td>-static(Full)</td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.2.4</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 v10 w/ GCC 12.1.0</td>
 <td>x86_64</td>
 <td></td>
-<td>win32-g++</td>
-<td>√</td>
 <td>√</td>
 </tr>
 <tr>
-<td>Windows</td>
+<td>6.2.4</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 v10 w/ GCC 12.1.0</td>
+<td>x86_64</td>
+<td>-static(Full)</td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.2.4</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 v9 w/ LLVM 15.0.0 (ucrt)</td>
 <td>x86_64</td>
 <td></td>
-<td>win32-clang-g++</td>
-<td>√</td>
 <td>√</td>
 </tr>
 <tr>
-<td>Windows</td>
+<td>6.2.4</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 v9 w/ LLVM 15.0.0 (msvcrt)</td>
 <td>x86_64</td>
 <td></td>
-<td>win32-clang-g++</td>
-<td>√</td>
 <td>√</td>
 </tr>
 <tr>
-<td>Linux</td>
-<td>RockyLinux 9.1</td>
-<td>GCC 11.3.1</td>
+<td>6.2.4</td>
+<td>RockyLinux 8.7</td>
+<td>GCC 8.5.0</td>
 <td>x86_64</td>
 <td>-static(Lite)</td>
-<td>linux-g++</td>
 <td>Won&rsquo;t upload seprately, used in cross-compiled Qt</td>
-<td>√</td>
 </tr>
 <tr>
-<td>macOS</td>
+<td>6.2.4</td>
 <td>macOS 12.6.3</td>
 <td>AppleClang 14.0.0</td>
 <td>Universal</td>
 <td>-framework</td>
-<td>macx-clang</td>
-<td>√</td>
 <td>√</td>
 </tr>
 <tr>
-<td>macOS</td>
+<td>6.2.4</td>
 <td>macOS 12.6.3</td>
 <td>AppleClang 14.0.0</td>
 <td>Universal</td>
 <td>-no-framework</td>
-<td>macx-clang</td>
-<td>√</td>
 <td>√</td>
 </tr>
 <tr>
-<td>macOS</td>
+<td>6.2.4</td>
 <td>macOS 12.6.3</td>
 <td>AppleClang 14.0.0</td>
 <td>Universal</td>
 <td>-static(Lite)</td>
-<td>macx-clang</td>
 <td>Won&rsquo;t upload seprately, used in cross-compiled Qt</td>
+</tr>
+<tr>
+<td>6.2.4</td>
+<td>macOS 12.6.3</td>
+<td>AppleClang 14.0.0</td>
+<td>Universal</td>
+<td>-static(Full)</td>
 <td>√</td>
 </tr>
 <tr>
-<td>Android</td>
+<td>6.2.4</td>
+<td>Windows 11 10.0.22621</td>
+<td>ndk r23c</td>
+<td>arm</td>
+<td>android-24</td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.2.4</td>
+<td>Windows 11 10.0.22621</td>
+<td>ndk r23c</td>
+<td>arm64</td>
+<td>android-24</td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.2.4</td>
+<td>Windows 11 10.0.22621</td>
+<td>ndk r23c</td>
+<td>x86</td>
+<td>android-24</td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.2.4</td>
+<td>Windows 11 10.0.22621</td>
+<td>ndk r23c</td>
+<td>x86_64</td>
+<td>android-24</td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.2.4</td>
+<td>RockyLinux 8.7</td>
+<td>ndk r23c</td>
+<td>arm</td>
+<td>android-24</td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.2.4</td>
+<td>RockyLinux 8.7</td>
+<td>ndk r23c</td>
+<td>arm64</td>
+<td>android-24</td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.2.4</td>
+<td>RockyLinux 8.7</td>
+<td>ndk r23c</td>
+<td>x86</td>
+<td>android-24</td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.2.4</td>
+<td>RockyLinux 8.7</td>
+<td>ndk r23c</td>
+<td>x86_64</td>
+<td>android-24</td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.2.4</td>
+<td>macOS 12.6.3</td>
+<td>ndk r23c</td>
+<td>arm</td>
+<td>android-24</td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.2.4</td>
+<td>macOS 12.6.3</td>
+<td>ndk r23c</td>
+<td>arm64</td>
+<td>android-24</td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.2.4</td>
+<td>macOS 12.6.3</td>
+<td>ndk r23c</td>
+<td>x86</td>
+<td>android-24</td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.2.4</td>
+<td>macOS 12.6.3</td>
+<td>ndk r23c</td>
+<td>x86_64</td>
+<td>android-24</td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.2.4</td>
+<td>Windows 11 10.0.22621</td>
+<td>emscripten-2.0.14</td>
+<td>-</td>
+<td>-feature-threads</td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.2.4</td>
+<td>RockyLinux 8.7</td>
+<td>emscripten-2.0.14</td>
+<td>-</td>
+<td>-feature-threads</td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.2.4</td>
+<td>macOS 12.6.1</td>
+<td>emscripten-2.0.14</td>
+<td>-</td>
+<td>-feature-threads</td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.4.2</td>
+<td>Windows 11 10.0.22621</td>
+<td>VS2019 16.11.23 w/ Windows SDK 10.0.22000</td>
+<td>x86_64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.4.2</td>
+<td>Windows 11 10.0.22621</td>
+<td>VS2022 17.4.4 w/ Windows SDK 10.0.22621</td>
+<td>x86_64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.4.2</td>
+<td>Windows 11 10.0.22621</td>
+<td>VS2022 17.4.4 w/ Windows SDK 10.0.22621</td>
+<td>x86_64</td>
+<td>-static</td>
+<td>Won&rsquo;t upload seprately, used in cross-compiled Qt</td>
+</tr>
+<tr>
+<td>6.4.2</td>
+<td>Windows 11 10.0.22621</td>
+<td>VS2022 17.4.4 w/ Windows SDK 10.0.22621</td>
+<td>arm64</td>
+<td></td>
+<td>Didn&rsquo;t build since the static version of VS2019 failed (as of 2021/12/7)</td>
+</tr>
+<tr>
+<td>6.4.2</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 v10 w/ GCC 12.1.0</td>
+<td>x86_64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.4.2</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 v10 w/ GCC 12.1.0</td>
+<td>x86_64</td>
+<td>-static(Lite)</td>
+<td>Won&rsquo;t upload seprately, used in cross-compiled Qt</td>
+</tr>
+<tr>
+<td>6.4.2</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 v9 w/ LLVM 15.0.0 (ucrt)</td>
+<td>x86_64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.4.2</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 v9 w/ LLVM 15.0.0 (msvcrt)</td>
+<td>x86_64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.4.2</td>
+<td>RockyLinux 9.1</td>
+<td>GCC 11.3.1</td>
+<td>x86_64</td>
+<td>-static(Lite)</td>
+<td>Won&rsquo;t upload seprately, used in cross-compiled Qt</td>
+</tr>
+<tr>
+<td>6.4.2</td>
+<td>macOS 12.6.3</td>
+<td>AppleClang 14.0.0</td>
+<td>Universal</td>
+<td>-framework</td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.4.2</td>
+<td>macOS 12.6.3</td>
+<td>AppleClang 14.0.0</td>
+<td>Universal</td>
+<td>-no-framework</td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.4.2</td>
+<td>macOS 12.6.3</td>
+<td>AppleClang 14.0.0</td>
+<td>Universal</td>
+<td>-static(Lite)</td>
+<td>Won&rsquo;t upload seprately, used in cross-compiled Qt</td>
+</tr>
+<tr>
+<td>6.4.2</td>
 <td>Windows 11 10.0.22621</td>
 <td>ndk r25b</td>
 <td>arm64</td>
 <td>android-27</td>
-<td>android-clang</td>
-<td>√</td>
 <td>√</td>
 </tr>
 <tr>
-<td>Android</td>
+<td>6.4.2</td>
 <td>Windows 11 10.0.22621</td>
 <td>ndk r25b</td>
 <td>x86_64</td>
 <td>android-27</td>
-<td>android-clang</td>
-<td>√</td>
 <td>√</td>
 </tr>
 <tr>
-<td>Android</td>
+<td>6.4.2</td>
 <td>RockyLinux 9.1</td>
 <td>ndk r25b</td>
 <td>arm64</td>
 <td>android-27</td>
-<td>android-clang</td>
-<td>√</td>
 <td>√</td>
 </tr>
 <tr>
-<td>Android</td>
+<td>6.4.2</td>
 <td>RockyLinux 9.1</td>
 <td>ndk r25b</td>
 <td>x86_64</td>
 <td>android-27</td>
-<td>android-clang</td>
-<td>√</td>
 <td>√</td>
 </tr>
 <tr>
-<td>Android</td>
+<td>6.4.2</td>
 <td>macOS 12.6.3</td>
 <td>ndk r25b</td>
 <td>arm64</td>
 <td>android-27</td>
-<td>android-clang</td>
-<td>√</td>
 <td>√</td>
 </tr>
 <tr>
-<td>Android</td>
+<td>6.4.2</td>
 <td>macOS 12.6.3</td>
 <td>ndk r25b</td>
 <td>x86_64</td>
 <td>android-27</td>
-<td>android-clang</td>
-<td>√</td>
 <td>√</td>
 </tr>
 <tr>
-<td>WebAssembly</td>
+<td>6.4.2</td>
 <td>Windows 11 10.0.22621</td>
 <td>emscripten-3.1.14</td>
 <td>-</td>
 <td>-feature-threads</td>
-<td>wasm-emscripten</td>
-<td>√</td>
 <td>√</td>
 </tr>
 <tr>
-<td>WebAssembly</td>
+<td>6.4.2</td>
 <td>RockyLinux 9.1</td>
 <td>emscripten-3.1.14</td>
 <td>-</td>
 <td>-feature-threads</td>
-<td>wasm-emscripten</td>
-<td>√</td>
 <td>√</td>
 </tr>
 <tr>
-<td>WebAssembly</td>
+<td>6.4.2</td>
 <td>macOS 12.6.2</td>
 <td>emscripten-3.1.14</td>
 <td>-</td>
 <td>-feature-threads</td>
-<td>wasm-emscripten</td>
-<td>√</td>
 <td>√</td>
 </tr>
 </tbody>
@@ -1984,7 +1729,7 @@ MinGW 的构建是 <code>-shared-and-static</code> 的，所以不用单独构�
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 11 Feb 2023 10:41:19 CST</p>
+Site generated: Sat, 11 Feb 2023 17:06:23 CST</p>
 
         </div>
       </div>
