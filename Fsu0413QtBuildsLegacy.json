@@ -652,7 +652,6 @@
 		}
 	},
 	"q5_12mx6": {
-		"sort": 17,
 		"fileName": "Qt5.12.12-macOS-x86_64-AppleClang12.0.0-20220308.tar.xz",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/macOS-x86_64/Qt5.12.12-macOS-x86_64-AppleClang12.0.0-20220308.tar.xz",
 		"addrOsdn": "https://osdn.net/downloads/users/37/37916/Qt5.12.12-macOS-x86_64-AppleClang12.0.0-20220308.tar.xz",
@@ -669,7 +668,6 @@
 		}
 	},
 	"q5_12mx6nf": {
-		"sort": 18,
 		"fileName": "Qt5.12.12-macOS-x86_64-AppleClang12.0.0-noFramework-20220307.tar.xz",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/macOS-x86_64/Qt5.12.12-macOS-x86_64-AppleClang12.0.0-noFramework-20220307.tar.xz",
 		"addrOsdn": "https://osdn.net/downloads/users/37/37915/Qt5.12.12-macOS-x86_64-AppleClang12.0.0-noFramework-20220307.tar.xz",
@@ -686,7 +684,6 @@
 		}
 	},
 	"q5_12lx6_W": {
-		"sort": 30,
 		"fileName": "Qt5.12.12-WebAssembly-emscripten1.38.16-xLinux-x86_64-gcc8.5.0-20211203.tar.xz",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/WebAssembly/Qt5.12.12-WebAssembly-emscripten1.38.16-xLinux-x86_64-gcc8.5.0-20211203.tar.xz",
 		"addrOsdn": "https://osdn.net/downloads/users/37/37255/Qt5.12.12-WebAssembly-emscripten1.38.16-xLinux-x86_64-gcc8.5.0-20211203.tar.xz",
@@ -703,7 +700,6 @@
 		}
 	},
 	"q5_12mx6_W": {
-		"sort": 31,
 		"fileName": "Qt5.12.12-WebAssembly-emscripten1.38.16-xmacOS-x86_64-AppleClang12.0.5-20211204.tar.xz",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/WebAssembly/Qt5.12.12-WebAssembly-emscripten1.38.16-xmacOS-x86_64-AppleClang12.0.5-20211204.tar.xz",
 		"addrOsdn": "https://osdn.net/downloads/users/37/37254/Qt5.12.12-WebAssembly-emscripten1.38.16-xmacOS-x86_64-AppleClang12.0.5-20211204.tar.xz",
@@ -719,9 +715,7 @@
 			"configuration": "√"
 		}
 	},
-	
 	"q5_15wx6v2": {
-		"sort": 10,
 		"fileName": "Qt5.15.7-Windows-x86_64-VS2022-17.3.6-20221104.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/Qt5.15.7-Windows-x86_64-VS2022-17.3.6-20221104.7z",
 		"addrOsdn": "https://osdn.net/downloads/users/39/39654/Qt5.15.7-Windows-x86_64-VS2022-17.3.6-20221104.7z",
@@ -739,7 +733,6 @@
 		}
 	},
 	"q5_15mx6": {
-		"sort": 15,
 		"fileName": "Qt5.15.6-macOS-x86_64-AppleClang12.0.5-20220915.tar.xz",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/macOS-x86_64/Qt5.15.6-macOS-x86_64-AppleClang12.0.5-20220915.tar.xz",
 		"addrOsdn": "https://osdn.net/downloads/users/39/39211/Qt5.15.6-macOS-x86_64-AppleClang12.0.5-20220915.tar.xz",
@@ -757,7 +750,6 @@
 		}
 	},
 	"q5_15mx6nf": {
-		"sort": 16,
 		"fileName": "Qt5.15.6-macOS-x86_64-AppleClang12.0.5-noFramework-20220914.tar.xz",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/macOS-x86_64/Qt5.15.6-macOS-x86_64-AppleClang12.0.5-noFramework-20220914.tar.xz",
 		"addrOsdn": "https://osdn.net/downloads/users/39/39213/Qt5.15.6-macOS-x86_64-AppleClang12.0.5-noFramework-20220914.tar.xz",
@@ -775,7 +767,6 @@
 		}
 	},
 	"q6_2ma6": {
-		"sort": 18,
 		"fileName": "Qt6.2.4-macOS-arm64_v8a-AppleClang14.0.0-20220914.tar.xz",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-arm64_v8a/Qt6.2.4-macOS-arm64_v8a-AppleClang14.0.0-20220914.tar.xz",
 		"addrOsdn": "https://osdn.net/downloads/users/39/39244/Qt6.2.4-macOS-arm64_v8a-AppleClang14.0.0-20220914.tar.xz",
@@ -793,7 +784,6 @@
 		}
 	},
 	"q6_2ma6nf": {
-		"sort": 19,
 		"fileName": "Qt6.2.4-macOS-arm64_v8a-AppleClang14.0.0-noFramework-20220914.tar.xz",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-arm64_v8a/Qt6.2.4-macOS-arm64_v8a-AppleClang14.0.0-noFramework-20220914.tar.xz",
 		"addrOsdn": "https://osdn.net/downloads/users/39/39243/Qt6.2.4-macOS-arm64_v8a-AppleClang14.0.0-noFramework-20220914.tar.xz",
@@ -811,7 +801,6 @@
 		}
 	},
 	"q6_2mx6": {
-		"sort": 14,
 		"fileName": "Qt6.2.4-macOS-x86_64-AppleClang14.0.0-20220915.tar.xz",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-x86_64/Qt6.2.4-macOS-x86_64-AppleClang14.0.0-20220915.tar.xz",
 		"addrOsdn": "https://osdn.net/downloads/users/39/39251/Qt6.2.4-macOS-x86_64-AppleClang14.0.0-20220915.tar.xz",
@@ -829,7 +818,6 @@
 		}
 	},
 	"q6_2mx6nf": {
-		"sort": 15,
 		"fileName": "Qt6.2.4-macOS-x86_64-AppleClang14.0.0-noFramework-20220914.tar.xz",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-x86_64/Qt6.2.4-macOS-x86_64-AppleClang14.0.0-noFramework-20220914.tar.xz",
 		"addrOsdn": "https://osdn.net/downloads/users/39/39252/Qt6.2.4-macOS-x86_64-AppleClang14.0.0-noFramework-20220914.tar.xz",
@@ -847,7 +835,6 @@
 		}
 	},
 	"q6_2wx6v9": {
-		"sort": 1,
 		"fileName": "Qt6.2.4-Windows-x86_64-VS2019-16.11.18-20220915.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-VS2019-16.11.18-20220915.7z",
 		"addrOsdn": "https://osdn.net/downloads/users/39/39748/Qt6.2.4-Windows-x86_64-VS2019-16.11.18-20220915.7z",
@@ -865,7 +852,6 @@
 		}
 	},
 	"q6_2wx6v2": {
-		"sort": 5,
 		"fileName": "Qt6.2.4-Windows-x86_64-VS2022-17.3.3-20220915.7z",
 		"addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-VS2022-17.3.3-20220915.7z",
 		"addrOsdn": "https://osdn.net/downloads/users/39/39249/Qt6.2.4-Windows-x86_64-VS2022-17.3.3-20220915.7z",
