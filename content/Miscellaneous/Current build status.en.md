@@ -52,23 +52,9 @@ MariaDB connector/C 3.3 series are used on Qt 6.2 and later.
 
 {{% mariaDBSeries %}}
 
-## Qt 5.12 Series (Previous LTS release, EOLed by Qt)
+## Qt Build Table
 
-{{% QtTable "5.12.12" %}}
-
-## Qt 5.15 Series (Previous LTS release)
-
-{{% QtTable "5.15.8" %}}
-
-## Qt 6.2 Series (Curent LTS release for commerical version only)
-
-**Note: Since Qt dropped support for 32-bit Windows, our Qt 6 builds will drop support for 32-bit Windows either.**
-
-{{% QtTable "6.2.4" %}}
-
-## Qt 6.4 Series (Curent mainline release)
-
-**Note: Since Qt dropped support for 32-bit Windows, our Qt 6 builds will drop support for 32-bit Windows either.**  
+**Note: Since Qt dropped support for 32-bit Windows for Qt 6, our Qt 6 builds will no longer run for 32-bit Windows either.**  
 **If there is need of static builds for non-LTS release, please contect me directly for commerical customization.**
 
-{{% QtTable "6.4.2" %}}
+{{% QtTable %}}
