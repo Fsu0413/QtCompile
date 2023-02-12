@@ -85,6 +85,9 @@
             <div class="toc-wrapper" dir="ltr">
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#2023128">2023.1.28</a></li>
+    <li><a href="#2023123">2023.1.23</a></li>
+    <li><a href="#202318">2023.1.8</a></li>
     <li><a href="#20221120">2022.11.20</a></li>
     <li><a href="#20221119">2022.11.19</a></li>
     <li><a href="#20221118">2022.11.18</a></li>
@@ -198,6 +201,18 @@
           <article class="default">
 <h1 id="之前的历史">之前的历史</h1>
 
+<h2 id="2023128">2023.1.28</h2>
+<p>更新 Qt 6.5.0-beta2 包。（含有 QtOpcUa）<br>
+更新 Qt 6.2.4 静态 <code>full</code> 构建。提供一个对 <a href="https://bugreports.qt.io/browse/QTBUG-102877" target="_blank">QTBUG-102877</a>
+的绕过方案。</p>
+<h2 id="2023123">2023.1.23</h2>
+<p>更新 Qt 6.5.0-beta1 包。（没有 QtOpcUa）<br>
+更新 Qt 6.2.4 / Qt 6.4.2，在 Windows 上带上静态的 <code>libgcc</code> 。之前的版本依赖 <code>libgcc</code> 的 DLL。受影响的版本是所有的交叉构建版和静态 <code>full</code> 构建。</p>
+<h2 id="202318">2023.1.8</h2>
+<p>更新 Qt 6.4.2 / 5.15.8 包。<br>
+更新 Qt 6.2.4 包，构建时使用带 <a href="https://www.openssl.org/news/secadv/20221213.txt" target="_blank">微小更新</a> 的 OpenSSL 3.0.7。</p>
+<p>此前 Qt 6 Linux 主机版的交叉构建包存在问题，导致主机工具没有正确部署。<br>
+本次的包修复了此问题。</p>
 <h2 id="20221120">2022.11.20</h2>
 <p>更新所有的交叉构建包，重构 CMake 工具链。现在可以用包里附带的 <code>qt-cmake</code> 脚本自动调用在同一个包中分发的主机工具了。<br>
 Qt 6.2.4 / 6.4.1，安卓 / WebAssembly 包全部进行了更新。</p>
@@ -680,7 +695,7 @@ Upload 5.6.1 VS2015 Static packages.</p>
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 11 Feb 2023 17:06:26 CST</p>
+Site generated: Sun, 12 Feb 2023 09:02:55 CST</p>
 
         </div>
       </div>
