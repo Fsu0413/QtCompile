@@ -57,26 +57,14 @@ Please refer to the content lists in the left area.
 
 ## Update History
 
+### 2023.2.12
+Update Qt 6.4.2 series built with NDK r25c.
+
 ### 2023.2.10
 Update Qt 5.12.12 / 5.15.8 / 6.2.4 / 6.4.2 series with OpenSSL 1.1.1t / 3.0.8.  
 Update Qt 5.15 / 6.2 / 6.4 series with builtin MySQL (MariaDB) Database Backend and plugin.  
 Update Qt 5.15 static `full` series with more Visual Studio version. Discontinue Qt 5.12 static `full` versions.
 
-### 2023.1.28
-Update Qt 6.5.0-beta2 packages (with QtOpcUa)  
-Update Qt 6.2.4 static `full` builds with a workaround of {{% QtBug 102877 %}} .
-
-### 2023.1.23
-Update Qt 6.5.0-beta1 packages (without QtOpcUa)  
-Update Qt 6.2.4 / Qt 6.4.2 with static `libgcc` on Windows. Previous version relies on the `libgcc` DLL. Affected versions are all cross built version and the static `full` builds.
-
-### 2023.1.8
-Update Qt 6.4.2 / Qt 5.15.8 packages.  
-Update Qt 6.2.4 packages built with OpenSSL 3.0.7 with [the minor fix](https://www.openssl.org/news/secadv/20221213.txt).
-
-Qt 6 Linux hosted cross built packages has a problem where the host tool was not properly deployed.  
-This time the package is rebuilt with fix.
-
-### Before Nov. 2022
+### Before Jan. 2023
 
 [Here]({{% relref "miscellaneous/histories" %}})
