@@ -1389,7 +1389,7 @@
     "sort": 60420,
     "fileName": "Qt6.4.2-Android-x86_64-Clang-NDKr25c-xLinux-x86_64-gcc11.3.1-20230211.tar.xz",
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/Android/Qt6.4.2-Android-x86_64-Clang-NDKr25c-xLinux-x86_64-gcc11.3.1-20230211.tar.xz",
-    "addrOsdn": "https://osdn.net/downloads/users/47/47517/Qt6.4.2-Android-x86_64-Clang-NDKr25c-xLinux-x86_64-gcc11.3.1-20230211.tar.xz",
+    "addrOsdn": "https://osdn.net/downloads/users/47/47527/Qt6.4.2-Android-x86_64-Clang-NDKr25c-xLinux-x86_64-gcc11.3.1-20230211.tar.xz",
     "data": {
       "version": "6.4.2",
       "platform": "Android",
@@ -1406,7 +1406,7 @@
     "sort": 60424,
     "fileName": "Qt6.4.2-Android-x86_64-Clang-NDKr25c-xmacOS-Universal-AppleClang14.0.0-20230211.tar.xz",
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/Android/Qt6.4.2-Android-x86_64-Clang-NDKr25c-xmacOS-Universal-AppleClang14.0.0-20230211.tar.xz",
-    "addrOsdn": "https://osdn.net/downloads/users/47/47521/Qt6.4.2-Android-x86_64-Clang-NDKr25c-xmacOS-Universal-AppleClang14.0.0-20230211.tar.xz",
+    "addrOsdn": "https://osdn.net/downloads/users/47/47529/Qt6.4.2-Android-x86_64-Clang-NDKr25c-xmacOS-Universal-AppleClang14.0.0-20230211.tar.xz",
     "data": {
       "version": "6.4.2",
       "platform": "Android",
@@ -1423,7 +1423,7 @@
     "sort": 60418,
     "fileName": "Qt6.4.2-Android-x86_64-Clang-NDKr25c-XWindows-x86_64-MinGW12.1.0-20230211.7z",
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/Android/Qt6.4.2-Android-x86_64-Clang-NDKr25c-XWindows-x86_64-MinGW12.1.0-20230211.7z",
-    "addrOsdn": "https://osdn.net/downloads/users/47/47518/Qt6.4.2-Android-x86_64-Clang-NDKr25c-XWindows-x86_64-MinGW12.1.0-20230211.7z",
+    "addrOsdn": "https://osdn.net/downloads/users/47/47528/Qt6.4.2-Android-x86_64-Clang-NDKr25c-XWindows-x86_64-MinGW12.1.0-20230211.7z",
     "data": {
       "version": "6.4.2",
       "platform": "Android",
