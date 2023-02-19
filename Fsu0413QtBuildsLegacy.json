@@ -4,7 +4,7 @@
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt4.8/Windows-x86/Qt4.8.7-Windows-x86-VS2010-20200104.7z",
     "addrOsdn": "https://osdn.net/downloads/users/30/30829/Qt4.8.7-Windows-x86-VS2010-20200104.7z",
     "data": {
-      "QtVersion": "4.8.7",
+      "version": "4.8.7",
       "platform": "Windows",
       "buildHost": "Windows XP SP3",
       "toolchain": "VS2010 SP1",
@@ -21,7 +21,7 @@
     "addrOsdn": "https://osdn.net/downloads/users/30/30828/Qt4.8.7-Windows-x86-MinGW4.9.4-20200104.7z",
     "MinGWConf": "wx3g4",
     "data": {
-      "QtVersion": "4.8.7",
+      "version": "4.8.7",
       "platform": "Windows",
       "buildHost": "Windows XP SP3",
       "toolchain": "MinGW-w64 v5 w/ GCC 4.9.4",
@@ -37,7 +37,7 @@
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt4.8/macOS-x86_64/Qt4.8.7-macOS-x86_64-AppleClang6.1.0-20200103.tar.xz",
     "addrOsdn": "https://osdn.net/downloads/users/30/30708/Qt4.8.7-macOS-x86_64-AppleClang6.1.0-20200103.tar.xz",
     "data": {
-      "QtVersion": "4.8.7",
+      "version": "4.8.7",
       "platform": "macOS",
       "buildHost": "OS X 10.10",
       "toolchain": "AppleClang 6.1",
@@ -53,7 +53,7 @@
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt4.8/macOS-x86_64/Qt4.8.7-macOS-x86_64-AppleClang6.1.0-noFramework-20200103.tar.xz",
     "addrOsdn": "https://osdn.net/downloads/users/30/30712/Qt4.8.7-macOS-x86_64-AppleClang6.1.0-noFramework-20200103.tar.xz",
     "data": {
-      "QtVersion": "4.8.7",
+      "version": "4.8.7",
       "platform": "macOS",
       "buildHost": "OS X 10.10",
       "toolchain": "AppleClang 6.1",
@@ -70,7 +70,7 @@
     "addrOsdn": "https://osdn.net/downloads/users/30/30724/Qt5.6.3-Windows-x86-VS2010-20200104.7z",
     "notes": "__XP COMPATIBLE, NO WEBENGINE/WEBVIEW, 32-bit ONLY, just for the unreconstructed people who want to use XP eagerly__",
     "data": {
-      "QtVersion": "5.6.3",
+      "version": "5.6.3",
       "platform": "Windows",
       "buildHost": "Windows XP SP3",
       "toolchain": "VS2010 SP1",
@@ -87,7 +87,7 @@
     "addrOsdn": "https://osdn.net/downloads/users/30/30726/Qt5.6.3-Windows-x86-VS2010-static-20200104.7z",
     "notes": "__XP COMPATIBLE, NO WEBENGINE/WEBVIEW, 32-bit ONLY, just for the unreconstructed people who want to use XP eagerly__",
     "data": {
-      "QtVersion": "5.6.3",
+      "version": "5.6.3",
       "platform": "Windows",
       "buildHost": "Windows XP SP3",
       "toolchain": "VS2010 SP1",
@@ -104,7 +104,7 @@
     "addrOsdn": "https://osdn.net/downloads/users/30/30725/Qt5.6.3-Windows-x86-VS2010-staticFull-20200104-ManualPatchSslLib.7z",
     "notes": "__XP COMPATIBLE, NO WEBENGINE/WEBVIEW, 32-bit ONLY, just for the unreconstructed people who want to use XP eagerly__",
     "data": {
-      "QtVersion": "5.6.3",
+      "version": "5.6.3",
       "platform": "Windows",
       "buildHost": "Windows XP SP3",
       "toolchain": "VS2010 SP1",
@@ -121,7 +121,7 @@
     "addrOsdn": "https://osdn.net/downloads/users/30/30721/Qt5.6.3-Windows-x86-MinGW4.9.4-20200104.7z",
     "MinGWConf": "wx3g4",
     "data": {
-      "QtVersion": "5.6.3",
+      "version": "5.6.3",
       "platform": "Windows",
       "buildHost": "Windows XP SP3",
       "toolchain": "MinGW-w64 v5 w/ GCC 4.9.4",
@@ -138,7 +138,7 @@
     "addrOsdn": "https://osdn.net/downloads/users/30/30720/Qt5.6.3-Windows-x86_64-MinGW4.9.4-20200104.7z",
     "MinGWConf": "wx6g4",
     "data": {
-      "QtVersion": "5.6.3",
+      "version": "5.6.3",
       "platform": "Windows",
       "buildHost": "Windows 8.1 Update",
       "toolchain": "MinGW-w64 v5 w/ GCC 4.9.4",
@@ -155,7 +155,7 @@
     "addrOsdn": "https://osdn.net/downloads/users/30/30722/Qt5.6.3-Windows-x86-MinGW4.9.4-static-20200104.7z",
     "MinGWConf": "wx3g4",
     "data": {
-      "QtVersion": "5.6.3",
+      "version": "5.6.3",
       "platform": "Windows",
       "buildHost": "Windows XP SP3",
       "toolchain": "MinGW-w64 v5 w/ GCC 4.9.4",
@@ -172,7 +172,7 @@
     "addrOsdn": "https://osdn.net/downloads/users/30/30723/Qt5.6.3-Windows-x86-MinGW4.9.4-staticFull-20200104-ManualPatchSslLib.7z",
     "MinGWConf": "wx3g4",
     "data": {
-      "QtVersion": "5.6.3",
+      "version": "5.6.3",
       "platform": "Windows",
       "buildHost": "Windows XP SP3",
       "toolchain": "MinGW-w64 v5 w/ GCC 4.9.4",
@@ -188,7 +188,7 @@
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Windows-x86/Qt5.6.3-Windows-x86-VS2015-20200104.7z",
     "addrOsdn": "https://osdn.net/downloads/users/30/30727/Qt5.6.3-Windows-x86-VS2015-20200104.7z",
     "data": {
-      "QtVersion": "5.6.3",
+      "version": "5.6.3",
       "platform": "Windows",
       "buildHost": "Windows 8.1 Update",
       "toolchain": "VS2015 Update 3",
@@ -204,7 +204,7 @@
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Windows-x86_64/Qt5.6.3-Windows-x86_64-VS2015-20200104.7z",
     "addrOsdn": "https://osdn.net/downloads/users/30/30719/Qt5.6.3-Windows-x86_64-VS2015-20200104.7z",
     "data": {
-      "QtVersion": "5.6.3",
+      "version": "5.6.3",
       "platform": "Windows",
       "buildHost": "Windows 8.1 Update",
       "toolchain": "VS2015 Update 3",
@@ -221,7 +221,7 @@
     "addrOsdn": "https://osdn.net/downloads/users/30/30729/Qt5.6.3-Windows-x86-VS2015-xp-20200104.7z",
     "notes": "__XP COMPATIBLE, NO WEBENGINE/WEBVIEW, 32-bit ONLY, just for the unreconstructed people who want to use XP eagerly__",
     "data": {
-      "QtVersion": "5.6.3",
+      "version": "5.6.3",
       "platform": "Windows",
       "buildHost": "Windows 8.1 Update",
       "toolchain": "VS2015 Update 3",
@@ -238,7 +238,7 @@
     "addrOsdn": "https://osdn.net/downloads/users/30/30728/Qt5.6.3-Windows-x86-VS2015-static-xp-20200104.7z",
     "notes": "__XP COMPATIBLE, NO WEBENGINE/WEBVIEW, 32-bit ONLY, just for the unreconstructed people who want to use XP eagerly__",
     "data": {
-      "QtVersion": "5.6.3",
+      "version": "5.6.3",
       "platform": "Windows",
       "buildHost": "Windows 8.1 Update",
       "toolchain": "VS2015 Update 3",
@@ -254,7 +254,7 @@
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/macOS-x86_64/Qt5.6.3-macOS-x86_64-AppleClang6.1.0-20191202.tar.xz",
     "addrOsdn": "https://osdn.net/downloads/users/30/30718/Qt5.6.3-macOS-x86_64-AppleClang6.1.0-20191202.tar.xz",
     "data": {
-      "QtVersion": "5.6.3",
+      "version": "5.6.3",
       "platform": "macOS",
       "buildHost": "OS X 10.10",
       "toolchain": "AppleClang 6.1",
@@ -270,7 +270,7 @@
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/macOS-x86_64/Qt5.6.3-macOS-x86_64-AppleClang6.1.0-noFramework-20191202.tar.xz",
     "addrOsdn": "https://osdn.net/downloads/users/30/30717/Qt5.6.3-macOS-x86_64-AppleClang6.1.0-noFramework-20191202.tar.xz",
     "data": {
-      "QtVersion": "5.6.3",
+      "version": "5.6.3",
       "platform": "macOS",
       "buildHost": "OS X 10.10",
       "toolchain": "AppleClang 6.1",
@@ -286,7 +286,7 @@
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Android/Windows-x86_64-hosted/Qt5.6.3-Android-arm-gcc-NDKr10e-XWindows-x86_64-MinGW4.9.4-20200105.7z",
     "addrOsdn": "https://osdn.net/downloads/users/30/30715/Qt5.6.3-Android-arm-gcc-NDKr10e-XWindows-x86_64-MinGW4.9.4-20200105.7z",
     "data": {
-      "QtVersion": "5.6.3",
+      "version": "5.6.3",
       "platform": "Android",
       "buildHost": "Windows 10 10.0.18363",
       "toolchain": "ndk r10e",
@@ -302,7 +302,7 @@
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Android/Windows-x86_64-hosted/Qt5.6.3-Android-x86-gcc-NDKr10e-XWindows-x86_64-MinGW4.9.4-20200105.7z",
     "addrOsdn": "https://osdn.net/downloads/users/30/30716/Qt5.6.3-Android-x86-gcc-NDKr10e-XWindows-x86_64-MinGW4.9.4-20200105.7z",
     "data": {
-      "QtVersion": "5.6.3",
+      "version": "5.6.3",
       "platform": "Android",
       "buildHost": "Windows 10 10.0.18363",
       "toolchain": "ndk r10e",
@@ -318,7 +318,7 @@
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Android/Linux-x86_64-hosted/Qt5.6.3-Android-arm-gcc-NDKr10e-xLinux-x86_64-gcc4.8.5-20200105.tar.xz",
     "addrOsdn": "https://osdn.net/downloads/users/30/30710/Qt5.6.3-Android-arm-gcc-NDKr10e-xLinux-x86_64-gcc4.8.5-20200105.tar.xz",
     "data": {
-      "QtVersion": "5.6.3",
+      "version": "5.6.3",
       "platform": "Android",
       "buildHost": "CentOS 7.7",
       "toolchain": "ndk r10e",
@@ -334,7 +334,7 @@
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Android/Linux-x86_64-hosted/Qt5.6.3-Android-x86-gcc-NDKr10e-xLinux-x86_64-gcc4.8.5-20200105.tar.xz",
     "addrOsdn": "https://osdn.net/downloads/users/30/30709/Qt5.6.3-Android-x86-gcc-NDKr10e-xLinux-x86_64-gcc4.8.5-20200105.tar.xz",
     "data": {
-      "QtVersion": "5.6.3",
+      "version": "5.6.3",
       "platform": "Android",
       "buildHost": "CentOS 7.7",
       "toolchain": "ndk r10e",
@@ -350,7 +350,7 @@
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Android/macOS-x86_64-hosted/Qt5.6.3-Android-arm-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz",
     "addrOsdn": "https://osdn.net/downloads/users/30/30713/Qt5.6.3-Android-arm-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz",
     "data": {
-      "QtVersion": "5.6.3",
+      "version": "5.6.3",
       "platform": "Android",
       "buildHost": "macOS 10.15",
       "toolchain": "ndk r10e",
@@ -366,7 +366,7 @@
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Android/macOS-x86_64-hosted/Qt5.6.3-Android-x86-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz",
     "addrOsdn": "https://osdn.net/downloads/users/30/30714/Qt5.6.3-Android-x86-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz",
     "data": {
-      "QtVersion": "5.6.3",
+      "version": "5.6.3",
       "platform": "Android",
       "buildHost": "macOS 10.15",
       "toolchain": "ndk r10e",
@@ -382,7 +382,7 @@
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Windows-x86/Qt5.9.9-Windows-x86-VS2015-20200104.7z",
     "addrOsdn": "https://osdn.net/downloads/users/30/30740/Qt5.9.9-Windows-x86-VS2015-20200104.7z",
     "data": {
-      "QtVersion": "5.9.9",
+      "version": "5.9.9",
       "platform": "Windows",
       "buildHost": "Windows 8.1 Update",
       "toolchain": "VS2015 Update 3",
@@ -398,7 +398,7 @@
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Windows-x86_64/Qt5.9.9-Windows-x86_64-VS2015-20200104.7z",
     "addrOsdn": "https://osdn.net/downloads/users/30/30745/Qt5.9.9-Windows-x86_64-VS2015-20200104.7z",
     "data": {
-      "QtVersion": "5.9.9",
+      "version": "5.9.9",
       "platform": "Windows",
       "buildHost": "Windows 8.1 Update",
       "toolchain": "VS2015 Update 3",
@@ -414,7 +414,7 @@
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Windows-x86/Qt5.9.9-Windows-x86-VS2017-15.9.23-20200531.7z",
     "addrOsdn": "https://osdn.net/downloads/users/30/30743/Qt5.9.9-Windows-x86-VS2017-15.9.23-20200531.7z",
     "data": {
-      "QtVersion": "5.9.9",
+      "version": "5.9.9",
       "platform": "Windows",
       "buildHost": "Windows 10 10.0.18363",
       "toolchain": "VS2017 15.9.18",
@@ -430,7 +430,7 @@
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Windows-x86_64/Qt5.9.9-Windows-x86_64-VS2017-15.9.23-20200531.7z",
     "addrOsdn": "https://osdn.net/downloads/users/30/30744/Qt5.9.9-Windows-x86_64-VS2017-15.9.23-20200531.7z",
     "data": {
-      "QtVersion": "5.9.9",
+      "version": "5.9.9",
       "platform": "Windows",
       "buildHost": "Windows 10 10.0.18363",
       "toolchain": "VS2017 15.9.18",
@@ -447,7 +447,7 @@
     "addrOsdn": "https://osdn.net/downloads/users/30/30741/Qt5.9.9-Windows-x86-MinGW7.3.0-20200104.7z",
     "MinGWConf": "wx3g7",
     "data": {
-      "QtVersion": "5.9.9",
+      "version": "5.9.9",
       "platform": "Windows",
       "buildHost": "Windows 8.1 Update",
       "toolchain": "MinGW-w64 v5 w/ GCC 7.3.0",
@@ -464,7 +464,7 @@
     "addrOsdn": "https://osdn.net/downloads/users/30/30746/Qt5.9.9-Windows-x86_64-MinGW7.3.0-20200104.7z",
     "MinGWConf": "wx6g7",
     "data": {
-      "QtVersion": "5.9.9",
+      "version": "5.9.9",
       "platform": "Windows",
       "buildHost": "Windows 8.1 Update",
       "toolchain": "MinGW-w64 v5 w/ GCC 7.3.0",
@@ -480,7 +480,7 @@
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/macOS-x86_64/Qt5.9.9-macOS-x86_64-AppleClang10.0.1-20191220.tar.xz",
     "addrOsdn": "https://osdn.net/downloads/users/30/30748/Qt5.9.9-macOS-x86_64-AppleClang10.0.1-20191220.tar.xz",
     "data": {
-      "QtVersion": "5.9.9",
+      "version": "5.9.9",
       "platform": "macOS",
       "buildHost": "macOS 10.14",
       "toolchain": "AppleClang 10.0",
@@ -496,7 +496,7 @@
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/macOS-x86_64/Qt5.9.9-macOS-x86_64-AppleClang10.0.1-noFramework-20191219.tar.xz",
     "addrOsdn": "https://osdn.net/downloads/users/30/30747/Qt5.9.9-macOS-x86_64-AppleClang10.0.1-noFramework-20191219.tar.xz",
     "data": {
-      "QtVersion": "5.9.9",
+      "version": "5.9.9",
       "platform": "macOS",
       "buildHost": "macOS 10.14",
       "toolchain": "AppleClang 10.0",
@@ -512,7 +512,7 @@
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/Windows-x86_64-hosted/Qt5.9.9-Android-arm-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z",
     "addrOsdn": "https://osdn.net/downloads/users/30/30737/Qt5.9.9-Android-arm-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z",
     "data": {
-      "QtVersion": "5.9.9",
+      "version": "5.9.9",
       "platform": "Android",
       "buildHost": "Windows 10 10.0.18363",
       "toolchain": "ndk r10e",
@@ -528,7 +528,7 @@
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/Windows-x86_64-hosted/Qt5.9.9-Android-arm64-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z",
     "addrOsdn": "https://osdn.net/downloads/users/30/30738/Qt5.9.9-Android-arm64-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z",
     "data": {
-      "QtVersion": "5.9.9",
+      "version": "5.9.9",
       "platform": "Android",
       "buildHost": "Windows 10 10.0.18363",
       "toolchain": "ndk r10e",
@@ -544,7 +544,7 @@
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/Windows-x86_64-hosted/Qt5.9.9-Android-x86-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z",
     "addrOsdn": "https://osdn.net/downloads/users/30/30739/Qt5.9.9-Android-x86-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z",
     "data": {
-      "QtVersion": "5.9.9",
+      "version": "5.9.9",
       "platform": "Android",
       "buildHost": "Windows 10 10.0.18363",
       "toolchain": "ndk r10e",
@@ -560,7 +560,7 @@
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/Linux-x86_64-hosted/Qt5.9.9-Android-arm-gcc-NDKr10e-xLinux-x86_64-gcc8.3.1-20200201.tar.xz",
     "addrOsdn": "https://osdn.net/downloads/users/30/30732/Qt5.9.9-Android-arm-gcc-NDKr10e-xLinux-x86_64-gcc8.3.1-20200201.tar.xz",
     "data": {
-      "QtVersion": "5.9.9",
+      "version": "5.9.9",
       "platform": "Android",
       "buildHost": "CentOS 8",
       "toolchain": "ndk r10e",
@@ -576,7 +576,7 @@
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/Linux-x86_64-hosted/Qt5.9.9-Android-arm64-gcc-NDKr10e-xLinux-x86_64-gcc8.3.1-20200201.tar.xz",
     "addrOsdn": "https://osdn.net/downloads/users/30/30731/Qt5.9.9-Android-arm64-gcc-NDKr10e-xLinux-x86_64-gcc8.3.1-20200201.tar.xz",
     "data": {
-      "QtVersion": "5.9.9",
+      "version": "5.9.9",
       "platform": "Android",
       "buildHost": "CentOS 8",
       "toolchain": "ndk r10e",
@@ -592,7 +592,7 @@
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/Linux-x86_64-hosted/Qt5.9.9-Android-x86-gcc-NDKr10e-xLinux-x86_64-gcc8.3.1-20200201.tar.xz",
     "addrOsdn": "https://osdn.net/downloads/users/30/30733/Qt5.9.9-Android-x86-gcc-NDKr10e-xLinux-x86_64-gcc8.3.1-20200201.tar.xz",
     "data": {
-      "QtVersion": "5.9.9",
+      "version": "5.9.9",
       "platform": "Android",
       "buildHost": "CentOS 8",
       "toolchain": "ndk r10e",
@@ -608,7 +608,7 @@
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/macOS-x86_64-hosted/Qt5.9.9-Android-arm-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz",
     "addrOsdn": "https://osdn.net/downloads/users/30/30734/Qt5.9.9-Android-arm-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz",
     "data": {
-      "QtVersion": "5.9.9",
+      "version": "5.9.9",
       "platform": "Android",
       "buildHost": "macOS 10.15",
       "toolchain": "ndk r10e",
@@ -624,7 +624,7 @@
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/macOS-x86_64-hosted/Qt5.9.9-Android-arm64-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz",
     "addrOsdn": "https://osdn.net/downloads/users/30/30736/Qt5.9.9-Android-arm64-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz",
     "data": {
-      "QtVersion": "5.9.9",
+      "version": "5.9.9",
       "platform": "Android",
       "buildHost": "macOS 10.15",
       "toolchain": "ndk r10e",
@@ -640,7 +640,7 @@
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/macOS-x86_64-hosted/Qt5.9.9-Android-x86-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz",
     "addrOsdn": "https://osdn.net/downloads/users/30/30735/Qt5.9.9-Android-x86-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz",
     "data": {
-      "QtVersion": "5.9.9",
+      "version": "5.9.9",
       "platform": "Android",
       "buildHost": "macOS 10.15",
       "toolchain": "ndk r10e",
@@ -656,7 +656,7 @@
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/macOS-x86_64/Qt5.12.12-macOS-x86_64-AppleClang12.0.0-20220308.tar.xz",
     "addrOsdn": "https://osdn.net/downloads/users/37/37916/Qt5.12.12-macOS-x86_64-AppleClang12.0.0-20220308.tar.xz",
     "data": {
-      "QtVersion": "5.12.12",
+      "version": "5.12.12",
       "platform": "macOS",
       "buildHost": "macOS 10.15.7",
       "toolchain": "AppleClang 12.0.0",
@@ -672,7 +672,7 @@
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/macOS-x86_64/Qt5.12.12-macOS-x86_64-AppleClang12.0.0-noFramework-20220307.tar.xz",
     "addrOsdn": "https://osdn.net/downloads/users/37/37915/Qt5.12.12-macOS-x86_64-AppleClang12.0.0-noFramework-20220307.tar.xz",
     "data": {
-      "QtVersion": "5.12.12",
+      "version": "5.12.12",
       "platform": "macOS",
       "buildHost": "macOS 10.15.7",
       "toolchain": "AppleClang 12.0.0",
@@ -688,7 +688,7 @@
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/WebAssembly/Qt5.12.12-WebAssembly-emscripten1.38.16-xLinux-x86_64-gcc8.5.0-20211203.tar.xz",
     "addrOsdn": "https://osdn.net/downloads/users/37/37255/Qt5.12.12-WebAssembly-emscripten1.38.16-xLinux-x86_64-gcc8.5.0-20211203.tar.xz",
     "data": {
-      "QtVersion": "5.12.12",
+      "version": "5.12.12",
       "platform": "WebAssembly",
       "buildHost": "RockyLinux 8.4",
       "toolchain": "emscripten-1.38.16",
@@ -704,7 +704,7 @@
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/WebAssembly/Qt5.12.12-WebAssembly-emscripten1.38.16-xmacOS-x86_64-AppleClang12.0.5-20211204.tar.xz",
     "addrOsdn": "https://osdn.net/downloads/users/37/37254/Qt5.12.12-WebAssembly-emscripten1.38.16-xmacOS-x86_64-AppleClang12.0.5-20211204.tar.xz",
     "data": {
-      "QtVersion": "5.12.12",
+      "version": "5.12.12",
       "platform": "WebAssembly",
       "buildHost": "macOS 11.6.1",
       "toolchain": "emscripten-1.38.16",
@@ -721,7 +721,7 @@
     "addrOsdn": "https://osdn.net/downloads/users/39/39654/Qt5.15.7-Windows-x86_64-VS2022-17.3.6-20221104.7z",
     "notes": "With WebEngine 5.15.11 && QtScript 5.15.11",
     "data": {
-      "QtVersion": "5.15.7",
+      "version": "5.15.7",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22621",
       "toolchain": "VS2022 17.3.6 w/ Windows SDK 10.0.22621",
@@ -738,7 +738,7 @@
     "addrOsdn": "https://osdn.net/downloads/users/39/39211/Qt5.15.6-macOS-x86_64-AppleClang12.0.5-20220915.tar.xz",
     "notes": "With WebEngine 5.15.10 && QtScript 5.15.10",
     "data": {
-      "QtVersion": "5.15.6",
+      "version": "5.15.6",
       "platform": "macOS",
       "buildHost": "macOS 11.6.8",
       "toolchain": "AppleClang 12.0.5",
@@ -755,7 +755,7 @@
     "addrOsdn": "https://osdn.net/downloads/users/39/39213/Qt5.15.6-macOS-x86_64-AppleClang12.0.5-noFramework-20220914.tar.xz",
     "notes": "With WebEngine 5.15.10 && QtScript 5.15.10",
     "data": {
-      "QtVersion": "5.15.6",
+      "version": "5.15.6",
       "platform": "macOS",
       "buildHost": "macOS 11.6.8",
       "toolchain": "AppleClang 12.0.5",
@@ -772,7 +772,7 @@
     "addrOsdn": "https://osdn.net/downloads/users/39/39244/Qt6.2.4-macOS-arm64_v8a-AppleClang14.0.0-20220914.tar.xz",
     "notes": "With WebEngine 6.3.2",
     "data": {
-      "QtVersion": "6.2.4",
+      "version": "6.2.4",
       "platform": "macOS",
       "buildHost": "macOS 12.6",
       "toolchain": "AppleClang 14.0.0",
@@ -789,7 +789,7 @@
     "addrOsdn": "https://osdn.net/downloads/users/39/39243/Qt6.2.4-macOS-arm64_v8a-AppleClang14.0.0-noFramework-20220914.tar.xz",
     "notes": "With WebEngine 6.3.2",
     "data": {
-      "QtVersion": "6.2.4",
+      "version": "6.2.4",
       "platform": "macOS",
       "buildHost": "macOS 12.6",
       "toolchain": "AppleClang 14.0.0",
@@ -806,7 +806,7 @@
     "addrOsdn": "https://osdn.net/downloads/users/39/39251/Qt6.2.4-macOS-x86_64-AppleClang14.0.0-20220915.tar.xz",
     "notes": "With WebEngine 6.3.2",
     "data": {
-      "QtVersion": "6.2.4",
+      "version": "6.2.4",
       "platform": "macOS",
       "buildHost": "macOS 12.6",
       "toolchain": "AppleClang 14.0.0",
@@ -823,7 +823,7 @@
     "addrOsdn": "https://osdn.net/downloads/users/39/39252/Qt6.2.4-macOS-x86_64-AppleClang14.0.0-noFramework-20220914.tar.xz",
     "notes": "With WebEngine 6.3.2",
     "data": {
-      "QtVersion": "6.2.4",
+      "version": "6.2.4",
       "platform": "macOS",
       "buildHost": "macOS 12.6",
       "toolchain": "AppleClang 14.0.0",
@@ -840,7 +840,7 @@
     "addrOsdn": "https://osdn.net/downloads/users/39/39748/Qt6.2.4-Windows-x86_64-VS2019-16.11.18-20220915.7z",
     "notes": "With WebEngine 6.3.2",
     "data": {
-      "QtVersion": "6.2.4",
+      "version": "6.2.4",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22000",
       "toolchain": "VS2019 16.11.18 w/ Windows SDK 10.0.22000",
@@ -857,7 +857,7 @@
     "addrOsdn": "https://osdn.net/downloads/users/39/39249/Qt6.2.4-Windows-x86_64-VS2022-17.3.3-20220915.7z",
     "notes": "With WebEngine 6.3.2",
     "data": {
-      "QtVersion": "6.2.4",
+      "version": "6.2.4",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22000",
       "toolchain": "VS2022 17.3.3 w/ Windows SDK 10.0.22621",
