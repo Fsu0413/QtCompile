@@ -57,6 +57,9 @@ Please refer to the content lists in the left area.
 
 ## Update History
 
+### 2023.2.25
+Update Qt 6.5.0 beta 3 series built with NDK r25c, with builtin MySQL (MariaDB) Database Backend and plugin.
+
 ### 2023.2.12
 Update Qt 6.4.2 series built with NDK r25c.
 
