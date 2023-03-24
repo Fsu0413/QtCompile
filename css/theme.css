@@ -1350,6 +1350,11 @@ html[dir="rtl"] .select-container span {
     float: right;
 }
 
+#sidebar ul select {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .select-style {
     border: 0;
     border-radius: 0;
@@ -1749,6 +1754,18 @@ article ul li input[type="checkbox"]:checked::before {
 #sidebar ul.collapsible-menu > li > a {
     display: inline-block;
     width: 100%;
+}
+
+/* menu states for not(.collapsible-menu) */
+
+#sidebar ul ul {
+    display: none;
+}
+
+#sidebar ul > li.parent > ul,
+#sidebar ul > li.active > ul,
+#sidebar ul > li.alwaysopen > ul {
+    display: block;
 }
 
 /* closed menu */

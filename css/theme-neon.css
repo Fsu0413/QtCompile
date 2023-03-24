@@ -10,10 +10,6 @@
 @supports not (-ms-high-contrast:none) {
 
 :root {
-    color-scheme: only dark; /* set browser scrollbar color */
-}
-
-:root {
     --PRIMARY-color: #f300b2; /* brand primary color */
     --SECONDARY-color: #1c90f3; /* brand secondary color */
     --ACCENT-color: #ffff00; /* brand accent color, used for search highlights */
@@ -35,6 +31,7 @@
     --CODE-INLINE-BG-color: #282a36; /* background color of inline code */
     --CODE-INLINE-BORDER-color: #464646; /* border color of inline code */
 
+    --BROWSER-theme: dark; /* name of the theme for browser scrollbars of the main section */
     --MERMAID-theme: dark; /* name of the default Mermaid theme for this variant, can be overridden in config.toml */
     --SWAGGER-theme: dark; /* name of the default Swagger theme for this variant, can be overridden in config.toml */
 
@@ -75,6 +72,7 @@
 }
 
 body a#logo,
+body a#logo:hover,
 body #logo svg,
 body #logo svg * {
     color: var(--INTERNAL-MENU-SEARCH-BORDER-color);
