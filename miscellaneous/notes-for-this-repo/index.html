@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.110.0">
-    <meta name="generator" content="Relearn 5.12.0">
+    <meta name="generator" content="Hugo 0.111.3">
+    <meta name="generator" content="Relearn 5.12.3">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>本仓库的一些备注 :: Fsu0413 的原版 Qt 构建</title>
@@ -38,7 +38,7 @@
       window.T_N_results_found = '为\u0022{0}\u0022找到 {1} 个结果';
       // some further base stuff
       var baseUriFull='qtcompile/';
-      window.variants && variants.init( [ 'relearn-dark', 'relearn-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
+      window.variants && variants.init( [ 'relearn-dark', 'relearn-bright', 'relearn-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
     </script><style>
     p.fsu0413_leftFooter {
         text-align: center;
@@ -384,6 +384,11 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
 <td>2023.12.27</td>
 </tr>
 <tr>
+<td>5.15.13</td>
+<td>2023.3.9</td>
+<td>2024.3.9</td>
+</tr>
+<tr>
 <td>6.2.5</td>
 <td>2022.7.19</td>
 <td>2023.7.19</td>
@@ -523,8 +528,8 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
         <div id="shortcuts">
           <div class="nav-title padding">更多</div>
           <ul class="space">
-            <li><a class="padding"href="https://github.com/Fsu0413/QtCompile"><i class='fab fa-fw fa-github'></i> GitHub 仓库</a></li>
-            <li><a class="padding"href="http://www.qtcn.org/bbs/read.php?tid=85733&amp;ds=1&amp;page=1&amp;toread=1#194070"><i class='fas fa-poll-h'></i> 论坛发布贴</a></li>
+            <li><a class="padding" href="https://github.com/Fsu0413/QtCompile"><i class='fab fa-fw fa-github'></i> GitHub 仓库</a></li>
+            <li><a class="padding" href="http://www.qtcn.org/bbs/read.php?tid=85733&amp;ds=1&amp;page=1&amp;toread=1#194070"><i class='fas fa-poll-h'></i> 论坛发布贴</a></li>
           </ul>
         </div>
         <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter"></div>
@@ -553,6 +558,7 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
                   <label class="a11y-only" for="select-variant">主题</label>
                   <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
                     <option id="relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
+                    <option id="relearn-bright" value="relearn-bright">Relearn Bright</option>
                     <option id="relearn-light" value="relearn-light">Relearn Light</option>
                     <option id="learn" value="learn">Learn</option>
                     <option id="neon" value="neon">Neon</option>
@@ -565,11 +571,11 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
               </div>
               <script>window.variants && variants.markSelectedVariant();</script>
             </li>
-            <li class="footerVisitedLinks"><button class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i> 清理历史记录</button></li>
+            <li class="footerVisitedLinks"><button class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i><span>&nbsp;</span>清理历史记录</button></li>
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 25 Feb 2023 11:43:43 CST</p>
+Site generated: Fri, 24 Mar 2023 21:19:24 CST</p>
 
         </div>
       </div>
