@@ -74,7 +74,7 @@
       "version": "3.1.20",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22621",
-      "toolchain": "MinGW-w64 v6 w/ GCC 8.1.0",
+      "toolchain": "MinGW-w64 w/ GCC 8.1.0",
       "arch": "x86_64"
     },
     "sort": 30109
@@ -114,7 +114,7 @@
       "version": "3.3.4",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22621",
-      "toolchain": "MinGW-w64 v9 w/ GCC 11.2.0",
+      "toolchain": "MinGW-w64 w/ GCC 11.2.0",
       "arch": "x86_64"
     },
     "sort": 30303
@@ -124,7 +124,7 @@
       "version": "3.3.4",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22621",
-      "toolchain": "MinGW-w64 v10 w/ GCC 12.1.0",
+      "toolchain": "MinGW-w64 w/ GCC 12.1.0",
       "arch": "x86_64"
     },
     "sort": 30304
@@ -134,7 +134,7 @@
       "version": "3.3.4",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22621",
-      "toolchain": "MinGW-w64 v9 w/ LLVM 15.0.0 (ucrt)",
+      "toolchain": "MinGW-w64 w/ LLVM 15.0.0 (ucrt)",
       "arch": "x86_64"
     },
     "sort": 30305
@@ -144,10 +144,30 @@
       "version": "3.3.4",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22621",
-      "toolchain": "MinGW-w64 v9 w/ LLVM 15.0.0 (msvcrt)",
+      "toolchain": "MinGW-w64 w/ LLVM 15.0.0 (msvcrt)",
       "arch": "x86_64"
     },
     "sort": 30306
+  },
+  "m3_3wx6u6": {
+    "data": {
+      "version": "3.3.4",
+      "platform": "Windows",
+      "buildHost": "Windows 11 10.0.22621",
+      "toolchain": "MinGW-w64 w/ LLVM 16.0.0 (ucrt)",
+      "arch": "x86_64"
+    },
+    "sort": 30307
+  },
+  "m3_3wx6s6": {
+    "data": {
+      "version": "3.3.4",
+      "platform": "Windows",
+      "buildHost": "Windows 11 10.0.22621",
+      "toolchain": "MinGW-w64 w/ LLVM 16.0.0 (msvcrt)",
+      "arch": "x86_64"
+    },
+    "sort": 30308
   },
   "m3_3mal": {
     "data": {
@@ -157,6 +177,6 @@
       "toolchain": "AppleClang 14.0.0",
       "arch": "Unified (x86_64, arm64)"
     },
-    "sort": 30307
+    "sort": 30309
   }
 }

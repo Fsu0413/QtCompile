@@ -37,7 +37,7 @@
       "version": "1.1.1t",
       "platform": "Windows",
       "buildHost": "Windows 8.1 Update",
-      "toolchain": "MinGW-w64 v5 w/ GCC 7.3.0",
+      "toolchain": "MinGW-w64 w/ GCC 7.3.0",
       "arch": "x86",
       "variant": ""
     },
@@ -48,7 +48,7 @@
       "version": "1.1.1t",
       "platform": "Windows",
       "buildHost": "Windows 8.1 Update",
-      "toolchain": "MinGW-w64 v5 w/ GCC 7.3.0",
+      "toolchain": "MinGW-w64 w/ GCC 7.3.0",
       "arch": "x86_64",
       "variant": ""
     },
@@ -246,7 +246,7 @@
       "version": "3.0.8",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22621",
-      "toolchain": "MinGW-w64 v9 w/ GCC 11.2.0",
+      "toolchain": "MinGW-w64 w/ GCC 11.2.0",
       "arch": "x86_64",
       "variant": ""
     },
@@ -257,7 +257,7 @@
       "version": "3.0.8",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22621",
-      "toolchain": "MinGW-w64 v10 w/ GCC 12.1.0",
+      "toolchain": "MinGW-w64 w/ GCC 12.1.0",
       "arch": "x86_64",
       "variant": ""
     },
@@ -268,7 +268,7 @@
       "version": "3.0.8",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22621",
-      "toolchain": "MinGW-w64 v9 w/ LLVM 15.0.0 (ucrt)",
+      "toolchain": "MinGW-w64 w/ LLVM 15.0.0 (ucrt)",
       "arch": "x86_64",
       "variant": ""
     },
@@ -279,11 +279,33 @@
       "version": "3.0.8",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22621",
-      "toolchain": "MinGW-w64 v9 w/ LLVM 15.0.0 (msvcrt)",
+      "toolchain": "MinGW-w64 w/ LLVM 15.0.0 (msvcrt)",
       "arch": "x86_64",
       "variant": ""
     },
     "sort": 30008
+  },
+  "o3_0wx6u6": {
+    "data": {
+      "version": "3.0.8",
+      "platform": "Windows",
+      "buildHost": "Windows 11 10.0.22621",
+      "toolchain": "MinGW-w64 w/ LLVM 16.0.0 (ucrt)",
+      "arch": "x86_64",
+      "variant": ""
+    },
+    "sort": 30009
+  },
+  "o3_0wx6s6": {
+    "data": {
+      "version": "3.0.8",
+      "platform": "Windows",
+      "buildHost": "Windows 11 10.0.22621",
+      "toolchain": "MinGW-w64 w/ LLVM 16.0.0 (msvcrt)",
+      "arch": "x86_64",
+      "variant": ""
+    },
+    "sort": 30010
   },
   "o3_0mx6": {
     "data": {
@@ -294,7 +316,7 @@
       "arch": "x86_64",
       "variant": ""
     },
-    "sort": 30009
+    "sort": 30011
   },
   "o3_0ma6": {
     "data": {
@@ -305,7 +327,7 @@
       "arch": "arm64",
       "variant": ""
     },
-    "sort": 30010
+    "sort": 30012
   },
   "o3_0aa3n324": {
     "data": {
@@ -316,7 +338,7 @@
       "arch": "arm",
       "variant": "android-24, -static"
     },
-    "sort": 30011
+    "sort": 30013
   },
   "o3_0aa6n324": {
     "data": {
@@ -327,7 +349,7 @@
       "arch": "arm64",
       "variant": "android-24, -static"
     },
-    "sort": 30012
+    "sort": 30014
   },
   "o3_0ax3n324": {
     "data": {
@@ -338,7 +360,7 @@
       "arch": "x86",
       "variant": "android-24, -static"
     },
-    "sort": 30013
+    "sort": 30015
   },
   "o3_0ax6n324": {
     "data": {
@@ -349,7 +371,7 @@
       "arch": "x86_64",
       "variant": "android-24, -static"
     },
-    "sort": 30014
+    "sort": 30016
   },
   "o3_0aa3n527": {
     "data": {
@@ -360,7 +382,7 @@
       "arch": "arm",
       "variant": "android-27, -static"
     },
-    "sort": 30015
+    "sort": 30017
   },
   "o3_0aa6n527": {
     "data": {
@@ -371,7 +393,7 @@
       "arch": "arm64",
       "variant": "android-27, -static"
     },
-    "sort": 30016
+    "sort": 30018
   },
   "o3_0ax3n527": {
     "data": {
@@ -382,7 +404,7 @@
       "arch": "x86",
       "variant": "android-27, -static"
     },
-    "sort": 30017
+    "sort": 30019
   },
   "o3_0ax6n527": {
     "data": {
@@ -393,6 +415,6 @@
       "arch": "x86_64",
       "variant": "android-27, -static"
     },
-    "sort": 30018
+    "sort": 30020
   }
 }
