@@ -21,17 +21,6 @@ I also appeals to all users of my websites to STOP USING Notepad++ and find an a
 I won't provide any recommendation for alternative.  
 There are [tons of Scintilla-based editor in the wild](https://www.texteditors.org/cgi-bin/wiki.pl?ScintillaEditorFamily) and I do believe you'll find the one you like.
 
-## Website Mirror
-
-Recently I created a mirror of this website in the Greatest China, using service of Gitee Pages.  
-This mirror is configured to be displaying Simplified Chinese by default.
-
-Due to the customize domain name function is only available under purchaged service of Gitee, Chinese mirror has to be under the domain of Gitee for now.  
-I may purchage the service later when the service seems good enough for me.
-
-[Github Pages (America, with English as default language)](https://build-qt.fsu0413.me/)  
-[Gitee Pages (The Greatest China, with Chinese-S as default language)](https://fsu0413.gitee.io/qtcompile/)
-
 ## Disclaimer
 
 These binaries built by Fsu0413 are __TOTALLY UNTESTED__. Use at your own risk.  

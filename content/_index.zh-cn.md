@@ -20,17 +20,6 @@ draft: false
 我不会对替代方案提供任何建议。  
 现在外面有 [非常多的基于 Scintilla 的编辑器](https://www.texteditors.org/cgi-bin/wiki.pl?ScintillaEditorFamily) ，我相信你一定会找到你想要的那个。
 
-## 网站镜像
-
-最近我在中国大陆使用 Gitee Pages 服务构建了一个此网站的镜像。  
-这个镜像配置的默认语言改为简体中文。
-
-由于 Gitee 的自定义域名服务只提供给付费用户，目前中文站是在 Gitee 的域名下的。  
-如果之后我对此服务感觉不错的话，我可能会付费使用这个服务。
-
-[Gitee Pages （中国大陆，使用简体中文作为默认语言）](https://fsu0413.gitee.io/qtcompile/)  
-[Github Pages （美国，使用英语作为默认语言）](https://build-qt.fsu0413.me/)
-
 ## 免责声明
 
 这些由 Fsu0413 构建的二进制文件 __完全未经测试__ ，使用时请自行承担风险。  

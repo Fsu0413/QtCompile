@@ -15,6 +15,17 @@ But the main contents are rewritten using Chinese, which shouldn't bother us for
 
 If there are any constructive advices, feel free to [create issue on Github](https://github.com/Fsu0413/QtCompile/issues/new).
 
+## Website Mirror
+
+~~Recently~~ I created a mirror of this website in the Greatest China, using service of Gitee Pages.  
+This mirror is configured to be displaying Simplified Chinese by default.
+
+Due to the customize domain name function is only available under purchaged service of Gitee, Chinese mirror has to be under the domain of Gitee for now.  
+I may purchage the service later when the service seems good enough for me.
+
+[Github Pages (America, with English as default language)](https://build-qt.fsu0413.me/)  
+[Gitee Pages (The Greatest China, with Chinese-S as default language)](https://fsu0413.gitee.io/qtcompile/)
+
 ## Reproduciable building
 
 I use a set of scripts to do the build and packaging for [reproducible building](https://reproducible-builds.org/) Qt.  
@@ -193,7 +204,7 @@ SINCE 2020.1.6 (OpenSSL 1.0.2 EOL) NO LATER BUILD WILL SUPPORT WINDOWS 8 AND EAR
 
 ## Decided EOL of current building Qt LTS versions (Updated 2023.1.7)
 
-tQtC released Qt opensource 5.15.3 for a sudden and all the things changed since then.  
+(Updated 2022.3.4) tQtC released Qt opensource 5.15.3 for a sudden and all the things changed since then.  
 All of our EOL schedule becomes meaningless. We should re-consider the EOL date since Qt 5.15.
 
 Note: since OpenSSL is currently built on all versions of my build except for WebAssembly, all of my builds should persist until EOL of that specific OpenSSL version.  
@@ -239,8 +250,8 @@ Commericial-only Qt Open Source Release Date (ETA)
 ## Incoming update for future release
 
 ~~Use Android NDK r23 series for building Qt 5.15.7 onwards.~~ (Build failed also on 5.15.8. Will test it on 5.15.9)  
-Use GCC 11 with MinGW-w64 v9 for building Qt 5.15.9 onwards.  
-Use macOS 13 for building Qt 6.5 onwards. Will check if Qt 6.2 series can be built on it.  
+Use GCC 11 with MinGW-w64 v9 for building Qt 5.15.9 onwards. (Build failed on 5.15.8)  
+~~Use macOS 13 for building Qt 6.5 onwards. Will check if Qt 6.2 series can be built on it.~~ (Postponed. Since we need to try to build Qt 5.15.9 on M1. Due to potentially incompatible environment we'd to try building Qt 5.15.9 on macOS 12 at first)  
 Build Qt 5.15.9 and later for macOS on / for Apple Silicon.  
 
 ## Existing Patches
