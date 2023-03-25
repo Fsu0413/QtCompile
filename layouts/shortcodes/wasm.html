@@ -8,9 +8,9 @@
 {{- $fsqtbuildwasmcontent = print $fsqtbuildwasmcontent2 "\n\n" $fsqtbuildwasmthreadcontent -}}
 {{- end -}}
 {{ partial "shortcodes/notice.html" (dict
-  "context" .
-  "style" "info"
-  "title" (T "Note")
-  "icon" "fas fa-info-circle"
-  "content" ((print $fsqtbuildwasmcontent) | markdownify)
+    "context" .
+    "style" "info"
+    "title" (T "Note")
+    "icon" "fas fa-info-circle"
+    "content" ((print $fsqtbuildwasmcontent) | markdownify)
 )}}

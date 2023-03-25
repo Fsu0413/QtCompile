@@ -5,9 +5,9 @@
     {{- $tlsInstruction = $tlsInstruction2 -}}
 {{ end -}}
 {{ partial "shortcodes/notice.html" (dict
-  "context" .
-  "style" "info"
-  "title" (T "Note")
-  "icon" "fas fa-info-circle"
-  "content" ((print $tlsInstruction ) | markdownify)
+    "context" .
+    "style" "info"
+    "title" (T "Note")
+    "icon" "fas fa-info-circle"
+    "content" ((print $tlsInstruction ) | markdownify)
 )}}

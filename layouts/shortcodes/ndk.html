@@ -6,14 +6,14 @@
 {{- if $ndkAndroid -}}
     {{- $ndkStatement := "fsqtbuild_i18n_ndk" -}}
     {{- if .Get 3 -}}
-      {{- $ndkStatement = "fsqtbuild_i18n_ndk59" -}}
+        {{- $ndkStatement = "fsqtbuild_i18n_ndk59" -}}
     {{- end -}}
     {{ partial "shortcodes/notice.html" (dict
-      "context" .
-      "style" "info"
-      "title" (T "Note")
-      "icon" "fas fa-info-circle"
-      "content" ((printf (T $ndkStatement) $ndkVer (print $ndkInstruction $ndkPlatform) $ndkAndroid) | markdownify)
+        "context" .
+        "style" "info"
+        "title" (T "Note")
+        "icon" "fas fa-info-circle"
+        "content" ((printf (T $ndkStatement) $ndkVer (print $ndkInstruction $ndkPlatform) $ndkAndroid) | markdownify)
     )}}
 {{- else -}}
     <p class="fsu0413_error">NO ANDROID PLATFORM {{$ndkPlatform}}</p>

@@ -9,7 +9,7 @@ weight: 3
 它使用 `libclang_static.lib` 但是 clang 构建中没有这个文件。  
 我决定在找到使用静态链接的 clang 方法之前，不再提供基于 LLVM 的 QDoc。
 
-2020 年 11 月 3 日更新：  
+{{% date 2020 11 3 %}}更新：  
 `libclang_static.lib` 是 Qt 那帮人自己使用脚本打包的。  
 非常感谢 QtCN 的 lixinwei 提供相关信息。 [原帖参考](http://www.qtcn.org/bbs/job.php?action=topost&tid=85983&pid=200952)
 
@@ -27,14 +27,14 @@ weight: 3
 1.3.3 版本发布但是还是没有关于 OpenSSL 3.0 的修正。  
 ~~我不清楚是否我们可以把 QtOpcUa 带回到 Qt 6.4 了。。。。~~
 
-2022 年 11 月 6 日更新：  
+{{% date 2022 11 6 %}}更新：  
 open62541 没有在 1.3.3 版本之后发布任何新版本，所以 QtOpcUa 6.4 不会有 open62541 的 OpenSSL 3.0 支持。  
 目前在 GitHub 上有一个已经合入的 Pull Request 添加了 OpenSSL 3.0 支持。参考 [Github Pull Request](https://github.com/open62541/open62541/pull/5349)。  
 下一个版本的 open62541 就会包含这个修改，届时我会重新启用 QtOpcUa 的构建。
 
-2023 年 1 月 23 日更新：  
-open62541 于 2022 年 11 月 14 日发布了 1.3.4 版本。QtOpcUa 6.5 更新附带的 open62541 附带的就是这个版本。  
-我将于 Qt 6.5 的构建上重新尝试启用 QtOpcUa 模块进行构建。（2023 年 1 月 23 日之前的构建中没有此模块）
+{{% date 2023 1 23 %}}更新：  
+open62541 于 {{% date 2022 11 14 %}}发布了 1.3.4 版本。QtOpcUa 6.5 更新附带的 open62541 附带的就是这个版本。  
+我将于 Qt 6.5 的构建上重新尝试启用 QtOpcUa 模块进行构建。（{{% date 2023 1 23 %}}之前的构建中没有此模块）
 
 ## 使用更高版本的 QtWebEngine 构建 Qt 6.2.4 产生的多种多样的失败
 

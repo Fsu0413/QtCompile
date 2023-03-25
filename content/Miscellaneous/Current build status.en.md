@@ -39,7 +39,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 
 ## MariaDB Status
 
-I'll ship MariaDB connector/C dynamic library for Qt 5.15 and later version since 8th Feb., 2023.  
+I'll ship MariaDB connector/C dynamic library for Qt 5.15 and later version since {{% date 2023 2 8 %}}.  
 This is used to build MySQL database backend.  
 I have following reason for not using MySQL libraries.
 

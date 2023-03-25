@@ -51,13 +51,13 @@ Maybe you just want to distribute a single portable executable binary file, but 
 
 To be wise and stop using static builds in huge projects. You'll feel liberated to make this change. Trust me.
 
-## Static `Lite` Builds and Static `Full` Builds (Updated 2022.3.8)
+## Static `Lite` Builds and Static `Full` Builds (Updated {{% date 2022 3 8 %}})
 
 Static `lite` builds skipped most of Qt modules, only QtCore, QtDeclarative (QtQml 2), QtXmlPatterns and QtXXXExtras are built.  
 It is useful for people who wants to build the QtIFW without building a full static Qt.
 
-(Updated 2022.3.8) Qt 5 static `lite` builds is also for my build of QQtPatcher.  
-(Updated 2021.12.4) Since Qt 6 cross builds of Qt need a host Qt of same version for its tools, we use this static `lite` version of Qt for producing host tools.
+(Updated {{% date 2022 3 8 %}}) Qt 5 static `lite` builds is also for my build of QQtPatcher.  
+(Updated {{% date 2021 12 4 %}}) Since Qt 6 cross builds of Qt need a host Qt of same version for its tools, we use this static `lite` version of Qt for producing host tools.
 
 Static `full` builds don't skip most of Qt modules, only skip modules which does not build.
 
@@ -102,13 +102,13 @@ Arch Linux and MSYS2 switched to zst for their package manager recently.
 Only recent GNU `tar` (1.31 or later) and recent `bsdtar` (3.3.3 or later) directly supports `.tar.zst` compress method.  
 I will not use zst because the compress ratio is not as good as LZMA2(xz).
 
-## Difference of this Qt and offically distributed Qt (Updated 2023.1.8)
+## Difference of this Qt and offically distributed Qt (Updated {{% date 2023 1 8 %}})
 
 I provide only binary tarball, which contains only built Qt binary for each OS.  
 It should work out of box (for Qt 5.14 or later) or work after patches to Qt (for Qt 5.13 and before).  
-(Updated 2022.4.14) Since installers are often doubted for attaching unwanted software (I never mean to do it), I will never use installers.
+(Updated {{% date 2022 4 14 %}}) Since installers are often doubted for attaching unwanted software (I never mean to do it), I will never use installers.
 
-(Updated 2020.6.7) There is **NO NEED TO LOGIN Qt ACCOUNT**!!! By doing this gets rid of the nonsense of "This can help optimize Qt".
+(Updated {{% date 2020 6 7 %}}) There is **NO NEED TO LOGIN Qt ACCOUNT**!!! By doing this gets rid of the nonsense of "This can help optimize Qt".
 
 All Qt builds here have been configured with `-no-icu`, because I thought that the ICU is useless for common usecases, and it is rather a big thing.  
 
@@ -117,14 +117,14 @@ Windows builds before and including Qt 5.12 are using linked OpenSSL to dynamic(
 macOS builds are using SecureTransport instead of OpenSSL.  
 Windows builds after and including Qt 5.13 are using SChannel instead of OpenSSL.
 
-(Updated 2022.4.14) **No debug libs, which cuts more than a half of the size of the whole Qt package.**  
+(Updated {{% date 2022 4 14 %}}) **No debug libs, which cuts more than a half of the size of the whole Qt package.**  
 (Kindly please don't request it without commericial customization since I don't use it. Note that commerical customization has not started yet)
 
 No examples, which cuts more than a half of the size of the whole Qt package.
 
 No docs (and no `QDoc` for Qt 5.12 and later since it depends on Clang), since Qt docs can be read from [http://doc.qt.io](http://doc.qt.io) at any time, it is no need to bondle doc to the package.
 
-(Updated 2023.1.8) **No certificate** which may be devastating for especially non-developers.  
+(Updated {{% date 2023 1 8 %}}) **No certificate** which may be devastating for especially non-developers.  
 Binary program certificate must be bought on expensive price, yet I as a personal developer can't afford it for only a simple trust verification.  
 This leads to a problem that the program is reported to be not trusted when running my build of Qt.  
 There is no solution for this problem at the moment. I won't buy certificate for verification until commericial customization started and I earned some money by it in the future.  
@@ -143,7 +143,7 @@ The source code of the distributed QQtPatcher is on [GitHub](https://github.com/
 Do not put the library in a directory which contains non-ascii character or spaces.   
 Bug will cause that the path of qmake cannot be properly parsed by Qt Creator.
 
-## Qt offering changes 2020 (updated 2022.4.14)
+## Qt offering changes 2020 (updated {{% date 2022 4 14 %}})
 
 Qt just announced [Qt offering changes 2020](https://www.qt.io/blog/qt-offering-changes-2020).  
 Following is my opinion of this blog.
@@ -152,9 +152,9 @@ First of all, I have a Qt account, but I don’t understand why I need a Qt acco
 All files are compiled and linked from the same set of source code. It will not change even if you log in to your Qt account. It will not add any features to Qt. "This can help optimize Qt" is simply nonsense.
 
 LTS is only available for commercial license. So what is the license for the LTS source package?  
-(Removed 2022.3.8) ~~If it is also only available for commercial licenses, Qt basically says goodbye to stable open source software.~~  
-(Updated 2022.3.8) With current release schedule any patch will be delivered after 1 year. It will be too late before a security issue has got patched, espically for original version built by tQtC.  
-Besides, their LTS support time is not too long. Windows has 10 years of support time, (Updated 2022.4.14) ~~CentOS~~ RockyLinux has 10 years of support time, and Qt has only 3 years...
+(Removed {{% date 2022 3 8 %}}) ~~If it is also only available for commercial licenses, Qt basically says goodbye to stable open source software.~~  
+(Updated {{% date 2022 3 8 %}}) With current release schedule any patch will be delivered after 1 year. It will be too late before a security issue has got patched, espically for original version built by tQtC.  
+Besides, their LTS support time is not too long. Windows has 10 years of support time, (Updated {{% date 2022 4 14 %}}) ~~CentOS~~ RockyLinux has 10 years of support time, and Qt has only 3 years...
 
 The offline installation package is only available for commercial licenses, which means that peoples in China can only find the time (usually before 8 am) when the network is available to install the Qt open source version with the online installation package.
 
@@ -164,7 +164,7 @@ This will definitely lose money.
 
 I will continue my amateur job of building Qt. I hope Qt for MCUs will be open source soon.
 
-## Qt 6 support platforms (updated 2023.1.7)
+## Qt 6 support platforms (updated {{% date 2023 1 7 %}})
 
 See {{% QtBug 104266 "Qt 6.5 TQC Supported Targets" %}} and its predecessors.
 
@@ -186,66 +186,69 @@ I will add bulid for static version for Qt 6.2, but I don't exactly know how Qt 
 
 I am using OpenSSL 3 series for Qt 6.2 onwards.
 
-## GPG sign (Updated 2021.2.6)
+## GPG sign (Updated {{% date 2021 2 6 %}})
 
 I am working on a method to GPG sign every package, but I didn't find a good method.  
 I don't want to put the signature file besides the package, I think it will be a waste of upload step......
 
-(Updated 2021.2.6) I haven't found a suitable solution, temporarily put it away....
+(Updated {{% date 2021 2 6 %}}) I haven't found a suitable solution, temporarily put it away....
 
-## Windows 10 before version 1809 and 32-bit Windows deprecation (IMPORTANT NOTES!!) (updated 2022.8.21)
+## Windows 10 before version 1809 and 32-bit Windows deprecation (IMPORTANT NOTES!!) (updated {{% date 2023 3 25 %}})
+
+(Updated {{% date 2023 3 25 %}}) Windows 8.1 reaches EOL on {{% date 2023 1 10 %}}.  
+Since {{% date 2023 3 25 %}} all builds don't support Windows 8.1. Existing VS2015 and MinGW 7.3 builds are migrated to Windows 10.
 
 Qt 6 builds before 6.2 supports only 64-bit Windows 10 1809 and later, while builds after 6.3 supports only latest Windows 10 (i.e. version after 2004 since they has same system files).
 
-SINCE 2020.6.3 (Qt 5.15 release and Qt 5.9 EOL) ONLY VS2015 AND MINGW 7.3 BUILDS SUPPORTS WINDOWS 8.1 by me.  
+SINCE {{% date 2020 6 3 %}} (Qt 5.15 release and Qt 5.9 EOL) ONLY VS2015 AND MINGW 7.3 BUILDS SUPPORTS WINDOWS 8.1 by me.  
 WINDOWS 10 IS MORE AND MORE POPULAR, AND RECEIVING MORE AND MORE NEW FEATURES. ONE SHOULD SWITCH TO WINDOWS 10 ASAP.
 
-SINCE 2020.1.6 (OpenSSL 1.0.2 EOL) NO LATER BUILD WILL SUPPORT WINDOWS 8 AND EARLIER BY ME, PLEASE UPDATE TO WINDOWS 8.1 AND LATER.
+SINCE {{% date 2020 1 6 %}} (OpenSSL 1.0.2 EOL) NO LATER BUILD WILL SUPPORT WINDOWS 8 AND EARLIER BY ME, PLEASE UPDATE TO WINDOWS 8.1 AND LATER.
 
-## Decided EOL of current building Qt LTS versions (Updated 2023.1.7)
+## Decided EOL of current building Qt LTS versions (Updated {{% date 2023 1 7 %}})
 
-(Updated 2022.3.4) tQtC released Qt opensource 5.15.3 for a sudden and all the things changed since then.  
+(Updated {{% date 2022 3 4 %}}) tQtC released Qt opensource 5.15.3 for a sudden and all the things changed since then.  
 All of our EOL schedule becomes meaningless. We should re-consider the EOL date since Qt 5.15.
 
 Note: since OpenSSL is currently built on all versions of my build except for WebAssembly, all of my builds should persist until EOL of that specific OpenSSL version.  
 Currently OpenSSL 1.1.1 and 3.0 series are used.  
-OpenSSL 1.1.1 series reaches EOL until 2023.9.11, while OpenSSL 3.0 series does until 2026.9.7.
+OpenSSL 1.1.1 series reaches EOL until {{% date 2023 9 11 %}}, while OpenSSL 3.0 series does until {{% date 2026 9 7 %}}.
 
 Since Qt 5.15.8 starts supporting OpenSSL 3.0 series we may switch to OpenSSL 3.0 series on our Qt 5.15 Android builds after EOL of OpenSSL 1.1 series.  
-Currently it is certain that Qt 5.15 will be supported for 5 years, but it is unknown that tQtC will provide source code of Qt 5.15 after 2024.5.26.  
+Currently it is certain that Qt 5.15 will be supported for 5 years, but it is unknown that tQtC will provide source code of Qt 5.15 after {{% date 2024 5 26 %}}.  
 If subsequent version of Qt 5.15 remains private we won't upgrade OpenSSL to post-3.0 version.
 
 | Qt version | Build Target | EOL date | Notes |
 |-|-|-|-|
-| 5.12 Series | Windows | 2023.9.11 | Same as EOL of OpenSSL 1.1.1 series, with VS version update within VS2017/9, no builds for VS2022 |
-| | ~~macOS~~ | ~~2021.11.25~~ (EOLed) | ~~Same as EOL of Qt 5.12~~ **A patch has released after 5.12 EOL and an extra package is made for it on macOS**. |
-| | Android | 2023.9.11 | Same as EOL of OpenSSL 1.1.1 series. Will stuck at Android NDK r21 LTS series |
-| | ~~WebAssembly~~ | ~~2021.11.25~~ (EOLed) | ~~Same as EOL of Qt 5.12~~ |
-| 5.15 Series | Windows 11 with VS2019 (Shared) / VS2022 | 2024.5.26 | Same as EOL of Qt opensource 5.15, with WebEngine and Script got update ahead of time, with VS version update within VS2019/22 |
-| | Windows with VS2015 / VS2017 / VS2019 (static) / MinGW 8.1.0 | 2024.5.26 | Same as EOL of Qt opensource 5.15, with Script update ahead of time, with VS version update within VS2017/9/22 |
-| | macOS | 2024.5.26 | Same as EOL of Qt opensource 5.15, with WebEngine and Script got update ahead of time, with (at best effort) Xcode and macOS update |
-| | Android | 2026.9.7 | Same as EOL of OpenSSL 3.0 series. |
-| | WebAssembly | 2024.5.26 | Same as EOL of Qt opensource 5.15 |
-| 6.2 Series | Windows 11 with VS2019 (Shared) / VS2022 | 2026.9.7 | Same as EOL of OpenSSL 3.0 series, with WebEngine update ahead of time, with VS version update |
-| | Windows 11 with VS2019 (static) | 2026.9.7 | Same as EOL of OpenSSL 3.0 series, with VS version update |
-| | Windows 11 with MinGW 11.2.0 / MinGW-LLVM 15 | 2026.9.7 | Same as EOL of OpenSSL 3.0 series, with MinGW version update |
-| | macOS (Shared) | 2026.9.7 | Same as EOL of OpenSSL 3.0 series, with WebEngine update ahead of time, with (at best effort) Xcode and macOS update |
-| | macOS (static) | 2026.9.7 | Same as EOL of OpenSSL 3.0 series, with (at best effort) Xcode and macOS update |
-| | Android | 2026.9.7 | Same as EOL of OpenSSL 3.0 series, Will stuck at Android NDK r23 LTS series |
-| | WebAssembly | 2025.9.29 | Same as EOL of Qt opensource 6.2 |
+| 5.12 Series | Windows | {{% date 2023 9 11 %}} | Same as EOL of OpenSSL 1.1.1 series, with VS version update within VS2017/9, no builds for VS2022 |
+| | ~~macOS~~ | ~~{{% date 2021 11 25 %}}~~ (EOLed) | ~~Same as EOL of Qt 5.12~~ **A patch has released after 5.12 EOL and an extra package is made for it on macOS**. |
+| | Android | {{% date 2023 9 11 %}} | Same as EOL of OpenSSL 1.1.1 series. Will stuck at Android NDK r21 LTS series |
+| | ~~WebAssembly~~ | ~~{{% date 2021 11 25 %}}~~ (EOLed) | ~~Same as EOL of Qt 5.12~~ |
+| 5.15 Series | Windows 11 with VS2019 (Shared) / VS2022 | {{% date 2024 5 26 %}} | Same as EOL of Qt opensource 5.15, with WebEngine and Script got update ahead of time, with VS version update within VS2019/22 |
+| | Windows with VS2015 / VS2017 / VS2019 (static) / MinGW 8.1.0 | {{% date 2024 5 26 %}} | Same as EOL of Qt opensource 5.15, with Script update ahead of time, with VS version update within VS2017/9/22 |
+| | macOS | {{% date 2024 5 26 %}} | Same as EOL of Qt opensource 5.15, with WebEngine and Script got update ahead of time, with (at best effort) Xcode and macOS update |
+| | Android | {{% date 2026 9 7 %}} | Same as EOL of OpenSSL 3.0 series. |
+| | WebAssembly | {{% date 2024 5 26 %}} | Same as EOL of Qt opensource 5.15 |
+| 6.2 Series | Windows 11 with VS2019 (Shared) / VS2022 | {{% date 2026 9 7 %}} | Same as EOL of OpenSSL 3.0 series, with WebEngine update ahead of time, with VS version update |
+| | Windows 11 with VS2019 (static) | {{% date 2026 9 7 %}} | Same as EOL of OpenSSL 3.0 series, with VS version update |
+| | Windows 11 with MinGW 11.2.0 / MinGW-LLVM 15 | {{% date 2026 9 7 %}} | Same as EOL of OpenSSL 3.0 series, with MinGW version update |
+| | macOS (Shared) | {{% date 2026 9 7 %}} | Same as EOL of OpenSSL 3.0 series, with WebEngine update ahead of time, with (at best effort) Xcode and macOS update |
+| | macOS (static) | {{% date 2026 9 7 %}} | Same as EOL of OpenSSL 3.0 series, with (at best effort) Xcode and macOS update |
+| | Android | {{% date 2026 9 7 %}} | Same as EOL of OpenSSL 3.0 series, Will stuck at Android NDK r23 LTS series |
+| | WebAssembly | {{% date 2025 9 29 %}} | Same as EOL of Qt opensource 6.2 |
 
 Commericial-only Qt Open Source Release Date (ETA)
 
 | Qt Version | Commericial Release Date | Open Source Release Date |
 |-|-|-|
-| 5.15.9 | 2022.4.6 | 2023.4.6 |
-| 5.15.10 | 2022.6.7 | 2023.6.7 |
-| 5.15.11 | 2022.10.5 | 2023.10.5 |
-| 5.15.12 | 2022.12.27 | 2023.12.27 |
-| 5.15.13 | 2023.3.9 | 2024.3.9 |
-| 6.2.5 | 2022.7.19 | 2023.7.19 |
-| 6.2.6 | 2022.9.27 | 2023.9.27 |
-| 6.2.7 | 2023.1.2 | 2024.1.2 |
+| 5.15.9 | {{% date 2022 4 6 %}} | {{% date 2023 4 6 %}} |
+| 5.15.10 | {{% date 2022 6 7 %}} | {{% date 2023 6 7 %}} |
+| 5.15.11 | {{% date 2022 10 5 %}} | {{% date 2023 10 5 %}} |
+| 5.15.12 | {{% date 2022 12 27 %}} | {{% date 2023 12 27 %}} |
+| 5.15.13 | {{% date 2023 3 9 %}} | {{% date 2024 3 9 %}} |
+| 6.2.5 | {{% date 2022 7 19 %}} | {{% date 2023 7 19 %}} |
+| 6.2.6 | {{% date 2022 9 27 %}} | {{% date 2023 9 27 %}} |
+| 6.2.7 | {{% date 2023 1 2 %}} | {{% date 2024 1 2 %}} |
 
 ## Incoming update for future release
 
@@ -256,7 +259,7 @@ Build Qt 5.15.9 and later for macOS on / for Apple Silicon.
 
 ## Existing Patches
 
-Starting from 2022.3.12 I am shipping Qt with patches from Qt.  
+Starting from {{% date 2022 3 12 %}} I am shipping Qt with patches from Qt.  
 Most of them are CVE patches which can be downloaded from [Qt Downloads](https://download.qt.io/), others are build fixes which are download from Qt Gerrit.
 
 Following is a table for patches of each version I am currently building.  

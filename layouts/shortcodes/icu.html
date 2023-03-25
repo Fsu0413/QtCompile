@@ -1,9 +1,9 @@
 {{- $qtver := .Get 0 -}}
 {{- $icuInstruction := cond (eq $qtver 6) "-DFEATURE_icu=OFF" "-no-icu" -}}
 {{ partial "shortcodes/notice.html" (dict
-  "context" .
-  "style" "info"
-  "title" (T "Note")
-  "icon" "fas fa-info-circle"
-  "content" ((printf (T "fsqtbuild_i18n_icu") $icuInstruction) | markdownify)
+    "context" .
+    "style" "info"
+    "title" (T "Note")
+    "icon" "fas fa-info-circle"
+    "content" ((printf (T "fsqtbuild_i18n_icu") $icuInstruction) | markdownify)
 )}}

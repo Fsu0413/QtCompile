@@ -7,7 +7,7 @@ draft: false
 
 ## STOP USING Notepad++
 
-At 25th Jan. 2023 Notepad++ released a version with a "feature" where users must agree the fake, incorrect and misleading politics words about China.   
+At {{% date 2023 1 25 %}} Notepad++ released a version with a "feature" where users must agree the fake, incorrect and misleading politics words about China.   
 If user doesn't agree random character is added when editing using Notepad++.
 
 (Following statements are in Chinese only because I actually don't know how to say it in English)  
@@ -46,13 +46,14 @@ Please refer to the content lists in the left area.
 
 ## Update History
 
-### 2023.2.25
-Update Qt 6.5.0 beta 3 series built with NDK r25c, with builtin MySQL (MariaDB) Database Backend and plugin.
 
-### 2023.2.12
+### {{% date 2023 2 25 %}}
+Update Qt 6.5.0-beta3 series built with NDK r25c, with builtin MySQL (MariaDB) Database Backend and plugin.
+
+### {{% date 2023 2 12 %}}
 Update Qt 6.4.2 series built with NDK r25c.
 
-### 2023.2.10
+### {{% date 2023 2 10 %}}
 Update Qt 5.12.12 / 5.15.8 / 6.2.4 / 6.4.2 series with OpenSSL 1.1.1t / 3.0.8.  
 Update Qt 5.15 / 6.2 / 6.4 series with builtin MySQL (MariaDB) Database Backend and plugin.  
 Update Qt 5.15 static `full` series with more Visual Studio version. Discontinue Qt 5.12 static `full` versions.

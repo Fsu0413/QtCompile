@@ -39,7 +39,7 @@ OpenSSL 3 系列在 6.2.3 以及更新的 Qt 6 版本上使用。
 
 ## MariaDB 状态
 
-从 2023 年 2 月 8 日开始，Qt 5.15 及以上的桌面版构建中附带 MariaDB connector/C 的动态库。
+从 {{% date 2023 2 8 %}}开始，Qt 5.15 及以上的桌面版构建中附带 MariaDB connector/C 的动态库。
 这个动态库用来构建 MySQL 数据库插件。  
 不使用 MySQL 提供的库的原因有以下几个。
 
