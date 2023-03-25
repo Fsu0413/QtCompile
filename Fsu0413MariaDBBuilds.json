@@ -3,7 +3,7 @@
     "data": {
       "version": "3.1.20",
       "platform": "Windows",
-      "buildHost": "Windows 8.1 Update",
+      "buildHost": "Windows 10 10.0.19045",
       "toolchain": "VS2015 Update 3",
       "arch": "x86"
     },
@@ -13,7 +13,7 @@
     "data": {
       "version": "3.1.20",
       "platform": "Windows",
-      "buildHost": "Windows 8.1 Update",
+      "buildHost": "Windows 10 10.0.19045",
       "toolchain": "VS2015 Update 3",
       "arch": "x86_64"
     },

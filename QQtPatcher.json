@@ -140,7 +140,7 @@
     {
       "QtVersion": "5.12.12",
       "mkspec": "win32-msvc",
-      "os": "Windows 8.1 Update",
+      "os": "Windows 10 10.0.19045",
       "toolchain": "VS2015 Update 3",
       "version": "0.8.2"
     },

@@ -3,7 +3,7 @@
     "data": {
       "version": "1.1.1t",
       "platform": "Windows",
-      "buildHost": "Windows 8.1 Update",
+      "buildHost": "Windows 10 10.0.19045",
       "toolchain": "VS2015 Update 3",
       "arch": "x86",
       "variant": ""
@@ -14,7 +14,7 @@
     "data": {
       "version": "1.1.1t",
       "platform": "Windows",
-      "buildHost": "Windows 8.1 Update",
+      "buildHost": "Windows 10 10.0.19045",
       "toolchain": "VS2015 Update 3",
       "arch": "x86",
       "variant": "-static"
@@ -25,7 +25,7 @@
     "data": {
       "version": "1.1.1t",
       "platform": "Windows",
-      "buildHost": "Windows 8.1 Update",
+      "buildHost": "Windows 10 10.0.19045",
       "toolchain": "VS2015 Update 3",
       "arch": "x86_64",
       "variant": ""
@@ -36,7 +36,7 @@
     "data": {
       "version": "1.1.1t",
       "platform": "Windows",
-      "buildHost": "Windows 8.1 Update",
+      "buildHost": "Windows 10 10.0.19045",
       "toolchain": "MinGW-w64 w/ GCC 7.3.0",
       "arch": "x86",
       "variant": ""
@@ -47,7 +47,7 @@
     "data": {
       "version": "1.1.1t",
       "platform": "Windows",
-      "buildHost": "Windows 8.1 Update",
+      "buildHost": "Windows 10 10.0.19045",
       "toolchain": "MinGW-w64 w/ GCC 7.3.0",
       "arch": "x86_64",
       "variant": ""
