@@ -7,10 +7,10 @@
     <meta name="generator" content="Relearn 5.12.4">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
-    <title>6.4.2 的 macOS 版本 :: Fsu0413 的原版 Qt 构建</title>
-    <link href="/qtcompile/6.4-series/6.4.2-for-macos/index.html" rel="alternate" hreflang="x-default">
-    <link href="/qtcompile/6.4-series/6.4.2-for-macos/index.html" rel="alternate" hreflang="zh-cn">
-    <link href="/qtcompile/en/6.4-series/6.4.2-for-macos/index.html" rel="alternate" hreflang="en">
+    <title>6.4.3 的 Windows 版本 :: Fsu0413 的原版 Qt 构建</title>
+    <link href="/qtcompile/6.4-series/6.4.3-for-windows/index.html" rel="alternate" hreflang="x-default">
+    <link href="/qtcompile/6.4-series/6.4.3-for-windows/index.html" rel="alternate" hreflang="zh-cn">
+    <link href="/qtcompile/en/6.4-series/6.4.3-for-windows/index.html" rel="alternate" hreflang="en">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/qtcompile/css/fontawesome-all.min.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/qtcompile/css/fontawesome-all.min.css" rel="stylesheet"></noscript>
     <link href="/qtcompile/css/nucleus.css" rel="stylesheet">
@@ -64,7 +64,7 @@
     }
 </style>
   </head>
-  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/qtcompile/6.4-series/6.4.2-for-macos/index.html">
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/qtcompile/6.4-series/6.4.3-for-windows/index.html">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
@@ -78,7 +78,7 @@
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/qtcompile/index.html"><span itemprop="name">Fsu0413 的原版 Qt 构建</span></a><meta itemprop="position" content="1"> > </li>
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/qtcompile/6.4-series/index.html"><span itemprop="name">6.4 系列</span></a><meta itemprop="position" content="2"> > </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">6.4.2 的 macOS 版本</span><meta itemprop="position" content="3"></li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">6.4.3 的 Windows 版本</span><meta itemprop="position" content="3"></li>
             </ol>
           </div>
           <div class="default-animation progress">
@@ -86,7 +86,9 @@
   <ul>
     <li><a href="#dynamic--shared-builds">Dynamic / Shared Builds</a>
       <ul>
-        <li><a href="#macos-universal">macOS-Universal</a></li>
+        <li><a href="#windows-msvc">Windows-MSVC</a></li>
+        <li><a href="#windows-mingw">Windows-MinGW</a></li>
+        <li><a href="#windows-mingw-llvm">Windows-MinGW-LLVM</a></li>
       </ul>
     </li>
   </ul>
@@ -100,7 +102,7 @@
           <div id="head-tags">
           </div>
           <article class="default">
-<h1 id="642-的-macos-版本">6.4.2 的 macOS 版本</h1>
+<h1 id="643-的-windows-版本">6.4.3 的 Windows 版本</h1>
 
 
 <div class="box notices cstyle info">
@@ -109,6 +111,7 @@
 <p>此版本中附带下列数据库：</p>
 <ol>
 <li>SQLite （随 Qt 一起分发）：使用 <code>-DFEATURE_sql_sqlite -DFEATURE_system_sqlite=OFF</code> 内建在这份包里。</li>
+<li>ODBC：使用 <code>-DFEATURE_sql_odbc</code> 内建在这份包里。</li>
 <li>MariaDB Connector/C 3.3 系列（仅动态构建）：使用 <code>-DFEATURE_sql_mysql</code> 内建在这份包里。</li>
 </ol>
   </div>
@@ -122,7 +125,7 @@
 这个版本包含下列后端：</p>
 <ol>
 <li>OpenSSL 3.0 系列，使用 <code>-DFEATURE_openssl=ON -DINPUT_openssl=linked</code> 来启用链接的 OpenSSL 支持</li>
-<li>macOS 提供的 Secure Transport library，使用 <code>-DFEATURE_securetransport=ON</code></li>
+<li>Windows Secure Channel，使用 <code>-DFEATURE_schannel=ON</code>。在 MSVC 版本中支持 TLS 1.3</li>
 </ol>
   </div>
 </div>
@@ -134,53 +137,123 @@
 所有构建配置了 <code>-DFEATURE_icu=OFF</code> 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。  </div>
 </div>
 
-
-<div class="box notices cstyle info">
-  <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
-  <div class="box-content">
-这个版本我只会提供统一二进制构建。 <a href="https://developer.apple.com/documentation/apple-silicon/building-a-universal-macos-binary" target="_blank">统一二进制</a> 在 Intel 和 Apple 芯片的 Mac 上都能原生运行。  </div>
-</div>
-
 <h2 id="dynamic--shared-builds">Dynamic / Shared Builds</h2>
-<h3 id="macos-universal">macOS-Universal</h3>
+<h3 id="windows-msvc">Windows-MSVC</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.4.2-macOS-Universal-AppleClang14.0.0-20230210.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.4.3-Windows-x86_64-VS2019-16.11.25-20230324.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/47/47509/Qt6.4.2-macOS-Universal-AppleClang14.0.0-20230210.tar.xz" target="_blank"> 
+  <a href="https://osdn.net/downloads/users/47/47761/Qt6.4.3-Windows-x86_64-VS2019-16.11.25-20230324.7z" target="_blank"> 
     OSDN 链接
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/macOS-Universal/Qt6.4.2-macOS-Universal-AppleClang14.0.0-20230210.tar.xz" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/Windows-x86_64/Qt6.4.3-Windows-x86_64-VS2019-16.11.25-20230324.7z" target="_blank"> 
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 12.6.3</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">AppleClang 14.0.0</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">VS2019 16.11.25 w/ Windows SDK 10.0.22000</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.4.2-macOS-Universal-AppleClang14.0.0-noFramework-20230210.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.4.3-Windows-x86_64-VS2022-17.5.3-20230324.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/47/47510/Qt6.4.2-macOS-Universal-AppleClang14.0.0-noFramework-20230210.tar.xz" target="_blank"> 
+  <a href="https://osdn.net/downloads/users/47/47760/Qt6.4.3-Windows-x86_64-VS2022-17.5.3-20230324.7z" target="_blank"> 
     OSDN 链接
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/macOS-Universal/Qt6.4.2-macOS-Universal-AppleClang14.0.0-noFramework-20230210.tar.xz" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/Windows-x86_64/Qt6.4.3-Windows-x86_64-VS2022-17.5.3-20230324.7z" target="_blank"> 
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 12.6.3</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">AppleClang 14.0.0</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">VS2022 17.5.3 w/ Windows SDK 10.0.22621</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+        </tbody>
+    </table>
+<h3 id="windows-mingw">Windows-MinGW</h3>
+<table>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.4.3-Windows-x86_64-MinGW12.1.0-20230324.7z</b></th></tr></thead>
+        <tbody>
+            <tr><td width="20%"><b>下载地址：</b></td>
+                <td colspan="2" width="40%">
+<span class="btn cstyle green">
+  <a href="https://osdn.net/downloads/users/47/47759/Qt6.4.3-Windows-x86_64-MinGW12.1.0-20230324.7z" target="_blank"> 
+    OSDN 链接
+  </a>
+</span></td>
+                <td colspan="2" width="40%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/Windows-x86_64/Qt6.4.3-Windows-x86_64-MinGW12.1.0-20230324.7z" target="_blank"> 
+    SourceForge 链接
+  </a>
+</span></td>
+            </tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ GCC 12.1.0</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
+<span class="btn cstyle grey">
+  <a href="https://github.com/cristianadam/mingw-builds/releases/download/v12.1.0-rev0/x86_64-12.1.0-release-posix-seh-rt_v10-rev0.7z" target="_blank"> 
+    64 位 MinGW-w64 w/ GCC 12.1.0
+  </a>
+</span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+        </tbody>
+    </table>
+<h3 id="windows-mingw-llvm">Windows-MinGW-LLVM</h3>
+<table>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.4.3-Windows-x86_64-llvm-mingw-16.0.0-ucrt-20230324.7z</b></th></tr></thead>
+        <tbody>
+            <tr><td width="20%"><b>下载地址：</b></td>
+                <td colspan="2" width="40%">
+<span class="btn cstyle green">
+  <a href="https://osdn.net/downloads/users/47/47757/Qt6.4.3-Windows-x86_64-llvm-mingw-16.0.0-ucrt-20230324.7z" target="_blank"> 
+    OSDN 链接
+  </a>
+</span></td>
+                <td colspan="2" width="40%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/Windows-x86_64/Qt6.4.3-Windows-x86_64-llvm-mingw-16.0.0-ucrt-20230324.7z" target="_blank"> 
+    SourceForge 链接
+  </a>
+</span></td>
+            </tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ LLVM 16.0.0 (ucrt)</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
+<span class="btn cstyle grey">
+  <a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20230320/llvm-mingw-20230320-ucrt-x86_64.zip" target="_blank"> 
+    64 位 MinGW-W64 w/ LLVM 16.0.0 UCRT
+  </a>
+</span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+        </tbody>
+    </table>
+<table>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.4.3-Windows-x86_64-llvm-mingw-16.0.0-msvcrt-20230324.7z</b></th></tr></thead>
+        <tbody>
+            <tr><td width="20%"><b>下载地址：</b></td>
+                <td colspan="2" width="40%">
+<span class="btn cstyle green">
+  <a href="https://osdn.net/downloads/users/47/47758/Qt6.4.3-Windows-x86_64-llvm-mingw-16.0.0-msvcrt-20230324.7z" target="_blank"> 
+    OSDN 链接
+  </a>
+</span></td>
+                <td colspan="2" width="40%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/Windows-x86_64/Qt6.4.3-Windows-x86_64-llvm-mingw-16.0.0-msvcrt-20230324.7z" target="_blank"> 
+    SourceForge 链接
+  </a>
+</span></td>
+            </tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ LLVM 16.0.0 (msvcrt)</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
+<span class="btn cstyle grey">
+  <a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20230320/llvm-mingw-20230320-msvcrt-x86_64.zip" target="_blank"> 
+    64 位 MinGW-W64 w/ LLVM 16.0.0 msvcrt
+  </a>
+</span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 
@@ -217,10 +290,10 @@
           <li data-nav-id="/qtcompile/6.2-series/6.2.4-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.4-for-android/index.html">6.2.4 的安卓版本</a></li>
           <li data-nav-id="/qtcompile/6.2-series/6.2.4-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.4-for-webassembly/index.html">6.2.4 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/6.4-series/index.html" class="parent "><a class="padding" href="/qtcompile/6.4-series/index.html">6.4 系列</a><ul id="subsections-4d05ecf5148d75d316f28c139cdfde7d" class="morespace">
-          <li data-nav-id="/qtcompile/6.4-series/6.4.2-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.4-series/6.4.2-for-windows/index.html">6.4.2 的 Windows 版本</a></li>
-          <li data-nav-id="/qtcompile/6.4-series/6.4.2-for-macos/index.html" class="active"><a class="padding" href="/qtcompile/6.4-series/6.4.2-for-macos/index.html">6.4.2 的 macOS 版本</a></li>
-          <li data-nav-id="/qtcompile/6.4-series/6.4.2-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.4-series/6.4.2-for-android/index.html">6.4.2 的安卓版本</a></li>
-          <li data-nav-id="/qtcompile/6.4-series/6.4.2-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.4-series/6.4.2-for-webassembly/index.html">6.4.2 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/qtcompile/6.4-series/6.4.3-for-windows/index.html" class="active"><a class="padding" href="/qtcompile/6.4-series/6.4.3-for-windows/index.html">6.4.3 的 Windows 版本</a></li>
+          <li data-nav-id="/qtcompile/6.4-series/6.4.3-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.4-series/6.4.3-for-macos/index.html">6.4.3 的 macOS 版本</a></li>
+          <li data-nav-id="/qtcompile/6.4-series/6.4.3-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.4-series/6.4.3-for-android/index.html">6.4.3 的安卓版本</a></li>
+          <li data-nav-id="/qtcompile/6.4-series/6.4.3-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.4-series/6.4.3-for-webassembly/index.html">6.4.3 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/6.5-series/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/index.html">6.5 系列</a><ul id="subsections-a4a8142fcca3c91cc086ca3a4afab485" class="morespace">
           <li data-nav-id="/qtcompile/6.5-series/6.5.0-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.0-for-windows/index.html">6.5.0 的 Windows 版本</a></li>
           <li data-nav-id="/qtcompile/6.5-series/6.5.0-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.0-for-macos/index.html">6.5.0 的 macOS 版本</a></li>
@@ -265,8 +338,8 @@
                 <div class="select-style">
                   <label class="a11y-only" for="select-language">语言</label>
                   <select id="select-language" onchange="location = baseUri + this.value;">
-                    <option lang="zh-cn" id="zh-cn" value="/qtcompile/6.4-series/6.4.2-for-macos/index.html" selected>简体中文（中国）</option>
-                    <option lang="en" id="en" value="/qtcompile/en/6.4-series/6.4.2-for-macos/index.html">English</option>
+                    <option lang="zh-cn" id="zh-cn" value="/qtcompile/6.4-series/6.4.3-for-windows/index.html" selected>简体中文（中国）</option>
+                    <option lang="en" id="en" value="/qtcompile/en/6.4-series/6.4.3-for-windows/index.html">English</option>
                   </select>
                 </div>
                 <div class="select-clear"></div>
@@ -297,7 +370,7 @@
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 25 Mar 2023 18:50:32 CST</p>
+Site generated: Sat, 25 Mar 2023 23:37:46 CST</p>
 
         </div>
       </div>
