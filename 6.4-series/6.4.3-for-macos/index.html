@@ -7,10 +7,10 @@
     <meta name="generator" content="Relearn 5.12.4">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
-    <title>6.4.2 for WebAssembly :: Fsu0413&#39;s Original Qt builds</title>
-    <link href="/6.4-series/6.4.2-for-webassembly/index.html" rel="alternate" hreflang="x-default">
-    <link href="/6.4-series/6.4.2-for-webassembly/index.html" rel="alternate" hreflang="en">
-    <link href="/zh-cn/6.4-series/6.4.2-for-webassembly/index.html" rel="alternate" hreflang="zh-cn">
+    <title>6.4.3 for macOS :: Fsu0413&#39;s Original Qt builds</title>
+    <link href="/6.4-series/6.4.3-for-macos/index.html" rel="alternate" hreflang="x-default">
+    <link href="/6.4-series/6.4.3-for-macos/index.html" rel="alternate" hreflang="en">
+    <link href="/zh-cn/6.4-series/6.4.3-for-macos/index.html" rel="alternate" hreflang="zh-cn">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/css/fontawesome-all.min.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css" rel="stylesheet"></noscript>
     <link href="/css/nucleus.css" rel="stylesheet">
@@ -64,7 +64,7 @@
     }
 </style>
   </head>
-  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/6.4-series/6.4.2-for-webassembly/index.html">
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/6.4-series/6.4.3-for-macos/index.html">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
@@ -78,17 +78,15 @@
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Fsu0413&#39;s Original Qt builds</span></a><meta itemprop="position" content="1"> > </li>
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/6.4-series/index.html"><span itemprop="name">6.4 series</span></a><meta itemprop="position" content="2"> > </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">6.4.2 for WebAssembly</span><meta itemprop="position" content="3"></li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">6.4.3 for macOS</span><meta itemprop="position" content="3"></li>
             </ol>
           </div>
           <div class="default-animation progress">
             <div class="toc-wrapper"><nav id="TableOfContents">
   <ul>
-    <li><a href="#static-builds">Static Builds</a>
+    <li><a href="#dynamic--shared-builds">Dynamic / Shared Builds</a>
       <ul>
-        <li><a href="#windows-host">Windows host</a></li>
-        <li><a href="#linux-host">Linux Host</a></li>
-        <li><a href="#macos-host">macOS Host</a></li>
+        <li><a href="#macos-universal">macOS-Universal</a></li>
       </ul>
     </li>
   </ul>
@@ -102,7 +100,7 @@
           <div id="head-tags">
           </div>
           <article class="default">
-<h1 id="642-for-webassembly">6.4.2 for WebAssembly</h1>
+<h1 id="643-for-macos">6.4.3 for macOS</h1>
 
 
 <div class="box notices cstyle info">
@@ -111,6 +109,20 @@
 <p>Following database backend is distributed with this version:</p>
 <ol>
 <li>SQLite (distributed with Qt): Built in the package using command <code>-DFEATURE_sql_sqlite -DFEATURE_system_sqlite=OFF</code>.</li>
+<li>MariaDB Connector/C 3.3 series (Dynamic builds only): Built in the package using command <code>-DFEATURE_sql_mysql</code>.</li>
+</ol>
+  </div>
+</div>
+
+
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
+  <div class="box-content">
+<p>Since Qt 6.2 Qt made TLS backends as plugin.<br>
+Following backend(s) are built in the package:</p>
+<ol>
+<li>OpenSSL 3.0 series using <code>-DFEATURE_openssl=ON -DINPUT_openssl=linked</code> for enabling linked OpenSSL support</li>
+<li>Secure Transport library provided by macOS using <code>-DFEATURE_securetransport=ON</code></li>
 </ol>
   </div>
 </div>
@@ -126,81 +138,49 @@ All builds have <code>-DFEATURE_icu=OFF</code> because I think the ICU library i
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
   <div class="box-content">
-<p>All packages are built using emscripten SDK 3.1.14 as recommended in Qt Wiki.<br>
-WebAssembly doesn&rsquo;t support ABI compatibility. You MUST use SDK 3.1.14 for building your own code, otherwise unpredicted error may occur.</p>
-<p>All builds have thread feature enabled using <code>-DFEATURE_thread=ON</code>.</p>
-  </div>
+I&rsquo;ll provide only Universal Binary builds of macOS of this version. <a href="https://developer.apple.com/documentation/apple-silicon/building-a-universal-macos-binary" target="_blank">Universal binaries</a> run natively on Intel Macs and Apple Sillicon Macs.  </div>
 </div>
 
-
-<div class="box notices cstyle info">
-  <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
-  <div class="box-content">
-Qt for WebAssembly can only be built to static libs.  </div>
-</div>
-
-<h2 id="static-builds">Static Builds</h2>
-<h3 id="windows-host">Windows host</h3>
+<h2 id="dynamic--shared-builds">Dynamic / Shared Builds</h2>
+<h3 id="macos-universal">macOS-Universal</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.4.2-WebAssembly-emscripten3.1.14-xWindows-x86_64-MinGW12.1.0-20230122.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.4.3-macOS-Universal-AppleClang14.0.0-20230324.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/40/40594/Qt6.4.2-WebAssembly-emscripten3.1.14-xWindows-x86_64-MinGW12.1.0-20230122.7z" target="_blank"> 
+  <a href="https://osdn.net/downloads/users/47/47756/Qt6.4.3-macOS-Universal-AppleClang14.0.0-20230324.tar.xz" target="_blank"> 
     OSDN link
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/WebAssembly/Qt6.4.2-WebAssembly-emscripten3.1.14-xWindows-x86_64-MinGW12.1.0-20230122.7z" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/macOS-Universal/Qt6.4.3-macOS-Universal-AppleClang14.0.0-20230324.tar.xz" target="_blank"> 
     SourceForge link
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">emscripten-3.1.14</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 12.6.3</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">AppleClang 14.0.0</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
-<h3 id="linux-host">Linux Host</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.4.2-WebAssembly-emscripten3.1.14-xLinux-x86_64-gcc11.3.1-20230107.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.4.3-macOS-Universal-AppleClang14.0.0-noFramework-20230324.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/40/40139/Qt6.4.2-WebAssembly-emscripten3.1.14-xLinux-x86_64-gcc11.3.1-20230107.tar.xz" target="_blank"> 
+  <a href="https://osdn.net/downloads/users/47/47755/Qt6.4.3-macOS-Universal-AppleClang14.0.0-noFramework-20230324.tar.xz" target="_blank"> 
     OSDN link
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/WebAssembly/Qt6.4.2-WebAssembly-emscripten3.1.14-xLinux-x86_64-gcc11.3.1-20230107.tar.xz" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/macOS-Universal/Qt6.4.3-macOS-Universal-AppleClang14.0.0-noFramework-20230324.tar.xz" target="_blank"> 
     SourceForge link
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">RockyLinux 9.1</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">emscripten-3.1.14</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
-        </tbody>
-    </table>
-<h3 id="macos-host">macOS Host</h3>
-<table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.4.2-WebAssembly-emscripten3.1.14-xmacOS-Universal-AppleClang14.0.0-20230107.tar.xz</b></th></tr></thead>
-        <tbody>
-            <tr><td width="20%"><b>Download:</b></td>
-                <td colspan="2" width="40%">
-<span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/40/40141/Qt6.4.2-WebAssembly-emscripten3.1.14-xmacOS-Universal-AppleClang14.0.0-20230107.tar.xz" target="_blank"> 
-    OSDN link
-  </a>
-</span></td>
-                <td colspan="2" width="40%">
-<span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/WebAssembly/Qt6.4.2-WebAssembly-emscripten3.1.14-xmacOS-Universal-AppleClang14.0.0-20230107.tar.xz" target="_blank"> 
-    SourceForge link
-  </a>
-</span></td>
-            </tr>
-            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 12.6.2</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">emscripten-3.1.14</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 12.6.3</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">AppleClang 14.0.0</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 
@@ -237,10 +217,10 @@ Qt for WebAssembly can only be built to static libs.  </div>
           <li data-nav-id="/6.2-series/6.2.4-for-android/index.html" class=""><a class="padding" href="/6.2-series/6.2.4-for-android/index.html">6.2.4 for Android</a></li>
           <li data-nav-id="/6.2-series/6.2.4-for-webassembly/index.html" class=""><a class="padding" href="/6.2-series/6.2.4-for-webassembly/index.html">6.2.4 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/6.4-series/index.html" class="parent "><a class="padding" href="/6.4-series/index.html">6.4 series</a><ul id="subsections-6d83ded247ba4c263177d411aee127e5" class="morespace">
-          <li data-nav-id="/6.4-series/6.4.2-for-windows/index.html" class=""><a class="padding" href="/6.4-series/6.4.2-for-windows/index.html">6.4.2 for Windows</a></li>
-          <li data-nav-id="/6.4-series/6.4.2-for-macos/index.html" class=""><a class="padding" href="/6.4-series/6.4.2-for-macos/index.html">6.4.2 for macOS</a></li>
-          <li data-nav-id="/6.4-series/6.4.2-for-android/index.html" class=""><a class="padding" href="/6.4-series/6.4.2-for-android/index.html">6.4.2 for Android</a></li>
-          <li data-nav-id="/6.4-series/6.4.2-for-webassembly/index.html" class="active"><a class="padding" href="/6.4-series/6.4.2-for-webassembly/index.html">6.4.2 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/6.4-series/6.4.3-for-windows/index.html" class=""><a class="padding" href="/6.4-series/6.4.3-for-windows/index.html">6.4.3 for Windows</a></li>
+          <li data-nav-id="/6.4-series/6.4.3-for-macos/index.html" class="active"><a class="padding" href="/6.4-series/6.4.3-for-macos/index.html">6.4.3 for macOS</a></li>
+          <li data-nav-id="/6.4-series/6.4.3-for-android/index.html" class=""><a class="padding" href="/6.4-series/6.4.3-for-android/index.html">6.4.3 for Android</a></li>
+          <li data-nav-id="/6.4-series/6.4.3-for-webassembly/index.html" class=""><a class="padding" href="/6.4-series/6.4.3-for-webassembly/index.html">6.4.3 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/6.5-series/index.html" class=""><a class="padding" href="/6.5-series/index.html">6.5 series</a><ul id="subsections-1870fa5a2d192ec83aafe29160552269" class="morespace">
           <li data-nav-id="/6.5-series/6.5.0-for-windows/index.html" class=""><a class="padding" href="/6.5-series/6.5.0-for-windows/index.html">6.5.0 for Windows</a></li>
           <li data-nav-id="/6.5-series/6.5.0-for-macos/index.html" class=""><a class="padding" href="/6.5-series/6.5.0-for-macos/index.html">6.5.0 for macOS</a></li>
@@ -285,8 +265,8 @@ Qt for WebAssembly can only be built to static libs.  </div>
                 <div class="select-style">
                   <label class="a11y-only" for="select-language">Language</label>
                   <select id="select-language" onchange="location = baseUri + this.value;">
-                    <option lang="en" id="en" value="/6.4-series/6.4.2-for-webassembly/index.html" selected>English</option>
-                    <option lang="zh-cn" id="zh-cn" value="/zh-cn/6.4-series/6.4.2-for-webassembly/index.html">简体中文（中国）</option>
+                    <option lang="en" id="en" value="/6.4-series/6.4.3-for-macos/index.html" selected>English</option>
+                    <option lang="zh-cn" id="zh-cn" value="/zh-cn/6.4-series/6.4.3-for-macos/index.html">简体中文（中国）</option>
                   </select>
                 </div>
                 <div class="select-clear"></div>
@@ -317,7 +297,7 @@ Qt for WebAssembly can only be built to static libs.  </div>
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 25 Mar 2023 18:48:42 CST</p>
+Site generated: Sat, 25 Mar 2023 23:38:52 CST</p>
 
         </div>
       </div>

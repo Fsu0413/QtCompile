@@ -88,7 +88,6 @@
     <li><a href="#command-line-too-long-when-building-qt-62-series-for-mingw">Command line too long when building Qt 6.2 series for MinGW</a></li>
     <li><a href="#qtopcua-issues">QtOpcUa issues</a></li>
     <li><a href="#various-failures-building-higher-version-of-qtwebengine-on-qt-624">Various failures building higher version of QtWebEngine on Qt 6.2.4</a></li>
-    <li><a href="#qt-5158-with-qtwebengine-51512-build-fails-on-macos--vs2022">Qt 5.15.8 with QtWebEngine 5.15.12 build fails on macOS / VS2022</a></li>
   </ul>
 </nav>
             </div>
@@ -130,9 +129,12 @@ QtWebEngine 6.4.0 on Qt 6.2.4 fails on macOS and Windows. All of them succeeds i
 <p>I&rsquo;m tired of investigating them and will distribute Qt 6.2 series without QtWebEngine.<br>
 QtWebEngine has not released as LTS since Qt 6.2.4 and the Qt guys are simply taking QtWebEngine from later version (6.3, etc) for their 6.2 LTS series releases.<br>
 But no one else knows what version Qt guys are using for their Qt 6.2 LTS Releases except for the official packagers, as the QtWebEngine version is always different than the binary files.</p>
-<p>Existing package with QtWebEngine will be removed after 25th Mar, 2023.</p>
-<h2 id="qt-5158-with-qtwebengine-51512-build-fails-on-macos--vs2022">Qt 5.15.8 with QtWebEngine 5.15.12 build fails on macOS / VS2022</h2>
-<p>Reason is unknown.</p>
+<p>Update 25th Mar, 2023:<br>
+QtWebEngine still develops in its own branch, but only <code>qtwebengine-chromium</code> repository is made public.<br>
+The SHA1 of commits of each release version are recorded in tQtC&rsquo;s own yocto repository <code>meta-qt6</code> but commit of <code>qtwebengine</code> repository can&rsquo;t be found.<br>
+I don&rsquo;t expect QtWebEngine can build with mismatched <code>qtwebengine</code> and <code>qtwebengine-chromium</code> repositories. Even if we are lucky enough that the code builds I don&rsquo;t expect it works.</p>
+<p>Since then I won&rsquo;t provide builds of Qt 6.2 LTS series with QtWebEngine.<br>
+Existing package with QtWebEngine will be removed after 25th Mar, 2023.</p>
 
             <footer class="footline">
             </footer>
@@ -167,10 +169,10 @@ But no one else knows what version Qt guys are using for their Qt 6.2 LTS Releas
           <li data-nav-id="/6.2-series/6.2.4-for-android/index.html" class=""><a class="padding" href="/6.2-series/6.2.4-for-android/index.html">6.2.4 for Android</a></li>
           <li data-nav-id="/6.2-series/6.2.4-for-webassembly/index.html" class=""><a class="padding" href="/6.2-series/6.2.4-for-webassembly/index.html">6.2.4 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/6.4-series/index.html" class=""><a class="padding" href="/6.4-series/index.html">6.4 series</a><ul id="subsections-6d83ded247ba4c263177d411aee127e5" class="morespace">
-          <li data-nav-id="/6.4-series/6.4.2-for-windows/index.html" class=""><a class="padding" href="/6.4-series/6.4.2-for-windows/index.html">6.4.2 for Windows</a></li>
-          <li data-nav-id="/6.4-series/6.4.2-for-macos/index.html" class=""><a class="padding" href="/6.4-series/6.4.2-for-macos/index.html">6.4.2 for macOS</a></li>
-          <li data-nav-id="/6.4-series/6.4.2-for-android/index.html" class=""><a class="padding" href="/6.4-series/6.4.2-for-android/index.html">6.4.2 for Android</a></li>
-          <li data-nav-id="/6.4-series/6.4.2-for-webassembly/index.html" class=""><a class="padding" href="/6.4-series/6.4.2-for-webassembly/index.html">6.4.2 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/6.4-series/6.4.3-for-windows/index.html" class=""><a class="padding" href="/6.4-series/6.4.3-for-windows/index.html">6.4.3 for Windows</a></li>
+          <li data-nav-id="/6.4-series/6.4.3-for-macos/index.html" class=""><a class="padding" href="/6.4-series/6.4.3-for-macos/index.html">6.4.3 for macOS</a></li>
+          <li data-nav-id="/6.4-series/6.4.3-for-android/index.html" class=""><a class="padding" href="/6.4-series/6.4.3-for-android/index.html">6.4.3 for Android</a></li>
+          <li data-nav-id="/6.4-series/6.4.3-for-webassembly/index.html" class=""><a class="padding" href="/6.4-series/6.4.3-for-webassembly/index.html">6.4.3 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/6.5-series/index.html" class=""><a class="padding" href="/6.5-series/index.html">6.5 series</a><ul id="subsections-1870fa5a2d192ec83aafe29160552269" class="morespace">
           <li data-nav-id="/6.5-series/6.5.0-for-windows/index.html" class=""><a class="padding" href="/6.5-series/6.5.0-for-windows/index.html">6.5.0 for Windows</a></li>
           <li data-nav-id="/6.5-series/6.5.0-for-macos/index.html" class=""><a class="padding" href="/6.5-series/6.5.0-for-macos/index.html">6.5.0 for macOS</a></li>
@@ -247,7 +249,7 @@ But no one else knows what version Qt guys are using for their Qt 6.2 LTS Releas
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 25 Mar 2023 18:48:42 CST</p>
+Site generated: Sat, 25 Mar 2023 23:38:52 CST</p>
 
         </div>
       </div>

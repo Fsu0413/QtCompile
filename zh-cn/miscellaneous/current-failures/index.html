@@ -88,7 +88,6 @@
     <li><a href="#使用-mingw-构建-qt-62-系列时命令行过长">使用 MinGW 构建 Qt 6.2 系列时命令行过长</a></li>
     <li><a href="#qtopcua-的问题">QtOpcUa 的问题</a></li>
     <li><a href="#使用更高版本的-qtwebengine-构建-qt-624-产生的多种多样的失败">使用更高版本的 QtWebEngine 构建 Qt 6.2.4 产生的多种多样的失败</a></li>
-    <li><a href="#qt-5158-附带-qtwebengine-51512-在-macos-和-vs2022-中构建失败">Qt 5.15.8 附带 QtWebEngine 5.15.12 在 macOS 和 VS2022 中构建失败</a></li>
   </ul>
 </nav>
             </div>
@@ -130,8 +129,12 @@ open62541 于 2022 年 11 月 14 日发布了 1.3.4 版本。QtOpcUa 6.5 更新�
 <p>我懒得再调查这些错误了，以后发布 Qt 6.2 系列的时候将不带 QtWebEngine。<br>
 QtWebEngine 自从 6.2.4 之后就没再针对 LTS 版本发布新版，而是直接拿更新的 QtWebEngine（比如 6.3 之类的）作为 6.2 LTS 系列发布。<br>
 但是因为 QtWebEngine 的二进制文件的版本号和实际版本号不同，除了官方打包负责人之外没人知道 Qt 具体用了 QtWebEngine 的哪个版本来打包的。</p>
-<h2 id="qt-5158-附带-qtwebengine-51512-在-macos-和-vs2022-中构建失败">Qt 5.15.8 附带 QtWebEngine 5.15.12 在 macOS 和 VS2022 中构建失败</h2>
-<p>原因未知。</p>
+<p>2023 年 3 月 25 日更新：<br>
+QtWebEngine 依然在其自己的分支上开发，但是只有 <code>qtwebengine-chromium</code> 仓库对外公开了。<br>
+Qt 公司在他们自己的 yocto 仓库 <code>meta-qt6</code> 中记录了所有发布版本的 commit SHA1，但是在 <code>qtwebengine</code> 仓库中找不到对应的 commit。<br>
+如果强行使用不匹配的 <code>qtwebengine</code> 和 <code>qtwebengine-chromium</code> 版本对 QtWebEngine 进行构建的话我觉得也不会通过。即使我们足够幸运构建通过了，我也不认为它能正确工作。</p>
+<p>所以我不会再提供附带 QtWebEngine 的 Qt 6.2 LTS 系列的版本。<br>
+现有的附带 QtWebEngine 的版本将于 2023 年 3 月 25 日更新后删除。</p>
 
             <footer class="footline">
             </footer>
@@ -166,10 +169,10 @@ QtWebEngine 自从 6.2.4 之后就没再针对 LTS 版本发布新版，而是�
           <li data-nav-id="/zh-cn/6.2-series/6.2.4-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.4-for-android/index.html">6.2.4 的安卓版本</a></li>
           <li data-nav-id="/zh-cn/6.2-series/6.2.4-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.4-for-webassembly/index.html">6.2.4 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/6.4-series/index.html" class=""><a class="padding" href="/zh-cn/6.4-series/index.html">6.4 系列</a><ul id="subsections-4d05ecf5148d75d316f28c139cdfde7d" class="morespace">
-          <li data-nav-id="/zh-cn/6.4-series/6.4.2-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.4-series/6.4.2-for-windows/index.html">6.4.2 的 Windows 版本</a></li>
-          <li data-nav-id="/zh-cn/6.4-series/6.4.2-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.4-series/6.4.2-for-macos/index.html">6.4.2 的 macOS 版本</a></li>
-          <li data-nav-id="/zh-cn/6.4-series/6.4.2-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.4-series/6.4.2-for-android/index.html">6.4.2 的安卓版本</a></li>
-          <li data-nav-id="/zh-cn/6.4-series/6.4.2-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.4-series/6.4.2-for-webassembly/index.html">6.4.2 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/6.4-series/6.4.3-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.4-series/6.4.3-for-windows/index.html">6.4.3 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/6.4-series/6.4.3-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.4-series/6.4.3-for-macos/index.html">6.4.3 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/6.4-series/6.4.3-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.4-series/6.4.3-for-android/index.html">6.4.3 的安卓版本</a></li>
+          <li data-nav-id="/zh-cn/6.4-series/6.4.3-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.4-series/6.4.3-for-webassembly/index.html">6.4.3 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/6.5-series/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/index.html">6.5 系列</a><ul id="subsections-a4a8142fcca3c91cc086ca3a4afab485" class="morespace">
           <li data-nav-id="/zh-cn/6.5-series/6.5.0-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.0-for-windows/index.html">6.5.0 的 Windows 版本</a></li>
           <li data-nav-id="/zh-cn/6.5-series/6.5.0-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.0-for-macos/index.html">6.5.0 的 macOS 版本</a></li>
@@ -246,7 +249,7 @@ QtWebEngine 自从 6.2.4 之后就没再针对 LTS 版本发布新版，而是�
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 25 Mar 2023 18:48:42 CST</p>
+Site generated: Sat, 25 Mar 2023 23:38:53 CST</p>
 
         </div>
       </div>
