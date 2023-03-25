@@ -45,8 +45,10 @@ I'm tired of investigating them and will distribute Qt 6.2 series without QtWebE
 QtWebEngine has not released as LTS since Qt 6.2.4 and the Qt guys are simply taking QtWebEngine from later version (6.3, etc) for their 6.2 LTS series releases.  
 But no one else knows what version Qt guys are using for their Qt 6.2 LTS Releases except for the official packagers, as the QtWebEngine version is always different than the binary files.
 
+Update {{% date 2023 3 25 %}}:  
+QtWebEngine still develops in its own branch, but only `qtwebengine-chromium` repository is made public.  
+The SHA1 of commits of each release version are recorded in tQtC's own yocto repository `meta-qt6` but commit of `qtwebengine` repository can't be found.  
+I don't expect QtWebEngine can build with mismatched `qtwebengine` and `qtwebengine-chromium` repositories. Even if we are lucky enough that the code builds I don't expect it works.
+
+Since then I won't provide builds of Qt 6.2 LTS series with QtWebEngine.  
 Existing package with QtWebEngine will be removed after {{% date 2023 3 25 %}}.
-
-## Qt 5.15.8 with QtWebEngine 5.15.12 build fails on macOS / VS2022
-
-Reason is unknown.

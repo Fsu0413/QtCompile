@@ -42,6 +42,9 @@ Qt 6.2.4 cross builds (Linux / macOS host) are packaged with `libexec` folder of
 Update Qt 5.15.7 with OpenSSL 1.1.1s (excluding macOS, compile failed in QtWebEngine). Existing patches are all in.   
 Update Qt 5.12.12 with OpenSSL 1.1.1s.
 
+Reconstruct website with [Relearn](https://mcshelby.github.io/hugo-theme-relearn/) theme, which have better support for multilingual contents.  
+Add Simplified Chinese to website.
+
 ## {{% date 2022 10 4 %}}
 Update Qt 6.4.0.  
 Update Qt 6.2.4 static builds with static runtime. Previous versions are without it.  

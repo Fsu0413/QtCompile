@@ -42,6 +42,9 @@ Qt 6.2.4 的 Linux 和 macOS 主机交叉构建版在打包时额外附带主机
 更新 Qt 5.15.7，附带 OpenSSL 1.1.1s（macOS 除外，QtWebEngine 编译失败了）。现有补丁全部应用。  
 更新 Qt 5.12.12，附带 OpenSSL 1.1.1s。
 
+网站重新构建，更换主题为有更好多语言支持的 [Relearn](https://mcshelby.github.io/hugo-theme-relearn/) 。  
+网站添加简体中文。
+
 ## {{% date 2022 10 4 %}}
 更新 Qt 6.4.0。  
 更新 Qt 6.2.4 静态构建，使用静态运行时。以前的版本不使用静态运行时。  

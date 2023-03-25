@@ -46,6 +46,15 @@ Please refer to the content lists in the left area.
 
 ## Update History
 
+### {{% date 2023 3 25 %}}
+Update OpenSSL 1.1.1t / 3.0.8 with [the minor fix](https://www.openssl.org/news/secadv/20230322.txt).  
+Update Qt 5.12.12 / 5.15.8 / 6.2.4 series, rebuilt with this OpenSSL while 5.15.8 is with QtWebEngine 5.15.13.  
+Update Qt 6.4.3 and Qt 6.5.0-rc.
+
+Existing builds on Windows 8.1 are migrated to Windows 10 10.0.19045 since EOL of Windows 8.1.  
+Further builds won't support Windows 8.1 and earlier.
+
+Happy birthday to Iroi Imagay (the second time)!
 
 ### {{% date 2023 2 25 %}}
 Update Qt 6.5.0-beta3 series built with NDK r25c, with builtin MySQL (MariaDB) Database Backend and plugin.
