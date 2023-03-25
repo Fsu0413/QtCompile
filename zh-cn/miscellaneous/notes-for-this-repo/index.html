@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.111.3">
-    <meta name="generator" content="Relearn 5.12.3">
+    <meta name="generator" content="Relearn 5.12.4">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>本仓库的一些备注 :: Fsu0413 的原版 Qt 构建</title>
@@ -85,6 +85,7 @@
             <div class="toc-wrapper"><nav id="TableOfContents">
   <ul>
     <li><a href="#中文--多语言支持">中文 / 多语言支持</a></li>
+    <li><a href="#网站镜像">网站镜像</a></li>
     <li><a href="#可复现的构建">可复现的构建</a></li>
     <li><a href="#对静态构建的备注">对静态构建的备注</a></li>
     <li><a href="#静态-lite-构建和静态-full-构建-2022-年-3-月-8-日更新">静态 <code>Lite</code> 构建和静态 <code>Full</code> 构建 （2022 年 3 月 8 日更新）</a></li>
@@ -119,6 +120,13 @@
 目前的中文也仅仅处于刚刚开始组织语言的阶段。有一些内容还没有写完。<br>
 不过主要内容均使用中文重新写了一遍，应该不会影响大家下载二进制文件了。</p>
 <p>对网站建设有建议和意见的可以<a href="https://github.com/Fsu0413/QtCompile/issues/new" target="_blank">去 GitHub 上提出 issue</a>。</p>
+<h2 id="网站镜像">网站镜像</h2>
+<p><del>最近</del> 我在中国大陆使用 Gitee Pages 服务构建了一个此网站的镜像。<br>
+这个镜像配置的默认语言改为简体中文。</p>
+<p>由于 Gitee 的自定义域名服务只提供给付费用户，目前中文站是在 Gitee 的域名下的。<br>
+如果之后我对此服务感觉不错的话，我可能会付费使用这个服务。</p>
+<p><a href="https://fsu0413.gitee.io/qtcompile/" target="_blank">Gitee Pages （中国大陆，使用简体中文作为默认语言）</a><br>
+<a href="https://build-qt.fsu0413.me/" target="_blank">Github Pages （美国，使用英语作为默认语言）</a></p>
 <h2 id="可复现的构建">可复现的构建</h2>
 <p>为了实现对 Qt 的<a href="https://reproducible-builds.org/" target="_blank">可复现的构建</a>，我使用一系列脚本进行构建和打包。<br>
 如果您对构建方法感兴趣的话，可以参考下面的 GitHub 仓库。</p>
@@ -237,7 +245,7 @@ Linux - toolchain provided by RedHat modified by RockyLinux developers with GCC,
 Windows 10 已经变得越来越流行，而且添加更多更多的新特性。大家可以尽快切换到 Windows 10 了。</p>
 <p>从 2020 年 1 月 6 日（OpenSSL 1.0.2 系列结束支持）开始，我不再支持 Windows 8 以及更早的版本。请升级到 Windows 8.1 或更新版本。</p>
 <h2 id="对当前构建的-qt-版本的已经决定的结束支持日期2023-年-1-月-7-日更新">对当前构建的 Qt 版本的已经决定的结束支持日期（2023 年 1 月 7 日更新）</h2>
-<p>Qt 公司之前突然发布了开源的 5.15.3 版本，从那以后所有事情都变了。<br>
+<p>（2022 年 3 月 4 日更新）Qt 公司之前突然发布了开源的 5.15.3 版本，从那以后所有事情都变了。<br>
 我们之前的结束支持计划都没了意义。我们需要重新考虑 5.15 的结束支持日期。</p>
 <p>注：我们在除了 WebAssembly 以外的平台上构建 OpenSSL，所有我们的构建都需要至少支持到那个 OpenSSL 支持的日期。<br>
 当前正在使用的是 OpenSSL 1.1.1 系列和 3.0 系列。<br>
@@ -407,8 +415,8 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
 </table>
 <h2 id="之后可能会更新的内容">之后可能会更新的内容</h2>
 <p><del>使用安卓 NDK r23 系列构建 Qt 5.15.7 以及之后的版本。</del> （构建失败了，包括 5.15.8 也失败了，将于 5.15.9 再次尝试）<br>
-使用带 MinGW-w64 v9 的 GCC 11 来构建 Qt 5.15.9 以及之后的版本。<br>
-使用 macOS 13 来构建 Qt 6.5 以及之后的版本。届时也会尝试在上面构建 Qt 6.2 系列。<br>
+使用带 MinGW-w64 v9 的 GCC 11 来构建 Qt 5.15.9 以及之后的版本。（5.15.8 上尝试过，失败了）<br>
+<del>使用 macOS 13 来构建 Qt 6.5 以及之后的版本。届时也会尝试在上面构建 Qt 6.2 系列。</del> （咕了，因为 5.15.9 需要在 M1 芯片上尝试构建，由于可能的环境不兼容原因，我们会暂且先使用 macOS 12 进行初步确认）<br>
 在 M1 芯片上 / 为了 M1 芯片，构建 Qt 5.15.9 以及之后的版本的 macOS 版本。</p>
 <h2 id="已有的补丁">已有的补丁</h2>
 <p>从 2022 年 3 月 12 日开始我的 Qt 构建包含部分 Qt 提供的补丁。<br>
@@ -575,7 +583,7 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Fri, 24 Mar 2023 21:19:33 CST</p>
+Site generated: Sat, 25 Mar 2023 11:47:11 CST</p>
 
         </div>
       </div>

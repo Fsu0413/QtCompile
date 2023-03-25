@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.111.3">
-    <meta name="generator" content="Relearn 5.12.3">
+    <meta name="generator" content="Relearn 5.12.4">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>Notes for this repo :: Fsu0413&#39;s Original Qt builds</title>
@@ -85,6 +85,7 @@
             <div class="toc-wrapper"><nav id="TableOfContents">
   <ul>
     <li><a href="#chinese--multilingual-support">Chinese / Multilingual Support</a></li>
+    <li><a href="#website-mirror">Website Mirror</a></li>
     <li><a href="#reproduciable-building">Reproduciable building</a></li>
     <li><a href="#notes-on-static-builds">Notes on static builds</a></li>
     <li><a href="#static-lite-builds-and-static-full-builds-updated-202238">Static <code>Lite</code> Builds and Static <code>Full</code> Builds (Updated 2022.3.8)</a></li>
@@ -119,6 +120,13 @@ Currently I am gradually adding Simplified Chinese support on this website.</p>
 Current Chinese support is in the stage of writing texts. There is a bunch of things which are not finished.<br>
 But the main contents are rewritten using Chinese, which shouldn&rsquo;t bother us for downloading binaries.</p>
 <p>If there are any constructive advices, feel free to <a href="https://github.com/Fsu0413/QtCompile/issues/new" target="_blank">create issue on Github</a>.</p>
+<h2 id="website-mirror">Website Mirror</h2>
+<p><del>Recently</del> I created a mirror of this website in the Greatest China, using service of Gitee Pages.<br>
+This mirror is configured to be displaying Simplified Chinese by default.</p>
+<p>Due to the customize domain name function is only available under purchaged service of Gitee, Chinese mirror has to be under the domain of Gitee for now.<br>
+I may purchage the service later when the service seems good enough for me.</p>
+<p><a href="https://build-qt.fsu0413.me/" target="_blank">Github Pages (America, with English as default language)</a><br>
+<a href="https://fsu0413.gitee.io/qtcompile/" target="_blank">Gitee Pages (The Greatest China, with Chinese-S as default language)</a></p>
 <h2 id="reproduciable-building">Reproduciable building</h2>
 <p>I use a set of scripts to do the build and packaging for <a href="https://reproducible-builds.org/" target="_blank">reproducible building</a> Qt.<br>
 If you are interested in build method, please check the following GitHub repo.</p>
@@ -237,7 +245,7 @@ I don&rsquo;t want to put the signature file besides the package, I think it wil
 WINDOWS 10 IS MORE AND MORE POPULAR, AND RECEIVING MORE AND MORE NEW FEATURES. ONE SHOULD SWITCH TO WINDOWS 10 ASAP.</p>
 <p>SINCE 2020.1.6 (OpenSSL 1.0.2 EOL) NO LATER BUILD WILL SUPPORT WINDOWS 8 AND EARLIER BY ME, PLEASE UPDATE TO WINDOWS 8.1 AND LATER.</p>
 <h2 id="decided-eol-of-current-building-qt-lts-versions-updated-202317">Decided EOL of current building Qt LTS versions (Updated 2023.1.7)</h2>
-<p>tQtC released Qt opensource 5.15.3 for a sudden and all the things changed since then.<br>
+<p>(Updated 2022.3.4) tQtC released Qt opensource 5.15.3 for a sudden and all the things changed since then.<br>
 All of our EOL schedule becomes meaningless. We should re-consider the EOL date since Qt 5.15.</p>
 <p>Note: since OpenSSL is currently built on all versions of my build except for WebAssembly, all of my builds should persist until EOL of that specific OpenSSL version.<br>
 Currently OpenSSL 1.1.1 and 3.0 series are used.<br>
@@ -407,8 +415,8 @@ If subsequent version of Qt 5.15 remains private we won&rsquo;t upgrade OpenSSL 
 </table>
 <h2 id="incoming-update-for-future-release">Incoming update for future release</h2>
 <p><del>Use Android NDK r23 series for building Qt 5.15.7 onwards.</del> (Build failed also on 5.15.8. Will test it on 5.15.9)<br>
-Use GCC 11 with MinGW-w64 v9 for building Qt 5.15.9 onwards.<br>
-Use macOS 13 for building Qt 6.5 onwards. Will check if Qt 6.2 series can be built on it.<br>
+Use GCC 11 with MinGW-w64 v9 for building Qt 5.15.9 onwards. (Build failed on 5.15.8)<br>
+<del>Use macOS 13 for building Qt 6.5 onwards. Will check if Qt 6.2 series can be built on it.</del> (Postponed. Since we need to try to build Qt 5.15.9 on M1. Due to potentially incompatible environment we&rsquo;d to try building Qt 5.15.9 on macOS 12 at first)<br>
 Build Qt 5.15.9 and later for macOS on / for Apple Silicon.</p>
 <h2 id="existing-patches">Existing Patches</h2>
 <p>Starting from 2022.3.12 I am shipping Qt with patches from Qt.<br>
@@ -575,7 +583,7 @@ Note that I won&rsquo;t patch an active version of Qt and will simply wait for f
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Fri, 24 Mar 2023 21:19:33 CST</p>
+Site generated: Sat, 25 Mar 2023 11:47:10 CST</p>
 
         </div>
       </div>
