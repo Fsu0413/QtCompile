@@ -24,7 +24,7 @@
       "version": "3.1.20",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22621",
-      "toolchain": "VS2017 15.9.51",
+      "toolchain": "VS2017 15.9.54",
       "arch": "x86"
     },
     "sort": 30103
@@ -34,7 +34,7 @@
       "version": "3.1.20",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22621",
-      "toolchain": "VS2017 15.9.51",
+      "toolchain": "VS2017 15.9.54",
       "arch": "x86_64"
     },
     "sort": 30104
@@ -44,7 +44,7 @@
       "version": "3.1.20",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22621",
-      "toolchain": "VS2019 16.11.23",
+      "toolchain": "VS2019 16.11.26",
       "arch": "x86"
     },
     "sort": 30105
@@ -54,7 +54,7 @@
       "version": "3.1.20",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22621",
-      "toolchain": "VS2019 16.11.23",
+      "toolchain": "VS2019 16.11.26",
       "arch": "x86_64"
     },
     "sort": 30106
@@ -64,7 +64,7 @@
       "version": "3.1.20",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22621",
-      "toolchain": "VS2022 17.4.4",
+      "toolchain": "VS2022 17.5.5",
       "arch": "x86_64"
     },
     "sort": 30107
@@ -83,7 +83,7 @@
     "data": {
       "version": "3.1.20",
       "platform": "macOS",
-      "buildHost": "macOS 12.6.3",
+      "buildHost": "macOS 12.6.5",
       "toolchain": "AppleClang 14.0.0",
       "arch": "Unified (x86_64, arm64)"
     },
@@ -94,7 +94,7 @@
       "version": "3.3.4",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22621",
-      "toolchain": "VS2019 16.11.23",
+      "toolchain": "VS2019 16.11.26",
       "arch": "x86_64"
     },
     "sort": 30301
@@ -104,7 +104,7 @@
       "version": "3.3.4",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22621",
-      "toolchain": "VS2019 17.4.4",
+      "toolchain": "VS2019 17.5.5",
       "arch": "x86_64"
     },
     "sort": 30302
@@ -124,7 +124,7 @@
       "version": "3.3.4",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22621",
-      "toolchain": "MinGW-w64 w/ GCC 12.1.0",
+      "toolchain": "MinGW-w64 w/ GCC 12.2.0",
       "arch": "x86_64"
     },
     "sort": 30304
@@ -154,7 +154,7 @@
       "version": "3.3.4",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22621",
-      "toolchain": "MinGW-w64 w/ LLVM 16.0.0 (ucrt)",
+      "toolchain": "MinGW-w64 w/ LLVM 16.0.3 (ucrt)",
       "arch": "x86_64"
     },
     "sort": 30307
@@ -173,7 +173,7 @@
     "data": {
       "version": "3.3.4",
       "platform": "macOS",
-      "buildHost": "macOS 12.6.3",
+      "buildHost": "macOS 12.6.5",
       "toolchain": "AppleClang 14.0.0",
       "arch": "Unified (x86_64, arm64)"
     },
