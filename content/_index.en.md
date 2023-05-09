@@ -46,6 +46,9 @@ Please refer to the content lists in the left area.
 
 ## Update History
 
+### {{% date 2023 5 9 %}}
+Update Qt 5.15.9 / 6.5.0.
+
 ### {{% date 2023 3 25 %}}
 Update OpenSSL 1.1.1t / 3.0.8 with [the minor fix](https://www.openssl.org/news/secadv/20230322.txt).  
 Update Qt 5.12.12 / 5.15.8 / 6.2.4 series, rebuilt with this OpenSSL while 5.15.8 is with QtWebEngine 5.15.13.  
