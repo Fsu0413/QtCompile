@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.111.3">
-    <meta name="generator" content="Relearn 5.12.4">
+    <meta name="generator" content="Relearn 5.12.6">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
-    <title>6.4.3 的安卓版本 :: Fsu0413 的原版 Qt 构建</title>
-    <link href="/6.4-series/6.4.3-for-android/index.html" rel="alternate" hreflang="x-default">
-    <link href="/6.4-series/6.4.3-for-android/index.html" rel="alternate" hreflang="en">
-    <link href="/zh-cn/6.4-series/6.4.3-for-android/index.html" rel="alternate" hreflang="zh-cn">
+    <title>5.15.9 的安卓版本 :: Fsu0413 的原版 Qt 构建</title>
+    <link href="/5.15-series/5.15.9-for-android/index.html" rel="alternate" hreflang="x-default">
+    <link href="/5.15-series/5.15.9-for-android/index.html" rel="alternate" hreflang="en">
+    <link href="/zh-cn/5.15-series/5.15.9-for-android/index.html" rel="alternate" hreflang="zh-cn">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/css/fontawesome-all.min.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css" rel="stylesheet"></noscript>
     <link href="/css/nucleus.css" rel="stylesheet">
@@ -64,7 +64,7 @@
     }
 </style>
   </head>
-  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/zh-cn/6.4-series/6.4.3-for-android/index.html">
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/zh-cn/5.15-series/5.15.9-for-android/index.html">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
@@ -77,8 +77,8 @@
             <span id="toc-menu" title='目录 (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/zh-cn/index.html"><span itemprop="name">Fsu0413 的原版 Qt 构建</span></a><meta itemprop="position" content="1"> > </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/zh-cn/6.4-series/index.html"><span itemprop="name">6.4 系列</span></a><meta itemprop="position" content="2"> > </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">6.4.3 的安卓版本</span><meta itemprop="position" content="3"></li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/zh-cn/5.15-series/index.html"><span itemprop="name">5.15 系列</span></a><meta itemprop="position" content="2"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">5.15.9 的安卓版本</span><meta itemprop="position" content="3"></li>
             </ol>
           </div>
           <div class="default-animation progress">
@@ -102,7 +102,7 @@
           <div id="head-tags">
           </div>
           <article class="default">
-<h1 id="643-的安卓版本">6.4.3 的安卓版本</h1>
+<h1 id="5159-的安卓版本">5.15.9 的安卓版本</h1>
 
 
 <div class="box notices cstyle info">
@@ -110,7 +110,7 @@
   <div class="box-content">
 <p>此版本中附带下列数据库：</p>
 <ol>
-<li>SQLite （随 Qt 一起分发）：使用 <code>-DFEATURE_sql_sqlite -DFEATURE_system_sqlite=OFF</code> 内建在这份包里。</li>
+<li>SQLite （随 Qt 一起分发）：使用 <code>-sql-sqlite</code> 内建在这份包里。</li>
 </ol>
   </div>
 </div>
@@ -119,11 +119,10 @@
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
   <div class="box-content">
-<p>从 Qt 6.2 开始 Qt 将 TLS 后端改成插件的形式。<br>
-这个版本包含下列后端：</p>
-<ol>
-<li>OpenSSL 3.0 系列，使用 <code>-DFEATURE_openssl=ON -DINPUT_openssl=linked</code> 来启用链接的 OpenSSL 支持</li>
-</ol>
+<p>所有构建使用 <code>-openssl-linked</code>，意味着 OpenSSL 链接到了 Qt，作为 TLS 后端来使用。<br>
+它链接到了静态的 OpenSSL 1.1.1 系列库。</p>
+<p>安卓从 6.0 版本开始使用 BoringSSL 作为内建的 SSL / TLS 库。<br>
+此库与 OpenSSL 的 API 不兼容！！所以无法使用。</p>
   </div>
 </div>
 
@@ -131,145 +130,88 @@
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
   <div class="box-content">
-<p>Since Qt 6.3 I drop 32-bit builds for community.</p>
+所有构建配置了 <code>-no-icu</code> 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。  </div>
+</div>
+
+
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
+  <div class="box-content">
+使用 NDK r21e 版本，使用参数 <code>-android-ndk-platform android-21</code> 进行构建。<br>
+这意味着这些构建可能只能在安卓 5.0 以及之后的版本上运行。  </div>
+</div>
+
+<div class="box notices cstyle primary">
+  <div class="box-label"><i class="fas fa-check-square"></i> CVE issue patched</div>
+  <div class="box-content">
+<p>All builds have following CVEs fixed:<br>
+CVE-2022-27404-27405-27406<br>
+CVE-2022-37434<br>
+CVE-2023-24607</p>
   </div>
-</div>
-
-<div class="box notices cstyle info">
-  <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
-  <div class="box-content">
-所有构建配置了 <code>-DFEATURE_icu=OFF</code> 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。  </div>
-</div>
-
-
-<div class="box notices cstyle info">
-  <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
-  <div class="box-content">
-使用 NDK r25c 版本，使用参数 <code>-DANDROID_NATIVE_API_LEVEL=27</code> 进行构建。<br>
-这意味着这些构建可能只能在安卓 8.1 以及之后的版本上运行。  </div>
 </div>
 <h2 id="dynamic-builds">Dynamic Builds</h2>
 <h3 id="windows-host">Windows Host</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.4.3-Android-arm64-Clang-NDKr25c-XWindows-x86_64-MinGW12.1.0-20230324.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.9-Android-ALL-Clang-NDKr21e-XWindows-x86_64-MinGW8.1.0-20230508.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/47/47749/Qt6.4.3-Android-arm64-Clang-NDKr25c-XWindows-x86_64-MinGW12.1.0-20230324.7z" target="_blank"> 
+  <a href="https://osdn.net/downloads/users/48/48053/Qt5.15.9-Android-ALL-Clang-NDKr21e-XWindows-x86_64-MinGW8.1.0-20230508.7z" target="_blank"> 
     OSDN 链接
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/Android/Qt6.4.3-Android-arm64-Clang-NDKr25c-XWindows-x86_64-MinGW12.1.0-20230324.7z" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Android/Qt5.15.9-Android-ALL-Clang-NDKr21e-XWindows-x86_64-MinGW8.1.0-20230508.7z" target="_blank"> 
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r25c</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
-        </tbody>
-    </table>
-<table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.4.3-Android-x86_64-Clang-NDKr25c-XWindows-x86_64-MinGW12.1.0-20230324.7z</b></th></tr></thead>
-        <tbody>
-            <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="2" width="40%">
-<span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/47/47748/Qt6.4.3-Android-x86_64-Clang-NDKr25c-XWindows-x86_64-MinGW12.1.0-20230324.7z" target="_blank"> 
-    OSDN 链接
-  </a>
-</span></td>
-                <td colspan="2" width="40%">
-<span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/Android/Qt6.4.3-Android-x86_64-Clang-NDKr25c-XWindows-x86_64-MinGW12.1.0-20230324.7z" target="_blank"> 
-    SourceForge 链接
-  </a>
-</span></td>
-            </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r25c</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r21e</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <h3 id="linux-host">Linux Host</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.4.3-Android-arm64-Clang-NDKr25c-xLinux-x86_64-gcc11.3.1-20230324.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.9-Android-ALL-Clang-NDKr21e-xLinux-x86_64-gcc8.5.0-20230507.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/47/47747/Qt6.4.3-Android-arm64-Clang-NDKr25c-xLinux-x86_64-gcc11.3.1-20230324.tar.xz" target="_blank"> 
+  <a href="https://osdn.net/downloads/users/48/48050/Qt5.15.9-Android-ALL-Clang-NDKr21e-xLinux-x86_64-gcc8.5.0-20230507.tar.xz" target="_blank"> 
     OSDN 链接
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/Android/Qt6.4.3-Android-arm64-Clang-NDKr25c-xLinux-x86_64-gcc11.3.1-20230324.tar.xz" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Android/Qt5.15.9-Android-ALL-Clang-NDKr21e-xLinux-x86_64-gcc8.5.0-20230507.tar.xz" target="_blank"> 
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">RockyLinux 9.1</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r25c</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
-        </tbody>
-    </table>
-<table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.4.3-Android-x86_64-Clang-NDKr25c-xLinux-x86_64-gcc11.3.1-20230324.tar.xz</b></th></tr></thead>
-        <tbody>
-            <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="2" width="40%">
-<span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/47/47746/Qt6.4.3-Android-x86_64-Clang-NDKr25c-xLinux-x86_64-gcc11.3.1-20230324.tar.xz" target="_blank"> 
-    OSDN 链接
-  </a>
-</span></td>
-                <td colspan="2" width="40%">
-<span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/Android/Qt6.4.3-Android-x86_64-Clang-NDKr25c-xLinux-x86_64-gcc11.3.1-20230324.tar.xz" target="_blank"> 
-    SourceForge 链接
-  </a>
-</span></td>
-            </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">RockyLinux 9.1</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r25c</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">RockyLinux 8.7</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r21e</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <h3 id="macos-host">macOS Host</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.4.3-Android-arm64-Clang-NDKr25c-xmacOS-Universal-AppleClang14.0.0-20230324.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.9-Android-ALL-Clang-NDKr21e-xmacOS-x86_64-AppleClang14.0.0-20230507.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/47/47751/Qt6.4.3-Android-arm64-Clang-NDKr25c-xmacOS-Universal-AppleClang14.0.0-20230324.tar.xz" target="_blank"> 
+  <a href="https://osdn.net/downloads/users/48/48048/Qt5.15.9-Android-ALL-Clang-NDKr21e-xmacOS-x86_64-AppleClang14.0.0-20230507.tar.xz" target="_blank"> 
     OSDN 链接
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/Android/Qt6.4.3-Android-arm64-Clang-NDKr25c-xmacOS-Universal-AppleClang14.0.0-20230324.tar.xz" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Android/Qt5.15.9-Android-ALL-Clang-NDKr21e-xmacOS-x86_64-AppleClang14.0.0-20230507.tar.xz" target="_blank"> 
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 12.6.3</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r25c</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
-        </tbody>
-    </table>
-<table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.4.3-Android-x86_64-Clang-NDKr25c-xmacOS-Universal-AppleClang14.0.0-20230324.tar.xz</b></th></tr></thead>
-        <tbody>
-            <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="2" width="40%">
-<span class="btn cstyle green">
-  <a href="https://osdn.net/downloads/users/47/47750/Qt6.4.3-Android-x86_64-Clang-NDKr25c-xmacOS-Universal-AppleClang14.0.0-20230324.tar.xz" target="_blank"> 
-    OSDN 链接
-  </a>
-</span></td>
-                <td colspan="2" width="40%">
-<span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.4/Android/Qt6.4.3-Android-x86_64-Clang-NDKr25c-xmacOS-Universal-AppleClang14.0.0-20230324.tar.xz" target="_blank"> 
-    SourceForge 链接
-  </a>
-</span></td>
-            </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 12.6.3</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r25c</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 12.6.5</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r21e</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 
@@ -295,21 +237,16 @@
           <li data-nav-id="/zh-cn/5.12-series/index.html" class=""><a class="padding" href="/zh-cn/5.12-series/index.html">5.12 系列</a><ul id="subsections-9aeb85270de661fbbb0f6e6b161fbf7c" class="morespace">
           <li data-nav-id="/zh-cn/5.12-series/5.12.12-for-windows/index.html" class=""><a class="padding" href="/zh-cn/5.12-series/5.12.12-for-windows/index.html">5.12.12 的 Windows 版本</a></li>
           <li data-nav-id="/zh-cn/5.12-series/5.12.12-for-android/index.html" class=""><a class="padding" href="/zh-cn/5.12-series/5.12.12-for-android/index.html">5.12.12 的安卓版本</a></li></ul></li>
-          <li data-nav-id="/zh-cn/5.15-series/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/index.html">5.15 系列</a><ul id="subsections-6265c888ec9e92bab195ca36e833839a" class="morespace">
-          <li data-nav-id="/zh-cn/5.15-series/5.15.8-for-windows/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.8-for-windows/index.html">5.15.8 的 Windows 版本</a></li>
-          <li data-nav-id="/zh-cn/5.15-series/5.15.8-for-macos/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.8-for-macos/index.html">5.15.8 的 macOS 版本</a></li>
-          <li data-nav-id="/zh-cn/5.15-series/5.15.8-for-android/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.8-for-android/index.html">5.15.8 的安卓版本</a></li>
-          <li data-nav-id="/zh-cn/5.15-series/5.15.8-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.8-for-webassembly/index.html">5.15.8 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/5.15-series/index.html" class="parent "><a class="padding" href="/zh-cn/5.15-series/index.html">5.15 系列</a><ul id="subsections-6265c888ec9e92bab195ca36e833839a" class="morespace">
+          <li data-nav-id="/zh-cn/5.15-series/5.15.9-for-windows/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.9-for-windows/index.html">5.15.9 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.9-for-macos/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.9-for-macos/index.html">5.15.9 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.9-for-android/index.html" class="active"><a class="padding" href="/zh-cn/5.15-series/5.15.9-for-android/index.html">5.15.9 的安卓版本</a></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.9-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.9-for-webassembly/index.html">5.15.9 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/6.2-series/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/index.html">6.2 系列</a><ul id="subsections-106fe2487cf90a2754e3f4a06da071f3" class="morespace">
           <li data-nav-id="/zh-cn/6.2-series/6.2.4-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.4-for-windows/index.html">6.2.4 的 Windows 版本</a></li>
           <li data-nav-id="/zh-cn/6.2-series/6.2.4-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.4-for-macos/index.html">6.2.4 的 macOS 版本</a></li>
           <li data-nav-id="/zh-cn/6.2-series/6.2.4-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.4-for-android/index.html">6.2.4 的安卓版本</a></li>
           <li data-nav-id="/zh-cn/6.2-series/6.2.4-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.4-for-webassembly/index.html">6.2.4 的 WebAssembly 版本</a></li></ul></li>
-          <li data-nav-id="/zh-cn/6.4-series/index.html" class="parent "><a class="padding" href="/zh-cn/6.4-series/index.html">6.4 系列</a><ul id="subsections-4d05ecf5148d75d316f28c139cdfde7d" class="morespace">
-          <li data-nav-id="/zh-cn/6.4-series/6.4.3-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.4-series/6.4.3-for-windows/index.html">6.4.3 的 Windows 版本</a></li>
-          <li data-nav-id="/zh-cn/6.4-series/6.4.3-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.4-series/6.4.3-for-macos/index.html">6.4.3 的 macOS 版本</a></li>
-          <li data-nav-id="/zh-cn/6.4-series/6.4.3-for-android/index.html" class="active"><a class="padding" href="/zh-cn/6.4-series/6.4.3-for-android/index.html">6.4.3 的安卓版本</a></li>
-          <li data-nav-id="/zh-cn/6.4-series/6.4.3-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.4-series/6.4.3-for-webassembly/index.html">6.4.3 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/6.5-series/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/index.html">6.5 系列</a><ul id="subsections-a4a8142fcca3c91cc086ca3a4afab485" class="morespace">
           <li data-nav-id="/zh-cn/6.5-series/6.5.0-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.0-for-windows/index.html">6.5.0 的 Windows 版本</a></li>
           <li data-nav-id="/zh-cn/6.5-series/6.5.0-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.0-for-macos/index.html">6.5.0 的 macOS 版本</a></li>
@@ -354,8 +291,8 @@
                 <div class="select-style">
                   <label class="a11y-only" for="select-language">语言</label>
                   <select id="select-language" onchange="location = baseUri + this.value;">
-                    <option lang="en" id="en" value="/6.4-series/6.4.3-for-android/index.html">English</option>
-                    <option lang="zh-cn" id="zh-cn" value="/zh-cn/6.4-series/6.4.3-for-android/index.html" selected>简体中文（中国）</option>
+                    <option lang="en" id="en" value="/5.15-series/5.15.9-for-android/index.html">English</option>
+                    <option lang="zh-cn" id="zh-cn" value="/zh-cn/5.15-series/5.15.9-for-android/index.html" selected>简体中文（中国）</option>
                   </select>
                 </div>
                 <div class="select-clear"></div>
@@ -386,7 +323,7 @@
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 25 Mar 2023 23:38:52 CST</p>
+Site generated: Tue, 09 May 2023 08:52:45 CST</p>
 
         </div>
       </div>
