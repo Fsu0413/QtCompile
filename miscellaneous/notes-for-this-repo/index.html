@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.111.3">
-    <meta name="generator" content="Relearn 5.12.4">
+    <meta name="generator" content="Relearn 5.12.6">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>本仓库的一些备注 :: Fsu0413 的原版 Qt 构建</title>
@@ -373,11 +373,6 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
 </thead>
 <tbody>
 <tr>
-<td>5.15.9</td>
-<td>2022 年 4 月 6 日</td>
-<td>2023 年 4 月 6 日</td>
-</tr>
-<tr>
 <td>5.15.10</td>
 <td>2022 年 6 月 7 日</td>
 <td>2023 年 6 月 7 日</td>
@@ -415,8 +410,8 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
 </tbody>
 </table>
 <h2 id="之后可能会更新的内容">之后可能会更新的内容</h2>
-<p><del>使用安卓 NDK r23 系列构建 Qt 5.15.7 以及之后的版本。</del> （构建失败了，包括 5.15.8 也失败了，将于 5.15.9 再次尝试）<br>
-使用带 MinGW-w64 v9 的 GCC 11 来构建 Qt 5.15.9 以及之后的版本。（5.15.8 上尝试过，失败了）<br>
+<p><del>使用安卓 NDK r23 系列构建 Qt 5.15.7 以及之后的版本。</del> （构建失败了，包括 5.15.9 也失败了，将于 5.15.10 再次尝试）<br>
+使用带 MinGW-w64 v9 的 GCC 11 来构建 Qt 5.15.10 以及之后的版本。（5.15.9 上尝试过，失败了）<br>
 <del>使用 macOS 13 来构建 Qt 6.5 以及之后的版本。届时也会尝试在上面构建 Qt 6.2 系列。</del> （咕了，因为 5.15.9 需要在 M1 芯片上尝试构建，由于可能的环境不兼容原因，我们会暂且先使用 macOS 12 进行初步确认）<br>
 在 M1 芯片上 / 为了 M1 芯片，构建 Qt 5.15.9 以及之后的版本的 macOS 版本。</p>
 <h2 id="已有的补丁">已有的补丁</h2>
@@ -449,11 +444,11 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
 <td>-</td>
 </tr>
 <tr>
-<td>5.15.8</td>
+<td>5.15.9</td>
 <td>-</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2022-25255-qprocess5-15.diff" target="_blank">√</a></td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2022-25643-5.15.diff" target="_blank">√</a></td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2018-25032-qtbase-5.15.diff" target="_blank">√</a></td>
+<td>附带</td>
+<td>附带</td>
+<td>附带</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2022-27404-27405-27406-qtbase-5.15.diff" target="_blank">√</a></td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2022-37434-qtbase-5.15.patch" target="_blank">√</a></td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-24607-qtbase-5.15.diff" target="_blank">√</a></td>
@@ -494,20 +489,15 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
           <li data-nav-id="/qtcompile/5.12-series/5.12.12-for-windows/index.html" class=""><a class="padding" href="/qtcompile/5.12-series/5.12.12-for-windows/index.html">5.12.12 的 Windows 版本</a></li>
           <li data-nav-id="/qtcompile/5.12-series/5.12.12-for-android/index.html" class=""><a class="padding" href="/qtcompile/5.12-series/5.12.12-for-android/index.html">5.12.12 的安卓版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/5.15-series/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/index.html">5.15 系列</a><ul id="subsections-6265c888ec9e92bab195ca36e833839a" class="morespace">
-          <li data-nav-id="/qtcompile/5.15-series/5.15.8-for-windows/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.8-for-windows/index.html">5.15.8 的 Windows 版本</a></li>
-          <li data-nav-id="/qtcompile/5.15-series/5.15.8-for-macos/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.8-for-macos/index.html">5.15.8 的 macOS 版本</a></li>
-          <li data-nav-id="/qtcompile/5.15-series/5.15.8-for-android/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.8-for-android/index.html">5.15.8 的安卓版本</a></li>
-          <li data-nav-id="/qtcompile/5.15-series/5.15.8-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.8-for-webassembly/index.html">5.15.8 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.9-for-windows/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.9-for-windows/index.html">5.15.9 的 Windows 版本</a></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.9-for-macos/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.9-for-macos/index.html">5.15.9 的 macOS 版本</a></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.9-for-android/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.9-for-android/index.html">5.15.9 的安卓版本</a></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.9-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.9-for-webassembly/index.html">5.15.9 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/6.2-series/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/index.html">6.2 系列</a><ul id="subsections-106fe2487cf90a2754e3f4a06da071f3" class="morespace">
           <li data-nav-id="/qtcompile/6.2-series/6.2.4-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.4-for-windows/index.html">6.2.4 的 Windows 版本</a></li>
           <li data-nav-id="/qtcompile/6.2-series/6.2.4-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.4-for-macos/index.html">6.2.4 的 macOS 版本</a></li>
           <li data-nav-id="/qtcompile/6.2-series/6.2.4-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.4-for-android/index.html">6.2.4 的安卓版本</a></li>
           <li data-nav-id="/qtcompile/6.2-series/6.2.4-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.4-for-webassembly/index.html">6.2.4 的 WebAssembly 版本</a></li></ul></li>
-          <li data-nav-id="/qtcompile/6.4-series/index.html" class=""><a class="padding" href="/qtcompile/6.4-series/index.html">6.4 系列</a><ul id="subsections-4d05ecf5148d75d316f28c139cdfde7d" class="morespace">
-          <li data-nav-id="/qtcompile/6.4-series/6.4.3-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.4-series/6.4.3-for-windows/index.html">6.4.3 的 Windows 版本</a></li>
-          <li data-nav-id="/qtcompile/6.4-series/6.4.3-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.4-series/6.4.3-for-macos/index.html">6.4.3 的 macOS 版本</a></li>
-          <li data-nav-id="/qtcompile/6.4-series/6.4.3-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.4-series/6.4.3-for-android/index.html">6.4.3 的安卓版本</a></li>
-          <li data-nav-id="/qtcompile/6.4-series/6.4.3-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.4-series/6.4.3-for-webassembly/index.html">6.4.3 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/6.5-series/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/index.html">6.5 系列</a><ul id="subsections-a4a8142fcca3c91cc086ca3a4afab485" class="morespace">
           <li data-nav-id="/qtcompile/6.5-series/6.5.0-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.0-for-windows/index.html">6.5.0 的 Windows 版本</a></li>
           <li data-nav-id="/qtcompile/6.5-series/6.5.0-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.0-for-macos/index.html">6.5.0 的 macOS 版本</a></li>
@@ -584,7 +574,7 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 25 Mar 2023 23:37:46 CST</p>
+Site generated: Tue, 09 May 2023 08:52:43 CST</p>
 
         </div>
       </div>
