@@ -22,7 +22,7 @@ jobs:
         ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
         source_repo_url: git@github.com:${{ github.repository }}.git
         source_branch: ge-pages
-        destination_repo_url: fsu0413@git.pf.osdn.net:/gitroot/f/fs/fsu0413/Fsu0413-QtCompile.git
+        destination_repo_url: fsu0413@git.osdn.net:/gitroot/fsu0413-qtbuilds/QtBuilds.git
         destination_branch: ge-pages
 
   gitcode:
