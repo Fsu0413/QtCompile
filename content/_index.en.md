@@ -46,8 +46,12 @@ Please refer to the content lists in the left area.
 
 ## Update History
 
+### {{% date 2023 5 11 %}}
+Use OSDN project instead of Chamber (a.k.a. PersonalForge) for file hosting.
+
 ### {{% date 2023 5 9 %}}
-Update Qt 5.15.9 / 6.5.0.
+Update Qt 5.15.9 / 6.5.0.  
+Remove Qt 6.4 series.
 
 ### {{% date 2023 3 25 %}}
 Update OpenSSL 1.1.1t / 3.0.8 with [the minor fix](https://www.openssl.org/news/secadv/20230322.txt).  
