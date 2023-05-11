@@ -6,43 +6,43 @@ jobs:
   coding:
     runs-on: ubuntu-latest
     steps:
-    - uses: yehan-coding/yehan-git-sync@v1
+    - uses: codions/git-sync@v1.0.2
       with:
-        ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-        source_repo_url: git@github.com:${{ github.repository }}.git
-        source_branch: gh-pages
-        destination_repo_url: git@e.coding.net:Fsu0413/QtCompile.git
-        destination_branch: gh-pages
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        SOURCE_REPO: git@github.com:${{ github.repository }}.git
+        SOURCE_BRANCH: gh-pages
+        DESTINATION_REPO: git@e.coding.net:Fsu0413/QtCompile.git
+        DESTINATION_BRANCH: gh-pages
 
   osdn:
     runs-on: ubuntu-latest
     steps:
-    - uses: yehan-coding/yehan-git-sync@v1
+    - uses: codions/git-sync@v1.0.2
       with:
-        ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-        source_repo_url: git@github.com:${{ github.repository }}.git
-        source_branch: gh-pages
-        destination_repo_url: fsu0413@git.osdn.net:/gitroot/fsu0413-qtbuilds/QtBuilds.git
-        destination_branch: gh-pages
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        SOURCE_REPO: git@github.com:${{ github.repository }}.git
+        SOURCE_BRANCH: gh-pages
+        DESTINATION_REPO: fsu0413@git.osdn.net:/gitroot/fsu0413-qtbuilds/QtBuilds.git
+        DESTINATION_BRANCH: gh-pages
 
   gitcode:
     runs-on: ubuntu-latest
     steps:
-    - uses: yehan-coding/yehan-git-sync@v1
+    - uses: codions/git-sync@v1.0.2
       with:
-        ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-        source_repo_url: git@github.com:${{ github.repository }}.git
-        source_branch: gh-pages
-        destination_repo_url: git@gitcode.net:Fsu0413/QtCompile.git
-        destination_branch: gh-pages
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        SOURCE_REPO: git@github.com:${{ github.repository }}.git
+        SOURCE_BRANCH: gh-pages
+        DESTINATION_REPO: git@gitcode.net:Fsu0413/QtCompile.git
+        DESTINATION_BRANCH: gh-pages
 
   gitee:
     runs-on: ubuntu-latest
     steps:
-    - uses: yehan-coding/yehan-git-sync@v1
+    - uses: codions/git-sync@v1.0.2
       with:
-        ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-        source_repo_url: git@github.com:${{ github.repository }}.git
-        source_branch: gh-pages
-        destination_repo_url: git@gitee.com:Fsu0413/QtCompile.git
-        destination_branch: gh-pages
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        SOURCE_REPO: git@github.com:${{ github.repository }}.git
+        SOURCE_BRANCH: gh-pages
+        DESTINATION_REPO: git@gitee.com:Fsu0413/QtCompile.git
+        DESTINATION_BRANCH: gh-pages
