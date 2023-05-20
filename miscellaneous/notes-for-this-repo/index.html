@@ -373,11 +373,6 @@ If subsequent version of Qt 5.15 remains private we won&rsquo;t upgrade OpenSSL 
 </thead>
 <tbody>
 <tr>
-<td>5.15.9</td>
-<td>6th Apr, 2022</td>
-<td>6th Apr, 2023</td>
-</tr>
-<tr>
 <td>5.15.10</td>
 <td>7th Jun, 2022</td>
 <td>7th Jun, 2023</td>
@@ -415,10 +410,8 @@ If subsequent version of Qt 5.15 remains private we won&rsquo;t upgrade OpenSSL 
 </tbody>
 </table>
 <h2 id="incoming-update-for-future-release">Incoming update for future release</h2>
-<p><del>Use Android NDK r23 series for building Qt 5.15.7 onwards.</del> (Build failed also on 5.15.8. Will test it on 5.15.9)<br>
-Use GCC 11 with MinGW-w64 v9 for building Qt 5.15.9 onwards. (Build failed on 5.15.8)<br>
-<del>Use macOS 13 for building Qt 6.5 onwards. Will check if Qt 6.2 series can be built on it.</del> (Postponed. Since we need to try to build Qt 5.15.9 on M1. Due to potentially incompatible environment we&rsquo;d to try building Qt 5.15.9 on macOS 12 at first)<br>
-Build Qt 5.15.9 and later for macOS on / for Apple Silicon.</p>
+<p><del>Use Android NDK r23 series for building Qt 5.15.7 onwards.</del> (Build failed also on 5.15.9. Will test it on 5.15.10)<br>
+Use GCC 11 with MinGW-w64 v9 for building Qt 5.15.10 onwards. (Build failed on 5.15.9)</p>
 <h2 id="existing-patches">Existing Patches</h2>
 <p>Starting from 12th Mar, 2022 I am shipping Qt with patches from Qt.<br>
 Most of them are CVE patches which can be downloaded from <a href="https://download.qt.io/" target="_blank">Qt Downloads</a>, others are build fixes which are download from Qt Gerrit.</p>
@@ -435,6 +428,7 @@ Note that I won&rsquo;t patch an active version of Qt and will simply wait for f
 <th>CVE-2022-27404-<br />27405-27406</th>
 <th>CVE-2022-<br />37434</th>
 <th>CVE-2023-<br />24607</th>
+<th>CVE-2023-<br />32573</th>
 </tr>
 </thead>
 <tbody>
@@ -442,6 +436,7 @@ Note that I won&rsquo;t patch an active version of Qt and will simply wait for f
 <td>5.12.12</td>
 <td>-</td>
 <td><a href="https://codereview.qt-project.org/c/qt/qtbase/&#43;/396020" target="_blank">√</a></td>
+<td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -457,6 +452,7 @@ Note that I won&rsquo;t patch an active version of Qt and will simply wait for f
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2022-27404-27405-27406-qtbase-5.15.diff" target="_blank">√</a></td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2022-37434-qtbase-5.15.patch" target="_blank">√</a></td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-24607-qtbase-5.15.diff" target="_blank">√</a></td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-32573-qtsvg-5.15.diff" target="_blank">√</a></td>
 </tr>
 <tr>
 <td>6.2.4</td>
@@ -467,6 +463,7 @@ Note that I won&rsquo;t patch an active version of Qt and will simply wait for f
 <td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2022-27404-27405-27406-qtbase-6.2.diff" target="_blank">√</a></td>
 <td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2022-37434-qtbase-6.2.patch" target="_blank">√</a></td>
 <td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-24607-qtbase-6.2.diff" target="_blank">√</a></td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-32573-qtsvg-6.2.diff" target="_blank">√</a></td>
 </tr>
 </tbody>
 </table>
@@ -579,7 +576,7 @@ Note that I won&rsquo;t patch an active version of Qt and will simply wait for f
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Thu, 11 May 2023 19:53:24 CST</p>
+Site generated: Sat, 20 May 2023 09:46:54 CST</p>
 
         </div>
       </div>

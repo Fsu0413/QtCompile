@@ -90,13 +90,10 @@
     <li><a href="#当前的失败项">当前的失败项</a></li>
     <li><a href="#更新记录">更新记录</a>
       <ul>
+        <li><a href="#2023-年-5-月-20-日">2023 年 5 月 20 日</a></li>
         <li><a href="#2023-年-5-月-11-日">2023 年 5 月 11 日</a></li>
         <li><a href="#2023-年-5-月-9-日">2023 年 5 月 9 日</a></li>
-        <li><a href="#2023-年-3-月-25-日">2023 年 3 月 25 日</a></li>
-        <li><a href="#2023-年-2-月-25-日">2023 年 2 月 25 日</a></li>
-        <li><a href="#2023-年-2-月-12-日">2023 年 2 月 12 日</a></li>
-        <li><a href="#2023-年-2-月-10-日">2023 年 2 月 10 日</a></li>
-        <li><a href="#2023-年-1-月以前">2023 年 1 月以前</a></li>
+        <li><a href="#2023-年-3-月以前">2023 年 3 月以前</a></li>
       </ul>
     </li>
   </ul>
@@ -136,27 +133,19 @@
 <h2 id="当前的失败项">当前的失败项</h2>
 <p><a href="/zh-cn/miscellaneous/current-failures/">这里</a></p>
 <h2 id="更新记录">更新记录</h2>
+<h3 id="2023-年-5-月-20-日">2023 年 5 月 20 日</h3>
+<p>更新 macOS 到 13.3.1。更新 Xcode 到 14.3。<br>
+更新 Qt 5.15.9 统一二进制主机构建以及 arm64 主机版交叉构建。<br>
+更新 Qt 6.2.4 和 6.5.0 的 UCRT 版本的 MinGW-w64 GCC 构建。</p>
+<p>对于所有受支持的 5.15.9 和 6.2.4 版本，应用 CVE-2023-32573 补丁。</p>
 <h3 id="2023-年-5-月-11-日">2023 年 5 月 11 日</h3>
 <p>使用 OSDN 项目代替 Chamber （或者叫做 PersonalForge）提供文件服务。</p>
 <h3 id="2023-年-5-月-9-日">2023 年 5 月 9 日</h3>
 <p>更新 Qt 5.15.9 / 6.5.0。<br>
 删除 Qt 6.4 系列。</p>
-<h3 id="2023-年-3-月-25-日">2023 年 3 月 25 日</h3>
-<p>更新 OpenSSL 1.1.1t / 3.0.8，附带 <a href="https://www.openssl.org/news/secadv/20230322.txt" target="_blank">微小更新</a>。<br>
-更新 Qt 5.12.12 / 5.15.8 / 6.2.4，使用这份 OpenSSL 重新构建，其中 5.15.8 附带 QtWebEngine 5.15.13。<br>
-更新 Qt 6.4.3 和 Qt 6.5.0-rc。</p>
-<p>由于 Windows 8.1 结束生命周期，之前使用 Windows 8.1 构建的版本迁移到 Windows 10 10.0.19045 重新构建。<br>
-之后的构建不会再支持 Windows 8.1。</p>
-<p>（第二次）祝基神奄（Iroi Imagay）生日快乐！！</p>
-<h3 id="2023-年-2-月-25-日">2023 年 2 月 25 日</h3>
-<p>更新 Qt 6.5.0-beta3 系列，使用 NDK r25c 构建，附带内建的 MySQL （MariaDB）数据库后端及插件。</p>
-<h3 id="2023-年-2-月-12-日">2023 年 2 月 12 日</h3>
-<p>更新 Qt 6.4.2 系列，使用 NDK r25c 构建。</p>
-<h3 id="2023-年-2-月-10-日">2023 年 2 月 10 日</h3>
-<p>更新 Qt 5.12.12 / 5.15.8 / 6.2.4 / 6.4.2 系列，附带 OpenSSL 1.1.1t / 3.0.8。<br>
-更新 Qt 5.15 / 6.2 / 6.4 系列，附带内建的 MySQL （MariaDB）数据库后端及插件。<br>
-使用更多 Visual Studio 版本对 Qt 5.15 系列进行静态 <code>full</code> 构建。不再继续对 Qt 5.12 进行静态 <code>full</code> 构建。</p>
-<h3 id="2023-年-1-月以前">2023 年 1 月以前</h3>
+<p>OpenSSL 于 2023 年 4 月 20 日发布的 <a href="https://www.openssl.org/news/secadv/20230420.txt" target="_blank">微小更新</a> 仅适用于 ASM 构建的 OpenSSL 二进制文件。<br>
+由于我构建的 OpenSSL 均为非 ASM 构建，所以对我的构建没有影响。此更新不会被应用到我构建的版本中。</p>
+<h3 id="2023-年-3-月以前">2023 年 3 月以前</h3>
 <p><a href="/zh-cn/miscellaneous/histories/">这里</a></p>
 
             <footer class="footline">
@@ -267,7 +256,7 @@
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Thu, 11 May 2023 19:53:24 CST</p>
+Site generated: Sat, 20 May 2023 09:46:55 CST</p>
 
         </div>
       </div>
