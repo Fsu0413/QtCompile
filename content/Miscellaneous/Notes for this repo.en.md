@@ -241,7 +241,6 @@ Commericial-only Qt Open Source Release Date (ETA)
 
 | Qt Version | Commericial Release Date | Open Source Release Date |
 |-|-|-|
-| 5.15.9 | {{% date 2022 4 6 %}} | {{% date 2023 4 6 %}} |
 | 5.15.10 | {{% date 2022 6 7 %}} | {{% date 2023 6 7 %}} |
 | 5.15.11 | {{% date 2022 10 5 %}} | {{% date 2023 10 5 %}} |
 | 5.15.12 | {{% date 2022 12 27 %}} | {{% date 2023 12 27 %}} |
@@ -252,10 +251,8 @@ Commericial-only Qt Open Source Release Date (ETA)
 
 ## Incoming update for future release
 
-~~Use Android NDK r23 series for building Qt 5.15.7 onwards.~~ (Build failed also on 5.15.8. Will test it on 5.15.9)  
-Use GCC 11 with MinGW-w64 v9 for building Qt 5.15.9 onwards. (Build failed on 5.15.8)  
-~~Use macOS 13 for building Qt 6.5 onwards. Will check if Qt 6.2 series can be built on it.~~ (Postponed. Since we need to try to build Qt 5.15.9 on M1. Due to potentially incompatible environment we'd to try building Qt 5.15.9 on macOS 12 at first)  
-Build Qt 5.15.9 and later for macOS on / for Apple Silicon.  
+~~Use Android NDK r23 series for building Qt 5.15.7 onwards.~~ (Build failed also on 5.15.9. Will test it on 5.15.10)  
+Use GCC 11 with MinGW-w64 v9 for building Qt 5.15.10 onwards. (Build failed on 5.15.9)  
 
 ## Existing Patches
 
@@ -265,8 +262,8 @@ Most of them are CVE patches which can be downloaded from [Qt Downloads](https:/
 Following is a table for patches of each version I am currently building.  
 Note that I won't patch an active version of Qt and will simply wait for future release. So only Commericial LTS and EOL version are patched.
 
-| Qt Version | (6.2.4 specific)<br />MinGW host fix | CVE-2022-<br />25255 | CVE-2022-<br />25643 | CVE-2018-<br />25032 | CVE-2022-27404-<br />27405-27406 | CVE-2022-<br />37434 | CVE-2023-<br />24607 |
-|-|-|-|-|-|-|-|-|
-| 5.12.12 | - | [√](https://codereview.qt-project.org/c/qt/qtbase/+/396020) | - | - | - | - | - |
-| 5.15.9 | - | shipped | shipped | shipped | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2022-27404-27405-27406-qtbase-5.15.diff) | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2022-37434-qtbase-5.15.patch) | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-24607-qtbase-5.15.diff) |
-| 6.2.4 | [√](https://codereview.qt-project.org/c/qt/qtbase/+/401758) | shipped | shipped | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2018-25032-qtbase-6.2.diff) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2022-27404-27405-27406-qtbase-6.2.diff) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2022-37434-qtbase-6.2.patch) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-24607-qtbase-6.2.diff) |
+| Qt Version | (6.2.4 specific)<br />MinGW host fix | CVE-2022-<br />25255 | CVE-2022-<br />25643 | CVE-2018-<br />25032 | CVE-2022-27404-<br />27405-27406 | CVE-2022-<br />37434 | CVE-2023-<br />24607 | CVE-2023-<br />32573 |
+|-|-|-|-|-|-|-|-|-|
+| 5.12.12 | - | [√](https://codereview.qt-project.org/c/qt/qtbase/+/396020) | - | - | - | - | - | - |
+| 5.15.9 | - | shipped | shipped | shipped | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2022-27404-27405-27406-qtbase-5.15.diff) | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2022-37434-qtbase-5.15.patch) | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-24607-qtbase-5.15.diff) | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-32573-qtsvg-5.15.diff) |
+| 6.2.4 | [√](https://codereview.qt-project.org/c/qt/qtbase/+/401758) | shipped | shipped | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2018-25032-qtbase-6.2.diff) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2022-27404-27405-27406-qtbase-6.2.diff) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2022-37434-qtbase-6.2.patch) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-24607-qtbase-6.2.diff) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-32573-qtsvg-6.2.diff) |

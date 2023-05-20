@@ -46,6 +46,13 @@ Please refer to the content lists in the left area.
 
 ## Update History
 
+### {{% date 2023 5 20 %}}
+Update macOS to 13.3.1. Update Xcode to 14.3.  
+Update Qt 5.15.9 Universal host builds and arm64 hosted cross builds.  
+Update MinGW-w64 with GCC UCRT builds of Qt 6.2.4 and Qt 6.5.0.
+
+Apply patch for CVE-2023-32573 in all supported 5.15.9 and 6.2.4 versions.
+
 ### {{% date 2023 5 11 %}}
 Use OSDN project instead of Chamber (a.k.a. PersonalForge) for file hosting.
 
@@ -53,26 +60,8 @@ Use OSDN project instead of Chamber (a.k.a. PersonalForge) for file hosting.
 Update Qt 5.15.9 / 6.5.0.  
 Remove Qt 6.4 series.
 
-### {{% date 2023 3 25 %}}
-Update OpenSSL 1.1.1t / 3.0.8 with [the minor fix](https://www.openssl.org/news/secadv/20230322.txt).  
-Update Qt 5.12.12 / 5.15.8 / 6.2.4 series, rebuilt with this OpenSSL while 5.15.8 is with QtWebEngine 5.15.13.  
-Update Qt 6.4.3 and Qt 6.5.0-rc.
-
-Existing builds on Windows 8.1 are migrated to Windows 10 10.0.19045 since EOL of Windows 8.1.  
-Further builds won't support Windows 8.1 and earlier.
-
-Happy birthday to Iroi Imagay (the second time)!
-
-### {{% date 2023 2 25 %}}
-Update Qt 6.5.0-beta3 series built with NDK r25c, with builtin MySQL (MariaDB) Database Backend and plugin.
-
-### {{% date 2023 2 12 %}}
-Update Qt 6.4.2 series built with NDK r25c.
-
-### {{% date 2023 2 10 %}}
-Update Qt 5.12.12 / 5.15.8 / 6.2.4 / 6.4.2 series with OpenSSL 1.1.1t / 3.0.8.  
-Update Qt 5.15 / 6.2 / 6.4 series with builtin MySQL (MariaDB) Database Backend and plugin.  
-Update Qt 5.15 static `full` series with more Visual Studio version. Discontinue Qt 5.12 static `full` versions.
+On {{% date 2023 4 20 %}} OpenSSL released [a minor fix](https://www.openssl.org/news/secadv/20230420.txt) which applies for ARM built OpenSSL binary.  
+I distributes only non-ASM build of OpenSSL so it is not affected to my builds. This update will not integrated to my builds.
 
 ### Before Jan. 2023
 

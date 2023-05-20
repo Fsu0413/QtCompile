@@ -4,6 +4,27 @@ draft: false
 weight: 4
 ---
 
+## {{% date 2023 3 25 %}}
+更新 OpenSSL 1.1.1t / 3.0.8，附带 [微小更新](https://www.openssl.org/news/secadv/20230322.txt)。  
+更新 Qt 5.12.12 / 5.15.8 / 6.2.4，使用这份 OpenSSL 重新构建，其中 5.15.8 附带 QtWebEngine 5.15.13。   
+更新 Qt 6.4.3 和 Qt 6.5.0-rc。
+
+由于 Windows 8.1 结束生命周期，之前使用 Windows 8.1 构建的版本迁移到 Windows 10 10.0.19045 重新构建。  
+之后的构建不会再支持 Windows 8.1。
+
+（第二次）祝基神奄（Iroi Imagay）生日快乐！！
+
+## {{% date 2023 2 25 %}}
+更新 Qt 6.5.0-beta3 系列，使用 NDK r25c 构建，附带内建的 MySQL （MariaDB）数据库后端及插件。
+
+## {{% date 2023 2 12 %}}
+更新 Qt 6.4.2 系列，使用 NDK r25c 构建。
+
+## {{% date 2023 2 10 %}}
+更新 Qt 5.12.12 / 5.15.8 / 6.2.4 / 6.4.2 系列，附带 OpenSSL 1.1.1t / 3.0.8。  
+更新 Qt 5.15 / 6.2 / 6.4 系列，附带内建的 MySQL （MariaDB）数据库后端及插件。  
+使用更多 Visual Studio 版本对 Qt 5.15 系列进行静态 `full` 构建。不再继续对 Qt 5.12 进行静态 `full` 构建。
+
 ## {{% date 2023 1 28 %}}
 更新 Qt 6.5.0-beta2 包。（含有 QtOpcUa）  
 更新 Qt 6.2.4 静态 `full` 构建。提供一个对 {{% QtBug 102877 %}} 的绕过方案。
