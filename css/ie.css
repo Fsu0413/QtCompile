@@ -140,18 +140,17 @@
 	html[dir="rtl"] .expand > .expand-label > i.fa-chevron-right {
 		transform: scaleX(1);
 	}
+	.headline i,
 	.footline i{
 		margin-left: .5rem;
 	}
+	.headline i:first-child,
 	.footline i:first-child{
 		margin-left: 0;
 	}
 	.anchor {
 		margin-left: .66em;
 	}
-	/* rapi-doc
-	seems not be capable of RTL
-	*/
 	html[dir="rtl"] .select-container i,
 	html[dir="rtl"] .select-container span {
 		float: left;
