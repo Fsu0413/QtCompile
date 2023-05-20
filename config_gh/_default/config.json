@@ -23,7 +23,7 @@
 			}
 		}
 	},
-	"Languages": {
+	"languages": {
 		"en" : {
 			"title":"Fsu0413's Original Qt builds",
 			"weight": 1,
