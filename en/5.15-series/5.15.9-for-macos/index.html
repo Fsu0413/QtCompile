@@ -86,7 +86,12 @@
   <ul>
     <li><a href="#dynamic--shared-builds">Dynamic / Shared Builds</a>
       <ul>
-        <li><a href="#macos-x86_64">macOS-x86_64</a></li>
+        <li><a href="#macos-universal">macOS-Universal</a></li>
+      </ul>
+    </li>
+    <li><a href="#static-full-builds">Static <code>Full</code> Builds</a>
+      <ul>
+        <li><a href="#macos-universal-1">macOS-Universal</a></li>
       </ul>
     </li>
   </ul>
@@ -139,55 +144,85 @@ Qt Commerical-Only LTS version has had its version up to 5.15.13 so this version
   </div>
 </div>
 
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
+  <div class="box-content">
+<p>Note: Qt 5.15.13 and before don&rsquo;t compile QtLocation and QtLocation is skipped using Xcode 14.3. Will try after Qt 5.15.14.</p>
+  </div>
+</div>
+
 <div class="box notices cstyle primary">
   <div class="box-label"><i class="fas fa-check-square"></i> CVE issue patched</div>
   <div class="box-content">
 <p>All builds have following CVEs fixed:<br>
 CVE-2022-27404-27405-27406<br>
 CVE-2022-37434<br>
-CVE-2023-24607</p>
+CVE-2023-24607<br>
+CVE-2023-32573</p>
   </div>
 </div>
 <h2 id="dynamic--shared-builds">Dynamic / Shared Builds</h2>
-<h3 id="macos-x86_64">macOS-x86_64</h3>
+<h3 id="macos-universal">macOS-Universal</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.9-macOS-x86_64-AppleClang14.0.0-20230507.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.9-macOS-Universal-AppleClang14.0.3-20230516.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt5.15/macOS-x86_64/Qt5.15.9-macOS-x86_64-AppleClang14.0.0-20230507.tar.xz" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt5.15/macOS-Universal/Qt5.15.9-macOS-Universal-AppleClang14.0.3-20230516.tar.xz" target="_blank"> 
     OSDN link
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/macOS-x86_64/Qt5.15.9-macOS-x86_64-AppleClang14.0.0-20230507.tar.xz" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/macOS-Universal/Qt5.15.9-macOS-Universal-AppleClang14.0.3-20230516.tar.xz/download" target="_blank"> 
     SourceForge link
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 12.6.5</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">AppleClang 14.0.0</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%">With WebEngine 5.15.13 &amp;&amp; QtScript 5.15.13</td></tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 13.3.1</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">AppleClang 14.0.3</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%">With WebEngine 5.15.13 &amp;&amp; QtScript 5.15.13</td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.9-macOS-x86_64-AppleClang14.0.0-noFramework-20230507.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.9-macOS-Universal-AppleClang14.0.3-noFramework-20230516.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt5.15/macOS-x86_64/Qt5.15.9-macOS-x86_64-AppleClang14.0.0-noFramework-20230507.tar.xz" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt5.15/macOS-Universal/Qt5.15.9-macOS-Universal-AppleClang14.0.3-noFramework-20230516.tar.xz" target="_blank"> 
     OSDN link
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/macOS-x86_64/Qt5.15.9-macOS-x86_64-AppleClang14.0.0-noFramework-20230507.tar.xz" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/macOS-Universal/Qt5.15.9-macOS-Universal-AppleClang14.0.3-noFramework-20230516.tar.xz/download" target="_blank"> 
     SourceForge link
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 12.6.5</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">AppleClang 14.0.0</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%">With WebEngine 5.15.13 &amp;&amp; QtScript 5.15.13</td></tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 13.3.1</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">AppleClang 14.0.3</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%">With WebEngine 5.15.13 &amp;&amp; QtScript 5.15.13</td></tr>
+        </tbody>
+    </table>
+<h2 id="static-full-builds">Static <code>Full</code> Builds</h2>
+<h3 id="macos-universal-1">macOS-Universal</h3>
+<table>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.9-macOS-Universal-AppleClang14.0.3-staticFull-20230516.tar.xz</b></th></tr></thead>
+        <tbody>
+            <tr><td width="20%"><b>Download:</b></td>
+                <td colspan="2" width="40%">
+<span class="btn cstyle green">
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt5.15/macOS-Universal/Qt5.15.9-macOS-Universal-AppleClang14.0.3-staticFull-20230516.tar.xz" target="_blank"> 
+    OSDN link
+  </a>
+</span></td>
+                <td colspan="2" width="40%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/macOS-Universal/Qt5.15.9-macOS-Universal-AppleClang14.0.3-staticFull-20230516.tar.xz/download" target="_blank"> 
+    SourceForge link
+  </a>
+</span></td>
+            </tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 13.3.1</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">AppleClang 14.0.3</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%">With QtScript 5.15.13</td></tr>
         </tbody>
     </table>
 
@@ -299,7 +334,7 @@ CVE-2023-24607</p>
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Thu, 11 May 2023 19:53:21 CST</p>
+Site generated: Sat, 20 May 2023 09:47:01 CST</p>
 
         </div>
       </div>
