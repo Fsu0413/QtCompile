@@ -46,6 +46,10 @@ Please refer to the content lists in the left area.
 
 ## Update History
 
+### {{% date 2023 5 22 %}}
+Apply patch for CVE-2023-32762 and CVE-2023-32763 in all supported 5.15.9 and 6.2.4 versions.  
+Apply patch in 5.15.9 macOS version for mapbox-gl-native build issue.
+
 ### {{% date 2023 5 20 %}}
 Update macOS to 13.3.1. Update Xcode to 14.3.  
 Update Qt 5.15.9 Universal host builds and arm64 hosted cross builds.  
