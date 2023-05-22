@@ -83,8 +83,8 @@
     "data": {
       "version": "3.1.20",
       "platform": "macOS",
-      "buildHost": "macOS 12.6.5",
-      "toolchain": "AppleClang 14.0.0",
+      "buildHost": "macOS 13.3.1",
+      "toolchain": "AppleClang 14.0.3",
       "arch": "Unified (x86_64, arm64)"
     },
     "sort": 30110
@@ -154,7 +154,7 @@
       "version": "3.3.4",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22621",
-      "toolchain": "MinGW-w64 w/ LLVM 16.0.3 (ucrt)",
+      "toolchain": "MinGW-w64 w/ LLVM 16.0.4 (ucrt)",
       "arch": "x86_64"
     },
     "sort": 30307
@@ -173,8 +173,8 @@
     "data": {
       "version": "3.3.4",
       "platform": "macOS",
-      "buildHost": "macOS 12.6.5",
-      "toolchain": "AppleClang 14.0.0",
+      "buildHost": "macOS 13.3.1",
+      "toolchain": "AppleClang 14.0.3",
       "arch": "Unified (x86_64, arm64)"
     },
     "sort": 30309
