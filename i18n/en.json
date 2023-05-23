@@ -131,5 +131,14 @@
 	},
 	"fsqtbuild_i18n_macOSUniversal": {
 		"other": "I'll provide only Universal Binary builds of macOS of this version. [Universal binaries](https://developer.apple.com/documentation/apple-silicon/building-a-universal-macos-binary) run natively on Intel Macs and Apple Sillicon Macs."
+	},
+	"fsqtbuild_i18n_patchesTitle": {
+		"other": "Patches (mostly CVE issue)"
+	},
+	"fsqtbuild_i18n_patches": {
+		"other": "I build Qt with patches. See following page for a list of patches:"
+	},
+	"fsqtbuild_i18n_patchesTag": {
+		"other": "existing-patches"
 	}
 }
