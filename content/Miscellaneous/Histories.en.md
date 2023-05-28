@@ -466,6 +466,8 @@ Upload new packages built since Mar, 2019.
 
 ## Before year 2017 (Black history)
 
+{{% expand title="Expand" %}}
+
 So I did want to write something here, but I don't know how to say.....
 
 ### {{% date 2016 7 23 %}}
@@ -536,3 +538,5 @@ Upload 5.6.1 VS2015 Static packages.
 
 ### {{% date 2016 6 13 %}}
 Initial commit, includes builds of Qt 5.6.0, part of 5.6.1 and 5.7.0-RC.
+
+{{% /expand %}}
