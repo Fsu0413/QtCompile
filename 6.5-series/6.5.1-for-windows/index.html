@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.111.3">
-    <meta name="generator" content="Relearn 5.14.3">
+    <meta name="generator" content="Hugo 0.112.7">
+    <meta name="generator" content="Relearn 5.15.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
-    <title>6.5.0 for Android :: Fsu0413&#39;s Original Qt builds</title>
-    <link href="/6.5-series/6.5.0-for-android/index.html" rel="alternate" hreflang="x-default">
-    <link href="/6.5-series/6.5.0-for-android/index.html" rel="alternate" hreflang="en">
-    <link href="/zh-cn/6.5-series/6.5.0-for-android/index.html" rel="alternate" hreflang="zh-cn">
+    <title>6.5.1 for Windows :: Fsu0413&#39;s Original Qt builds</title>
+    <link href="/6.5-series/6.5.1-for-windows/index.html" rel="alternate" hreflang="x-default">
+    <link href="/6.5-series/6.5.1-for-windows/index.html" rel="alternate" hreflang="en">
+    <link href="/zh-cn/6.5-series/6.5.1-for-windows/index.html" rel="alternate" hreflang="zh-cn">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/css/fontawesome-all.min.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css" rel="stylesheet"></noscript>
     <link href="/css/nucleus.css" rel="stylesheet">
@@ -64,7 +64,7 @@
     }
 </style>
   </head>
-  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/6.5-series/6.5.0-for-android/index.html">
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/6.5-series/6.5.1-for-windows/index.html">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
@@ -78,17 +78,23 @@
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Fsu0413&#39;s Original Qt builds</span></a><meta itemprop="position" content="1"> &gt; </li>
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/6.5-series/index.html"><span itemprop="name">6.5 series</span></a><meta itemprop="position" content="2"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">6.5.0 for Android</span><meta itemprop="position" content="3"></li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">6.5.1 for Windows</span><meta itemprop="position" content="3"></li>
             </ol>
           </div>
           <div class="default-animation progress">
             <div class="toc-wrapper"><nav id="TableOfContents">
   <ul>
-    <li><a href="#dynamic-builds">Dynamic Builds</a>
+    <li><a href="#dynamic--shared-builds">Dynamic / Shared Builds</a>
       <ul>
-        <li><a href="#windows-host">Windows Host</a></li>
-        <li><a href="#linux-host">Linux Host</a></li>
-        <li><a href="#macos-host">macOS Host</a></li>
+        <li><a href="#windows-msvc">Windows-MSVC</a></li>
+        <li><a href="#windows-mingw">Windows-MinGW</a></li>
+        <li><a href="#windows-mingw-llvm">Windows-MinGW-LLVM</a></li>
+      </ul>
+    </li>
+    <li><a href="#static-full-builds">Static <code>Full</code> Builds</a>
+      <ul>
+        <li><a href="#windows-msvc-1">Windows-MSVC</a></li>
+        <li><a href="#windows-mingw-1">Windows-MinGW</a></li>
       </ul>
     </li>
   </ul>
@@ -102,7 +108,7 @@
           <article class="default">
             <header class="headline">
             </header>
-<h1 id="650-for-android">6.5.0 for Android</h1>
+<h1 id="651-for-windows">6.5.1 for Windows</h1>
 
 
 <div class="box notices cstyle info">
@@ -111,6 +117,7 @@
 <p>Following database backend is distributed with this version:</p>
 <ol>
 <li>SQLite (distributed with Qt): Built in the package using command <code>-DFEATURE_sql_sqlite -DFEATURE_system_sqlite=OFF</code>.</li>
+<li>ODBC: Built in the package using command <code>-DFEATURE_sql_odbc</code>.</li>
 </ol>
   </div>
 </div>
@@ -123,6 +130,7 @@
 Following backend(s) are built in the package:</p>
 <ol>
 <li>OpenSSL 3.0 series using <code>-DFEATURE_openssl=ON -DINPUT_openssl=linked</code> for enabling linked OpenSSL support</li>
+<li>Windows Secure Channel using <code>-DFEATURE_schannel=ON</code> with TLS 1.3 support on MSVC version</li>
 </ol>
   </div>
 </div>
@@ -131,149 +139,209 @@ Following backend(s) are built in the package:</p>
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
   <div class="box-content">
-<p>Since Qt 6.3 I drop 32-bit builds for community.</p>
-  </div>
-</div>
-
-<div class="box notices cstyle info">
-  <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
-  <div class="box-content">
 All builds have <code>-DFEATURE_icu=OFF</code> because I think the ICU library is too big and, in most of the conditions, useless for common users.  </div>
 </div>
 
-
-<div class="box notices cstyle info">
-  <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
-  <div class="box-content">
-Built using NDK r25c with <code>-DANDROID_NATIVE_API_LEVEL=27</code> argument.<br>
-It means the APK built using these builds may only be run on Android 8.1 and later.  </div>
-</div>
-<h2 id="dynamic-builds">Dynamic Builds</h2>
-<h3 id="windows-host">Windows Host</h3>
+<h2 id="dynamic--shared-builds">Dynamic / Shared Builds</h2>
+<h3 id="windows-msvc">Windows-MSVC</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.0-Android-arm64-Clang-NDKr25c-XWindows-x86_64-MinGW12.2.0-20230507.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.1-Windows-x86_64-VS2022-17.6.2-20230601.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/Android/Qt6.5.0-Android-arm64-Clang-NDKr25c-XWindows-x86_64-MinGW12.2.0-20230507.7z" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-VS2022-17.6.2-20230601.7z" target="_blank"> 
     OSDN link
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/Qt6.5.0-Android-arm64-Clang-NDKr25c-XWindows-x86_64-MinGW12.2.0-20230507.7z" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-VS2022-17.6.2-20230601.7z" target="_blank"> 
     SourceForge link
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r25c</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">VS2022 17.6.2 w/ Windows SDK 10.0.22621</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+        </tbody>
+    </table>
+<h3 id="windows-mingw">Windows-MinGW</h3>
+<table>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.1-Windows-x86_64-MinGW12.2.0-msvcrt-20230531.7z</b></th></tr></thead>
+        <tbody>
+            <tr><td width="20%"><b>Download:</b></td>
+                <td colspan="2" width="40%">
+<span class="btn cstyle green">
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-MinGW12.2.0-msvcrt-20230531.7z" target="_blank"> 
+    OSDN link
+  </a>
+</span></td>
+                <td colspan="2" width="40%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-MinGW12.2.0-msvcrt-20230531.7z" target="_blank"> 
+    SourceForge link
+  </a>
+</span></td>
+            </tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">MinGW-w64 w/ GCC 12.2.0 (msvcrt)</td></tr><tr><td width="20%"><b>MinGW Used:</b></td><td colspan="4" width="80%">
+<span class="btn cstyle grey">
+  <a href="https://github.com/niXman/mingw-builds-binaries/releases/download/12.2.0-rt_v10-rev2/x86_64-12.2.0-release-posix-seh-msvcrt-rt_v10-rev2.7z" target="_blank"> 
+    64-bit MinGW-w64 w/ GCC 12.2.0 msvcrt
+  </a>
+</span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.0-Android-x86_64-Clang-NDKr25c-XWindows-x86_64-MinGW12.2.0-20230507.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.1-Windows-x86_64-MinGW12.2.0-ucrt-20230531.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/Android/Qt6.5.0-Android-x86_64-Clang-NDKr25c-XWindows-x86_64-MinGW12.2.0-20230507.7z" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-MinGW12.2.0-ucrt-20230531.7z" target="_blank"> 
     OSDN link
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/Qt6.5.0-Android-x86_64-Clang-NDKr25c-XWindows-x86_64-MinGW12.2.0-20230507.7z" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-MinGW12.2.0-ucrt-20230531.7z" target="_blank"> 
     SourceForge link
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r25c</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">MinGW-w64 w/ GCC 12.2.0 (ucrt)</td></tr><tr><td width="20%"><b>MinGW Used:</b></td><td colspan="4" width="80%">
+<span class="btn cstyle grey">
+  <a href="https://github.com/niXman/mingw-builds-binaries/releases/download/12.2.0-rt_v10-rev2/x86_64-12.2.0-release-posix-seh-ucrt-rt_v10-rev2.7z" target="_blank"> 
+    64-bit MinGW-w64 w/ GCC 12.2.0 UCRT
+  </a>
+</span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
-<h3 id="linux-host">Linux Host</h3>
+<h3 id="windows-mingw-llvm">Windows-MinGW-LLVM</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.0-Android-arm64-Clang-NDKr25c-xLinux-x86_64-gcc11.3.1-20230507.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.1-Windows-x86_64-llvm-mingw-16.0.4-ucrt-20230601.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/Android/Qt6.5.0-Android-arm64-Clang-NDKr25c-xLinux-x86_64-gcc11.3.1-20230507.tar.xz" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-llvm-mingw-16.0.4-ucrt-20230601.7z" target="_blank"> 
     OSDN link
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/Qt6.5.0-Android-arm64-Clang-NDKr25c-xLinux-x86_64-gcc11.3.1-20230507.tar.xz" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-llvm-mingw-16.0.4-ucrt-20230601.7z" target="_blank"> 
     SourceForge link
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">RockyLinux 9.1</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r25c</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
-        </tbody>
-    </table>
-<table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.0-Android-x86_64-Clang-NDKr25c-xLinux-x86_64-gcc11.3.1-20230507.tar.xz</b></th></tr></thead>
-        <tbody>
-            <tr><td width="20%"><b>Download:</b></td>
-                <td colspan="2" width="40%">
-<span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/Android/Qt6.5.0-Android-x86_64-Clang-NDKr25c-xLinux-x86_64-gcc11.3.1-20230507.tar.xz" target="_blank"> 
-    OSDN link
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">MinGW-w64 w/ LLVM 16.0.4 (ucrt)</td></tr><tr><td width="20%"><b>MinGW Used:</b></td><td colspan="4" width="80%">
+<span class="btn cstyle grey">
+  <a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20230517/llvm-mingw-20230517-ucrt-x86_64.zip" target="_blank"> 
+    64-bit MinGW-W64 w/ LLVM 16.0.4 UCRT
   </a>
-</span></td>
-                <td colspan="2" width="40%">
-<span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/Qt6.5.0-Android-x86_64-Clang-NDKr25c-xLinux-x86_64-gcc11.3.1-20230507.tar.xz" target="_blank"> 
-    SourceForge link
-  </a>
-</span></td>
-            </tr>
-            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">RockyLinux 9.1</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r25c</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
-        </tbody>
-    </table>
-<h3 id="macos-host">macOS Host</h3>
-<table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.0-Android-arm64-Clang-NDKr25c-xmacOS-Universal-AppleClang14.0.3-20230515.tar.xz</b></th></tr></thead>
-        <tbody>
-            <tr><td width="20%"><b>Download:</b></td>
-                <td colspan="2" width="40%">
-<span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/Android/Qt6.5.0-Android-arm64-Clang-NDKr25c-xmacOS-Universal-AppleClang14.0.3-20230515.tar.xz" target="_blank"> 
-    OSDN link
-  </a>
-</span></td>
-                <td colspan="2" width="40%">
-<span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/Qt6.5.0-Android-arm64-Clang-NDKr25c-xmacOS-Universal-AppleClang14.0.3-20230515.tar.xz" target="_blank"> 
-    SourceForge link
-  </a>
-</span></td>
-            </tr>
-            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 13.3.1</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r25c</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+</span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.0-Android-x86_64-Clang-NDKr25c-xmacOS-Universal-AppleClang14.0.3-20230515.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.1-Windows-x86_64-llvm-mingw-16.0.0-msvcrt-20230601.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/Android/Qt6.5.0-Android-x86_64-Clang-NDKr25c-xmacOS-Universal-AppleClang14.0.3-20230515.tar.xz" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-llvm-mingw-16.0.0-msvcrt-20230601.7z" target="_blank"> 
     OSDN link
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/Qt6.5.0-Android-x86_64-Clang-NDKr25c-xmacOS-Universal-AppleClang14.0.3-20230515.tar.xz" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-llvm-mingw-16.0.0-msvcrt-20230601.7z" target="_blank"> 
     SourceForge link
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 13.3.1</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r25c</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">MinGW-w64 w/ LLVM 16.0.0 (msvcrt)</td></tr><tr><td width="20%"><b>MinGW Used:</b></td><td colspan="4" width="80%">
+<span class="btn cstyle grey">
+  <a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20230320/llvm-mingw-20230320-msvcrt-x86_64.zip" target="_blank"> 
+    64-bit MinGW-W64 w/ LLVM 16.0.0 msvcrt
+  </a>
+</span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+        </tbody>
+    </table>
+<h2 id="static-full-builds">Static <code>Full</code> Builds</h2>
+<h3 id="windows-msvc-1">Windows-MSVC</h3>
+<table>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.1-Windows-x86_64-VS2022-17.6.2-staticFull-20230601.7z</b></th></tr></thead>
+        <tbody>
+            <tr><td width="20%"><b>Download:</b></td>
+                <td colspan="2" width="40%">
+<span class="btn cstyle green">
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-VS2022-17.6.2-staticFull-20230601.7z" target="_blank"> 
+    OSDN link
+  </a>
+</span></td>
+                <td colspan="2" width="40%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-VS2022-17.6.2-staticFull-20230601.7z" target="_blank"> 
+    SourceForge link
+  </a>
+</span></td>
+            </tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">VS2022 17.6.2 w/ Windows SDK 10.0.22621</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+        </tbody>
+    </table>
+<h3 id="windows-mingw-1">Windows-MinGW</h3>
+<table>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.1-Windows-x86_64-MinGW12.2.0-msvcrt-staticFull-20230531.7z</b></th></tr></thead>
+        <tbody>
+            <tr><td width="20%"><b>Download:</b></td>
+                <td colspan="2" width="40%">
+<span class="btn cstyle green">
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-MinGW12.2.0-msvcrt-staticFull-20230531.7z" target="_blank"> 
+    OSDN link
+  </a>
+</span></td>
+                <td colspan="2" width="40%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-MinGW12.2.0-msvcrt-staticFull-20230531.7z" target="_blank"> 
+    SourceForge link
+  </a>
+</span></td>
+            </tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">MinGW-w64 w/ GCC 12.2.0 (msvcrt)</td></tr><tr><td width="20%"><b>MinGW Used:</b></td><td colspan="4" width="80%">
+<span class="btn cstyle grey">
+  <a href="https://github.com/niXman/mingw-builds-binaries/releases/download/12.2.0-rt_v10-rev2/x86_64-12.2.0-release-posix-seh-msvcrt-rt_v10-rev2.7z" target="_blank"> 
+    64-bit MinGW-w64 w/ GCC 12.2.0 msvcrt
+  </a>
+</span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+        </tbody>
+    </table>
+<table>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.1-Windows-x86_64-MinGW12.2.0-ucrt-staticFull-20230601.7z</b></th></tr></thead>
+        <tbody>
+            <tr><td width="20%"><b>Download:</b></td>
+                <td colspan="2" width="40%">
+<span class="btn cstyle green">
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-MinGW12.2.0-ucrt-staticFull-20230601.7z" target="_blank"> 
+    OSDN link
+  </a>
+</span></td>
+                <td colspan="2" width="40%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-MinGW12.2.0-ucrt-staticFull-20230601.7z" target="_blank"> 
+    SourceForge link
+  </a>
+</span></td>
+            </tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">MinGW-w64 w/ GCC 12.2.0 (ucrt)</td></tr><tr><td width="20%"><b>MinGW Used:</b></td><td colspan="4" width="80%">
+<span class="btn cstyle grey">
+  <a href="https://github.com/niXman/mingw-builds-binaries/releases/download/12.2.0-rt_v10-rev2/x86_64-12.2.0-release-posix-seh-ucrt-rt_v10-rev2.7z" target="_blank"> 
+    64-bit MinGW-w64 w/ GCC 12.2.0 UCRT
+  </a>
+</span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 
             <footer class="footline">
+
             </footer>
           </article>
         </div>
@@ -306,10 +374,10 @@ It means the APK built using these builds may only be run on Android 8.1 and lat
           <li data-nav-id="/6.2-series/6.2.4-for-android/index.html" class=""><a class="padding" href="/6.2-series/6.2.4-for-android/index.html">6.2.4 for Android</a></li>
           <li data-nav-id="/6.2-series/6.2.4-for-webassembly/index.html" class=""><a class="padding" href="/6.2-series/6.2.4-for-webassembly/index.html">6.2.4 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/6.5-series/index.html" class="parent "><a class="padding" href="/6.5-series/index.html">6.5 series</a><ul id="subsections-1870fa5a2d192ec83aafe29160552269" class="morespace">
-          <li data-nav-id="/6.5-series/6.5.0-for-windows/index.html" class=""><a class="padding" href="/6.5-series/6.5.0-for-windows/index.html">6.5.0 for Windows</a></li>
-          <li data-nav-id="/6.5-series/6.5.0-for-macos/index.html" class=""><a class="padding" href="/6.5-series/6.5.0-for-macos/index.html">6.5.0 for macOS</a></li>
-          <li data-nav-id="/6.5-series/6.5.0-for-android/index.html" class="active"><a class="padding" href="/6.5-series/6.5.0-for-android/index.html">6.5.0 for Android</a></li>
-          <li data-nav-id="/6.5-series/6.5.0-for-webassembly/index.html" class=""><a class="padding" href="/6.5-series/6.5.0-for-webassembly/index.html">6.5.0 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/6.5-series/6.5.1-for-windows/index.html" class="active"><a class="padding" href="/6.5-series/6.5.1-for-windows/index.html">6.5.1 for Windows</a></li>
+          <li data-nav-id="/6.5-series/6.5.1-for-macos/index.html" class=""><a class="padding" href="/6.5-series/6.5.1-for-macos/index.html">6.5.1 for macOS</a></li>
+          <li data-nav-id="/6.5-series/6.5.1-for-android/index.html" class=""><a class="padding" href="/6.5-series/6.5.1-for-android/index.html">6.5.1 for Android</a></li>
+          <li data-nav-id="/6.5-series/6.5.1-for-webassembly/index.html" class=""><a class="padding" href="/6.5-series/6.5.1-for-webassembly/index.html">6.5.1 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/miscellaneous/index.html" class=""><a class="padding" href="/miscellaneous/index.html">Miscellaneous</a><ul id="subsections-59c45accf7e43befe663d68447543959" class="morespace">
           <li data-nav-id="/miscellaneous/notes-for-this-repo/index.html" class=""><a class="padding" href="/miscellaneous/notes-for-this-repo/index.html">Notes for this repo</a></li>
           <li data-nav-id="/miscellaneous/current-build-status/index.html" class=""><a class="padding" href="/miscellaneous/current-build-status/index.html">Current build status</a></li>
@@ -349,8 +417,8 @@ It means the APK built using these builds may only be run on Android 8.1 and lat
                 <div class="select-style">
                   <label class="a11y-only" for="select-language">Language</label>
                   <select id="select-language" onchange="location = baseUri + this.value;">
-                    <option lang="en" id="en" value="/6.5-series/6.5.0-for-android/index.html" selected>English</option>
-                    <option lang="zh-cn" id="zh-cn" value="/zh-cn/6.5-series/6.5.0-for-android/index.html">简体中文（中国）</option>
+                    <option lang="en" id="en" value="/6.5-series/6.5.1-for-windows/index.html" selected>English</option>
+                    <option lang="zh-cn" id="zh-cn" value="/zh-cn/6.5-series/6.5.1-for-windows/index.html">简体中文（中国）</option>
                   </select>
                 </div>
                 <div class="select-clear"></div>
@@ -381,7 +449,7 @@ It means the APK built using these builds may only be run on Android 8.1 and lat
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Tue, 23 May 2023 08:22:18 CST</p>
+Site generated: Sat, 03 Jun 2023 16:25:07 CST</p>
 
         </div>
       </div>
