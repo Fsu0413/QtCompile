@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.111.3">
-    <meta name="generator" content="Relearn 5.14.3">
+    <meta name="generator" content="Hugo 0.112.7">
+    <meta name="generator" content="Relearn 5.15.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>Fsu0413&#39;s Original Qt builds</title>
@@ -90,6 +90,7 @@
     <li><a href="#current-failures">Current failures</a></li>
     <li><a href="#update-history">Update History</a>
       <ul>
+        <li><a href="#3rd-jun-2023">3rd Jun, 2023</a></li>
         <li><a href="#22nd-may-2023">22nd May, 2023</a></li>
         <li><a href="#20th-may-2023">20th May, 2023</a></li>
         <li><a href="#11th-may-2023">11th May, 2023</a></li>
@@ -135,6 +136,13 @@ Thanks for The Qt Company Ltd. and the programmers of Qt for their fantastic wor
 <h2 id="current-failures">Current failures</h2>
 <p><a href="/qtcompile/en/miscellaneous/current-failures/">Here</a></p>
 <h2 id="update-history">Update History</h2>
+<h3 id="3rd-jun-2023">3rd Jun, 2023</h3>
+<p>Apply patch for CVE-2023-33285 in all supported 5.15.9 and 6.2.4 versions.<br>
+Update Qt 5.15.9 series with QtWebEngine / QtScript 5.15.14.<br>
+Update Qt 6.5 series to 6.5.1.<br>
+Update OpenSSL to 3.0.9 / 1.1.1u. All builds what uses OpenSSL are rebuilt.<br>
+Update MariaDB Connector C to 3.3.5 / 3.1.21. All builds what uses MariaDB Connector C are rebuilt.</p>
+<p>(Actually there was planned update on 31st May, 2023. The update is cancelled because of OSDN service instability and publish of patch of CVE-2023-33285)</p>
 <h3 id="22nd-may-2023">22nd May, 2023</h3>
 <p>Apply patch for CVE-2023-32762 and CVE-2023-32763 in all supported 5.15.9 and 6.2.4 versions.<br>
 Apply patch in 5.15.9 macOS version for mapbox-gl-native build issue.</p>
@@ -154,6 +162,7 @@ I distributes only non-ASM build of OpenSSL so it is not affected to my builds. 
 <p><a href="/qtcompile/en/miscellaneous/histories/">Here</a></p>
 
             <footer class="footline">
+
             </footer>
           </article>
         </div>
@@ -186,10 +195,10 @@ I distributes only non-ASM build of OpenSSL so it is not affected to my builds. 
           <li data-nav-id="/qtcompile/en/6.2-series/6.2.4-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/6.2-series/6.2.4-for-android/index.html">6.2.4 for Android</a></li>
           <li data-nav-id="/qtcompile/en/6.2-series/6.2.4-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/en/6.2-series/6.2.4-for-webassembly/index.html">6.2.4 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/qtcompile/en/6.5-series/index.html" class=""><a class="padding" href="/qtcompile/en/6.5-series/index.html">6.5 series</a><ul id="subsections-1870fa5a2d192ec83aafe29160552269" class="morespace">
-          <li data-nav-id="/qtcompile/en/6.5-series/6.5.0-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/6.5-series/6.5.0-for-windows/index.html">6.5.0 for Windows</a></li>
-          <li data-nav-id="/qtcompile/en/6.5-series/6.5.0-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/6.5-series/6.5.0-for-macos/index.html">6.5.0 for macOS</a></li>
-          <li data-nav-id="/qtcompile/en/6.5-series/6.5.0-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/6.5-series/6.5.0-for-android/index.html">6.5.0 for Android</a></li>
-          <li data-nav-id="/qtcompile/en/6.5-series/6.5.0-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/en/6.5-series/6.5.0-for-webassembly/index.html">6.5.0 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/qtcompile/en/6.5-series/6.5.1-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/6.5-series/6.5.1-for-windows/index.html">6.5.1 for Windows</a></li>
+          <li data-nav-id="/qtcompile/en/6.5-series/6.5.1-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/6.5-series/6.5.1-for-macos/index.html">6.5.1 for macOS</a></li>
+          <li data-nav-id="/qtcompile/en/6.5-series/6.5.1-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/6.5-series/6.5.1-for-android/index.html">6.5.1 for Android</a></li>
+          <li data-nav-id="/qtcompile/en/6.5-series/6.5.1-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/en/6.5-series/6.5.1-for-webassembly/index.html">6.5.1 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/qtcompile/en/miscellaneous/index.html" class=""><a class="padding" href="/qtcompile/en/miscellaneous/index.html">Miscellaneous</a><ul id="subsections-59c45accf7e43befe663d68447543959" class="morespace">
           <li data-nav-id="/qtcompile/en/miscellaneous/notes-for-this-repo/index.html" class=""><a class="padding" href="/qtcompile/en/miscellaneous/notes-for-this-repo/index.html">Notes for this repo</a></li>
           <li data-nav-id="/qtcompile/en/miscellaneous/current-build-status/index.html" class=""><a class="padding" href="/qtcompile/en/miscellaneous/current-build-status/index.html">Current build status</a></li>
@@ -261,7 +270,7 @@ I distributes only non-ASM build of OpenSSL so it is not affected to my builds. 
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Tue, 23 May 2023 08:24:48 CST</p>
+Site generated: Sat, 03 Jun 2023 16:25:02 CST</p>
 
         </div>
       </div>
