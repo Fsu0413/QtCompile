@@ -8,7 +8,7 @@
 {{- $fsqtbuildwasmcontent = print $fsqtbuildwasmcontent2 "\n\n" $fsqtbuildwasmthreadcontent -}}
 {{- end -}}
 {{ partial "shortcodes/notice.html" (dict
-    "context" .
+    "context" .Page
     "style" "info"
     "title" (T "Note")
     "icon" "fas fa-info-circle"
