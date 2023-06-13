@@ -164,15 +164,15 @@ LTS 只给商业许可，那么 LTS 的源码包是什么许可？
 
 还有，我会继续我编译 Qt 的业余工作，希望 QT for MCUs 早日开源。
 
-## Qt 6 支持的平台（{{% date 2023 1 7 %}}更新）
+## Qt 6 支持的平台（{{% date 2023 6 14 %}}更新）
 
-参考 {{% QtBug 104266 "Qt 6.5 TQC Supported Targets" %}} 和它的前置任务。
+参考 {{% QtBug 113979 "Qt 6.6 TQC Supported Targets" %}} 和它的前置任务。
 
 现在我为如下平台构建 Qt 6。
 
 Windows 11 - VS2019, x86_64, host and target  
 Windows 11 - MinGW, x86_64, host and target  
-macOS 12 - toolchain provided by Apple with AppleClang, x86_64 / arm64_v8a, host and target, universal  
+macOS 13 - toolchain provided by Apple with AppleClang, x86_64 / arm64_v8a, host and target, universal  
 Android - NDK, arm / x86 / arm64 / x86_64, target only. No 32bit builds after 6.3  
 WebAssembly - emscripten, target only  
 Linux - toolchain provided by RedHat modified by RockyLinux developers with GCC, x86_64, host only
@@ -241,7 +241,6 @@ OpenSSL 1.1.1 系列将于 {{% date 2023 9 11 %}}结束支持，而 OpenSSL 3.0 
 
 | Qt 版本 | 商业专属发布日 | 开源发布日 |
 |-|-|-|
-| 5.15.10 | {{% date 2022 6 7 %}} | {{% date 2023 6 7 %}} |
 | 5.15.11 | {{% date 2022 10 5 %}} | {{% date 2023 10 5 %}} |
 | 5.15.12 | {{% date 2022 12 27 %}} | {{% date 2023 12 27 %}} |
 | 5.15.13 | {{% date 2023 3 9 %}} | {{% date 2024 3 9 %}} |
@@ -253,8 +252,8 @@ OpenSSL 1.1.1 系列将于 {{% date 2023 9 11 %}}结束支持，而 OpenSSL 3.0 
 
 ## 之后可能会更新的内容
 
-~~使用安卓 NDK r23 系列构建 Qt 5.15.7 以及之后的版本。~~ （构建失败了，包括 5.15.9 也失败了，将于 5.15.10 再次尝试）  
-使用带 MinGW-w64 v9 的 GCC 11 来构建 Qt 5.15.10 以及之后的版本。（5.15.9 上尝试过，失败了）  
+~~使用安卓 NDK r23 系列构建 Qt 5.15.7 以及之后的版本。~~ （构建失败了，包括 5.15.10 也失败了，将于 5.15.11 再次尝试）  
+~~使用带 MinGW-w64 v9 的 GCC 11 来构建 Qt 5.15.10 以及之后的版本。~~ （5.15.10 上尝试过，失败了，将于 5.15.11 再次尝试）  
 
 ## 已有的补丁
 
@@ -278,3 +277,4 @@ OpenSSL 1.1.1 系列将于 {{% date 2023 9 11 %}}结束支持，而 OpenSSL 3.0 
 | CVE-2023-32762 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-32762-qtbase-5.15.diff) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-32762-qtbase-6.2.diff) |
 | CVE-2023-32763 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-32763-qtbase-5.15.diff) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-32763-qtbase-6.2.diff) |
 | CVE-2023-33285 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-33285-qtbase-5.15.diff) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-33285-qtbase-6.2.diff) |
+| CVE-2023-34410 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-34410-qtbase-5.15.diff) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-34410-qtbase-6.2.diff) |

@@ -1,9 +1,8 @@
 ---
 title: "Fsu0413\'s Original Qt builds"
 draft: false
+archetype: "home"
 ---
-
-# Fsu0413's Original Qt builds
 
 ## STOP USING Notepad++
 
@@ -46,6 +45,13 @@ Please refer to the content lists in the left area.
 
 ## Update History
 
+### {{% date 2023 6 14 %}}
+Update Qt 5.15.10 series with QtWebEngine / QtScript 5.15.14.  
+Apply patch for CVE-2023-34410 in all supported 5.15.10 and 6.2.4 versions.  
+Update LLVM-MinGW to 20230603. Qt 6.2.4 and Qt 6.5.1 LLVM-MinGW packages are rebuilt.
+
+OSDN Chamber is deleted. All file hosting service are migrated to Project.
+
 ### {{% date 2023 6 3 %}}
 Apply patch for CVE-2023-33285 in all supported 5.15.9 and 6.2.4 versions.  
 Update Qt 5.15.9 series with QtWebEngine / QtScript 5.15.14.  
@@ -55,27 +61,6 @@ Update MariaDB Connector C to 3.3.5 / 3.1.21. All builds what uses MariaDB Conne
 
 (Actually there was planned update on {{% date 2023 5 31 %}}. The update is cancelled because of OSDN service instability and publish of patch of CVE-2023-33285)
 
-### {{% date 2023 5 22 %}}
-Apply patch for CVE-2023-32762 and CVE-2023-32763 in all supported 5.15.9 and 6.2.4 versions.  
-Apply patch in 5.15.9 macOS version for mapbox-gl-native build issue.
-
-### {{% date 2023 5 20 %}}
-Update macOS to 13.3.1. Update Xcode to 14.3.  
-Update Qt 5.15.9 Universal host builds and arm64 hosted cross builds.  
-Update MinGW-w64 with GCC UCRT builds of Qt 6.2.4 and Qt 6.5.0.
-
-Apply patch for CVE-2023-32573 in all supported 5.15.9 and 6.2.4 versions.
-
-### {{% date 2023 5 11 %}}
-Use OSDN project instead of Chamber (a.k.a. PersonalForge) for file hosting.
-
-### {{% date 2023 5 9 %}}
-Update Qt 5.15.9 / 6.5.0.  
-Remove Qt 6.4 series.
-
-On {{% date 2023 4 20 %}} OpenSSL released [a minor fix](https://www.openssl.org/news/secadv/20230420.txt) which applies for ARM built OpenSSL binary.  
-I distributes only non-ASM build of OpenSSL so it is not affected to my builds. This update will not integrated to my builds.
-
-### Before Jan. 2023
+### Before May. 2023
 
 [Here]({{% relref "miscellaneous/histories" %}})

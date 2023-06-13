@@ -4,6 +4,27 @@ draft: false
 weight: 4
 ---
 
+## {{% date 2023 5 22 %}}
+对于所有受支持的 5.15.9 和 6.2.4 版本，应用 CVE-2023-32762 和 CVE-2023-32763 补丁。  
+为 macOS 的 5.15.9 版本应用 mapbox-gl-native 构建问题的补丁。
+
+## {{% date 2023 5 20 %}}
+更新 macOS 到 13.3.1。更新 Xcode 到 14.3。  
+更新 Qt 5.15.9 统一二进制主机构建以及 arm64 主机版交叉构建。   
+更新 Qt 6.2.4 和 6.5.0 的 UCRT 版本的 MinGW-w64 GCC 构建。
+
+对于所有受支持的 5.15.9 和 6.2.4 版本，应用 CVE-2023-32573 补丁。
+
+## {{% date 2023 5 11 %}}
+使用 OSDN 项目代替 Chamber （或者叫做 PersonalForge）提供文件服务。Chamber 不会再更新并将于一段时间后删除。
+
+## {{% date 2023 5 9 %}}
+更新 Qt 5.15.9 / 6.5.0。  
+删除 Qt 6.4 系列。
+
+OpenSSL 于 {{% date 2023 4 20 %}}发布的 [微小更新](https://www.openssl.org/news/secadv/20230420.txt) 仅适用于 ASM 构建的 OpenSSL 二进制文件。  
+由于我构建的 OpenSSL 均为非 ASM 构建，所以对我的构建没有影响。此更新不会被应用到我构建的版本中。
+
 ## {{% date 2023 3 25 %}}
 更新 OpenSSL 1.1.1t / 3.0.8，附带 [微小更新](https://www.openssl.org/news/secadv/20230322.txt)。  
 更新 Qt 5.12.12 / 5.15.8 / 6.2.4，使用这份 OpenSSL 重新构建，其中 5.15.8 附带 QtWebEngine 5.15.13。   

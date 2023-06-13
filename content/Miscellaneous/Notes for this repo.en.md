@@ -164,15 +164,15 @@ This will definitely lose money.
 
 I will continue my amateur job of building Qt. I hope Qt for MCUs will be open source soon.
 
-## Qt 6 support platforms (updated {{% date 2023 1 7 %}})
+## Qt 6 support platforms (updated {{% date 2023 6 14 %}})
 
-See {{% QtBug 104266 "Qt 6.5 TQC Supported Targets" %}} and its predecessors.
+See {{% QtBug 113979 "Qt 6.6 TQC Supported Targets" %}} and its predecessors.
 
 Currently I am building Qt 6 for following platforms:
 
 Windows 11 - VS2019, x86_64, host and target  
 Windows 11 - MinGW, x86_64, host and target  
-macOS 12 - toolchain provided by Apple with AppleClang, x86_64 / arm64_v8a, host and target, universal  
+macOS 13 - toolchain provided by Apple with AppleClang, x86_64 / arm64_v8a, host and target, universal  
 Android - NDK, arm / x86 / arm64 / x86_64, target only. No 32bit builds after 6.3  
 WebAssembly - emscripten, target only  
 Linux - toolchain provided by RedHat modified by RockyLinux developers with GCC, x86_64, host only
@@ -241,7 +241,6 @@ Commericial-only Qt Open Source Release Date (ETA)
 
 | Qt Version | Commericial Release Date | Open Source Release Date |
 |-|-|-|
-| 5.15.10 | {{% date 2022 6 7 %}} | {{% date 2023 6 7 %}} |
 | 5.15.11 | {{% date 2022 10 5 %}} | {{% date 2023 10 5 %}} |
 | 5.15.12 | {{% date 2022 12 27 %}} | {{% date 2023 12 27 %}} |
 | 5.15.13 | {{% date 2023 3 9 %}} | {{% date 2024 3 9 %}} |
@@ -253,8 +252,8 @@ Commericial-only Qt Open Source Release Date (ETA)
 
 ## Incoming update for future release
 
-~~Use Android NDK r23 series for building Qt 5.15.7 onwards.~~ (Build failed also on 5.15.9. Will test it on 5.15.10)  
-Use GCC 11 with MinGW-w64 v9 for building Qt 5.15.10 onwards. (Build failed on 5.15.9)  
+~~Use Android NDK r23 series for building Qt 5.15.7 onwards.~~ (Build failed also on 5.15.10. Will test it on 5.15.11)  
+~~Use GCC 11 with MinGW-w64 v9 for building Qt 5.15.10 onwards.~~ (Build failed on 5.15.10. Will test it on 5.15.11)  
 
 ## Existing Patches
 
@@ -278,3 +277,4 @@ Note that I won't patch an active version of Qt and will simply wait for future 
 | CVE-2023-32762 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-32762-qtbase-5.15.diff) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-32762-qtbase-6.2.diff) |
 | CVE-2023-32763 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-32763-qtbase-5.15.diff) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-32763-qtbase-6.2.diff) |
 | CVE-2023-33285 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-33285-qtbase-5.15.diff) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-33285-qtbase-6.2.diff) |
+| CVE-2023-34410 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-34410-qtbase-5.15.diff) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-34410-qtbase-6.2.diff) |

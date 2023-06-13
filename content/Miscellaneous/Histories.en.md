@@ -4,6 +4,27 @@ draft: false
 weight: 4
 ---
 
+## {{% date 2023 5 22 %}}
+Apply patch for CVE-2023-32762 and CVE-2023-32763 in all supported 5.15.9 and 6.2.4 versions.  
+Apply patch in 5.15.9 macOS version for mapbox-gl-native build issue.
+
+## {{% date 2023 5 20 %}}
+Update macOS to 13.3.1. Update Xcode to 14.3.  
+Update Qt 5.15.9 Universal host builds and arm64 hosted cross builds.  
+Update MinGW-w64 with GCC UCRT builds of Qt 6.2.4 and Qt 6.5.0.
+
+Apply patch for CVE-2023-32573 in all supported 5.15.9 and 6.2.4 versions.
+
+## {{% date 2023 5 11 %}}
+Use OSDN project instead of Chamber (a.k.a. PersonalForge) for file hosting. Chamber will not receive updates and will be deleted afterwards.
+
+## {{% date 2023 5 9 %}}
+Update Qt 5.15.9 / 6.5.0.  
+Remove Qt 6.4 series.
+
+On {{% date 2023 4 20 %}} OpenSSL released [a minor fix](https://www.openssl.org/news/secadv/20230420.txt) which applies for ASM built OpenSSL binary.  
+I distributes only non-ASM build of OpenSSL so it is not affected to my builds. This update will not integrated to my builds.
+
 ## {{% date 2023 3 25 %}}
 Update OpenSSL 1.1.1t / 3.0.8 with [the minor fix](https://www.openssl.org/news/secadv/20230322.txt).  
 Update Qt 5.12.12 / 5.15.8 / 6.2.4 series, rebuilt with this OpenSSL while 5.15.8 is with QtWebEngine 5.15.13.  
