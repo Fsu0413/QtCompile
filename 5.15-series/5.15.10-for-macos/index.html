@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.112.7">
+    <meta name="generator" content="Hugo 0.113.0">
     <meta name="generator" content="Relearn 5.15.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
-    <title>5.15.9 的 WebAssembly 版本 :: Fsu0413 的原版 Qt 构建</title>
-    <link href="/qtcompile/5.15-series/5.15.9-for-webassembly/index.html" rel="alternate" hreflang="x-default">
-    <link href="/qtcompile/5.15-series/5.15.9-for-webassembly/index.html" rel="alternate" hreflang="zh-cn">
-    <link href="/qtcompile/en/5.15-series/5.15.9-for-webassembly/index.html" rel="alternate" hreflang="en">
+    <title>5.15.10 的 macOS 版本 :: Fsu0413 的原版 Qt 构建</title>
+    <link href="/qtcompile/5.15-series/5.15.10-for-macos/index.html" rel="alternate" hreflang="x-default">
+    <link href="/qtcompile/5.15-series/5.15.10-for-macos/index.html" rel="alternate" hreflang="zh-cn">
+    <link href="/qtcompile/en/5.15-series/5.15.10-for-macos/index.html" rel="alternate" hreflang="en">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/qtcompile/css/fontawesome-all.min.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/qtcompile/css/fontawesome-all.min.css" rel="stylesheet"></noscript>
     <link href="/qtcompile/css/nucleus.css" rel="stylesheet">
@@ -64,7 +64,7 @@
     }
 </style>
   </head>
-  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/qtcompile/5.15-series/5.15.9-for-webassembly/index.html">
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/qtcompile/5.15-series/5.15.10-for-macos/index.html">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
@@ -78,17 +78,20 @@
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/qtcompile/index.html"><span itemprop="name">Fsu0413 的原版 Qt 构建</span></a><meta itemprop="position" content="1"> &gt; </li>
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/qtcompile/5.15-series/index.html"><span itemprop="name">5.15 系列</span></a><meta itemprop="position" content="2"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">5.15.9 的 WebAssembly 版本</span><meta itemprop="position" content="3"></li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">5.15.10 的 macOS 版本</span><meta itemprop="position" content="3"></li>
             </ol>
           </div>
           <div class="default-animation progress">
             <div class="toc-wrapper"><nav id="TableOfContents">
   <ul>
-    <li><a href="#static-builds">Static Builds</a>
+    <li><a href="#dynamic--shared-builds">Dynamic / Shared Builds</a>
       <ul>
-        <li><a href="#windows-host">Windows host</a></li>
-        <li><a href="#linux-host">Linux Host</a></li>
-        <li><a href="#macos-host">macOS Host</a></li>
+        <li><a href="#macos-universal">macOS-Universal</a></li>
+      </ul>
+    </li>
+    <li><a href="#static-full-builds">Static <code>Full</code> Builds</a>
+      <ul>
+        <li><a href="#macos-universal-1">macOS-Universal</a></li>
       </ul>
     </li>
   </ul>
@@ -102,7 +105,7 @@
           <article class="default">
             <header class="headline">
             </header>
-<h1 id="5159-的-webassembly-版本">5.15.9 的 WebAssembly 版本</h1>
+<h1 id="51510-的-macos-版本">5.15.10 的 macOS 版本</h1>
 
 
 <div class="box notices cstyle info">
@@ -111,8 +114,17 @@
 <p>此版本中附带下列数据库：</p>
 <ol>
 <li>SQLite （随 Qt 一起分发）：使用 <code>-sql-sqlite</code> 内建在这份包里。</li>
+<li>MariaDB Connector/C 3.1 系列（仅动态构建）：使用 <code>-sql-mysql</code> 内建在这份包里。</li>
 </ol>
   </div>
+</div>
+
+
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
+  <div class="box-content">
+所有构建使用 <code>-no-openssl -securetransport</code>，意味着 macOS 提供的 Secure Transport 库作为 TLS 后端来使用。<br>
+这个后端从 Qt 5.6 版本开始支持。  </div>
 </div>
 
 
@@ -126,19 +138,11 @@
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
   <div class="box-content">
-<p>所有包使用了于 Qt Wiki 中推荐的 emscripten SDK 版本 1.39.8。<br>
-WebAssembly 不支持二进制兼容性。在构建自己的代码的时候必须要使用 SDK 版本 1.39.8，否则会出现不可预料的错误。</p>
-<p>所有构建通过使用 <code>-feature-threads</code> 启用了线程支持。</p>
+<p>Note: Qt release Qt 5.15 series opensource version a year later than commerical version, while still release QtWebEngine at same time commerical version released.<br>
+That is because QtWebEngine use a thirdparty project which features a license which don&rsquo;t allow closed source.<br>
+Qt Commerical-Only LTS version has had its version up to 5.15.14 so this version is built with QtWebEngine 5.15.14.</p>
   </div>
 </div>
-
-
-<div class="box notices cstyle info">
-  <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
-  <div class="box-content">
-Qt 在 WebAssembly 平台上只能构建静态库。  </div>
-</div>
-
 
 <div class="box notices cstyle primary">
   <div class="box-label"><i class="fas fa-check-square"></i> 补丁（多数是 CVE 问题）</div>
@@ -147,88 +151,75 @@ Qt 在 WebAssembly 平台上只能构建静态库。  </div>
 <a href="/qtcompile/miscellaneous/notes-for-this-repo/index.html#%e5%b7%b2%e6%9c%89%e7%9a%84%e8%a1%a5%e4%b8%81">已有的补丁</a>  </div>
 </div>
 
-<h2 id="static-builds">Static Builds</h2>
-<h3 id="windows-host">Windows host</h3>
+
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
+  <div class="box-content">
+这个版本我只会提供统一二进制构建。 <a href="https://developer.apple.com/documentation/apple-silicon/building-a-universal-macos-binary" target="_blank">统一二进制</a>在 Intel 和 Apple 芯片的 Mac 上都能原生运行。  </div>
+</div>
+
+<h2 id="dynamic--shared-builds">Dynamic / Shared Builds</h2>
+<h3 id="macos-universal">macOS-Universal</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.9-WebAssembly-emscripten1.39.8-xWindows-x86_64-MinGW8.1.0-20230603.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.10-macOS-Universal-AppleClang14.0.3-20230613.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt5.15/WebAssembly/Qt5.15.9-WebAssembly-emscripten1.39.8-xWindows-x86_64-MinGW8.1.0-20230603.7z" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt5.15/macOS-Universal/Qt5.15.10-macOS-Universal-AppleClang14.0.3-20230613.tar.xz" target="_blank"> 
     OSDN 链接
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/WebAssembly/Qt5.15.9-WebAssembly-emscripten1.39.8-xWindows-x86_64-MinGW8.1.0-20230603.7z" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/macOS-Universal/Qt5.15.10-macOS-Universal-AppleClang14.0.3-20230613.tar.xz" target="_blank"> 
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">emscripten-1.39.8</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
-        </tbody>
-    </table>
-<h3 id="linux-host">Linux Host</h3>
-<table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.9-WebAssembly-emscripten1.39.8-xLinux-x86_64-gcc8.5.0-20230602.tar.xz</b></th></tr></thead>
-        <tbody>
-            <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="2" width="40%">
-<span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt5.15/WebAssembly/Qt5.15.9-WebAssembly-emscripten1.39.8-xLinux-x86_64-gcc8.5.0-20230602.tar.xz" target="_blank"> 
-    OSDN 链接
-  </a>
-</span></td>
-                <td colspan="2" width="40%">
-<span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/WebAssembly/Qt5.15.9-WebAssembly-emscripten1.39.8-xLinux-x86_64-gcc8.5.0-20230602.tar.xz" target="_blank"> 
-    SourceForge 链接
-  </a>
-</span></td>
-            </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">RockyLinux 8.8</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">emscripten-1.39.8</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
-        </tbody>
-    </table>
-<h3 id="macos-host">macOS Host</h3>
-<table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.9-WebAssembly-emscripten1.39.8-xmacOS-x86_64-AppleClang14.0.3-20230602.tar.xz</b></th></tr></thead>
-        <tbody>
-            <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="2" width="40%">
-<span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt5.15/WebAssembly/Qt5.15.9-WebAssembly-emscripten1.39.8-xmacOS-x86_64-AppleClang14.0.3-20230602.tar.xz" target="_blank"> 
-    OSDN 链接
-  </a>
-</span></td>
-                <td colspan="2" width="40%">
-<span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/WebAssembly/Qt5.15.9-WebAssembly-emscripten1.39.8-xmacOS-x86_64-AppleClang14.0.3-20230602.tar.xz" target="_blank"> 
-    SourceForge 链接
-  </a>
-</span></td>
-            </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 13.4</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">emscripten-1.39.8</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 13.4</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">AppleClang 14.0.3</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%">With WebEngine 5.15.14 &amp;&amp; QtScript 5.15.14</td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.9-WebAssembly-emscripten1.39.8-xmacOS-arm64-AppleClang14.0.3-20230602.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.10-macOS-Universal-AppleClang14.0.3-noFramework-20230613.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt5.15/WebAssembly/Qt5.15.9-WebAssembly-emscripten1.39.8-xmacOS-arm64-AppleClang14.0.3-20230602.tar.xz" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt5.15/macOS-Universal/Qt5.15.10-macOS-Universal-AppleClang14.0.3-noFramework-20230613.tar.xz" target="_blank"> 
     OSDN 链接
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/WebAssembly/Qt5.15.9-WebAssembly-emscripten1.39.8-xmacOS-arm64-AppleClang14.0.3-20230602.tar.xz" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/macOS-Universal/Qt5.15.10-macOS-Universal-AppleClang14.0.3-noFramework-20230613.tar.xz" target="_blank"> 
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 13.4</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">emscripten-1.39.8</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 13.4</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">AppleClang 14.0.3</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%">With WebEngine 5.15.14 &amp;&amp; QtScript 5.15.14</td></tr>
+        </tbody>
+    </table>
+<h2 id="static-full-builds">Static <code>Full</code> Builds</h2>
+<h3 id="macos-universal-1">macOS-Universal</h3>
+<table>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.10-macOS-Universal-AppleClang14.0.3-staticFull-20230613.tar.xz</b></th></tr></thead>
+        <tbody>
+            <tr><td width="20%"><b>下载地址：</b></td>
+                <td colspan="2" width="40%">
+<span class="btn cstyle green">
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt5.15/macOS-Universal/Qt5.15.10-macOS-Universal-AppleClang14.0.3-staticFull-20230613.tar.xz" target="_blank"> 
+    OSDN 链接
+  </a>
+</span></td>
+                <td colspan="2" width="40%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/macOS-Universal/Qt5.15.10-macOS-Universal-AppleClang14.0.3-staticFull-20230613.tar.xz" target="_blank"> 
+    SourceForge 链接
+  </a>
+</span></td>
+            </tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 13.4</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">AppleClang 14.0.3</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%">With QtScript 5.15.14</td></tr>
         </tbody>
     </table>
 
@@ -256,10 +247,10 @@ Qt 在 WebAssembly 平台上只能构建静态库。  </div>
           <li data-nav-id="/qtcompile/5.12-series/5.12.12-for-windows/index.html" class=""><a class="padding" href="/qtcompile/5.12-series/5.12.12-for-windows/index.html">5.12.12 的 Windows 版本</a></li>
           <li data-nav-id="/qtcompile/5.12-series/5.12.12-for-android/index.html" class=""><a class="padding" href="/qtcompile/5.12-series/5.12.12-for-android/index.html">5.12.12 的安卓版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/5.15-series/index.html" class="parent "><a class="padding" href="/qtcompile/5.15-series/index.html">5.15 系列</a><ul id="subsections-6265c888ec9e92bab195ca36e833839a" class="morespace">
-          <li data-nav-id="/qtcompile/5.15-series/5.15.9-for-windows/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.9-for-windows/index.html">5.15.9 的 Windows 版本</a></li>
-          <li data-nav-id="/qtcompile/5.15-series/5.15.9-for-macos/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.9-for-macos/index.html">5.15.9 的 macOS 版本</a></li>
-          <li data-nav-id="/qtcompile/5.15-series/5.15.9-for-android/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.9-for-android/index.html">5.15.9 的安卓版本</a></li>
-          <li data-nav-id="/qtcompile/5.15-series/5.15.9-for-webassembly/index.html" class="active"><a class="padding" href="/qtcompile/5.15-series/5.15.9-for-webassembly/index.html">5.15.9 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.10-for-windows/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.10-for-windows/index.html">5.15.10 的 Windows 版本</a></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.10-for-macos/index.html" class="active"><a class="padding" href="/qtcompile/5.15-series/5.15.10-for-macos/index.html">5.15.10 的 macOS 版本</a></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.10-for-android/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.10-for-android/index.html">5.15.10 的安卓版本</a></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.10-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.10-for-webassembly/index.html">5.15.10 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/6.2-series/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/index.html">6.2 系列</a><ul id="subsections-106fe2487cf90a2754e3f4a06da071f3" class="morespace">
           <li data-nav-id="/qtcompile/6.2-series/6.2.4-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.4-for-windows/index.html">6.2.4 的 Windows 版本</a></li>
           <li data-nav-id="/qtcompile/6.2-series/6.2.4-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.4-for-macos/index.html">6.2.4 的 macOS 版本</a></li>
@@ -309,8 +300,8 @@ Qt 在 WebAssembly 平台上只能构建静态库。  </div>
                 <div class="select-style">
                   <label class="a11y-only" for="select-language">语言</label>
                   <select id="select-language" onchange="location = baseUri + this.value;">
-                    <option lang="zh-cn" id="zh-cn" value="/qtcompile/5.15-series/5.15.9-for-webassembly/index.html" selected>简体中文（中国）</option>
-                    <option lang="en" id="en" value="/qtcompile/en/5.15-series/5.15.9-for-webassembly/index.html">English</option>
+                    <option lang="zh-cn" id="zh-cn" value="/qtcompile/5.15-series/5.15.10-for-macos/index.html" selected>简体中文（中国）</option>
+                    <option lang="en" id="en" value="/qtcompile/en/5.15-series/5.15.10-for-macos/index.html">English</option>
                   </select>
                 </div>
                 <div class="select-clear"></div>
@@ -341,7 +332,7 @@ Qt 在 WebAssembly 平台上只能构建静态库。  </div>
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 03 Jun 2023 16:25:01 CST</p>
+Site generated: Wed, 14 Jun 2023 07:41:12 CST</p>
 
         </div>
       </div>

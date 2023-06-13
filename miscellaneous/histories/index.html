@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.112.7">
+    <meta name="generator" content="Hugo 0.113.0">
     <meta name="generator" content="Relearn 5.15.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
@@ -84,6 +84,10 @@
           <div class="default-animation progress">
             <div class="toc-wrapper"><nav id="TableOfContents">
   <ul>
+    <li><a href="#2023-年-5-月-22-日">2023 年 5 月 22 日</a></li>
+    <li><a href="#2023-年-5-月-20-日">2023 年 5 月 20 日</a></li>
+    <li><a href="#2023-年-5-月-11-日">2023 年 5 月 11 日</a></li>
+    <li><a href="#2023-年-5-月-9-日">2023 年 5 月 9 日</a></li>
     <li><a href="#2023-年-3-月-25-日">2023 年 3 月 25 日</a></li>
     <li><a href="#2023-年-2-月-25-日">2023 年 2 月 25 日</a></li>
     <li><a href="#2023-年-2-月-12-日">2023 年 2 月 12 日</a></li>
@@ -188,6 +192,21 @@
             </header>
 <h1 id="之前的历史">之前的历史</h1>
 
+<h2 id="2023-年-5-月-22-日">2023 年 5 月 22 日</h2>
+<p>对于所有受支持的 5.15.9 和 6.2.4 版本，应用 CVE-2023-32762 和 CVE-2023-32763 补丁。<br>
+为 macOS 的 5.15.9 版本应用 mapbox-gl-native 构建问题的补丁。</p>
+<h2 id="2023-年-5-月-20-日">2023 年 5 月 20 日</h2>
+<p>更新 macOS 到 13.3.1。更新 Xcode 到 14.3。<br>
+更新 Qt 5.15.9 统一二进制主机构建以及 arm64 主机版交叉构建。<br>
+更新 Qt 6.2.4 和 6.5.0 的 UCRT 版本的 MinGW-w64 GCC 构建。</p>
+<p>对于所有受支持的 5.15.9 和 6.2.4 版本，应用 CVE-2023-32573 补丁。</p>
+<h2 id="2023-年-5-月-11-日">2023 年 5 月 11 日</h2>
+<p>使用 OSDN 项目代替 Chamber （或者叫做 PersonalForge）提供文件服务。Chamber 不会再更新并将于一段时间后删除。</p>
+<h2 id="2023-年-5-月-9-日">2023 年 5 月 9 日</h2>
+<p>更新 Qt 5.15.9 / 6.5.0。<br>
+删除 Qt 6.4 系列。</p>
+<p>OpenSSL 于 2023 年 4 月 20 日发布的 <a href="https://www.openssl.org/news/secadv/20230420.txt" target="_blank">微小更新</a> 仅适用于 ASM 构建的 OpenSSL 二进制文件。<br>
+由于我构建的 OpenSSL 均为非 ASM 构建，所以对我的构建没有影响。此更新不会被应用到我构建的版本中。</p>
 <h2 id="2023-年-3-月-25-日">2023 年 3 月 25 日</h2>
 <p>更新 OpenSSL 1.1.1t / 3.0.8，附带 <a href="https://www.openssl.org/news/secadv/20230322.txt" target="_blank">微小更新</a>。<br>
 更新 Qt 5.12.12 / 5.15.8 / 6.2.4，使用这份 OpenSSL 重新构建，其中 5.15.8 附带 QtWebEngine 5.15.13。<br>
@@ -534,13 +553,13 @@ SF.net 恢复，文件重新上传到 SF.net。</p>
 <h2 id="2017-年以前黑历史仅有嘤文">2017 年以前（黑历史，仅有嘤文）</h2>
 
 <div class="expand">
-    <input type="checkbox" id="expand-b66f28760791f8ccded0b72b6f6164f6" aria-controls="expandcontent-b66f28760791f8ccded0b72b6f6164f6" >
-    <label class="expand-label" for="expand-b66f28760791f8ccded0b72b6f6164f6" >
+    <input type="checkbox" id="expand-e4c35295c784e70f24f69a9880668dab" aria-controls="expandcontent-e4c35295c784e70f24f69a9880668dab" >
+    <label class="expand-label" for="expand-e4c35295c784e70f24f69a9880668dab" >
         <i class="fas fa-chevron-down"></i>
         <i class="fas fa-chevron-right"></i>
         展开
     </label>
-    <div id="expandcontent-b66f28760791f8ccded0b72b6f6164f6" class="expand-content">
+    <div id="expandcontent-e4c35295c784e70f24f69a9880668dab" class="expand-content">
 <p>是的，我想写一些东西，但是不知道怎么写。。。</p>
 <h3 id="2016-年-7-月-23-日">2016 年 7 月 23 日</h3>
 <p>Upload 5.6.1-1/5.7.0 VS2015 static builds again due to link issue.</p>
@@ -622,10 +641,10 @@ Upload 5.6.1 VS2015 Static packages.</p>
           <li data-nav-id="/qtcompile/5.12-series/5.12.12-for-windows/index.html" class=""><a class="padding" href="/qtcompile/5.12-series/5.12.12-for-windows/index.html">5.12.12 的 Windows 版本</a></li>
           <li data-nav-id="/qtcompile/5.12-series/5.12.12-for-android/index.html" class=""><a class="padding" href="/qtcompile/5.12-series/5.12.12-for-android/index.html">5.12.12 的安卓版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/5.15-series/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/index.html">5.15 系列</a><ul id="subsections-6265c888ec9e92bab195ca36e833839a" class="morespace">
-          <li data-nav-id="/qtcompile/5.15-series/5.15.9-for-windows/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.9-for-windows/index.html">5.15.9 的 Windows 版本</a></li>
-          <li data-nav-id="/qtcompile/5.15-series/5.15.9-for-macos/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.9-for-macos/index.html">5.15.9 的 macOS 版本</a></li>
-          <li data-nav-id="/qtcompile/5.15-series/5.15.9-for-android/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.9-for-android/index.html">5.15.9 的安卓版本</a></li>
-          <li data-nav-id="/qtcompile/5.15-series/5.15.9-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.9-for-webassembly/index.html">5.15.9 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.10-for-windows/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.10-for-windows/index.html">5.15.10 的 Windows 版本</a></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.10-for-macos/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.10-for-macos/index.html">5.15.10 的 macOS 版本</a></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.10-for-android/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.10-for-android/index.html">5.15.10 的安卓版本</a></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.10-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.10-for-webassembly/index.html">5.15.10 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/6.2-series/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/index.html">6.2 系列</a><ul id="subsections-106fe2487cf90a2754e3f4a06da071f3" class="morespace">
           <li data-nav-id="/qtcompile/6.2-series/6.2.4-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.4-for-windows/index.html">6.2.4 的 Windows 版本</a></li>
           <li data-nav-id="/qtcompile/6.2-series/6.2.4-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.4-for-macos/index.html">6.2.4 的 macOS 版本</a></li>
@@ -707,7 +726,7 @@ Upload 5.6.1 VS2015 Static packages.</p>
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 03 Jun 2023 16:25:02 CST</p>
+Site generated: Wed, 14 Jun 2023 07:41:13 CST</p>
 
         </div>
       </div>
