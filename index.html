@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.112.7">
+    <meta name="generator" content="Hugo 0.113.0">
     <meta name="generator" content="Relearn 5.15.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
@@ -90,12 +90,9 @@
     <li><a href="#current-failures">Current failures</a></li>
     <li><a href="#update-history">Update History</a>
       <ul>
+        <li><a href="#14th-jun-2023">14th Jun, 2023</a></li>
         <li><a href="#3rd-jun-2023">3rd Jun, 2023</a></li>
-        <li><a href="#22nd-may-2023">22nd May, 2023</a></li>
-        <li><a href="#20th-may-2023">20th May, 2023</a></li>
-        <li><a href="#11th-may-2023">11th May, 2023</a></li>
-        <li><a href="#9th-may-2023">9th May, 2023</a></li>
-        <li><a href="#before-jan-2023">Before Jan. 2023</a></li>
+        <li><a href="#before-may-2023">Before May. 2023</a></li>
       </ul>
     </li>
   </ul>
@@ -106,11 +103,11 @@
       </nav>
       <main id="body-inner" class="highlightable home" tabindex="-1">
         <div class="flex-block-wrapper">
-          <article class="home deprecated">
+          <article class="home">
             <header class="headline">
             </header>
+<h1 id="fsu0413s-original-qt-builds">Fsu0413&#39;s Original Qt builds</h1>
 
-<h1 id="fsu0413s-original-qt-builds">Fsu0413&rsquo;s Original Qt builds</h1>
 <h2 id="stop-using-notepad">STOP USING Notepad++</h2>
 <p>At 25th Jan, 2023 Notepad++ released a version with a &ldquo;feature&rdquo; where users must agree the fake, incorrect and misleading politics words about China.<br>
 If user doesn&rsquo;t agree random character is added when editing using Notepad++.</p>
@@ -136,6 +133,11 @@ Thanks for The Qt Company Ltd. and the programmers of Qt for their fantastic wor
 <h2 id="current-failures">Current failures</h2>
 <p><a href="/miscellaneous/current-failures/">Here</a></p>
 <h2 id="update-history">Update History</h2>
+<h3 id="14th-jun-2023">14th Jun, 2023</h3>
+<p>Update Qt 5.15.10 series with QtWebEngine / QtScript 5.15.14.<br>
+Apply patch for CVE-2023-34410 in all supported 5.15.10 and 6.2.4 versions.<br>
+Update LLVM-MinGW to 20230603. Qt 6.2.4 and Qt 6.5.1 LLVM-MinGW packages are rebuilt.</p>
+<p>OSDN Chamber is deleted. All file hosting service are migrated to Project.</p>
 <h3 id="3rd-jun-2023">3rd Jun, 2023</h3>
 <p>Apply patch for CVE-2023-33285 in all supported 5.15.9 and 6.2.4 versions.<br>
 Update Qt 5.15.9 series with QtWebEngine / QtScript 5.15.14.<br>
@@ -143,22 +145,7 @@ Update Qt 6.5 series to 6.5.1.<br>
 Update OpenSSL to 3.0.9 / 1.1.1u. All builds what uses OpenSSL are rebuilt.<br>
 Update MariaDB Connector C to 3.3.5 / 3.1.21. All builds what uses MariaDB Connector C are rebuilt.</p>
 <p>(Actually there was planned update on 31st May, 2023. The update is cancelled because of OSDN service instability and publish of patch of CVE-2023-33285)</p>
-<h3 id="22nd-may-2023">22nd May, 2023</h3>
-<p>Apply patch for CVE-2023-32762 and CVE-2023-32763 in all supported 5.15.9 and 6.2.4 versions.<br>
-Apply patch in 5.15.9 macOS version for mapbox-gl-native build issue.</p>
-<h3 id="20th-may-2023">20th May, 2023</h3>
-<p>Update macOS to 13.3.1. Update Xcode to 14.3.<br>
-Update Qt 5.15.9 Universal host builds and arm64 hosted cross builds.<br>
-Update MinGW-w64 with GCC UCRT builds of Qt 6.2.4 and Qt 6.5.0.</p>
-<p>Apply patch for CVE-2023-32573 in all supported 5.15.9 and 6.2.4 versions.</p>
-<h3 id="11th-may-2023">11th May, 2023</h3>
-<p>Use OSDN project instead of Chamber (a.k.a. PersonalForge) for file hosting.</p>
-<h3 id="9th-may-2023">9th May, 2023</h3>
-<p>Update Qt 5.15.9 / 6.5.0.<br>
-Remove Qt 6.4 series.</p>
-<p>On 20th Apr, 2023 OpenSSL released <a href="https://www.openssl.org/news/secadv/20230420.txt" target="_blank">a minor fix</a> which applies for ARM built OpenSSL binary.<br>
-I distributes only non-ASM build of OpenSSL so it is not affected to my builds. This update will not integrated to my builds.</p>
-<h3 id="before-jan-2023">Before Jan. 2023</h3>
+<h3 id="before-may-2023">Before May. 2023</h3>
 <p><a href="/miscellaneous/histories/">Here</a></p>
 
             <footer class="footline">
@@ -185,10 +172,10 @@ I distributes only non-ASM build of OpenSSL so it is not affected to my builds. 
           <li data-nav-id="/5.12-series/5.12.12-for-windows/index.html" class=""><a class="padding" href="/5.12-series/5.12.12-for-windows/index.html">5.12.12 for Windows</a></li>
           <li data-nav-id="/5.12-series/5.12.12-for-android/index.html" class=""><a class="padding" href="/5.12-series/5.12.12-for-android/index.html">5.12.12 for Android</a></li></ul></li>
           <li data-nav-id="/5.15-series/index.html" class=""><a class="padding" href="/5.15-series/index.html">5.15 series</a><ul id="subsections-dfde3005aa1a1a9f4665d82e5e9612d8" class="morespace">
-          <li data-nav-id="/5.15-series/5.15.9-for-windows/index.html" class=""><a class="padding" href="/5.15-series/5.15.9-for-windows/index.html">5.15.9 for Windows</a></li>
-          <li data-nav-id="/5.15-series/5.15.9-for-macos/index.html" class=""><a class="padding" href="/5.15-series/5.15.9-for-macos/index.html">5.15.9 for macOS</a></li>
-          <li data-nav-id="/5.15-series/5.15.9-for-android/index.html" class=""><a class="padding" href="/5.15-series/5.15.9-for-android/index.html">5.15.9 for Android</a></li>
-          <li data-nav-id="/5.15-series/5.15.9-for-webassembly/index.html" class=""><a class="padding" href="/5.15-series/5.15.9-for-webassembly/index.html">5.15.9 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/5.15-series/5.15.10-for-windows/index.html" class=""><a class="padding" href="/5.15-series/5.15.10-for-windows/index.html">5.15.10 for Windows</a></li>
+          <li data-nav-id="/5.15-series/5.15.10-for-macos/index.html" class=""><a class="padding" href="/5.15-series/5.15.10-for-macos/index.html">5.15.10 for macOS</a></li>
+          <li data-nav-id="/5.15-series/5.15.10-for-android/index.html" class=""><a class="padding" href="/5.15-series/5.15.10-for-android/index.html">5.15.10 for Android</a></li>
+          <li data-nav-id="/5.15-series/5.15.10-for-webassembly/index.html" class=""><a class="padding" href="/5.15-series/5.15.10-for-webassembly/index.html">5.15.10 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/6.2-series/index.html" class=""><a class="padding" href="/6.2-series/index.html">6.2 series</a><ul id="subsections-c2b87e4570db0ee260cc7de2c4b80e99" class="morespace">
           <li data-nav-id="/6.2-series/6.2.4-for-windows/index.html" class=""><a class="padding" href="/6.2-series/6.2.4-for-windows/index.html">6.2.4 for Windows</a></li>
           <li data-nav-id="/6.2-series/6.2.4-for-macos/index.html" class=""><a class="padding" href="/6.2-series/6.2.4-for-macos/index.html">6.2.4 for macOS</a></li>
@@ -270,7 +257,7 @@ I distributes only non-ASM build of OpenSSL so it is not affected to my builds. 
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 03 Jun 2023 16:25:08 CST</p>
+Site generated: Wed, 14 Jun 2023 07:41:27 CST</p>
 
         </div>
       </div>
