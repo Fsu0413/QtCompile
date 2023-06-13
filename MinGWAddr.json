@@ -56,12 +56,12 @@
   },
   "wx6u6": {
     "bits": "64",
-    "description": "MinGW-W64 w/ LLVM 16.0.4 UCRT",
-    "addr": "https://github.com/mstorsjo/llvm-mingw/releases/download/20230517/llvm-mingw-20230517-ucrt-x86_64.zip"
+    "description": "MinGW-W64 w/ LLVM 16.0.5 UCRT",
+    "addr": "https://github.com/mstorsjo/llvm-mingw/releases/download/20230603/llvm-mingw-20230603-ucrt-x86_64.zip"
   },
   "wx6s6": {
     "bits": "64",
-    "description": "MinGW-W64 w/ LLVM 16.0.0 msvcrt",
-    "addr": "https://github.com/mstorsjo/llvm-mingw/releases/download/20230320/llvm-mingw-20230320-msvcrt-x86_64.zip"
+    "description": "MinGW-W64 w/ LLVM 16.0.5 msvcrt",
+    "addr": "https://github.com/mstorsjo/llvm-mingw/releases/download/20230603/llvm-mingw-20230603-msvcrt-x86_64.zip"
   }
 }

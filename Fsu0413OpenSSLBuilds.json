@@ -334,7 +334,7 @@
       "version": "3.0.9",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22621",
-      "toolchain": "MinGW-w64 w/ LLVM 16.0.4 UCRT",
+      "toolchain": "MinGW-w64 w/ LLVM 16.0.5 UCRT",
       "arch": "x86_64",
       "variant": ""
     },
@@ -345,7 +345,7 @@
       "version": "3.0.9",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22621",
-      "toolchain": "MinGW-w64 w/ LLVM 16.0.0 MSVCRT",
+      "toolchain": "MinGW-w64 w/ LLVM 16.0.5 MSVCRT",
       "arch": "x86_64",
       "variant": ""
     },
