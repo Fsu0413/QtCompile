@@ -65,6 +65,27 @@ function adjustContentWidth(){
     elc.style[ dir_padding_end ] = '' + end + 'px';
 }
 
+function fixCodeTabs(){
+    /* if only a single code block is contained in the tab and no style was selected, treat it like style=code */
+    var codeTabContents = Array.from( document.querySelectorAll( '.tab-content.tab-panel-style' ) ).filter( function( tabContent ){
+        return tabContent.querySelector( '*:scope > .tab-content-text > div.highlight:only-child, *:scope > .tab-content-text > pre.pre-code:only-child');
+    });
+
+    codeTabContents.forEach( function( tabContent ){
+        var tabId = tabContent.dataset.tabItem;
+        var tabPanel = tabContent.parentNode.parentNode;
+        var tabButton = tabPanel.querySelector( '.tab-nav-button.tab-panel-style[data-tab-item="'+tabId+'"]' );
+        if( tabContent.classList.contains( 'initial' ) ){
+            tabButton.classList.remove( 'initial' );
+            tabButton.classList.add( 'code' );
+            tabContent.classList.remove( 'initial' );
+            tabContent.classList.add( 'code' );
+        }
+        // mark code blocks for FF without :has()
+        tabContent.classList.add( 'codify' );
+    });
+}
+
 function switchTab(tabGroup, tabId) {
     var tabs = Array.from( document.querySelectorAll( '.tab-panel[data-tab-group="'+tabGroup+'"]' ) ).filter( function( e ){
         return !!e.querySelector( '[data-tab-item="'+tabId+'"]' );
@@ -137,21 +158,27 @@ function initMermaid( update, attrs ) {
     };
 
     var parseGraph = function( graph ){
-        var d = /^\s*(%%\s*\{\s*\w+\s*:([^%]*?)%%\s*\n?)/g;
+        // See https://github.com/mermaid-js/mermaid/blob/9a080bb975b03b2b1d4ef6b7927d09e6b6b62760/packages/mermaid/src/diagram-api/frontmatter.ts#L10
+        // for reference on the regex originally taken from jekyll
+        var YAML=1;
+        var INIT=2;
+        var GRAPH=3;
+        var d = /^(?:\s*[\n\r])*(-{3}\s*[\n\r](?:.*?)[\n\r]-{3}(?:\s*[\n\r]+)+)?(?:\s*(?:%%\s*\{\s*\w+\s*:([^%]*?)%%\s*[\n\r]?))?(.*)$/s
         var m = d.exec( graph );
+        var yaml = '';
         var dir = {};
         var content = graph;
-        if( m && m.length == 3 ){
-            dir = JSON.parse( '{ "dummy": ' + m[2] ).dummy;
-            content = graph.substring( d.lastIndex );
+        if( m && m.length == 4 ){
+            yaml = m[YAML] ? m[YAML] : yaml;
+            dir = m[INIT] ? JSON.parse( '{ "init": ' + m[INIT] ).init : dir;
+            content = m[GRAPH] ? m[GRAPH] : content;
         }
-        content = content.trim();
-        return { dir: dir, content: content };
+        var ret = { yaml: yaml, dir: dir, content: content.trim() }
+        return ret;
     };
 
     var serializeGraph = function( graph ){
-        var s = '%%{init: ' + JSON.stringify( graph.dir ) + '}%%\n';
-        s += graph.content;
+        var s = graph.yaml + '%%{init: ' + JSON.stringify( graph.dir ) + '}%%\n' + graph.content;
         return s;
     };
 
@@ -1251,6 +1278,7 @@ ready( function(){
     initToc();
     initAnchorClipboard();
     initCodeClipboard();
+    fixCodeTabs();
     restoreTabSelections();
     initSwipeHandler();
     initHistory();

@@ -1,7 +1,97 @@
 @charset "UTF-8";
 
 @import "tags.css";
-@import "tabs.css";
+
+/* until browsers don't let us set length values based on dppx, we
+need a way to calculate them ourself */
+:root {
+    --dpr: 1;
+    --bpx: 1;
+}
+@media (min-resolution: 105dpi) {
+    :root {
+        --dpr: 1.1;
+        --bpx: 1.1;
+    }
+}
+@media (min-resolution: 115dpi) {
+    :root {
+        --dpr: 1.2;
+        --bpx: 1.2;
+    }
+}
+@media (min-resolution: 120dpi) {
+    :root {
+        --dpr: 1.25;
+        --bpx: 1.25;
+    }
+}
+@media (min-resolution: 128dpi) {
+    :root {
+        --dpr: 1.333;
+        --bpx: 1.333;
+    }
+}
+@media (min-resolution: 144dpi) {
+    :root {
+        --dpr: 1.5;
+        --bpx: 1.5;
+    }
+}
+@media (min-resolution: 160dpi) {
+    :root {
+        --dpr: 1.666;
+        --bpx: 1.666;
+    }
+}
+@media (min-resolution: 168dpi) {
+    :root {
+        --dpr: 1.75;
+        --bpx: 1.75;
+    }
+}
+@media (min-resolution: 192dpi) {
+    :root {
+        --dpr: 2;
+        --bpx: 1;
+    }
+}
+@media (min-resolution: 240dpi) {
+    :root {
+        --dpr: 2.5;
+        --bpx: 1.25;
+    }
+}
+@media (min-resolution: 288dpi) {
+    :root {
+        --dpr: 3;
+        --bpx: 1;
+    }
+}
+@media (min-resolution: 384dpi) {
+    :root {
+        --dpr: 4;
+        --bpx: 1;
+    }
+}
+@media (min-resolution: 480dpi) {
+    :root {
+        --dpr: 5;
+        --bpx: 1.25;
+    }
+}
+@media (min-resolution: 576dpi) {
+    :root {
+        --dpr: 6;
+        --bpx: 1.5;
+    }
+}
+@media (min-resolution: 768dpi) {
+    :root {
+        --dpr: 8;
+        --bpx: 1;
+    }
+}
 
 html {
     height: 100%;
@@ -444,7 +534,11 @@ div.box > .box-content {
 #body table td > :first-child,
 #body table td > :first-child :first-child,
 #body div.box > .box-content > :first-child,
-#body div.box > .box-content > :first-child :first-child {
+#body div.box > .box-content > :first-child :first-child,
+#body div.expand > .expand-content-text > :first-child,
+#body div.expand > .expand-content-text > :first-child :first-child,
+#body div.tab-content > .tab-content-text > :first-child,
+#body div.tab-content > .tab-content-text > :first-child :first-child {
     margin-top: 0;
 }
 
@@ -453,7 +547,11 @@ div.box > .box-content {
 #body table td > :last-child,
 #body table td > :last-child :last-child,
 #body div.box > .box-content > :last-child,
-#body div.box > .box-content > :last-child :last-child {
+#body div.box > .box-content > :last-child :last-child,
+#body div.expand > .expand-content-text > :last-child,
+#body div.expand > .expand-content-text > :last-child :last-child,
+#body div.tab-content > .tab-content-text > :last-child,
+#body div.tab-content > .tab-content-text > :last-child :last-child {
     margin-bottom: 0;
 }
 
@@ -1002,7 +1100,6 @@ option {
 }
 
 .expand > label:after {
-    background-color: var(--INTERNAL-MAIN-LINK-HOVER-color);
     content: "";
     display: block;
     height: 1px;
@@ -1565,10 +1662,8 @@ article ul > li > input[type="checkbox"] {
     -webkit-appearance: none;
     appearance: none;
     /* For iOS < 15 */
-    background-color: var(--INTERNAL-MAIN-BG-color); /* box background */
     border: 0.15em solid currentColor;
     border-radius: 0.15em;
-    color: var(--INTERNAL-MAIN-TEXT-color);
     display: inline-grid;
     font: inherit;
     height: 1.15em;
@@ -1772,4 +1867,100 @@ html[dir="rtl"] #sidebar ul.collapsible-menu > li > label > i.fa-chevron-right {
     .columnize{
         column-count: 3;
     }
+}
+
+#body .tab-panel{
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+#body .tab-nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#body .tab-nav-title{
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.42857143;
+    padding: .2rem 0;
+    margin-inline-start: .6rem;
+}
+
+#body .tab-nav-button{
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    display: block;
+    font-size: .9rem;
+    font-weight: 300;
+    line-height: 1.42857143;
+    margin-inline-start: .6rem;
+}
+
+#body .tab-nav-button.active{
+    border-radius: 2px 2px 0 0;
+    cursor: default;
+}
+
+#body .tab-nav-button > *{
+    position: relative;
+}
+
+#body .tab-nav-button.active > *{
+    border-radius: 1px 1px 0 0;
+}
+
+#body .tab-nav-button > * > *{
+    border-bottom-style: solid;
+    border-bottom-width: .2rem;
+    padding: .2rem .6rem 0 .6rem;
+}
+
+#body .tab-nav-button.active > * > *{
+    border-bottom-color: transparent;
+    font-weight: 500;
+}
+
+#body .tab-nav-button > * > .tab-nav-hidden{
+    font-weight: 500;
+    visibility: hidden;
+}
+
+#body .tab-nav-button > * > .tab-nav-text{
+    position: absolute;
+    top: 0;
+}
+
+#body .tab-content{
+    border-style: solid;
+    border-width: 1px;
+    display: none;
+    /* if setting a border to 1px, a browser instead sets it to 1dppx which is not
+    usable as a unit yet, so we have to calculate it ourself */
+    margin-top: calc( -1px / var(--bpx) );
+    z-index: 10;
+}
+
+#body .tab-content.active{
+    display: block;
+}
+
+#body .tab-content-text{
+    padding: 1rem;
+}
+
+/* remove margin if only a single code block is contained in the tab (FF without :has using .codify style) */
+#body .tab-content.codify > .tab-content-text{
+    padding: 0;
+}
+#body .tab-content-text:has(> div.highlight:only-child){
+    padding: 0;
+}
+
+/* remove border from a code block if single  */
+#body .tab-content-text > div.highlight:only-child > pre,
+#body .tab-content-text > pre.pre-code:only-child{
+    border: 0;
 }

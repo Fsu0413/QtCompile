@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.113.0">
-    <meta name="generator" content="Relearn 5.15.2">
+    <meta name="generator" content="Relearn 5.16.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>6.2.4 for macOS :: Fsu0413&#39;s Original Qt builds</title>
@@ -111,54 +111,60 @@
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
   <div class="box-content">
+
 <p>Following database backend is distributed with this version:</p>
 <ol>
 <li>SQLite (distributed with Qt): Built in the package using command <code>-DFEATURE_sql_sqlite -DFEATURE_system_sqlite=OFF</code>.</li>
 <li>MariaDB Connector/C 3.3 series (Dynamic builds only): Built in the package using command <code>-DFEATURE_sql_mysql</code>.</li>
 </ol>
-  </div>
+</div>
 </div>
 
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
   <div class="box-content">
+
 <p>Since Qt 6.2 Qt made TLS backends as plugin.<br>
 Following backend(s) are built in the package:</p>
 <ol>
 <li>OpenSSL 3.0 series using <code>-DFEATURE_openssl=ON -DINPUT_openssl=linked</code> for enabling linked OpenSSL support</li>
 <li>Secure Transport library provided by macOS using <code>-DFEATURE_securetransport=ON</code></li>
 </ol>
-  </div>
+</div>
 </div>
 
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
   <div class="box-content">
-All builds have <code>-DFEATURE_icu=OFF</code> because I think the ICU library is too big and, in most of the conditions, useless for common users.  </div>
+<p>
+All builds have <code>-DFEATURE_icu=OFF</code> because I think the ICU library is too big and, in most of the conditions, useless for common users.</div>
 </div>
 
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
   <div class="box-content">
+
 <p>No QtWebEngine in this version.</p>
-  </div>
+</div>
 </div>
 
 <div class="box notices cstyle primary">
   <div class="box-label"><i class="fas fa-check-square"></i> Patches (mostly CVE issue)</div>
   <div class="box-content">
+<p>
 I build Qt with patches. See following page for a list of patches:<br>
-<a href="/qtcompile/en/miscellaneous/notes-for-this-repo/index.html#existing-patches">existing-patches</a>  </div>
+<a href="/qtcompile/en/miscellaneous/notes-for-this-repo/index.html#existing-patches">existing-patches</a></div>
 </div>
 
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
   <div class="box-content">
-I&rsquo;ll provide only Universal Binary builds of macOS of this version. <a href="https://developer.apple.com/documentation/apple-silicon/building-a-universal-macos-binary" target="_blank">Universal binaries</a> run natively on Intel Macs and Apple Sillicon Macs.  </div>
+<p>
+I&rsquo;ll provide only Universal Binary builds of macOS of this version. <a href="https://developer.apple.com/documentation/apple-silicon/building-a-universal-macos-binary" target="_blank">Universal binaries</a> run natively on Intel Macs and Apple Sillicon Macs.</div>
 </div>
 
 <h2 id="dynamic--shared-builds">Dynamic / Shared Builds</h2>
@@ -169,13 +175,13 @@ I&rsquo;ll provide only Universal Binary builds of macOS of this version. <a hre
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.2/macOS-Universal/Qt6.2.4-macOS-Universal-AppleClang14.0.3-20230613.tar.xz" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.2/macOS-Universal/Qt6.2.4-macOS-Universal-AppleClang14.0.3-20230613.tar.xz" target="_blank">
     OSDN link
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-Universal/Qt6.2.4-macOS-Universal-AppleClang14.0.3-20230613.tar.xz" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-Universal/Qt6.2.4-macOS-Universal-AppleClang14.0.3-20230613.tar.xz" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -189,13 +195,13 @@ I&rsquo;ll provide only Universal Binary builds of macOS of this version. <a hre
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.2/macOS-Universal/Qt6.2.4-macOS-Universal-AppleClang14.0.3-noFramework-20230613.tar.xz" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.2/macOS-Universal/Qt6.2.4-macOS-Universal-AppleClang14.0.3-noFramework-20230613.tar.xz" target="_blank">
     OSDN link
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-Universal/Qt6.2.4-macOS-Universal-AppleClang14.0.3-noFramework-20230613.tar.xz" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-Universal/Qt6.2.4-macOS-Universal-AppleClang14.0.3-noFramework-20230613.tar.xz" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -211,13 +217,13 @@ I&rsquo;ll provide only Universal Binary builds of macOS of this version. <a hre
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.2/macOS-Universal/Qt6.2.4-macOS-Universal-AppleClang14.0.3-staticFull-20230613.tar.xz" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.2/macOS-Universal/Qt6.2.4-macOS-Universal-AppleClang14.0.3-staticFull-20230613.tar.xz" target="_blank">
     OSDN link
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-Universal/Qt6.2.4-macOS-Universal-AppleClang14.0.3-staticFull-20230613.tar.xz" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-Universal/Qt6.2.4-macOS-Universal-AppleClang14.0.3-staticFull-20230613.tar.xz" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -335,7 +341,7 @@ I&rsquo;ll provide only Universal Binary builds of macOS of this version. <a hre
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Wed, 14 Jun 2023 07:41:13 CST</p>
+Site generated: Wed, 14 Jun 2023 08:00:34 CST</p>
 
         </div>
       </div>
