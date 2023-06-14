@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.113.0">
-    <meta name="generator" content="Relearn 5.15.2">
+    <meta name="generator" content="Relearn 5.16.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>6.5.1 的 macOS 版本 :: Fsu0413 的原版 Qt 构建</title>
@@ -111,38 +111,42 @@
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
   <div class="box-content">
+
 <p>此版本中附带下列数据库：</p>
 <ol>
 <li>SQLite （随 Qt 一起分发）：使用 <code>-DFEATURE_sql_sqlite -DFEATURE_system_sqlite=OFF</code> 内建在这份包里。</li>
 </ol>
-  </div>
+</div>
 </div>
 
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
   <div class="box-content">
+
 <p>从 Qt 6.2 开始 Qt 将 TLS 后端改成插件的形式。<br>
 这个版本包含下列后端：</p>
 <ol>
 <li>OpenSSL 3.0 系列，使用 <code>-DFEATURE_openssl=ON -DINPUT_openssl=linked</code> 来启用链接的 OpenSSL 支持</li>
 <li>macOS 提供的 Secure Transport library，使用 <code>-DFEATURE_securetransport=ON</code></li>
 </ol>
-  </div>
+</div>
 </div>
 
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
   <div class="box-content">
-所有构建配置了 <code>-DFEATURE_icu=OFF</code> 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。  </div>
+<p>
+所有构建配置了 <code>-DFEATURE_icu=OFF</code> 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。</div>
 </div>
 
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
   <div class="box-content">
-这个版本我只会提供统一二进制构建。 <a href="https://developer.apple.com/documentation/apple-silicon/building-a-universal-macos-binary" target="_blank">统一二进制</a>在 Intel 和 Apple 芯片的 Mac 上都能原生运行。  </div>
+<p>
+这个版本我只会提供统一二进制构建。 <a href="https://developer.apple.com/documentation/apple-silicon/building-a-universal-macos-binary" target="_blank">统一二进制</a>在 Intel 和 Apple 芯片的 Mac 上都能原生运行。</div>
 </div>
 
 <h2 id="dynamic--shared-builds">Dynamic / Shared Builds</h2>
@@ -153,13 +157,13 @@
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/macOS-Universal/Qt6.5.1-macOS-Universal-AppleClang14.0.3-20230531.tar.xz" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/macOS-Universal/Qt6.5.1-macOS-Universal-AppleClang14.0.3-20230531.tar.xz" target="_blank">
     OSDN 链接
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/macOS-Universal/Qt6.5.1-macOS-Universal-AppleClang14.0.3-20230531.tar.xz" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/macOS-Universal/Qt6.5.1-macOS-Universal-AppleClang14.0.3-20230531.tar.xz" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -173,13 +177,13 @@
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/macOS-Universal/Qt6.5.1-macOS-Universal-AppleClang14.0.3-noFramework-20230531.tar.xz" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/macOS-Universal/Qt6.5.1-macOS-Universal-AppleClang14.0.3-noFramework-20230531.tar.xz" target="_blank">
     OSDN 链接
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/macOS-Universal/Qt6.5.1-macOS-Universal-AppleClang14.0.3-noFramework-20230531.tar.xz" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/macOS-Universal/Qt6.5.1-macOS-Universal-AppleClang14.0.3-noFramework-20230531.tar.xz" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -195,13 +199,13 @@
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/macOS-Universal/Qt6.5.1-macOS-Universal-AppleClang14.0.3-staticFull-20230531.tar.xz" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/macOS-Universal/Qt6.5.1-macOS-Universal-AppleClang14.0.3-staticFull-20230531.tar.xz" target="_blank">
     OSDN 链接
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/macOS-Universal/Qt6.5.1-macOS-Universal-AppleClang14.0.3-staticFull-20230531.tar.xz" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/macOS-Universal/Qt6.5.1-macOS-Universal-AppleClang14.0.3-staticFull-20230531.tar.xz" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -319,7 +323,7 @@
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Wed, 14 Jun 2023 07:41:27 CST</p>
+Site generated: Wed, 14 Jun 2023 08:00:24 CST</p>
 
         </div>
       </div>

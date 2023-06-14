@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.113.0">
-    <meta name="generator" content="Relearn 5.15.2">
+    <meta name="generator" content="Relearn 5.16.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>6.5.1 的 Windows 版本 :: Fsu0413 的原版 Qt 构建</title>
@@ -114,32 +114,35 @@
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
   <div class="box-content">
+
 <p>此版本中附带下列数据库：</p>
 <ol>
 <li>SQLite （随 Qt 一起分发）：使用 <code>-DFEATURE_sql_sqlite -DFEATURE_system_sqlite=OFF</code> 内建在这份包里。</li>
 <li>ODBC：使用 <code>-DFEATURE_sql_odbc</code> 内建在这份包里。</li>
 </ol>
-  </div>
+</div>
 </div>
 
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
   <div class="box-content">
+
 <p>从 Qt 6.2 开始 Qt 将 TLS 后端改成插件的形式。<br>
 这个版本包含下列后端：</p>
 <ol>
 <li>OpenSSL 3.0 系列，使用 <code>-DFEATURE_openssl=ON -DINPUT_openssl=linked</code> 来启用链接的 OpenSSL 支持</li>
 <li>Windows Secure Channel，使用 <code>-DFEATURE_schannel=ON</code>。在 MSVC 版本中支持 TLS 1.3</li>
 </ol>
-  </div>
+</div>
 </div>
 
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
   <div class="box-content">
-所有构建配置了 <code>-DFEATURE_icu=OFF</code> 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。  </div>
+<p>
+所有构建配置了 <code>-DFEATURE_icu=OFF</code> 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。</div>
 </div>
 
 <h2 id="dynamic--shared-builds">Dynamic / Shared Builds</h2>
@@ -150,13 +153,13 @@
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-VS2022-17.6.2-20230601.7z" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-VS2022-17.6.2-20230601.7z" target="_blank">
     OSDN 链接
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-VS2022-17.6.2-20230601.7z" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-VS2022-17.6.2-20230601.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -171,20 +174,20 @@
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-MinGW12.2.0-msvcrt-20230531.7z" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-MinGW12.2.0-msvcrt-20230531.7z" target="_blank">
     OSDN 链接
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-MinGW12.2.0-msvcrt-20230531.7z" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-MinGW12.2.0-msvcrt-20230531.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
             <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ GCC 12.2.0 (msvcrt)</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
 <span class="btn cstyle grey">
-  <a href="https://github.com/niXman/mingw-builds-binaries/releases/download/12.2.0-rt_v10-rev2/x86_64-12.2.0-release-posix-seh-msvcrt-rt_v10-rev2.7z" target="_blank"> 
+  <a href="https://github.com/niXman/mingw-builds-binaries/releases/download/12.2.0-rt_v10-rev2/x86_64-12.2.0-release-posix-seh-msvcrt-rt_v10-rev2.7z" target="_blank">
     64 位 MinGW-w64 w/ GCC 12.2.0 msvcrt
   </a>
 </span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
@@ -196,20 +199,20 @@
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-MinGW12.2.0-ucrt-20230531.7z" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-MinGW12.2.0-ucrt-20230531.7z" target="_blank">
     OSDN 链接
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-MinGW12.2.0-ucrt-20230531.7z" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-MinGW12.2.0-ucrt-20230531.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
             <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ GCC 12.2.0 (ucrt)</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
 <span class="btn cstyle grey">
-  <a href="https://github.com/niXman/mingw-builds-binaries/releases/download/12.2.0-rt_v10-rev2/x86_64-12.2.0-release-posix-seh-ucrt-rt_v10-rev2.7z" target="_blank"> 
+  <a href="https://github.com/niXman/mingw-builds-binaries/releases/download/12.2.0-rt_v10-rev2/x86_64-12.2.0-release-posix-seh-ucrt-rt_v10-rev2.7z" target="_blank">
     64 位 MinGW-w64 w/ GCC 12.2.0 UCRT
   </a>
 </span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
@@ -222,20 +225,20 @@
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-llvm-mingw-16.0.5-ucrt-20230614.7z" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-llvm-mingw-16.0.5-ucrt-20230614.7z" target="_blank">
     OSDN 链接
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-llvm-mingw-16.0.5-ucrt-20230614.7z" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-llvm-mingw-16.0.5-ucrt-20230614.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
             <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ LLVM 16.0.5 (ucrt)</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
 <span class="btn cstyle grey">
-  <a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20230603/llvm-mingw-20230603-ucrt-x86_64.zip" target="_blank"> 
+  <a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20230603/llvm-mingw-20230603-ucrt-x86_64.zip" target="_blank">
     64 位 MinGW-W64 w/ LLVM 16.0.5 UCRT
   </a>
 </span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
@@ -247,20 +250,20 @@
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-llvm-mingw-16.0.5-msvcrt-20230614.7z" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-llvm-mingw-16.0.5-msvcrt-20230614.7z" target="_blank">
     OSDN 链接
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-llvm-mingw-16.0.5-msvcrt-20230614.7z" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-llvm-mingw-16.0.5-msvcrt-20230614.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
             <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ LLVM 16.0.5 (msvcrt)</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
 <span class="btn cstyle grey">
-  <a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20230603/llvm-mingw-20230603-msvcrt-x86_64.zip" target="_blank"> 
+  <a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20230603/llvm-mingw-20230603-msvcrt-x86_64.zip" target="_blank">
     64 位 MinGW-W64 w/ LLVM 16.0.5 msvcrt
   </a>
 </span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
@@ -274,13 +277,13 @@
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-VS2022-17.6.2-staticFull-20230601.7z" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-VS2022-17.6.2-staticFull-20230601.7z" target="_blank">
     OSDN 链接
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-VS2022-17.6.2-staticFull-20230601.7z" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-VS2022-17.6.2-staticFull-20230601.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -295,20 +298,20 @@
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-MinGW12.2.0-msvcrt-staticFull-20230531.7z" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-MinGW12.2.0-msvcrt-staticFull-20230531.7z" target="_blank">
     OSDN 链接
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-MinGW12.2.0-msvcrt-staticFull-20230531.7z" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-MinGW12.2.0-msvcrt-staticFull-20230531.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
             <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ GCC 12.2.0 (msvcrt)</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
 <span class="btn cstyle grey">
-  <a href="https://github.com/niXman/mingw-builds-binaries/releases/download/12.2.0-rt_v10-rev2/x86_64-12.2.0-release-posix-seh-msvcrt-rt_v10-rev2.7z" target="_blank"> 
+  <a href="https://github.com/niXman/mingw-builds-binaries/releases/download/12.2.0-rt_v10-rev2/x86_64-12.2.0-release-posix-seh-msvcrt-rt_v10-rev2.7z" target="_blank">
     64 位 MinGW-w64 w/ GCC 12.2.0 msvcrt
   </a>
 </span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
@@ -320,20 +323,20 @@
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-MinGW12.2.0-ucrt-staticFull-20230601.7z" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-MinGW12.2.0-ucrt-staticFull-20230601.7z" target="_blank">
     OSDN 链接
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-MinGW12.2.0-ucrt-staticFull-20230601.7z" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.1-Windows-x86_64-MinGW12.2.0-ucrt-staticFull-20230601.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
             <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ GCC 12.2.0 (ucrt)</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
 <span class="btn cstyle grey">
-  <a href="https://github.com/niXman/mingw-builds-binaries/releases/download/12.2.0-rt_v10-rev2/x86_64-12.2.0-release-posix-seh-ucrt-rt_v10-rev2.7z" target="_blank"> 
+  <a href="https://github.com/niXman/mingw-builds-binaries/releases/download/12.2.0-rt_v10-rev2/x86_64-12.2.0-release-posix-seh-ucrt-rt_v10-rev2.7z" target="_blank">
     64 位 MinGW-w64 w/ GCC 12.2.0 UCRT
   </a>
 </span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
@@ -449,7 +452,7 @@
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Wed, 14 Jun 2023 07:41:27 CST</p>
+Site generated: Wed, 14 Jun 2023 08:00:24 CST</p>
 
         </div>
       </div>

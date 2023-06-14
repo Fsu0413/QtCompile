@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.113.0">
-    <meta name="generator" content="Relearn 5.15.2">
+    <meta name="generator" content="Relearn 5.16.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>6.5.1 for WebAssembly :: Fsu0413&#39;s Original Qt builds</title>
@@ -108,35 +108,39 @@
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
   <div class="box-content">
+
 <p>Following database backend is distributed with this version:</p>
 <ol>
 <li>SQLite (distributed with Qt): Built in the package using command <code>-DFEATURE_sql_sqlite -DFEATURE_system_sqlite=OFF</code>.</li>
 </ol>
-  </div>
+</div>
 </div>
 
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
   <div class="box-content">
-All builds have <code>-DFEATURE_icu=OFF</code> because I think the ICU library is too big and, in most of the conditions, useless for common users.  </div>
+<p>
+All builds have <code>-DFEATURE_icu=OFF</code> because I think the ICU library is too big and, in most of the conditions, useless for common users.</div>
 </div>
 
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
   <div class="box-content">
+
 <p>All packages are built using emscripten SDK 3.1.25 as recommended in Qt Wiki.<br>
 WebAssembly doesn&rsquo;t support ABI compatibility. You MUST use SDK 3.1.25 for building your own code, otherwise unpredicted error may occur.</p>
 <p>All builds have thread feature enabled using <code>-DFEATURE_thread=ON</code>.</p>
-  </div>
+</div>
 </div>
 
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
   <div class="box-content">
-Qt for WebAssembly can only be built to static libs.  </div>
+<p>
+Qt for WebAssembly can only be built to static libs.</div>
 </div>
 
 <h2 id="static-builds">Static Builds</h2>
@@ -147,13 +151,13 @@ Qt for WebAssembly can only be built to static libs.  </div>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/WebAssembly/Qt6.5.1-WebAssembly-emscripten3.1.25-xWindows-x86_64-MinGW12.2.0-msvcrt-20230531.7z" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/WebAssembly/Qt6.5.1-WebAssembly-emscripten3.1.25-xWindows-x86_64-MinGW12.2.0-msvcrt-20230531.7z" target="_blank">
     OSDN link
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/WebAssembly/Qt6.5.1-WebAssembly-emscripten3.1.25-xWindows-x86_64-MinGW12.2.0-msvcrt-20230531.7z" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/WebAssembly/Qt6.5.1-WebAssembly-emscripten3.1.25-xWindows-x86_64-MinGW12.2.0-msvcrt-20230531.7z" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -168,13 +172,13 @@ Qt for WebAssembly can only be built to static libs.  </div>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/WebAssembly/Qt6.5.1-WebAssembly-emscripten3.1.25-xLinux-x86_64-gcc11.3.1-20230531.tar.xz" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/WebAssembly/Qt6.5.1-WebAssembly-emscripten3.1.25-xLinux-x86_64-gcc11.3.1-20230531.tar.xz" target="_blank">
     OSDN link
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/WebAssembly/Qt6.5.1-WebAssembly-emscripten3.1.25-xLinux-x86_64-gcc11.3.1-20230531.tar.xz" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/WebAssembly/Qt6.5.1-WebAssembly-emscripten3.1.25-xLinux-x86_64-gcc11.3.1-20230531.tar.xz" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -189,13 +193,13 @@ Qt for WebAssembly can only be built to static libs.  </div>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/WebAssembly/Qt6.5.1-WebAssembly-emscripten3.1.25-xmacOS-Universal-AppleClang14.0.3-20230531.tar.xz" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.5/WebAssembly/Qt6.5.1-WebAssembly-emscripten3.1.25-xmacOS-Universal-AppleClang14.0.3-20230531.tar.xz" target="_blank">
     OSDN link
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/WebAssembly/Qt6.5.1-WebAssembly-emscripten3.1.25-xmacOS-Universal-AppleClang14.0.3-20230531.tar.xz" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/WebAssembly/Qt6.5.1-WebAssembly-emscripten3.1.25-xmacOS-Universal-AppleClang14.0.3-20230531.tar.xz" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -313,7 +317,7 @@ Qt for WebAssembly can only be built to static libs.  </div>
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Wed, 14 Jun 2023 07:41:26 CST</p>
+Site generated: Wed, 14 Jun 2023 08:00:24 CST</p>
 
         </div>
       </div>

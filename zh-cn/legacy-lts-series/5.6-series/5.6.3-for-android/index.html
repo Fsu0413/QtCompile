@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.113.0">
-    <meta name="generator" content="Relearn 5.15.2">
+    <meta name="generator" content="Relearn 5.16.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>5.6.3 的安卓版本 :: Fsu0413 的原版 Qt 构建</title>
@@ -109,44 +109,49 @@
 <div class="box notices cstyle warning">
   <div class="box-label"><i class="fas fa-exclamation-triangle"></i> 重要</div>
   <div class="box-content">
-这是最终版。即使有需求也不会再更新。构建环境已经爆破  </div>
+<p>
+这是最终版。即使有需求也不会再更新。构建环境已经爆破</div>
 </div>
 
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
   <div class="box-content">
+
 <p>此版本中附带下列数据库：</p>
 <ol>
 <li>SQLite （随 Qt 一起分发）：使用 <code>-plugin-sql-sqlite</code> 内建在这份包里。</li>
 </ol>
-  </div>
+</div>
 </div>
 
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
   <div class="box-content">
+
 <p>所有构建使用 <code>-openssl-linked</code>，意味着 OpenSSL 链接到了 Qt，作为 TLS 后端来使用。<br>
 它链接到了静态的 OpenSSL 1.0.2 系列库。</p>
 <p>安卓从 6.0 版本开始使用 BoringSSL 作为内建的 SSL / TLS 库。<br>
 此库与 OpenSSL 的 API 不兼容！！所以无法使用。</p>
-  </div>
+</div>
 </div>
 
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
   <div class="box-content">
-所有构建配置了 <code>-no-icu</code> 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。  </div>
+<p>
+所有构建配置了 <code>-no-icu</code> 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。</div>
 </div>
 
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
   <div class="box-content">
+<p>
 使用 NDK r10e 版本，使用参数 <code>-android-ndk-platform android-9</code> 进行构建。<br>
-这意味着这些构建可能只能在安卓 2.3 以及之后的版本上运行。  </div>
+这意味着这些构建可能只能在安卓 2.3 以及之后的版本上运行。</div>
 </div>
 <h2 id="dynamic-builds">Dynamic Builds</h2>
 <h3 id="windows-host">Windows Host</h3>
@@ -156,13 +161,13 @@
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt5.6/Android/Windows-x86_64-hosted/Qt5.6.3-Android-arm-gcc-NDKr10e-XWindows-x86_64-MinGW4.9.4-20200105.7z" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt5.6/Android/Windows-x86_64-hosted/Qt5.6.3-Android-arm-gcc-NDKr10e-XWindows-x86_64-MinGW4.9.4-20200105.7z" target="_blank">
     OSDN 链接
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Android/Windows-x86_64-hosted/Qt5.6.3-Android-arm-gcc-NDKr10e-XWindows-x86_64-MinGW4.9.4-20200105.7z" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Android/Windows-x86_64-hosted/Qt5.6.3-Android-arm-gcc-NDKr10e-XWindows-x86_64-MinGW4.9.4-20200105.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -176,13 +181,13 @@
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt5.6/Android/Windows-x86_64-hosted/Qt5.6.3-Android-x86-gcc-NDKr10e-XWindows-x86_64-MinGW4.9.4-20200105.7z" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt5.6/Android/Windows-x86_64-hosted/Qt5.6.3-Android-x86-gcc-NDKr10e-XWindows-x86_64-MinGW4.9.4-20200105.7z" target="_blank">
     OSDN 链接
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Android/Windows-x86_64-hosted/Qt5.6.3-Android-x86-gcc-NDKr10e-XWindows-x86_64-MinGW4.9.4-20200105.7z" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Android/Windows-x86_64-hosted/Qt5.6.3-Android-x86-gcc-NDKr10e-XWindows-x86_64-MinGW4.9.4-20200105.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -197,13 +202,13 @@
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt5.6/Android/Linux-x86_64-hosted/Qt5.6.3-Android-arm-gcc-NDKr10e-xLinux-x86_64-gcc4.8.5-20200105.tar.xz" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt5.6/Android/Linux-x86_64-hosted/Qt5.6.3-Android-arm-gcc-NDKr10e-xLinux-x86_64-gcc4.8.5-20200105.tar.xz" target="_blank">
     OSDN 链接
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Android/Linux-x86_64-hosted/Qt5.6.3-Android-arm-gcc-NDKr10e-xLinux-x86_64-gcc4.8.5-20200105.tar.xz" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Android/Linux-x86_64-hosted/Qt5.6.3-Android-arm-gcc-NDKr10e-xLinux-x86_64-gcc4.8.5-20200105.tar.xz" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -217,13 +222,13 @@
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt5.6/Android/Linux-x86_64-hosted/Qt5.6.3-Android-x86-gcc-NDKr10e-xLinux-x86_64-gcc4.8.5-20200105.tar.xz" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt5.6/Android/Linux-x86_64-hosted/Qt5.6.3-Android-x86-gcc-NDKr10e-xLinux-x86_64-gcc4.8.5-20200105.tar.xz" target="_blank">
     OSDN 链接
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Android/Linux-x86_64-hosted/Qt5.6.3-Android-x86-gcc-NDKr10e-xLinux-x86_64-gcc4.8.5-20200105.tar.xz" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Android/Linux-x86_64-hosted/Qt5.6.3-Android-x86-gcc-NDKr10e-xLinux-x86_64-gcc4.8.5-20200105.tar.xz" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -238,13 +243,13 @@
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt5.6/Android/macOS-x86_64-hosted/Qt5.6.3-Android-arm-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt5.6/Android/macOS-x86_64-hosted/Qt5.6.3-Android-arm-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz" target="_blank">
     OSDN 链接
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Android/macOS-x86_64-hosted/Qt5.6.3-Android-arm-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Android/macOS-x86_64-hosted/Qt5.6.3-Android-arm-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -258,13 +263,13 @@
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt5.6/Android/macOS-x86_64-hosted/Qt5.6.3-Android-x86-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt5.6/Android/macOS-x86_64-hosted/Qt5.6.3-Android-x86-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz" target="_blank">
     OSDN 链接
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Android/macOS-x86_64-hosted/Qt5.6.3-Android-x86-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Android/macOS-x86_64-hosted/Qt5.6.3-Android-x86-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -382,7 +387,7 @@
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Wed, 14 Jun 2023 07:41:27 CST</p>
+Site generated: Wed, 14 Jun 2023 08:00:25 CST</p>
 
         </div>
       </div>

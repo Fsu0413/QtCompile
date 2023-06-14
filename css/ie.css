@@ -178,13 +178,10 @@
 	}
 	/* tabs */
 	#body .tab-nav-button {
-		margin-left: 4px;
+		margin-left: .6rem;
 	}
-	html[dir="rtl"] #body .tab-nav-button{
-		float: left;
-	}
-	#body .tab-nav-button:first-child {
-		margin-left: 9px;
+	#body .tab-content{
+		margin-top: -1px;
 	}
 	/* auto-complete */
 	.autocomplete-suggestions {
@@ -432,8 +429,8 @@
 	}
 
 	div.box.grey {
-		background-color: rgba( 128, 128, 128, 1 ); /* var(--INTERNAL-BOX-GREY-color) */
-		border-color: rgba( 128, 128, 128, 1 ); /* var(--INTERNAL-BOX-GREY-color) */
+		background-color: rgba( 160, 160, 160, 1 ); /* var(--INTERNAL-BOX-GREY-color) */
+		border-color: rgba( 160, 160, 160, 1 ); /* var(--INTERNAL-BOX-GREY-color) */
 	}
 
 	div.box.grey > .box-content {
@@ -645,11 +642,11 @@
 	}
 
 	.btn.cstyle.grey {
-		background-color: rgba( 128, 128, 128, 1 ); /* var(--BOX-GREY-color) */
+		background-color: rgba( 160, 160, 160, 1 ); /* var(--BOX-GREY-color) */
 	}
 
 	.btn.cstyle.grey > * {
-		border-color: rgba( 128, 128, 128, 1 ); /* var(--BOX-GREY-color) */
+		border-color: rgba( 160, 160, 160, 1 ); /* var(--BOX-GREY-color) */
 	}
 
 	.btn.cstyle.orange {
@@ -695,11 +692,6 @@
 
 	#body .tags a.tag-link:after {
 		background: rgba( 255, 255, 255, 1 ); /* var(--MAIN-BG-color) */
-	}
-
-	#body .tab-nav-button.active {
-		background-color: rgba( 255, 255, 255, 1 ) !important; /* var(--MAIN-BG-color) */
-		border-bottom-color: rgba( 255, 255, 255, 1 ) !important; /* var(--MAIN-BG-color) */
 	}
 
 	.badge > * {
@@ -748,7 +740,7 @@
 	}
 
 	.badge.grey > .badge-content {
-		background-color: rgba( 128, 128, 128, 1 ); /* var(--INTERNAL-BOX-GREY-color) */
+		background-color: rgba( 160, 160, 160, 1 ); /* var(--INTERNAL-BOX-GREY-color) */
 	}
 
 	.badge.orange > .badge-content {
@@ -771,6 +763,38 @@
 
 	article ul > li > input[type="checkbox"]::before {
 		box-shadow: inset 1em 1em rgba( 125, 201, 3, 1 ); /* var(--INTERNAL-PRIMARY-color) */
+	}
+
+	/* no style support for tabs in IE11; all styled as default */
+	#body .tab-nav-button {
+		color: rgba( 16, 16, 16, 1 ); /* var(--INTERNAL-MAIN-TEXT-color) */
+	}
+
+	#body .tab-nav-button.active {
+		background-color: rgba( 255, 255, 255, 1 ); /* var(--VARIABLE-BOX-BG-color) */
+		border-bottom-color: rgba( 255, 255, 255, 1 ); /* var(--VARIABLE-BOX-BG-color) */
+		border-left-color: rgba( 134, 134, 134, .4 ); /* var(--VARIABLE-BOX-color) */
+		border-right-color: rgba( 134, 134, 134, .4 ); /* var(--VARIABLE-BOX-color) */
+		border-top-color: rgba( 134, 134, 134, .4 ); /* var(--VARIABLE-BOX-color) */
+		color: rgba( 16, 16, 16, 1 ); /* var(--VARIABLE-BOX-TEXT-color) */
+	}
+
+	#body .tab-nav-button.active > *{
+		background-color: rgba( 255, 255, 255, 1 ); /* var(--VARIABLE-BOX-BG-color) */
+	}
+
+	#body .tab-nav-button > * > *{
+		border-color: rgba( 134, 134, 134, .4 ); /* var(--VARIABLE-BOX-color) */
+	}
+
+	#body .tab-content{
+		background-color: rgba( 255, 255, 255, 1 ); /* var(--VARIABLE-BOX-BG-color) */
+		border-color: rgba( 134, 134, 134, .4 ); /* var(--VARIABLE-BOX-color) */
+	}
+
+	#body .tab-content-text{
+		background-color: rgba( 255, 255, 255, 1 ); /* var(--VARIABLE-BOX-BG-color) */
+		color: rgba( 16, 16, 16, 1 ); /* var(--VARIABLE-BOX-TEXT-color) */
 	}
 
 	/* ----------------------------------------------- */

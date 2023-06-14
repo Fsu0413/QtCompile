@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.113.0">
-    <meta name="generator" content="Relearn 5.15.2">
+    <meta name="generator" content="Relearn 5.16.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>6.2.4 for Windows :: Fsu0413&#39;s Original Qt builds</title>
@@ -114,48 +114,53 @@
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
   <div class="box-content">
+
 <p>Following database backend is distributed with this version:</p>
 <ol>
 <li>SQLite (distributed with Qt): Built in the package using command <code>-DFEATURE_sql_sqlite -DFEATURE_system_sqlite=OFF</code>.</li>
 <li>ODBC: Built in the package using command <code>-DFEATURE_sql_odbc</code>.</li>
 <li>MariaDB Connector/C 3.3 series (Dynamic builds only): Built in the package using command <code>-DFEATURE_sql_mysql</code>.</li>
 </ol>
-  </div>
+</div>
 </div>
 
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
   <div class="box-content">
+
 <p>Since Qt 6.2 Qt made TLS backends as plugin.<br>
 Following backend(s) are built in the package:</p>
 <ol>
 <li>OpenSSL 3.0 series using <code>-DFEATURE_openssl=ON -DINPUT_openssl=linked</code> for enabling linked OpenSSL support</li>
 <li>Windows Secure Channel using <code>-DFEATURE_schannel=ON</code> with TLS 1.3 support on MSVC version</li>
 </ol>
-  </div>
+</div>
 </div>
 
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
   <div class="box-content">
-All builds have <code>-DFEATURE_icu=OFF</code> because I think the ICU library is too big and, in most of the conditions, useless for common users.  </div>
+<p>
+All builds have <code>-DFEATURE_icu=OFF</code> because I think the ICU library is too big and, in most of the conditions, useless for common users.</div>
 </div>
 
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
   <div class="box-content">
+
 <p>No QtWebEngine in this version.</p>
-  </div>
+</div>
 </div>
 
 <div class="box notices cstyle primary">
   <div class="box-label"><i class="fas fa-check-square"></i> Patches (mostly CVE issue)</div>
   <div class="box-content">
+<p>
 I build Qt with patches. See following page for a list of patches:<br>
-<a href="/miscellaneous/notes-for-this-repo/index.html#existing-patches">existing-patches</a>  </div>
+<a href="/miscellaneous/notes-for-this-repo/index.html#existing-patches">existing-patches</a></div>
 </div>
 
 <h2 id="dynamic--shared-builds">Dynamic / Shared Builds</h2>
@@ -166,13 +171,13 @@ I build Qt with patches. See following page for a list of patches:<br>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-VS2019-16.11.26-20230613.7z" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-VS2019-16.11.26-20230613.7z" target="_blank">
     OSDN link
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-VS2019-16.11.26-20230613.7z" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-VS2019-16.11.26-20230613.7z" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -186,13 +191,13 @@ I build Qt with patches. See following page for a list of patches:<br>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-VS2022-17.6.2-20230613.7z" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-VS2022-17.6.2-20230613.7z" target="_blank">
     OSDN link
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-VS2022-17.6.2-20230613.7z" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-VS2022-17.6.2-20230613.7z" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -207,20 +212,20 @@ I build Qt with patches. See following page for a list of patches:<br>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW11.2.0-20230613.7z" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW11.2.0-20230613.7z" target="_blank">
     OSDN link
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW11.2.0-20230613.7z" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW11.2.0-20230613.7z" target="_blank">
     SourceForge link
   </a>
 </span></td>
             </tr>
             <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">MinGW-w64 w/ GCC 11.2.0</td></tr><tr><td width="20%"><b>MinGW Used:</b></td><td colspan="4" width="80%">
 <span class="btn cstyle grey">
-  <a href="https://github.com/cristianadam/mingw-builds/releases/download/v11.2.0-rev4/x86_64-11.2.0-release-posix-seh-rt_v9-rev4.7z" target="_blank"> 
+  <a href="https://github.com/cristianadam/mingw-builds/releases/download/v11.2.0-rev4/x86_64-11.2.0-release-posix-seh-rt_v9-rev4.7z" target="_blank">
     64-bit MinGW-w64 w/ GCC 11.2.0
   </a>
 </span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
@@ -232,20 +237,20 @@ I build Qt with patches. See following page for a list of patches:<br>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW12.2.0-msvcrt-20230613.7z" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW12.2.0-msvcrt-20230613.7z" target="_blank">
     OSDN link
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW12.2.0-msvcrt-20230613.7z" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW12.2.0-msvcrt-20230613.7z" target="_blank">
     SourceForge link
   </a>
 </span></td>
             </tr>
             <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">MinGW-w64 w/ GCC 12.2.0 (msvcrt)</td></tr><tr><td width="20%"><b>MinGW Used:</b></td><td colspan="4" width="80%">
 <span class="btn cstyle grey">
-  <a href="https://github.com/niXman/mingw-builds-binaries/releases/download/12.2.0-rt_v10-rev2/x86_64-12.2.0-release-posix-seh-msvcrt-rt_v10-rev2.7z" target="_blank"> 
+  <a href="https://github.com/niXman/mingw-builds-binaries/releases/download/12.2.0-rt_v10-rev2/x86_64-12.2.0-release-posix-seh-msvcrt-rt_v10-rev2.7z" target="_blank">
     64-bit MinGW-w64 w/ GCC 12.2.0 msvcrt
   </a>
 </span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
@@ -257,20 +262,20 @@ I build Qt with patches. See following page for a list of patches:<br>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW12.2.0-ucrt-20230613.7z" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW12.2.0-ucrt-20230613.7z" target="_blank">
     OSDN link
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW12.2.0-ucrt-20230613.7z" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW12.2.0-ucrt-20230613.7z" target="_blank">
     SourceForge link
   </a>
 </span></td>
             </tr>
             <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">MinGW-w64 w/ GCC 12.2.0 (ucrt)</td></tr><tr><td width="20%"><b>MinGW Used:</b></td><td colspan="4" width="80%">
 <span class="btn cstyle grey">
-  <a href="https://github.com/niXman/mingw-builds-binaries/releases/download/12.2.0-rt_v10-rev2/x86_64-12.2.0-release-posix-seh-ucrt-rt_v10-rev2.7z" target="_blank"> 
+  <a href="https://github.com/niXman/mingw-builds-binaries/releases/download/12.2.0-rt_v10-rev2/x86_64-12.2.0-release-posix-seh-ucrt-rt_v10-rev2.7z" target="_blank">
     64-bit MinGW-w64 w/ GCC 12.2.0 UCRT
   </a>
 </span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
@@ -283,20 +288,20 @@ I build Qt with patches. See following page for a list of patches:<br>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-llvm-mingw-15.0.0-ucrt-20230613.7z" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-llvm-mingw-15.0.0-ucrt-20230613.7z" target="_blank">
     OSDN link
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-llvm-mingw-15.0.0-ucrt-20230613.7z" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-llvm-mingw-15.0.0-ucrt-20230613.7z" target="_blank">
     SourceForge link
   </a>
 </span></td>
             </tr>
             <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">MinGW-w64 w/ LLVM 15.0.0 (ucrt)</td></tr><tr><td width="20%"><b>MinGW Used:</b></td><td colspan="4" width="80%">
 <span class="btn cstyle grey">
-  <a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20220906/llvm-mingw-20220906-ucrt-x86_64.zip" target="_blank"> 
+  <a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20220906/llvm-mingw-20220906-ucrt-x86_64.zip" target="_blank">
     64-bit MinGW-W64 w/ LLVM 15.0.0 UCRT
   </a>
 </span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
@@ -308,20 +313,20 @@ I build Qt with patches. See following page for a list of patches:<br>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-llvm-mingw-15.0.0-msvcrt-20230613.7z" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-llvm-mingw-15.0.0-msvcrt-20230613.7z" target="_blank">
     OSDN link
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-llvm-mingw-15.0.0-msvcrt-20230613.7z" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-llvm-mingw-15.0.0-msvcrt-20230613.7z" target="_blank">
     SourceForge link
   </a>
 </span></td>
             </tr>
             <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">MinGW-w64 w/ LLVM 15.0.0 (msvcrt)</td></tr><tr><td width="20%"><b>MinGW Used:</b></td><td colspan="4" width="80%">
 <span class="btn cstyle grey">
-  <a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20220906/llvm-mingw-20220906-msvcrt-x86_64.zip" target="_blank"> 
+  <a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20220906/llvm-mingw-20220906-msvcrt-x86_64.zip" target="_blank">
     64-bit MinGW-W64 w/ LLVM 15.0.0 msvcrt
   </a>
 </span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
@@ -335,13 +340,13 @@ I build Qt with patches. See following page for a list of patches:<br>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-VS2019-16.11.26-staticFull-20230613.7z" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-VS2019-16.11.26-staticFull-20230613.7z" target="_blank">
     OSDN link
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-VS2019-16.11.26-staticFull-20230613.7z" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-VS2019-16.11.26-staticFull-20230613.7z" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -356,20 +361,20 @@ I build Qt with patches. See following page for a list of patches:<br>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW11.2.0-staticFull-20230613.7z" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW11.2.0-staticFull-20230613.7z" target="_blank">
     OSDN link
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW11.2.0-staticFull-20230613.7z" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW11.2.0-staticFull-20230613.7z" target="_blank">
     SourceForge link
   </a>
 </span></td>
             </tr>
             <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">MinGW-w64 w/ GCC 11.2.0</td></tr><tr><td width="20%"><b>MinGW Used:</b></td><td colspan="4" width="80%">
 <span class="btn cstyle grey">
-  <a href="https://github.com/cristianadam/mingw-builds/releases/download/v11.2.0-rev4/x86_64-11.2.0-release-posix-seh-rt_v9-rev4.7z" target="_blank"> 
+  <a href="https://github.com/cristianadam/mingw-builds/releases/download/v11.2.0-rev4/x86_64-11.2.0-release-posix-seh-rt_v9-rev4.7z" target="_blank">
     64-bit MinGW-w64 w/ GCC 11.2.0
   </a>
 </span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
@@ -381,20 +386,20 @@ I build Qt with patches. See following page for a list of patches:<br>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW12.2.0-msvcrt-staticFull-20230613.7z" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW12.2.0-msvcrt-staticFull-20230613.7z" target="_blank">
     OSDN link
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW12.2.0-msvcrt-staticFull-20230613.7z" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW12.2.0-msvcrt-staticFull-20230613.7z" target="_blank">
     SourceForge link
   </a>
 </span></td>
             </tr>
             <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">MinGW-w64 w/ GCC 12.2.0 (msvcrt)</td></tr><tr><td width="20%"><b>MinGW Used:</b></td><td colspan="4" width="80%">
 <span class="btn cstyle grey">
-  <a href="https://github.com/niXman/mingw-builds-binaries/releases/download/12.2.0-rt_v10-rev2/x86_64-12.2.0-release-posix-seh-msvcrt-rt_v10-rev2.7z" target="_blank"> 
+  <a href="https://github.com/niXman/mingw-builds-binaries/releases/download/12.2.0-rt_v10-rev2/x86_64-12.2.0-release-posix-seh-msvcrt-rt_v10-rev2.7z" target="_blank">
     64-bit MinGW-w64 w/ GCC 12.2.0 msvcrt
   </a>
 </span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
@@ -406,20 +411,20 @@ I build Qt with patches. See following page for a list of patches:<br>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle green">
-  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW12.2.0-ucrt-staticFull-20230613.7z" target="_blank"> 
+  <a href="https://osdn.net/projects/fsu0413-qtbuilds/storage/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW12.2.0-ucrt-staticFull-20230613.7z" target="_blank">
     OSDN link
   </a>
 </span></td>
                 <td colspan="2" width="40%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW12.2.0-ucrt-staticFull-20230613.7z" target="_blank"> 
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.4-Windows-x86_64-MinGW12.2.0-ucrt-staticFull-20230613.7z" target="_blank">
     SourceForge link
   </a>
 </span></td>
             </tr>
             <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">MinGW-w64 w/ GCC 12.2.0 (ucrt)</td></tr><tr><td width="20%"><b>MinGW Used:</b></td><td colspan="4" width="80%">
 <span class="btn cstyle grey">
-  <a href="https://github.com/niXman/mingw-builds-binaries/releases/download/12.2.0-rt_v10-rev2/x86_64-12.2.0-release-posix-seh-ucrt-rt_v10-rev2.7z" target="_blank"> 
+  <a href="https://github.com/niXman/mingw-builds-binaries/releases/download/12.2.0-rt_v10-rev2/x86_64-12.2.0-release-posix-seh-ucrt-rt_v10-rev2.7z" target="_blank">
     64-bit MinGW-w64 w/ GCC 12.2.0 UCRT
   </a>
 </span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
@@ -535,7 +540,7 @@ I build Qt with patches. See following page for a list of patches:<br>
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Wed, 14 Jun 2023 07:41:26 CST</p>
+Site generated: Wed, 14 Jun 2023 08:00:24 CST</p>
 
         </div>
       </div>
