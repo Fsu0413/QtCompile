@@ -249,6 +249,7 @@ OpenSSL 1.1.1 系列将于 {{% date 2023 9 11 %}}结束支持，而 OpenSSL 3.0 
 | 6.2.6 | {{% date 2022 9 27 %}} | {{% date 2023 9 27 %}} |
 | 6.2.7 | {{% date 2023 1 2 %}} | {{% date 2024 1 2 %}} |
 | 6.2.8 | {{% date 2023 4 18 %}} | {{% date 2024 4 18 %}} |
+| 6.2.9 | {{% date 2023 7 4 %}} | {{% date 2024 7 4 %}} |
 
 ## 之后可能会更新的内容
 
@@ -263,7 +264,7 @@ OpenSSL 1.1.1 系列将于 {{% date 2023 9 11 %}}结束支持，而 OpenSSL 3.0 
 下面这个表列出了我构建每个版本时所应用的补丁。  
 注：我不会对当前正在活跃开发的 Qt 应用补丁，而是单纯等待新版本发布。所以应用补丁的只有商业 LTS 版本和结束生命周期的版本。
 
-| 问题 \ Qt 版本 | 5.12.12 | 5.15.9 | 6.2.4 |
+| 问题 \ Qt 版本 | 5.12.12 | 5.15.10 | 6.2.4 |
 |-|-|-|-|
 | （仅限 6.2.4）MinGW 构建修复 | - | - | [仅限 Windows](https://codereview.qt-project.org/c/qt/qtbase/+/401758) |
 | CVE-2022-25255 | [√](https://codereview.qt-project.org/c/qt/qtbase/+/396020) | 附带 | 附带 |
@@ -278,3 +279,4 @@ OpenSSL 1.1.1 系列将于 {{% date 2023 9 11 %}}结束支持，而 OpenSSL 3.0 
 | CVE-2023-32763 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-32763-qtbase-5.15.diff) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-32763-qtbase-6.2.diff) |
 | CVE-2023-33285 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-33285-qtbase-5.15.diff) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-33285-qtbase-6.2.diff) |
 | CVE-2023-34410 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-34410-qtbase-5.15.diff) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-34410-qtbase-6.2.diff) |
+| CVE-2023-37369 | - | **冲突**<br />等待 [KDE 补丁](https://invent.kde.org/qt/qt/qtbase/-/merge_requests/263)中 | **冲突**<br />[我自](https://github.com/Fsu0413/Fs-scripts/blob/master/2023-06-27-QXmlStreamReader-change-fastS-6.2.4-unofficial.diff)[己的](https://github.com/Fsu0413/Fs-scripts/blob/master/2023-07-07-CVE-2023-37369-qtbase-6.2.4-unofficial.diff)补丁 |

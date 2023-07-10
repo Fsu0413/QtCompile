@@ -249,6 +249,7 @@ Commericial-only Qt Open Source Release Date (ETA)
 | 6.2.6 | {{% date 2022 9 27 %}} | {{% date 2023 9 27 %}} |
 | 6.2.7 | {{% date 2023 1 2 %}} | {{% date 2024 1 2 %}} |
 | 6.2.8 | {{% date 2023 4 18 %}} | {{% date 2024 4 18 %}} |
+| 6.2.9 | {{% date 2023 7 4 %}} | {{% date 2024 7 4 %}} |
 
 ## Incoming update for future release
 
@@ -263,7 +264,7 @@ Most of them are CVE patches which can be downloaded from [Qt Downloads](https:/
 Following is a table for patches of each version I am currently building.  
 Note that I won't patch an active version of Qt and will simply wait for future release. So only Commericial LTS and EOL version are patched.
 
-| Issue \ Qt Version | 5.12.12 | 5.15.9 | 6.2.4 |
+| Issue \ Qt Version | 5.12.12 | 5.15.10 | 6.2.4 |
 |-|-|-|-|
 | (6.2.4 specific) MinGW build fix | - | - | [Windows only](https://codereview.qt-project.org/c/qt/qtbase/+/401758) |
 | CVE-2022-25255 | [√](https://codereview.qt-project.org/c/qt/qtbase/+/396020) | shipped | shipped |
@@ -278,3 +279,4 @@ Note that I won't patch an active version of Qt and will simply wait for future 
 | CVE-2023-32763 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-32763-qtbase-5.15.diff) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-32763-qtbase-6.2.diff) |
 | CVE-2023-33285 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-33285-qtbase-5.15.diff) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-33285-qtbase-6.2.diff) |
 | CVE-2023-34410 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-34410-qtbase-5.15.diff) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-34410-qtbase-6.2.diff) |
+| CVE-2023-37369 | - | **CONFLICT**<br />waiting for [KDE patches](https://invent.kde.org/qt/qt/qtbase/-/merge_requests/263) | **CONFLICT**<br />[pending](https://github.com/Fsu0413/Fs-scripts/blob/master/2023-06-27-QXmlStreamReader-change-fastS-6.2.4-unofficial.diff) [patches](https://github.com/Fsu0413/Fs-scripts/blob/master/2023-07-07-CVE-2023-37369-qtbase-6.2.4-unofficial.diff) by myself |
