@@ -271,7 +271,7 @@ dd {
     font-weight: 200;
     letter-spacing: -.02175em;
     line-height: 110% !important;
-    margin: 1rem 0 1rem 0;
+    margin: 1.2rem 0 .8rem 0;
     padding-inline-start: 1rem;
     text-rendering: optimizeLegibility;
     text-transform: uppercase;
@@ -544,14 +544,19 @@ div.box > .box-content {
 
 #body table th > :last-child,
 #body table th > :last-child :last-child,
+#body table th > div.highlight:last-child pre,
 #body table td > :last-child,
 #body table td > :last-child :last-child,
+#body table td > div:last-child pre,
 #body div.box > .box-content > :last-child,
 #body div.box > .box-content > :last-child :last-child,
+#body div.box > .box-content > div:last-child pre,
 #body div.expand > .expand-content-text > :last-child,
 #body div.expand > .expand-content-text > :last-child :last-child,
+#body div.expand > .expand-content-text > div:last-child pre,
 #body div.tab-content > .tab-content-text > :last-child,
-#body div.tab-content > .tab-content-text > :last-child :last-child {
+#body div.tab-content > .tab-content-text > :last-child :last-child,
+#body div.tab-content > .tab-content-text > div:last-child pre {
     margin-bottom: 0;
 }
 
@@ -663,7 +668,72 @@ pre code {
     font-size: .9375rem;
     margin: 0;
     padding: 0;
-    white-space: inherit;
+}
+
+div.highlight{
+    position: relative;
+}
+/* we may have special treatment if highlight shortcode was used in table lineno mode */
+div.highlight > div{
+    border-style: solid;
+    border-width: 1px;
+}
+/* remove default style for usual markdown tables */
+div.highlight > div table{
+    background-color: transparent;
+    border-width: 0;
+    margin: 0;
+}
+div.highlight > div td{
+    border-width: 0;
+}
+#body div.highlight > div a {
+    line-height: inherit;
+}
+#body div.highlight > div a:after {
+    display: none;
+}
+/* disable selection for lineno cells */
+div.highlight > div td:first-child:not(:last-child){
+    user-select: none;
+}
+/* increase code column to full width if highlight shortcode was used in table lineno mode  */
+div.highlight > div td:not(:first-child):last-child{
+    width: 100%;
+}
+/* add scrollbars if highlight shortcode was used in table lineno mode */
+div.highlight > div table{
+    display: block;
+    overflow: auto;
+}
+div.highlight:not(.wrap-code) pre{
+    overflow: auto;
+}
+div.highlight:not(.wrap-code) pre code{
+    white-space: pre;
+}
+div.highlight.wrap-code pre code{
+    white-space: pre-wrap;
+}
+/* remove border from row cells if highlight shortcode was used in table lineno mode */
+div.highlight > div td > pre {
+    border-radius: 0;
+    border-width: 0;
+}
+/* in case of table lineno mode we want to move each row closer together - besides the edges
+this usually applies only to wrapfix tables but it doesn't hurt for non-wrapfix tables too */
+div.highlight > div tr:not(:first-child) pre{
+    padding-top: 0;
+}
+div.highlight > div tr:not(:last-child) pre{
+    padding-bottom: 0;
+}
+/* in case of table lineno mode we want to move each columns closer together on the inside */
+div.highlight > div td:first-child:not(:last-child) pre{
+    padding-right: 0;
+}
+div.highlight > div td:not(:first-child):last-child pre{
+    padding-left: 0;
 }
 
 hr {
@@ -1027,6 +1097,7 @@ html[dir="rtl"] #body #breadcrumbs {
     border-width: 1px;
     cursor: pointer;
     font-size: .934375rem;
+    line-height: 1.15;
 }
 
 span > .copy-to-clipboard-button {
@@ -1041,11 +1112,26 @@ span > .copy-to-clipboard-button {
     font-weight: 500;
 }
 
+/* only show copy to clipboard on hover for code blocks if configured */
+div.highlight .copy-to-clipboard-button {
+    display: none;
+}
+div.highlight:hover .copy-to-clipboard-button {
+    display: block;
+}
+.disableHoverBlockCopyToClipBoard div.highlight .copy-to-clipboard-button {
+    display: block;
+}
+
+div.highlight > div table + .copy-to-clipboard-button > i,
+div.highlight pre + .copy-to-clipboard-button > i,
 .copy-to-clipboard-code + .copy-to-clipboard-button > i {
     padding-left: 5px;
     padding-right: 5px;
 }
 
+div.highlight > div table + .copy-to-clipboard-button,
+div.highlight pre + .copy-to-clipboard-button,
 pre > .copy-to-clipboard-button {
     background-color: rgba( 160, 160, 160, .2 );
     border-radius: 2px;
@@ -1959,8 +2045,9 @@ html[dir="rtl"] #sidebar ul.collapsible-menu > li > label > i.fa-chevron-right {
     padding: 0;
 }
 
-/* remove border from a code block if single  */
-#body .tab-content-text > div.highlight:only-child > pre,
+/* remove border from code block if single in tab */
+#body .tab-content-text > div.highlight:only-child > div,
+#body .tab-content-text > div.highlight:only-child pre,
 #body .tab-content-text > pre.pre-code:only-child{
-    border: 0;
+    border-width: 0;
 }
