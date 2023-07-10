@@ -483,6 +483,19 @@ function initAnchorClipboard(){
 }
 
 function initCodeClipboard(){
+    function getCodeText( node ){
+        // if highlight shortcode is used in inline lineno mode, remove lineno nodes before generating text, otherwise it doesn't hurt
+        var code = node.cloneNode( true );
+        Array.from( code.querySelectorAll( '*:scope > span > span:first-child:not(:last-child)' ) ).forEach( function( lineno ){
+            lineno.remove();
+        });
+        var text = code.textContent;
+        // remove a trailing line break, this may most likely
+        // come from the browser / Hugo transformation
+        text = text.replace( /\n$/, '' );
+        return text;
+    }
+
     function fallbackMessage( action ){
         var actionMsg = '';
         var actionKey = (action === 'cut' ? 'X' : 'C');
@@ -498,39 +511,41 @@ function initCodeClipboard(){
         return actionMsg;
     }
 
-	var codeElements = document.querySelectorAll( 'code' );
+    var codeElements = document.querySelectorAll( 'code' );
 	for( var i = 0; i < codeElements.length; i++ ){
         var code = codeElements[i];
-        var text = code.textContent;
+        var text = getCodeText( code );
         var inPre = code.parentNode.tagName.toLowerCase() == 'pre';
+        var inTable = inPre &&
+           code.parentNode.parentNode.tagName.toLowerCase() == 'td';
+        // avoid copy-to-clipboard for highlight shortcode in table lineno mode
+        var isFirstLineCell = inTable &&
+            code.parentNode.parentNode.parentNode.querySelector( 'td:first-child > pre > code' ) == code;
 
-        if( inPre || text.length > 5 ){
+        if( !isFirstLineCell && ( inPre || text.length > 5 ) ){
             var clip = new ClipboardJS( '.copy-to-clipboard-button', {
                 text: function( trigger ){
-                    var text = trigger.previousElementSibling && trigger.previousElementSibling.matches( 'code' ) && trigger.previousElementSibling.textContent;
-                    // remove a trailing line break, this may most likely
-                    // come from the browser / Hugo transformation
-                    text = text.replace( /\n$/, '' );
-                    // removes leading $ signs from text in an assumption
-                    // that this has to be the unix prompt marker - weird
-                    return text.replace( /^\$\s/gm, '' );
+                    if( !trigger.previousElementSibling ){
+                        return '';
+                    }
+                    return trigger.previousElementSibling.dataset.code || '';
                 }
             });
 
             clip.on( 'success', function( e ){
                 e.clearSelection();
-                var inPre = e.trigger.parentNode.tagName.toLowerCase() == 'pre';
+                var doBeside = e.trigger.parentNode.tagName.toLowerCase() == 'pre' || (e.trigger.previousElementSibling && e.trigger.previousElementSibling.tagName.toLowerCase() == 'table' );
                 e.trigger.setAttribute( 'aria-label', window.T_Copied_to_clipboard );
-                e.trigger.classList.add( 'tooltipped', 'tooltipped-' + (inPre ? 'w' : 's'+(isRtl?'e':'w')) );
+                e.trigger.classList.add( 'tooltipped', 'tooltipped-' + (doBeside ? 'w' : 's'+(isRtl?'e':'w')) );
             });
 
             clip.on( 'error', function( e ){
-                var inPre = e.trigger.parentNode.tagName.toLowerCase() == 'pre';
+                var doBeside = e.trigger.parentNode.tagName.toLowerCase() == 'pre' || (e.trigger.previousElementSibling && e.trigger.previousElementSibling.tagName.toLowerCase() == 'table' );
                 e.trigger.setAttribute( 'aria-label', fallbackMessage(e.action) );
-                e.trigger.classList.add( 'tooltipped', 'tooltipped-' + (inPre ? 'w' : 's'+(isRtl?'e':'w')) );
+                e.trigger.classList.add( 'tooltipped', 'tooltipped-' + (doBeside ? 'w' : 's'+(isRtl?'e':'w')) );
                 var f = function(){
                     e.trigger.setAttribute( 'aria-label', window.T_Copied_to_clipboard );
-                    e.trigger.classList.add( 'tooltipped', 'tooltipped-' + (inPre ? 'w' : 's'+(isRtl?'e':'w')) );
+                    e.trigger.classList.add( 'tooltipped', 'tooltipped-' + (doBeside ? 'w' : 's'+(isRtl?'e':'w')) );
                     document.removeEventListener( 'copy', f );
                 };
                 document.addEventListener( 'copy', f );
@@ -557,7 +572,33 @@ function initCodeClipboard(){
                 this.removeAttribute( 'aria-label' );
                 this.classList.remove( 'tooltipped', 'tooltipped-w', 'tooltipped-se', 'tooltipped-sw' );
             });
-            code.parentNode.insertBefore( button, code.nextSibling );
+            if( inTable ){
+                var table = code.parentNode.parentNode.parentNode.parentNode.parentNode;
+                table.dataset[ 'code' ] = text;
+                table.parentNode.insertBefore( button, table.nextSibling );
+            }
+            else if( inPre ){
+                var pre = code.parentNode;
+                pre.dataset[ 'code' ] = text;
+                var p = pre.parentNode;
+                // indented code blocks are missing the div
+                while( p != document && ( p.tagName.toLowerCase() != 'div' || !p.classList.contains( 'highlight' ) ) ){
+                    p = p.parentNode;
+                }
+                if( p == document ){
+                    var clone = pre.cloneNode( true );
+                    var div = document.createElement( 'div' );
+                    div.classList.add( 'highlight' );
+                    div.appendChild( clone );
+                    pre.parentNode.replaceChild( div, pre );
+                    pre = clone;
+                }
+                pre.parentNode.insertBefore( button, pre.nextSibling );
+            }
+            else{
+                code.dataset[ 'code' ] = text;
+                code.parentNode.insertBefore( button, code.nextSibling );
+            }
         }
     }
 }

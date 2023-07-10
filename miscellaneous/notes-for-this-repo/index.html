@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.113.0">
-    <meta name="generator" content="Relearn 5.16.2">
+    <meta name="generator" content="Hugo 0.115.2">
+    <meta name="generator" content="Relearn 5.17.1">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>Notes for this repo :: Fsu0413&#39;s Original Qt builds</title>
@@ -167,12 +167,10 @@ I have no idea if there are any other reasons.</li>
 <h2 id="notes-on-the-distributed-compressed-files">Notes on the distributed compressed files</h2>
 <p>Archive files on Windows host are compressed using <code>7z</code> in <code>7z</code> format using LZMA2 Algorithm.<br>
 The command line of generating the compressed file is like:</p>
-<pre tabindex="0"><code>7z a -t7z -m0=LZMA2:d256m:fb273 -mmt=3 -myx -mqs -ms=on -- xxx.7z xxx
-</code></pre><p>Archive files on Linux use GNU <code>tar</code>. Archive files on macOS use <code>bsdtar</code>.<br>
+<div class="wrap-code highlight"><pre tabindex="0"><code>7z a -t7z -m0=LZMA2:d256m:fb273 -mmt=3 -myx -mqs -ms=on -- xxx.7z xxx</code></pre></div><p>Archive files on Linux use GNU <code>tar</code>. Archive files on macOS use <code>bsdtar</code>.<br>
 In addition, we use <code>7z</code> for the <code>xz</code> compression.<br>
 The command line of generating the compressed file is like:</p>
-<pre tabindex="0"><code>tar -cf - xxx | 7zr a -txz -m0=LZMA2:d256m:fb273 -mmt=3 -myx -si -- xxx.tar.xz
-</code></pre><p>Make sure your uncompresser supports LZMA2 algorithm. For example:<br>
+<div class="wrap-code highlight"><pre tabindex="0"><code>tar -cf - xxx | 7zr a -txz -m0=LZMA2:d256m:fb273 -mmt=3 -myx -si -- xxx.tar.xz</code></pre></div><p>Make sure your uncompresser supports LZMA2 algorithm. For example:<br>
 <code>7z</code> users should upgrade your <code>7z</code> to 9.20 or later.<br>
 <code>WinRAR</code> users should upgrade your <code>WinRAR</code> to 4.00 or later.<br>
 Other decompresser users should query for their latest version, since it may support LZMA2 algorithm.</p>
@@ -412,6 +410,11 @@ If subsequent version of Qt 5.15 remains private we won&rsquo;t upgrade OpenSSL 
 <td>18th Apr, 2023</td>
 <td>18th Apr, 2024</td>
 </tr>
+<tr>
+<td>6.2.9</td>
+<td>4th Jul, 2023</td>
+<td>4th Jul, 2024</td>
+</tr>
 </tbody>
 </table>
 <h2 id="incoming-update-for-future-release">Incoming update for future release</h2>
@@ -427,7 +430,7 @@ Note that I won&rsquo;t patch an active version of Qt and will simply wait for f
 <tr>
 <th>Issue \ Qt Version</th>
 <th>5.12.12</th>
-<th>5.15.9</th>
+<th>5.15.10</th>
 <th>6.2.4</th>
 </tr>
 </thead>
@@ -509,6 +512,12 @@ Note that I won&rsquo;t patch an active version of Qt and will simply wait for f
 <td>-</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-34410-qtbase-5.15.diff" target="_blank">√</a></td>
 <td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-34410-qtbase-6.2.diff" target="_blank">√</a></td>
+</tr>
+<tr>
+<td>CVE-2023-37369</td>
+<td>-</td>
+<td><strong>CONFLICT</strong><br />waiting for <a href="https://invent.kde.org/qt/qt/qtbase/-/merge_requests/263" target="_blank">KDE patches</a></td>
+<td><strong>CONFLICT</strong><br /><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/2023-06-27-QXmlStreamReader-change-fastS-6.2.4-unofficial.diff" target="_blank">pending</a> <a href="https://github.com/Fsu0413/Fs-scripts/blob/master/2023-07-07-CVE-2023-37369-qtbase-6.2.4-unofficial.diff" target="_blank">patches</a> by myself</td>
 </tr>
 </tbody>
 </table>
@@ -622,7 +631,7 @@ Note that I won&rsquo;t patch an active version of Qt and will simply wait for f
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Wed, 14 Jun 2023 08:00:24 CST</p>
+Site generated: Mon, 10 Jul 2023 19:44:20 CST</p>
 
         </div>
       </div>

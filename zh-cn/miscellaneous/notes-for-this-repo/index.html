@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.113.0">
-    <meta name="generator" content="Relearn 5.16.2">
+    <meta name="generator" content="Hugo 0.115.2">
+    <meta name="generator" content="Relearn 5.17.1">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>本仓库的一些备注 :: Fsu0413 的原版 Qt 构建</title>
@@ -167,12 +167,10 @@
 <h2 id="对于发布的压缩文件的备注">对于发布的压缩文件的备注</h2>
 <p>在 Windows 上，打包文件使用 <code>7z</code> 程序，使用 LZMA2 算法压缩成 <code>7z</code> 格式。<br>
 生成压缩文件的命令行类似这样：</p>
-<pre tabindex="0"><code>7z a -t7z -m0=LZMA2:d256m:fb273 -mmt=3 -myx -mqs -ms=on -- xxx.7z xxx
-</code></pre><p>在 Linux 上，打包文件使用 GNU <code>tar</code> 创建，而在 macOS 上，则是使用 <code>bsdtar</code>。<br>
+<div class="wrap-code highlight"><pre tabindex="0"><code>7z a -t7z -m0=LZMA2:d256m:fb273 -mmt=3 -myx -mqs -ms=on -- xxx.7z xxx</code></pre></div><p>在 Linux 上，打包文件使用 GNU <code>tar</code> 创建，而在 macOS 上，则是使用 <code>bsdtar</code>。<br>
 此外同时使用 <code>7z</code> 来进行 <code>xz</code> 格式的压缩。<br>
 生成压缩文件的命令行类似这样：</p>
-<pre tabindex="0"><code>tar -cf - xxx | 7zr a -txz -m0=LZMA2:d256m:fb273 -mmt=3 -myx -si -- xxx.tar.xz
-</code></pre><p>要确保您使用的解压缩软件支持 LZMA2 算法。例如：<br>
+<div class="wrap-code highlight"><pre tabindex="0"><code>tar -cf - xxx | 7zr a -txz -m0=LZMA2:d256m:fb273 -mmt=3 -myx -si -- xxx.tar.xz</code></pre></div><p>要确保您使用的解压缩软件支持 LZMA2 算法。例如：<br>
 <code>7z</code> 用户需要更新到 9.20 或者更新。<br>
 <code>WinRAR</code> 用户需要更新到 4.00 或者更新。<br>
 如果是其他解压缩软件，可以检查一下他们的最新版本，有可能最新版本就支持 LZMA2 算法了。</p>
@@ -412,6 +410,11 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
 <td>2023 年 4 月 18 日</td>
 <td>2024 年 4 月 18 日</td>
 </tr>
+<tr>
+<td>6.2.9</td>
+<td>2023 年 7 月 4 日</td>
+<td>2024 年 7 月 4 日</td>
+</tr>
 </tbody>
 </table>
 <h2 id="之后可能会更新的内容">之后可能会更新的内容</h2>
@@ -427,7 +430,7 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
 <tr>
 <th>问题 \ Qt 版本</th>
 <th>5.12.12</th>
-<th>5.15.9</th>
+<th>5.15.10</th>
 <th>6.2.4</th>
 </tr>
 </thead>
@@ -509,6 +512,12 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
 <td>-</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-34410-qtbase-5.15.diff" target="_blank">√</a></td>
 <td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-34410-qtbase-6.2.diff" target="_blank">√</a></td>
+</tr>
+<tr>
+<td>CVE-2023-37369</td>
+<td>-</td>
+<td><strong>冲突</strong><br />等待 <a href="https://invent.kde.org/qt/qt/qtbase/-/merge_requests/263" target="_blank">KDE 补丁</a>中</td>
+<td><strong>冲突</strong><br /><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/2023-06-27-QXmlStreamReader-change-fastS-6.2.4-unofficial.diff" target="_blank">我自</a><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/2023-07-07-CVE-2023-37369-qtbase-6.2.4-unofficial.diff" target="_blank">己的</a>补丁</td>
 </tr>
 </tbody>
 </table>
@@ -622,7 +631,7 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Wed, 14 Jun 2023 08:00:25 CST</p>
+Site generated: Mon, 10 Jul 2023 19:44:20 CST</p>
 
         </div>
       </div>
