@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.115.2">
+    <meta name="generator" content="Hugo 0.115.4">
     <meta name="generator" content="Relearn 5.17.1">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
@@ -391,11 +391,6 @@ If subsequent version of Qt 5.15 remains private we won&rsquo;t upgrade OpenSSL 
 <td>25th May, 2024</td>
 </tr>
 <tr>
-<td>6.2.5</td>
-<td>19th Jul, 2022</td>
-<td>19th Jul, 2023</td>
-</tr>
-<tr>
 <td>6.2.6</td>
 <td>27th Sep, 2022</td>
 <td>27th Sep, 2023</td>
@@ -424,23 +419,19 @@ If subsequent version of Qt 5.15 remains private we won&rsquo;t upgrade OpenSSL 
 <p>Starting from 12th Mar, 2022 I am shipping Qt with patches from Qt.<br>
 Most of them are CVE patches which can be downloaded from <a href="https://download.qt.io/" target="_blank">Qt Downloads</a>, others are build fixes which are download from Qt Gerrit or KDE.</p>
 <p>Following is a table for patches of each version I am currently building.<br>
-Note that I won&rsquo;t patch an active version of Qt and will simply wait for future release. So only Commericial LTS and EOL version are patched.</p>
+Note that I won&rsquo;t patch an active version of Qt and will simply wait for future release. So only Commericial LTS and EOL version are patched.<br>
+A patch will removed from following table when this patch is shipped or not planned to be applied in all of the maintained versions.<br>
+Version number in brackets are the version when the corresponding patch will be shipped.</p>
 <table>
 <thead>
 <tr>
 <th>Issue \ Qt Version</th>
 <th>5.12.12</th>
 <th>5.15.10</th>
-<th>6.2.4</th>
+<th>6.2.5</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>(6.2.4 specific) MinGW build fix</td>
-<td>-</td>
-<td>-</td>
-<td><a href="https://codereview.qt-project.org/c/qt/qtbase/&#43;/401758" target="_blank">Windows only</a></td>
-</tr>
 <tr>
 <td>CVE-2022-25255</td>
 <td><a href="https://codereview.qt-project.org/c/qt/qtbase/&#43;/396020" target="_blank">√</a></td>
@@ -448,76 +439,70 @@ Note that I won&rsquo;t patch an active version of Qt and will simply wait for f
 <td>shipped</td>
 </tr>
 <tr>
-<td>CVE-2022-25643</td>
-<td>-</td>
-<td>shipped</td>
-<td>shipped</td>
-</tr>
-<tr>
-<td>CVE-2018-25032</td>
-<td>-</td>
-<td>shipped</td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2018-25032-qtbase-6.2.diff" target="_blank">√</a></td>
-</tr>
-<tr>
 <td>CVE-2022-27404-27405-27406</td>
 <td>-</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2022-27404-27405-27406-qtbase-5.15.diff" target="_blank">√</a></td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2022-27404-27405-27406-qtbase-6.2.diff" target="_blank">√</a></td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2022-27404-27405-27406-qtbase-5.15.diff" target="_blank">√</a> (5.15.11)</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2022-27404-27405-27406-qtbase-6.2.diff" target="_blank">√</a> (6.2.6)</td>
 </tr>
 <tr>
 <td>CVE-2022-37434</td>
 <td>-</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2022-37434-qtbase-5.15.patch" target="_blank">√</a></td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2022-37434-qtbase-6.2.patch" target="_blank">√</a></td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2022-37434-qtbase-5.15.patch" target="_blank">√</a> (5.15.11)</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2022-37434-qtbase-6.2.patch" target="_blank">√</a> (6.2.6)</td>
 </tr>
 <tr>
 <td>CVE-2023-24607</td>
 <td>-</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-24607-qtbase-5.15.diff" target="_blank">√</a></td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-24607-qtbase-6.2.diff" target="_blank">√</a></td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-24607-qtbase-5.15.diff" target="_blank">√</a> (5.15.13)</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-24607-qtbase-6.2.diff" target="_blank">√</a> (6.2.8)</td>
 </tr>
 <tr>
 <td>CVE-2023-32573</td>
 <td>-</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-32573-qtsvg-5.15.diff" target="_blank">√</a></td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-32573-qtsvg-6.2.diff" target="_blank">√</a></td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-32573-qtsvg-5.15.diff" target="_blank">√</a> (5.15.14)</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-32573-qtsvg-6.2.diff" target="_blank">√</a> (6.2.9)</td>
 </tr>
 <tr>
 <td>(5.15 series specific) macOS build fix</td>
 <td>-</td>
-<td><a href="https://invent.kde.org/qt/qt/qtlocation-mapboxgl/-/commit/5a07e1967dcc925d9def47accadae991436b9686" target="_blank">macOS only</a></td>
+<td><a href="https://invent.kde.org/qt/qt/qtlocation-mapboxgl/-/commit/5a07e1967dcc925d9def47accadae991436b9686" title="Patch provided by KDE" target="_blank">macOS only</a></td>
 <td>-</td>
 </tr>
 <tr>
 <td>CVE-2023-32762</td>
 <td>-</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-32762-qtbase-5.15.diff" target="_blank">√</a></td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-32762-qtbase-6.2.diff" target="_blank">√</a></td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-32762-qtbase-5.15.diff" target="_blank">√</a> (5.15.14)</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-32762-qtbase-6.2.diff" target="_blank">√</a> (6.2.9)</td>
 </tr>
 <tr>
 <td>CVE-2023-32763</td>
 <td>-</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-32763-qtbase-5.15.diff" target="_blank">√</a></td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-32763-qtbase-6.2.diff" target="_blank">√</a></td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-32763-qtbase-5.15.diff" target="_blank">√</a> (5.15.15)</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-32763-qtbase-6.2.diff" target="_blank">√</a> (6.2.9)</td>
 </tr>
 <tr>
 <td>CVE-2023-33285</td>
 <td>-</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-33285-qtbase-5.15.diff" target="_blank">√</a></td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-33285-qtbase-6.2.diff" target="_blank">√</a></td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-33285-qtbase-5.15.diff" target="_blank">√</a> (5.15.14)</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-33285-qtbase-6.2.diff" target="_blank">√</a> (6.2.9)</td>
 </tr>
 <tr>
 <td>CVE-2023-34410</td>
 <td>-</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-34410-qtbase-5.15.diff" target="_blank">√</a></td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-34410-qtbase-6.2.diff" target="_blank">√</a></td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-34410-qtbase-5.15.diff" target="_blank">√</a> (5.15.15)</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-34410-qtbase-6.2.diff" target="_blank">√</a> (6.2.9)</td>
 </tr>
 <tr>
 <td>CVE-2023-37369</td>
 <td>-</td>
-<td><strong>CONFLICT</strong><br />waiting for <a href="https://invent.kde.org/qt/qt/qtbase/-/merge_requests/263" target="_blank">KDE patches</a></td>
-<td><strong>CONFLICT</strong><br /><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/2023-06-27-QXmlStreamReader-change-fastS-6.2.4-unofficial.diff" target="_blank">pending</a> <a href="https://github.com/Fsu0413/Fs-scripts/blob/master/2023-07-07-CVE-2023-37369-qtbase-6.2.4-unofficial.diff" target="_blank">patches</a> by myself</td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-37369-qtbase-5.15.diff" target="_blank">√</a> (5.15.15)</td>
+<td><a href="#" title="Official patch causes CONFLICT. Depends on a commit of Qt 6.2.9. Given up investigating due to no active distro / project is fixing this issue"><strong>×</strong></a> (6.2.10)</td>
+</tr>
+<tr>
+<td>CVE-2023-38197</td>
+<td>-</td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-38197-qtbase-5.15.diff" target="_blank">√</a> (5.15.15)</td>
+<td><a href="#" title="Depends on patch of CVE-2023-37369"><strong>×</strong></a> (6.2.10)</td>
 </tr>
 </tbody>
 </table>
@@ -631,7 +616,7 @@ Note that I won&rsquo;t patch an active version of Qt and will simply wait for f
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Mon, 10 Jul 2023 19:44:29 CST</p>
+Site generated: Sat, 22 Jul 2023 18:17:12 CST</p>
 
         </div>
       </div>

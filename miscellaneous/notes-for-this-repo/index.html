@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.115.2">
+    <meta name="generator" content="Hugo 0.115.4">
     <meta name="generator" content="Relearn 5.17.1">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
@@ -391,11 +391,6 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
 <td>2024 年 5 月 25 日</td>
 </tr>
 <tr>
-<td>6.2.5</td>
-<td>2022 年 7 月 19 日</td>
-<td>2023 年 7 月 19 日</td>
-</tr>
-<tr>
 <td>6.2.6</td>
 <td>2022 年 9 月 27 日</td>
 <td>2023 年 9 月 27 日</td>
@@ -424,23 +419,19 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
 <p>从 2022 年 3 月 12 日开始我的 Qt 构建包含部分 Qt 提供的补丁。<br>
 多数是可以从 <a href="https://download.qt.io/" target="_blank">Qt 下载站</a> 下载的 CVE 补丁，另外一些是可以从 Qt Gerrit 或者 KDE 下载的一些修复构建的补丁。</p>
 <p>下面这个表列出了我构建每个版本时所应用的补丁。<br>
-注：我不会对当前正在活跃开发的 Qt 应用补丁，而是单纯等待新版本发布。所以应用补丁的只有商业 LTS 版本和结束生命周期的版本。</p>
+注：我不会对当前正在活跃开发的 Qt 应用补丁，而是单纯等待新版本发布。所以应用补丁的只有商业 LTS 版本和结束生命周期的版本。<br>
+若某个补丁在所有的正在维护的版本均已附带或没有应用的打算，则该补丁将会从此表中删除。<br>
+括号括起来的版本号为附带该补丁的版本。</p>
 <table>
 <thead>
 <tr>
 <th>问题 \ Qt 版本</th>
 <th>5.12.12</th>
 <th>5.15.10</th>
-<th>6.2.4</th>
+<th>6.2.5</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>（仅限 6.2.4）MinGW 构建修复</td>
-<td>-</td>
-<td>-</td>
-<td><a href="https://codereview.qt-project.org/c/qt/qtbase/&#43;/401758" target="_blank">仅限 Windows</a></td>
-</tr>
 <tr>
 <td>CVE-2022-25255</td>
 <td><a href="https://codereview.qt-project.org/c/qt/qtbase/&#43;/396020" target="_blank">√</a></td>
@@ -448,76 +439,70 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
 <td>附带</td>
 </tr>
 <tr>
-<td>CVE-2022-25643</td>
-<td>-</td>
-<td>附带</td>
-<td>附带</td>
-</tr>
-<tr>
-<td>CVE-2018-25032</td>
-<td>-</td>
-<td>附带</td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2018-25032-qtbase-6.2.diff" target="_blank">√</a></td>
-</tr>
-<tr>
 <td>CVE-2022-27404-27405-27406</td>
 <td>-</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2022-27404-27405-27406-qtbase-5.15.diff" target="_blank">√</a></td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2022-27404-27405-27406-qtbase-6.2.diff" target="_blank">√</a></td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2022-27404-27405-27406-qtbase-5.15.diff" target="_blank">√</a> （5.15.11）</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2022-27404-27405-27406-qtbase-6.2.diff" target="_blank">√</a> （6.2.6）</td>
 </tr>
 <tr>
 <td>CVE-2022-37434</td>
 <td>-</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2022-37434-qtbase-5.15.patch" target="_blank">√</a></td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2022-37434-qtbase-6.2.patch" target="_blank">√</a></td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2022-37434-qtbase-5.15.patch" target="_blank">√</a> （5.15.11）</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2022-37434-qtbase-6.2.patch" target="_blank">√</a> （6.2.6）</td>
 </tr>
 <tr>
 <td>CVE-2023-24607</td>
 <td>-</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-24607-qtbase-5.15.diff" target="_blank">√</a></td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-24607-qtbase-6.2.diff" target="_blank">√</a></td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-24607-qtbase-5.15.diff" target="_blank">√</a> （5.15.13）</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-24607-qtbase-6.2.diff" target="_blank">√</a> （6.2.8）</td>
 </tr>
 <tr>
 <td>CVE-2023-32573</td>
 <td>-</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-32573-qtsvg-5.15.diff" target="_blank">√</a></td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-32573-qtsvg-6.2.diff" target="_blank">√</a></td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-32573-qtsvg-5.15.diff" target="_blank">√</a> （5.15.14）</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-32573-qtsvg-6.2.diff" target="_blank">√</a> （6.2.9）</td>
 </tr>
 <tr>
 <td>（仅限 5.15 系列）macOS 构建修复</td>
 <td>-</td>
-<td><a href="https://invent.kde.org/qt/qt/qtlocation-mapboxgl/-/commit/5a07e1967dcc925d9def47accadae991436b9686" target="_blank">仅限 macOS</a></td>
+<td><a href="https://invent.kde.org/qt/qt/qtlocation-mapboxgl/-/commit/5a07e1967dcc925d9def47accadae991436b9686" title="KDE 提供的补丁" target="_blank">仅限 macOS</a></td>
 <td>-</td>
 </tr>
 <tr>
 <td>CVE-2023-32762</td>
 <td>-</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-32762-qtbase-5.15.diff" target="_blank">√</a></td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-32762-qtbase-6.2.diff" target="_blank">√</a></td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-32762-qtbase-5.15.diff" target="_blank">√</a> （5.15.14）</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-32762-qtbase-6.2.diff" target="_blank">√</a> （6.2.9）</td>
 </tr>
 <tr>
 <td>CVE-2023-32763</td>
 <td>-</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-32763-qtbase-5.15.diff" target="_blank">√</a></td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-32763-qtbase-6.2.diff" target="_blank">√</a></td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-32763-qtbase-5.15.diff" target="_blank">√</a> （5.15.15）</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-32763-qtbase-6.2.diff" target="_blank">√</a> （6.2.9）</td>
 </tr>
 <tr>
 <td>CVE-2023-33285</td>
 <td>-</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-33285-qtbase-5.15.diff" target="_blank">√</a></td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-33285-qtbase-6.2.diff" target="_blank">√</a></td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-33285-qtbase-5.15.diff" target="_blank">√</a> （5.15.14）</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-33285-qtbase-6.2.diff" target="_blank">√</a> （6.2.9）</td>
 </tr>
 <tr>
 <td>CVE-2023-34410</td>
 <td>-</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-34410-qtbase-5.15.diff" target="_blank">√</a></td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-34410-qtbase-6.2.diff" target="_blank">√</a></td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-34410-qtbase-5.15.diff" target="_blank">√</a> （5.15.15）</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-34410-qtbase-6.2.diff" target="_blank">√</a> （6.2.9）</td>
 </tr>
 <tr>
 <td>CVE-2023-37369</td>
 <td>-</td>
-<td><strong>冲突</strong><br />等待 <a href="https://invent.kde.org/qt/qt/qtbase/-/merge_requests/263" target="_blank">KDE 补丁</a>中</td>
-<td><strong>冲突</strong><br /><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/2023-06-27-QXmlStreamReader-change-fastS-6.2.4-unofficial.diff" target="_blank">我自</a><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/2023-07-07-CVE-2023-37369-qtbase-6.2.4-unofficial.diff" target="_blank">己的</a>补丁</td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-37369-qtbase-5.15.diff" target="_blank">√</a> （5.15.15）</td>
+<td><a href="#" title="官方补丁冲突，依赖 Qt 6.2.9 上的一个提交，暂无发行版与项目解决冲突。已放弃调查"><strong>×</strong></a> （6.2.10）</td>
+</tr>
+<tr>
+<td>CVE-2023-38197</td>
+<td>-</td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-38197-qtbase-5.15.diff" target="_blank">√</a> （5.15.15）</td>
+<td><a href="#" title="依赖 CVE-2023-37369 的补丁"><strong>×</strong></a> （6.2.10）</td>
 </tr>
 </tbody>
 </table>
@@ -631,7 +616,7 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Mon, 10 Jul 2023 19:44:29 CST</p>
+Site generated: Sat, 22 Jul 2023 18:17:12 CST</p>
 
         </div>
       </div>
