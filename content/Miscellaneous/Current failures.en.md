@@ -52,3 +52,12 @@ I don't expect QtWebEngine can build with mismatched `qtwebengine` and `qtwebeng
 
 Since then I won't provide builds of Qt 6.2 LTS series with QtWebEngine.  
 Existing package with QtWebEngine will be removed after {{% date 2023 3 25 %}}.
+
+## Patch of CVE-2023-37369 conflicts on Qt 6.2.4 / 6.2.5
+
+The patch is made for working with Qt 6.2.9, where it included an incompatible modification compared to Qt 6.2.4 / 6.2.5.  
+I've made patches on Qt 6.2.4 to fix the conflict but it conflicts with 6.2.5 again.
+
+I won't apply this patch before Qt 6.2.9 unless there are packagers / Linux distros who are aware of this issue and made patches.
+
+Subsequent patch of CVE-2023-38197 depends on patch of CVE-2023-37369 thus can't be applied either.

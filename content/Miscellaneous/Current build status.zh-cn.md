@@ -43,7 +43,7 @@ OpenSSL 3 系列在 6.2.3 以及更新的 Qt 6 版本上使用。
 不使用 MySQL 提供的库的原因有以下几个。
 
 1. MariaDB 是真正的“原来的” MySQL
-1. 使用新版 MySQL （8.0 及以后的版本）需要下载并构建整个 MySQL 数据库。而 MySQL 数据库太大，构建较费事。
+1. 使用新版 MySQL（8.0 及以后的版本）需要下载并构建整个 MySQL 数据库。而 MySQL 数据库太大，构建较费事。
 1. MySQL 出自 Oracle。而 Oracle 有打击开源社区的历史。
 
 在 Qt 5.15 版本上，我们使用 MariaDB connector/C 3.1 系列的版本。  
