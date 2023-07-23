@@ -88,6 +88,7 @@
     <li><a href="#command-line-too-long-when-building-qt-62-series-for-mingw">Command line too long when building Qt 6.2 series for MinGW</a></li>
     <li><a href="#qtopcua-issues">QtOpcUa issues</a></li>
     <li><a href="#various-failures-building-higher-version-of-qtwebengine-on-qt-624">Various failures building higher version of QtWebEngine on Qt 6.2.4</a></li>
+    <li><a href="#patch-of-cve-2023-37369-conflicts-on-qt-624--625">Patch of CVE-2023-37369 conflicts on Qt 6.2.4 / 6.2.5</a></li>
   </ul>
 </nav>
             </div>
@@ -135,6 +136,11 @@ The SHA1 of commits of each release version are recorded in tQtC&rsquo;s own yoc
 I don&rsquo;t expect QtWebEngine can build with mismatched <code>qtwebengine</code> and <code>qtwebengine-chromium</code> repositories. Even if we are lucky enough that the code builds I don&rsquo;t expect it works.</p>
 <p>Since then I won&rsquo;t provide builds of Qt 6.2 LTS series with QtWebEngine.<br>
 Existing package with QtWebEngine will be removed after 25th Mar, 2023.</p>
+<h2 id="patch-of-cve-2023-37369-conflicts-on-qt-624--625">Patch of CVE-2023-37369 conflicts on Qt 6.2.4 / 6.2.5</h2>
+<p>The patch is made for working with Qt 6.2.9, where it included an incompatible modification compared to Qt 6.2.4 / 6.2.5.<br>
+I&rsquo;ve made patches on Qt 6.2.4 to fix the conflict but it conflicts with 6.2.5 again.</p>
+<p>I won&rsquo;t apply this patch before Qt 6.2.9 unless there are packagers / Linux distros who are aware of this issue and made patches.</p>
+<p>Subsequent patch of CVE-2023-38197 depends on patch of CVE-2023-37369 thus can&rsquo;t be applied either.</p>
 
             <footer class="footline">
 
@@ -245,7 +251,7 @@ Existing package with QtWebEngine will be removed after 25th Mar, 2023.</p>
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 22 Jul 2023 18:17:12 CST</p>
+Site generated: Sun, 23 Jul 2023 09:50:22 CST</p>
 
         </div>
       </div>
