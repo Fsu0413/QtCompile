@@ -28,7 +28,9 @@
 			"title":"Fsu0413's Original Qt builds",
 			"weight": 1,
 			"languageName": "English",
-			"landingPageName": "<i class='fas fa-home'></i> Home",
+			"params": {
+				"landingPageName": "<i class='fas fa-home'></i> Home"
+			},
 			"menu": {
 				"shortcuts": [
 					{
@@ -48,7 +50,9 @@
 			"title":"Fsu0413 的原版 Qt 构建",
 			"weight": 2,
 			"languageName": "简体中文（中国）",
-			"landingPageName": "<i class='fas fa-home'></i> 主页",
+			"params": {
+				"landingPageName": "<i class='fas fa-home'></i> 主页"
+			},
 			"menu": {
 				"shortcuts": [
 					{
