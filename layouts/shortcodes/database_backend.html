@@ -37,7 +37,7 @@
     {{- $sqlInstruction = $sqlInstruction2 -}}
 {{- end -}}
 {{ partial "shortcodes/notice.html" (dict
-    "context" .Page
+    "page" .Page
     "style" "info"
     "title" (T "Note")
     "icon" "fas fa-info-circle"

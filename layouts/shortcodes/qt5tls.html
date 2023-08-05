@@ -9,7 +9,7 @@
     {{- $tlsInstruction = T (printf "fsqtbuild_i18n_qt5tls_%s" $type ) -}}
 {{- end -}}
 {{ partial "shortcodes/notice.html" (dict
-    "context" .Page
+    "page" .Page
     "style" "info"
     "title" (T "Note")
     "icon" "fas fa-info-circle"

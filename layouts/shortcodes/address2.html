@@ -20,7 +20,7 @@
                 <td colspan="2" width="40%">
                     {{- $contentSf := print "SourceForge " ( T "link" ) -}}
                     {{- partial "shortcodes/button.html" (dict
-                        "context" .
+                        "page" .
                         "href" .addrSf
                         "style" "orange"
                         "content" $contentSf
@@ -36,7 +36,7 @@
                         {{- with $mingwconf -}}
                             {{- $bitsData := cond (eq .bits "32") "32-bit" (cond (eq .bits "64") "64-bit" "unknown") -}}
                             {{- partial "shortcodes/button.html" (dict
-                                "context" .
+                                "page" .
                                 "href" .addr
                                 "style" "grey"
                                 "content" (print (T $bitsData)  " " .description)
