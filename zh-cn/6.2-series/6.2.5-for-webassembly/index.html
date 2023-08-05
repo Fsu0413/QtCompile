@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.116.1">
+    <meta name="generator" content="Relearn 5.18.0">
+    <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
+    <meta name="author" content="Fsu0413">
+    <title>6.2.5 的 WebAssembly 版本 :: Fsu0413 的原版 Qt 构建</title>
+    <link href="/6.2-series/6.2.5-for-webassembly/index.html" rel="alternate" hreflang="x-default">
+    <link href="/6.2-series/6.2.5-for-webassembly/index.html" rel="alternate" hreflang="en">
+    <link href="/zh-cn/6.2-series/6.2.5-for-webassembly/index.html" rel="alternate" hreflang="zh-cn">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css" rel="stylesheet">
+    <link href="/css/auto-complete.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css" rel="stylesheet">
+    <link href="/css/fonts.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css" rel="stylesheet"></noscript>
+    <link href="/css/theme.css" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css" rel="stylesheet" id="variant-style">
+    <link href="/css/variant.css" rel="stylesheet">
+    <link href="/css/print.css" rel="stylesheet" media="print">
+    <link href="/css/ie.css" rel="stylesheet">
+    <script src="/js/url.js"></script>
+    <script src="/js/variant.js"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = '复制到剪贴板';
+      window.T_Copied_to_clipboard = '复制到剪贴板！';
+      window.T_Copy_link_to_clipboard = '将链接复制到剪贴板';
+      window.T_Link_copied_to_clipboard = '链接复制到剪贴板！';
+      window.T_No_results_found = '找不到\u0022{0}\u0022的结果';
+      window.T_N_results_found = '为\u0022{0}\u0022找到 {1} 个结果';
+      // some further base stuff
+      var baseUriFull='/';
+      window.variants && variants.init( [ 'relearn-dark', 'relearn-bright', 'relearn-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
+    </script><style>
+    p.fsu0413_leftFooter {
+        text-align: center;
+        font-style: italic;
+        font-size: x-small;
+    }
+    p.fsu0413_logo {
+        text-align: left;
+    }
+    p.fsu0413_error {
+        font-weight: 900;
+        font-size: 300%;
+        color: red;
+    }
+    th.fsu0413_qtAddressHeader {
+        text-align: center;
+    }
+    h1 {
+        text-transform: none;
+    }
+    strong {
+        color: red;
+    }
+</style>
+  </head>
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/zh-cn/6.2-series/6.2.5-for-webassembly/index.html">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable">
+        <div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" class="topbar-link" title='导航 (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <span id="toc-menu" title='目录 (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/zh-cn/index.html"><span itemprop="name">Fsu0413 的原版 Qt 构建</span></a><meta itemprop="position" content="1"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/zh-cn/6.2-series/index.html"><span itemprop="name">6.2 系列</span></a><meta itemprop="position" content="2"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">6.2.5 的 WebAssembly 版本</span><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+          <div class="default-animation progress">
+            <div class="toc-wrapper"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#static-builds">Static Builds</a>
+      <ul>
+        <li><a href="#windows-host">Windows host</a></li>
+        <li><a href="#linux-host">Linux Host</a></li>
+        <li><a href="#macos-host">macOS Host</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="625-的-webassembly-版本">6.2.5 的 WebAssembly 版本</h1>
+
+
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
+  <div class="box-content">
+
+<p>Qt 提供的配置文件中，针对 WebAssembly 进行限制，禁用了 QtSql 的构建。<br>
+所以这个版本没有数据库后端。</p>
+</div>
+</div>
+
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
+  <div class="box-content">
+<p>
+所有构建配置了 <code>-DFEATURE_icu=OFF</code> 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。</div>
+</div>
+
+
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
+  <div class="box-content">
+
+<p>所有包使用了于 Qt Wiki 中推荐的 emscripten SDK 版本 2.0.14。<br>
+WebAssembly 不支持二进制兼容性。在构建自己的代码的时候必须要使用 SDK 版本 2.0.14，否则会出现不可预料的错误。</p>
+<p>所有构建通过使用 <code>-DFEATURE_thread=ON</code> 启用了线程支持。</p>
+</div>
+</div>
+
+
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
+  <div class="box-content">
+<p>
+Qt 在 WebAssembly 平台上只能构建静态库。</div>
+</div>
+
+
+<div class="box notices cstyle primary">
+  <div class="box-label"><i class="fas fa-check-square"></i> 补丁（多数是 CVE 问题）</div>
+  <div class="box-content">
+<p>
+我在构建 Qt 时应用补丁。想查看补丁列表的话，参考下页：<br>
+<a href="/zh-cn/miscellaneous/notes-for-this-repo/index.html#%e5%b7%b2%e6%9c%89%e7%9a%84%e8%a1%a5%e4%b8%81">已有的补丁</a></div>
+</div>
+
+<h2 id="static-builds">Static Builds</h2>
+<h3 id="windows-host">Windows host</h3>
+<table>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.5-WebAssembly-emscripten2.0.14-xWindows-x86_64-MinGW11.2.0-20230723.7z</b></th></tr></thead>
+        <tbody>
+            <tr><td width="20%"><b>下载地址：</b></td>
+                <td colspan="4" width="80%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/WebAssembly/Qt6.2.5-WebAssembly-emscripten2.0.14-xWindows-x86_64-MinGW11.2.0-20230723.7z" target="_blank">
+    SourceForge 链接
+  </a>
+</span></td>
+            </tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">emscripten-2.0.14</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+        </tbody>
+    </table>
+<h3 id="linux-host">Linux Host</h3>
+<table>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.5-WebAssembly-emscripten2.0.14-xLinux-x86_64-gcc8.5.0-20230722.tar.xz</b></th></tr></thead>
+        <tbody>
+            <tr><td width="20%"><b>下载地址：</b></td>
+                <td colspan="4" width="80%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/WebAssembly/Qt6.2.5-WebAssembly-emscripten2.0.14-xLinux-x86_64-gcc8.5.0-20230722.tar.xz" target="_blank">
+    SourceForge 链接
+  </a>
+</span></td>
+            </tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">RockyLinux 8.8</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">emscripten-2.0.14</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+        </tbody>
+    </table>
+<h3 id="macos-host">macOS Host</h3>
+<table>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.5-WebAssembly-emscripten2.0.14-xmacOS-Universal-AppleClang14.0.3-20230723.tar.xz</b></th></tr></thead>
+        <tbody>
+            <tr><td width="20%"><b>下载地址：</b></td>
+                <td colspan="4" width="80%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/WebAssembly/Qt6.2.5-WebAssembly-emscripten2.0.14-xmacOS-Universal-AppleClang14.0.3-20230723.tar.xz" target="_blank">
+    SourceForge 链接
+  </a>
+</span></td>
+            </tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 13.4.1</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">emscripten-2.0.14</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+        </tbody>
+    </table>
+
+            <footer class="footline">
+
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="sidebar" class="default-animation">
+      <div id="header-wrapper" class="default-animation">
+        <div id="header" class="default-animation">
+<p class="fsu0413_logo"><img src="https://codereview.qt-project.org/static/logo_qt.png" /></p>
+        </div>
+      </div>
+      <div id="homelinks" class="default-animation">
+        <ul>
+          <li><a class="padding" href="/zh-cn/index.html"><i class='fas fa-home'></i> 主页</a></li>
+        </ul>
+      </div>
+      <div id="content-wrapper" class="highlightable">
+        <ul class="topics enlarge morespace">
+          <li data-nav-id="/zh-cn/5.12-series/index.html" class=""><a class="padding" href="/zh-cn/5.12-series/index.html">5.12 系列</a><ul id="subsections-9aeb85270de661fbbb0f6e6b161fbf7c" class="morespace">
+          <li data-nav-id="/zh-cn/5.12-series/5.12.12-for-windows/index.html" class=""><a class="padding" href="/zh-cn/5.12-series/5.12.12-for-windows/index.html">5.12.12 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/5.12-series/5.12.12-for-android/index.html" class=""><a class="padding" href="/zh-cn/5.12-series/5.12.12-for-android/index.html">5.12.12 的安卓版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/5.15-series/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/index.html">5.15 系列</a><ul id="subsections-6265c888ec9e92bab195ca36e833839a" class="morespace">
+          <li data-nav-id="/zh-cn/5.15-series/5.15.10-for-windows/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.10-for-windows/index.html">5.15.10 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.10-for-macos/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.10-for-macos/index.html">5.15.10 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.10-for-android/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.10-for-android/index.html">5.15.10 的安卓版本</a></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.10-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.10-for-webassembly/index.html">5.15.10 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/6.2-series/index.html" class="parent "><a class="padding" href="/zh-cn/6.2-series/index.html">6.2 系列</a><ul id="subsections-106fe2487cf90a2754e3f4a06da071f3" class="morespace">
+          <li data-nav-id="/zh-cn/6.2-series/6.2.5-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.5-for-windows/index.html">6.2.5 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/6.2-series/6.2.5-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.5-for-macos/index.html">6.2.5 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/6.2-series/6.2.5-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.5-for-android/index.html">6.2.5 的安卓版本</a></li>
+          <li data-nav-id="/zh-cn/6.2-series/6.2.5-for-webassembly/index.html" class="active"><a class="padding" href="/zh-cn/6.2-series/6.2.5-for-webassembly/index.html">6.2.5 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/6.5-series/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/index.html">6.5 系列</a><ul id="subsections-a4a8142fcca3c91cc086ca3a4afab485" class="morespace">
+          <li data-nav-id="/zh-cn/6.5-series/6.5.2-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.2-for-windows/index.html">6.5.2 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/6.5-series/6.5.2-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.2-for-macos/index.html">6.5.2 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/6.5-series/6.5.2-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.2-for-android/index.html">6.5.2 的安卓版本</a></li>
+          <li data-nav-id="/zh-cn/6.5-series/6.5.2-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.2-for-webassembly/index.html">6.5.2 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/miscellaneous/index.html" class=""><a class="padding" href="/zh-cn/miscellaneous/index.html">杂项</a><ul id="subsections-caff385dd336661e79f294480ee20799" class="morespace">
+          <li data-nav-id="/zh-cn/miscellaneous/notes-for-this-repo/index.html" class=""><a class="padding" href="/zh-cn/miscellaneous/notes-for-this-repo/index.html">本仓库的一些备注</a></li>
+          <li data-nav-id="/zh-cn/miscellaneous/current-build-status/index.html" class=""><a class="padding" href="/zh-cn/miscellaneous/current-build-status/index.html">当前构建状态</a></li>
+          <li data-nav-id="/zh-cn/miscellaneous/current-failures/index.html" class=""><a class="padding" href="/zh-cn/miscellaneous/current-failures/index.html">当前的失败项</a></li>
+          <li data-nav-id="/zh-cn/miscellaneous/histories/index.html" class=""><a class="padding" href="/zh-cn/miscellaneous/histories/index.html">之前的历史</a></li></ul></li>
+          <li data-nav-id="/zh-cn/legacy-lts-series/index.html" class=""><a class="padding" href="/zh-cn/legacy-lts-series/index.html">遗留的长期支持版本系列</a><ul id="subsections-2da9a100302eca246d29f40ea41d2bf7" class="morespace">
+          <li data-nav-id="/zh-cn/legacy-lts-series/4.8-series/index.html" class="alwaysopen"><a class="padding" href="/zh-cn/legacy-lts-series/4.8-series/index.html">4.8 系列</a><ul id="subsections-6243f73e32eaaf24308f7dbe5cb00e04" class="morespace">
+          <li data-nav-id="/zh-cn/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html" class=""><a class="padding" href="/zh-cn/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html">4.8.7 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html" class=""><a class="padding" href="/zh-cn/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html">4.8.7 的 macOS 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.6-series/index.html" class="alwaysopen"><a class="padding" href="/zh-cn/legacy-lts-series/5.6-series/index.html">5.6 系列</a><ul id="subsections-5ca2792ddc9a9825cf8ec8f6764a4097" class="morespace">
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html" class=""><a class="padding" href="/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html">5.6.3 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html" class=""><a class="padding" href="/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html">5.6.3 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-android/index.html" class=""><a class="padding" href="/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-android/index.html">5.6.3 的安卓版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.9-series/index.html" class="alwaysopen"><a class="padding" href="/zh-cn/legacy-lts-series/5.9-series/index.html">5.9 系列</a><ul id="subsections-b9f9d985d68e657d4e7d74700e7241c3" class="morespace">
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.9-series/5.9.9-for-windows/index.html" class=""><a class="padding" href="/zh-cn/legacy-lts-series/5.9-series/5.9.9-for-windows/index.html">5.9.9 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.9-series/5.9.9-for-macos/index.html" class=""><a class="padding" href="/zh-cn/legacy-lts-series/5.9-series/5.9.9-for-macos/index.html">5.9.9 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.9-series/5.9.9-for-android/index.html" class=""><a class="padding" href="/zh-cn/legacy-lts-series/5.9-series/5.9.9-for-android/index.html">5.9.9 的安卓版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.12-series/index.html" class="alwaysopen"><a class="padding" href="/zh-cn/legacy-lts-series/5.12-series/index.html">5.12 系列</a><ul id="subsections-8f2a6bd86210a6244fd0ff0c916f8279" class="morespace">
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html" class=""><a class="padding" href="/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html">5.12.12 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html">5.12.12 的 WebAssembly 版本</a></li></ul></li></ul></li>
+        </ul>
+        <div id="shortcuts">
+          <div class="nav-title padding">更多</div>
+          <ul class="space">
+            <li><a class="padding" href="https://github.com/Fsu0413/QtCompile"><i class='fab fa-fw fa-github'></i> GitHub 仓库</a></li>
+            <li><a class="padding" href="http://www.qtcn.org/bbs/read.php?tid=85733&amp;ds=1&amp;page=1&amp;toread=1#194070"><i class='fas fa-poll-h'></i> 论坛发布贴</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter"></div>
+        <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter">
+        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showLangSwitch showVariantSwitch">
+          <ul>
+            <li id="select-language-container" class="footerLangSwitch showLangSwitch">
+              <div class="padding menu-control">
+                <i class="fas fa-language fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="select-language">语言</label>
+                  <select id="select-language" onchange="location = baseUri + this.value;">
+                    <option lang="en" id="en" value="/6.2-series/6.2.5-for-webassembly/index.html">English</option>
+                    <option lang="zh-cn" id="zh-cn" value="/zh-cn/6.2-series/6.2.5-for-webassembly/index.html" selected>简体中文（中国）</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
+              <div class="padding menu-control">
+                <i class="fas fa-paint-brush fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="select-variant">主题</label>
+                  <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                    <option id="relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
+                    <option id="relearn-bright" value="relearn-bright">Relearn Bright</option>
+                    <option id="relearn-light" value="relearn-light">Relearn Light</option>
+                    <option id="learn" value="learn">Learn</option>
+                    <option id="neon" value="neon">Neon</option>
+                    <option id="red" value="red">Red</option>
+                    <option id="blue" value="blue">Blue</option>
+                    <option id="green" value="green">Green</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.variants && variants.markSelectedVariant();</script>
+            </li>
+            <li class="footerVisitedLinks">
+              <div class="padding menu-control">
+                <i class="fas fa-history fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <button onclick="clearHistory();">清理历史记录</button>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
+Site generated: Sat, 05 Aug 2023 10:12:10 CST</p>
+
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js" defer></script>
+    <script src="/js/perfect-scrollbar.min.js" defer></script>
+    <script src="/js/theme.js" defer></script>
+  </body>
+</html>

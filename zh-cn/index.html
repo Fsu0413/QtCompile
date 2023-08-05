@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.115.4">
-    <meta name="generator" content="Relearn 5.17.1">
+    <meta name="generator" content="Hugo 0.116.1">
+    <meta name="generator" content="Relearn 5.18.0">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>Fsu0413 的原版 Qt 构建</title>
@@ -82,7 +82,6 @@
           <div class="default-animation progress">
             <div class="toc-wrapper"><nav id="TableOfContents">
   <ul>
-    <li><a href="#停止使用-notepad">停止使用 Notepad++</a></li>
     <li><a href="#免责声明">免责声明</a></li>
     <li><a href="#本版本库的一些备注">本版本库的一些备注</a></li>
     <li><a href="#当前构建状况">当前构建状况</a></li>
@@ -90,6 +89,7 @@
     <li><a href="#当前的失败项">当前的失败项</a></li>
     <li><a href="#更新记录">更新记录</a>
       <ul>
+        <li><a href="#2023-年-8-月-5-日">2023 年 8 月 5 日</a></li>
         <li><a href="#2023-年-6-月-14-日">2023 年 6 月 14 日</a></li>
         <li><a href="#2023-年-6-月-3-日">2023 年 6 月 3 日</a></li>
         <li><a href="#2023-年-5-月以前">2023 年 5 月以前</a></li>
@@ -108,16 +108,36 @@
             </header>
 <h1 id="fsu0413-的原版-qt-构建">Fsu0413 的原版 Qt 构建</h1>
 
-<h2 id="停止使用-notepad">停止使用 Notepad++</h2>
-<p>2023 年 1 月 25 日 Notepad++ 发布的版本中，添加了一个“功能”，里面要求用户同意并接受其中关于中国的虚假、不正确和误导性的政治言论。<br>
-如果用户不同意、不接受的话，在使用 Notepad++ 编辑文字时会被添加随机字符。</p>
-<p>作为中国人，我在此声明：<br>
-<strong>中国的各个省、直辖市、自治区和特别行政区，包括港澳台、新疆和西藏，都是中国领土的一部分。</strong><br>
-<strong>我拒绝接受一切不尊重中国国家主权及领土完整的言论。</strong></p>
-<p>我（Fsu0413）作为来自中国的中国码农，不会再使用 Notepad++，也不会再支持 Notepad++ 用户。<br>
-我也呼吁我的网站的所有用户停止使用 Notepad++ 并寻找替代方案。</p>
-<p>我不会对替代方案提供任何建议。<br>
-现在外面有 <a href="https://www.texteditors.org/cgi-bin/wiki.pl?ScintillaEditorFamily" target="_blank">非常多的基于 Scintilla 的编辑器</a> ，我相信你一定会找到你想要的那个。</p>
+
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
+  <div class="box-content">
+
+<p>OSDN 目前发生技术问题，上传下载均有问题。<br>
+这边上传的时候发生的错误如下（通过 WinSCP 输出）：</p>
+<div class="expand">
+    <input type="checkbox" id="expand-9987d264a32204ff0ac0d17c2d2caf72" aria-controls="expandcontent-9987d264a32204ff0ac0d17c2d2caf72" >
+    <label class="expand-label" for="expand-9987d264a32204ff0ac0d17c2d2caf72" >
+        <i class="fas fa-chevron-down"></i>
+        <i class="fas fa-chevron-right"></i>
+        展开
+    </label>
+    <div id="expandcontent-9987d264a32204ff0ac0d17c2d2caf72" class="expand-content">
+<p>一般错误(服务器应该提供错误描述)。<br>
+错误码：4<br>
+服务器返回的错误消息：Failure</p>
+<p>错误码4的常见原因：</p>
+<ul>
+<li>将文件重命名为一个已经存在的文件。</li>
+<li>创建一个已经存在的目录。</li>
+<li>将远程文件移动到一个不同的文件系统（HDD）上。</li>
+<li>将文件上传到一个满的文件系统（HDD）上。</li>
+<li>达到了用户磁盘限额。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
 <h2 id="免责声明">免责声明</h2>
 <p>这些由 Fsu0413 构建的二进制文件 <strong>完全未经测试</strong> ，使用时请自行承担风险。<br>
 使用的代码为从 <a href="http://download.qt.io" target="_blank">这里</a> 获取的。我没有对源文件/生成的文件进行官方发布的补丁以外的任何修改。<br>
@@ -132,9 +152,15 @@
 <h2 id="当前的失败项">当前的失败项</h2>
 <p><a href="/zh-cn/miscellaneous/current-failures/">这里</a></p>
 <h2 id="更新记录">更新记录</h2>
+<h3 id="2023-年-8-月-5-日">2023 年 8 月 5 日</h3>
+<p>更新 Qt 5.12.12。<br>
+更新 Qt 5.15.10。应用 CVE-2023-37369 和 CVE-2023-38197 的补丁。<br>
+更新 Qt 6.2.5。<br>
+更新 Qt 6.5.2。</p>
+<p>更新 OpenSSL 到 3.0.10 / 1.1.1v。</p>
 <h3 id="2023-年-6-月-14-日">2023 年 6 月 14 日</h3>
-<p>更新 Qt 5.15.9 系列，附带 QtWebEngine 和 QtScript 5.15.14。<br>
-对于所有受支持的 5.15.9 和 6.2.4 版本，应用 CVE-2023-34410 补丁。<br>
+<p>更新 Qt 5.15.10 系列，附带 QtWebEngine 和 QtScript 5.15.14。<br>
+对于所有受支持的 5.15.10 和 6.2.4 版本，应用 CVE-2023-34410 补丁。<br>
 更新 LLVM-MinGW 到 20230603。重新构建了 Qt 6.2.4 和 Qt 6.5.1 的 LLVM-MinGW 的包。</p>
 <p>删除原 OSDN Chamber。文件上传下载服务转移到 Project。</p>
 <h3 id="2023-年-6-月-3-日">2023 年 6 月 3 日</h3>
@@ -176,15 +202,15 @@
           <li data-nav-id="/zh-cn/5.15-series/5.15.10-for-android/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.10-for-android/index.html">5.15.10 的安卓版本</a></li>
           <li data-nav-id="/zh-cn/5.15-series/5.15.10-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.10-for-webassembly/index.html">5.15.10 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/6.2-series/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/index.html">6.2 系列</a><ul id="subsections-106fe2487cf90a2754e3f4a06da071f3" class="morespace">
-          <li data-nav-id="/zh-cn/6.2-series/6.2.4-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.4-for-windows/index.html">6.2.4 的 Windows 版本</a></li>
-          <li data-nav-id="/zh-cn/6.2-series/6.2.4-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.4-for-macos/index.html">6.2.4 的 macOS 版本</a></li>
-          <li data-nav-id="/zh-cn/6.2-series/6.2.4-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.4-for-android/index.html">6.2.4 的安卓版本</a></li>
-          <li data-nav-id="/zh-cn/6.2-series/6.2.4-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.4-for-webassembly/index.html">6.2.4 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/6.2-series/6.2.5-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.5-for-windows/index.html">6.2.5 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/6.2-series/6.2.5-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.5-for-macos/index.html">6.2.5 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/6.2-series/6.2.5-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.5-for-android/index.html">6.2.5 的安卓版本</a></li>
+          <li data-nav-id="/zh-cn/6.2-series/6.2.5-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.5-for-webassembly/index.html">6.2.5 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/6.5-series/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/index.html">6.5 系列</a><ul id="subsections-a4a8142fcca3c91cc086ca3a4afab485" class="morespace">
-          <li data-nav-id="/zh-cn/6.5-series/6.5.1-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.1-for-windows/index.html">6.5.1 的 Windows 版本</a></li>
-          <li data-nav-id="/zh-cn/6.5-series/6.5.1-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.1-for-macos/index.html">6.5.1 的 macOS 版本</a></li>
-          <li data-nav-id="/zh-cn/6.5-series/6.5.1-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.1-for-android/index.html">6.5.1 的安卓版本</a></li>
-          <li data-nav-id="/zh-cn/6.5-series/6.5.1-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.1-for-webassembly/index.html">6.5.1 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/6.5-series/6.5.2-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.2-for-windows/index.html">6.5.2 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/6.5-series/6.5.2-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.2-for-macos/index.html">6.5.2 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/6.5-series/6.5.2-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.2-for-android/index.html">6.5.2 的安卓版本</a></li>
+          <li data-nav-id="/zh-cn/6.5-series/6.5.2-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.2-for-webassembly/index.html">6.5.2 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/miscellaneous/index.html" class=""><a class="padding" href="/zh-cn/miscellaneous/index.html">杂项</a><ul id="subsections-caff385dd336661e79f294480ee20799" class="morespace">
           <li data-nav-id="/zh-cn/miscellaneous/notes-for-this-repo/index.html" class=""><a class="padding" href="/zh-cn/miscellaneous/notes-for-this-repo/index.html">本仓库的一些备注</a></li>
           <li data-nav-id="/zh-cn/miscellaneous/current-build-status/index.html" class=""><a class="padding" href="/zh-cn/miscellaneous/current-build-status/index.html">当前构建状态</a></li>
@@ -218,24 +244,24 @@
         <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showLangSwitch showVariantSwitch">
           <ul>
             <li id="select-language-container" class="footerLangSwitch showLangSwitch">
-              <div class="padding select-container">
+              <div class="padding menu-control">
                 <i class="fas fa-language fa-fw"></i>
                 <span>&nbsp;</span>
-                <div class="select-style">
+                <div class="control-style">
                   <label class="a11y-only" for="select-language">语言</label>
                   <select id="select-language" onchange="location = baseUri + this.value;">
                     <option lang="en" id="en" value="/index.html">English</option>
                     <option lang="zh-cn" id="zh-cn" value="/zh-cn/index.html" selected>简体中文（中国）</option>
                   </select>
                 </div>
-                <div class="select-clear"></div>
+                <div class="clear"></div>
               </div>
             </li>
             <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
-              <div class="padding select-container">
+              <div class="padding menu-control">
                 <i class="fas fa-paint-brush fa-fw"></i>
                 <span>&nbsp;</span>
-                <div class="select-style">
+                <div class="control-style">
                   <label class="a11y-only" for="select-variant">主题</label>
                   <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
                     <option id="relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
@@ -248,15 +274,24 @@
                     <option id="green" value="green">Green</option>
                   </select>
                 </div>
-                <div class="select-clear"></div>
+                <div class="clear"></div>
               </div>
               <script>window.variants && variants.markSelectedVariant();</script>
             </li>
-            <li class="footerVisitedLinks"><button class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i><span>&nbsp;</span>清理历史记录</button></li>
+            <li class="footerVisitedLinks">
+              <div class="padding menu-control">
+                <i class="fas fa-history fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <button onclick="clearHistory();">清理历史记录</button>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sun, 23 Jul 2023 09:50:34 CST</p>
+Site generated: Sat, 05 Aug 2023 10:12:10 CST</p>
 
         </div>
       </div>
