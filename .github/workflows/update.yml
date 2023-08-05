@@ -36,6 +36,17 @@ jobs:
         DESTINATION_REPO: git@gitcode.net:Fsu0413/QtCompile.git
         DESTINATION_BRANCH: ge-pages
 
+  sourceforge:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: codions/git-sync@v1.0.2
+      with:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        SOURCE_REPO: git@github.com:${{ github.repository }}.git
+        SOURCE_BRANCH: ge-pages
+        DESTINATION_REPO: ssh://fsu0413@git.code.sf.net/p/fsu0413-qtbuilds/QtCompile
+        DESTINATION_BRANCH: ge-pages
+
   gitee:
     runs-on: ubuntu-latest
     steps:
