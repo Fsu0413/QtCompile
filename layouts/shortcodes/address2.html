@@ -8,16 +8,7 @@
         <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>{{- .fileName -}}</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>{{ T "Download" }}{{ T ":" }}</b></td>
-                <td colspan="2" width="40%">
-                    {{- $contentOsdn := print "OSDN " ( T "link" ) -}}
-                    {{- partial "shortcodes/button.html" (dict
-                        "context" .
-                        "href" .addrOsdn
-                        "style" "green"
-                        "content" $contentOsdn
-                    ) -}}
-                </td>
-                <td colspan="2" width="40%">
+                <td colspan="4" width="80%">
                     {{- $contentSf := print "SourceForge " ( T "link" ) -}}
                     {{- partial "shortcodes/button.html" (dict
                         "page" .

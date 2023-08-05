@@ -4,21 +4,23 @@ draft: false
 archetype: "home"
 ---
 
-## STOP USING Notepad++
+{{% notice style="info" title="Note"  icon="fas fa-info-circle" %}}
+Currently there is technical problem on OSDN. Download / Upload are having problems.  
+Error during upload is as following (Output by WinSCP).
 
-At {{% date 2023 1 25 %}} Notepad++ released a version with a "feature" where users must agree the fake, incorrect and misleading politics words about China.   
-If user doesn't agree random character is added when editing using Notepad++.
+{{% expand %}}
+General failure (server should provide error description).  
+Error code: 4  
+Error message from server: Failure
 
-(Following statements are in Chinese only because I actually don't know how to say it in English)  
-作为中国人，我在此声明：  
-**中国的各个省、直辖市、自治区和特别行政区，包括港澳台、新疆和西藏，都是中国领土的一部分。**   
-**我拒绝接受一切不尊重中国国家主权及领土完整的言论。**
-
-I, Fsu0413, as a Chinese source code peasant in China, won't use Notepad++ anymore and won't support Notepad++ users.  
-I also appeals to all users of my websites to STOP USING Notepad++ and find an alternative.
-
-I won't provide any recommendation for alternative.  
-There are [tons of Scintilla-based editor in the wild](https://www.texteditors.org/cgi-bin/wiki.pl?ScintillaEditorFamily) and I do believe you'll find the one you like.
+Common reasons for the Error code 4 are:
+- Renaming a file to a name of already existing file.
+- Creating a directory that already exists.
+- Moving a remote file to a different filesystem (HDD).
+- Uploading a file to a full filesystem (HDD).
+- Exceeding a user disk quota.
+{{% /expand %}}
+{{% /notice %}}
 
 ## Disclaimer
 
@@ -44,6 +46,14 @@ Please refer to the content lists in the left area.
 [Here]({{% relref "miscellaneous/current failures" %}})
 
 ## Update History
+
+### {{% date 2023 8 5 %}}
+Update Qt 5.12.12.  
+Update Qt 5.15.10. Apply patch of CVE-2023-37369 and CVE-2023-38197.  
+Update Qt 6.2.5.  
+Update Qt 6.5.2.
+
+Update OpenSSL to 3.0.10 / 1.1.1v.
 
 ### {{% date 2023 6 14 %}}
 Update Qt 5.15.10 series with QtWebEngine / QtScript 5.15.14.  
