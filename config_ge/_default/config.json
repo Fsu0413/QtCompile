@@ -27,7 +27,6 @@
 		"en" : {
 			"title":"Fsu0413's Original Qt builds",
 			"weight": 2,
-			"disabled": true,
 			"languageName": "English",
 			"params": {
 				"landingPageName": "<i class='fas fa-home'></i> Home"
