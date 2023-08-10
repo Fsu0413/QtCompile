@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.117.0">
+    <meta name="generator" content="Relearn 5.18.0">
+    <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
+    <meta name="author" content="Fsu0413">
+    <title>Current failures :: Fsu0413&#39;s Original Qt builds</title>
+    <link href="/qtcompile/miscellaneous/current-failures/index.html" rel="alternate" hreflang="x-default">
+    <link href="/qtcompile/miscellaneous/current-failures/index.html" rel="alternate" hreflang="zh-cn">
+    <link href="/qtcompile/en/miscellaneous/current-failures/index.html" rel="alternate" hreflang="en">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/qtcompile/css/fontawesome-all.min.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/qtcompile/css/fontawesome-all.min.css" rel="stylesheet"></noscript>
+    <link href="/qtcompile/css/nucleus.css" rel="stylesheet">
+    <link href="/qtcompile/css/auto-complete.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/qtcompile/css/auto-complete.css" rel="stylesheet"></noscript>
+    <link href="/qtcompile/css/perfect-scrollbar.min.css" rel="stylesheet">
+    <link href="/qtcompile/css/fonts.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/qtcompile/css/fonts.css" rel="stylesheet"></noscript>
+    <link href="/qtcompile/css/theme.css" rel="stylesheet">
+    <link href="/qtcompile/css/theme-relearn-dark.css" rel="stylesheet" id="variant-style">
+    <link href="/qtcompile/css/variant.css" rel="stylesheet">
+    <link href="/qtcompile/css/print.css" rel="stylesheet" media="print">
+    <link href="/qtcompile/css/ie.css" rel="stylesheet">
+    <script src="/qtcompile/js/url.js"></script>
+    <script src="/qtcompile/js/variant.js"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy to clipboard';
+      window.T_Copied_to_clipboard = 'Copied to clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      window.T_No_results_found = 'No results found for \u0022{0}\u0022';
+      window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
+      // some further base stuff
+      var baseUriFull='qtcompile/';
+      window.variants && variants.init( [ 'relearn-dark', 'relearn-bright', 'relearn-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
+    </script><style>
+    p.fsu0413_leftFooter {
+        text-align: center;
+        font-style: italic;
+        font-size: x-small;
+    }
+    p.fsu0413_logo {
+        text-align: left;
+    }
+    p.fsu0413_error {
+        font-weight: 900;
+        font-size: 300%;
+        color: red;
+    }
+    th.fsu0413_qtAddressHeader {
+        text-align: center;
+    }
+    h1 {
+        text-transform: none;
+    }
+    strong {
+        color: red;
+    }
+</style>
+  </head>
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/qtcompile/en/miscellaneous/current-failures/index.html">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable">
+        <div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/qtcompile/en/index.html"><span itemprop="name">Fsu0413&#39;s Original Qt builds</span></a><meta itemprop="position" content="1"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/qtcompile/en/miscellaneous/index.html"><span itemprop="name">Miscellaneous</span></a><meta itemprop="position" content="2"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Current failures</span><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+          <div class="default-animation progress">
+            <div class="toc-wrapper"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#qdoc-after-qt-512-cannot-use-static-linked-clang-when-using-msvc">QDoc after Qt 5.12 cannot use static linked clang when using MSVC</a></li>
+    <li><a href="#command-line-too-long-when-building-qt-62-series-for-mingw">Command line too long when building Qt 6.2 series for MinGW</a></li>
+    <li><a href="#qtopcua-issues">QtOpcUa issues</a></li>
+    <li><a href="#various-failures-building-higher-version-of-qtwebengine-on-qt-624">Various failures building higher version of QtWebEngine on Qt 6.2.4</a></li>
+    <li><a href="#patch-of-cve-2023-37369-conflicts-on-qt-624--625">Patch of CVE-2023-37369 conflicts on Qt 6.2.4 / 6.2.5</a></li>
+  </ul>
+</nav>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="current-failures">Current failures</h1>
+
+<h2 id="qdoc-after-qt-512-cannot-use-static-linked-clang-when-using-msvc">QDoc after Qt 5.12 cannot use static linked clang when using MSVC</h2>
+<p>It uses <code>libclang_static.lib</code> but clang don&rsquo;t provide this one.<br>
+I have decided not provide LLVM-based QDoc until I find a way to static link it.</p>
+<p>Update 3rd Nov, 2020:<br>
+<code>libclang_static.lib</code> is packed seprately using script by Qt guys.<br>
+Thanks &ldquo;lixinwei&rdquo; on QTCN.org for telling me related info. <a href="http://www.qtcn.org/bbs/job.php?action=topost&amp;tid=85983&amp;pid=200952" target="_blank">Original post</a> (Sorry, it&rsquo;s in Chinese)</p>
+<h2 id="command-line-too-long-when-building-qt-62-series-for-mingw">Command line too long when building Qt 6.2 series for MinGW</h2>
+<p>See <a href="https://bugreports.qt.io/browse/QTBUG-96339" target="_blank">QTBUG-96339</a> - workaround using CMake 3.20.2</p>
+<h2 id="qtopcua-issues">QtOpcUa issues</h2>
+<p>QtOpcUa is currently not compatible with OpenSSL 3.0 series.<br>
+Temporarily disabling QtOpcUa build until the Qt guys update their open62541 version.<br>
+This change takes place since building and packaging of Qt 6.2.3.</p>
+<p>But seems like that open62541 guys doesn&rsquo;t treat this as issue despite the increasing popularity of OpenSSL 3.0 series.<br>
+Version 1.3.3 has released without any fix about OpenSSL 3.0.<br>
+<del>I don&rsquo;t know if we can bring QtOpcUa back in Qt 6.4&hellip;</del></p>
+<p>Update 6th Nov, 2022:<br>
+open62541 hasn&rsquo;t release any version after 1.3.3 so there is no OpenSSL 3.0 support on open62541 of QtOpcUa 6.4.<br>
+There is a merged Pull Request on Github which added OpenSSL 3.0 support. Reference: <a href="https://github.com/open62541/open62541/pull/5349" target="_blank">Github Pull Request</a>.<br>
+I will restart building with QtOpcUa when this change is got integrated in next released version of open62541.</p>
+<p>Update 23rd Jan, 2023:<br>
+open62541 released 1.3.4 at 14th Nov, 2022. QtOpcUa 6.5 ships this version of open62541.<br>
+I&rsquo;ll try building with QtOpcUa enabled on build of Qt 6.5. (Packages built before 23rd Jan, 2023 are without QtOpcUa)</p>
+<h2 id="various-failures-building-higher-version-of-qtwebengine-on-qt-624">Various failures building higher version of QtWebEngine on Qt 6.2.4</h2>
+<p>QtWebEngine 6.3.2 on Qt 6.2.4 fails on macOS when using Xcode 14.1. It was OK using Xcode 14.0.1. Probably because QtWebEngine 6.3.2 is incompatible with macOS Ventura SDK.<br>
+QtWebEngine 6.4.0 on Qt 6.2.4 fails on macOS and Windows. All of them succeeds inside <code>gn</code> and outside it. Different failure occurs on Windows and macOS.</p>
+<p>I&rsquo;m tired of investigating them and will distribute Qt 6.2 series without QtWebEngine.<br>
+QtWebEngine has not released as LTS since Qt 6.2.4 and the Qt guys are simply taking QtWebEngine from later version (6.3, etc) for their 6.2 LTS series releases.<br>
+But no one else knows what version Qt guys are using for their Qt 6.2 LTS Releases except for the official packagers, as the QtWebEngine version is always different than the binary files.</p>
+<p>Update 25th Mar, 2023:<br>
+QtWebEngine still develops in its own branch, but only <code>qtwebengine-chromium</code> repository is made public.<br>
+The SHA1 of commits of each release version are recorded in tQtC&rsquo;s own yocto repository <code>meta-qt6</code> but commit of <code>qtwebengine</code> repository can&rsquo;t be found.<br>
+I don&rsquo;t expect QtWebEngine can build with mismatched <code>qtwebengine</code> and <code>qtwebengine-chromium</code> repositories. Even if we are lucky enough that the code builds I don&rsquo;t expect it works.</p>
+<p>Since then I won&rsquo;t provide builds of Qt 6.2 LTS series with QtWebEngine.<br>
+Existing package with QtWebEngine will be removed after 25th Mar, 2023.</p>
+<h2 id="patch-of-cve-2023-37369-conflicts-on-qt-624--625">Patch of CVE-2023-37369 conflicts on Qt 6.2.4 / 6.2.5</h2>
+<p>The patch is made for working with Qt 6.2.9, where it included an incompatible modification compared to Qt 6.2.4 / 6.2.5.<br>
+I&rsquo;ve made patches on Qt 6.2.4 to fix the conflict but it conflicts with 6.2.5 again.</p>
+<p>I won&rsquo;t apply this patch before Qt 6.2.9 unless there are packagers / Linux distros who are aware of this issue and made patches.</p>
+<p>Subsequent patch of CVE-2023-38197 depends on patch of CVE-2023-37369 thus can&rsquo;t be applied either.</p>
+
+            <footer class="footline">
+
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="sidebar" class="default-animation">
+      <div id="header-wrapper" class="default-animation">
+        <div id="header" class="default-animation">
+<p class="fsu0413_logo"><img src="https://codereview.qt-project.org/static/logo_qt.png" /></p>
+        </div>
+      </div>
+      <div id="homelinks" class="default-animation">
+        <ul>
+          <li><a class="padding" href="/qtcompile/en/index.html"><i class='fas fa-home'></i> Home</a></li>
+        </ul>
+      </div>
+      <div id="content-wrapper" class="highlightable">
+        <ul class="topics enlarge morespace">
+          <li data-nav-id="/qtcompile/en/5.12-series/index.html" class=""><a class="padding" href="/qtcompile/en/5.12-series/index.html">5.12 series</a><ul id="subsections-2c0b2ae1d884bccfca2dfb294f752a41" class="morespace">
+          <li data-nav-id="/qtcompile/en/5.12-series/5.12.12-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/5.12-series/5.12.12-for-windows/index.html">5.12.12 for Windows</a></li>
+          <li data-nav-id="/qtcompile/en/5.12-series/5.12.12-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/5.12-series/5.12.12-for-android/index.html">5.12.12 for Android</a></li></ul></li>
+          <li data-nav-id="/qtcompile/en/5.15-series/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/index.html">5.15 series</a><ul id="subsections-dfde3005aa1a1a9f4665d82e5e9612d8" class="morespace">
+          <li data-nav-id="/qtcompile/en/5.15-series/5.15.10-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/5.15.10-for-windows/index.html">5.15.10 for Windows</a></li>
+          <li data-nav-id="/qtcompile/en/5.15-series/5.15.10-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/5.15.10-for-macos/index.html">5.15.10 for macOS</a></li>
+          <li data-nav-id="/qtcompile/en/5.15-series/5.15.10-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/5.15.10-for-android/index.html">5.15.10 for Android</a></li>
+          <li data-nav-id="/qtcompile/en/5.15-series/5.15.10-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/5.15.10-for-webassembly/index.html">5.15.10 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/qtcompile/en/6.2-series/index.html" class=""><a class="padding" href="/qtcompile/en/6.2-series/index.html">6.2 series</a><ul id="subsections-c2b87e4570db0ee260cc7de2c4b80e99" class="morespace">
+          <li data-nav-id="/qtcompile/en/6.2-series/6.2.5-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/6.2-series/6.2.5-for-windows/index.html">6.2.5 for Windows</a></li>
+          <li data-nav-id="/qtcompile/en/6.2-series/6.2.5-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/6.2-series/6.2.5-for-macos/index.html">6.2.5 for macOS</a></li>
+          <li data-nav-id="/qtcompile/en/6.2-series/6.2.5-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/6.2-series/6.2.5-for-android/index.html">6.2.5 for Android</a></li>
+          <li data-nav-id="/qtcompile/en/6.2-series/6.2.5-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/en/6.2-series/6.2.5-for-webassembly/index.html">6.2.5 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/qtcompile/en/6.5-series/index.html" class=""><a class="padding" href="/qtcompile/en/6.5-series/index.html">6.5 series</a><ul id="subsections-1870fa5a2d192ec83aafe29160552269" class="morespace">
+          <li data-nav-id="/qtcompile/en/6.5-series/6.5.2-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/6.5-series/6.5.2-for-windows/index.html">6.5.2 for Windows</a></li>
+          <li data-nav-id="/qtcompile/en/6.5-series/6.5.2-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/6.5-series/6.5.2-for-macos/index.html">6.5.2 for macOS</a></li>
+          <li data-nav-id="/qtcompile/en/6.5-series/6.5.2-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/6.5-series/6.5.2-for-android/index.html">6.5.2 for Android</a></li>
+          <li data-nav-id="/qtcompile/en/6.5-series/6.5.2-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/en/6.5-series/6.5.2-for-webassembly/index.html">6.5.2 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/qtcompile/en/miscellaneous/index.html" class="parent "><a class="padding" href="/qtcompile/en/miscellaneous/index.html">Miscellaneous</a><ul id="subsections-59c45accf7e43befe663d68447543959" class="morespace">
+          <li data-nav-id="/qtcompile/en/miscellaneous/notes-for-this-repo/index.html" class=""><a class="padding" href="/qtcompile/en/miscellaneous/notes-for-this-repo/index.html">Notes for this repo</a></li>
+          <li data-nav-id="/qtcompile/en/miscellaneous/current-build-status/index.html" class=""><a class="padding" href="/qtcompile/en/miscellaneous/current-build-status/index.html">Current build status</a></li>
+          <li data-nav-id="/qtcompile/en/miscellaneous/current-failures/index.html" class="active"><a class="padding" href="/qtcompile/en/miscellaneous/current-failures/index.html">Current failures</a></li>
+          <li data-nav-id="/qtcompile/en/miscellaneous/histories/index.html" class=""><a class="padding" href="/qtcompile/en/miscellaneous/histories/index.html">Previous Histories</a></li></ul></li>
+          <li data-nav-id="/qtcompile/en/legacy-lts-series/index.html" class=""><a class="padding" href="/qtcompile/en/legacy-lts-series/index.html">Legacy LTS Series</a><ul id="subsections-5cd0b6ebd88105014c721df753e3aba0" class="morespace">
+          <li data-nav-id="/qtcompile/en/legacy-lts-series/4.8-series/index.html" class="alwaysopen"><a class="padding" href="/qtcompile/en/legacy-lts-series/4.8-series/index.html">4.8 series</a><ul id="subsections-fde90e23068d0005e4f65b64b693e2ea" class="morespace">
+          <li data-nav-id="/qtcompile/en/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html">4.8.7 for Windows</a></li>
+          <li data-nav-id="/qtcompile/en/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html">4.8.7 for macOS</a></li></ul></li>
+          <li data-nav-id="/qtcompile/en/legacy-lts-series/5.6-series/index.html" class="alwaysopen"><a class="padding" href="/qtcompile/en/legacy-lts-series/5.6-series/index.html">5.6 series</a><ul id="subsections-1796b7c7d02948092a040169069ea60b" class="morespace">
+          <li data-nav-id="/qtcompile/en/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html">5.6.3 for Windows</a></li>
+          <li data-nav-id="/qtcompile/en/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html">5.6.3 for macOS</a></li>
+          <li data-nav-id="/qtcompile/en/legacy-lts-series/5.6-series/5.6.3-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/legacy-lts-series/5.6-series/5.6.3-for-android/index.html">5.6.3 for Android</a></li></ul></li>
+          <li data-nav-id="/qtcompile/en/legacy-lts-series/5.9-series/index.html" class="alwaysopen"><a class="padding" href="/qtcompile/en/legacy-lts-series/5.9-series/index.html">5.9 series</a><ul id="subsections-f8745d5ebc3d3c70b6d105e44a063326" class="morespace">
+          <li data-nav-id="/qtcompile/en/legacy-lts-series/5.9-series/5.9.9-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/legacy-lts-series/5.9-series/5.9.9-for-windows/index.html">5.9.9 for Windows</a></li>
+          <li data-nav-id="/qtcompile/en/legacy-lts-series/5.9-series/5.9.9-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/legacy-lts-series/5.9-series/5.9.9-for-macos/index.html">5.9.9 for macOS</a></li>
+          <li data-nav-id="/qtcompile/en/legacy-lts-series/5.9-series/5.9.9-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/legacy-lts-series/5.9-series/5.9.9-for-android/index.html">5.9.9 for Android</a></li></ul></li>
+          <li data-nav-id="/qtcompile/en/legacy-lts-series/5.12-series/index.html" class="alwaysopen"><a class="padding" href="/qtcompile/en/legacy-lts-series/5.12-series/index.html">5.12 series</a><ul id="subsections-1c9205acacd79bb25b30a84b030ea10b" class="morespace">
+          <li data-nav-id="/qtcompile/en/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html">5.12.12 for macOS</a></li>
+          <li data-nav-id="/qtcompile/en/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/en/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html">5.12.12 for WebAssembly</a></li></ul></li></ul></li>
+        </ul>
+        <div id="shortcuts">
+          <div class="nav-title padding">More</div>
+          <ul class="space">
+            <li><a class="padding" href="https://github.com/Fsu0413/QtCompile"><i class='fab fa-fw fa-github'></i> GitHub repo</a></li>
+            <li><a class="padding" href="http://www.qtcn.org/bbs/read.php?tid=85733&amp;ds=1&amp;page=1&amp;toread=1#194070"><i class='fas fa-poll-h'></i> BBS publish post (Chinese only)</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter"></div>
+        <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter">
+        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showLangSwitch showVariantSwitch">
+          <ul>
+            <li id="select-language-container" class="footerLangSwitch showLangSwitch">
+              <div class="padding menu-control">
+                <i class="fas fa-language fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="select-language">Language</label>
+                  <select id="select-language" onchange="location = baseUri + this.value;">
+                    <option lang="zh-cn" id="zh-cn" value="/qtcompile/miscellaneous/current-failures/index.html">简体中文（中国）</option>
+                    <option lang="en" id="en" value="/qtcompile/en/miscellaneous/current-failures/index.html" selected>English</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
+              <div class="padding menu-control">
+                <i class="fas fa-paint-brush fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="select-variant">Theme</label>
+                  <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                    <option id="relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
+                    <option id="relearn-bright" value="relearn-bright">Relearn Bright</option>
+                    <option id="relearn-light" value="relearn-light">Relearn Light</option>
+                    <option id="learn" value="learn">Learn</option>
+                    <option id="neon" value="neon">Neon</option>
+                    <option id="red" value="red">Red</option>
+                    <option id="blue" value="blue">Blue</option>
+                    <option id="green" value="green">Green</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.variants && variants.markSelectedVariant();</script>
+            </li>
+            <li class="footerVisitedLinks">
+              <div class="padding menu-control">
+                <i class="fas fa-history fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <button onclick="clearHistory();">Clear History</button>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
+Site generated: Thu, 10 Aug 2023 20:04:44 CST</p>
+
+        </div>
+      </div>
+    </aside>
+    <script src="/qtcompile/js/clipboard.min.js" defer></script>
+    <script src="/qtcompile/js/perfect-scrollbar.min.js" defer></script>
+    <script src="/qtcompile/js/theme.js" defer></script>
+  </body>
+</html>

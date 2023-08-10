@@ -8,6 +8,9 @@
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>本仓库的一些备注 :: Fsu0413 的原版 Qt 构建</title>
+    <link href="/qtcompile/miscellaneous/notes-for-this-repo/index.html" rel="alternate" hreflang="x-default">
+    <link href="/qtcompile/miscellaneous/notes-for-this-repo/index.html" rel="alternate" hreflang="zh-cn">
+    <link href="/qtcompile/en/miscellaneous/notes-for-this-repo/index.html" rel="alternate" hreflang="en">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/qtcompile/css/fontawesome-all.min.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/qtcompile/css/fontawesome-all.min.css" rel="stylesheet"></noscript>
     <link href="/qtcompile/css/nucleus.css" rel="stylesheet">
@@ -81,7 +84,6 @@
           <div class="default-animation progress">
             <div class="toc-wrapper"><nav id="TableOfContents">
   <ul>
-    <li><a href="#停止使用-notepad">停止使用 Notepad++</a></li>
     <li><a href="#中文--多语言支持">中文 / 多语言支持</a></li>
     <li><a href="#网站镜像">网站镜像</a></li>
     <li><a href="#可复现的构建">可复现的构建</a></li>
@@ -111,16 +113,6 @@
             </header>
 <h1 id="本仓库的一些备注">本仓库的一些备注</h1>
 
-<h2 id="停止使用-notepad">停止使用 Notepad++</h2>
-<p>2023 年 1 月 25 日 Notepad++ 发布的版本中，添加了一个“功能”，里面要求用户同意并接受其中关于中国的虚假、不正确和误导性的政治言论。<br>
-如果用户不同意、不接受的话，在使用 Notepad++ 编辑文字时会被添加随机字符。</p>
-<p>作为中国人，我在此声明：<br>
-<strong>中国的各个省、直辖市、自治区和特别行政区，包括港澳台、新疆和西藏，都是中国领土的一部分。</strong><br>
-<strong>我拒绝接受一切不尊重中国国家主权及领土完整的言论。</strong></p>
-<p>我（Fsu0413）作为来自中国的中国码农，不会再使用 Notepad++，也不会再支持 Notepad++ 用户。<br>
-我也呼吁我的网站的所有用户停止使用 Notepad++ 并寻找替代方案。</p>
-<p>我不会对替代方案提供任何建议。<br>
-现在外面有 <a href="https://www.texteditors.org/cgi-bin/wiki.pl?ScintillaEditorFamily" target="_blank">非常多的基于 Scintilla 的编辑器</a> ，我相信你一定会找到你想要的那个。</p>
 <h2 id="中文--多语言支持">中文 / 多语言支持</h2>
 <p>虽然这个网站的维护者（Fsu0413，也就是我）是中国人，是中文母语使用者，不过此网站最初做成的时候是只有嘤文版的。<br>
 目前我正在逐步在此网站上添加简体中文支持。</p>
@@ -581,17 +573,19 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
             <li><a class="padding" href="http://www.qtcn.org/bbs/read.php?tid=85733&amp;ds=1&amp;page=1&amp;toread=1#194070"><i class='fas fa-poll-h'></i> 论坛发布贴</a></li>
           </ul>
         </div>
-        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter"></div>
-        <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter">
-        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch">
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter"></div>
+        <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter">
+        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showLangSwitch showVariantSwitch">
           <ul>
-            <li id="select-language-container" class="footerLangSwitch">
+            <li id="select-language-container" class="footerLangSwitch showLangSwitch">
               <div class="padding menu-control">
                 <i class="fas fa-language fa-fw"></i>
                 <span>&nbsp;</span>
                 <div class="control-style">
                   <label class="a11y-only" for="select-language">语言</label>
                   <select id="select-language" onchange="location = baseUri + this.value;">
+                    <option lang="zh-cn" id="zh-cn" value="/qtcompile/miscellaneous/notes-for-this-repo/index.html" selected>简体中文（中国）</option>
+                    <option lang="en" id="en" value="/qtcompile/en/miscellaneous/notes-for-this-repo/index.html">English</option>
                   </select>
                 </div>
                 <div class="clear"></div>
@@ -631,7 +625,7 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Thu, 10 Aug 2023 19:58:29 CST</p>
+Site generated: Thu, 10 Aug 2023 20:04:44 CST</p>
 
         </div>
       </div>
