@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.117.0">
-    <meta name="generator" content="Relearn 5.18.0">
+    <meta name="generator" content="Hugo 0.118.2">
+    <meta name="generator" content="Relearn 5.20.0">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>之前的历史 :: Fsu0413 的原版 Qt 构建</title>
@@ -38,7 +38,7 @@
       window.T_N_results_found = '为\u0022{0}\u0022找到 {1} 个结果';
       // some further base stuff
       var baseUriFull='qtcompile/';
-      window.variants && variants.init( [ 'relearn-dark', 'relearn-bright', 'relearn-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
+      window.variants && variants.init( [ 'relearn-dark', 'relearn-bright', 'relearn-light', 'zen-dark', 'zen-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
     </script><style>
     p.fsu0413_leftFooter {
         text-align: center;
@@ -61,6 +61,9 @@
     }
     strong {
         color: red;
+    }
+    del {
+        color: gray;
     }
 </style>
   </head>
@@ -553,13 +556,13 @@ SF.net 恢复，文件重新上传到 SF.net。</p>
 <h2 id="2017-年以前黑历史仅有嘤文">2017 年以前（黑历史，仅有嘤文）</h2>
 
 <div class="expand">
-    <input type="checkbox" id="expand-2912d890ab0196dffcc62a352c1d8249" aria-controls="expandcontent-2912d890ab0196dffcc62a352c1d8249" >
-    <label class="expand-label" for="expand-2912d890ab0196dffcc62a352c1d8249" >
+    <input type="checkbox" id="expand-2f15f9f6d60e67cb57b8ce1dff2bf313" aria-controls="expandcontent-2f15f9f6d60e67cb57b8ce1dff2bf313" >
+    <label class="expand-label" for="expand-2f15f9f6d60e67cb57b8ce1dff2bf313" >
         <i class="fas fa-chevron-down"></i>
         <i class="fas fa-chevron-right"></i>
         展开
     </label>
-    <div id="expandcontent-2912d890ab0196dffcc62a352c1d8249" class="expand-content">
+    <div id="expandcontent-2f15f9f6d60e67cb57b8ce1dff2bf313" class="expand-content">
 
 <p>是的，我想写一些东西，但是不知道怎么写。。。</p>
 <h3 id="2016-年-7-月-23-日">2016 年 7 月 23 日</h3>
@@ -624,18 +627,21 @@ Upload 5.6.1 VS2015 Static packages.</p>
       </main>
     </div>
     <aside id="sidebar" class="default-animation">
+      <div id="header-topbar" class="default-animation"></div>
       <div id="header-wrapper" class="default-animation">
         <div id="header" class="default-animation">
 <p class="fsu0413_logo"><img src="https://codereview.qt-project.org/static/logo_qt.png" /></p>
         </div>
       </div>
-      <div id="homelinks" class="default-animation">
+      <div id="homelinks" class="default-animation homelinks">
         <ul>
           <li><a class="padding" href="/qtcompile/index.html"><i class='fas fa-home'></i> 主页</a></li>
         </ul>
+        <hr class="padding">
       </div>
       <div id="content-wrapper" class="highlightable">
-        <ul class="topics enlarge morespace">
+        <div id="topics">
+          <ul class="enlarge morespace">
           <li data-nav-id="/qtcompile/5.12-series/index.html" class=""><a class="padding" href="/qtcompile/5.12-series/index.html">5.12 系列</a><ul id="subsections-9aeb85270de661fbbb0f6e6b161fbf7c" class="morespace">
           <li data-nav-id="/qtcompile/5.12-series/5.12.12-for-windows/index.html" class=""><a class="padding" href="/qtcompile/5.12-series/5.12.12-for-windows/index.html">5.12.12 的 Windows 版本</a></li>
           <li data-nav-id="/qtcompile/5.12-series/5.12.12-for-android/index.html" class=""><a class="padding" href="/qtcompile/5.12-series/5.12.12-for-android/index.html">5.12.12 的安卓版本</a></li></ul></li>
@@ -674,7 +680,8 @@ Upload 5.6.1 VS2015 Static packages.</p>
           <li data-nav-id="/qtcompile/legacy-lts-series/5.12-series/index.html" class="alwaysopen"><a class="padding" href="/qtcompile/legacy-lts-series/5.12-series/index.html">5.12 系列</a><ul id="subsections-8f2a6bd86210a6244fd0ff0c916f8279" class="morespace">
           <li data-nav-id="/qtcompile/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html" class=""><a class="padding" href="/qtcompile/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html">5.12.12 的 macOS 版本</a></li>
           <li data-nav-id="/qtcompile/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html">5.12.12 的 WebAssembly 版本</a></li></ul></li></ul></li>
-        </ul>
+          </ul>
+        </div>
         <div id="shortcuts">
           <div class="nav-title padding">更多</div>
           <ul class="space">
@@ -683,59 +690,63 @@ Upload 5.6.1 VS2015 Static packages.</p>
           </ul>
         </div>
         <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter"></div>
-        <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter">
-        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showLangSwitch showVariantSwitch">
-          <ul>
-            <li id="select-language-container" class="footerLangSwitch showLangSwitch">
-              <div class="padding menu-control">
-                <i class="fas fa-language fa-fw"></i>
-                <span>&nbsp;</span>
-                <div class="control-style">
-                  <label class="a11y-only" for="select-language">语言</label>
-                  <select id="select-language" onchange="location = baseUri + this.value;">
-                    <option lang="zh-cn" id="zh-cn" value="/qtcompile/miscellaneous/histories/index.html" selected>简体中文（中国）</option>
-                    <option lang="en" id="en" value="/qtcompile/en/miscellaneous/histories/index.html">English</option>
-                  </select>
+        <div id="menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter">
+          <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showLangSwitch showVariantSwitch">
+            <ul>
+              <li id="select-language-container" class="footerLangSwitch showLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-language fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="select-language">语言</label>
+                    <select id="select-language" onchange="location = baseUri + this.value;">
+                      <option lang="zh-cn" id="zh-cn" value="/qtcompile/miscellaneous/histories/index.html" selected>简体中文（中国）</option>
+                      <option lang="en" id="en" value="/qtcompile/en/miscellaneous/histories/index.html">English</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
                 </div>
-                <div class="clear"></div>
-              </div>
-            </li>
-            <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
-              <div class="padding menu-control">
-                <i class="fas fa-paint-brush fa-fw"></i>
-                <span>&nbsp;</span>
-                <div class="control-style">
-                  <label class="a11y-only" for="select-variant">主题</label>
-                  <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
-                    <option id="relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
-                    <option id="relearn-bright" value="relearn-bright">Relearn Bright</option>
-                    <option id="relearn-light" value="relearn-light">Relearn Light</option>
-                    <option id="learn" value="learn">Learn</option>
-                    <option id="neon" value="neon">Neon</option>
-                    <option id="red" value="red">Red</option>
-                    <option id="blue" value="blue">Blue</option>
-                    <option id="green" value="green">Green</option>
-                  </select>
+              </li>
+              <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-paint-brush fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="select-variant">主题</label>
+                    <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
+                      <option id="relearn-bright" value="relearn-bright">Relearn Bright</option>
+                      <option id="relearn-light" value="relearn-light">Relearn Light</option>
+                      <option id="zen-dark" value="zen-dark">Zen Dark</option>
+                      <option id="zen-light" value="zen-light">Zen Light</option>
+                      <option id="learn" value="learn">Learn</option>
+                      <option id="neon" value="neon">Neon</option>
+                      <option id="red" value="red">Red</option>
+                      <option id="blue" value="blue">Blue</option>
+                      <option id="green" value="green">Green</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
                 </div>
-                <div class="clear"></div>
-              </div>
-              <script>window.variants && variants.markSelectedVariant();</script>
-            </li>
-            <li class="footerVisitedLinks">
-              <div class="padding menu-control">
-                <i class="fas fa-history fa-fw"></i>
-                <span>&nbsp;</span>
-                <div class="control-style">
-                  <button onclick="clearHistory();">清理历史记录</button>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fas fa-history fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">清理历史记录</button>
+                  </div>
+                  <div class="clear"></div>
                 </div>
-                <div class="clear"></div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Thu, 10 Aug 2023 20:04:44 CST</p>
+              </li>
+            </ul>
+          </div>
+          <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
+Site generated: Sat, 02 Sep 2023 17:31:14 CST</p>
 
+          </div>
         </div>
       </div>
     </aside>

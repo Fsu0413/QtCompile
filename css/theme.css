@@ -7,89 +7,104 @@ need a way to calculate them ourself */
 :root {
     --dpr: 1;
     --bpx: 1;
+    --bpx1: 1;
 }
 @media (min-resolution: 105dpi) {
     :root {
         --dpr: 1.1;
         --bpx: 1.1;
+        --bpx1: calc(1/1.1);
     }
 }
 @media (min-resolution: 115dpi) {
     :root {
         --dpr: 1.2;
         --bpx: 1.2;
+        --bpx1: calc(1/1.2);
     }
 }
 @media (min-resolution: 120dpi) {
     :root {
         --dpr: 1.25;
         --bpx: 1.25;
+        --bpx1: calc(1/1.25);
     }
 }
 @media (min-resolution: 128dpi) {
     :root {
         --dpr: 1.333;
         --bpx: 1.333;
+        --bpx1: calc(1/1.333);
     }
 }
 @media (min-resolution: 144dpi) {
     :root {
         --dpr: 1.5;
         --bpx: 1.5;
+        --bpx1: calc(1/1.5);
     }
 }
 @media (min-resolution: 160dpi) {
     :root {
         --dpr: 1.666;
         --bpx: 1.666;
+        --bpx1: calc(1/1.666);
     }
 }
 @media (min-resolution: 168dpi) {
     :root {
         --dpr: 1.75;
         --bpx: 1.75;
+        --bpx1: calc(1/1.75);
     }
 }
 @media (min-resolution: 192dpi) {
     :root {
         --dpr: 2;
         --bpx: 1;
+        --bpx1: 1;
     }
 }
 @media (min-resolution: 240dpi) {
     :root {
         --dpr: 2.5;
         --bpx: 1.25;
+        --bpx1: calc(1/1.25);
     }
 }
 @media (min-resolution: 288dpi) {
     :root {
         --dpr: 3;
         --bpx: 1;
+        --bpx1: 1;
     }
 }
 @media (min-resolution: 384dpi) {
     :root {
         --dpr: 4;
         --bpx: 1;
+        --bpx1: 1;
     }
 }
 @media (min-resolution: 480dpi) {
     :root {
         --dpr: 5;
         --bpx: 1.25;
+        --bpx1: calc(1/1.25);
     }
 }
 @media (min-resolution: 576dpi) {
     :root {
         --dpr: 6;
         --bpx: 1.5;
+        --bpx1: calc(1/1.5);
     }
 }
 @media (min-resolution: 768dpi) {
     :root {
         --dpr: 8;
         --bpx: 1;
+        --bpx1: 1;
     }
 }
 
@@ -156,11 +171,14 @@ dd {
 }
 
 #header-wrapper {
-    border-bottom-style: solid;
-    border-bottom-width: 4px;
     text-align: center;
     padding: 1rem;
     position: relative;
+}
+#header {
+    border-block-end: 1px solid transparent;
+    position: relative;
+    z-index: 1;
 }
 #header a {
     display: inline-block;
@@ -278,10 +296,10 @@ dd {
 }
 
 #sidebar .footermargin {
-    margin-top: auto;
+    flex-grow: 1;
 }
 
-#sidebar hr {
+#content-wrapper hr {
     border-bottom-style: solid;
     border-bottom-width: 1px;
     margin: 1.5rem 1rem 1rem 1rem;
@@ -304,11 +322,11 @@ dd {
     z-index: 70;
 }
 
-#body img:not(.lightbox-image),
-#body img.center,
+#body img,
 #body .video-container {
     display: block;
-    margin: 1.5rem auto;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 }
 
@@ -322,7 +340,7 @@ dd {
 
 #body img.border,
 #body .video-container.border {
-    border: 2px solid rgba( 134, 134, 134, .125 );
+    border: 1px solid rgba( 134, 134, 134, .333 );
 }
 
 #body img.shadow,
@@ -545,33 +563,39 @@ div.box > .box-content {
     padding-right: 1rem;
 }
 
-#body table th > :first-child,
-#body table th > :first-child :first-child,
-#body table td > :first-child,
-#body table td > :first-child :first-child,
-#body div.box > .box-content > :first-child,
-#body div.box > .box-content > :first-child :first-child,
-#body div.expand > .expand-content-text > :first-child,
-#body div.expand > .expand-content-text > :first-child :first-child,
-#body div.tab-content > .tab-content-text > :first-child,
-#body div.tab-content > .tab-content-text > :first-child :first-child {
+p:empty {
+    /* in case of image render hook, Hugo may generate empty <p>s that we want to ignore */
+    display: none;
+}
+
+/* in case of image render hook, Hugo may generate empty <p>s that we want to ignore aswell, so a simple :first-child or :last-child is not enough */
+#body table th > :nth-child(1 of :not(:empty)),
+#body table th > :nth-child(1 of :not(:empty)) :nth-child(1 of :not(:empty)),
+#body table td > :nth-child(1 of :not(:empty)),
+#body table td > :nth-child(1 of :not(:empty)) :nth-child(1 of :not(:empty)),
+#body div.box > .box-content > :nth-child(1 of :not(:empty)),
+#body div.box > .box-content > :nth-child(1 of :not(:empty)) :nth-child(1 of :not(:empty)),
+#body div.expand > .expand-content-text > :nth-child(1 of :not(:empty)),
+#body div.expand > .expand-content-text > :nth-child(1 of :not(:empty)) :nth-child(1 of :not(:empty)),
+#body div.tab-content > .tab-content-text > :nth-child(1 of :not(:empty)),
+#body div.tab-content > .tab-content-text > :nth-child(1 of :not(:empty)) :nth-child(1 of :not(:empty)) {
     margin-top: 0;
 }
 
-#body table th > :last-child,
-#body table th > :last-child :last-child,
+#body table th > :nth-last-child(1 of :not(:empty)),
+#body table th > :nth-last-child(1 of :not(:empty)) :nth-last-child(1 of :not(:empty)),
 #body table th > div.highlight:last-child pre,
-#body table td > :last-child,
-#body table td > :last-child :last-child,
+#body table td > :nth-last-child(1 of :not(:empty)),
+#body table td > :nth-last-child(1 of :not(:empty)) :nth-last-child(1 of :not(:empty)),
 #body table td > div:last-child pre,
-#body div.box > .box-content > :last-child,
-#body div.box > .box-content > :last-child :last-child,
+#body div.box > .box-content > :nth-last-child(1 of :not(:empty)),
+#body div.box > .box-content > :nth-last-child(1 of :not(:empty)) :nth-last-child(1 of :not(:empty)),
 #body div.box > .box-content > div:last-child pre,
-#body div.expand > .expand-content-text > :last-child,
-#body div.expand > .expand-content-text > :last-child :last-child,
+#body div.expand > .expand-content-text > :nth-last-child(1 of :not(:empty)),
+#body div.expand > .expand-content-text > :nth-last-child(1 of :not(:empty)) :nth-last-child(1 of :not(:empty)),
 #body div.expand > .expand-content-text > div:last-child pre,
-#body div.tab-content > .tab-content-text > :last-child,
-#body div.tab-content > .tab-content-text > :last-child :last-child,
+#body div.tab-content > .tab-content-text > :nth-last-child(1 of :not(:empty)),
+#body div.tab-content > .tab-content-text > :nth-last-child(1 of :not(:empty)) :nth-last-child(1 of :not(:empty)),
 #body div.tab-content > .tab-content-text > div:last-child pre {
     margin-bottom: 0;
 }
@@ -923,11 +947,6 @@ td {
     top: 50%;
 }
 
-#sidebar .highlightable {
-    padding: 1rem 0 1rem;
-    position: relative;
-}
-
 #topbar {
     min-height: 3rem;
     position: relative;
@@ -984,9 +1003,11 @@ span.nav i{
 }
 
 #body #breadcrumbs {
+    border-inline-start-style: solid;
+    border-inline-start-width: 1px;
     float: left;
     height: auto;
-    line-height: 1.4;
+    line-height: 1.2;
     margin-bottom: 0;
     overflow: hidden;
     position: relative;
@@ -1001,6 +1022,7 @@ html[dir="rtl"] #body #breadcrumbs {
 }
 @media screen and (max-width: 48rem) {
     #body #breadcrumbs {
+        border-inline-start-color: transparent;
         text-overflow: unset;
     }
 }
@@ -1170,9 +1192,15 @@ pre > .copy-to-clipboard-button {
 }
 
 #homelinks {
+    padding: 0;
+}
+#homelinks ul {
+    margin: .5rem 0;
+}
+#homelinks hr {
     border-bottom-style: solid;
-    border-bottom-width: 4px;
-    padding: .5rem 0;
+    border-bottom-width: 1px;
+    margin: 0 1rem 3px 1rem;
 }
 
 option {
@@ -1539,7 +1567,7 @@ html[dir="rtl"] .menu-control span {
 .showVariantSwitch,
 .showVisitedLinks,
 .showFooter {
-    display: initial;
+    display: block;
 }
 
 @media screen and (max-width: 48rem) {
@@ -1665,6 +1693,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     font-weight: 500;
     line-height: 1.5rem;
     padding: 1rem;
+    text-decoration: none;
 }
 
 #searchresults a.autocomplete-suggestion:after {
@@ -1757,7 +1786,7 @@ article ul > li > input[type="checkbox"]:checked::before {
 }
 
 /* CSS Lightbox https://codepen.io/gschier/pen/kyRXVx */
-.lightbox {
+.lightbox-back {
     align-items: center;
     background: rgba( 0, 0, 0, .8 );
     bottom: 0;
@@ -1772,11 +1801,11 @@ article ul > li > input[type="checkbox"]:checked::before {
     z-index: 1999;
 }
 
-.lightbox:target {
+.lightbox-back:target {
     display: flex;
 }
 
-.lightbox img {
+.lightbox-back img {
     max-height: 95%;
     max-width: 95%;
     overflow: auto;
@@ -2030,4 +2059,48 @@ html[dir="rtl"] #sidebar ul.collapsible-menu > li > label > i.fa-chevron-right {
 #body .tab-content-text > div.highlight:only-child pre,
 #body .tab-content-text > pre.pre-code:only-child{
     border-width: 0;
+}
+
+/* bordering the menu and topbar */
+
+#topbar {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+#header-topbar {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-inline-end-style: solid;
+    border-inline-end-width: 1px;
+    height: 3rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#header-wrapper,
+#homelinks,
+#content-wrapper > * {
+    border-inline-end-style: solid;
+    border-inline-end-width: 1px;
+}
+
+#topics > ul {
+    margin-top: 1rem;
+}
+
+#sidebar ul.collapsible-menu li.active > a{
+    border-style: solid;
+    border-width: 1px;
+    padding-bottom: calc( .25rem - var(--bpx1)*1px);
+    padding-left: calc( 1rem - var(--bpx1)*1px);
+    padding-right: calc( 1rem - var(--bpx1)*1px);
+    padding-top: calc( .25rem - var(--bpx1)*1px);
+    width: calc(100% + var(--bpx1)*1px);
+}
+
+#menu-footer {
+    padding-bottom: 1rem;
 }

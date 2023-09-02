@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.117.0">
-    <meta name="generator" content="Relearn 5.18.0">
+    <meta name="generator" content="Hugo 0.118.2">
+    <meta name="generator" content="Relearn 5.20.0">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>Current failures :: Fsu0413&#39;s Original Qt builds</title>
@@ -38,7 +38,7 @@
       window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
       // some further base stuff
       var baseUriFull='qtcompile/';
-      window.variants && variants.init( [ 'relearn-dark', 'relearn-bright', 'relearn-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
+      window.variants && variants.init( [ 'relearn-dark', 'relearn-bright', 'relearn-light', 'zen-dark', 'zen-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
     </script><style>
     p.fsu0413_leftFooter {
         text-align: center;
@@ -61,6 +61,9 @@
     }
     strong {
         color: red;
+    }
+    del {
+        color: gray;
     }
 </style>
   </head>
@@ -86,7 +89,7 @@
   <ul>
     <li><a href="#qdoc-after-qt-512-cannot-use-static-linked-clang-when-using-msvc">QDoc after Qt 5.12 cannot use static linked clang when using MSVC</a></li>
     <li><a href="#command-line-too-long-when-building-qt-62-series-for-mingw">Command line too long when building Qt 6.2 series for MinGW</a></li>
-    <li><a href="#qtopcua-issues">QtOpcUa issues</a></li>
+    <li><a href="#qtopcua-issues-updated-2nd-sep-2023">QtOpcUa issues (Updated 2nd Sep, 2023)</a></li>
     <li><a href="#various-failures-building-higher-version-of-qtwebengine-on-qt-624">Various failures building higher version of QtWebEngine on Qt 6.2.4</a></li>
     <li><a href="#patch-of-cve-2023-37369-conflicts-on-qt-624--625">Patch of CVE-2023-37369 conflicts on Qt 6.2.4 / 6.2.5</a></li>
   </ul>
@@ -110,12 +113,12 @@ I have decided not provide LLVM-based QDoc until I find a way to static link it.
 Thanks &ldquo;lixinwei&rdquo; on QTCN.org for telling me related info. <a href="http://www.qtcn.org/bbs/job.php?action=topost&amp;tid=85983&amp;pid=200952" target="_blank">Original post</a> (Sorry, it&rsquo;s in Chinese)</p>
 <h2 id="command-line-too-long-when-building-qt-62-series-for-mingw">Command line too long when building Qt 6.2 series for MinGW</h2>
 <p>See <a href="https://bugreports.qt.io/browse/QTBUG-96339" target="_blank">QTBUG-96339</a> - workaround using CMake 3.20.2</p>
-<h2 id="qtopcua-issues">QtOpcUa issues</h2>
-<p>QtOpcUa is currently not compatible with OpenSSL 3.0 series.<br>
+<h2 id="qtopcua-issues-updated-2nd-sep-2023">QtOpcUa issues (Updated 2nd Sep, 2023)</h2>
+<p>QtOpcUa <del>is currently</del> was previously not compatible with OpenSSL 3.0 series.<br>
 Temporarily disabling QtOpcUa build until the Qt guys update their open62541 version.<br>
-This change takes place since building and packaging of Qt 6.2.3.</p>
-<p>But seems like that open62541 guys doesn&rsquo;t treat this as issue despite the increasing popularity of OpenSSL 3.0 series.<br>
-Version 1.3.3 has released without any fix about OpenSSL 3.0.<br>
+This change takes place since building and packaging of Qt 6.2.3 (when OpenSSL 3.0 started being used).</p>
+<p><del>But seems like that open62541 guys don&rsquo;t treat this as issue despite the increasing popularity of OpenSSL 3.0 series.</del><br>
+<del>Version 1.3.3 has released without any fix about OpenSSL 3.0.</del><br>
 <del>I don&rsquo;t know if we can bring QtOpcUa back in Qt 6.4&hellip;</del></p>
 <p>Update 6th Nov, 2022:<br>
 open62541 hasn&rsquo;t release any version after 1.3.3 so there is no OpenSSL 3.0 support on open62541 of QtOpcUa 6.4.<br>
@@ -124,6 +127,8 @@ I will restart building with QtOpcUa when this change is got integrated in next 
 <p>Update 23rd Jan, 2023:<br>
 open62541 released 1.3.4 at 14th Nov, 2022. QtOpcUa 6.5 ships this version of open62541.<br>
 I&rsquo;ll try building with QtOpcUa enabled on build of Qt 6.5. (Packages built before 23rd Jan, 2023 are without QtOpcUa)</p>
+<p>Update 2nd Sep, 2023:<br>
+It is estimated that we can build QtOpcUa on Qt 6.2.7 which was released on 2nd Jan, 2023.</p>
 <h2 id="various-failures-building-higher-version-of-qtwebengine-on-qt-624">Various failures building higher version of QtWebEngine on Qt 6.2.4</h2>
 <p>QtWebEngine 6.3.2 on Qt 6.2.4 fails on macOS when using Xcode 14.1. It was OK using Xcode 14.0.1. Probably because QtWebEngine 6.3.2 is incompatible with macOS Ventura SDK.<br>
 QtWebEngine 6.4.0 on Qt 6.2.4 fails on macOS and Windows. All of them succeeds inside <code>gn</code> and outside it. Different failure occurs on Windows and macOS.</p>
@@ -150,18 +155,21 @@ I&rsquo;ve made patches on Qt 6.2.4 to fix the conflict but it conflicts with 6.
       </main>
     </div>
     <aside id="sidebar" class="default-animation">
+      <div id="header-topbar" class="default-animation"></div>
       <div id="header-wrapper" class="default-animation">
         <div id="header" class="default-animation">
 <p class="fsu0413_logo"><img src="https://codereview.qt-project.org/static/logo_qt.png" /></p>
         </div>
       </div>
-      <div id="homelinks" class="default-animation">
+      <div id="homelinks" class="default-animation homelinks">
         <ul>
           <li><a class="padding" href="/qtcompile/en/index.html"><i class='fas fa-home'></i> Home</a></li>
         </ul>
+        <hr class="padding">
       </div>
       <div id="content-wrapper" class="highlightable">
-        <ul class="topics enlarge morespace">
+        <div id="topics">
+          <ul class="enlarge morespace">
           <li data-nav-id="/qtcompile/en/5.12-series/index.html" class=""><a class="padding" href="/qtcompile/en/5.12-series/index.html">5.12 series</a><ul id="subsections-2c0b2ae1d884bccfca2dfb294f752a41" class="morespace">
           <li data-nav-id="/qtcompile/en/5.12-series/5.12.12-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/5.12-series/5.12.12-for-windows/index.html">5.12.12 for Windows</a></li>
           <li data-nav-id="/qtcompile/en/5.12-series/5.12.12-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/5.12-series/5.12.12-for-android/index.html">5.12.12 for Android</a></li></ul></li>
@@ -200,7 +208,8 @@ I&rsquo;ve made patches on Qt 6.2.4 to fix the conflict but it conflicts with 6.
           <li data-nav-id="/qtcompile/en/legacy-lts-series/5.12-series/index.html" class="alwaysopen"><a class="padding" href="/qtcompile/en/legacy-lts-series/5.12-series/index.html">5.12 series</a><ul id="subsections-1c9205acacd79bb25b30a84b030ea10b" class="morespace">
           <li data-nav-id="/qtcompile/en/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html">5.12.12 for macOS</a></li>
           <li data-nav-id="/qtcompile/en/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/en/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html">5.12.12 for WebAssembly</a></li></ul></li></ul></li>
-        </ul>
+          </ul>
+        </div>
         <div id="shortcuts">
           <div class="nav-title padding">More</div>
           <ul class="space">
@@ -209,59 +218,63 @@ I&rsquo;ve made patches on Qt 6.2.4 to fix the conflict but it conflicts with 6.
           </ul>
         </div>
         <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter"></div>
-        <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter">
-        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showLangSwitch showVariantSwitch">
-          <ul>
-            <li id="select-language-container" class="footerLangSwitch showLangSwitch">
-              <div class="padding menu-control">
-                <i class="fas fa-language fa-fw"></i>
-                <span>&nbsp;</span>
-                <div class="control-style">
-                  <label class="a11y-only" for="select-language">Language</label>
-                  <select id="select-language" onchange="location = baseUri + this.value;">
-                    <option lang="zh-cn" id="zh-cn" value="/qtcompile/miscellaneous/current-failures/index.html">简体中文（中国）</option>
-                    <option lang="en" id="en" value="/qtcompile/en/miscellaneous/current-failures/index.html" selected>English</option>
-                  </select>
+        <div id="menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter">
+          <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showLangSwitch showVariantSwitch">
+            <ul>
+              <li id="select-language-container" class="footerLangSwitch showLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-language fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="select-language">Language</label>
+                    <select id="select-language" onchange="location = baseUri + this.value;">
+                      <option lang="zh-cn" id="zh-cn" value="/qtcompile/miscellaneous/current-failures/index.html">简体中文（中国）</option>
+                      <option lang="en" id="en" value="/qtcompile/en/miscellaneous/current-failures/index.html" selected>English</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
                 </div>
-                <div class="clear"></div>
-              </div>
-            </li>
-            <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
-              <div class="padding menu-control">
-                <i class="fas fa-paint-brush fa-fw"></i>
-                <span>&nbsp;</span>
-                <div class="control-style">
-                  <label class="a11y-only" for="select-variant">Theme</label>
-                  <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
-                    <option id="relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
-                    <option id="relearn-bright" value="relearn-bright">Relearn Bright</option>
-                    <option id="relearn-light" value="relearn-light">Relearn Light</option>
-                    <option id="learn" value="learn">Learn</option>
-                    <option id="neon" value="neon">Neon</option>
-                    <option id="red" value="red">Red</option>
-                    <option id="blue" value="blue">Blue</option>
-                    <option id="green" value="green">Green</option>
-                  </select>
+              </li>
+              <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-paint-brush fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="select-variant">Theme</label>
+                    <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
+                      <option id="relearn-bright" value="relearn-bright">Relearn Bright</option>
+                      <option id="relearn-light" value="relearn-light">Relearn Light</option>
+                      <option id="zen-dark" value="zen-dark">Zen Dark</option>
+                      <option id="zen-light" value="zen-light">Zen Light</option>
+                      <option id="learn" value="learn">Learn</option>
+                      <option id="neon" value="neon">Neon</option>
+                      <option id="red" value="red">Red</option>
+                      <option id="blue" value="blue">Blue</option>
+                      <option id="green" value="green">Green</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
                 </div>
-                <div class="clear"></div>
-              </div>
-              <script>window.variants && variants.markSelectedVariant();</script>
-            </li>
-            <li class="footerVisitedLinks">
-              <div class="padding menu-control">
-                <i class="fas fa-history fa-fw"></i>
-                <span>&nbsp;</span>
-                <div class="control-style">
-                  <button onclick="clearHistory();">Clear History</button>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fas fa-history fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
                 </div>
-                <div class="clear"></div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Thu, 10 Aug 2023 20:04:44 CST</p>
+              </li>
+            </ul>
+          </div>
+          <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
+Site generated: Sat, 02 Sep 2023 17:31:15 CST</p>
 
+          </div>
         </div>
       </div>
     </aside>

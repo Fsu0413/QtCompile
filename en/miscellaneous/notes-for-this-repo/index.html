@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.117.0">
-    <meta name="generator" content="Relearn 5.18.0">
+    <meta name="generator" content="Hugo 0.118.2">
+    <meta name="generator" content="Relearn 5.20.0">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>Notes for this repo :: Fsu0413&#39;s Original Qt builds</title>
@@ -38,7 +38,7 @@
       window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
       // some further base stuff
       var baseUriFull='qtcompile/';
-      window.variants && variants.init( [ 'relearn-dark', 'relearn-bright', 'relearn-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
+      window.variants && variants.init( [ 'relearn-dark', 'relearn-bright', 'relearn-light', 'zen-dark', 'zen-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
     </script><style>
     p.fsu0413_leftFooter {
         text-align: center;
@@ -61,6 +61,9 @@
     }
     strong {
         color: red;
+    }
+    del {
+        color: gray;
     }
 </style>
   </head>
@@ -116,9 +119,9 @@
 <h2 id="chinese--multilingual-support">Chinese / Multilingual Support</h2>
 <p>This website was English only since when it was initially built, although the maintainer of this website (me, Fsu0413) is a Chinese native speaker from the PRC.<br>
 Currently I am gradually adding Simplified Chinese support on this website.</p>
-<p>Recently this website has gained multilingual support thanks to the built-in multilingual support of <a href="https://gohugo.io/" target="_blank">Hugo</a> and the recently switched <a href="https://mcshelby.github.io/hugo-theme-relearn/" target="_blank">Relearn</a> theme.<br>
-Current Chinese support is in the stage of writing texts. There is a bunch of things which are not finished.<br>
-But the main contents are rewritten using Chinese, which shouldn&rsquo;t bother us for downloading binaries.</p>
+<p><del>Recently</del> this website has gained multilingual support thanks to the built-in multilingual support of <a href="https://gohugo.io/" target="_blank">Hugo</a> and the <del>recently switched</del> <a href="https://mcshelby.github.io/hugo-theme-relearn/" target="_blank">Relearn</a> theme.<br>
+<del>Current Chinese support is in the stage of writing texts. There is a bunch of things which are not finished.</del><br>
+<del>But the main contents are rewritten using Chinese, which shouldn&rsquo;t bother us for downloading binaries.</del></p>
 <p>If there are any constructive advices, feel free to <a href="https://github.com/Fsu0413/QtCompile/issues/new" target="_blank">create issue on Github</a>.</p>
 <h2 id="website-mirror">Website Mirror</h2>
 <p><del>Recently</del> I created a mirror of this website in the Greatest China, using service of Gitee Pages.<br>
@@ -199,7 +202,7 @@ It is possible to implement GPG verifiiation before certificate can be bought. (
 (Qt before 5.14 can&rsquo;t be trusted due to patch of Qt after install. Qt 5.14 and later can be relocated which resolves this problem)</p>
 <h2 id="notes-for-qt-versions-before-514">Notes for Qt versions before 5.14</h2>
 <p>Qt before 5.14 should reject using the binary files which were just uncompressed from the tarball.<br>
-It should report &ldquo;Qt is not properly installed, please run <em>make install</em>&rdquo; or something like this in Qt creator.</p>
+It should report &ldquo;Qt is not properly installed, please run <code>make install</code>&rdquo; or something like this in Qt creator.</p>
 <p>I redistributed a version of QQtPatcher in the package, you should run it to make Qt running.</p>
 <p>The source code of the distributed QQtPatcher is on <a href="https://github.com/Fsu0413/QQtPatcher" target="_blank">GitHub</a>. It is a free software and distributed in public domain.</p>
 <p>Do not put the library in a directory which contains non-ascii character or spaces.<br>
@@ -218,6 +221,9 @@ Besides, their LTS support time is not too long. Windows has 10 years of support
 Founding a shell company and using this company to buy Qt and distribute software, for only $499 per year? While other employees who work together use the open source version in private?<br>
 This will definitely lose money.</p>
 <p>I will continue my amateur job of building Qt. I hope Qt for MCUs will be open source soon.</p>
+<p>(Appended 2nd Sep, 2023) I have been lucky enough to have spotted Qt for MCUs in a small project in my company. It is provided in binary form.<br>
+It uses completely different base structure than desktop and mobile one - it does not use current existing free software like Qt Base, etc..</p>
+<p>I did no studying or investigating about that part since my development has no relationship about Qt, so the above words is all I know about it.</p>
 <h2 id="qt-6-support-platforms-updated-14th-jun-2023">Qt 6 support platforms (updated 14th Jun, 2023)</h2>
 <p>See <a href="https://bugreports.qt.io/browse/QTBUG-113979" target="_blank">Qt 6.6 TQC Supported Targets</a> and its predecessors.</p>
 <p>Currently I am building Qt 6 for following platforms:</p>
@@ -391,6 +397,11 @@ If subsequent version of Qt 5.15 remains private we won&rsquo;t upgrade OpenSSL 
 <td>25th May, 2024</td>
 </tr>
 <tr>
+<td>5.15.15</td>
+<td>31st Aug, 2023</td>
+<td>31st Aug, 2024 (Need to check if Qt will really release this version to opensource on that day)</td>
+</tr>
+<tr>
 <td>6.2.6</td>
 <td>27th Sep, 2022</td>
 <td>27th Sep, 2023</td>
@@ -429,6 +440,7 @@ Version number in brackets are the version when the corresponding patch will be 
 <th>5.12.12</th>
 <th>5.15.10</th>
 <th>6.2.5</th>
+<th>6.5.3 (est.)</th>
 </tr>
 </thead>
 <tbody>
@@ -437,35 +449,41 @@ Version number in brackets are the version when the corresponding patch will be 
 <td><a href="https://codereview.qt-project.org/c/qt/qtbase/&#43;/396020" target="_blank">√</a></td>
 <td>shipped</td>
 <td>shipped</td>
+<td>shipped</td>
 </tr>
 <tr>
 <td>CVE-2022-27404-27405-27406</td>
 <td>-</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2022-27404-27405-27406-qtbase-5.15.diff" target="_blank">√</a> (5.15.11)</td>
 <td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2022-27404-27405-27406-qtbase-6.2.diff" target="_blank">√</a> (6.2.6)</td>
+<td>shipped</td>
 </tr>
 <tr>
 <td>CVE-2022-37434</td>
 <td>-</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2022-37434-qtbase-5.15.patch" target="_blank">√</a> (5.15.11)</td>
 <td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2022-37434-qtbase-6.2.patch" target="_blank">√</a> (6.2.6)</td>
+<td>shipped</td>
 </tr>
 <tr>
 <td>CVE-2023-24607</td>
 <td>-</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-24607-qtbase-5.15.diff" target="_blank">√</a> (5.15.13)</td>
 <td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-24607-qtbase-6.2.diff" target="_blank">√</a> (6.2.8)</td>
+<td>shipped</td>
 </tr>
 <tr>
 <td>CVE-2023-32573</td>
 <td>-</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-32573-qtsvg-5.15.diff" target="_blank">√</a> (5.15.14)</td>
 <td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-32573-qtsvg-6.2.diff" target="_blank">√</a> (6.2.9)</td>
+<td>shipped</td>
 </tr>
 <tr>
 <td>(5.15 series specific) macOS build fix</td>
 <td>-</td>
 <td><a href="https://invent.kde.org/qt/qt/qtlocation-mapboxgl/-/commit/5a07e1967dcc925d9def47accadae991436b9686" title="Patch provided by KDE" target="_blank">macOS only</a> (5.15.14)</td>
+<td>-</td>
 <td>-</td>
 </tr>
 <tr>
@@ -473,36 +491,42 @@ Version number in brackets are the version when the corresponding patch will be 
 <td>-</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-32762-qtbase-5.15.diff" target="_blank">√</a> (5.15.14)</td>
 <td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-32762-qtbase-6.2.diff" target="_blank">√</a> (6.2.9)</td>
+<td>shipped</td>
 </tr>
 <tr>
 <td>CVE-2023-32763</td>
 <td>-</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-32763-qtbase-5.15.diff" target="_blank">√</a> (5.15.15)</td>
 <td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-32763-qtbase-6.2.diff" target="_blank">√</a> (6.2.9)</td>
+<td>shipped</td>
 </tr>
 <tr>
 <td>CVE-2023-33285</td>
 <td>-</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-33285-qtbase-5.15.diff" target="_blank">√</a> (5.15.14)</td>
 <td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-33285-qtbase-6.2.diff" target="_blank">√</a> (6.2.9)</td>
+<td>shipped</td>
 </tr>
 <tr>
 <td>CVE-2023-34410</td>
 <td>-</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-34410-qtbase-5.15.diff" target="_blank">√</a> (5.15.15)</td>
 <td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-34410-qtbase-6.2.diff" target="_blank">√</a> (6.2.9)</td>
+<td>shipped</td>
 </tr>
 <tr>
 <td>CVE-2023-37369</td>
 <td>-</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-37369-qtbase-5.15.diff" target="_blank">√</a> (5.15.15)</td>
 <td><a href="#" title="Official patch causes CONFLICT. Depends on a commit of Qt 6.2.9. Given up investigating due to no active distro / project is fixing this issue"><strong>×</strong></a> (6.2.10)</td>
+<td>shipped</td>
 </tr>
 <tr>
 <td>CVE-2023-38197</td>
 <td>-</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-38197-qtbase-5.15.diff" target="_blank">√</a> (5.15.15)</td>
 <td><a href="#" title="Depends on patch of CVE-2023-37369"><strong>×</strong></a> (6.2.10)</td>
+<td><strong>x</strong> (6.5.3)</td>
 </tr>
 </tbody>
 </table>
@@ -515,18 +539,21 @@ Version number in brackets are the version when the corresponding patch will be 
       </main>
     </div>
     <aside id="sidebar" class="default-animation">
+      <div id="header-topbar" class="default-animation"></div>
       <div id="header-wrapper" class="default-animation">
         <div id="header" class="default-animation">
 <p class="fsu0413_logo"><img src="https://codereview.qt-project.org/static/logo_qt.png" /></p>
         </div>
       </div>
-      <div id="homelinks" class="default-animation">
+      <div id="homelinks" class="default-animation homelinks">
         <ul>
           <li><a class="padding" href="/qtcompile/en/index.html"><i class='fas fa-home'></i> Home</a></li>
         </ul>
+        <hr class="padding">
       </div>
       <div id="content-wrapper" class="highlightable">
-        <ul class="topics enlarge morespace">
+        <div id="topics">
+          <ul class="enlarge morespace">
           <li data-nav-id="/qtcompile/en/5.12-series/index.html" class=""><a class="padding" href="/qtcompile/en/5.12-series/index.html">5.12 series</a><ul id="subsections-2c0b2ae1d884bccfca2dfb294f752a41" class="morespace">
           <li data-nav-id="/qtcompile/en/5.12-series/5.12.12-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/5.12-series/5.12.12-for-windows/index.html">5.12.12 for Windows</a></li>
           <li data-nav-id="/qtcompile/en/5.12-series/5.12.12-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/5.12-series/5.12.12-for-android/index.html">5.12.12 for Android</a></li></ul></li>
@@ -565,7 +592,8 @@ Version number in brackets are the version when the corresponding patch will be 
           <li data-nav-id="/qtcompile/en/legacy-lts-series/5.12-series/index.html" class="alwaysopen"><a class="padding" href="/qtcompile/en/legacy-lts-series/5.12-series/index.html">5.12 series</a><ul id="subsections-1c9205acacd79bb25b30a84b030ea10b" class="morespace">
           <li data-nav-id="/qtcompile/en/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html">5.12.12 for macOS</a></li>
           <li data-nav-id="/qtcompile/en/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/en/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html">5.12.12 for WebAssembly</a></li></ul></li></ul></li>
-        </ul>
+          </ul>
+        </div>
         <div id="shortcuts">
           <div class="nav-title padding">More</div>
           <ul class="space">
@@ -574,59 +602,63 @@ Version number in brackets are the version when the corresponding patch will be 
           </ul>
         </div>
         <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter"></div>
-        <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter">
-        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showLangSwitch showVariantSwitch">
-          <ul>
-            <li id="select-language-container" class="footerLangSwitch showLangSwitch">
-              <div class="padding menu-control">
-                <i class="fas fa-language fa-fw"></i>
-                <span>&nbsp;</span>
-                <div class="control-style">
-                  <label class="a11y-only" for="select-language">Language</label>
-                  <select id="select-language" onchange="location = baseUri + this.value;">
-                    <option lang="zh-cn" id="zh-cn" value="/qtcompile/miscellaneous/notes-for-this-repo/index.html">简体中文（中国）</option>
-                    <option lang="en" id="en" value="/qtcompile/en/miscellaneous/notes-for-this-repo/index.html" selected>English</option>
-                  </select>
+        <div id="menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter">
+          <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showLangSwitch showVariantSwitch">
+            <ul>
+              <li id="select-language-container" class="footerLangSwitch showLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-language fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="select-language">Language</label>
+                    <select id="select-language" onchange="location = baseUri + this.value;">
+                      <option lang="zh-cn" id="zh-cn" value="/qtcompile/miscellaneous/notes-for-this-repo/index.html">简体中文（中国）</option>
+                      <option lang="en" id="en" value="/qtcompile/en/miscellaneous/notes-for-this-repo/index.html" selected>English</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
                 </div>
-                <div class="clear"></div>
-              </div>
-            </li>
-            <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
-              <div class="padding menu-control">
-                <i class="fas fa-paint-brush fa-fw"></i>
-                <span>&nbsp;</span>
-                <div class="control-style">
-                  <label class="a11y-only" for="select-variant">Theme</label>
-                  <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
-                    <option id="relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
-                    <option id="relearn-bright" value="relearn-bright">Relearn Bright</option>
-                    <option id="relearn-light" value="relearn-light">Relearn Light</option>
-                    <option id="learn" value="learn">Learn</option>
-                    <option id="neon" value="neon">Neon</option>
-                    <option id="red" value="red">Red</option>
-                    <option id="blue" value="blue">Blue</option>
-                    <option id="green" value="green">Green</option>
-                  </select>
+              </li>
+              <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-paint-brush fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="select-variant">Theme</label>
+                    <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
+                      <option id="relearn-bright" value="relearn-bright">Relearn Bright</option>
+                      <option id="relearn-light" value="relearn-light">Relearn Light</option>
+                      <option id="zen-dark" value="zen-dark">Zen Dark</option>
+                      <option id="zen-light" value="zen-light">Zen Light</option>
+                      <option id="learn" value="learn">Learn</option>
+                      <option id="neon" value="neon">Neon</option>
+                      <option id="red" value="red">Red</option>
+                      <option id="blue" value="blue">Blue</option>
+                      <option id="green" value="green">Green</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
                 </div>
-                <div class="clear"></div>
-              </div>
-              <script>window.variants && variants.markSelectedVariant();</script>
-            </li>
-            <li class="footerVisitedLinks">
-              <div class="padding menu-control">
-                <i class="fas fa-history fa-fw"></i>
-                <span>&nbsp;</span>
-                <div class="control-style">
-                  <button onclick="clearHistory();">Clear History</button>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fas fa-history fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
                 </div>
-                <div class="clear"></div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Thu, 10 Aug 2023 20:04:44 CST</p>
+              </li>
+            </ul>
+          </div>
+          <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
+Site generated: Sat, 02 Sep 2023 17:31:15 CST</p>
 
+          </div>
         </div>
       </div>
     </aside>
