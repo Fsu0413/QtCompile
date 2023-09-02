@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.117.0">
-    <meta name="generator" content="Relearn 5.18.0">
+    <meta name="generator" content="Hugo 0.118.2">
+    <meta name="generator" content="Relearn 5.20.0">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>本仓库的一些备注 :: Fsu0413 的原版 Qt 构建</title>
@@ -38,7 +38,7 @@
       window.T_N_results_found = '为\u0022{0}\u0022找到 {1} 个结果';
       // some further base stuff
       var baseUriFull='/';
-      window.variants && variants.init( [ 'relearn-dark', 'relearn-bright', 'relearn-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
+      window.variants && variants.init( [ 'relearn-dark', 'relearn-bright', 'relearn-light', 'zen-dark', 'zen-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
     </script><style>
     p.fsu0413_leftFooter {
         text-align: center;
@@ -61,6 +61,9 @@
     }
     strong {
         color: red;
+    }
+    del {
+        color: gray;
     }
 </style>
   </head>
@@ -116,9 +119,9 @@
 <h2 id="中文--多语言支持">中文 / 多语言支持</h2>
 <p>虽然这个网站的维护者（Fsu0413，也就是我）是中国人，是中文母语使用者，不过此网站最初做成的时候是只有嘤文版的。<br>
 目前我正在逐步在此网站上添加简体中文支持。</p>
-<p>得益于 <a href="https://gohugo.io/" target="_blank">Hugo</a> 自带的多语言支持和近期新换的 <a href="https://mcshelby.github.io/hugo-theme-relearn/" target="_blank">Relearn</a> 主题，本网站近期刚刚支持多语言。<br>
-目前的中文也仅仅处于刚刚开始组织语言的阶段。有一些内容还没有写完。<br>
-不过主要内容均使用中文重新写了一遍，应该不会影响大家下载二进制文件了。</p>
+<p>得益于 <a href="https://gohugo.io/" target="_blank">Hugo</a> 自带的多语言支持和 <del>近期新换的</del> <a href="https://mcshelby.github.io/hugo-theme-relearn/" target="_blank">Relearn</a> 主题，本网站 <del>近期刚刚</del> 支持多语言。<br>
+<del>目前的中文也仅仅处于刚刚开始组织语言的阶段。有一些内容还没有写完。</del><br>
+<del>不过主要内容均使用中文重新写了一遍，应该不会影响大家下载二进制文件了。</del></p>
 <p>对网站建设有建议和意见的可以<a href="https://github.com/Fsu0413/QtCompile/issues/new" target="_blank">去 GitHub 上提出 issue</a>。</p>
 <h2 id="网站镜像">网站镜像</h2>
 <p><del>最近</del> 我在中国大陆使用 Gitee Pages 服务构建了一个此网站的镜像。<br>
@@ -199,7 +202,7 @@ Qt 5.13 及以后的版本的 Windows 构建使用 SChannel 代替 OpenSSL 库�
 （由于 Qt 5.14 以前的版本需要在安装后对 Qt 打补丁，所以无法校验。Qt 5.14 以及以后的版本可以重定位，解决了这个问题）</p>
 <h2 id="对于-qt-514-以前的备注">对于 Qt 5.14 以前的备注</h2>
 <p>Qt 5.14 以前的版本拒绝使用刚刚从包中解压出来的二进制文件。<br>
-它会在 Qt Creator 里报告类似“Qt 未正确安装，请运行 <em>make install</em> ”这样的内容。</p>
+它会在 Qt Creator 里报告类似“Qt 未正确安装，请运行 <code>make install</code> ”这样的内容。</p>
 <p>我在压缩包里附带了一个 QQtPatcher。解压后需要运行 QQtPatcher 一次来让 Qt 工作。</p>
 <p>这个 QQtPatcher 的源码在 <a href="https://github.com/Fsu0413/QQtPatcher" target="_blank">GitHub</a> 上。这是一个在共有领域发布的自由软件。</p>
 <p>不要把这个库放在有空格或者非 ASCII 字符的路径下。<br>
@@ -217,7 +220,10 @@ Qt 5.13 及以后的版本的 Windows 构建使用 SChannel 代替 OpenSSL 库�
 <p>什么样的企业算小企业？<br>
 一个人开一家空壳公司，这种企业算非常小非常小的企业吧？用这种企业来买 Qt 发布软件，共事的其他员工在私底下用开源版，每年只用 499 美元？<br>
 这样做肯定会赔钱的。</p>
-<p>还有，我会继续我编译 Qt 的业余工作，希望 QT for MCUs 早日开源。</p>
+<p>还有，我会继续我编译 Qt 的业余工作，希望 Qt for MCUs 早日开源。</p>
+<p>（2023 年 9 月 2 日追加）前段时间有幸在公司中一个小型 MCU 项目中看到了 Qt for MCUs，是以二进制形式提供给我们的。<br>
+它使用与桌面及移动端 Qt 完全不同的基础架构，不使用 Qt Base 等现有的自由软件。</p>
+<p>由于我当时的开发任务与 Qt 无关，没有对该部分内容进行探究及调查，了解到的内容也就止步于此了。</p>
 <h2 id="qt-6-支持的平台2023-年-6-月-14-日更新">Qt 6 支持的平台（2023 年 6 月 14 日更新）</h2>
 <p>参考 <a href="https://bugreports.qt.io/browse/QTBUG-113979" target="_blank">Qt 6.6 TQC Supported Targets</a> 和它的前置任务。</p>
 <p>现在我为如下平台构建 Qt 6。</p>
@@ -391,6 +397,11 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
 <td>2024 年 5 月 25 日</td>
 </tr>
 <tr>
+<td>5.15.15</td>
+<td>2023 年 8 月 31 日</td>
+<td>2024 年 8 月 31 日 （届时需要确认 Qt 到底是否真的发布了开源版本）</td>
+</tr>
+<tr>
 <td>6.2.6</td>
 <td>2022 年 9 月 27 日</td>
 <td>2023 年 9 月 27 日</td>
@@ -421,7 +432,7 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
 <p>下面这个表列出了我构建每个版本时所应用的补丁。<br>
 注：我不会对当前正在活跃开发的 Qt 应用补丁，而是单纯等待新版本发布。所以应用补丁的只有商业 LTS 版本和结束生命周期的版本。<br>
 若某个补丁在所有的正在维护的版本均已附带或没有应用的打算，则该补丁将会从此表中删除。<br>
-括号括起来的版本号为附带该补丁的版本。</p>
+括号中的版本号为附带该补丁的发布版本。</p>
 <table>
 <thead>
 <tr>
@@ -429,6 +440,7 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
 <th>5.12.12</th>
 <th>5.15.10</th>
 <th>6.2.5</th>
+<th>6.5.3 （预计）</th>
 </tr>
 </thead>
 <tbody>
@@ -437,35 +449,41 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
 <td><a href="https://codereview.qt-project.org/c/qt/qtbase/&#43;/396020" target="_blank">√</a></td>
 <td>附带</td>
 <td>附带</td>
+<td>附带</td>
 </tr>
 <tr>
 <td>CVE-2022-27404-27405-27406</td>
 <td>-</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2022-27404-27405-27406-qtbase-5.15.diff" target="_blank">√</a> （5.15.11）</td>
 <td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2022-27404-27405-27406-qtbase-6.2.diff" target="_blank">√</a> （6.2.6）</td>
+<td>附带</td>
 </tr>
 <tr>
 <td>CVE-2022-37434</td>
 <td>-</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2022-37434-qtbase-5.15.patch" target="_blank">√</a> （5.15.11）</td>
 <td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2022-37434-qtbase-6.2.patch" target="_blank">√</a> （6.2.6）</td>
+<td>附带</td>
 </tr>
 <tr>
 <td>CVE-2023-24607</td>
 <td>-</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-24607-qtbase-5.15.diff" target="_blank">√</a> （5.15.13）</td>
 <td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-24607-qtbase-6.2.diff" target="_blank">√</a> （6.2.8）</td>
+<td>附带</td>
 </tr>
 <tr>
 <td>CVE-2023-32573</td>
 <td>-</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-32573-qtsvg-5.15.diff" target="_blank">√</a> （5.15.14）</td>
 <td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-32573-qtsvg-6.2.diff" target="_blank">√</a> （6.2.9）</td>
+<td>附带</td>
 </tr>
 <tr>
 <td>（仅限 5.15 系列）macOS 构建修复</td>
 <td>-</td>
 <td><a href="https://invent.kde.org/qt/qt/qtlocation-mapboxgl/-/commit/5a07e1967dcc925d9def47accadae991436b9686" title="KDE 提供的补丁" target="_blank">仅限 macOS</a> （5.15.14）</td>
+<td>-</td>
 <td>-</td>
 </tr>
 <tr>
@@ -473,36 +491,42 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
 <td>-</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-32762-qtbase-5.15.diff" target="_blank">√</a> （5.15.14）</td>
 <td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-32762-qtbase-6.2.diff" target="_blank">√</a> （6.2.9）</td>
+<td>附带</td>
 </tr>
 <tr>
 <td>CVE-2023-32763</td>
 <td>-</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-32763-qtbase-5.15.diff" target="_blank">√</a> （5.15.15）</td>
 <td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-32763-qtbase-6.2.diff" target="_blank">√</a> （6.2.9）</td>
+<td>附带</td>
 </tr>
 <tr>
 <td>CVE-2023-33285</td>
 <td>-</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-33285-qtbase-5.15.diff" target="_blank">√</a> （5.15.14）</td>
 <td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-33285-qtbase-6.2.diff" target="_blank">√</a> （6.2.9）</td>
+<td>附带</td>
 </tr>
 <tr>
 <td>CVE-2023-34410</td>
 <td>-</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-34410-qtbase-5.15.diff" target="_blank">√</a> （5.15.15）</td>
 <td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-34410-qtbase-6.2.diff" target="_blank">√</a> （6.2.9）</td>
+<td>附带</td>
 </tr>
 <tr>
 <td>CVE-2023-37369</td>
 <td>-</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-37369-qtbase-5.15.diff" target="_blank">√</a> （5.15.15）</td>
 <td><a href="#" title="官方补丁冲突，依赖 Qt 6.2.9 上的一个提交，暂无发行版与项目解决冲突。已放弃调查"><strong>×</strong></a> （6.2.10）</td>
+<td>附带</td>
 </tr>
 <tr>
 <td>CVE-2023-38197</td>
 <td>-</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-38197-qtbase-5.15.diff" target="_blank">√</a> （5.15.15）</td>
 <td><a href="#" title="依赖 CVE-2023-37369 的补丁"><strong>×</strong></a> （6.2.10）</td>
+<td><strong>x</strong> （6.5.3）</td>
 </tr>
 </tbody>
 </table>
@@ -515,18 +539,21 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
       </main>
     </div>
     <aside id="sidebar" class="default-animation">
+      <div id="header-topbar" class="default-animation"></div>
       <div id="header-wrapper" class="default-animation">
         <div id="header" class="default-animation">
 <p class="fsu0413_logo"><img src="https://codereview.qt-project.org/static/logo_qt.png" /></p>
         </div>
       </div>
-      <div id="homelinks" class="default-animation">
+      <div id="homelinks" class="default-animation homelinks">
         <ul>
           <li><a class="padding" href="/zh-cn/index.html"><i class='fas fa-home'></i> 主页</a></li>
         </ul>
+        <hr class="padding">
       </div>
       <div id="content-wrapper" class="highlightable">
-        <ul class="topics enlarge morespace">
+        <div id="topics">
+          <ul class="enlarge morespace">
           <li data-nav-id="/zh-cn/5.12-series/index.html" class=""><a class="padding" href="/zh-cn/5.12-series/index.html">5.12 系列</a><ul id="subsections-9aeb85270de661fbbb0f6e6b161fbf7c" class="morespace">
           <li data-nav-id="/zh-cn/5.12-series/5.12.12-for-windows/index.html" class=""><a class="padding" href="/zh-cn/5.12-series/5.12.12-for-windows/index.html">5.12.12 的 Windows 版本</a></li>
           <li data-nav-id="/zh-cn/5.12-series/5.12.12-for-android/index.html" class=""><a class="padding" href="/zh-cn/5.12-series/5.12.12-for-android/index.html">5.12.12 的安卓版本</a></li></ul></li>
@@ -565,7 +592,8 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
           <li data-nav-id="/zh-cn/legacy-lts-series/5.12-series/index.html" class="alwaysopen"><a class="padding" href="/zh-cn/legacy-lts-series/5.12-series/index.html">5.12 系列</a><ul id="subsections-8f2a6bd86210a6244fd0ff0c916f8279" class="morespace">
           <li data-nav-id="/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html" class=""><a class="padding" href="/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html">5.12.12 的 macOS 版本</a></li>
           <li data-nav-id="/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html">5.12.12 的 WebAssembly 版本</a></li></ul></li></ul></li>
-        </ul>
+          </ul>
+        </div>
         <div id="shortcuts">
           <div class="nav-title padding">更多</div>
           <ul class="space">
@@ -574,59 +602,63 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
           </ul>
         </div>
         <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter"></div>
-        <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter">
-        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showLangSwitch showVariantSwitch">
-          <ul>
-            <li id="select-language-container" class="footerLangSwitch showLangSwitch">
-              <div class="padding menu-control">
-                <i class="fas fa-language fa-fw"></i>
-                <span>&nbsp;</span>
-                <div class="control-style">
-                  <label class="a11y-only" for="select-language">语言</label>
-                  <select id="select-language" onchange="location = baseUri + this.value;">
-                    <option lang="en" id="en" value="/miscellaneous/notes-for-this-repo/index.html">English</option>
-                    <option lang="zh-cn" id="zh-cn" value="/zh-cn/miscellaneous/notes-for-this-repo/index.html" selected>简体中文（中国）</option>
-                  </select>
+        <div id="menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter">
+          <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showLangSwitch showVariantSwitch">
+            <ul>
+              <li id="select-language-container" class="footerLangSwitch showLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-language fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="select-language">语言</label>
+                    <select id="select-language" onchange="location = baseUri + this.value;">
+                      <option lang="en" id="en" value="/miscellaneous/notes-for-this-repo/index.html">English</option>
+                      <option lang="zh-cn" id="zh-cn" value="/zh-cn/miscellaneous/notes-for-this-repo/index.html" selected>简体中文（中国）</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
                 </div>
-                <div class="clear"></div>
-              </div>
-            </li>
-            <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
-              <div class="padding menu-control">
-                <i class="fas fa-paint-brush fa-fw"></i>
-                <span>&nbsp;</span>
-                <div class="control-style">
-                  <label class="a11y-only" for="select-variant">主题</label>
-                  <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
-                    <option id="relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
-                    <option id="relearn-bright" value="relearn-bright">Relearn Bright</option>
-                    <option id="relearn-light" value="relearn-light">Relearn Light</option>
-                    <option id="learn" value="learn">Learn</option>
-                    <option id="neon" value="neon">Neon</option>
-                    <option id="red" value="red">Red</option>
-                    <option id="blue" value="blue">Blue</option>
-                    <option id="green" value="green">Green</option>
-                  </select>
+              </li>
+              <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-paint-brush fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="select-variant">主题</label>
+                    <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
+                      <option id="relearn-bright" value="relearn-bright">Relearn Bright</option>
+                      <option id="relearn-light" value="relearn-light">Relearn Light</option>
+                      <option id="zen-dark" value="zen-dark">Zen Dark</option>
+                      <option id="zen-light" value="zen-light">Zen Light</option>
+                      <option id="learn" value="learn">Learn</option>
+                      <option id="neon" value="neon">Neon</option>
+                      <option id="red" value="red">Red</option>
+                      <option id="blue" value="blue">Blue</option>
+                      <option id="green" value="green">Green</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
                 </div>
-                <div class="clear"></div>
-              </div>
-              <script>window.variants && variants.markSelectedVariant();</script>
-            </li>
-            <li class="footerVisitedLinks">
-              <div class="padding menu-control">
-                <i class="fas fa-history fa-fw"></i>
-                <span>&nbsp;</span>
-                <div class="control-style">
-                  <button onclick="clearHistory();">清理历史记录</button>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fas fa-history fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">清理历史记录</button>
+                  </div>
+                  <div class="clear"></div>
                 </div>
-                <div class="clear"></div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Thu, 10 Aug 2023 20:07:20 CST</p>
+              </li>
+            </ul>
+          </div>
+          <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
+Site generated: Sat, 02 Sep 2023 17:33:27 CST</p>
 
+          </div>
         </div>
       </div>
     </aside>
