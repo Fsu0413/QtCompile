@@ -8,14 +8,14 @@
 		"description": "Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.",
 		"disableSearch": true,
 		"disableNextPrev": true,
-		"themeVariant": ["relearn-dark","relearn-bright","relearn-light","learn","neon","red","blue","green"],
+		"themeVariant": ["relearn-dark","relearn-bright","relearn-light","zen-dark","zen-light","learn","neon","red","blue","green"],
 		"collapsibleMenu": false,
 		"disableAssetsBusting": true,
 		"disableInlineCopyToClipBoard": true
 	},
 	"disableKinds": [
 		"sitemap", "RSS"
-	], 
+	],
 	"markup": {
 		"goldmark": {
 			"renderer": {
