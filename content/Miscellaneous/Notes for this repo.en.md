@@ -9,9 +9,9 @@ weight: 1
 This website was English only since when it was initially built, although the maintainer of this website (me, Fsu0413) is a Chinese native speaker from the PRC.  
 Currently I am gradually adding Simplified Chinese support on this website.
 
-Recently this website has gained multilingual support thanks to the built-in multilingual support of [Hugo](https://gohugo.io/) and the recently switched [Relearn](https://mcshelby.github.io/hugo-theme-relearn/) theme.  
-Current Chinese support is in the stage of writing texts. There is a bunch of things which are not finished.  
-But the main contents are rewritten using Chinese, which shouldn't bother us for downloading binaries.
+~~Recently~~ this website has gained multilingual support thanks to the built-in multilingual support of [Hugo](https://gohugo.io/) and the ~~recently switched~~ [Relearn](https://mcshelby.github.io/hugo-theme-relearn/) theme.  
+~~Current Chinese support is in the stage of writing texts. There is a bunch of things which are not finished.~~  
+~~But the main contents are rewritten using Chinese, which shouldn't bother us for downloading binaries.~~
 
 If there are any constructive advices, feel free to [create issue on Github](https://github.com/Fsu0413/QtCompile/issues/new).
 
@@ -134,7 +134,7 @@ It is possible to implement GPG verifiiation before certificate can be bought. (
 ## Notes for Qt versions before 5.14
 
 Qt before 5.14 should reject using the binary files which were just uncompressed from the tarball.  
-It should report "Qt is not properly installed, please run _make install_" or something like this in Qt creator.
+It should report "Qt is not properly installed, please run ```make install```" or something like this in Qt creator.
 
 I redistributed a version of QQtPatcher in the package, you should run it to make Qt running.
 
@@ -163,6 +163,11 @@ Founding a shell company and using this company to buy Qt and distribute softwar
 This will definitely lose money.
 
 I will continue my amateur job of building Qt. I hope Qt for MCUs will be open source soon.
+
+(Appended {{% date 2023 9 2 %}}) I have been lucky enough to have spotted Qt for MCUs in a small project in my company. It is provided in binary form.  
+It uses completely different base structure than desktop and mobile one - it does not use current existing free software like Qt Base, etc..
+
+I did no studying or investigating about that part since my development has no relationship about Qt, so the above words is all I know about it.
 
 ## Qt 6 support platforms (updated {{% date 2023 6 14 %}})
 
@@ -245,6 +250,7 @@ Commericial-only Qt Open Source Release Date (ETA)
 | 5.15.12 | {{% date 2022 12 27 %}} | {{% date 2023 12 27 %}} |
 | 5.15.13 | {{% date 2023 3 9 %}} | {{% date 2024 3 9 %}} |
 | 5.15.14 | {{% date 2023 5 25 %}} | {{% date 2024 5 25 %}} |
+| 5.15.15 | {{% date 2023 8 31 %}} | {{% date 2024 8 31 %}} (Need to check if Qt will really release this version to opensource on that day) |
 | 6.2.6 | {{% date 2022 9 27 %}} | {{% date 2023 9 27 %}} |
 | 6.2.7 | {{% date 2023 1 2 %}} | {{% date 2024 1 2 %}} |
 | 6.2.8 | {{% date 2023 4 18 %}} | {{% date 2024 4 18 %}} |
@@ -265,17 +271,17 @@ Note that I won't patch an active version of Qt and will simply wait for future 
 A patch will removed from following table when this patch is shipped or not planned to be applied in all of the maintained versions.  
 Version number in brackets are the version when the corresponding patch will be shipped.
 
-| Issue \ Qt Version | 5.12.12 | 5.15.10 | 6.2.5 |
-|-|-|-|-|
-| CVE-2022-25255 | [√](https://codereview.qt-project.org/c/qt/qtbase/+/396020) | shipped | shipped |
-| CVE-2022-27404-27405-27406 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2022-27404-27405-27406-qtbase-5.15.diff) (5.15.11) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2022-27404-27405-27406-qtbase-6.2.diff) (6.2.6) |
-| CVE-2022-37434 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2022-37434-qtbase-5.15.patch) (5.15.11) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2022-37434-qtbase-6.2.patch) (6.2.6) |
-| CVE-2023-24607 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-24607-qtbase-5.15.diff) (5.15.13) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-24607-qtbase-6.2.diff) (6.2.8) |
-| CVE-2023-32573 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-32573-qtsvg-5.15.diff) (5.15.14) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-32573-qtsvg-6.2.diff) (6.2.9) |
-| (5.15 series specific) macOS build fix | - | [macOS only](https://invent.kde.org/qt/qt/qtlocation-mapboxgl/-/commit/5a07e1967dcc925d9def47accadae991436b9686 "Patch provided by KDE") (5.15.14) | - |
-| CVE-2023-32762 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-32762-qtbase-5.15.diff) (5.15.14) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-32762-qtbase-6.2.diff) (6.2.9) |
-| CVE-2023-32763 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-32763-qtbase-5.15.diff) (5.15.15) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-32763-qtbase-6.2.diff) (6.2.9) |
-| CVE-2023-33285 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-33285-qtbase-5.15.diff) (5.15.14) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-33285-qtbase-6.2.diff) (6.2.9) |
-| CVE-2023-34410 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-34410-qtbase-5.15.diff) (5.15.15) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-34410-qtbase-6.2.diff) (6.2.9) |
-| CVE-2023-37369 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-37369-qtbase-5.15.diff) (5.15.15) | [**×**](# "Official patch causes CONFLICT. Depends on a commit of Qt 6.2.9. Given up investigating due to no active distro / project is fixing this issue") (6.2.10) |
-| CVE-2023-38197 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-38197-qtbase-5.15.diff) (5.15.15) | [**×**](# "Depends on patch of CVE-2023-37369") (6.2.10) |
+| Issue \ Qt Version | 5.12.12 | 5.15.10 | 6.2.5 | 6.5.3 (est.) |
+|-|-|-|-|-|
+| CVE-2022-25255 | [√](https://codereview.qt-project.org/c/qt/qtbase/+/396020) | shipped | shipped | shipped |
+| CVE-2022-27404-27405-27406 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2022-27404-27405-27406-qtbase-5.15.diff) (5.15.11) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2022-27404-27405-27406-qtbase-6.2.diff) (6.2.6) | shipped |
+| CVE-2022-37434 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2022-37434-qtbase-5.15.patch) (5.15.11) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2022-37434-qtbase-6.2.patch) (6.2.6) | shipped |
+| CVE-2023-24607 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-24607-qtbase-5.15.diff) (5.15.13) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-24607-qtbase-6.2.diff) (6.2.8) | shipped |
+| CVE-2023-32573 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-32573-qtsvg-5.15.diff) (5.15.14) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-32573-qtsvg-6.2.diff) (6.2.9) | shipped |
+| (5.15 series specific) macOS build fix | - | [macOS only](https://invent.kde.org/qt/qt/qtlocation-mapboxgl/-/commit/5a07e1967dcc925d9def47accadae991436b9686 "Patch provided by KDE") (5.15.14) | - | - |
+| CVE-2023-32762 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-32762-qtbase-5.15.diff) (5.15.14) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-32762-qtbase-6.2.diff) (6.2.9) | shipped |
+| CVE-2023-32763 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-32763-qtbase-5.15.diff) (5.15.15) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-32763-qtbase-6.2.diff) (6.2.9) | shipped |
+| CVE-2023-33285 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-33285-qtbase-5.15.diff) (5.15.14) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-33285-qtbase-6.2.diff) (6.2.9) | shipped |
+| CVE-2023-34410 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-34410-qtbase-5.15.diff) (5.15.15) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-34410-qtbase-6.2.diff) (6.2.9) | shipped |
+| CVE-2023-37369 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-37369-qtbase-5.15.diff) (5.15.15) | [**×**](# "Official patch causes CONFLICT. Depends on a commit of Qt 6.2.9. Given up investigating due to no active distro / project is fixing this issue") (6.2.10) | shipped |
+| CVE-2023-38197 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-38197-qtbase-5.15.diff) (5.15.15) | [**×**](# "Depends on patch of CVE-2023-37369") (6.2.10) | **x** (6.5.3) |

@@ -17,14 +17,14 @@ Thanks "lixinwei" on QTCN.org for telling me related info. [Original post](http:
 
 See {{% QtBug 96339 %}} - workaround using CMake 3.20.2
 
-## QtOpcUa issues
+## QtOpcUa issues (Updated {{% date 2023 9 2 %}})
 
-QtOpcUa is currently not compatible with OpenSSL 3.0 series.  
+QtOpcUa ~~is currently~~ was previously not compatible with OpenSSL 3.0 series.  
 Temporarily disabling QtOpcUa build until the Qt guys update their open62541 version.  
-This change takes place since building and packaging of Qt 6.2.3.
+This change takes place since building and packaging of Qt 6.2.3 (when OpenSSL 3.0 started being used).
 
-But seems like that open62541 guys doesn't treat this as issue despite the increasing popularity of OpenSSL 3.0 series.  
-Version 1.3.3 has released without any fix about OpenSSL 3.0.  
+~~But seems like that open62541 guys don't treat this as issue despite the increasing popularity of OpenSSL 3.0 series.~~  
+~~Version 1.3.3 has released without any fix about OpenSSL 3.0.~~  
 ~~I don't know if we can bring QtOpcUa back in Qt 6.4...~~
 
 Update {{% date 2022 11 6 %}}:  
@@ -35,6 +35,9 @@ I will restart building with QtOpcUa when this change is got integrated in next 
 Update {{% date 2023 1 23 %}}:  
 open62541 released 1.3.4 at {{% date 2022 11 14 %}}. QtOpcUa 6.5 ships this version of open62541.  
 I'll try building with QtOpcUa enabled on build of Qt 6.5. (Packages built before {{% date 2023 1 23 %}} are without QtOpcUa)
+
+Update {{% date 2023 9 2 %}}:  
+It is estimated that we can build QtOpcUa on Qt 6.2.7 which was released on {{% date 2023 1 2 %}}.
 
 ## Various failures building higher version of QtWebEngine on Qt 6.2.4
 

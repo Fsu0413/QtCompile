@@ -485,7 +485,7 @@ Finish 5.9.8 and 5.12.3 series.
 Removed All old packages.  
 Upload new packages built since Mar, 2019.
 
-## Before year 2017 (Black history)
+## Before year 2017 (Sealed history)
 
 {{% expand title="Expand" %}}
 

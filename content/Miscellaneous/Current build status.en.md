@@ -6,6 +6,12 @@ weight: 2
 
 ## QQtPatcher Support Status
 
+{{% notice style="warning" title="QQtPatcher EOL announcement" icon="fas fa-exclamation-triangle" %}}
+QQtPatcher will reach EOL on {{% date 2023 9 11 %}}, when Qt 5.12 will stop being built anymore.   
+After that date the repository fill be archived, issues will be closed (as "won't do") and no more development will be done on it.    
+QQtPatcher related contents will migrate to _Legacy LTS Series_ part of this website, including the update history which was posted on the BBS of QTCN in Chinese.
+{{% /notice %}}
+
 This is a list where QQtPatcher is supported and tested on.  
 Other version may work, but also may silently fail.
 

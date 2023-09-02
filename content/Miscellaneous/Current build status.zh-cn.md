@@ -6,6 +6,12 @@ weight: 2
 
 ## QQtPatcher 支持状态
 
+{{% notice style="warning" title="公告 QQtPatcher 结束生命周期" icon="fas fa-exclamation-triangle" %}}
+QQtPatcher 将会于 Qt 5.12 停止构建的 {{% date 2023 9 11 %}}结束生命周期。   
+在此之后，版本库会存档，问题将会关闭（原因为“不予处理”），不会再对其继续开发。  
+QQtPatcher 相关内容将会转移到“遗留的长期支持版本系列”部分，包含此前在 QTCN 论坛上的更新历史也一并转移。
+{{% /notice %}}
+
 这是一个 QQtPatcher 支持和测试的版本的列表。  
 其他版本可能工作，但是也可能静默得失败。
 
