@@ -131,18 +131,6 @@ Qt 5.13 及以后的版本的 Windows 构建使用 SChannel 代替 OpenSSL 库�
 在此之前，可能会实现基于 GPG 的校验。（虽然咕咕咕了）  
 （由于 Qt 5.14 以前的版本需要在安装后对 Qt 打补丁，所以无法校验。Qt 5.14 以及以后的版本可以重定位，解决了这个问题）
 
-## 对于 Qt 5.14 以前的备注
-
-Qt 5.14 以前的版本拒绝使用刚刚从包中解压出来的二进制文件。  
-它会在 Qt Creator 里报告类似“Qt 未正确安装，请运行 ```make install``` ”这样的内容。
-
-我在压缩包里附带了一个 QQtPatcher。解压后需要运行 QQtPatcher 一次来让 Qt 工作。
-
-这个 QQtPatcher 的源码在 [GitHub](https://github.com/Fsu0413/QQtPatcher) 上。这是一个在共有领域发布的自由软件。
-
-不要把这个库放在有空格或者非 ASCII 字符的路径下。  
-由于 Bug 导致 qmake 的路径不能被 Qt Creator 成功解析。
-
 ## Qt offering changes 2020 （{{% date 2022 4 14 %}}更新）
 
 Qt 宣布了 [Qt offering changes 2020](https://www.qt.io/blog/qt-offering-changes-2020)。  
@@ -225,10 +213,6 @@ OpenSSL 1.1.1 系列将于 {{% date 2023 9 11 %}}结束支持，而 OpenSSL 3.0 
 
 | Qt 版本 | 构建目标 | 终止支持日期 | 备注 |
 |-|-|-|-|
-| 5.12 系列 | Windows | {{% date 2023 9 11 %}} | 与 OpenSSL 1.1.1 的终止支持日期保持一致。包含 VS2017/9 的 VS 版本升级。无 VS2022 构建版本。 |
-| | ~~macOS~~ | ~~{{% date 2021 11 25 %}}~~ (终止支持) | ~~与 Qt 5.12 系列的终止支持日期保持一致。~~ **在 5.12 终止支持之后 Qt 又发布了一个补丁，为此我们为 macOS 主机构建做了一个额外的包。** |
-| | 安卓 | {{% date 2023 9 11 %}} | 与 OpenSSL 1.1.1 的终止支持日期保持一致。会一直使用安卓 NDK r21 LTS 系列。 |
-| | ~~WebAssembly~~ | ~~{{% date 2021 11 25 %}}~~ (终止支持) | ~~与 Qt 5.12 系列的终止支持日期保持一致。~~ |
 | 5.15 系列 | Windows 11 with VS2019 (动态) / VS2022 | {{% date 2024 5 26 %}} | 与 Qt 开源版 5.15 系列的终止支持日期保持一致。提前更新 WebEngine 和 Script。包含 VS2019/22 的 VS 版本升级。 |
 | | Windows with VS2015 / VS2017 / VS2019 (静态) / MinGW 8.1.0 | {{% date 2024 5 26 %}} | 与 Qt 开源版 5.15 系列的终止支持日期保持一致。提前更新 Script。包含 VS2017/9/22 的 VS 版本升级。 |
 | | macOS | {{% date 2024 5 26 %}} | 与 Qt 开源版 5.15 系列的终止支持日期保持一致。提前更新 WebEngine 和 Script。（尽可能）包含 Xcode 和 macOS 更新 |
@@ -246,12 +230,10 @@ OpenSSL 1.1.1 系列将于 {{% date 2023 9 11 %}}结束支持，而 OpenSSL 3.0 
 
 | Qt 版本 | 商业专属发布日 | 开源发布日 |
 |-|-|-|
-| 5.15.11 | {{% date 2022 10 5 %}} | {{% date 2023 10 5 %}} |
 | 5.15.12 | {{% date 2022 12 27 %}} | {{% date 2023 12 27 %}} |
 | 5.15.13 | {{% date 2023 3 9 %}} | {{% date 2024 3 9 %}} |
 | 5.15.14 | {{% date 2023 5 25 %}} | {{% date 2024 5 25 %}} |
 | 5.15.15 | {{% date 2023 8 31 %}} | {{% date 2024 8 31 %}} （届时需要确认 Qt 到底是否真的发布了开源版本） |
-| 6.2.6 | {{% date 2022 9 27 %}} | {{% date 2023 9 27 %}} |
 | 6.2.7 | {{% date 2023 1 2 %}} | {{% date 2024 1 2 %}} |
 | 6.2.8 | {{% date 2023 4 18 %}} | {{% date 2024 4 18 %}} |
 | 6.2.9 | {{% date 2023 7 4 %}} | {{% date 2024 7 4 %}} |
@@ -271,17 +253,16 @@ OpenSSL 1.1.1 系列将于 {{% date 2023 9 11 %}}结束支持，而 OpenSSL 3.0 
 若某个补丁在所有的正在维护的版本均已附带或没有应用的打算，则该补丁将会从此表中删除。  
 括号中的版本号为附带该补丁的发布版本。
 
-| 问题 \ Qt 版本 | 5.12.12 | 5.15.10 | 6.2.5 | 6.5.3 （预计） |
-|-|-|-|-|-|
-| CVE-2022-25255 | [√](https://codereview.qt-project.org/c/qt/qtbase/+/396020) | 附带 | 附带 | 附带 |
-| CVE-2022-27404-27405-27406 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2022-27404-27405-27406-qtbase-5.15.diff) （5.15.11） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2022-27404-27405-27406-qtbase-6.2.diff) （6.2.6） | 附带 |
-| CVE-2022-37434 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2022-37434-qtbase-5.15.patch) （5.15.11） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2022-37434-qtbase-6.2.patch) （6.2.6） | 附带 |
-| CVE-2023-24607 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-24607-qtbase-5.15.diff) （5.15.13） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-24607-qtbase-6.2.diff) （6.2.8） | 附带 |
-| CVE-2023-32573 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-32573-qtsvg-5.15.diff) （5.15.14） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-32573-qtsvg-6.2.diff) （6.2.9） | 附带 |
-| （仅限 5.15 系列）macOS 构建修复 | - | [仅限 macOS](https://invent.kde.org/qt/qt/qtlocation-mapboxgl/-/commit/5a07e1967dcc925d9def47accadae991436b9686 "KDE 提供的补丁") （5.15.14） | - | - |
-| CVE-2023-32762 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-32762-qtbase-5.15.diff) （5.15.14） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-32762-qtbase-6.2.diff) （6.2.9） | 附带 |
-| CVE-2023-32763 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-32763-qtbase-5.15.diff) （5.15.15） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-32763-qtbase-6.2.diff) （6.2.9） | 附带 |
-| CVE-2023-33285 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-33285-qtbase-5.15.diff) （5.15.14） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-33285-qtbase-6.2.diff) （6.2.9） | 附带 |
-| CVE-2023-34410 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-34410-qtbase-5.15.diff) （5.15.15） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-34410-qtbase-6.2.diff) （6.2.9） | 附带 |
-| CVE-2023-37369 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-37369-qtbase-5.15.diff) （5.15.15） | [**×**](# "官方补丁冲突，依赖 Qt 6.2.9 上的一个提交，暂无发行版与项目解决冲突。已放弃调查") （6.2.10） | 附带 |
-| CVE-2023-38197 | - | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-38197-qtbase-5.15.diff) （5.15.15） | [**×**](# "依赖 CVE-2023-37369 的补丁") （6.2.10） | **x** （6.5.3） |
+| 问题 \ Qt 版本 | 5.15.11 | 6.2.6 | 6.5.3 |
+|-|-|-|-|
+| CVE-2023-24607 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-24607-qtbase-5.15.diff) （5.15.13） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-24607-qtbase-6.2.diff) （6.2.8） | 附带 |
+| CVE-2023-32573 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-32573-qtsvg-5.15.diff) （5.15.14） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-32573-qtsvg-6.2.diff) （6.2.9） | 附带 |
+| （仅限 5.15 系列）macOS 构建修复 | [仅限 macOS](https://invent.kde.org/qt/qt/qtlocation-mapboxgl/-/commit/5a07e1967dcc925d9def47accadae991436b9686 "KDE 提供的补丁") （5.15.14） | - | - |
+| CVE-2023-32762 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-32762-qtbase-5.15.diff) （5.15.14） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-32762-qtbase-6.2.diff) （6.2.9） | 附带 |
+| CVE-2023-32763 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-32763-qtbase-5.15.diff) （5.15.15） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-32763-qtbase-6.2.diff) （6.2.9） | 附带 |
+| CVE-2023-33285 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-33285-qtbase-5.15.diff) （5.15.14） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-33285-qtbase-6.2.diff) （6.2.9） | 附带 |
+| CVE-2023-34410 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-34410-qtbase-5.15.diff) （5.15.15） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-34410-qtbase-6.2.diff) （6.2.9） | 附带 |
+| CVE-2023-37369 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-37369-qtbase-5.15.diff) （5.15.15） | [**×**](# "官方补丁冲突，依赖 Qt 6.2.9 上的一个提交，暂无发行版与项目解决冲突。已放弃调查") （6.2.10） | 附带 |
+| CVE-2023-38197 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-38197-qtbase-5.15.diff) （5.15.15） | [**×**](# "依赖 CVE-2023-37369 的补丁") （6.2.10） | 附带 |
+| CVE-2023-43114 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-43114-5.15.patch) （5.15.16） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-43114-6.2.patch) （6.2.10） | 附带 |
+| CVE-2023-4863 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-4863-5.15.patch) （5.15.16） | [**×**](# "官方补丁冲突。由于只有第三方库更新，直接等新版应该更靠谱") (6.2.10) | 附带 |
