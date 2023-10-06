@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.118.2">
-    <meta name="generator" content="Relearn 5.20.0">
+    <meta name="generator" content="Hugo 0.119.0">
+    <meta name="generator" content="Relearn 5.22.1">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>Current build status :: Fsu0413&#39;s Original Qt builds</title>
@@ -18,7 +18,7 @@
     <link href="/qtcompile/css/perfect-scrollbar.min.css" rel="stylesheet">
     <link href="/qtcompile/css/fonts.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/qtcompile/css/fonts.css" rel="stylesheet"></noscript>
     <link href="/qtcompile/css/theme.css" rel="stylesheet">
-    <link href="/qtcompile/css/theme-relearn-dark.css" rel="stylesheet" id="variant-style">
+    <link href="/qtcompile/css/theme-relearn-dark.css" rel="stylesheet" id="R-variant-style">
     <link href="/qtcompile/css/variant.css" rel="stylesheet">
     <link href="/qtcompile/css/print.css" rel="stylesheet" media="print">
     <link href="/qtcompile/css/ie.css" rel="stylesheet">
@@ -34,6 +34,8 @@
       window.T_Copied_to_clipboard = 'Copied to clipboard!';
       window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
       window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      window.T_Reset_view = 'Reset view';
+      window.T_View_reset = 'View reset!';
       window.T_No_results_found = 'No results found for \u0022{0}\u0022';
       window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
       // some further base stuff
@@ -68,24 +70,23 @@
 </style>
   </head>
   <body class="mobile-support html disableInlineCopyToClipboard" data-url="/qtcompile/en/miscellaneous/current-build-status/index.html">
-    <div id="body" class="default-animation">
-      <div id="sidebar-overlay"></div>
-      <div id="toc-overlay"></div>
-      <nav id="topbar" class="highlightable">
-        <div>
-          <div id="breadcrumbs">
-            <span id="sidebar-toggle-span">
-              <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
-            </span>
-            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
-            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/qtcompile/en/index.html"><span itemprop="name">Fsu0413&#39;s Original Qt builds</span></a><meta itemprop="position" content="1"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/qtcompile/en/miscellaneous/index.html"><span itemprop="name">Miscellaneous</span></a><meta itemprop="position" content="2"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Current build status</span><meta itemprop="position" content="3"></li>
-            </ol>
-          </div>
-          <div class="default-animation progress">
-            <div class="toc-wrapper"><nav id="TableOfContents">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+              <button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)">
+                <i class="fa-fw fas fa-bars"></i>
+              </button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+              <button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)">
+                <i class="fa-fw fas fa-list-alt"></i>
+              </button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
   <ul>
     <li><a href="#qqtpatcher-support-status">QQtPatcher Support Status</a></li>
     <li><a href="#openssl-status">OpenSSL Status</a></li>
@@ -93,11 +94,32 @@
     <li><a href="#qt-build-table">Qt Build Table</a></li>
   </ul>
 </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/qtcompile/en/index.html"><span itemprop="name">Fsu0413&#39;s Original Qt builds</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/qtcompile/en/miscellaneous/index.html"><span itemprop="name">Miscellaneous</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Current build status</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+              <button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More">
+                <i class="fa-fw fas fa-ellipsis-v"></i>
+              </button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </nav>
-      <main id="body-inner" class="highlightable default" tabindex="-1">
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
         <div class="flex-block-wrapper">
           <article class="default">
             <header class="headline">
@@ -107,10 +129,10 @@
 <h2 id="qqtpatcher-support-status">QQtPatcher Support Status</h2>
 
 <div class="box notices cstyle warning">
-  <div class="box-label"><i class="fas fa-exclamation-triangle"></i> QQtPatcher EOL announcement</div>
+  <div class="box-label"><i class="fas fa-exclamation-triangle"></i> Announcement: QQtPatcher EOL</div>
   <div class="box-content">
 
-<p>QQtPatcher will reach EOL on 11th Sep, 2023, when Qt 5.12 will stop being built anymore.<br>
+<p>QQtPatcher <del>will reach</del> has reached EOL on 11th Sep, 2023, when Qt 5.12 will stop being built anymore.<br>
 After that date the repository fill be archived, issues will be closed (as &ldquo;won&rsquo;t do&rdquo;) and no more development will be done on it. <br>
 QQtPatcher related contents will migrate to <em>Legacy LTS Series</em> part of this website, including the update history which was posted on the BBS of QTCN in Chinese.</p>
 </div>
@@ -354,20 +376,20 @@ I announced that QQtPatcher will not support Qt 5 after 5.14.</p>
 <td>5.12.12</td>
 <td>win32-msvc</td>
 <td>Windows 11 10.0.22000</td>
-<td>VS2017 15.9.51</td>
+<td>VS2017 15.9.57</td>
 <td>0.8.2</td>
 </tr>
 <tr>
 <td>5.12.12</td>
 <td>macx-clang</td>
-<td>macOS 11.7.2</td>
-<td>AppleClang 12.0.0</td>
+<td>macOS 11.7.9</td>
+<td>AppleClang 12.0.5</td>
 <td>0.8.2</td>
 </tr>
 <tr>
 <td>5.12.12</td>
 <td>linux-g++</td>
-<td>RockyLinux 8.7</td>
+<td>RockyLinux 8.8</td>
 <td>GCC 8.5.0</td>
 <td>0.8.2</td>
 </tr>
@@ -394,7 +416,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 </thead>
 <tbody>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Windows</td>
 <td>Windows 10 10.0.19045</td>
 <td>VS2015 Update 3</td>
@@ -402,7 +424,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <td></td>
 </tr>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Windows</td>
 <td>Windows 10 10.0.19045</td>
 <td>VS2015 Update 3</td>
@@ -410,7 +432,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <td>-static</td>
 </tr>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Windows</td>
 <td>Windows 10 10.0.19045</td>
 <td>VS2015 Update 3</td>
@@ -418,7 +440,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <td></td>
 </tr>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Windows</td>
 <td>Windows 10 10.0.19045</td>
 <td>MinGW-w64 w/ GCC 7.3.0</td>
@@ -426,7 +448,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <td></td>
 </tr>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Windows</td>
 <td>Windows 10 10.0.19045</td>
 <td>MinGW-w64 w/ GCC 7.3.0</td>
@@ -434,47 +456,47 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <td></td>
 </tr>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2017 15.9.54</td>
+<td>VS2017 15.9.57</td>
 <td>x86</td>
 <td></td>
 </tr>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2017 15.9.54</td>
+<td>VS2017 15.9.57</td>
 <td>x86</td>
 <td>-static</td>
 </tr>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2017 15.9.54</td>
+<td>VS2017 15.9.57</td>
 <td>x86_64</td>
 <td></td>
 </tr>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.26</td>
+<td>VS2019 16.11.30</td>
 <td>x86</td>
 <td></td>
 </tr>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.26</td>
+<td>VS2019 16.11.30</td>
 <td>x86_64</td>
 <td></td>
 </tr>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Android</td>
 <td>RockyLinux 8.8</td>
 <td>ndk r21e</td>
@@ -482,7 +504,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <td>android-21, -static</td>
 </tr>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Android</td>
 <td>RockyLinux 8.8</td>
 <td>ndk r21e</td>
@@ -490,7 +512,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <td>android-21, -static</td>
 </tr>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Android</td>
 <td>RockyLinux 8.8</td>
 <td>ndk r21e</td>
@@ -498,7 +520,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <td>android-21, -static</td>
 </tr>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Android</td>
 <td>RockyLinux 8.8</td>
 <td>ndk r21e</td>
@@ -506,7 +528,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <td>android-21, -static</td>
 </tr>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Android</td>
 <td>RockyLinux 8.8</td>
 <td>ndk r23c</td>
@@ -514,7 +536,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <td>android-21, -static</td>
 </tr>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Android</td>
 <td>RockyLinux 8.8</td>
 <td>ndk r23c</td>
@@ -522,7 +544,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <td>android-21, -static</td>
 </tr>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Android</td>
 <td>RockyLinux 8.8</td>
 <td>ndk r23c</td>
@@ -530,7 +552,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <td>android-21, -static</td>
 </tr>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Android</td>
 <td>RockyLinux 8.8</td>
 <td>ndk r23c</td>
@@ -538,39 +560,39 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <td>android-21, -static</td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.26</td>
+<td>VS2019 16.11.30</td>
 <td>x86_64</td>
 <td></td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.26</td>
+<td>VS2019 16.11.30</td>
 <td>x86_64</td>
 <td>-static</td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2022 17.6.2</td>
+<td>VS2022 17.7.4</td>
 <td>x86_64</td>
 <td></td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2022 17.6.2</td>
+<td>VS2022 17.7.4</td>
 <td>x86_64</td>
 <td>-static</td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ GCC 11.2.0</td>
@@ -578,7 +600,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <td></td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ GCC 11.2.0</td>
@@ -586,7 +608,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <td>-static</td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ GCC 12.2.0 MSVCRT</td>
@@ -594,7 +616,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <td></td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ GCC 12.2.0 MSVCRT</td>
@@ -602,7 +624,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <td>-static</td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ GCC 12.2.0 UCRT</td>
@@ -610,7 +632,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <td></td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ GCC 12.2.0 UCRT</td>
@@ -618,7 +640,23 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <td>-static</td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
+<td>Windows</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 w/ GCC 13.2.0 MSVCRT</td>
+<td>x86_64</td>
+<td></td>
+</tr>
+<tr>
+<td>3.0.11</td>
+<td>Windows</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 w/ GCC 13.2.0 UCRT</td>
+<td>x86_64</td>
+<td></td>
+</tr>
+<tr>
+<td>3.0.11</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ LLVM 15.0.0 UCRT</td>
@@ -626,7 +664,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <td></td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ LLVM 15.0.0 MSVCRT</td>
@@ -634,39 +672,55 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <td></td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>MinGW-w64 w/ LLVM 16.0.5 UCRT</td>
+<td>MinGW-w64 w/ LLVM 16.0.6 UCRT</td>
 <td>x86_64</td>
 <td></td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>MinGW-w64 w/ LLVM 16.0.5 MSVCRT</td>
+<td>MinGW-w64 w/ LLVM 16.0.6 MSVCRT</td>
 <td>x86_64</td>
 <td></td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
+<td>Windows</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 w/ LLVM 17.0.2 UCRT</td>
+<td>x86_64</td>
+<td></td>
+</tr>
+<tr>
+<td>3.0.11</td>
+<td>Windows</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 w/ LLVM 17.0.2 MSVCRT</td>
+<td>x86_64</td>
+<td></td>
+</tr>
+<tr>
+<td>3.0.11</td>
 <td>macOS</td>
-<td>macOS 13.4</td>
+<td>macOS 13.6</td>
 <td>AppleClang 14.0.3</td>
 <td>x86_64</td>
 <td></td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>macOS</td>
-<td>macOS 13.4</td>
+<td>macOS 13.6</td>
 <td>AppleClang 14.0.3</td>
 <td>arm64</td>
 <td></td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Android</td>
 <td>RockyLinux 8.8</td>
 <td>ndk r23c</td>
@@ -674,7 +728,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <td>android-24, -static</td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Android</td>
 <td>RockyLinux 8.8</td>
 <td>ndk r23c</td>
@@ -682,7 +736,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <td>android-24, -static</td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Android</td>
 <td>RockyLinux 8.8</td>
 <td>ndk r23c</td>
@@ -690,7 +744,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <td>android-24, -static</td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Android</td>
 <td>RockyLinux 8.8</td>
 <td>ndk r23c</td>
@@ -698,7 +752,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <td>android-24, -static</td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Android</td>
 <td>RockyLinux 9.2</td>
 <td>ndk r25c</td>
@@ -706,7 +760,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <td>android-27, -static</td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Android</td>
 <td>RockyLinux 9.2</td>
 <td>ndk r25c</td>
@@ -714,7 +768,7 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <td>android-27, -static</td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Android</td>
 <td>RockyLinux 9.2</td>
 <td>ndk r25c</td>
@@ -722,10 +776,42 @@ On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using 
 <td>android-27, -static</td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Android</td>
 <td>RockyLinux 9.2</td>
 <td>ndk r25c</td>
+<td>x86_64</td>
+<td>android-27, -static</td>
+</tr>
+<tr>
+<td>3.0.11</td>
+<td>Android</td>
+<td>RockyLinux 9.2</td>
+<td>ndk r26</td>
+<td>arm</td>
+<td>android-27, -static</td>
+</tr>
+<tr>
+<td>3.0.11</td>
+<td>Android</td>
+<td>RockyLinux 9.2</td>
+<td>ndk r26</td>
+<td>arm64</td>
+<td>android-27, -static</td>
+</tr>
+<tr>
+<td>3.0.11</td>
+<td>Android</td>
+<td>RockyLinux 9.2</td>
+<td>ndk r26</td>
+<td>x86</td>
+<td>android-27, -static</td>
+</tr>
+<tr>
+<td>3.0.11</td>
+<td>Android</td>
+<td>RockyLinux 9.2</td>
+<td>ndk r26</td>
 <td>x86_64</td>
 <td>android-27, -static</td>
 </tr>
@@ -754,135 +840,170 @@ MariaDB connector/C 3.3 series are used on Qt 6.2 and later.</p>
 </thead>
 <tbody>
 <tr>
-<td>3.1.21</td>
+<td>3.1.22</td>
 <td>Windows</td>
 <td>Windows 10 10.0.19045</td>
 <td>VS2015 Update 3</td>
 <td>x86</td>
 </tr>
 <tr>
-<td>3.1.21</td>
+<td>3.1.22</td>
 <td>Windows</td>
 <td>Windows 10 10.0.19045</td>
 <td>VS2015 Update 3</td>
 <td>x86_64</td>
 </tr>
 <tr>
-<td>3.1.21</td>
+<td>3.1.22</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2017 15.9.54</td>
+<td>VS2017 15.9.57</td>
 <td>x86</td>
 </tr>
 <tr>
-<td>3.1.21</td>
+<td>3.1.22</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2017 15.9.54</td>
+<td>VS2017 15.9.57</td>
 <td>x86_64</td>
 </tr>
 <tr>
-<td>3.1.21</td>
+<td>3.1.22</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.26</td>
+<td>VS2019 16.11.30</td>
 <td>x86</td>
 </tr>
 <tr>
-<td>3.1.21</td>
+<td>3.1.22</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.26</td>
+<td>VS2019 16.11.30</td>
 <td>x86_64</td>
 </tr>
 <tr>
-<td>3.1.21</td>
+<td>3.1.22</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2022 17.6.2</td>
+<td>VS2022 17.7.4</td>
 <td>x86_64</td>
 </tr>
 <tr>
-<td>3.1.21</td>
+<td>3.1.22</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ GCC 8.1.0</td>
 <td>x86_64</td>
 </tr>
 <tr>
-<td>3.1.21</td>
+<td>3.1.22</td>
 <td>macOS</td>
-<td>macOS 13.4</td>
+<td>macOS 13.6</td>
 <td>AppleClang 14.0.3</td>
 <td>Unified (x86_64, arm64)</td>
 </tr>
 <tr>
-<td>3.3.5</td>
+<td>3.3.7</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.26</td>
+<td>VS2019 16.11.30</td>
 <td>x86_64</td>
 </tr>
 <tr>
-<td>3.3.5</td>
+<td>3.3.7</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2019 17.6.2</td>
+<td>VS2019 17.7.4</td>
 <td>x86_64</td>
 </tr>
 <tr>
-<td>3.3.5</td>
+<td>3.3.7</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ GCC 11.2.0</td>
 <td>x86_64</td>
 </tr>
 <tr>
-<td>3.3.5</td>
+<td>3.3.7</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>MinGW-w64 w/ GCC 12.2.0</td>
+<td>MinGW-w64 w/ GCC 12.2.0 MSVCRT</td>
 <td>x86_64</td>
 </tr>
 <tr>
-<td>3.3.5</td>
+<td>3.3.7</td>
+<td>Windows</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 w/ GCC 12.2.0 UCRT</td>
+<td>x86_64</td>
+</tr>
+<tr>
+<td>3.3.7</td>
+<td>Windows</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 w/ GCC 13.2.0 MSVCRT</td>
+<td>x86_64</td>
+</tr>
+<tr>
+<td>3.3.7</td>
+<td>Windows</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 w/ GCC 13.2.0 UCRT</td>
+<td>x86_64</td>
+</tr>
+<tr>
+<td>3.3.7</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ LLVM 15.0.0 (ucrt)</td>
 <td>x86_64</td>
 </tr>
 <tr>
-<td>3.3.5</td>
+<td>3.3.7</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ LLVM 15.0.0 (msvcrt)</td>
 <td>x86_64</td>
 </tr>
 <tr>
-<td>3.3.5</td>
+<td>3.3.7</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>MinGW-w64 w/ LLVM 16.0.5 (ucrt)</td>
+<td>MinGW-w64 w/ LLVM 16.0.6 (ucrt)</td>
 <td>x86_64</td>
 </tr>
 <tr>
-<td>3.3.5</td>
+<td>3.3.7</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>MinGW-w64 w/ LLVM 16.0.5 (msvcrt)</td>
+<td>MinGW-w64 w/ LLVM 16.0.6 (msvcrt)</td>
 <td>x86_64</td>
 </tr>
 <tr>
-<td>3.3.5</td>
+<td>3.3.7</td>
+<td>Windows</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 w/ LLVM 17.0.2 (ucrt)</td>
+<td>x86_64</td>
+</tr>
+<tr>
+<td>3.3.7</td>
+<td>Windows</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 w/ LLVM 17.0.2 (msvcrt)</td>
+<td>x86_64</td>
+</tr>
+<tr>
+<td>3.3.7</td>
 <td>macOS</td>
-<td>macOS 13.4</td>
+<td>macOS 13.6</td>
 <td>AppleClang 14.0.3</td>
 <td>Unified (x86_64, arm64)</td>
 </tr>
 </tbody>
 </table>
 <h2 id="qt-build-table">Qt Build Table</h2>
-<p><strong>Note: Since Qt dropped support for 32-bit Windows for Qt 6, our Qt 6 builds will no longer run for 32-bit Windows either.</strong><br>
+<p><strong>Note: Since Qt 6 dropped support for 32-bit Windows for Qt 6, our Qt 6 builds will no longer run for 32-bit Windows either.</strong><br>
 <strong>If there is need of static builds for non-LTS release, please contect me directly for commerical customization.</strong></p>
 <table>
 <thead>
@@ -896,174 +1017,6 @@ MariaDB connector/C 3.3 series are used on Qt 6.2 and later.</p>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>5.12.12</td>
-<td>Windows 10 10.0.19045</td>
-<td>VS2015 Update 3</td>
-<td>x86</td>
-<td></td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>Windows 10 10.0.19045</td>
-<td>VS2015 Update 3</td>
-<td>x86</td>
-<td>-static(Lite)</td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>Windows 10 10.0.19045</td>
-<td>VS2015 Update 3</td>
-<td>x86_64</td>
-<td></td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2017 15.9.55 w/ Windows SDK 10.0.17763</td>
-<td>x86</td>
-<td></td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2017 15.9.55 w/ Windows SDK 10.0.17763</td>
-<td>x86</td>
-<td>-static(Lite)</td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2017 15.9.55 w/ Windows SDK 10.0.17763</td>
-<td>x86_64</td>
-<td></td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.28 w/ Windows SDK 10.0.22000</td>
-<td>x86</td>
-<td></td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.28 w/ Windows SDK 10.0.22000</td>
-<td>x86_64</td>
-<td></td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>Windows 10 10.0.19045</td>
-<td>MinGW-w64 w/ GCC 7.3.0</td>
-<td>x86</td>
-<td></td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>Windows 10 10.0.19045</td>
-<td>MinGW-w64 w/ GCC 7.3.0</td>
-<td>x86_64</td>
-<td></td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>RockyLinux 8.8</td>
-<td>GCC 8.5.0</td>
-<td>x86_64</td>
-<td>-static(Lite)</td>
-<td>Won&rsquo;t upload, only used in QQtPatcher</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>macOS 11.7.8</td>
-<td>AppleClang 12.0.5</td>
-<td>x86_64</td>
-<td>-static(Lite)</td>
-<td>Won&rsquo;t upload, only used in QQtPatcher</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>Windows 11 10.0.22621</td>
-<td>ndk r21e</td>
-<td>arm</td>
-<td>android-21</td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>Windows 11 10.0.22621</td>
-<td>ndk r21e</td>
-<td>arm64</td>
-<td>android-21</td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>Windows 11 10.0.22621</td>
-<td>ndk r21e</td>
-<td>x86</td>
-<td>android-21</td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>RockyLinux 8.8</td>
-<td>ndk r21e</td>
-<td>arm</td>
-<td>android-21</td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>RockyLinux 8.8</td>
-<td>ndk r21e</td>
-<td>arm64</td>
-<td>android-21</td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>RockyLinux 8.8</td>
-<td>ndk r21e</td>
-<td>x86</td>
-<td>android-21</td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>macOS 11.7.8</td>
-<td>ndk r21e</td>
-<td>arm</td>
-<td>android-21</td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>macOS 11.7.8</td>
-<td>ndk r21e</td>
-<td>arm64</td>
-<td>android-21</td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>macOS 11.7.8</td>
-<td>ndk r21e</td>
-<td>x86</td>
-<td>android-21</td>
-<td>√</td>
-</tr>
 <tr>
 <td>5.15.10</td>
 <td>Windows 10 10.0.19045</td>
@@ -1786,63 +1739,62 @@ MariaDB connector/C 3.3 series are used on Qt 6.2 and later.</p>
         </div>
       </main>
     </div>
-    <aside id="sidebar" class="default-animation">
-      <div id="header-topbar" class="default-animation"></div>
-      <div id="header-wrapper" class="default-animation">
-        <div id="header" class="default-animation">
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
 <p class="fsu0413_logo"><img src="https://codereview.qt-project.org/static/logo_qt.png" /></p>
         </div>
       </div>
-      <div id="homelinks" class="default-animation homelinks">
+      <div id="R-homelinks" class="default-animation homelinks">
         <ul>
           <li><a class="padding" href="/qtcompile/en/index.html"><i class='fas fa-home'></i> Home</a></li>
         </ul>
         <hr class="padding">
       </div>
-      <div id="content-wrapper" class="highlightable">
-        <div id="topics">
-          <ul class="enlarge morespace">
-          <li data-nav-id="/qtcompile/en/5.12-series/index.html" class=""><a class="padding" href="/qtcompile/en/5.12-series/index.html">5.12 series</a><ul id="subsections-2c0b2ae1d884bccfca2dfb294f752a41" class="morespace">
-          <li data-nav-id="/qtcompile/en/5.12-series/5.12.12-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/5.12-series/5.12.12-for-windows/index.html">5.12.12 for Windows</a></li>
-          <li data-nav-id="/qtcompile/en/5.12-series/5.12.12-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/5.12-series/5.12.12-for-android/index.html">5.12.12 for Android</a></li></ul></li>
-          <li data-nav-id="/qtcompile/en/5.15-series/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/index.html">5.15 series</a><ul id="subsections-dfde3005aa1a1a9f4665d82e5e9612d8" class="morespace">
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/qtcompile/en/5.15-series/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/index.html">5.15 series</a><ul id="R-subsections-dfde3005aa1a1a9f4665d82e5e9612d8" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/en/5.15-series/5.15.10-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/5.15.10-for-windows/index.html">5.15.10 for Windows</a></li>
           <li data-nav-id="/qtcompile/en/5.15-series/5.15.10-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/5.15.10-for-macos/index.html">5.15.10 for macOS</a></li>
           <li data-nav-id="/qtcompile/en/5.15-series/5.15.10-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/5.15.10-for-android/index.html">5.15.10 for Android</a></li>
           <li data-nav-id="/qtcompile/en/5.15-series/5.15.10-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/5.15.10-for-webassembly/index.html">5.15.10 for WebAssembly</a></li></ul></li>
-          <li data-nav-id="/qtcompile/en/6.2-series/index.html" class=""><a class="padding" href="/qtcompile/en/6.2-series/index.html">6.2 series</a><ul id="subsections-c2b87e4570db0ee260cc7de2c4b80e99" class="morespace">
+          <li data-nav-id="/qtcompile/en/6.2-series/index.html" class=""><a class="padding" href="/qtcompile/en/6.2-series/index.html">6.2 series</a><ul id="R-subsections-c2b87e4570db0ee260cc7de2c4b80e99" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/en/6.2-series/6.2.5-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/6.2-series/6.2.5-for-windows/index.html">6.2.5 for Windows</a></li>
           <li data-nav-id="/qtcompile/en/6.2-series/6.2.5-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/6.2-series/6.2.5-for-macos/index.html">6.2.5 for macOS</a></li>
           <li data-nav-id="/qtcompile/en/6.2-series/6.2.5-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/6.2-series/6.2.5-for-android/index.html">6.2.5 for Android</a></li>
           <li data-nav-id="/qtcompile/en/6.2-series/6.2.5-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/en/6.2-series/6.2.5-for-webassembly/index.html">6.2.5 for WebAssembly</a></li></ul></li>
-          <li data-nav-id="/qtcompile/en/6.5-series/index.html" class=""><a class="padding" href="/qtcompile/en/6.5-series/index.html">6.5 series</a><ul id="subsections-1870fa5a2d192ec83aafe29160552269" class="morespace">
+          <li data-nav-id="/qtcompile/en/6.5-series/index.html" class=""><a class="padding" href="/qtcompile/en/6.5-series/index.html">6.5 series</a><ul id="R-subsections-1870fa5a2d192ec83aafe29160552269" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/en/6.5-series/6.5.2-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/6.5-series/6.5.2-for-windows/index.html">6.5.2 for Windows</a></li>
           <li data-nav-id="/qtcompile/en/6.5-series/6.5.2-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/6.5-series/6.5.2-for-macos/index.html">6.5.2 for macOS</a></li>
           <li data-nav-id="/qtcompile/en/6.5-series/6.5.2-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/6.5-series/6.5.2-for-android/index.html">6.5.2 for Android</a></li>
           <li data-nav-id="/qtcompile/en/6.5-series/6.5.2-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/en/6.5-series/6.5.2-for-webassembly/index.html">6.5.2 for WebAssembly</a></li></ul></li>
-          <li data-nav-id="/qtcompile/en/miscellaneous/index.html" class="parent "><a class="padding" href="/qtcompile/en/miscellaneous/index.html">Miscellaneous</a><ul id="subsections-59c45accf7e43befe663d68447543959" class="morespace">
+          <li data-nav-id="/qtcompile/en/miscellaneous/index.html" class="parent "><a class="padding" href="/qtcompile/en/miscellaneous/index.html">Miscellaneous</a><ul id="R-subsections-59c45accf7e43befe663d68447543959" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/en/miscellaneous/notes-for-this-repo/index.html" class=""><a class="padding" href="/qtcompile/en/miscellaneous/notes-for-this-repo/index.html">Notes for this repo</a></li>
           <li data-nav-id="/qtcompile/en/miscellaneous/current-build-status/index.html" class="active"><a class="padding" href="/qtcompile/en/miscellaneous/current-build-status/index.html">Current build status</a></li>
           <li data-nav-id="/qtcompile/en/miscellaneous/current-failures/index.html" class=""><a class="padding" href="/qtcompile/en/miscellaneous/current-failures/index.html">Current failures</a></li>
           <li data-nav-id="/qtcompile/en/miscellaneous/histories/index.html" class=""><a class="padding" href="/qtcompile/en/miscellaneous/histories/index.html">Previous Histories</a></li></ul></li>
-          <li data-nav-id="/qtcompile/en/legacy-lts-series/index.html" class=""><a class="padding" href="/qtcompile/en/legacy-lts-series/index.html">Legacy LTS Series</a><ul id="subsections-5cd0b6ebd88105014c721df753e3aba0" class="morespace">
-          <li data-nav-id="/qtcompile/en/legacy-lts-series/4.8-series/index.html" class="alwaysopen"><a class="padding" href="/qtcompile/en/legacy-lts-series/4.8-series/index.html">4.8 series</a><ul id="subsections-fde90e23068d0005e4f65b64b693e2ea" class="morespace">
+          <li data-nav-id="/qtcompile/en/legacy-lts-series/index.html" class=""><a class="padding" href="/qtcompile/en/legacy-lts-series/index.html">Legacy LTS Series</a><ul id="R-subsections-5cd0b6ebd88105014c721df753e3aba0" class="morespace collapsible-menu">
+          <li data-nav-id="/qtcompile/en/legacy-lts-series/4.8-series/index.html" class="alwaysopen"><a class="padding" href="/qtcompile/en/legacy-lts-series/4.8-series/index.html">4.8 series</a><ul id="R-subsections-fde90e23068d0005e4f65b64b693e2ea" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/en/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html">4.8.7 for Windows</a></li>
           <li data-nav-id="/qtcompile/en/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html">4.8.7 for macOS</a></li></ul></li>
-          <li data-nav-id="/qtcompile/en/legacy-lts-series/5.6-series/index.html" class="alwaysopen"><a class="padding" href="/qtcompile/en/legacy-lts-series/5.6-series/index.html">5.6 series</a><ul id="subsections-1796b7c7d02948092a040169069ea60b" class="morespace">
+          <li data-nav-id="/qtcompile/en/legacy-lts-series/5.6-series/index.html" class="alwaysopen"><a class="padding" href="/qtcompile/en/legacy-lts-series/5.6-series/index.html">5.6 series</a><ul id="R-subsections-1796b7c7d02948092a040169069ea60b" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/en/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html">5.6.3 for Windows</a></li>
           <li data-nav-id="/qtcompile/en/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html">5.6.3 for macOS</a></li>
           <li data-nav-id="/qtcompile/en/legacy-lts-series/5.6-series/5.6.3-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/legacy-lts-series/5.6-series/5.6.3-for-android/index.html">5.6.3 for Android</a></li></ul></li>
-          <li data-nav-id="/qtcompile/en/legacy-lts-series/5.9-series/index.html" class="alwaysopen"><a class="padding" href="/qtcompile/en/legacy-lts-series/5.9-series/index.html">5.9 series</a><ul id="subsections-f8745d5ebc3d3c70b6d105e44a063326" class="morespace">
+          <li data-nav-id="/qtcompile/en/legacy-lts-series/5.9-series/index.html" class="alwaysopen"><a class="padding" href="/qtcompile/en/legacy-lts-series/5.9-series/index.html">5.9 series</a><ul id="R-subsections-f8745d5ebc3d3c70b6d105e44a063326" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/en/legacy-lts-series/5.9-series/5.9.9-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/legacy-lts-series/5.9-series/5.9.9-for-windows/index.html">5.9.9 for Windows</a></li>
           <li data-nav-id="/qtcompile/en/legacy-lts-series/5.9-series/5.9.9-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/legacy-lts-series/5.9-series/5.9.9-for-macos/index.html">5.9.9 for macOS</a></li>
           <li data-nav-id="/qtcompile/en/legacy-lts-series/5.9-series/5.9.9-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/legacy-lts-series/5.9-series/5.9.9-for-android/index.html">5.9.9 for Android</a></li></ul></li>
-          <li data-nav-id="/qtcompile/en/legacy-lts-series/5.12-series/index.html" class="alwaysopen"><a class="padding" href="/qtcompile/en/legacy-lts-series/5.12-series/index.html">5.12 series</a><ul id="subsections-1c9205acacd79bb25b30a84b030ea10b" class="morespace">
+          <li data-nav-id="/qtcompile/en/legacy-lts-series/5.12-series/index.html" class="alwaysopen"><a class="padding" href="/qtcompile/en/legacy-lts-series/5.12-series/index.html">5.12 series</a><ul id="R-subsections-1c9205acacd79bb25b30a84b030ea10b" class="morespace collapsible-menu">
+          <li data-nav-id="/qtcompile/en/legacy-lts-series/5.12-series/5.12.12-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/legacy-lts-series/5.12-series/5.12.12-for-windows/index.html">5.12.12 for Windows</a></li>
           <li data-nav-id="/qtcompile/en/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html">5.12.12 for macOS</a></li>
+          <li data-nav-id="/qtcompile/en/legacy-lts-series/5.12-series/5.12.12-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/legacy-lts-series/5.12-series/5.12.12-for-android/index.html">5.12.12 for Android</a></li>
           <li data-nav-id="/qtcompile/en/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/en/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html">5.12.12 for WebAssembly</a></li></ul></li></ul></li>
           </ul>
         </div>
-        <div id="shortcuts">
+        <div id="R-shortcuts">
           <div class="nav-title padding">More</div>
           <ul class="space">
             <li><a class="padding" href="https://github.com/Fsu0413/QtCompile"><i class='fab fa-fw fa-github'></i> GitHub repo</a></li>
@@ -1850,41 +1802,41 @@ MariaDB connector/C 3.3 series are used on Qt 6.2 and later.</p>
           </ul>
         </div>
         <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter"></div>
-        <div id="menu-footer">
+        <div id="R-menu-footer">
           <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter">
-          <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showLangSwitch showVariantSwitch">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showLangSwitch showVariantSwitch">
             <ul>
-              <li id="select-language-container" class="footerLangSwitch showLangSwitch">
+              <li id="R-select-language-container" class="footerLangSwitch showLangSwitch">
                 <div class="padding menu-control">
                   <i class="fas fa-language fa-fw"></i>
                   <span>&nbsp;</span>
                   <div class="control-style">
-                    <label class="a11y-only" for="select-language">Language</label>
-                    <select id="select-language" onchange="location = baseUri + this.value;">
-                      <option lang="zh-cn" id="zh-cn" value="/qtcompile/miscellaneous/current-build-status/index.html">简体中文（中国）</option>
-                      <option lang="en" id="en" value="/qtcompile/en/miscellaneous/current-build-status/index.html" selected>English</option>
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = baseUri + this.value;">
+                      <option id="R-zh-cn" value="/qtcompile/miscellaneous/current-build-status/index.html" lang="zh-cn">简体中文（中国）</option>
+                      <option id="R-en" value="/qtcompile/en/miscellaneous/current-build-status/index.html" lang="en" selected>English</option>
                     </select>
                   </div>
                   <div class="clear"></div>
                 </div>
               </li>
-              <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
+              <li id="R-select-variant-container" class="footerVariantSwitch showVariantSwitch">
                 <div class="padding menu-control">
                   <i class="fas fa-paint-brush fa-fw"></i>
                   <span>&nbsp;</span>
                   <div class="control-style">
-                    <label class="a11y-only" for="select-variant">Theme</label>
-                    <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
-                      <option id="relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
-                      <option id="relearn-bright" value="relearn-bright">Relearn Bright</option>
-                      <option id="relearn-light" value="relearn-light">Relearn Light</option>
-                      <option id="zen-dark" value="zen-dark">Zen Dark</option>
-                      <option id="zen-light" value="zen-light">Zen Light</option>
-                      <option id="learn" value="learn">Learn</option>
-                      <option id="neon" value="neon">Neon</option>
-                      <option id="red" value="red">Red</option>
-                      <option id="blue" value="blue">Blue</option>
-                      <option id="green" value="green">Green</option>
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
+                      <option id="R-relearn-bright" value="relearn-bright">Relearn Bright</option>
+                      <option id="R-relearn-light" value="relearn-light">Relearn Light</option>
+                      <option id="R-zen-dark" value="zen-dark">Zen Dark</option>
+                      <option id="R-zen-light" value="zen-light">Zen Light</option>
+                      <option id="R-learn" value="learn">Learn</option>
+                      <option id="R-neon" value="neon">Neon</option>
+                      <option id="R-red" value="red">Red</option>
+                      <option id="R-blue" value="blue">Blue</option>
+                      <option id="R-green" value="green">Green</option>
                     </select>
                   </div>
                   <div class="clear"></div>
@@ -1903,8 +1855,8 @@ MariaDB connector/C 3.3 series are used on Qt 6.2 and later.</p>
               </li>
             </ul>
           </div>
-          <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 02 Sep 2023 17:31:15 CST</p>
+          <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
+Site generated: Fri, 06 Oct 2023 22:32:49 CST</p>
 
           </div>
         </div>
