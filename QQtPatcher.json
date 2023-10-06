@@ -148,20 +148,20 @@
       "QtVersion": "5.12.12",
       "mkspec": "win32-msvc",
       "os": "Windows 11 10.0.22000",
-      "toolchain": "VS2017 15.9.51",
+      "toolchain": "VS2017 15.9.57",
       "version": "0.8.2"
     },
     {
       "QtVersion": "5.12.12",
       "mkspec": "macx-clang",
-      "os": "macOS 11.7.2",
-      "toolchain": "AppleClang 12.0.0",
+      "os": "macOS 11.7.9",
+      "toolchain": "AppleClang 12.0.5",
       "version": "0.8.2"
     },
     {
       "QtVersion": "5.12.12",
       "mkspec": "linux-g++",
-      "os": "RockyLinux 8.7",
+      "os": "RockyLinux 8.8",
       "toolchain": "GCC 8.5.0",
       "version": "0.8.2"
     }
