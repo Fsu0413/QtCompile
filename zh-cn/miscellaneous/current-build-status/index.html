@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.118.2">
-    <meta name="generator" content="Relearn 5.20.0">
+    <meta name="generator" content="Hugo 0.119.0">
+    <meta name="generator" content="Relearn 5.22.1">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>当前构建状态 :: Fsu0413 的原版 Qt 构建</title>
@@ -18,7 +18,7 @@
     <link href="/css/perfect-scrollbar.min.css" rel="stylesheet">
     <link href="/css/fonts.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css" rel="stylesheet"></noscript>
     <link href="/css/theme.css" rel="stylesheet">
-    <link href="/css/theme-relearn-dark.css" rel="stylesheet" id="variant-style">
+    <link href="/css/theme-relearn-dark.css" rel="stylesheet" id="R-variant-style">
     <link href="/css/variant.css" rel="stylesheet">
     <link href="/css/print.css" rel="stylesheet" media="print">
     <link href="/css/ie.css" rel="stylesheet">
@@ -34,6 +34,8 @@
       window.T_Copied_to_clipboard = '复制到剪贴板！';
       window.T_Copy_link_to_clipboard = '将链接复制到剪贴板';
       window.T_Link_copied_to_clipboard = '链接复制到剪贴板！';
+      window.T_Reset_view = '重置视图';
+      window.T_View_reset = '查看重置！';
       window.T_No_results_found = '找不到\u0022{0}\u0022的结果';
       window.T_N_results_found = '为\u0022{0}\u0022找到 {1} 个结果';
       // some further base stuff
@@ -68,24 +70,23 @@
 </style>
   </head>
   <body class="mobile-support html disableInlineCopyToClipboard" data-url="/zh-cn/miscellaneous/current-build-status/index.html">
-    <div id="body" class="default-animation">
-      <div id="sidebar-overlay"></div>
-      <div id="toc-overlay"></div>
-      <nav id="topbar" class="highlightable">
-        <div>
-          <div id="breadcrumbs">
-            <span id="sidebar-toggle-span">
-              <a href="#" id="sidebar-toggle" class="topbar-link" title='导航 (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
-            </span>
-            <span id="toc-menu" title='目录 (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
-            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/zh-cn/index.html"><span itemprop="name">Fsu0413 的原版 Qt 构建</span></a><meta itemprop="position" content="1"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/zh-cn/miscellaneous/index.html"><span itemprop="name">杂项</span></a><meta itemprop="position" content="2"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">当前构建状态</span><meta itemprop="position" content="3"></li>
-            </ol>
-          </div>
-          <div class="default-animation progress">
-            <div class="toc-wrapper"><nav id="TableOfContents">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+              <button class="topbar-control" onclick="toggleNav()" type="button" title="导航 (CTRL&#43;ALT&#43;n)">
+                <i class="fa-fw fas fa-bars"></i>
+              </button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+              <button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="目录 (CTRL&#43;ALT&#43;t)">
+                <i class="fa-fw fas fa-list-alt"></i>
+              </button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
   <ul>
     <li><a href="#qqtpatcher-支持状态">QQtPatcher 支持状态</a></li>
     <li><a href="#openssl-状态">OpenSSL 状态</a></li>
@@ -93,11 +94,32 @@
     <li><a href="#qt-构建表">Qt 构建表</a></li>
   </ul>
 </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/zh-cn/index.html"><span itemprop="name">Fsu0413 的原版 Qt 构建</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/zh-cn/miscellaneous/index.html"><span itemprop="name">杂项</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">当前构建状态</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+              <button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="更多">
+                <i class="fa-fw fas fa-ellipsis-v"></i>
+              </button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </nav>
-      <main id="body-inner" class="highlightable default" tabindex="-1">
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
         <div class="flex-block-wrapper">
           <article class="default">
             <header class="headline">
@@ -107,10 +129,10 @@
 <h2 id="qqtpatcher-支持状态">QQtPatcher 支持状态</h2>
 
 <div class="box notices cstyle warning">
-  <div class="box-label"><i class="fas fa-exclamation-triangle"></i> 公告 QQtPatcher 结束生命周期</div>
+  <div class="box-label"><i class="fas fa-exclamation-triangle"></i> 公告：QQtPatcher 结束生命周期</div>
   <div class="box-content">
 
-<p>QQtPatcher 将会于 Qt 5.12 停止构建的 2023 年 9 月 11 日结束生命周期。<br>
+<p>QQtPatcher <del>将会</del> 已于 Qt 5.12 停止构建的 2023 年 9 月 11 日结束生命周期。<br>
 在此之后，版本库会存档，问题将会关闭（原因为“不予处理”），不会再对其继续开发。<br>
 QQtPatcher 相关内容将会转移到“遗留的长期支持版本系列”部分，包含此前在 QTCN 论坛上的更新历史也一并转移。</p>
 </div>
@@ -354,20 +376,20 @@ QQtPatcher 相关内容将会转移到“遗留的长期支持版本系列”部
 <td>5.12.12</td>
 <td>win32-msvc</td>
 <td>Windows 11 10.0.22000</td>
-<td>VS2017 15.9.51</td>
+<td>VS2017 15.9.57</td>
 <td>0.8.2</td>
 </tr>
 <tr>
 <td>5.12.12</td>
 <td>macx-clang</td>
-<td>macOS 11.7.2</td>
-<td>AppleClang 12.0.0</td>
+<td>macOS 11.7.9</td>
+<td>AppleClang 12.0.5</td>
 <td>0.8.2</td>
 </tr>
 <tr>
 <td>5.12.12</td>
 <td>linux-g++</td>
-<td>RockyLinux 8.7</td>
+<td>RockyLinux 8.8</td>
 <td>GCC 8.5.0</td>
 <td>0.8.2</td>
 </tr>
@@ -394,7 +416,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 </thead>
 <tbody>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Windows</td>
 <td>Windows 10 10.0.19045</td>
 <td>VS2015 Update 3</td>
@@ -402,7 +424,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td></td>
 </tr>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Windows</td>
 <td>Windows 10 10.0.19045</td>
 <td>VS2015 Update 3</td>
@@ -410,7 +432,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>-static</td>
 </tr>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Windows</td>
 <td>Windows 10 10.0.19045</td>
 <td>VS2015 Update 3</td>
@@ -418,7 +440,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td></td>
 </tr>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Windows</td>
 <td>Windows 10 10.0.19045</td>
 <td>MinGW-w64 w/ GCC 7.3.0</td>
@@ -426,7 +448,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td></td>
 </tr>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Windows</td>
 <td>Windows 10 10.0.19045</td>
 <td>MinGW-w64 w/ GCC 7.3.0</td>
@@ -434,47 +456,47 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td></td>
 </tr>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2017 15.9.54</td>
+<td>VS2017 15.9.57</td>
 <td>x86</td>
 <td></td>
 </tr>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2017 15.9.54</td>
+<td>VS2017 15.9.57</td>
 <td>x86</td>
 <td>-static</td>
 </tr>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2017 15.9.54</td>
+<td>VS2017 15.9.57</td>
 <td>x86_64</td>
 <td></td>
 </tr>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.26</td>
+<td>VS2019 16.11.30</td>
 <td>x86</td>
 <td></td>
 </tr>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.26</td>
+<td>VS2019 16.11.30</td>
 <td>x86_64</td>
 <td></td>
 </tr>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Android</td>
 <td>RockyLinux 8.8</td>
 <td>ndk r21e</td>
@@ -482,7 +504,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>android-21, -static</td>
 </tr>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Android</td>
 <td>RockyLinux 8.8</td>
 <td>ndk r21e</td>
@@ -490,7 +512,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>android-21, -static</td>
 </tr>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Android</td>
 <td>RockyLinux 8.8</td>
 <td>ndk r21e</td>
@@ -498,7 +520,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>android-21, -static</td>
 </tr>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Android</td>
 <td>RockyLinux 8.8</td>
 <td>ndk r21e</td>
@@ -506,7 +528,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>android-21, -static</td>
 </tr>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Android</td>
 <td>RockyLinux 8.8</td>
 <td>ndk r23c</td>
@@ -514,7 +536,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>android-21, -static</td>
 </tr>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Android</td>
 <td>RockyLinux 8.8</td>
 <td>ndk r23c</td>
@@ -522,7 +544,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>android-21, -static</td>
 </tr>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Android</td>
 <td>RockyLinux 8.8</td>
 <td>ndk r23c</td>
@@ -530,7 +552,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>android-21, -static</td>
 </tr>
 <tr>
-<td>1.1.1v</td>
+<td>1.1.1w</td>
 <td>Android</td>
 <td>RockyLinux 8.8</td>
 <td>ndk r23c</td>
@@ -538,39 +560,39 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>android-21, -static</td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.26</td>
+<td>VS2019 16.11.30</td>
 <td>x86_64</td>
 <td></td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.26</td>
+<td>VS2019 16.11.30</td>
 <td>x86_64</td>
 <td>-static</td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2022 17.6.2</td>
+<td>VS2022 17.7.4</td>
 <td>x86_64</td>
 <td></td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2022 17.6.2</td>
+<td>VS2022 17.7.4</td>
 <td>x86_64</td>
 <td>-static</td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ GCC 11.2.0</td>
@@ -578,7 +600,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td></td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ GCC 11.2.0</td>
@@ -586,7 +608,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>-static</td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ GCC 12.2.0 MSVCRT</td>
@@ -594,7 +616,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td></td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ GCC 12.2.0 MSVCRT</td>
@@ -602,7 +624,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>-static</td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ GCC 12.2.0 UCRT</td>
@@ -610,7 +632,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td></td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ GCC 12.2.0 UCRT</td>
@@ -618,7 +640,23 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>-static</td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
+<td>Windows</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 w/ GCC 13.2.0 MSVCRT</td>
+<td>x86_64</td>
+<td></td>
+</tr>
+<tr>
+<td>3.0.11</td>
+<td>Windows</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 w/ GCC 13.2.0 UCRT</td>
+<td>x86_64</td>
+<td></td>
+</tr>
+<tr>
+<td>3.0.11</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ LLVM 15.0.0 UCRT</td>
@@ -626,7 +664,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td></td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ LLVM 15.0.0 MSVCRT</td>
@@ -634,39 +672,55 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td></td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>MinGW-w64 w/ LLVM 16.0.5 UCRT</td>
+<td>MinGW-w64 w/ LLVM 16.0.6 UCRT</td>
 <td>x86_64</td>
 <td></td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>MinGW-w64 w/ LLVM 16.0.5 MSVCRT</td>
+<td>MinGW-w64 w/ LLVM 16.0.6 MSVCRT</td>
 <td>x86_64</td>
 <td></td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
+<td>Windows</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 w/ LLVM 17.0.2 UCRT</td>
+<td>x86_64</td>
+<td></td>
+</tr>
+<tr>
+<td>3.0.11</td>
+<td>Windows</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 w/ LLVM 17.0.2 MSVCRT</td>
+<td>x86_64</td>
+<td></td>
+</tr>
+<tr>
+<td>3.0.11</td>
 <td>macOS</td>
-<td>macOS 13.4</td>
+<td>macOS 13.6</td>
 <td>AppleClang 14.0.3</td>
 <td>x86_64</td>
 <td></td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>macOS</td>
-<td>macOS 13.4</td>
+<td>macOS 13.6</td>
 <td>AppleClang 14.0.3</td>
 <td>arm64</td>
 <td></td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Android</td>
 <td>RockyLinux 8.8</td>
 <td>ndk r23c</td>
@@ -674,7 +728,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>android-24, -static</td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Android</td>
 <td>RockyLinux 8.8</td>
 <td>ndk r23c</td>
@@ -682,7 +736,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>android-24, -static</td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Android</td>
 <td>RockyLinux 8.8</td>
 <td>ndk r23c</td>
@@ -690,7 +744,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>android-24, -static</td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Android</td>
 <td>RockyLinux 8.8</td>
 <td>ndk r23c</td>
@@ -698,7 +752,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>android-24, -static</td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Android</td>
 <td>RockyLinux 9.2</td>
 <td>ndk r25c</td>
@@ -706,7 +760,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>android-27, -static</td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Android</td>
 <td>RockyLinux 9.2</td>
 <td>ndk r25c</td>
@@ -714,7 +768,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>android-27, -static</td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Android</td>
 <td>RockyLinux 9.2</td>
 <td>ndk r25c</td>
@@ -722,10 +776,42 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>android-27, -static</td>
 </tr>
 <tr>
-<td>3.0.10</td>
+<td>3.0.11</td>
 <td>Android</td>
 <td>RockyLinux 9.2</td>
 <td>ndk r25c</td>
+<td>x86_64</td>
+<td>android-27, -static</td>
+</tr>
+<tr>
+<td>3.0.11</td>
+<td>Android</td>
+<td>RockyLinux 9.2</td>
+<td>ndk r26</td>
+<td>arm</td>
+<td>android-27, -static</td>
+</tr>
+<tr>
+<td>3.0.11</td>
+<td>Android</td>
+<td>RockyLinux 9.2</td>
+<td>ndk r26</td>
+<td>arm64</td>
+<td>android-27, -static</td>
+</tr>
+<tr>
+<td>3.0.11</td>
+<td>Android</td>
+<td>RockyLinux 9.2</td>
+<td>ndk r26</td>
+<td>x86</td>
+<td>android-27, -static</td>
+</tr>
+<tr>
+<td>3.0.11</td>
+<td>Android</td>
+<td>RockyLinux 9.2</td>
+<td>ndk r26</td>
 <td>x86_64</td>
 <td>android-27, -static</td>
 </tr>
@@ -754,135 +840,170 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 </thead>
 <tbody>
 <tr>
-<td>3.1.21</td>
+<td>3.1.22</td>
 <td>Windows</td>
 <td>Windows 10 10.0.19045</td>
 <td>VS2015 Update 3</td>
 <td>x86</td>
 </tr>
 <tr>
-<td>3.1.21</td>
+<td>3.1.22</td>
 <td>Windows</td>
 <td>Windows 10 10.0.19045</td>
 <td>VS2015 Update 3</td>
 <td>x86_64</td>
 </tr>
 <tr>
-<td>3.1.21</td>
+<td>3.1.22</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2017 15.9.54</td>
+<td>VS2017 15.9.57</td>
 <td>x86</td>
 </tr>
 <tr>
-<td>3.1.21</td>
+<td>3.1.22</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2017 15.9.54</td>
+<td>VS2017 15.9.57</td>
 <td>x86_64</td>
 </tr>
 <tr>
-<td>3.1.21</td>
+<td>3.1.22</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.26</td>
+<td>VS2019 16.11.30</td>
 <td>x86</td>
 </tr>
 <tr>
-<td>3.1.21</td>
+<td>3.1.22</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.26</td>
+<td>VS2019 16.11.30</td>
 <td>x86_64</td>
 </tr>
 <tr>
-<td>3.1.21</td>
+<td>3.1.22</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2022 17.6.2</td>
+<td>VS2022 17.7.4</td>
 <td>x86_64</td>
 </tr>
 <tr>
-<td>3.1.21</td>
+<td>3.1.22</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ GCC 8.1.0</td>
 <td>x86_64</td>
 </tr>
 <tr>
-<td>3.1.21</td>
+<td>3.1.22</td>
 <td>macOS</td>
-<td>macOS 13.4</td>
+<td>macOS 13.6</td>
 <td>AppleClang 14.0.3</td>
 <td>Unified (x86_64, arm64)</td>
 </tr>
 <tr>
-<td>3.3.5</td>
+<td>3.3.7</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.26</td>
+<td>VS2019 16.11.30</td>
 <td>x86_64</td>
 </tr>
 <tr>
-<td>3.3.5</td>
+<td>3.3.7</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2019 17.6.2</td>
+<td>VS2019 17.7.4</td>
 <td>x86_64</td>
 </tr>
 <tr>
-<td>3.3.5</td>
+<td>3.3.7</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ GCC 11.2.0</td>
 <td>x86_64</td>
 </tr>
 <tr>
-<td>3.3.5</td>
+<td>3.3.7</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>MinGW-w64 w/ GCC 12.2.0</td>
+<td>MinGW-w64 w/ GCC 12.2.0 MSVCRT</td>
 <td>x86_64</td>
 </tr>
 <tr>
-<td>3.3.5</td>
+<td>3.3.7</td>
+<td>Windows</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 w/ GCC 12.2.0 UCRT</td>
+<td>x86_64</td>
+</tr>
+<tr>
+<td>3.3.7</td>
+<td>Windows</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 w/ GCC 13.2.0 MSVCRT</td>
+<td>x86_64</td>
+</tr>
+<tr>
+<td>3.3.7</td>
+<td>Windows</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 w/ GCC 13.2.0 UCRT</td>
+<td>x86_64</td>
+</tr>
+<tr>
+<td>3.3.7</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ LLVM 15.0.0 (ucrt)</td>
 <td>x86_64</td>
 </tr>
 <tr>
-<td>3.3.5</td>
+<td>3.3.7</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ LLVM 15.0.0 (msvcrt)</td>
 <td>x86_64</td>
 </tr>
 <tr>
-<td>3.3.5</td>
+<td>3.3.7</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>MinGW-w64 w/ LLVM 16.0.5 (ucrt)</td>
+<td>MinGW-w64 w/ LLVM 16.0.6 (ucrt)</td>
 <td>x86_64</td>
 </tr>
 <tr>
-<td>3.3.5</td>
+<td>3.3.7</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22621</td>
-<td>MinGW-w64 w/ LLVM 16.0.5 (msvcrt)</td>
+<td>MinGW-w64 w/ LLVM 16.0.6 (msvcrt)</td>
 <td>x86_64</td>
 </tr>
 <tr>
-<td>3.3.5</td>
+<td>3.3.7</td>
+<td>Windows</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 w/ LLVM 17.0.2 (ucrt)</td>
+<td>x86_64</td>
+</tr>
+<tr>
+<td>3.3.7</td>
+<td>Windows</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 w/ LLVM 17.0.2 (msvcrt)</td>
+<td>x86_64</td>
+</tr>
+<tr>
+<td>3.3.7</td>
 <td>macOS</td>
-<td>macOS 13.4</td>
+<td>macOS 13.6</td>
 <td>AppleClang 14.0.3</td>
 <td>Unified (x86_64, arm64)</td>
 </tr>
 </tbody>
 </table>
 <h2 id="qt-构建表">Qt 构建表</h2>
-<p><strong>注：因为 Qt 移除了对 32 位 Windows 的支持，我们也不会为 32 位 Windows 提供 Qt 6 的构建。</strong>
+<p><strong>注：因为 Qt 6 移除了对 32 位 Windows 的支持，我们也不会为 32 位 Windows 提供 Qt 6 的构建。</strong><br>
 <strong>如果需要非 LTS 版本的静态构建，请直接联系我寻求商业定制。</strong></p>
 <table>
 <thead>
@@ -896,174 +1017,6 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>5.12.12</td>
-<td>Windows 10 10.0.19045</td>
-<td>VS2015 Update 3</td>
-<td>x86</td>
-<td></td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>Windows 10 10.0.19045</td>
-<td>VS2015 Update 3</td>
-<td>x86</td>
-<td>-static(Lite)</td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>Windows 10 10.0.19045</td>
-<td>VS2015 Update 3</td>
-<td>x86_64</td>
-<td></td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2017 15.9.55 w/ Windows SDK 10.0.17763</td>
-<td>x86</td>
-<td></td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2017 15.9.55 w/ Windows SDK 10.0.17763</td>
-<td>x86</td>
-<td>-static(Lite)</td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2017 15.9.55 w/ Windows SDK 10.0.17763</td>
-<td>x86_64</td>
-<td></td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.28 w/ Windows SDK 10.0.22000</td>
-<td>x86</td>
-<td></td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.28 w/ Windows SDK 10.0.22000</td>
-<td>x86_64</td>
-<td></td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>Windows 10 10.0.19045</td>
-<td>MinGW-w64 w/ GCC 7.3.0</td>
-<td>x86</td>
-<td></td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>Windows 10 10.0.19045</td>
-<td>MinGW-w64 w/ GCC 7.3.0</td>
-<td>x86_64</td>
-<td></td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>RockyLinux 8.8</td>
-<td>GCC 8.5.0</td>
-<td>x86_64</td>
-<td>-static(Lite)</td>
-<td>Won&rsquo;t upload, only used in QQtPatcher</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>macOS 11.7.8</td>
-<td>AppleClang 12.0.5</td>
-<td>x86_64</td>
-<td>-static(Lite)</td>
-<td>Won&rsquo;t upload, only used in QQtPatcher</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>Windows 11 10.0.22621</td>
-<td>ndk r21e</td>
-<td>arm</td>
-<td>android-21</td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>Windows 11 10.0.22621</td>
-<td>ndk r21e</td>
-<td>arm64</td>
-<td>android-21</td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>Windows 11 10.0.22621</td>
-<td>ndk r21e</td>
-<td>x86</td>
-<td>android-21</td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>RockyLinux 8.8</td>
-<td>ndk r21e</td>
-<td>arm</td>
-<td>android-21</td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>RockyLinux 8.8</td>
-<td>ndk r21e</td>
-<td>arm64</td>
-<td>android-21</td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>RockyLinux 8.8</td>
-<td>ndk r21e</td>
-<td>x86</td>
-<td>android-21</td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>macOS 11.7.8</td>
-<td>ndk r21e</td>
-<td>arm</td>
-<td>android-21</td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>macOS 11.7.8</td>
-<td>ndk r21e</td>
-<td>arm64</td>
-<td>android-21</td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>macOS 11.7.8</td>
-<td>ndk r21e</td>
-<td>x86</td>
-<td>android-21</td>
-<td>√</td>
-</tr>
 <tr>
 <td>5.15.10</td>
 <td>Windows 10 10.0.19045</td>
@@ -1786,63 +1739,62 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
         </div>
       </main>
     </div>
-    <aside id="sidebar" class="default-animation">
-      <div id="header-topbar" class="default-animation"></div>
-      <div id="header-wrapper" class="default-animation">
-        <div id="header" class="default-animation">
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
 <p class="fsu0413_logo"><img src="https://codereview.qt-project.org/static/logo_qt.png" /></p>
         </div>
       </div>
-      <div id="homelinks" class="default-animation homelinks">
+      <div id="R-homelinks" class="default-animation homelinks">
         <ul>
           <li><a class="padding" href="/zh-cn/index.html"><i class='fas fa-home'></i> 主页</a></li>
         </ul>
         <hr class="padding">
       </div>
-      <div id="content-wrapper" class="highlightable">
-        <div id="topics">
-          <ul class="enlarge morespace">
-          <li data-nav-id="/zh-cn/5.12-series/index.html" class=""><a class="padding" href="/zh-cn/5.12-series/index.html">5.12 系列</a><ul id="subsections-9aeb85270de661fbbb0f6e6b161fbf7c" class="morespace">
-          <li data-nav-id="/zh-cn/5.12-series/5.12.12-for-windows/index.html" class=""><a class="padding" href="/zh-cn/5.12-series/5.12.12-for-windows/index.html">5.12.12 的 Windows 版本</a></li>
-          <li data-nav-id="/zh-cn/5.12-series/5.12.12-for-android/index.html" class=""><a class="padding" href="/zh-cn/5.12-series/5.12.12-for-android/index.html">5.12.12 的安卓版本</a></li></ul></li>
-          <li data-nav-id="/zh-cn/5.15-series/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/index.html">5.15 系列</a><ul id="subsections-6265c888ec9e92bab195ca36e833839a" class="morespace">
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/zh-cn/5.15-series/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/index.html">5.15 系列</a><ul id="R-subsections-6265c888ec9e92bab195ca36e833839a" class="morespace collapsible-menu">
           <li data-nav-id="/zh-cn/5.15-series/5.15.10-for-windows/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.10-for-windows/index.html">5.15.10 的 Windows 版本</a></li>
           <li data-nav-id="/zh-cn/5.15-series/5.15.10-for-macos/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.10-for-macos/index.html">5.15.10 的 macOS 版本</a></li>
           <li data-nav-id="/zh-cn/5.15-series/5.15.10-for-android/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.10-for-android/index.html">5.15.10 的安卓版本</a></li>
           <li data-nav-id="/zh-cn/5.15-series/5.15.10-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.10-for-webassembly/index.html">5.15.10 的 WebAssembly 版本</a></li></ul></li>
-          <li data-nav-id="/zh-cn/6.2-series/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/index.html">6.2 系列</a><ul id="subsections-106fe2487cf90a2754e3f4a06da071f3" class="morespace">
+          <li data-nav-id="/zh-cn/6.2-series/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/index.html">6.2 系列</a><ul id="R-subsections-106fe2487cf90a2754e3f4a06da071f3" class="morespace collapsible-menu">
           <li data-nav-id="/zh-cn/6.2-series/6.2.5-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.5-for-windows/index.html">6.2.5 的 Windows 版本</a></li>
           <li data-nav-id="/zh-cn/6.2-series/6.2.5-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.5-for-macos/index.html">6.2.5 的 macOS 版本</a></li>
           <li data-nav-id="/zh-cn/6.2-series/6.2.5-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.5-for-android/index.html">6.2.5 的安卓版本</a></li>
           <li data-nav-id="/zh-cn/6.2-series/6.2.5-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.5-for-webassembly/index.html">6.2.5 的 WebAssembly 版本</a></li></ul></li>
-          <li data-nav-id="/zh-cn/6.5-series/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/index.html">6.5 系列</a><ul id="subsections-a4a8142fcca3c91cc086ca3a4afab485" class="morespace">
+          <li data-nav-id="/zh-cn/6.5-series/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/index.html">6.5 系列</a><ul id="R-subsections-a4a8142fcca3c91cc086ca3a4afab485" class="morespace collapsible-menu">
           <li data-nav-id="/zh-cn/6.5-series/6.5.2-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.2-for-windows/index.html">6.5.2 的 Windows 版本</a></li>
           <li data-nav-id="/zh-cn/6.5-series/6.5.2-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.2-for-macos/index.html">6.5.2 的 macOS 版本</a></li>
           <li data-nav-id="/zh-cn/6.5-series/6.5.2-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.2-for-android/index.html">6.5.2 的安卓版本</a></li>
           <li data-nav-id="/zh-cn/6.5-series/6.5.2-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.2-for-webassembly/index.html">6.5.2 的 WebAssembly 版本</a></li></ul></li>
-          <li data-nav-id="/zh-cn/miscellaneous/index.html" class="parent "><a class="padding" href="/zh-cn/miscellaneous/index.html">杂项</a><ul id="subsections-caff385dd336661e79f294480ee20799" class="morespace">
+          <li data-nav-id="/zh-cn/miscellaneous/index.html" class="parent "><a class="padding" href="/zh-cn/miscellaneous/index.html">杂项</a><ul id="R-subsections-caff385dd336661e79f294480ee20799" class="morespace collapsible-menu">
           <li data-nav-id="/zh-cn/miscellaneous/notes-for-this-repo/index.html" class=""><a class="padding" href="/zh-cn/miscellaneous/notes-for-this-repo/index.html">本仓库的一些备注</a></li>
           <li data-nav-id="/zh-cn/miscellaneous/current-build-status/index.html" class="active"><a class="padding" href="/zh-cn/miscellaneous/current-build-status/index.html">当前构建状态</a></li>
           <li data-nav-id="/zh-cn/miscellaneous/current-failures/index.html" class=""><a class="padding" href="/zh-cn/miscellaneous/current-failures/index.html">当前的失败项</a></li>
           <li data-nav-id="/zh-cn/miscellaneous/histories/index.html" class=""><a class="padding" href="/zh-cn/miscellaneous/histories/index.html">之前的历史</a></li></ul></li>
-          <li data-nav-id="/zh-cn/legacy-lts-series/index.html" class=""><a class="padding" href="/zh-cn/legacy-lts-series/index.html">遗留的长期支持版本系列</a><ul id="subsections-2da9a100302eca246d29f40ea41d2bf7" class="morespace">
-          <li data-nav-id="/zh-cn/legacy-lts-series/4.8-series/index.html" class="alwaysopen"><a class="padding" href="/zh-cn/legacy-lts-series/4.8-series/index.html">4.8 系列</a><ul id="subsections-6243f73e32eaaf24308f7dbe5cb00e04" class="morespace">
+          <li data-nav-id="/zh-cn/legacy-lts-series/index.html" class=""><a class="padding" href="/zh-cn/legacy-lts-series/index.html">遗留的长期支持版本系列</a><ul id="R-subsections-2da9a100302eca246d29f40ea41d2bf7" class="morespace collapsible-menu">
+          <li data-nav-id="/zh-cn/legacy-lts-series/4.8-series/index.html" class="alwaysopen"><a class="padding" href="/zh-cn/legacy-lts-series/4.8-series/index.html">4.8 系列</a><ul id="R-subsections-6243f73e32eaaf24308f7dbe5cb00e04" class="morespace collapsible-menu">
           <li data-nav-id="/zh-cn/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html" class=""><a class="padding" href="/zh-cn/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html">4.8.7 的 Windows 版本</a></li>
           <li data-nav-id="/zh-cn/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html" class=""><a class="padding" href="/zh-cn/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html">4.8.7 的 macOS 版本</a></li></ul></li>
-          <li data-nav-id="/zh-cn/legacy-lts-series/5.6-series/index.html" class="alwaysopen"><a class="padding" href="/zh-cn/legacy-lts-series/5.6-series/index.html">5.6 系列</a><ul id="subsections-5ca2792ddc9a9825cf8ec8f6764a4097" class="morespace">
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.6-series/index.html" class="alwaysopen"><a class="padding" href="/zh-cn/legacy-lts-series/5.6-series/index.html">5.6 系列</a><ul id="R-subsections-5ca2792ddc9a9825cf8ec8f6764a4097" class="morespace collapsible-menu">
           <li data-nav-id="/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html" class=""><a class="padding" href="/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html">5.6.3 的 Windows 版本</a></li>
           <li data-nav-id="/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html" class=""><a class="padding" href="/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html">5.6.3 的 macOS 版本</a></li>
           <li data-nav-id="/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-android/index.html" class=""><a class="padding" href="/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-android/index.html">5.6.3 的安卓版本</a></li></ul></li>
-          <li data-nav-id="/zh-cn/legacy-lts-series/5.9-series/index.html" class="alwaysopen"><a class="padding" href="/zh-cn/legacy-lts-series/5.9-series/index.html">5.9 系列</a><ul id="subsections-b9f9d985d68e657d4e7d74700e7241c3" class="morespace">
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.9-series/index.html" class="alwaysopen"><a class="padding" href="/zh-cn/legacy-lts-series/5.9-series/index.html">5.9 系列</a><ul id="R-subsections-b9f9d985d68e657d4e7d74700e7241c3" class="morespace collapsible-menu">
           <li data-nav-id="/zh-cn/legacy-lts-series/5.9-series/5.9.9-for-windows/index.html" class=""><a class="padding" href="/zh-cn/legacy-lts-series/5.9-series/5.9.9-for-windows/index.html">5.9.9 的 Windows 版本</a></li>
           <li data-nav-id="/zh-cn/legacy-lts-series/5.9-series/5.9.9-for-macos/index.html" class=""><a class="padding" href="/zh-cn/legacy-lts-series/5.9-series/5.9.9-for-macos/index.html">5.9.9 的 macOS 版本</a></li>
           <li data-nav-id="/zh-cn/legacy-lts-series/5.9-series/5.9.9-for-android/index.html" class=""><a class="padding" href="/zh-cn/legacy-lts-series/5.9-series/5.9.9-for-android/index.html">5.9.9 的安卓版本</a></li></ul></li>
-          <li data-nav-id="/zh-cn/legacy-lts-series/5.12-series/index.html" class="alwaysopen"><a class="padding" href="/zh-cn/legacy-lts-series/5.12-series/index.html">5.12 系列</a><ul id="subsections-8f2a6bd86210a6244fd0ff0c916f8279" class="morespace">
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.12-series/index.html" class="alwaysopen"><a class="padding" href="/zh-cn/legacy-lts-series/5.12-series/index.html">5.12 系列</a><ul id="R-subsections-8f2a6bd86210a6244fd0ff0c916f8279" class="morespace collapsible-menu">
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-windows/index.html" class=""><a class="padding" href="/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-windows/index.html">5.12.12 的 Windows 版本</a></li>
           <li data-nav-id="/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html" class=""><a class="padding" href="/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html">5.12.12 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-android/index.html" class=""><a class="padding" href="/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-android/index.html">5.12.12 的安卓版本</a></li>
           <li data-nav-id="/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html">5.12.12 的 WebAssembly 版本</a></li></ul></li></ul></li>
           </ul>
         </div>
-        <div id="shortcuts">
+        <div id="R-shortcuts">
           <div class="nav-title padding">更多</div>
           <ul class="space">
             <li><a class="padding" href="https://github.com/Fsu0413/QtCompile"><i class='fab fa-fw fa-github'></i> GitHub 仓库</a></li>
@@ -1850,41 +1802,41 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
           </ul>
         </div>
         <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter"></div>
-        <div id="menu-footer">
+        <div id="R-menu-footer">
           <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter">
-          <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showLangSwitch showVariantSwitch">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showLangSwitch showVariantSwitch">
             <ul>
-              <li id="select-language-container" class="footerLangSwitch showLangSwitch">
+              <li id="R-select-language-container" class="footerLangSwitch showLangSwitch">
                 <div class="padding menu-control">
                   <i class="fas fa-language fa-fw"></i>
                   <span>&nbsp;</span>
                   <div class="control-style">
-                    <label class="a11y-only" for="select-language">语言</label>
-                    <select id="select-language" onchange="location = baseUri + this.value;">
-                      <option lang="en" id="en" value="/miscellaneous/current-build-status/index.html">English</option>
-                      <option lang="zh-cn" id="zh-cn" value="/zh-cn/miscellaneous/current-build-status/index.html" selected>简体中文（中国）</option>
+                    <label class="a11y-only" for="R-select-language">语言</label>
+                    <select id="R-select-language" onchange="location = baseUri + this.value;">
+                      <option id="R-en" value="/miscellaneous/current-build-status/index.html" lang="en">English</option>
+                      <option id="R-zh-cn" value="/zh-cn/miscellaneous/current-build-status/index.html" lang="zh-cn" selected>简体中文（中国）</option>
                     </select>
                   </div>
                   <div class="clear"></div>
                 </div>
               </li>
-              <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
+              <li id="R-select-variant-container" class="footerVariantSwitch showVariantSwitch">
                 <div class="padding menu-control">
                   <i class="fas fa-paint-brush fa-fw"></i>
                   <span>&nbsp;</span>
                   <div class="control-style">
-                    <label class="a11y-only" for="select-variant">主题</label>
-                    <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
-                      <option id="relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
-                      <option id="relearn-bright" value="relearn-bright">Relearn Bright</option>
-                      <option id="relearn-light" value="relearn-light">Relearn Light</option>
-                      <option id="zen-dark" value="zen-dark">Zen Dark</option>
-                      <option id="zen-light" value="zen-light">Zen Light</option>
-                      <option id="learn" value="learn">Learn</option>
-                      <option id="neon" value="neon">Neon</option>
-                      <option id="red" value="red">Red</option>
-                      <option id="blue" value="blue">Blue</option>
-                      <option id="green" value="green">Green</option>
+                    <label class="a11y-only" for="R-select-variant">主题</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
+                      <option id="R-relearn-bright" value="relearn-bright">Relearn Bright</option>
+                      <option id="R-relearn-light" value="relearn-light">Relearn Light</option>
+                      <option id="R-zen-dark" value="zen-dark">Zen Dark</option>
+                      <option id="R-zen-light" value="zen-light">Zen Light</option>
+                      <option id="R-learn" value="learn">Learn</option>
+                      <option id="R-neon" value="neon">Neon</option>
+                      <option id="R-red" value="red">Red</option>
+                      <option id="R-blue" value="blue">Blue</option>
+                      <option id="R-green" value="green">Green</option>
                     </select>
                   </div>
                   <div class="clear"></div>
@@ -1903,8 +1855,8 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
               </li>
             </ul>
           </div>
-          <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 02 Sep 2023 17:33:27 CST</p>
+          <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
+Site generated: Fri, 06 Oct 2023 22:32:53 CST</p>
 
           </div>
         </div>

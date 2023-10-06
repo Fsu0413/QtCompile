@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.118.2">
-    <meta name="generator" content="Relearn 5.20.0">
+    <meta name="generator" content="Hugo 0.119.0">
+    <meta name="generator" content="Relearn 5.22.1">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>Notes for this repo :: Fsu0413&#39;s Original Qt builds</title>
@@ -18,7 +18,7 @@
     <link href="/css/perfect-scrollbar.min.css" rel="stylesheet">
     <link href="/css/fonts.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css" rel="stylesheet"></noscript>
     <link href="/css/theme.css" rel="stylesheet">
-    <link href="/css/theme-relearn-dark.css" rel="stylesheet" id="variant-style">
+    <link href="/css/theme-relearn-dark.css" rel="stylesheet" id="R-variant-style">
     <link href="/css/variant.css" rel="stylesheet">
     <link href="/css/print.css" rel="stylesheet" media="print">
     <link href="/css/ie.css" rel="stylesheet">
@@ -34,6 +34,8 @@
       window.T_Copied_to_clipboard = 'Copied to clipboard!';
       window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
       window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      window.T_Reset_view = 'Reset view';
+      window.T_View_reset = 'View reset!';
       window.T_No_results_found = 'No results found for \u0022{0}\u0022';
       window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
       // some further base stuff
@@ -68,24 +70,23 @@
 </style>
   </head>
   <body class="mobile-support html disableInlineCopyToClipboard" data-url="/miscellaneous/notes-for-this-repo/index.html">
-    <div id="body" class="default-animation">
-      <div id="sidebar-overlay"></div>
-      <div id="toc-overlay"></div>
-      <nav id="topbar" class="highlightable">
-        <div>
-          <div id="breadcrumbs">
-            <span id="sidebar-toggle-span">
-              <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
-            </span>
-            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
-            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Fsu0413&#39;s Original Qt builds</span></a><meta itemprop="position" content="1"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/miscellaneous/index.html"><span itemprop="name">Miscellaneous</span></a><meta itemprop="position" content="2"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Notes for this repo</span><meta itemprop="position" content="3"></li>
-            </ol>
-          </div>
-          <div class="default-animation progress">
-            <div class="toc-wrapper"><nav id="TableOfContents">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+              <button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)">
+                <i class="fa-fw fas fa-bars"></i>
+              </button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+              <button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)">
+                <i class="fa-fw fas fa-list-alt"></i>
+              </button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
   <ul>
     <li><a href="#chinese--multilingual-support">Chinese / Multilingual Support</a></li>
     <li><a href="#website-mirror">Website Mirror</a></li>
@@ -95,7 +96,6 @@
     <li><a href="#notes-on-users-of-qt-of-old-version">Notes on users of Qt of old version</a></li>
     <li><a href="#notes-on-the-distributed-compressed-files">Notes on the distributed compressed files</a></li>
     <li><a href="#difference-of-this-qt-and-offically-distributed-qt-updated-8th-jan-2023">Difference of this Qt and offically distributed Qt (Updated 8th Jan, 2023)</a></li>
-    <li><a href="#notes-for-qt-versions-before-514">Notes for Qt versions before 5.14</a></li>
     <li><a href="#qt-offering-changes-2020-updated-14th-apr-2022">Qt offering changes 2020 (updated 14th Apr, 2022)</a></li>
     <li><a href="#qt-6-support-platforms-updated-14th-jun-2023">Qt 6 support platforms (updated 14th Jun, 2023)</a></li>
     <li><a href="#gpg-sign-updated-6th-feb-2021">GPG sign (Updated 6th Feb, 2021)</a></li>
@@ -105,11 +105,32 @@
     <li><a href="#existing-patches">Existing Patches</a></li>
   </ul>
 </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Fsu0413&#39;s Original Qt builds</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/miscellaneous/index.html"><span itemprop="name">Miscellaneous</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Notes for this repo</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+              <button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More">
+                <i class="fa-fw fas fa-ellipsis-v"></i>
+              </button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </nav>
-      <main id="body-inner" class="highlightable default" tabindex="-1">
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
         <div class="flex-block-wrapper">
           <article class="default">
             <header class="headline">
@@ -200,13 +221,6 @@ This leads to a problem that the program is reported to be not trusted when runn
 There is no solution for this problem at the moment. I won&rsquo;t buy certificate for verification until commericial customization started and I earned some money by it in the future.<br>
 It is possible to implement GPG verifiiation before certificate can be bought. (Although it has been put away for a long time&hellip;)<br>
 (Qt before 5.14 can&rsquo;t be trusted due to patch of Qt after install. Qt 5.14 and later can be relocated which resolves this problem)</p>
-<h2 id="notes-for-qt-versions-before-514">Notes for Qt versions before 5.14</h2>
-<p>Qt before 5.14 should reject using the binary files which were just uncompressed from the tarball.<br>
-It should report &ldquo;Qt is not properly installed, please run <code>make install</code>&rdquo; or something like this in Qt creator.</p>
-<p>I redistributed a version of QQtPatcher in the package, you should run it to make Qt running.</p>
-<p>The source code of the distributed QQtPatcher is on <a href="https://github.com/Fsu0413/QQtPatcher" target="_blank">GitHub</a>. It is a free software and distributed in public domain.</p>
-<p>Do not put the library in a directory which contains non-ascii character or spaces.<br>
-Bug will cause that the path of qmake cannot be properly parsed by Qt Creator.</p>
 <h2 id="qt-offering-changes-2020-updated-14th-apr-2022">Qt offering changes 2020 (updated 14th Apr, 2022)</h2>
 <p>Qt just announced <a href="https://www.qt.io/blog/qt-offering-changes-2020" target="_blank">Qt offering changes 2020</a>.<br>
 Following is my opinion of this blog.</p>
@@ -223,7 +237,7 @@ This will definitely lose money.</p>
 <p>I will continue my amateur job of building Qt. I hope Qt for MCUs will be open source soon.</p>
 <p>(Appended 2nd Sep, 2023) I have been lucky enough to have spotted Qt for MCUs in a small project in my company. It is provided in binary form.<br>
 It uses completely different base structure than desktop and mobile one - it does not use current existing free software like Qt Base, etc..</p>
-<p>I did no studying or investigating about that part since my development has no relationship about Qt, so the above words is all I know about it.</p>
+<p>I did no studying or investigating about that part since my development at work has no relationship with Qt, so the above words is all I know about it.</p>
 <h2 id="qt-6-support-platforms-updated-14th-jun-2023">Qt 6 support platforms (updated 14th Jun, 2023)</h2>
 <p>See <a href="https://bugreports.qt.io/browse/QTBUG-113979" target="_blank">Qt 6.6 TQC Supported Targets</a> and its predecessors.</p>
 <p>Currently I am building Qt 6 for following platforms:</p>
@@ -268,30 +282,6 @@ If subsequent version of Qt 5.15 remains private we won&rsquo;t upgrade OpenSSL 
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>5.12 Series</td>
-<td>Windows</td>
-<td>11th Sep, 2023</td>
-<td>Same as EOL of OpenSSL 1.1.1 series, with VS version update within VS2017/9, no builds for VS2022</td>
-</tr>
-<tr>
-<td></td>
-<td><del>macOS</del></td>
-<td><del>25th Nov, 2021</del> (EOLed)</td>
-<td><del>Same as EOL of Qt 5.12</del> <strong>A patch has released after 5.12 EOL and an extra package is made for it on macOS</strong>.</td>
-</tr>
-<tr>
-<td></td>
-<td>Android</td>
-<td>11th Sep, 2023</td>
-<td>Same as EOL of OpenSSL 1.1.1 series. Will stuck at Android NDK r21 LTS series</td>
-</tr>
-<tr>
-<td></td>
-<td><del>WebAssembly</del></td>
-<td><del>25th Nov, 2021</del> (EOLed)</td>
-<td><del>Same as EOL of Qt 5.12</del></td>
-</tr>
 <tr>
 <td>5.15 Series</td>
 <td>Windows 11 with VS2019 (Shared) / VS2022</td>
@@ -377,11 +367,6 @@ If subsequent version of Qt 5.15 remains private we won&rsquo;t upgrade OpenSSL 
 </thead>
 <tbody>
 <tr>
-<td>5.15.11</td>
-<td>5th Oct, 2022</td>
-<td>5th Oct, 2023</td>
-</tr>
-<tr>
 <td>5.15.12</td>
 <td>27th Dec, 2022</td>
 <td>27th Dec, 2023</td>
@@ -400,11 +385,6 @@ If subsequent version of Qt 5.15 remains private we won&rsquo;t upgrade OpenSSL 
 <td>5.15.15</td>
 <td>31st Aug, 2023</td>
 <td>31st Aug, 2024 (Need to check if Qt will really release this version to opensource on that day)</td>
-</tr>
-<tr>
-<td>6.2.6</td>
-<td>27th Sep, 2022</td>
-<td>27th Sep, 2023</td>
 </tr>
 <tr>
 <td>6.2.7</td>
@@ -437,96 +417,77 @@ Version number in brackets are the version when the corresponding patch will be 
 <thead>
 <tr>
 <th>Issue \ Qt Version</th>
-<th>5.12.12</th>
-<th>5.15.10</th>
-<th>6.2.5</th>
-<th>6.5.3 (est.)</th>
+<th>5.15.11</th>
+<th>6.2.6</th>
+<th>6.5.3</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>CVE-2022-25255</td>
-<td><a href="https://codereview.qt-project.org/c/qt/qtbase/&#43;/396020" target="_blank">√</a></td>
-<td>shipped</td>
-<td>shipped</td>
-<td>shipped</td>
-</tr>
-<tr>
-<td>CVE-2022-27404-27405-27406</td>
-<td>-</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2022-27404-27405-27406-qtbase-5.15.diff" target="_blank">√</a> (5.15.11)</td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2022-27404-27405-27406-qtbase-6.2.diff" target="_blank">√</a> (6.2.6)</td>
-<td>shipped</td>
-</tr>
-<tr>
-<td>CVE-2022-37434</td>
-<td>-</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2022-37434-qtbase-5.15.patch" target="_blank">√</a> (5.15.11)</td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2022-37434-qtbase-6.2.patch" target="_blank">√</a> (6.2.6)</td>
-<td>shipped</td>
-</tr>
-<tr>
 <td>CVE-2023-24607</td>
-<td>-</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-24607-qtbase-5.15.diff" target="_blank">√</a> (5.15.13)</td>
 <td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-24607-qtbase-6.2.diff" target="_blank">√</a> (6.2.8)</td>
 <td>shipped</td>
 </tr>
 <tr>
 <td>CVE-2023-32573</td>
-<td>-</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-32573-qtsvg-5.15.diff" target="_blank">√</a> (5.15.14)</td>
 <td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-32573-qtsvg-6.2.diff" target="_blank">√</a> (6.2.9)</td>
 <td>shipped</td>
 </tr>
 <tr>
 <td>(5.15 series specific) macOS build fix</td>
-<td>-</td>
 <td><a href="https://invent.kde.org/qt/qt/qtlocation-mapboxgl/-/commit/5a07e1967dcc925d9def47accadae991436b9686" title="Patch provided by KDE" target="_blank">macOS only</a> (5.15.14)</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
 <td>CVE-2023-32762</td>
-<td>-</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-32762-qtbase-5.15.diff" target="_blank">√</a> (5.15.14)</td>
 <td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-32762-qtbase-6.2.diff" target="_blank">√</a> (6.2.9)</td>
 <td>shipped</td>
 </tr>
 <tr>
 <td>CVE-2023-32763</td>
-<td>-</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-32763-qtbase-5.15.diff" target="_blank">√</a> (5.15.15)</td>
 <td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-32763-qtbase-6.2.diff" target="_blank">√</a> (6.2.9)</td>
 <td>shipped</td>
 </tr>
 <tr>
 <td>CVE-2023-33285</td>
-<td>-</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-33285-qtbase-5.15.diff" target="_blank">√</a> (5.15.14)</td>
 <td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-33285-qtbase-6.2.diff" target="_blank">√</a> (6.2.9)</td>
 <td>shipped</td>
 </tr>
 <tr>
 <td>CVE-2023-34410</td>
-<td>-</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-34410-qtbase-5.15.diff" target="_blank">√</a> (5.15.15)</td>
 <td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-34410-qtbase-6.2.diff" target="_blank">√</a> (6.2.9)</td>
 <td>shipped</td>
 </tr>
 <tr>
 <td>CVE-2023-37369</td>
-<td>-</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-37369-qtbase-5.15.diff" target="_blank">√</a> (5.15.15)</td>
 <td><a href="#" title="Official patch causes CONFLICT. Depends on a commit of Qt 6.2.9. Given up investigating due to no active distro / project is fixing this issue"><strong>×</strong></a> (6.2.10)</td>
 <td>shipped</td>
 </tr>
 <tr>
 <td>CVE-2023-38197</td>
-<td>-</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-38197-qtbase-5.15.diff" target="_blank">√</a> (5.15.15)</td>
 <td><a href="#" title="Depends on patch of CVE-2023-37369"><strong>×</strong></a> (6.2.10)</td>
-<td><strong>x</strong> (6.5.3)</td>
+<td>shipped</td>
+</tr>
+<tr>
+<td>CVE-2023-43114</td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-43114-5.15.patch" target="_blank">√</a> (5.15.16)</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-43114-6.2.patch" target="_blank">√</a> (6.2.10)</td>
+<td>shipped</td>
+</tr>
+<tr>
+<td>CVE-2023-4863</td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-4863-5.15.patch" target="_blank">√</a> (5.15.16)</td>
+<td><a href="#" title="Official patch causes CONFLICT. Since it only updates third-party project let&#39;s wait for later versions"><strong>×</strong></a> (6.2.10)</td>
+<td>shipped</td>
 </tr>
 </tbody>
 </table>
@@ -538,63 +499,62 @@ Version number in brackets are the version when the corresponding patch will be 
         </div>
       </main>
     </div>
-    <aside id="sidebar" class="default-animation">
-      <div id="header-topbar" class="default-animation"></div>
-      <div id="header-wrapper" class="default-animation">
-        <div id="header" class="default-animation">
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
 <p class="fsu0413_logo"><img src="https://codereview.qt-project.org/static/logo_qt.png" /></p>
         </div>
       </div>
-      <div id="homelinks" class="default-animation homelinks">
+      <div id="R-homelinks" class="default-animation homelinks">
         <ul>
           <li><a class="padding" href="/index.html"><i class='fas fa-home'></i> Home</a></li>
         </ul>
         <hr class="padding">
       </div>
-      <div id="content-wrapper" class="highlightable">
-        <div id="topics">
-          <ul class="enlarge morespace">
-          <li data-nav-id="/5.12-series/index.html" class=""><a class="padding" href="/5.12-series/index.html">5.12 series</a><ul id="subsections-2c0b2ae1d884bccfca2dfb294f752a41" class="morespace">
-          <li data-nav-id="/5.12-series/5.12.12-for-windows/index.html" class=""><a class="padding" href="/5.12-series/5.12.12-for-windows/index.html">5.12.12 for Windows</a></li>
-          <li data-nav-id="/5.12-series/5.12.12-for-android/index.html" class=""><a class="padding" href="/5.12-series/5.12.12-for-android/index.html">5.12.12 for Android</a></li></ul></li>
-          <li data-nav-id="/5.15-series/index.html" class=""><a class="padding" href="/5.15-series/index.html">5.15 series</a><ul id="subsections-dfde3005aa1a1a9f4665d82e5e9612d8" class="morespace">
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/5.15-series/index.html" class=""><a class="padding" href="/5.15-series/index.html">5.15 series</a><ul id="R-subsections-dfde3005aa1a1a9f4665d82e5e9612d8" class="morespace collapsible-menu">
           <li data-nav-id="/5.15-series/5.15.10-for-windows/index.html" class=""><a class="padding" href="/5.15-series/5.15.10-for-windows/index.html">5.15.10 for Windows</a></li>
           <li data-nav-id="/5.15-series/5.15.10-for-macos/index.html" class=""><a class="padding" href="/5.15-series/5.15.10-for-macos/index.html">5.15.10 for macOS</a></li>
           <li data-nav-id="/5.15-series/5.15.10-for-android/index.html" class=""><a class="padding" href="/5.15-series/5.15.10-for-android/index.html">5.15.10 for Android</a></li>
           <li data-nav-id="/5.15-series/5.15.10-for-webassembly/index.html" class=""><a class="padding" href="/5.15-series/5.15.10-for-webassembly/index.html">5.15.10 for WebAssembly</a></li></ul></li>
-          <li data-nav-id="/6.2-series/index.html" class=""><a class="padding" href="/6.2-series/index.html">6.2 series</a><ul id="subsections-c2b87e4570db0ee260cc7de2c4b80e99" class="morespace">
+          <li data-nav-id="/6.2-series/index.html" class=""><a class="padding" href="/6.2-series/index.html">6.2 series</a><ul id="R-subsections-c2b87e4570db0ee260cc7de2c4b80e99" class="morespace collapsible-menu">
           <li data-nav-id="/6.2-series/6.2.5-for-windows/index.html" class=""><a class="padding" href="/6.2-series/6.2.5-for-windows/index.html">6.2.5 for Windows</a></li>
           <li data-nav-id="/6.2-series/6.2.5-for-macos/index.html" class=""><a class="padding" href="/6.2-series/6.2.5-for-macos/index.html">6.2.5 for macOS</a></li>
           <li data-nav-id="/6.2-series/6.2.5-for-android/index.html" class=""><a class="padding" href="/6.2-series/6.2.5-for-android/index.html">6.2.5 for Android</a></li>
           <li data-nav-id="/6.2-series/6.2.5-for-webassembly/index.html" class=""><a class="padding" href="/6.2-series/6.2.5-for-webassembly/index.html">6.2.5 for WebAssembly</a></li></ul></li>
-          <li data-nav-id="/6.5-series/index.html" class=""><a class="padding" href="/6.5-series/index.html">6.5 series</a><ul id="subsections-1870fa5a2d192ec83aafe29160552269" class="morespace">
+          <li data-nav-id="/6.5-series/index.html" class=""><a class="padding" href="/6.5-series/index.html">6.5 series</a><ul id="R-subsections-1870fa5a2d192ec83aafe29160552269" class="morespace collapsible-menu">
           <li data-nav-id="/6.5-series/6.5.2-for-windows/index.html" class=""><a class="padding" href="/6.5-series/6.5.2-for-windows/index.html">6.5.2 for Windows</a></li>
           <li data-nav-id="/6.5-series/6.5.2-for-macos/index.html" class=""><a class="padding" href="/6.5-series/6.5.2-for-macos/index.html">6.5.2 for macOS</a></li>
           <li data-nav-id="/6.5-series/6.5.2-for-android/index.html" class=""><a class="padding" href="/6.5-series/6.5.2-for-android/index.html">6.5.2 for Android</a></li>
           <li data-nav-id="/6.5-series/6.5.2-for-webassembly/index.html" class=""><a class="padding" href="/6.5-series/6.5.2-for-webassembly/index.html">6.5.2 for WebAssembly</a></li></ul></li>
-          <li data-nav-id="/miscellaneous/index.html" class="parent "><a class="padding" href="/miscellaneous/index.html">Miscellaneous</a><ul id="subsections-59c45accf7e43befe663d68447543959" class="morespace">
+          <li data-nav-id="/miscellaneous/index.html" class="parent "><a class="padding" href="/miscellaneous/index.html">Miscellaneous</a><ul id="R-subsections-59c45accf7e43befe663d68447543959" class="morespace collapsible-menu">
           <li data-nav-id="/miscellaneous/notes-for-this-repo/index.html" class="active"><a class="padding" href="/miscellaneous/notes-for-this-repo/index.html">Notes for this repo</a></li>
           <li data-nav-id="/miscellaneous/current-build-status/index.html" class=""><a class="padding" href="/miscellaneous/current-build-status/index.html">Current build status</a></li>
           <li data-nav-id="/miscellaneous/current-failures/index.html" class=""><a class="padding" href="/miscellaneous/current-failures/index.html">Current failures</a></li>
           <li data-nav-id="/miscellaneous/histories/index.html" class=""><a class="padding" href="/miscellaneous/histories/index.html">Previous Histories</a></li></ul></li>
-          <li data-nav-id="/legacy-lts-series/index.html" class=""><a class="padding" href="/legacy-lts-series/index.html">Legacy LTS Series</a><ul id="subsections-5cd0b6ebd88105014c721df753e3aba0" class="morespace">
-          <li data-nav-id="/legacy-lts-series/4.8-series/index.html" class="alwaysopen"><a class="padding" href="/legacy-lts-series/4.8-series/index.html">4.8 series</a><ul id="subsections-fde90e23068d0005e4f65b64b693e2ea" class="morespace">
+          <li data-nav-id="/legacy-lts-series/index.html" class=""><a class="padding" href="/legacy-lts-series/index.html">Legacy LTS Series</a><ul id="R-subsections-5cd0b6ebd88105014c721df753e3aba0" class="morespace collapsible-menu">
+          <li data-nav-id="/legacy-lts-series/4.8-series/index.html" class="alwaysopen"><a class="padding" href="/legacy-lts-series/4.8-series/index.html">4.8 series</a><ul id="R-subsections-fde90e23068d0005e4f65b64b693e2ea" class="morespace collapsible-menu">
           <li data-nav-id="/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html" class=""><a class="padding" href="/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html">4.8.7 for Windows</a></li>
           <li data-nav-id="/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html" class=""><a class="padding" href="/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html">4.8.7 for macOS</a></li></ul></li>
-          <li data-nav-id="/legacy-lts-series/5.6-series/index.html" class="alwaysopen"><a class="padding" href="/legacy-lts-series/5.6-series/index.html">5.6 series</a><ul id="subsections-1796b7c7d02948092a040169069ea60b" class="morespace">
+          <li data-nav-id="/legacy-lts-series/5.6-series/index.html" class="alwaysopen"><a class="padding" href="/legacy-lts-series/5.6-series/index.html">5.6 series</a><ul id="R-subsections-1796b7c7d02948092a040169069ea60b" class="morespace collapsible-menu">
           <li data-nav-id="/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html" class=""><a class="padding" href="/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html">5.6.3 for Windows</a></li>
           <li data-nav-id="/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html" class=""><a class="padding" href="/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html">5.6.3 for macOS</a></li>
           <li data-nav-id="/legacy-lts-series/5.6-series/5.6.3-for-android/index.html" class=""><a class="padding" href="/legacy-lts-series/5.6-series/5.6.3-for-android/index.html">5.6.3 for Android</a></li></ul></li>
-          <li data-nav-id="/legacy-lts-series/5.9-series/index.html" class="alwaysopen"><a class="padding" href="/legacy-lts-series/5.9-series/index.html">5.9 series</a><ul id="subsections-f8745d5ebc3d3c70b6d105e44a063326" class="morespace">
+          <li data-nav-id="/legacy-lts-series/5.9-series/index.html" class="alwaysopen"><a class="padding" href="/legacy-lts-series/5.9-series/index.html">5.9 series</a><ul id="R-subsections-f8745d5ebc3d3c70b6d105e44a063326" class="morespace collapsible-menu">
           <li data-nav-id="/legacy-lts-series/5.9-series/5.9.9-for-windows/index.html" class=""><a class="padding" href="/legacy-lts-series/5.9-series/5.9.9-for-windows/index.html">5.9.9 for Windows</a></li>
           <li data-nav-id="/legacy-lts-series/5.9-series/5.9.9-for-macos/index.html" class=""><a class="padding" href="/legacy-lts-series/5.9-series/5.9.9-for-macos/index.html">5.9.9 for macOS</a></li>
           <li data-nav-id="/legacy-lts-series/5.9-series/5.9.9-for-android/index.html" class=""><a class="padding" href="/legacy-lts-series/5.9-series/5.9.9-for-android/index.html">5.9.9 for Android</a></li></ul></li>
-          <li data-nav-id="/legacy-lts-series/5.12-series/index.html" class="alwaysopen"><a class="padding" href="/legacy-lts-series/5.12-series/index.html">5.12 series</a><ul id="subsections-1c9205acacd79bb25b30a84b030ea10b" class="morespace">
+          <li data-nav-id="/legacy-lts-series/5.12-series/index.html" class="alwaysopen"><a class="padding" href="/legacy-lts-series/5.12-series/index.html">5.12 series</a><ul id="R-subsections-1c9205acacd79bb25b30a84b030ea10b" class="morespace collapsible-menu">
+          <li data-nav-id="/legacy-lts-series/5.12-series/5.12.12-for-windows/index.html" class=""><a class="padding" href="/legacy-lts-series/5.12-series/5.12.12-for-windows/index.html">5.12.12 for Windows</a></li>
           <li data-nav-id="/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html" class=""><a class="padding" href="/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html">5.12.12 for macOS</a></li>
+          <li data-nav-id="/legacy-lts-series/5.12-series/5.12.12-for-android/index.html" class=""><a class="padding" href="/legacy-lts-series/5.12-series/5.12.12-for-android/index.html">5.12.12 for Android</a></li>
           <li data-nav-id="/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html" class=""><a class="padding" href="/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html">5.12.12 for WebAssembly</a></li></ul></li></ul></li>
           </ul>
         </div>
-        <div id="shortcuts">
+        <div id="R-shortcuts">
           <div class="nav-title padding">More</div>
           <ul class="space">
             <li><a class="padding" href="https://github.com/Fsu0413/QtCompile"><i class='fab fa-fw fa-github'></i> GitHub repo</a></li>
@@ -602,41 +562,41 @@ Version number in brackets are the version when the corresponding patch will be 
           </ul>
         </div>
         <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter"></div>
-        <div id="menu-footer">
+        <div id="R-menu-footer">
           <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter">
-          <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showLangSwitch showVariantSwitch">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showLangSwitch showVariantSwitch">
             <ul>
-              <li id="select-language-container" class="footerLangSwitch showLangSwitch">
+              <li id="R-select-language-container" class="footerLangSwitch showLangSwitch">
                 <div class="padding menu-control">
                   <i class="fas fa-language fa-fw"></i>
                   <span>&nbsp;</span>
                   <div class="control-style">
-                    <label class="a11y-only" for="select-language">Language</label>
-                    <select id="select-language" onchange="location = baseUri + this.value;">
-                      <option lang="en" id="en" value="/miscellaneous/notes-for-this-repo/index.html" selected>English</option>
-                      <option lang="zh-cn" id="zh-cn" value="/zh-cn/miscellaneous/notes-for-this-repo/index.html">简体中文（中国）</option>
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = baseUri + this.value;">
+                      <option id="R-en" value="/miscellaneous/notes-for-this-repo/index.html" lang="en" selected>English</option>
+                      <option id="R-zh-cn" value="/zh-cn/miscellaneous/notes-for-this-repo/index.html" lang="zh-cn">简体中文（中国）</option>
                     </select>
                   </div>
                   <div class="clear"></div>
                 </div>
               </li>
-              <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
+              <li id="R-select-variant-container" class="footerVariantSwitch showVariantSwitch">
                 <div class="padding menu-control">
                   <i class="fas fa-paint-brush fa-fw"></i>
                   <span>&nbsp;</span>
                   <div class="control-style">
-                    <label class="a11y-only" for="select-variant">Theme</label>
-                    <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
-                      <option id="relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
-                      <option id="relearn-bright" value="relearn-bright">Relearn Bright</option>
-                      <option id="relearn-light" value="relearn-light">Relearn Light</option>
-                      <option id="zen-dark" value="zen-dark">Zen Dark</option>
-                      <option id="zen-light" value="zen-light">Zen Light</option>
-                      <option id="learn" value="learn">Learn</option>
-                      <option id="neon" value="neon">Neon</option>
-                      <option id="red" value="red">Red</option>
-                      <option id="blue" value="blue">Blue</option>
-                      <option id="green" value="green">Green</option>
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
+                      <option id="R-relearn-bright" value="relearn-bright">Relearn Bright</option>
+                      <option id="R-relearn-light" value="relearn-light">Relearn Light</option>
+                      <option id="R-zen-dark" value="zen-dark">Zen Dark</option>
+                      <option id="R-zen-light" value="zen-light">Zen Light</option>
+                      <option id="R-learn" value="learn">Learn</option>
+                      <option id="R-neon" value="neon">Neon</option>
+                      <option id="R-red" value="red">Red</option>
+                      <option id="R-blue" value="blue">Blue</option>
+                      <option id="R-green" value="green">Green</option>
                     </select>
                   </div>
                   <div class="clear"></div>
@@ -655,8 +615,8 @@ Version number in brackets are the version when the corresponding patch will be 
               </li>
             </ul>
           </div>
-          <div id="footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 02 Sep 2023 17:33:27 CST</p>
+          <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
+Site generated: Fri, 06 Oct 2023 22:32:52 CST</p>
 
           </div>
         </div>
