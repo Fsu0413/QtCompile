@@ -6,8 +6,8 @@ weight: 2
 
 ## QQtPatcher Support Status
 
-{{% notice style="warning" title="QQtPatcher EOL announcement" icon="fas fa-exclamation-triangle" %}}
-QQtPatcher will reach EOL on {{% date 2023 9 11 %}}, when Qt 5.12 will stop being built anymore.   
+{{% notice style="warning" title="Announcement: QQtPatcher EOL" icon="fas fa-exclamation-triangle" %}}
+QQtPatcher ~~will reach~~ has reached EOL on {{% date 2023 9 11 %}}, when Qt 5.12 will stop being built anymore.   
 After that date the repository fill be archived, issues will be closed (as "won't do") and no more development will be done on it.    
 QQtPatcher related contents will migrate to _Legacy LTS Series_ part of this website, including the update history which was posted on the BBS of QTCN in Chinese.
 {{% /notice %}}
@@ -59,7 +59,7 @@ MariaDB connector/C 3.3 series are used on Qt 6.2 and later.
 
 ## Qt Build Table
 
-**Note: Since Qt dropped support for 32-bit Windows for Qt 6, our Qt 6 builds will no longer run for 32-bit Windows either.**  
+**Note: Since Qt 6 dropped support for 32-bit Windows for Qt 6, our Qt 6 builds will no longer run for 32-bit Windows either.**  
 **If there is need of static builds for non-LTS release, please contect me directly for commerical customization.**
 
 {{% QtTable %}}

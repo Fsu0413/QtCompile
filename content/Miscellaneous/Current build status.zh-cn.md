@@ -6,8 +6,8 @@ weight: 2
 
 ## QQtPatcher 支持状态
 
-{{% notice style="warning" title="公告 QQtPatcher 结束生命周期" icon="fas fa-exclamation-triangle" %}}
-QQtPatcher 将会于 Qt 5.12 停止构建的 {{% date 2023 9 11 %}}结束生命周期。   
+{{% notice style="warning" title="公告：QQtPatcher 结束生命周期" icon="fas fa-exclamation-triangle" %}}
+QQtPatcher ~~将会~~ 已于 Qt 5.12 停止构建的 {{% date 2023 9 11 %}}结束生命周期。   
 在此之后，版本库会存档，问题将会关闭（原因为“不予处理”），不会再对其继续开发。  
 QQtPatcher 相关内容将会转移到“遗留的长期支持版本系列”部分，包含此前在 QTCN 论坛上的更新历史也一并转移。
 {{% /notice %}}
@@ -59,7 +59,7 @@ OpenSSL 3 系列在 6.2.3 以及更新的 Qt 6 版本上使用。
 
 ## Qt 构建表
 
-**注：因为 Qt 移除了对 32 位 Windows 的支持，我们也不会为 32 位 Windows 提供 Qt 6 的构建。**
+**注：因为 Qt 6 移除了对 32 位 Windows 的支持，我们也不会为 32 位 Windows 提供 Qt 6 的构建。**   
 **如果需要非 LTS 版本的静态构建，请直接联系我寻求商业定制。**
 
 {{% QtTable %}}
