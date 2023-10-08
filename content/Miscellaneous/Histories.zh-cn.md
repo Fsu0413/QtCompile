@@ -4,6 +4,22 @@ draft: false
 weight: 4
 ---
 
+## {{% date 2023 6 14 %}}
+更新 Qt 5.15.10 系列，附带 QtWebEngine 和 QtScript 5.15.14。  
+对于所有受支持的 5.15.10 和 6.2.4 版本，应用 CVE-2023-34410 补丁。  
+更新 LLVM-MinGW 到 20230603。重新构建了 Qt 6.2.4 和 Qt 6.5.1 的 LLVM-MinGW 的包。
+
+删除原 OSDN Chamber。文件上传下载服务转移到 Project。
+
+## {{% date 2023 6 3 %}}
+对于所有受支持的 5.15.9 和 6.2.4 版本，应用 CVE-2023-33285 补丁。  
+更新 Qt 5.15.9 系列，附带 QtWebEngine 和 QtScript 5.15.14。  
+更新 Qt 6.5 系列至 6.5.1。  
+更新 OpenSSL 到 3.0.9 / 1.1.1u。所有使用了 OpenSSL 的版本均重新构建了。  
+更新 MariaDB Connector C 到 3.3.5 / 3.1.21。所有使用了 MariaDB Connector C 的版本均重新构建了。
+
+（原计划在 {{% date 2023 5 31 %}}有一次更新。不过因为 OSDN 的服务不太稳定，加上 CVE-2023-33285 补丁发布，此更新取消了）
+
 ## {{% date 2023 5 22 %}}
 对于所有受支持的 5.15.9 和 6.2.4 版本，应用 CVE-2023-32762 和 CVE-2023-32763 补丁。  
 为 macOS 的 5.15.9 版本应用 mapbox-gl-native 构建问题的补丁。

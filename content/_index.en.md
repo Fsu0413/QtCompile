@@ -49,6 +49,12 @@ Please refer to the content lists in the left area.
 
 ## Update History
 
+### {{% date 2023 10 8 %}}
+Update Qt 5.15.11 / 6.2.6 / 6.5.3 with OpenSSL 1.1.1w / 3.0.11.  
+Apply patch for CVE-2023-4863 in all supported 5.15.11 versions. (Conflict on Qt 6.2.6)  
+Apply patch for CVE-2023-43114 in all supported 5.15.11 and 6.2.6 versions.   
+Update MariaDB Connector C to 3.3.7 / 3.1.22.
+
 ### {{% date 2023 10 6 %}}
 Update Qt 5.12.12 with OpenSSL 1.1.1w.
 
@@ -66,22 +72,6 @@ Update OpenSSL to 3.0.10 / 1.1.1v.
 
 OSDN service is temporarily stopping from being used due to technical problem. Currently prebuilt packages are only uploaded to SourceForge.
 
-### {{% date 2023 6 14 %}}
-Update Qt 5.15.10 series with QtWebEngine / QtScript 5.15.14.  
-Apply patch for CVE-2023-34410 in all supported 5.15.10 and 6.2.4 versions.  
-Update LLVM-MinGW to 20230603. Qt 6.2.4 and Qt 6.5.1 LLVM-MinGW packages are rebuilt.
-
-OSDN Chamber is deleted. All file hosting service are migrated to Project.
-
-### {{% date 2023 6 3 %}}
-Apply patch for CVE-2023-33285 in all supported 5.15.9 and 6.2.4 versions.  
-Update Qt 5.15.9 series with QtWebEngine / QtScript 5.15.14.  
-Update Qt 6.5 series to 6.5.1.  
-Update OpenSSL to 3.0.9 / 1.1.1u. All builds what uses OpenSSL are rebuilt.  
-Update MariaDB Connector C to 3.3.5 / 3.1.21. All builds what uses MariaDB Connector C are rebuilt.
-
-(Actually there was planned update on {{% date 2023 5 31 %}}. The update is cancelled because of OSDN service instability and publish of patch of CVE-2023-33285)
-
-### Before May. 2023
+### Before Jul. 2023
 
 [Here]({{% relref "miscellaneous/histories" %}})

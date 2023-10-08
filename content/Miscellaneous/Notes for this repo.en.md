@@ -198,7 +198,7 @@ WINDOWS 10 IS MORE AND MORE POPULAR, AND RECEIVING MORE AND MORE NEW FEATURES. O
 
 SINCE {{% date 2020 1 6 %}} (OpenSSL 1.0.2 EOL) NO LATER BUILD WILL SUPPORT WINDOWS 8 AND EARLIER BY ME, PLEASE UPDATE TO WINDOWS 8.1 AND LATER.
 
-## Decided EOL of current building Qt LTS versions (Updated {{% date 2023 1 7 %}})
+## Decided EOL of current building Qt LTS versions (Updated {{% date 2023 10 6 %}})
 
 (Updated {{% date 2022 3 4 %}}) tQtC released Qt opensource 5.15.3 for a sudden and all the things changed since then.  
 All of our EOL schedule becomes meaningless. We should re-consider the EOL date since Qt 5.15.
@@ -240,8 +240,8 @@ Commericial-only Qt Open Source Release Date (ETA)
 
 ## Incoming update for future release
 
-~~Use Android NDK r23 series for building Qt 5.15.7 onwards.~~ (Build failed also on 5.15.10. Will test it on 5.15.11)  
-~~Use GCC 11 with MinGW-w64 v9 for building Qt 5.15.10 onwards.~~ (Build failed on 5.15.10. Will test it on 5.15.11)  
+~~Use Android NDK r23 series for building Qt 5.15.7 onwards.~~ (Build failed also on 5.15.11. Will test it on 5.15.12)  
+~~Use GCC 11 with MinGW-w64 v9 for building Qt 5.15.10 onwards.~~ (Build failed on 5.15.11. Will test it on 5.15.12)  
 
 ## Existing Patches
 

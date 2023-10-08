@@ -4,30 +4,6 @@ draft: false
 weight: 2
 ---
 
-## QQtPatcher Support Status
-
-{{% notice style="warning" title="Announcement: QQtPatcher EOL" icon="fas fa-exclamation-triangle" %}}
-QQtPatcher ~~will reach~~ has reached EOL on {{% date 2023 9 11 %}}, when Qt 5.12 will stop being built anymore.   
-After that date the repository fill be archived, issues will be closed (as "won't do") and no more development will be done on it.    
-QQtPatcher related contents will migrate to _Legacy LTS Series_ part of this website, including the update history which was posted on the BBS of QTCN in Chinese.
-{{% /notice %}}
-
-This is a list where QQtPatcher is supported and tested on.  
-Other version may work, but also may silently fail.
-
-A valid qbp.json is needed for patching Qt 4 Series since `qmake -query` don't output the makespec.
-
-Qt 5.14 is relocatable as announced in [New Features in Qt 5.14](https://wiki.qt.io/New_Features_in_Qt_5.14), so Qt after 5.14 won't need QQtPatcher anymore.  
-I delivered QQtPatcher for earlier version of 5.14 (because of the fact that I forgot to modify QQtPatcher related code in build scripts).  
-This tool won't be thoroughly tested on 5.13.  
-I announced that QQtPatcher will not support Qt 5 after 5.14.
-
-{{% QQtPatcherTable %}}
-
-Build Hosts:
-
-{{% QQtPatcherHosts %}}
-
 ## OpenSSL Status
 
 My Qt builds is with linked OpenSSL support for most platforms.  
