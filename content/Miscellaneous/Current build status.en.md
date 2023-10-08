@@ -2,6 +2,7 @@
 title: "Current build status"
 draft: false
 weight: 2
+isMaxWidthPreferred: true
 ---
 
 ## OpenSSL Status
