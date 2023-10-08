@@ -100,7 +100,7 @@
     <li><a href="#qt-6-支持的平台2023-年-6-月-14-日更新">Qt 6 支持的平台（2023 年 6 月 14 日更新）</a></li>
     <li><a href="#gpg-签名-2021-年-2-月-6-日更新">GPG 签名 （2021 年 2 月 6 日更新）</a></li>
     <li><a href="#弃用-windows-10-1809-之前的版本以及-32-位-windows-重要备注2023-年-3-月-25-日更新">弃用 Windows 10 1809 之前的版本以及 32 位 Windows （重要备注！！）（2023 年 3 月 25 日更新）</a></li>
-    <li><a href="#对当前构建的-qt-版本的已经决定的结束支持日期2023-年-1-月-7-日更新">对当前构建的 Qt 版本的已经决定的结束支持日期（2023 年 1 月 7 日更新）</a></li>
+    <li><a href="#对当前构建的-qt-版本的已经决定的结束支持日期2023-年-10-月-6-日更新">对当前构建的 Qt 版本的已经决定的结束支持日期（2023 年 10 月 6 日更新）</a></li>
     <li><a href="#之后可能会更新的内容">之后可能会更新的内容</a></li>
     <li><a href="#已有的补丁">已有的补丁</a></li>
   </ul>
@@ -263,7 +263,7 @@ Linux - toolchain provided by RedHat modified by RockyLinux developers with GCC,
 <p>从 2020 年 6 月 3 日（Qt 5.15 发布和 Qt 5.9 结束支持）开始，Windows 8.1 上我只支持 VS2015 和 MinGW 7.3 的构建。<br>
 Windows 10 已经变得越来越流行，而且添加更多更多的新特性。大家可以尽快切换到 Windows 10 了。</p>
 <p>从 2020 年 1 月 6 日（OpenSSL 1.0.2 系列结束支持）开始，我不再支持 Windows 8 以及更早的版本。请升级到 Windows 8.1 或更新版本。</p>
-<h2 id="对当前构建的-qt-版本的已经决定的结束支持日期2023-年-1-月-7-日更新">对当前构建的 Qt 版本的已经决定的结束支持日期（2023 年 1 月 7 日更新）</h2>
+<h2 id="对当前构建的-qt-版本的已经决定的结束支持日期2023-年-10-月-6-日更新">对当前构建的 Qt 版本的已经决定的结束支持日期（2023 年 10 月 6 日更新）</h2>
 <p>（2022 年 3 月 4 日更新）Qt 公司之前突然发布了开源的 5.15.3 版本，从那以后所有事情都变了。<br>
 我们之前的结束支持计划都没了意义。我们需要重新考虑 5.15 的结束支持日期。</p>
 <p>注：我们在除了 WebAssembly 以外的平台上构建 OpenSSL，所有我们的构建都需要至少支持到那个 OpenSSL 支持的日期。<br>
@@ -404,8 +404,8 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
 </tbody>
 </table>
 <h2 id="之后可能会更新的内容">之后可能会更新的内容</h2>
-<p><del>使用安卓 NDK r23 系列构建 Qt 5.15.7 以及之后的版本。</del> （构建失败了，包括 5.15.10 也失败了，将于 5.15.11 再次尝试）<br>
-<del>使用带 MinGW-w64 v9 的 GCC 11 来构建 Qt 5.15.10 以及之后的版本。</del> （5.15.10 上尝试过，失败了，将于 5.15.11 再次尝试）</p>
+<p><del>使用安卓 NDK r23 系列构建 Qt 5.15.7 以及之后的版本。</del> （构建失败了，包括 5.15.11 也失败了，将于 5.15.12 再次尝试）<br>
+<del>使用带 MinGW-w64 v9 的 GCC 11 来构建 Qt 5.15.10 以及之后的版本。</del> （5.15.11 上尝试过，失败了，将于 5.15.12 再次尝试）</p>
 <h2 id="已有的补丁">已有的补丁</h2>
 <p>从 2022 年 3 月 12 日开始我的 Qt 构建包含部分 Qt 提供的补丁。<br>
 多数是可以从 <a href="https://download.qt.io/" target="_blank">Qt 下载站</a> 下载的 CVE 补丁，另外一些是可以从 Qt Gerrit 或者 KDE 下载的一些修复构建的补丁。</p>
@@ -516,20 +516,20 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
           <li data-nav-id="/zh-cn/5.15-series/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/index.html">5.15 系列</a><ul id="R-subsections-6265c888ec9e92bab195ca36e833839a" class="morespace collapsible-menu">
-          <li data-nav-id="/zh-cn/5.15-series/5.15.10-for-windows/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.10-for-windows/index.html">5.15.10 的 Windows 版本</a></li>
-          <li data-nav-id="/zh-cn/5.15-series/5.15.10-for-macos/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.10-for-macos/index.html">5.15.10 的 macOS 版本</a></li>
-          <li data-nav-id="/zh-cn/5.15-series/5.15.10-for-android/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.10-for-android/index.html">5.15.10 的安卓版本</a></li>
-          <li data-nav-id="/zh-cn/5.15-series/5.15.10-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.10-for-webassembly/index.html">5.15.10 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.11-for-windows/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.11-for-windows/index.html">5.15.11 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.11-for-macos/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.11-for-macos/index.html">5.15.11 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.11-for-android/index.html">5.15.11 的安卓版本</a></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.11-for-webassembly/index.html">5.15.11 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/6.2-series/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/index.html">6.2 系列</a><ul id="R-subsections-106fe2487cf90a2754e3f4a06da071f3" class="morespace collapsible-menu">
-          <li data-nav-id="/zh-cn/6.2-series/6.2.5-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.5-for-windows/index.html">6.2.5 的 Windows 版本</a></li>
-          <li data-nav-id="/zh-cn/6.2-series/6.2.5-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.5-for-macos/index.html">6.2.5 的 macOS 版本</a></li>
-          <li data-nav-id="/zh-cn/6.2-series/6.2.5-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.5-for-android/index.html">6.2.5 的安卓版本</a></li>
-          <li data-nav-id="/zh-cn/6.2-series/6.2.5-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.5-for-webassembly/index.html">6.2.5 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/6.2-series/6.2.6-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.6-for-windows/index.html">6.2.6 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/6.2-series/6.2.6-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.6-for-macos/index.html">6.2.6 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/6.2-series/6.2.6-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.6-for-android/index.html">6.2.6 的安卓版本</a></li>
+          <li data-nav-id="/zh-cn/6.2-series/6.2.6-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.6-for-webassembly/index.html">6.2.6 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/6.5-series/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/index.html">6.5 系列</a><ul id="R-subsections-a4a8142fcca3c91cc086ca3a4afab485" class="morespace collapsible-menu">
-          <li data-nav-id="/zh-cn/6.5-series/6.5.2-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.2-for-windows/index.html">6.5.2 的 Windows 版本</a></li>
-          <li data-nav-id="/zh-cn/6.5-series/6.5.2-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.2-for-macos/index.html">6.5.2 的 macOS 版本</a></li>
-          <li data-nav-id="/zh-cn/6.5-series/6.5.2-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.2-for-android/index.html">6.5.2 的安卓版本</a></li>
-          <li data-nav-id="/zh-cn/6.5-series/6.5.2-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.2-for-webassembly/index.html">6.5.2 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/6.5-series/6.5.3-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.3-for-windows/index.html">6.5.3 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/6.5-series/6.5.3-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.3-for-macos/index.html">6.5.3 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/6.5-series/6.5.3-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.3-for-android/index.html">6.5.3 的安卓版本</a></li>
+          <li data-nav-id="/zh-cn/6.5-series/6.5.3-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.3-for-webassembly/index.html">6.5.3 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/miscellaneous/index.html" class="parent "><a class="padding" href="/zh-cn/miscellaneous/index.html">杂项</a><ul id="R-subsections-caff385dd336661e79f294480ee20799" class="morespace collapsible-menu">
           <li data-nav-id="/zh-cn/miscellaneous/notes-for-this-repo/index.html" class="active"><a class="padding" href="/zh-cn/miscellaneous/notes-for-this-repo/index.html">本仓库的一些备注</a></li>
           <li data-nav-id="/zh-cn/miscellaneous/current-build-status/index.html" class=""><a class="padding" href="/zh-cn/miscellaneous/current-build-status/index.html">当前构建状态</a></li>
@@ -616,7 +616,7 @@ OpenSSL 1.1.1 系列将于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 �
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Fri, 06 Oct 2023 22:32:53 CST</p>
+Site generated: Sun, 08 Oct 2023 10:14:18 CST</p>
 
           </div>
         </div>

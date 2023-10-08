@@ -95,11 +95,10 @@
     <li><a href="#current-failures">Current failures</a></li>
     <li><a href="#update-history">Update History</a>
       <ul>
+        <li><a href="#8th-oct-2023">8th Oct, 2023</a></li>
         <li><a href="#6th-oct-2023">6th Oct, 2023</a></li>
         <li><a href="#5th-aug-2023">5th Aug, 2023</a></li>
-        <li><a href="#14th-jun-2023">14th Jun, 2023</a></li>
-        <li><a href="#3rd-jun-2023">3rd Jun, 2023</a></li>
-        <li><a href="#before-may-2023">Before May. 2023</a></li>
+        <li><a href="#before-jul-2023">Before Jul. 2023</a></li>
       </ul>
     </li>
   </ul>
@@ -143,13 +142,13 @@
 All links to OSDN are removed for now. Please download from SourceForge.</p>
 <p>Error during upload is as following (Output by WinSCP).</p>
 <div class="expand">
-    <input type="checkbox" id="R-expand-f75fd6f365fd25a761a468efaa008b8f" aria-controls="R-expandcontent-f75fd6f365fd25a761a468efaa008b8f" >
-    <label class="expand-label" for="R-expand-f75fd6f365fd25a761a468efaa008b8f" >
+    <input type="checkbox" id="R-expand-dd87102f6703738506b5d0aee752d0a7" aria-controls="R-expandcontent-dd87102f6703738506b5d0aee752d0a7" >
+    <label class="expand-label" for="R-expand-dd87102f6703738506b5d0aee752d0a7" >
         <i class="fas fa-chevron-down"></i>
         <i class="fas fa-chevron-right"></i>
         Expand me&hellip;
     </label>
-    <div id="R-expandcontent-f75fd6f365fd25a761a468efaa008b8f" class="expand-content">
+    <div id="R-expandcontent-dd87102f6703738506b5d0aee752d0a7" class="expand-content">
 <p>General failure (server should provide error description).<br>
 Error code: 4<br>
 Error message from server: Failure</p>
@@ -179,6 +178,11 @@ Thanks for The Qt Company Ltd. and the programmers of Qt for their fantastic wor
 <h2 id="current-failures">Current failures</h2>
 <p><a href="/miscellaneous/current-failures/">Here</a></p>
 <h2 id="update-history">Update History</h2>
+<h3 id="8th-oct-2023">8th Oct, 2023</h3>
+<p>Update Qt 5.15.11 / 6.2.6 / 6.5.3 with OpenSSL 1.1.1w / 3.0.11.<br>
+Apply patch for CVE-2023-4863 in all supported 5.15.11 versions. (Conflict on Qt 6.2.6)<br>
+Apply patch for CVE-2023-43114 in all supported 5.15.11 and 6.2.6 versions.<br>
+Update MariaDB Connector C to 3.3.7 / 3.1.22.</p>
 <h3 id="6th-oct-2023">6th Oct, 2023</h3>
 <p>Update Qt 5.12.12 with OpenSSL 1.1.1w.</p>
 <p>Since OpenSSL 1.1.1 series has reached EOL, there will be no further Qt 5.12 builds.<br>
@@ -191,19 +195,7 @@ Update Qt 6.2.5.<br>
 Update Qt 6.5.2.</p>
 <p>Update OpenSSL to 3.0.10 / 1.1.1v.</p>
 <p>OSDN service is temporarily stopping from being used due to technical problem. Currently prebuilt packages are only uploaded to SourceForge.</p>
-<h3 id="14th-jun-2023">14th Jun, 2023</h3>
-<p>Update Qt 5.15.10 series with QtWebEngine / QtScript 5.15.14.<br>
-Apply patch for CVE-2023-34410 in all supported 5.15.10 and 6.2.4 versions.<br>
-Update LLVM-MinGW to 20230603. Qt 6.2.4 and Qt 6.5.1 LLVM-MinGW packages are rebuilt.</p>
-<p>OSDN Chamber is deleted. All file hosting service are migrated to Project.</p>
-<h3 id="3rd-jun-2023">3rd Jun, 2023</h3>
-<p>Apply patch for CVE-2023-33285 in all supported 5.15.9 and 6.2.4 versions.<br>
-Update Qt 5.15.9 series with QtWebEngine / QtScript 5.15.14.<br>
-Update Qt 6.5 series to 6.5.1.<br>
-Update OpenSSL to 3.0.9 / 1.1.1u. All builds what uses OpenSSL are rebuilt.<br>
-Update MariaDB Connector C to 3.3.5 / 3.1.21. All builds what uses MariaDB Connector C are rebuilt.</p>
-<p>(Actually there was planned update on 31st May, 2023. The update is cancelled because of OSDN service instability and publish of patch of CVE-2023-33285)</p>
-<h3 id="before-may-2023">Before May. 2023</h3>
+<h3 id="before-jul-2023">Before Jul. 2023</h3>
 <p><a href="/miscellaneous/histories/">Here</a></p>
 
             <footer class="footline">
@@ -230,20 +222,20 @@ Update MariaDB Connector C to 3.3.5 / 3.1.21. All builds what uses MariaDB Conne
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
           <li data-nav-id="/5.15-series/index.html" class=""><a class="padding" href="/5.15-series/index.html">5.15 series</a><ul id="R-subsections-dfde3005aa1a1a9f4665d82e5e9612d8" class="morespace collapsible-menu">
-          <li data-nav-id="/5.15-series/5.15.10-for-windows/index.html" class=""><a class="padding" href="/5.15-series/5.15.10-for-windows/index.html">5.15.10 for Windows</a></li>
-          <li data-nav-id="/5.15-series/5.15.10-for-macos/index.html" class=""><a class="padding" href="/5.15-series/5.15.10-for-macos/index.html">5.15.10 for macOS</a></li>
-          <li data-nav-id="/5.15-series/5.15.10-for-android/index.html" class=""><a class="padding" href="/5.15-series/5.15.10-for-android/index.html">5.15.10 for Android</a></li>
-          <li data-nav-id="/5.15-series/5.15.10-for-webassembly/index.html" class=""><a class="padding" href="/5.15-series/5.15.10-for-webassembly/index.html">5.15.10 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/5.15-series/5.15.11-for-windows/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-windows/index.html">5.15.11 for Windows</a></li>
+          <li data-nav-id="/5.15-series/5.15.11-for-macos/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-macos/index.html">5.15.11 for macOS</a></li>
+          <li data-nav-id="/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-android/index.html">5.15.11 for Android</a></li>
+          <li data-nav-id="/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-webassembly/index.html">5.15.11 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/6.2-series/index.html" class=""><a class="padding" href="/6.2-series/index.html">6.2 series</a><ul id="R-subsections-c2b87e4570db0ee260cc7de2c4b80e99" class="morespace collapsible-menu">
-          <li data-nav-id="/6.2-series/6.2.5-for-windows/index.html" class=""><a class="padding" href="/6.2-series/6.2.5-for-windows/index.html">6.2.5 for Windows</a></li>
-          <li data-nav-id="/6.2-series/6.2.5-for-macos/index.html" class=""><a class="padding" href="/6.2-series/6.2.5-for-macos/index.html">6.2.5 for macOS</a></li>
-          <li data-nav-id="/6.2-series/6.2.5-for-android/index.html" class=""><a class="padding" href="/6.2-series/6.2.5-for-android/index.html">6.2.5 for Android</a></li>
-          <li data-nav-id="/6.2-series/6.2.5-for-webassembly/index.html" class=""><a class="padding" href="/6.2-series/6.2.5-for-webassembly/index.html">6.2.5 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/6.2-series/6.2.6-for-windows/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-windows/index.html">6.2.6 for Windows</a></li>
+          <li data-nav-id="/6.2-series/6.2.6-for-macos/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-macos/index.html">6.2.6 for macOS</a></li>
+          <li data-nav-id="/6.2-series/6.2.6-for-android/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-android/index.html">6.2.6 for Android</a></li>
+          <li data-nav-id="/6.2-series/6.2.6-for-webassembly/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-webassembly/index.html">6.2.6 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/6.5-series/index.html" class=""><a class="padding" href="/6.5-series/index.html">6.5 series</a><ul id="R-subsections-1870fa5a2d192ec83aafe29160552269" class="morespace collapsible-menu">
-          <li data-nav-id="/6.5-series/6.5.2-for-windows/index.html" class=""><a class="padding" href="/6.5-series/6.5.2-for-windows/index.html">6.5.2 for Windows</a></li>
-          <li data-nav-id="/6.5-series/6.5.2-for-macos/index.html" class=""><a class="padding" href="/6.5-series/6.5.2-for-macos/index.html">6.5.2 for macOS</a></li>
-          <li data-nav-id="/6.5-series/6.5.2-for-android/index.html" class=""><a class="padding" href="/6.5-series/6.5.2-for-android/index.html">6.5.2 for Android</a></li>
-          <li data-nav-id="/6.5-series/6.5.2-for-webassembly/index.html" class=""><a class="padding" href="/6.5-series/6.5.2-for-webassembly/index.html">6.5.2 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/6.5-series/6.5.3-for-windows/index.html" class=""><a class="padding" href="/6.5-series/6.5.3-for-windows/index.html">6.5.3 for Windows</a></li>
+          <li data-nav-id="/6.5-series/6.5.3-for-macos/index.html" class=""><a class="padding" href="/6.5-series/6.5.3-for-macos/index.html">6.5.3 for macOS</a></li>
+          <li data-nav-id="/6.5-series/6.5.3-for-android/index.html" class=""><a class="padding" href="/6.5-series/6.5.3-for-android/index.html">6.5.3 for Android</a></li>
+          <li data-nav-id="/6.5-series/6.5.3-for-webassembly/index.html" class=""><a class="padding" href="/6.5-series/6.5.3-for-webassembly/index.html">6.5.3 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/miscellaneous/index.html" class=""><a class="padding" href="/miscellaneous/index.html">Miscellaneous</a><ul id="R-subsections-59c45accf7e43befe663d68447543959" class="morespace collapsible-menu">
           <li data-nav-id="/miscellaneous/notes-for-this-repo/index.html" class=""><a class="padding" href="/miscellaneous/notes-for-this-repo/index.html">Notes for this repo</a></li>
           <li data-nav-id="/miscellaneous/current-build-status/index.html" class=""><a class="padding" href="/miscellaneous/current-build-status/index.html">Current build status</a></li>
@@ -330,7 +322,7 @@ Update MariaDB Connector C to 3.3.5 / 3.1.21. All builds what uses MariaDB Conne
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Fri, 06 Oct 2023 22:32:52 CST</p>
+Site generated: Sun, 08 Oct 2023 10:14:18 CST</p>
 
           </div>
         </div>

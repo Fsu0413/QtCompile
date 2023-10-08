@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.119.0">
+    <meta name="generator" content="Relearn 5.22.1">
+    <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
+    <meta name="author" content="Fsu0413">
+    <title>6.5.3 for macOS :: Fsu0413&#39;s Original Qt builds</title>
+    <link href="/6.5-series/6.5.3-for-macos/index.html" rel="alternate" hreflang="x-default">
+    <link href="/6.5-series/6.5.3-for-macos/index.html" rel="alternate" hreflang="en">
+    <link href="/zh-cn/6.5-series/6.5.3-for-macos/index.html" rel="alternate" hreflang="zh-cn">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css" rel="stylesheet">
+    <link href="/css/auto-complete.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css" rel="stylesheet">
+    <link href="/css/fonts.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css" rel="stylesheet"></noscript>
+    <link href="/css/theme.css" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css" rel="stylesheet" id="R-variant-style">
+    <link href="/css/variant.css" rel="stylesheet">
+    <link href="/css/print.css" rel="stylesheet" media="print">
+    <link href="/css/ie.css" rel="stylesheet">
+    <script src="/js/url.js"></script>
+    <script src="/js/variant.js"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy to clipboard';
+      window.T_Copied_to_clipboard = 'Copied to clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      window.T_Reset_view = 'Reset view';
+      window.T_View_reset = 'View reset!';
+      window.T_No_results_found = 'No results found for \u0022{0}\u0022';
+      window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
+      // some further base stuff
+      var baseUriFull='/';
+      window.variants && variants.init( [ 'relearn-dark', 'relearn-bright', 'relearn-light', 'zen-dark', 'zen-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
+    </script><style>
+    p.fsu0413_leftFooter {
+        text-align: center;
+        font-style: italic;
+        font-size: x-small;
+    }
+    p.fsu0413_logo {
+        text-align: left;
+    }
+    p.fsu0413_error {
+        font-weight: 900;
+        font-size: 300%;
+        color: red;
+    }
+    th.fsu0413_qtAddressHeader {
+        text-align: center;
+    }
+    h1 {
+        text-transform: none;
+    }
+    strong {
+        color: red;
+    }
+    del {
+        color: gray;
+    }
+</style>
+  </head>
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/6.5-series/6.5.3-for-macos/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+              <button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)">
+                <i class="fa-fw fas fa-bars"></i>
+              </button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+              <button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)">
+                <i class="fa-fw fas fa-list-alt"></i>
+              </button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li><a href="#dynamic--shared-builds">Dynamic / Shared Builds</a>
+      <ul>
+        <li><a href="#macos-universal">macOS-Universal</a></li>
+      </ul>
+    </li>
+    <li><a href="#static-full-builds">Static <code>Full</code> Builds</a>
+      <ul>
+        <li><a href="#macos-universal-1">macOS-Universal</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Fsu0413&#39;s Original Qt builds</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/6.5-series/index.html"><span itemprop="name">6.5 series</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">6.5.3 for macOS</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+              <button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More">
+                <i class="fa-fw fas fa-ellipsis-v"></i>
+              </button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="653-for-macos">6.5.3 for macOS</h1>
+
+
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
+  <div class="box-content">
+
+<p>Following database backend is distributed with this version:</p>
+<ol>
+<li>SQLite (distributed with Qt): Built in the package using command <code>-DFEATURE_sql_sqlite -DFEATURE_system_sqlite=OFF</code>.</li>
+</ol>
+</div>
+</div>
+
+
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
+  <div class="box-content">
+
+<p>Since Qt 6.2 Qt made TLS backends as plugin.<br>
+Following backend(s) are built in the package:</p>
+<ol>
+<li>OpenSSL 3.0 series using <code>-DFEATURE_openssl=ON -DINPUT_openssl=linked</code> for enabling linked OpenSSL support</li>
+<li>Secure Transport library provided by macOS using <code>-DFEATURE_securetransport=ON</code></li>
+</ol>
+</div>
+</div>
+
+
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
+  <div class="box-content">
+<p>
+All builds have <code>-DFEATURE_icu=OFF</code> because I think the ICU library is too big and, in most of the conditions, useless for common users.</div>
+</div>
+
+
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
+  <div class="box-content">
+<p>
+I&rsquo;ll provide only Universal Binary builds of macOS of this version. <a href="https://developer.apple.com/documentation/apple-silicon/building-a-universal-macos-binary" target="_blank">Universal binaries</a> run natively on Intel Macs and Apple Sillicon Macs.</div>
+</div>
+
+<h2 id="dynamic--shared-builds">Dynamic / Shared Builds</h2>
+<h3 id="macos-universal">macOS-Universal</h3>
+<table>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-macOS-Universal-AppleClang14.0.3-20231006.tar.xz</b></th></tr></thead>
+        <tbody>
+            <tr><td width="20%"><b>Download:</b></td>
+                <td colspan="4" width="80%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/macOS-Universal/Qt6.5.3-macOS-Universal-AppleClang14.0.3-20231006.tar.xz" target="_blank">
+    SourceForge link
+  </a>
+</span></td>
+            </tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 13.6</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">AppleClang 14.0.3</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+        </tbody>
+    </table>
+<table>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-macOS-Universal-AppleClang14.0.3-noFramework-20231006.tar.xz</b></th></tr></thead>
+        <tbody>
+            <tr><td width="20%"><b>Download:</b></td>
+                <td colspan="4" width="80%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/macOS-Universal/Qt6.5.3-macOS-Universal-AppleClang14.0.3-noFramework-20231006.tar.xz" target="_blank">
+    SourceForge link
+  </a>
+</span></td>
+            </tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 13.6</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">AppleClang 14.0.3</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+        </tbody>
+    </table>
+<h2 id="static-full-builds">Static <code>Full</code> Builds</h2>
+<h3 id="macos-universal-1">macOS-Universal</h3>
+<table>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-macOS-Universal-AppleClang14.0.3-staticFull-20231006.tar.xz</b></th></tr></thead>
+        <tbody>
+            <tr><td width="20%"><b>Download:</b></td>
+                <td colspan="4" width="80%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/macOS-Universal/Qt6.5.3-macOS-Universal-AppleClang14.0.3-staticFull-20231006.tar.xz" target="_blank">
+    SourceForge link
+  </a>
+</span></td>
+            </tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 13.6</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">AppleClang 14.0.3</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+        </tbody>
+    </table>
+
+            <footer class="footline">
+
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<p class="fsu0413_logo"><img src="https://codereview.qt-project.org/static/logo_qt.png" /></p>
+        </div>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class='fas fa-home'></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/5.15-series/index.html" class=""><a class="padding" href="/5.15-series/index.html">5.15 series</a><ul id="R-subsections-dfde3005aa1a1a9f4665d82e5e9612d8" class="morespace collapsible-menu">
+          <li data-nav-id="/5.15-series/5.15.11-for-windows/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-windows/index.html">5.15.11 for Windows</a></li>
+          <li data-nav-id="/5.15-series/5.15.11-for-macos/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-macos/index.html">5.15.11 for macOS</a></li>
+          <li data-nav-id="/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-android/index.html">5.15.11 for Android</a></li>
+          <li data-nav-id="/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-webassembly/index.html">5.15.11 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/6.2-series/index.html" class=""><a class="padding" href="/6.2-series/index.html">6.2 series</a><ul id="R-subsections-c2b87e4570db0ee260cc7de2c4b80e99" class="morespace collapsible-menu">
+          <li data-nav-id="/6.2-series/6.2.6-for-windows/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-windows/index.html">6.2.6 for Windows</a></li>
+          <li data-nav-id="/6.2-series/6.2.6-for-macos/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-macos/index.html">6.2.6 for macOS</a></li>
+          <li data-nav-id="/6.2-series/6.2.6-for-android/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-android/index.html">6.2.6 for Android</a></li>
+          <li data-nav-id="/6.2-series/6.2.6-for-webassembly/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-webassembly/index.html">6.2.6 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/6.5-series/index.html" class="parent "><a class="padding" href="/6.5-series/index.html">6.5 series</a><ul id="R-subsections-1870fa5a2d192ec83aafe29160552269" class="morespace collapsible-menu">
+          <li data-nav-id="/6.5-series/6.5.3-for-windows/index.html" class=""><a class="padding" href="/6.5-series/6.5.3-for-windows/index.html">6.5.3 for Windows</a></li>
+          <li data-nav-id="/6.5-series/6.5.3-for-macos/index.html" class="active"><a class="padding" href="/6.5-series/6.5.3-for-macos/index.html">6.5.3 for macOS</a></li>
+          <li data-nav-id="/6.5-series/6.5.3-for-android/index.html" class=""><a class="padding" href="/6.5-series/6.5.3-for-android/index.html">6.5.3 for Android</a></li>
+          <li data-nav-id="/6.5-series/6.5.3-for-webassembly/index.html" class=""><a class="padding" href="/6.5-series/6.5.3-for-webassembly/index.html">6.5.3 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/miscellaneous/index.html" class=""><a class="padding" href="/miscellaneous/index.html">Miscellaneous</a><ul id="R-subsections-59c45accf7e43befe663d68447543959" class="morespace collapsible-menu">
+          <li data-nav-id="/miscellaneous/notes-for-this-repo/index.html" class=""><a class="padding" href="/miscellaneous/notes-for-this-repo/index.html">Notes for this repo</a></li>
+          <li data-nav-id="/miscellaneous/current-build-status/index.html" class=""><a class="padding" href="/miscellaneous/current-build-status/index.html">Current build status</a></li>
+          <li data-nav-id="/miscellaneous/current-failures/index.html" class=""><a class="padding" href="/miscellaneous/current-failures/index.html">Current failures</a></li>
+          <li data-nav-id="/miscellaneous/histories/index.html" class=""><a class="padding" href="/miscellaneous/histories/index.html">Previous Histories</a></li></ul></li>
+          <li data-nav-id="/legacy-lts-series/index.html" class=""><a class="padding" href="/legacy-lts-series/index.html">Legacy LTS Series</a><ul id="R-subsections-5cd0b6ebd88105014c721df753e3aba0" class="morespace collapsible-menu">
+          <li data-nav-id="/legacy-lts-series/4.8-series/index.html" class="alwaysopen"><a class="padding" href="/legacy-lts-series/4.8-series/index.html">4.8 series</a><ul id="R-subsections-fde90e23068d0005e4f65b64b693e2ea" class="morespace collapsible-menu">
+          <li data-nav-id="/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html" class=""><a class="padding" href="/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html">4.8.7 for Windows</a></li>
+          <li data-nav-id="/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html" class=""><a class="padding" href="/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html">4.8.7 for macOS</a></li></ul></li>
+          <li data-nav-id="/legacy-lts-series/5.6-series/index.html" class="alwaysopen"><a class="padding" href="/legacy-lts-series/5.6-series/index.html">5.6 series</a><ul id="R-subsections-1796b7c7d02948092a040169069ea60b" class="morespace collapsible-menu">
+          <li data-nav-id="/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html" class=""><a class="padding" href="/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html">5.6.3 for Windows</a></li>
+          <li data-nav-id="/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html" class=""><a class="padding" href="/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html">5.6.3 for macOS</a></li>
+          <li data-nav-id="/legacy-lts-series/5.6-series/5.6.3-for-android/index.html" class=""><a class="padding" href="/legacy-lts-series/5.6-series/5.6.3-for-android/index.html">5.6.3 for Android</a></li></ul></li>
+          <li data-nav-id="/legacy-lts-series/5.9-series/index.html" class="alwaysopen"><a class="padding" href="/legacy-lts-series/5.9-series/index.html">5.9 series</a><ul id="R-subsections-f8745d5ebc3d3c70b6d105e44a063326" class="morespace collapsible-menu">
+          <li data-nav-id="/legacy-lts-series/5.9-series/5.9.9-for-windows/index.html" class=""><a class="padding" href="/legacy-lts-series/5.9-series/5.9.9-for-windows/index.html">5.9.9 for Windows</a></li>
+          <li data-nav-id="/legacy-lts-series/5.9-series/5.9.9-for-macos/index.html" class=""><a class="padding" href="/legacy-lts-series/5.9-series/5.9.9-for-macos/index.html">5.9.9 for macOS</a></li>
+          <li data-nav-id="/legacy-lts-series/5.9-series/5.9.9-for-android/index.html" class=""><a class="padding" href="/legacy-lts-series/5.9-series/5.9.9-for-android/index.html">5.9.9 for Android</a></li></ul></li>
+          <li data-nav-id="/legacy-lts-series/5.12-series/index.html" class="alwaysopen"><a class="padding" href="/legacy-lts-series/5.12-series/index.html">5.12 series</a><ul id="R-subsections-1c9205acacd79bb25b30a84b030ea10b" class="morespace collapsible-menu">
+          <li data-nav-id="/legacy-lts-series/5.12-series/5.12.12-for-windows/index.html" class=""><a class="padding" href="/legacy-lts-series/5.12-series/5.12.12-for-windows/index.html">5.12.12 for Windows</a></li>
+          <li data-nav-id="/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html" class=""><a class="padding" href="/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html">5.12.12 for macOS</a></li>
+          <li data-nav-id="/legacy-lts-series/5.12-series/5.12.12-for-android/index.html" class=""><a class="padding" href="/legacy-lts-series/5.12-series/5.12.12-for-android/index.html">5.12.12 for Android</a></li>
+          <li data-nav-id="/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html" class=""><a class="padding" href="/legacy-lts-series/5.12-series/5.12.12-for-webassembly/index.html">5.12.12 for WebAssembly</a></li></ul></li></ul></li>
+          </ul>
+        </div>
+        <div id="R-shortcuts">
+          <div class="nav-title padding">More</div>
+          <ul class="space">
+            <li><a class="padding" href="https://github.com/Fsu0413/QtCompile"><i class='fab fa-fw fa-github'></i> GitHub repo</a></li>
+            <li><a class="padding" href="http://www.qtcn.org/bbs/read.php?tid=85733&amp;ds=1&amp;page=1&amp;toread=1#194070"><i class='fas fa-poll-h'></i> BBS publish post (Chinese only)</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showLangSwitch showVariantSwitch">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch showLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-language fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = baseUri + this.value;">
+                      <option id="R-en" value="/6.5-series/6.5.3-for-macos/index.html" lang="en" selected>English</option>
+                      <option id="R-zh-cn" value="/zh-cn/6.5-series/6.5.3-for-macos/index.html" lang="zh-cn">简体中文（中国）</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch showVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-paint-brush fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
+                      <option id="R-relearn-bright" value="relearn-bright">Relearn Bright</option>
+                      <option id="R-relearn-light" value="relearn-light">Relearn Light</option>
+                      <option id="R-zen-dark" value="zen-dark">Zen Dark</option>
+                      <option id="R-zen-light" value="zen-light">Zen Light</option>
+                      <option id="R-learn" value="learn">Learn</option>
+                      <option id="R-neon" value="neon">Neon</option>
+                      <option id="R-red" value="red">Red</option>
+                      <option id="R-blue" value="blue">Blue</option>
+                      <option id="R-green" value="green">Green</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fas fa-history fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
+Site generated: Sun, 08 Oct 2023 10:14:18 CST</p>
+
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js" defer></script>
+    <script src="/js/perfect-scrollbar.min.js" defer></script>
+    <script src="/js/theme.js" defer></script>
+  </body>
+</html>
