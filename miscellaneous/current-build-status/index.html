@@ -88,7 +88,6 @@
               <div class="topbar-content">
                 <div class="topbar-content-wrapper"><nav class="TableOfContents">
   <ul>
-    <li><a href="#qqtpatcher-支持状态">QQtPatcher 支持状态</a></li>
     <li><a href="#openssl-状态">OpenSSL 状态</a></li>
     <li><a href="#mariadb-状态">MariaDB 状态</a></li>
     <li><a href="#qt-构建表">Qt 构建表</a></li>
@@ -126,275 +125,6 @@
             </header>
 <h1 id="当前构建状态">当前构建状态</h1>
 
-<h2 id="qqtpatcher-支持状态">QQtPatcher 支持状态</h2>
-
-<div class="box notices cstyle warning">
-  <div class="box-label"><i class="fas fa-exclamation-triangle"></i> 公告：QQtPatcher 结束生命周期</div>
-  <div class="box-content">
-
-<p>QQtPatcher <del>将会</del> 已于 Qt 5.12 停止构建的 2023 年 9 月 11 日结束生命周期。<br>
-在此之后，版本库会存档，问题将会关闭（原因为“不予处理”），不会再对其继续开发。<br>
-QQtPatcher 相关内容将会转移到“遗留的长期支持版本系列”部分，包含此前在 QTCN 论坛上的更新历史也一并转移。</p>
-</div>
-</div>
-<p>这是一个 QQtPatcher 支持和测试的版本的列表。<br>
-其他版本可能工作，但是也可能静默得失败。</p>
-<p>因为 Qt 4 的 <code>qmake -query</code> 不输出 makespec，一个有效的 qbp.json 在为 Qt 4 进行修补时是必要的。</p>
-<p>根据 <a href="https://wiki.qt.io/New_Features_in_Qt_5.14" target="_blank">New Features in Qt 5.14</a> 所宣布，Qt 5.14 是可重定位的，这样的话 Qt 5.14 及以后的版本不再需要 QQtPatcher。<br>
-我在 Qt 5.14 的早期构建包中附带了 QQtPatcher（只是我忘了修改我的构建脚本里 QQtPatcher 相关的代码）。<br>
-这个工具不会在 5.13 上彻底测试。<br>
-我宣布 QQtPatcher 不会支持 Qt 5.14 以后的版本。</p>
-<table>
-<thead>
-<tr>
-<th>Qt 版本</th>
-<th>构建主机 <code>mkspecs</code></th>
-<th>构建目标 <code>mkspecs</code></th>
-<th>备注</th>
-<th>已测试</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>4.8.7</td>
-<td>win32-msvc2010</td>
-<td>-</td>
-<td>Needs qbp.json</td>
-<td>√</td>
-</tr>
-<tr>
-<td>4.8.7</td>
-<td>win32-g++</td>
-<td>-</td>
-<td>Needs qbp.json</td>
-<td>√</td>
-</tr>
-<tr>
-<td>4.8.7</td>
-<td>macx-llvm</td>
-<td>-</td>
-<td>Needs qbp.json</td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.6.3</td>
-<td>win32-msvc2010</td>
-<td>-</td>
-<td></td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.6.3</td>
-<td>win32-msvc2015</td>
-<td>-</td>
-<td></td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.6.3</td>
-<td>win32-g++</td>
-<td>-</td>
-<td></td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.6.3</td>
-<td>win32-g++</td>
-<td>android-g++</td>
-<td></td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.6.3</td>
-<td>macx-clang</td>
-<td>-</td>
-<td></td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.6.3</td>
-<td>macx-clang</td>
-<td>android-g++</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>5.6.3</td>
-<td>linux-g++</td>
-<td>-</td>
-<td></td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.6.3</td>
-<td>linux-g++</td>
-<td>android-g++</td>
-<td></td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.9.9</td>
-<td>win32-msvc</td>
-<td>-</td>
-<td>VS2015, VS2017</td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.9.9</td>
-<td>win32-g++</td>
-<td>-</td>
-<td></td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.9.9</td>
-<td>win32-g++</td>
-<td>android-g++</td>
-<td></td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.9.9</td>
-<td>macx-clang</td>
-<td>-</td>
-<td></td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.9.9</td>
-<td>macx-clang</td>
-<td>android-g++</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>5.9.9</td>
-<td>linux-g++</td>
-<td>-</td>
-<td></td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.9.9</td>
-<td>linux-g++</td>
-<td>android-g++</td>
-<td></td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>win32-msvc</td>
-<td>-</td>
-<td>VS2015, VS2017, VS2019</td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>win32-arm64-msvc2017</td>
-<td>-</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>win32-g++</td>
-<td>-</td>
-<td></td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>win32-g++</td>
-<td>android-clang</td>
-<td></td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>macx-clang</td>
-<td>-</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>macx-clang</td>
-<td>android-clang</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>macx-clang</td>
-<td>wasm-emscripten</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>linux-g++</td>
-<td>-</td>
-<td></td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>linux-g++</td>
-<td>android-clang</td>
-<td></td>
-<td>√</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>linux-g++</td>
-<td>wasm-emscripten</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>构建主机：</p>
-<table>
-<thead>
-<tr>
-<th>Qt 版本</th>
-<th>构建主机 <code>mkspecs</code></th>
-<th>构建主机</th>
-<th>工具链版本</th>
-<th>QQtPatcher 版本</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>5.12.12</td>
-<td>win32-msvc</td>
-<td>Windows 10 10.0.19045</td>
-<td>VS2015 Update 3</td>
-<td>0.8.2</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>win32-msvc</td>
-<td>Windows 11 10.0.22000</td>
-<td>VS2017 15.9.57</td>
-<td>0.8.2</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>macx-clang</td>
-<td>macOS 11.7.9</td>
-<td>AppleClang 12.0.5</td>
-<td>0.8.2</td>
-</tr>
-<tr>
-<td>5.12.12</td>
-<td>linux-g++</td>
-<td>RockyLinux 8.8</td>
-<td>GCC 8.5.0</td>
-<td>0.8.2</td>
-</tr>
-</tbody>
-</table>
 <h2 id="openssl-状态">OpenSSL 状态</h2>
 <p>我的 Qt 构建在大部分平台上使用链接的 OpenSSL。<br>
 下面是我构建 OpenSSL 的列表。</p>
@@ -415,86 +145,6 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>1.1.1w</td>
-<td>Windows</td>
-<td>Windows 10 10.0.19045</td>
-<td>VS2015 Update 3</td>
-<td>x86</td>
-<td></td>
-</tr>
-<tr>
-<td>1.1.1w</td>
-<td>Windows</td>
-<td>Windows 10 10.0.19045</td>
-<td>VS2015 Update 3</td>
-<td>x86</td>
-<td>-static</td>
-</tr>
-<tr>
-<td>1.1.1w</td>
-<td>Windows</td>
-<td>Windows 10 10.0.19045</td>
-<td>VS2015 Update 3</td>
-<td>x86_64</td>
-<td></td>
-</tr>
-<tr>
-<td>1.1.1w</td>
-<td>Windows</td>
-<td>Windows 10 10.0.19045</td>
-<td>MinGW-w64 w/ GCC 7.3.0</td>
-<td>x86</td>
-<td></td>
-</tr>
-<tr>
-<td>1.1.1w</td>
-<td>Windows</td>
-<td>Windows 10 10.0.19045</td>
-<td>MinGW-w64 w/ GCC 7.3.0</td>
-<td>x86_64</td>
-<td></td>
-</tr>
-<tr>
-<td>1.1.1w</td>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2017 15.9.57</td>
-<td>x86</td>
-<td></td>
-</tr>
-<tr>
-<td>1.1.1w</td>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2017 15.9.57</td>
-<td>x86</td>
-<td>-static</td>
-</tr>
-<tr>
-<td>1.1.1w</td>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2017 15.9.57</td>
-<td>x86_64</td>
-<td></td>
-</tr>
-<tr>
-<td>1.1.1w</td>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.30</td>
-<td>x86</td>
-<td></td>
-</tr>
-<tr>
-<td>1.1.1w</td>
-<td>Windows</td>
-<td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.30</td>
-<td>x86_64</td>
-<td></td>
-</tr>
 <tr>
 <td>1.1.1w</td>
 <td>Android</td>
@@ -1018,7 +668,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 </thead>
 <tbody>
 <tr>
-<td>5.15.10</td>
+<td>5.15.11</td>
 <td>Windows 10 10.0.19045</td>
 <td>VS2015 Update 3</td>
 <td>x86</td>
@@ -1026,7 +676,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>5.15.10</td>
+<td>5.15.11</td>
 <td>Windows 10 10.0.19045</td>
 <td>VS2015 Update 3</td>
 <td>x86</td>
@@ -1034,7 +684,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>5.15.10</td>
+<td>5.15.11</td>
 <td>Windows 10 10.0.19045</td>
 <td>VS2015 Update 3</td>
 <td>x86_64</td>
@@ -1042,7 +692,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>5.15.10</td>
+<td>5.15.11</td>
 <td>Windows 10 10.0.19045</td>
 <td>VS2015 Update 3</td>
 <td>x86_64</td>
@@ -1050,79 +700,79 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>5.15.10</td>
+<td>5.15.11</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2017 15.9.55 w/ Windows SDK 10.0.17763</td>
+<td>VS2017 15.9.57 w/ Windows SDK 10.0.17763</td>
 <td>x86</td>
 <td></td>
 <td>√</td>
 </tr>
 <tr>
-<td>5.15.10</td>
+<td>5.15.11</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2017 15.9.55 w/ Windows SDK 10.0.17763</td>
+<td>VS2017 15.9.57 w/ Windows SDK 10.0.17763</td>
 <td>x86</td>
 <td>-static(Full)</td>
 <td>√</td>
 </tr>
 <tr>
-<td>5.15.10</td>
+<td>5.15.11</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2017 15.9.55 w/ Windows SDK 10.0.17763</td>
+<td>VS2017 15.9.57 w/ Windows SDK 10.0.17763</td>
 <td>x86_64</td>
 <td></td>
 <td>√</td>
 </tr>
 <tr>
-<td>5.15.10</td>
+<td>5.15.11</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2017 15.9.55 w/ Windows SDK 10.0.17763</td>
+<td>VS2017 15.9.57 w/ Windows SDK 10.0.17763</td>
 <td>x86_64</td>
 <td>-static(Full)</td>
 <td>√</td>
 </tr>
 <tr>
-<td>5.15.10</td>
+<td>5.15.11</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.28 w/ Windows SDK 10.0.22000</td>
+<td>VS2019 16.11.30 w/ Windows SDK 10.0.22000</td>
 <td>x86</td>
 <td></td>
 <td>√</td>
 </tr>
 <tr>
-<td>5.15.10</td>
+<td>5.15.11</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.28 w/ Windows SDK 10.0.22000</td>
+<td>VS2019 16.11.30 w/ Windows SDK 10.0.22000</td>
 <td>x86</td>
 <td>-static(Full)</td>
 <td>√</td>
 </tr>
 <tr>
-<td>5.15.10</td>
+<td>5.15.11</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.28 w/ Windows SDK 10.0.22000</td>
+<td>VS2019 16.11.30 w/ Windows SDK 10.0.22000</td>
 <td>x86_64</td>
 <td></td>
 <td>√</td>
 </tr>
 <tr>
-<td>5.15.10</td>
+<td>5.15.11</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.28 w/ Windows SDK 10.0.22000</td>
+<td>VS2019 16.11.30 w/ Windows SDK 10.0.22000</td>
 <td>x86_64</td>
 <td>-static(Full)</td>
 <td>√</td>
 </tr>
 <tr>
-<td>5.15.10</td>
+<td>5.15.11</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2022 17.6.5 w/ Windows SDK 10.0.22621</td>
+<td>VS2022 17.7.4 w/ Windows SDK 10.0.22621</td>
 <td>x86_64</td>
 <td></td>
 <td>√</td>
 </tr>
 <tr>
-<td>5.15.10</td>
+<td>5.15.11</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ GCC 8.1.0</td>
 <td>x86</td>
@@ -1130,7 +780,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>5.15.10</td>
+<td>5.15.11</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ GCC 8.1.0</td>
 <td>x86</td>
@@ -1138,7 +788,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>5.15.10</td>
+<td>5.15.11</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ GCC 8.1.0</td>
 <td>x86_64</td>
@@ -1146,7 +796,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>5.15.10</td>
+<td>5.15.11</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ GCC 8.1.0</td>
 <td>x86_64</td>
@@ -1154,31 +804,31 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>5.15.10</td>
-<td>macOS 13.4.1</td>
+<td>5.15.11</td>
+<td>macOS 13.6</td>
 <td>AppleClang 14.0.3</td>
 <td>Universal</td>
 <td>-framework</td>
 <td>√</td>
 </tr>
 <tr>
-<td>5.15.10</td>
-<td>macOS 13.4.1</td>
+<td>5.15.11</td>
+<td>macOS 13.6</td>
 <td>AppleClang 14.0.3</td>
 <td>Universal</td>
 <td>-no-framework</td>
 <td>√</td>
 </tr>
 <tr>
-<td>5.15.10</td>
-<td>macOS 13.4.1</td>
+<td>5.15.11</td>
+<td>macOS 13.6</td>
 <td>AppleClang 14.0.3</td>
 <td>Universal</td>
 <td>-static(Full)</td>
 <td>√</td>
 </tr>
 <tr>
-<td>5.15.10</td>
+<td>5.15.11</td>
 <td>Windows 11 10.0.22621</td>
 <td>ndk r21e</td>
 <td>ALL</td>
@@ -1186,7 +836,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>5.15.10</td>
+<td>5.15.11</td>
 <td>RockyLinux 8.8</td>
 <td>ndk r21e</td>
 <td>ALL</td>
@@ -1194,23 +844,23 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>5.15.10</td>
-<td>macOS 13.4.1</td>
+<td>5.15.11</td>
+<td>macOS 13.6</td>
 <td>ndk r21e</td>
 <td>ALL</td>
 <td>android-21</td>
 <td>√</td>
 </tr>
 <tr>
-<td>5.15.10</td>
-<td>macOS 13.4.1</td>
+<td>5.15.11</td>
+<td>macOS 13.6</td>
 <td>ndk r21e</td>
 <td>ALL</td>
 <td>android-21</td>
 <td>√</td>
 </tr>
 <tr>
-<td>5.15.10</td>
+<td>5.15.11</td>
 <td>Windows 11 10.0.22621</td>
 <td>emscripten-1.39.8</td>
 <td>-</td>
@@ -1218,7 +868,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>5.15.10</td>
+<td>5.15.11</td>
 <td>RockyLinux 8.8</td>
 <td>emscripten-1.39.8</td>
 <td>-</td>
@@ -1226,63 +876,63 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>5.15.10</td>
-<td>macOS 13.4.1</td>
+<td>5.15.11</td>
+<td>macOS 13.6</td>
 <td>emscripten-1.39.8</td>
 <td>-</td>
 <td>-feature-threads</td>
 <td>√</td>
 </tr>
 <tr>
-<td>5.15.10</td>
-<td>macOS 13.4.1</td>
+<td>5.15.11</td>
+<td>macOS 13.6</td>
 <td>emscripten-1.39.8</td>
 <td>-</td>
 <td>-feature-threads</td>
 <td>√</td>
 </tr>
 <tr>
-<td>6.2.5</td>
+<td>6.2.6</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.28 w/ Windows SDK 10.0.22000</td>
+<td>VS2019 16.11.30 w/ Windows SDK 10.0.22000</td>
 <td>x86_64</td>
 <td></td>
 <td>√</td>
 </tr>
 <tr>
-<td>6.2.5</td>
+<td>6.2.6</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.28 w/ Windows SDK 10.0.22000</td>
+<td>VS2019 16.11.30 w/ Windows SDK 10.0.22000</td>
 <td>x86_64</td>
 <td>-static</td>
 <td>Won&rsquo;t upload seprately, used in cross-compiled Qt</td>
 </tr>
 <tr>
-<td>6.2.5</td>
+<td>6.2.6</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.28 w/ Windows SDK 10.0.22000</td>
+<td>VS2019 16.11.30 w/ Windows SDK 10.0.22000</td>
 <td>x86_64</td>
 <td>-static(Full)</td>
 <td>√</td>
 </tr>
 <tr>
-<td>6.2.5</td>
+<td>6.2.6</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2019 16.11.28 w/ Windows SDK 10.0.22000</td>
+<td>VS2019 16.11.30 w/ Windows SDK 10.0.22000</td>
 <td>arm64</td>
 <td></td>
 <td>Didn&rsquo;t build since the static version of VS2019 failed (as of 2021/12/7)</td>
 </tr>
 <tr>
-<td>6.2.5</td>
+<td>6.2.6</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2022 17.6.5 w/ Windows SDK 10.0.22621</td>
+<td>VS2022 17.7.4 w/ Windows SDK 10.0.22621</td>
 <td>x86_64</td>
 <td></td>
 <td>√</td>
 </tr>
 <tr>
-<td>6.2.5</td>
+<td>6.2.6</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ GCC 11.2.0</td>
 <td>x86_64</td>
@@ -1290,7 +940,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>6.2.5</td>
+<td>6.2.6</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ GCC 11.2.0</td>
 <td>x86_64</td>
@@ -1298,7 +948,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>Won&rsquo;t upload seprately, used in cross-compiled Qt</td>
 </tr>
 <tr>
-<td>6.2.5</td>
+<td>6.2.6</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ GCC 11.2.0</td>
 <td>x86_64</td>
@@ -1306,7 +956,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>6.2.5</td>
+<td>6.2.6</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ GCC 12.2.0 (ucrt)</td>
 <td>x86_64</td>
@@ -1314,7 +964,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>6.2.5</td>
+<td>6.2.6</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ GCC 12.2.0 (ucrt)</td>
 <td>x86_64</td>
@@ -1322,7 +972,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>6.2.5</td>
+<td>6.2.6</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ GCC 12.2.0 (msvcrt)</td>
 <td>x86_64</td>
@@ -1330,7 +980,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>6.2.5</td>
+<td>6.2.6</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ GCC 12.2.0 (msvcrt)</td>
 <td>x86_64</td>
@@ -1338,7 +988,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>6.2.5</td>
+<td>6.2.6</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ LLVM 15.0.0 (ucrt)</td>
 <td>x86_64</td>
@@ -1346,7 +996,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>6.2.5</td>
+<td>6.2.6</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ LLVM 15.0.0 (msvcrt)</td>
 <td>x86_64</td>
@@ -1354,7 +1004,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>6.2.5</td>
+<td>6.2.6</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ LLVM 16.0.6 (ucrt)</td>
 <td>x86_64</td>
@@ -1362,7 +1012,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>6.2.5</td>
+<td>6.2.6</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ LLVM 16.0.6 (msvcrt)</td>
 <td>x86_64</td>
@@ -1370,7 +1020,23 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>6.2.5</td>
+<td>6.2.6</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 w/ LLVM 17.0.2 (ucrt)</td>
+<td>x86_64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.2.6</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 w/ LLVM 17.0.2 (msvcrt)</td>
+<td>x86_64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.2.6</td>
 <td>RockyLinux 8.8</td>
 <td>GCC 8.5.0</td>
 <td>x86_64</td>
@@ -1378,39 +1044,39 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>Won&rsquo;t upload seprately, used in cross-compiled Qt</td>
 </tr>
 <tr>
-<td>6.2.5</td>
-<td>macOS 13.4.1</td>
+<td>6.2.6</td>
+<td>macOS 13.6</td>
 <td>AppleClang 14.0.3</td>
 <td>Universal</td>
 <td>-framework</td>
 <td>√</td>
 </tr>
 <tr>
-<td>6.2.5</td>
-<td>macOS 13.4.1</td>
+<td>6.2.6</td>
+<td>macOS 13.6</td>
 <td>AppleClang 14.0.3</td>
 <td>Universal</td>
 <td>-no-framework</td>
 <td>√</td>
 </tr>
 <tr>
-<td>6.2.5</td>
-<td>macOS 13.4.1</td>
-<td>AppleClang 14.0.0</td>
+<td>6.2.6</td>
+<td>macOS 13.6</td>
+<td>AppleClang 14.0.3</td>
 <td>Universal</td>
 <td>-static(Lite)</td>
 <td>Won&rsquo;t upload seprately, used in cross-compiled Qt</td>
 </tr>
 <tr>
-<td>6.2.5</td>
-<td>macOS 13.4.1</td>
+<td>6.2.6</td>
+<td>macOS 13.6</td>
 <td>AppleClang 14.0.3</td>
 <td>Universal</td>
 <td>-static(Full)</td>
 <td>√</td>
 </tr>
 <tr>
-<td>6.2.5</td>
+<td>6.2.6</td>
 <td>Windows 11 10.0.22621</td>
 <td>ndk r23c</td>
 <td>arm</td>
@@ -1418,7 +1084,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>6.2.5</td>
+<td>6.2.6</td>
 <td>Windows 11 10.0.22621</td>
 <td>ndk r23c</td>
 <td>arm64</td>
@@ -1426,7 +1092,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>6.2.5</td>
+<td>6.2.6</td>
 <td>Windows 11 10.0.22621</td>
 <td>ndk r23c</td>
 <td>x86</td>
@@ -1434,7 +1100,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>6.2.5</td>
+<td>6.2.6</td>
 <td>Windows 11 10.0.22621</td>
 <td>ndk r23c</td>
 <td>x86_64</td>
@@ -1442,7 +1108,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>6.2.5</td>
+<td>6.2.6</td>
 <td>RockyLinux 8.8</td>
 <td>ndk r23c</td>
 <td>arm</td>
@@ -1450,7 +1116,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>6.2.5</td>
+<td>6.2.6</td>
 <td>RockyLinux 8.8</td>
 <td>ndk r23c</td>
 <td>arm64</td>
@@ -1458,7 +1124,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>6.2.5</td>
+<td>6.2.6</td>
 <td>RockyLinux 8.8</td>
 <td>ndk r23c</td>
 <td>x86</td>
@@ -1466,7 +1132,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>6.2.5</td>
+<td>6.2.6</td>
 <td>RockyLinux 8.8</td>
 <td>ndk r23c</td>
 <td>x86_64</td>
@@ -1474,39 +1140,39 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>6.2.5</td>
-<td>macOS 13.4.1</td>
+<td>6.2.6</td>
+<td>macOS 13.6</td>
 <td>ndk r23c</td>
 <td>arm</td>
 <td>android-24</td>
 <td>√</td>
 </tr>
 <tr>
-<td>6.2.5</td>
-<td>macOS 13.4.1</td>
+<td>6.2.6</td>
+<td>macOS 13.6</td>
 <td>ndk r23c</td>
 <td>arm64</td>
 <td>android-24</td>
 <td>√</td>
 </tr>
 <tr>
-<td>6.2.5</td>
-<td>macOS 13.4.1</td>
+<td>6.2.6</td>
+<td>macOS 13.6</td>
 <td>ndk r23c</td>
 <td>x86</td>
 <td>android-24</td>
 <td>√</td>
 </tr>
 <tr>
-<td>6.2.5</td>
-<td>macOS 13.4.1</td>
+<td>6.2.6</td>
+<td>macOS 13.6</td>
 <td>ndk r23c</td>
 <td>x86_64</td>
 <td>android-24</td>
 <td>√</td>
 </tr>
 <tr>
-<td>6.2.5</td>
+<td>6.2.6</td>
 <td>Windows 11 10.0.22621</td>
 <td>emscripten-2.0.14</td>
 <td>-</td>
@@ -1514,7 +1180,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>6.2.5</td>
+<td>6.2.6</td>
 <td>RockyLinux 8.8</td>
 <td>emscripten-2.0.14</td>
 <td>-</td>
@@ -1522,47 +1188,47 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>6.2.5</td>
-<td>macOS 13.4.1</td>
+<td>6.2.6</td>
+<td>macOS 13.6</td>
 <td>emscripten-2.0.14</td>
 <td>-</td>
 <td>-feature-threads</td>
 <td>√</td>
 </tr>
 <tr>
-<td>6.5.2</td>
+<td>6.5.3</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2022 17.6.5 w/ Windows SDK 10.0.22621</td>
+<td>VS2022 17.7.4 w/ Windows SDK 10.0.22621</td>
 <td>x86_64</td>
 <td></td>
 <td>√</td>
 </tr>
 <tr>
-<td>6.5.2</td>
+<td>6.5.3</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2022 17.6.5 w/ Windows SDK 10.0.22621</td>
+<td>VS2022 17.7.4 w/ Windows SDK 10.0.22621</td>
 <td>x86_64</td>
 <td>-static</td>
 <td>Won&rsquo;t upload seprately, used in cross-compiled Qt</td>
 </tr>
 <tr>
-<td>6.5.2</td>
+<td>6.5.3</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2022 17.6.5 w/ Windows SDK 10.0.22621</td>
+<td>VS2022 17.7.4 w/ Windows SDK 10.0.22621</td>
 <td>x86_64</td>
 <td></td>
 <td>√</td>
 </tr>
 <tr>
-<td>6.5.2</td>
+<td>6.5.3</td>
 <td>Windows 11 10.0.22621</td>
-<td>VS2022 17.6.5 w/ Windows SDK 10.0.22621</td>
+<td>VS2022 17.7.4 w/ Windows SDK 10.0.22621</td>
 <td>arm64</td>
 <td></td>
 <td>Didn&rsquo;t build since the static version of VS2019 failed (as of 2021/12/7)</td>
 </tr>
 <tr>
-<td>6.5.2</td>
+<td>6.5.3</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ GCC 12.2.0 (ucrt)</td>
 <td>x86_64</td>
@@ -1570,7 +1236,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>6.5.2</td>
+<td>6.5.3</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ GCC 12.2.0 (ucrt)</td>
 <td>x86_64</td>
@@ -1578,7 +1244,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>6.5.2</td>
+<td>6.5.3</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ GCC 12.2.0 (msvcrt)</td>
 <td>x86_64</td>
@@ -1586,7 +1252,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>6.5.2</td>
+<td>6.5.3</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ GCC 12.2.0 (msvcrt)</td>
 <td>x86_64</td>
@@ -1594,7 +1260,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>Won&rsquo;t upload seprately, used in cross-compiled Qt</td>
 </tr>
 <tr>
-<td>6.5.2</td>
+<td>6.5.3</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ GCC 12.2.0 (msvcrt)</td>
 <td>x86_64</td>
@@ -1602,15 +1268,39 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>6.5.2</td>
+<td>6.5.3</td>
 <td>Windows 11 10.0.22621</td>
-<td>MinGW-w64 w/ LLVM 16.0.6 (ucrt)</td>
+<td>MinGW-w64 w/ GCC 13.2.0 (ucrt)</td>
 <td>x86_64</td>
 <td></td>
+<td>Compile failure</td>
+</tr>
+<tr>
+<td>6.5.3</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 w/ GCC 13.2.0 (ucrt)</td>
+<td>x86_64</td>
+<td>-static(Full)</td>
 <td>√</td>
 </tr>
 <tr>
-<td>6.5.2</td>
+<td>6.5.3</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 w/ GCC 13.2.0 (msvcrt)</td>
+<td>x86_64</td>
+<td></td>
+<td>Compile failure</td>
+</tr>
+<tr>
+<td>6.5.3</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 w/ GCC 13.2.0 (msvcrt)</td>
+<td>x86_64</td>
+<td>-static(Full)</td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.5.3</td>
 <td>Windows 11 10.0.22621</td>
 <td>MinGW-w64 w/ LLVM 16.0.6 (msvcrt)</td>
 <td>x86_64</td>
@@ -1618,7 +1308,31 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>6.5.2</td>
+<td>6.5.3</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 w/ LLVM 16.0.6 (ucrt)</td>
+<td>x86_64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.5.3</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 w/ LLVM 17.0.2 (msvcrt)</td>
+<td>x86_64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.5.3</td>
+<td>Windows 11 10.0.22621</td>
+<td>MinGW-w64 w/ LLVM 17.0.2 (ucrt)</td>
+<td>x86_64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.5.3</td>
 <td>RockyLinux 9.2</td>
 <td>GCC 11.3.1</td>
 <td>x86_64</td>
@@ -1626,39 +1340,39 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>Won&rsquo;t upload seprately, used in cross-compiled Qt</td>
 </tr>
 <tr>
-<td>6.5.2</td>
-<td>macOS 13.4.1</td>
+<td>6.5.3</td>
+<td>macOS 13.6</td>
 <td>AppleClang 14.0.3</td>
 <td>Universal</td>
 <td>-framework</td>
 <td>√</td>
 </tr>
 <tr>
-<td>6.5.2</td>
-<td>macOS 13.4.1</td>
+<td>6.5.3</td>
+<td>macOS 13.6</td>
 <td>AppleClang 14.0.3</td>
 <td>Universal</td>
 <td>-no-framework</td>
 <td>√</td>
 </tr>
 <tr>
-<td>6.5.2</td>
-<td>macOS 13.4.1</td>
+<td>6.5.3</td>
+<td>macOS 13.6</td>
 <td>AppleClang 14.0.3</td>
 <td>Universal</td>
 <td>-static(Lite)</td>
 <td>Won&rsquo;t upload seprately, used in cross-compiled Qt</td>
 </tr>
 <tr>
-<td>6.5.2</td>
-<td>macOS 13.4.1</td>
+<td>6.5.3</td>
+<td>macOS 13.6</td>
 <td>AppleClang 14.0.3</td>
 <td>Universal</td>
 <td>-static(Full)</td>
 <td>√</td>
 </tr>
 <tr>
-<td>6.5.2</td>
+<td>6.5.3</td>
 <td>Windows 11 10.0.22621</td>
 <td>ndk r25c</td>
 <td>arm64</td>
@@ -1666,7 +1380,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>6.5.2</td>
+<td>6.5.3</td>
 <td>Windows 11 10.0.22621</td>
 <td>ndk r25c</td>
 <td>x86_64</td>
@@ -1674,7 +1388,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>6.5.2</td>
+<td>6.5.3</td>
 <td>RockyLinux 9.2</td>
 <td>ndk r25c</td>
 <td>arm64</td>
@@ -1682,7 +1396,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>6.5.2</td>
+<td>6.5.3</td>
 <td>RockyLinux 9.2</td>
 <td>ndk r25c</td>
 <td>x86_64</td>
@@ -1690,23 +1404,71 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>6.5.2</td>
-<td>macOS 13.4.1</td>
+<td>6.5.3</td>
+<td>macOS 13.6</td>
 <td>ndk r25c</td>
 <td>arm64</td>
 <td>android-27</td>
 <td>√</td>
 </tr>
 <tr>
-<td>6.5.2</td>
-<td>macOS 13.4.1</td>
+<td>6.5.3</td>
+<td>macOS 13.6</td>
 <td>ndk r25c</td>
 <td>x86_64</td>
 <td>android-27</td>
 <td>√</td>
 </tr>
 <tr>
-<td>6.5.2</td>
+<td>6.5.3</td>
+<td>Windows 11 10.0.22621</td>
+<td>ndk r26</td>
+<td>arm64</td>
+<td>android-27</td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.5.3</td>
+<td>Windows 11 10.0.22621</td>
+<td>ndk r26</td>
+<td>x86_64</td>
+<td>android-27</td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.5.3</td>
+<td>RockyLinux 9.2</td>
+<td>ndk r26</td>
+<td>arm64</td>
+<td>android-27</td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.5.3</td>
+<td>RockyLinux 9.2</td>
+<td>ndk r26</td>
+<td>x86_64</td>
+<td>android-27</td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.5.3</td>
+<td>macOS 13.6</td>
+<td>ndk r26</td>
+<td>arm64</td>
+<td>android-27</td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.5.3</td>
+<td>macOS 13.6</td>
+<td>ndk r26</td>
+<td>x86_64</td>
+<td>android-27</td>
+<td>√</td>
+</tr>
+<tr>
+<td>6.5.3</td>
 <td>Windows 11 10.0.22621</td>
 <td>emscripten-3.1.25</td>
 <td>-</td>
@@ -1714,7 +1476,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>6.5.2</td>
+<td>6.5.3</td>
 <td>RockyLinux 9.2</td>
 <td>emscripten-3.1.25</td>
 <td>-</td>
@@ -1722,8 +1484,8 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
 <td>√</td>
 </tr>
 <tr>
-<td>6.5.2</td>
-<td>macOS 12.6.5</td>
+<td>6.5.3</td>
+<td>macOS 13.6</td>
 <td>emscripten-3.1.25</td>
 <td>-</td>
 <td>-feature-threads</td>
@@ -1756,20 +1518,20 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
           <li data-nav-id="/qtcompile/5.15-series/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/index.html">5.15 系列</a><ul id="R-subsections-6265c888ec9e92bab195ca36e833839a" class="morespace collapsible-menu">
-          <li data-nav-id="/qtcompile/5.15-series/5.15.10-for-windows/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.10-for-windows/index.html">5.15.10 的 Windows 版本</a></li>
-          <li data-nav-id="/qtcompile/5.15-series/5.15.10-for-macos/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.10-for-macos/index.html">5.15.10 的 macOS 版本</a></li>
-          <li data-nav-id="/qtcompile/5.15-series/5.15.10-for-android/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.10-for-android/index.html">5.15.10 的安卓版本</a></li>
-          <li data-nav-id="/qtcompile/5.15-series/5.15.10-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.10-for-webassembly/index.html">5.15.10 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-windows/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-windows/index.html">5.15.11 的 Windows 版本</a></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-macos/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-macos/index.html">5.15.11 的 macOS 版本</a></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-android/index.html">5.15.11 的安卓版本</a></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-webassembly/index.html">5.15.11 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/6.2-series/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/index.html">6.2 系列</a><ul id="R-subsections-106fe2487cf90a2754e3f4a06da071f3" class="morespace collapsible-menu">
-          <li data-nav-id="/qtcompile/6.2-series/6.2.5-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.5-for-windows/index.html">6.2.5 的 Windows 版本</a></li>
-          <li data-nav-id="/qtcompile/6.2-series/6.2.5-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.5-for-macos/index.html">6.2.5 的 macOS 版本</a></li>
-          <li data-nav-id="/qtcompile/6.2-series/6.2.5-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.5-for-android/index.html">6.2.5 的安卓版本</a></li>
-          <li data-nav-id="/qtcompile/6.2-series/6.2.5-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.5-for-webassembly/index.html">6.2.5 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-windows/index.html">6.2.6 的 Windows 版本</a></li>
+          <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-macos/index.html">6.2.6 的 macOS 版本</a></li>
+          <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-android/index.html">6.2.6 的安卓版本</a></li>
+          <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-webassembly/index.html">6.2.6 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/6.5-series/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/index.html">6.5 系列</a><ul id="R-subsections-a4a8142fcca3c91cc086ca3a4afab485" class="morespace collapsible-menu">
-          <li data-nav-id="/qtcompile/6.5-series/6.5.2-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.2-for-windows/index.html">6.5.2 的 Windows 版本</a></li>
-          <li data-nav-id="/qtcompile/6.5-series/6.5.2-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.2-for-macos/index.html">6.5.2 的 macOS 版本</a></li>
-          <li data-nav-id="/qtcompile/6.5-series/6.5.2-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.2-for-android/index.html">6.5.2 的安卓版本</a></li>
-          <li data-nav-id="/qtcompile/6.5-series/6.5.2-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.2-for-webassembly/index.html">6.5.2 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/qtcompile/6.5-series/6.5.3-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.3-for-windows/index.html">6.5.3 的 Windows 版本</a></li>
+          <li data-nav-id="/qtcompile/6.5-series/6.5.3-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.3-for-macos/index.html">6.5.3 的 macOS 版本</a></li>
+          <li data-nav-id="/qtcompile/6.5-series/6.5.3-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.3-for-android/index.html">6.5.3 的安卓版本</a></li>
+          <li data-nav-id="/qtcompile/6.5-series/6.5.3-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.3-for-webassembly/index.html">6.5.3 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/miscellaneous/index.html" class="parent "><a class="padding" href="/qtcompile/miscellaneous/index.html">杂项</a><ul id="R-subsections-caff385dd336661e79f294480ee20799" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/miscellaneous/notes-for-this-repo/index.html" class=""><a class="padding" href="/qtcompile/miscellaneous/notes-for-this-repo/index.html">本仓库的一些备注</a></li>
           <li data-nav-id="/qtcompile/miscellaneous/current-build-status/index.html" class="active"><a class="padding" href="/qtcompile/miscellaneous/current-build-status/index.html">当前构建状态</a></li>
@@ -1856,7 +1618,7 @@ Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Fri, 06 Oct 2023 22:32:49 CST</p>
+Site generated: Sun, 08 Oct 2023 10:14:14 CST</p>
 
           </div>
         </div>
