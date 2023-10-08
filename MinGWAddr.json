@@ -44,6 +44,16 @@
     "description": "MinGW-w64 w/ GCC 12.2.0 msvcrt",
     "addr": "https://github.com/niXman/mingw-builds-binaries/releases/download/12.2.0-rt_v10-rev2/x86_64-12.2.0-release-posix-seh-msvcrt-rt_v10-rev2.7z"
   },
+  "wx6p3": {
+    "bits": "64",
+    "description": "MinGW-w64 w/ GCC 13.2.0 UCRT",
+    "addr": "https://github.com/niXman/mingw-builds-binaries/releases/download/13.2.0-rt_v11-rev0/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev0.7z"
+  },
+  "wx6g3": {
+    "bits": "64",
+    "description": "MinGW-w64 w/ GCC 13.2.0 msvcrt",
+    "addr": "https://github.com/niXman/mingw-builds-binaries/releases/download/13.2.0-rt_v11-rev0/x86_64-13.2.0-release-posix-seh-msvcrt-rt_v11-rev0.7z"
+  },
   "wx6u5": {
     "bits": "64",
     "description": "MinGW-W64 w/ LLVM 15.0.0 UCRT",
@@ -63,5 +73,15 @@
     "bits": "64",
     "description": "MinGW-W64 w/ LLVM 16.0.6 msvcrt",
     "addr": "https://github.com/mstorsjo/llvm-mingw/releases/download/20230614/llvm-mingw-20230614-msvcrt-x86_64.zip"
+  },
+  "wx6u7": {
+    "bits": "64",
+    "description": "MinGW-W64 w/ LLVM 17.0.2 UCRT",
+    "addr": "https://github.com/mstorsjo/llvm-mingw/releases/download/20231003/llvm-mingw-20231003-ucrt-x86_64.zip"
+  },
+  "wx6s7": {
+    "bits": "64",
+    "description": "MinGW-W64 w/ LLVM 17.0.2 msvcrt",
+    "addr": "https://github.com/mstorsjo/llvm-mingw/releases/download/20231003/llvm-mingw-20231003-msvcrt-x86_64.zip"
   }
 }
