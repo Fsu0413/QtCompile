@@ -49,6 +49,12 @@ Please refer to the content lists in the left area.
 
 ## Update History
 
+### {{% date 2023 10 12 %}}
+Removed Qt 5.15.10 macOS package (with QtWebEngine) by mistake. Since I didn't preserve the original package it is lost. Sorry for inconvenience.
+
+Update Qt 6.6.0, with OpenSSL 3.0.11.  
+Update Qt 6.5.3 Android arm (32-bit) version (restart support).
+
 ### {{% date 2023 10 8 %}}
 Update Qt 5.15.11 / 6.2.6 / 6.5.3 with OpenSSL 1.1.1w / 3.0.11.  
 Apply patch for CVE-2023-4863 in all supported 5.15.11 versions. (Conflict on Qt 6.2.6)  
@@ -62,16 +68,6 @@ Since OpenSSL 1.1.1 series has reached EOL, there will be no further Qt 5.12 bui
 i.e., this build is the last build of these packages.  
 The build script and environment of Qt 5.12 series has been destructed.
 
-### {{% date 2023 8 5 %}}
-Update Qt 5.12.12.  
-Update Qt 5.15.10. Apply patch of CVE-2023-37369 and CVE-2023-38197.  
-Update Qt 6.2.5.  
-Update Qt 6.5.2.
-
-Update OpenSSL to 3.0.10 / 1.1.1v.
-
-OSDN service is temporarily stopping from being used due to technical problem. Currently prebuilt packages are only uploaded to SourceForge.
-
-### Before Jul. 2023
+### Before Sep. 2023
 
 [Here]({{% relref "miscellaneous/histories" %}})

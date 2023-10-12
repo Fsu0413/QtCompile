@@ -4,6 +4,16 @@ draft: false
 weight: 4
 ---
 
+## {{% date 2023 8 5 %}}
+Update Qt 5.12.12.  
+Update Qt 5.15.10. Apply patch of CVE-2023-37369 and CVE-2023-38197.  
+Update Qt 6.2.5.  
+Update Qt 6.5.2.
+
+Update OpenSSL to 3.0.10 / 1.1.1v.
+
+OSDN service is temporarily stopping from being used due to technical problem. Currently prebuilt packages are only uploaded to SourceForge.
+
 ## {{% date 2023 6 14 %}}
 Update Qt 5.15.10 series with QtWebEngine / QtScript 5.15.14.  
 Apply patch for CVE-2023-34410 in all supported 5.15.10 and 6.2.4 versions.  

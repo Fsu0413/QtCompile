@@ -188,7 +188,7 @@ I don't want to put the signature file besides the package, I think it will be a
 
 ## Windows 10 before version 1809 and 32-bit Windows deprecation (IMPORTANT NOTES!!) (updated {{% date 2023 3 25 %}})
 
-(Updated {{% date 2023 3 25 %}}) Windows 8.1 reaches EOL on {{% date 2023 1 10 %}}.  
+(Updated {{% date 2023 3 25 %}}) Windows 8.1 reached EOL on {{% date 2023 1 10 %}}.  
 Since {{% date 2023 3 25 %}} all builds don't support Windows 8.1. Existing VS2015 and MinGW 7.3 builds are migrated to Windows 10.
 
 Qt 6 builds before 6.2 supports only 64-bit Windows 10 1809 and later, while builds after 6.3 supports only latest Windows 10 (i.e. version after 2004 since they has same system files).
@@ -205,7 +205,7 @@ All of our EOL schedule becomes meaningless. We should re-consider the EOL date 
 
 Note: since OpenSSL is currently built on all versions of my build except for WebAssembly, all of my builds should persist until EOL of that specific OpenSSL version.  
 Currently OpenSSL 1.1.1 and 3.0 series are used.  
-OpenSSL 1.1.1 series reaches EOL until {{% date 2023 9 11 %}}, while OpenSSL 3.0 series does until {{% date 2026 9 7 %}}.
+OpenSSL 1.1.1 series ~~reaches~~ reached EOL until {{% date 2023 9 11 %}}, while OpenSSL 3.0 series does until {{% date 2026 9 7 %}}.
 
 Since Qt 5.15.8 starts supporting OpenSSL 3.0 series we may switch to OpenSSL 3.0 series on our Qt 5.15 Android builds after EOL of OpenSSL 1.1 series.  
 Currently it is certain that Qt 5.15 will be supported for 5 years, but it is unknown that tQtC will provide source code of Qt 5.15 after {{% date 2024 5 26 %}}.  
@@ -213,16 +213,14 @@ If subsequent version of Qt 5.15 remains private we won't upgrade OpenSSL to pos
 
 | Qt version | Build Target | EOL date | Notes |
 |-|-|-|-|
-| 5.15 Series | Windows 11 with VS2019 (Shared) / VS2022 | {{% date 2024 5 26 %}} | Same as EOL of Qt opensource 5.15, with WebEngine and Script got update ahead of time, with VS version update within VS2019/22 |
-| | Windows with VS2015 / VS2017 / VS2019 (static) / MinGW 8.1.0 | {{% date 2024 5 26 %}} | Same as EOL of Qt opensource 5.15, with Script update ahead of time, with VS version update within VS2017/9/22 |
-| | macOS | {{% date 2024 5 26 %}} | Same as EOL of Qt opensource 5.15, with WebEngine and Script got update ahead of time, with (at best effort) Xcode and macOS update |
+| 5.15 Series | Windows 11 with VS2019 (Shared) / VS2022 | {{% date 2024 5 26 %}} | Same as EOL of Qt opensource 5.15, with WebEngine got update ahead of time, with VS version update within VS2019/22 |
+| | Windows with VS2015 / VS2017 / VS2019 (static) / MinGW | {{% date 2024 5 26 %}} | Same as EOL of Qt opensource 5.15, with VS version update within VS2017/9/22 |
+| | macOS | {{% date 2024 5 26 %}} | Same as EOL of Qt opensource 5.15, with WebEngine got update ahead of time, with (at best effort) Xcode and macOS update |
 | | Android | {{% date 2026 9 7 %}} | Same as EOL of OpenSSL 3.0 series. |
 | | WebAssembly | {{% date 2024 5 26 %}} | Same as EOL of Qt opensource 5.15 |
-| 6.2 Series | Windows 11 with VS2019 (Shared) / VS2022 | {{% date 2026 9 7 %}} | Same as EOL of OpenSSL 3.0 series, with WebEngine update ahead of time, with VS version update |
-| | Windows 11 with VS2019 (static) | {{% date 2026 9 7 %}} | Same as EOL of OpenSSL 3.0 series, with VS version update |
-| | Windows 11 with MinGW 11.2.0 / MinGW-LLVM 15 | {{% date 2026 9 7 %}} | Same as EOL of OpenSSL 3.0 series, with MinGW version update |
-| | macOS (Shared) | {{% date 2026 9 7 %}} | Same as EOL of OpenSSL 3.0 series, with WebEngine update ahead of time, with (at best effort) Xcode and macOS update |
-| | macOS (static) | {{% date 2026 9 7 %}} | Same as EOL of OpenSSL 3.0 series, with (at best effort) Xcode and macOS update |
+| 6.2 Series | Windows 11 with VS2019 / VS2022 | {{% date 2026 9 7 %}} | Same as EOL of OpenSSL 3.0 series, with VS version update |
+| | Windows 11 with MinGW / LLVM-MinGW | {{% date 2026 9 7 %}} | Same as EOL of OpenSSL 3.0 series, with MinGW version update |
+| | macOS | {{% date 2026 9 7 %}} | Same as EOL of OpenSSL 3.0 series, with (at best effort) Xcode and macOS update |
 | | Android | {{% date 2026 9 7 %}} | Same as EOL of OpenSSL 3.0 series, Will stuck at Android NDK r23 LTS series |
 | | WebAssembly | {{% date 2025 9 29 %}} | Same as EOL of Qt opensource 6.2 |
 
@@ -237,6 +235,7 @@ Commericial-only Qt Open Source Release Date (ETA)
 | 6.2.7 | {{% date 2023 1 2 %}} | {{% date 2024 1 2 %}} |
 | 6.2.8 | {{% date 2023 4 18 %}} | {{% date 2024 4 18 %}} |
 | 6.2.9 | {{% date 2023 7 4 %}} | {{% date 2024 7 4 %}} |
+| 6.2.10 | {{% date 2023 10 9 %}} | {{% date 2024 10 9 %}} |
 
 ## Incoming update for future release
 

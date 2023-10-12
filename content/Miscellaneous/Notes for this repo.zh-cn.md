@@ -205,7 +205,7 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 
 注：我们在除了 WebAssembly 以外的平台上构建 OpenSSL，所有我们的构建都需要至少支持到那个 OpenSSL 支持的日期。  
 当前正在使用的是 OpenSSL 1.1.1 系列和 3.0 系列。  
-OpenSSL 1.1.1 系列将于 {{% date 2023 9 11 %}}结束支持，而 OpenSSL 3.0 系列则是 {{% date 2026 9 7 %}}。
+OpenSSL 1.1.1 系列 ~~将~~ 已于 {{% date 2023 9 11 %}}结束支持，而 OpenSSL 3.0 系列则是 {{% date 2026 9 7 %}}。
 
 由于 Qt 5.15.8 开始支持使用 OpenSSL 3.0 系列，在 OpenSSL 1.1 系列结束支持之后，我们可能会在 Qt 5.15 的安卓版构建中切换到 OpenSSL 3.0 系列。  
 现在可以确定的是 Qt 5.15 有 5 年的支持，不过目前不清楚 Qt 公司是否会在 {{% date 2024 5 26 %}}之后释放 Qt 5.15 后续版本的代码。  
@@ -213,16 +213,14 @@ OpenSSL 1.1.1 系列将于 {{% date 2023 9 11 %}}结束支持，而 OpenSSL 3.0 
 
 | Qt 版本 | 构建目标 | 终止支持日期 | 备注 |
 |-|-|-|-|
-| 5.15 系列 | Windows 11 with VS2019 (动态) / VS2022 | {{% date 2024 5 26 %}} | 与 Qt 开源版 5.15 系列的终止支持日期保持一致。提前更新 WebEngine 和 Script。包含 VS2019/22 的 VS 版本升级。 |
-| | Windows with VS2015 / VS2017 / VS2019 (静态) / MinGW 8.1.0 | {{% date 2024 5 26 %}} | 与 Qt 开源版 5.15 系列的终止支持日期保持一致。提前更新 Script。包含 VS2017/9/22 的 VS 版本升级。 |
-| | macOS | {{% date 2024 5 26 %}} | 与 Qt 开源版 5.15 系列的终止支持日期保持一致。提前更新 WebEngine 和 Script。（尽可能）包含 Xcode 和 macOS 更新 |
+| 5.15 系列 | Windows 11 with VS2019 (动态) / VS2022 | {{% date 2024 5 26 %}} | 与 Qt 开源版 5.15 系列的终止支持日期保持一致。提前更新 WebEngine。包含 VS2019/22 的 VS 版本升级。 |
+| | Windows with VS2015 / VS2017 / VS2019 (静态) / MinGW 8.1.0 | {{% date 2024 5 26 %}} | 与 Qt 开源版 5.15 系列的终止支持日期保持一致。包含 VS2017/9/22 的 VS 版本升级。 |
+| | macOS | {{% date 2024 5 26 %}} | 与 Qt 开源版 5.15 系列的终止支持日期保持一致。提前更新 WebEngine。（尽可能）包含 Xcode 和 macOS 更新 |
 | | 安卓 | {{% date 2026 9 7 %}} | 与 OpenSSL 3.0 的终止支持日期保持一致。 |
 | | WebAssembly | {{% date 2024 5 26 %}} | 与 Qt 开源版 5.15 系列的终止支持日期保持一致。 |
-| 6.2 Series | Windows 11 with VS2019 (动态) / VS2022 | {{% date 2026 9 7 %}} | 与 OpenSSL 3.0 的终止支持日期保持一致。提前更新 WebEngine。包含 VS 版本升级。 |
-| | Windows 11 with VS2019 (静态) | {{% date 2026 9 7 %}} |  与 OpenSSL 3.0 的终止支持日期保持一致。包含 VS 版本升级。  |
-| | Windows 11 with MinGW 11.2.0 / MinGW-LLVM 15 | {{% date 2026 9 7 %}} |  与 OpenSSL 3.0 的终止支持日期保持一致。包含 MinGW 版本升级。  |
-| | macOS (动态) | {{% date 2026 9 7 %}} | 与 OpenSSL 3.0 的终止支持日期保持一致。提前更新 WebEngine。（尽可能）包含 Xcode 和 macOS 更新 |
-| | macOS (静态) | {{% date 2026 9 7 %}} | 与 OpenSSL 3.0 的终止支持日期保持一致。（尽可能）包含 Xcode 和 macOS 更新 |
+| 6.2 Series | Windows 11 with VS2019 / VS2022 | {{% date 2026 9 7 %}} | 与 OpenSSL 3.0 的终止支持日期保持一致。包含 VS 版本升级。 |
+| | Windows 11 with MinGW / LLVM-MinGW | {{% date 2026 9 7 %}} |  与 OpenSSL 3.0 的终止支持日期保持一致。包含 MinGW 版本升级。  |
+| | macOS | {{% date 2026 9 7 %}} | 与 OpenSSL 3.0 的终止支持日期保持一致。（尽可能）包含 Xcode 和 macOS 更新 |
 | | 安卓 | {{% date 2026 9 7 %}} | S与 OpenSSL 3.0 的终止支持日期保持一致。会一直使用安卓 NDK r23 LTS 系列。 |
 | | WebAssembly | {{% date 2025 9 29 %}} | 与 Qt 开源版 6.2 系列的终止支持日期保持一致。 |
 
@@ -237,6 +235,7 @@ OpenSSL 1.1.1 系列将于 {{% date 2023 9 11 %}}结束支持，而 OpenSSL 3.0 
 | 6.2.7 | {{% date 2023 1 2 %}} | {{% date 2024 1 2 %}} |
 | 6.2.8 | {{% date 2023 4 18 %}} | {{% date 2024 4 18 %}} |
 | 6.2.9 | {{% date 2023 7 4 %}} | {{% date 2024 7 4 %}} |
+| 6.2.10 | {{% date 2023 10 9 %}} | {{% date 2024 10 9 %}} |
 
 ## 之后可能会更新的内容
 
@@ -265,4 +264,4 @@ OpenSSL 1.1.1 系列将于 {{% date 2023 9 11 %}}结束支持，而 OpenSSL 3.0 
 | CVE-2023-37369 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-37369-qtbase-5.15.diff) （5.15.15） | [**×**](# "官方补丁冲突，依赖 Qt 6.2.9 上的一个提交，暂无发行版与项目解决冲突。已放弃调查") （6.2.10） | 附带 |
 | CVE-2023-38197 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-38197-qtbase-5.15.diff) （5.15.15） | [**×**](# "依赖 CVE-2023-37369 的补丁") （6.2.10） | 附带 |
 | CVE-2023-43114 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-43114-5.15.patch) （5.15.16） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-43114-6.2.patch) （6.2.10） | 附带 |
-| CVE-2023-4863 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-4863-5.15.patch) （5.15.16） | [**×**](# "官方补丁冲突。由于只有第三方库更新，直接等新版应该更靠谱") (6.2.10) | 附带 |
+| CVE-2023-4863 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-4863-5.15.patch) （5.15.16） | [**×**](# "官方补丁冲突。由于只有第三方库更新，直接等新版应该更靠谱") （6.2.10） | 附带 |
