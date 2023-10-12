@@ -962,40 +962,6 @@
       "configuration": "√"
     }
   },
-  "q5_15mal": {
-    "sort": 51518,
-    "fileName": "Qt5.15.10-macOS-Universal-AppleClang14.0.3-20230723.tar.xz",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/macOS-Universal/Qt5.15.10-macOS-Universal-AppleClang14.0.3-20230723.tar.xz",
-    "notes": "With WebEngine 5.15.14 && QtScript 5.15.14",
-    "data": {
-      "version": "5.15.10",
-      "platform": "macOS",
-      "buildHost": "macOS 13.4.1",
-      "toolchain": "AppleClang 14.0.3",
-      "arch": "Universal",
-      "variant": "-framework",
-      "mkspecs": "macx-clang",
-      "uploaded": "√",
-      "configuration": "√"
-    }
-  },
-  "q5_15malnf": {
-    "sort": 51519,
-    "fileName": "Qt5.15.10-macOS-Universal-AppleClang14.0.3-noFramework-20230723.tar.xz",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/macOS-Universal/Qt5.15.10-macOS-Universal-AppleClang14.0.3-noFramework-20230723.tar.xz",
-    "notes": "With WebEngine 5.15.14 && QtScript 5.15.14",
-    "data": {
-      "version": "5.15.10",
-      "platform": "macOS",
-      "buildHost": "macOS 13.4.1",
-      "toolchain": "AppleClang 14.0.3",
-      "arch": "Universal",
-      "variant": "-no-framework",
-      "mkspecs": "macx-clang",
-      "uploaded": "√",
-      "configuration": "√"
-    }
-  },
   "q5_15wx6v2": {
     "sort": 51513,
     "fileName": "Qt5.15.10-Windows-x86_64-VS2022-17.6.5-20230723.7z",
