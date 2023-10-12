@@ -259,7 +259,7 @@ I will add bulid for static version for Qt 6.2, but I don&rsquo;t exactly know h
 I don&rsquo;t want to put the signature file besides the package, I think it will be a waste of upload step&hellip;&hellip;</p>
 <p>(Updated 6th Feb, 2021) I haven&rsquo;t found a suitable solution, temporarily put it away&hellip;.</p>
 <h2 id="windows-10-before-version-1809-and-32-bit-windows-deprecation-important-notes-updated-25th-mar-2023">Windows 10 before version 1809 and 32-bit Windows deprecation (IMPORTANT NOTES!!) (updated 25th Mar, 2023)</h2>
-<p>(Updated 25th Mar, 2023) Windows 8.1 reaches EOL on 10th Jan, 2023.<br>
+<p>(Updated 25th Mar, 2023) Windows 8.1 reached EOL on 10th Jan, 2023.<br>
 Since 25th Mar, 2023 all builds don&rsquo;t support Windows 8.1. Existing VS2015 and MinGW 7.3 builds are migrated to Windows 10.</p>
 <p>Qt 6 builds before 6.2 supports only 64-bit Windows 10 1809 and later, while builds after 6.3 supports only latest Windows 10 (i.e. version after 2004 since they has same system files).</p>
 <p>SINCE 3rd Jun, 2020 (Qt 5.15 release and Qt 5.9 EOL) ONLY VS2015 AND MINGW 7.3 BUILDS SUPPORTS WINDOWS 8.1 by me.<br>
@@ -270,7 +270,7 @@ WINDOWS 10 IS MORE AND MORE POPULAR, AND RECEIVING MORE AND MORE NEW FEATURES. O
 All of our EOL schedule becomes meaningless. We should re-consider the EOL date since Qt 5.15.</p>
 <p>Note: since OpenSSL is currently built on all versions of my build except for WebAssembly, all of my builds should persist until EOL of that specific OpenSSL version.<br>
 Currently OpenSSL 1.1.1 and 3.0 series are used.<br>
-OpenSSL 1.1.1 series reaches EOL until 11th Sep, 2023, while OpenSSL 3.0 series does until 7th Sep, 2026.</p>
+OpenSSL 1.1.1 series <del>reaches</del> reached EOL until 11th Sep, 2023, while OpenSSL 3.0 series does until 7th Sep, 2026.</p>
 <p>Since Qt 5.15.8 starts supporting OpenSSL 3.0 series we may switch to OpenSSL 3.0 series on our Qt 5.15 Android builds after EOL of OpenSSL 1.1 series.<br>
 Currently it is certain that Qt 5.15 will be supported for 5 years, but it is unknown that tQtC will provide source code of Qt 5.15 after 26th May, 2024.<br>
 If subsequent version of Qt 5.15 remains private we won&rsquo;t upgrade OpenSSL to post-3.0 version.</p>
@@ -288,19 +288,19 @@ If subsequent version of Qt 5.15 remains private we won&rsquo;t upgrade OpenSSL 
 <td>5.15 Series</td>
 <td>Windows 11 with VS2019 (Shared) / VS2022</td>
 <td>26th May, 2024</td>
-<td>Same as EOL of Qt opensource 5.15, with WebEngine and Script got update ahead of time, with VS version update within VS2019/22</td>
+<td>Same as EOL of Qt opensource 5.15, with WebEngine got update ahead of time, with VS version update within VS2019/22</td>
 </tr>
 <tr>
 <td></td>
-<td>Windows with VS2015 / VS2017 / VS2019 (static) / MinGW 8.1.0</td>
+<td>Windows with VS2015 / VS2017 / VS2019 (static) / MinGW</td>
 <td>26th May, 2024</td>
-<td>Same as EOL of Qt opensource 5.15, with Script update ahead of time, with VS version update within VS2017/9/22</td>
+<td>Same as EOL of Qt opensource 5.15, with VS version update within VS2017/9/22</td>
 </tr>
 <tr>
 <td></td>
 <td>macOS</td>
 <td>26th May, 2024</td>
-<td>Same as EOL of Qt opensource 5.15, with WebEngine and Script got update ahead of time, with (at best effort) Xcode and macOS update</td>
+<td>Same as EOL of Qt opensource 5.15, with WebEngine got update ahead of time, with (at best effort) Xcode and macOS update</td>
 </tr>
 <tr>
 <td></td>
@@ -316,31 +316,19 @@ If subsequent version of Qt 5.15 remains private we won&rsquo;t upgrade OpenSSL 
 </tr>
 <tr>
 <td>6.2 Series</td>
-<td>Windows 11 with VS2019 (Shared) / VS2022</td>
-<td>7th Sep, 2026</td>
-<td>Same as EOL of OpenSSL 3.0 series, with WebEngine update ahead of time, with VS version update</td>
-</tr>
-<tr>
-<td></td>
-<td>Windows 11 with VS2019 (static)</td>
+<td>Windows 11 with VS2019 / VS2022</td>
 <td>7th Sep, 2026</td>
 <td>Same as EOL of OpenSSL 3.0 series, with VS version update</td>
 </tr>
 <tr>
 <td></td>
-<td>Windows 11 with MinGW 11.2.0 / MinGW-LLVM 15</td>
+<td>Windows 11 with MinGW / LLVM-MinGW</td>
 <td>7th Sep, 2026</td>
 <td>Same as EOL of OpenSSL 3.0 series, with MinGW version update</td>
 </tr>
 <tr>
 <td></td>
-<td>macOS (Shared)</td>
-<td>7th Sep, 2026</td>
-<td>Same as EOL of OpenSSL 3.0 series, with WebEngine update ahead of time, with (at best effort) Xcode and macOS update</td>
-</tr>
-<tr>
-<td></td>
-<td>macOS (static)</td>
+<td>macOS</td>
 <td>7th Sep, 2026</td>
 <td>Same as EOL of OpenSSL 3.0 series, with (at best effort) Xcode and macOS update</td>
 </tr>
@@ -402,6 +390,11 @@ If subsequent version of Qt 5.15 remains private we won&rsquo;t upgrade OpenSSL 
 <td>6.2.9</td>
 <td>4th Jul, 2023</td>
 <td>4th Jul, 2024</td>
+</tr>
+<tr>
+<td>6.2.10</td>
+<td>9th Oct, 2023</td>
+<td>9th Oct, 2024</td>
 </tr>
 </tbody>
 </table>
@@ -532,6 +525,11 @@ Version number in brackets are the version when the corresponding patch will be 
           <li data-nav-id="/6.5-series/6.5.3-for-macos/index.html" class=""><a class="padding" href="/6.5-series/6.5.3-for-macos/index.html">6.5.3 for macOS</a></li>
           <li data-nav-id="/6.5-series/6.5.3-for-android/index.html" class=""><a class="padding" href="/6.5-series/6.5.3-for-android/index.html">6.5.3 for Android</a></li>
           <li data-nav-id="/6.5-series/6.5.3-for-webassembly/index.html" class=""><a class="padding" href="/6.5-series/6.5.3-for-webassembly/index.html">6.5.3 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/6.6-series/index.html" class=""><a class="padding" href="/6.6-series/index.html">6.6 series</a><ul id="R-subsections-251fabc502a6554f591098a179d20356" class="morespace collapsible-menu">
+          <li data-nav-id="/6.6-series/6.6.0-for-windows/index.html" class=""><a class="padding" href="/6.6-series/6.6.0-for-windows/index.html">6.6.0 for Windows</a></li>
+          <li data-nav-id="/6.6-series/6.6.0-for-macos/index.html" class=""><a class="padding" href="/6.6-series/6.6.0-for-macos/index.html">6.6.0 for macOS</a></li>
+          <li data-nav-id="/6.6-series/6.6.0-for-android/index.html" class=""><a class="padding" href="/6.6-series/6.6.0-for-android/index.html">6.6.0 for Android</a></li>
+          <li data-nav-id="/6.6-series/6.6.0-for-webassembly/index.html" class=""><a class="padding" href="/6.6-series/6.6.0-for-webassembly/index.html">6.6.0 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/miscellaneous/index.html" class="parent "><a class="padding" href="/miscellaneous/index.html">Miscellaneous</a><ul id="R-subsections-59c45accf7e43befe663d68447543959" class="morespace collapsible-menu">
           <li data-nav-id="/miscellaneous/notes-for-this-repo/index.html" class="active"><a class="padding" href="/miscellaneous/notes-for-this-repo/index.html">Notes for this repo</a></li>
           <li data-nav-id="/miscellaneous/current-build-status/index.html" class=""><a class="padding" href="/miscellaneous/current-build-status/index.html">Current build status</a></li>
@@ -618,7 +616,7 @@ Version number in brackets are the version when the corresponding patch will be 
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Thu, 12 Oct 2023 08:48:08 CST</p>
+Site generated: Thu, 12 Oct 2023 23:49:29 CST</p>
 
           </div>
         </div>
