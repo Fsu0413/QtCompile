@@ -49,6 +49,10 @@ Please refer to the content lists in the left area.
 
 ## Update History
 
+### {{% date 2023 10 14 %}}
+Rebuild all Android version, with OpenSSL Thread disabled.  
+Update 5.15.11 for Android, use OpenSSL 3.0.11.
+
 ### {{% date 2023 10 12 %}}
 Removed Qt 5.15.10 macOS package (with QtWebEngine) by mistake. Since I didn't preserve the original package it is lost. Sorry for inconvenience.
 
