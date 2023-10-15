@@ -65,15 +65,6 @@
 	"Note": {
 		"other": "备注"
 	},
-	"SQLite (distributed with Qt)": {
-		"other": "SQLite （随 Qt 一起分发）"
-	},
-	"MariaDB Connector/C 3.1 series (Dynamic builds only)": {
-		"other": "MariaDB Connector/C 3.1 系列（仅动态构建）"
-	},
-	"MariaDB Connector/C 3.3 series (Dynamic builds only)": {
-		"other": "MariaDB Connector/C 3.3 系列（仅动态构建）"
-	},
 
 	"fsqtbuild_i18n_finalVersion": {
 		"other": "这是最终版。即使有需求也不会再更新。构建环境已经爆破"
@@ -117,6 +108,12 @@
 	"fsqtbuild_i18n_qt6tls_openssl3": {
 		"other": "OpenSSL 3.0 系列，使用 `-DFEATURE_openssl=ON -DINPUT_openssl=linked` 来启用链接的 OpenSSL 支持"
 	},
+	"fsqtbuild_i18n_qt6tls_openssl31": {
+		"other": "OpenSSL 3.1 系列，使用 `-DFEATURE_openssl=ON -DINPUT_openssl=linked` 来启用链接的 OpenSSL 支持"
+	},
+	"fsqtbuild_i18n_qt6tls_openssl32": {
+		"other": "OpenSSL 3.2 系列，使用 `-DFEATURE_openssl=ON -DINPUT_openssl=linked` 来启用链接的 OpenSSL 支持"
+	},
 	"fsqtbuild_i18n_qt6tls_schannel": {
 		"other": "Windows Secure Channel，使用 `-DFEATURE_schannel=ON`。在 MSVC 版本中支持 TLS 1.3"
 	},
@@ -140,5 +137,20 @@
 	},
 	"fsqtbuild_i18n_patchesTag": {
 		"other": "已有的补丁"
+	},
+	"fsqtbuild_i18n_sql_sqlite": {
+		"other": "SQLite （随 Qt 一起分发）"
+	},
+	"fsqtbuild_i18n_sql_mariadb31": {
+		"other": "MariaDB Connector/C 3.1 系列（仅动态构建）"
+	},
+	"fsqtbuild_i18n_sql_mariadb33": {
+		"other": "MariaDB Connector/C 3.3 系列（仅动态构建）"
+	},
+	"fsqtbuild_i18n_sql_odbc32": {
+		"other": "ODBC"
+	},
+	"fsqtbuild_i18n_sql_iodbcmac": {
+		"other": "iODBC （macOS内置，已被 macOS 弃用许久。仅动态构建）"
 	}
 }

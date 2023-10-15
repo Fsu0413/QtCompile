@@ -65,15 +65,6 @@
 	"Note": {
 		"other": "Note"
 	},
-	"SQLite (distributed with Qt)": {
-		"other": "SQLite (distributed with Qt)"
-	},
-	"MariaDB Connector/C 3.1 series (Dynamic builds only)": {
-		"other": "MariaDB Connector/C 3.1 series (Dynamic builds only)"
-	},
-	"MariaDB Connector/C 3.3 series (Dynamic builds only)": {
-		"other": "MariaDB Connector/C 3.3 series (Dynamic builds only)"
-	},
 
 	"fsqtbuild_i18n_finalVersion": {
 		"other": "FINAL VERSION, NO MORE UPDATES EVEN IF REQUESTED, BUILD ENVIRONMENT HAS BEEN DESTRUCTED"
@@ -117,6 +108,12 @@
 	"fsqtbuild_i18n_qt6tls_openssl3": {
 		"other": "OpenSSL 3.0 series using `-DFEATURE_openssl=ON -DINPUT_openssl=linked` for enabling linked OpenSSL support"
 	},
+	"fsqtbuild_i18n_qt6tls_openssl31": {
+		"other": "OpenSSL 3.1 series using `-DFEATURE_openssl=ON -DINPUT_openssl=linked` for enabling linked OpenSSL support"
+	},
+	"fsqtbuild_i18n_qt6tls_openssl32": {
+		"other": "OpenSSL 3.2 series using `-DFEATURE_openssl=ON -DINPUT_openssl=linked` for enabling linked OpenSSL support"
+	},
 	"fsqtbuild_i18n_qt6tls_schannel": {
 		"other": "Windows Secure Channel using `-DFEATURE_schannel=ON` with TLS 1.3 support on MSVC version"
 	},
@@ -140,5 +137,20 @@
 	},
 	"fsqtbuild_i18n_patchesTag": {
 		"other": "existing-patches"
+	},
+	"fsqtbuild_i18n_sql_sqlite": {
+		"other": "SQLite (distributed with Qt)"
+	},
+	"fsqtbuild_i18n_sql_mariadb31": {
+		"other": "MariaDB Connector/C 3.1 series (Dynamic builds only)"
+	},
+	"fsqtbuild_i18n_sql_mariadb33": {
+		"other": "MariaDB Connector/C 3.3 series (Dynamic builds only)"
+	},
+	"fsqtbuild_i18n_sql_odbc32": {
+		"other": "ODBC"
+	},
+	"fsqtbuild_i18n_sql_iodbcmac": {
+		"other": "iODBC (built in macOS yet deprecated since. Dynamic builds only)"
 	}
 }

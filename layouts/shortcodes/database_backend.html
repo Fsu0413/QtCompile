@@ -1,22 +1,20 @@
-{{- $sqlNameDefinition := dict
-    "sqlite" (T "SQLite (distributed with Qt)")
-    "odbc" "ODBC"
-    "unixodbc" "unixODBC"
-    "mariadb31" (T "MariaDB Connector/C 3.1 series (Dynamic builds only)")
-    "mariadb33" (T "MariaDB Connector/C 3.3 series (Dynamic builds only)")
--}}
 {{- $sqlCommandReplacement := dict
     "unixodbc" "odbc"
+    "odbc32" "odbc"
+    "iodbcmac" "odbc"
     "mariadb31" "mysql"
     "mariadb33" "mysql"
 -}}
 {{- $sqlCommandPrefix := "-DFEATURE_sql_" -}}
+{{- $sqlCommandSuffix := "=ON" -}}
 {{- $qtVer := .Get 0 -}}
 {{- if eq $qtVer "5" -}}
     {{- $sqlCommandPrefix = "-sql-" -}}
+    {{- $sqlCommandSuffix = "" -}}
 {{- else -}}
     {{- if eq $qtVer "4" -}}
         {{- $sqlCommandPrefix = "-plugin-sql-" -}}
+        {{- $sqlCommandSuffix = "" -}}
     {{- end -}}
 {{- end -}}
 {{- $params := .Params -}}
@@ -25,14 +23,14 @@
 {{- $paramsExceptFirst := last $paramsLenMinus1 $params -}}
 {{- $sqlInstruction := (T "fsqtbuild_i18n_databaseBackend") -}}
 {{- range $paramsExceptFirst -}}
-    {{- $sqlCommand := print $sqlCommandPrefix (index $sqlCommandReplacement . | default .) -}}
+    {{- $sqlCommand := print $sqlCommandPrefix (index $sqlCommandReplacement . | default .) $sqlCommandSuffix -}}
     {{- $sqlCommandSqlite := "" -}}
     {{- if and (eq . "sqlite") (eq $qtVer "6") -}}
         {{- $sqlCommandSqlite = " -DFEATURE_system_sqlite=OFF" -}}
         {{- $sqlCommandWithSqlite := print $sqlCommand $sqlCommandSqlite -}}
         {{- $sqlCommand = $sqlCommandWithSqlite -}}
     {{- end -}}
-    {{- $sqlSingleLine := printf (T "fsqtbuild_i18n_databaseBackendSingle") (index $sqlNameDefinition .) $sqlCommand -}}
+    {{- $sqlSingleLine := printf (T "fsqtbuild_i18n_databaseBackendSingle") ( T ( print "fsqtbuild_i18n_sql_" . ) ) $sqlCommand -}}
     {{- $sqlInstruction2 := print $sqlInstruction "\n1. " $sqlSingleLine -}}
     {{- $sqlInstruction = $sqlInstruction2 -}}
 {{- end -}}
