@@ -49,6 +49,9 @@ Please refer to the content lists in the left area.
 
 ## Update History
 
+### {{% date 2023 10 15 %}}
+Rebuild all macOS version, with new ODBC database backend build on top of iODBC library bundled in macOS.
+
 ### {{% date 2023 10 14 %}}
 Rebuild all Android version, with OpenSSL Thread disabled.  
 Update 5.15.11 for Android, use OpenSSL 3.0.11.
