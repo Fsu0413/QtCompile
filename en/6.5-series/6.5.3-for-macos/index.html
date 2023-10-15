@@ -141,8 +141,9 @@
 
 <p>Following database backend is distributed with this version:</p>
 <ol>
-<li>SQLite (distributed with Qt): Built in the package using command <code>-DFEATURE_sql_sqlite -DFEATURE_system_sqlite=OFF</code>.</li>
-<li>MariaDB Connector/C 3.3 series (Dynamic builds only): Built in the package using command <code>-DFEATURE_sql_mysql</code>.</li>
+<li>SQLite (distributed with Qt): Built in the package using command <code>-DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF</code>.</li>
+<li>iODBC (built in macOS yet deprecated since. Dynamic builds only): Built in the package using command <code>-DFEATURE_sql_odbc=ON</code>.</li>
+<li>MariaDB Connector/C 3.3 series (Dynamic builds only): Built in the package using command <code>-DFEATURE_sql_mysql=ON</code>.</li>
 </ol>
 </div>
 </div>
@@ -180,12 +181,12 @@ I&rsquo;ll provide only Universal Binary builds of macOS of this version. <a hre
 <h2 id="dynamic--shared-builds">Dynamic / Shared Builds</h2>
 <h3 id="macos-universal">macOS-Universal</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-macOS-Universal-AppleClang14.0.3-20231006.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-macOS-Universal-AppleClang14.0.3-20231014.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/macOS-Universal/Qt6.5.3-macOS-Universal-AppleClang14.0.3-20231006.tar.xz" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/macOS-Universal/Qt6.5.3-macOS-Universal-AppleClang14.0.3-20231014.tar.xz" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -194,12 +195,12 @@ I&rsquo;ll provide only Universal Binary builds of macOS of this version. <a hre
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-macOS-Universal-AppleClang14.0.3-noFramework-20231006.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-macOS-Universal-AppleClang14.0.3-noFramework-20231014.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/macOS-Universal/Qt6.5.3-macOS-Universal-AppleClang14.0.3-noFramework-20231006.tar.xz" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/macOS-Universal/Qt6.5.3-macOS-Universal-AppleClang14.0.3-noFramework-20231014.tar.xz" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -353,7 +354,7 @@ I&rsquo;ll provide only Universal Binary builds of macOS of this version. <a hre
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 14 Oct 2023 11:40:29 CST</p>
+Site generated: Sun, 15 Oct 2023 18:58:49 CST</p>
 
           </div>
         </div>
