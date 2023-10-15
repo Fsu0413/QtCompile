@@ -90,7 +90,7 @@
               <div class="topbar-content">
                 <div class="topbar-content-wrapper"><nav class="TableOfContents">
   <ul>
-    <li><a href="#dynamic--shared-builds">Dynamic / Shared Builds</a>
+    <li><a href="#动态--共享构建">动态 / 共享构建</a>
       <ul>
         <li><a href="#macos-universal">macOS-Universal</a></li>
       </ul>
@@ -136,8 +136,9 @@
 
 <p>此版本中附带下列数据库：</p>
 <ol>
-<li>SQLite （随 Qt 一起分发）：使用 <code>-DFEATURE_sql_sqlite -DFEATURE_system_sqlite=OFF</code> 内建在这份包里。</li>
-<li>MariaDB Connector/C 3.3 系列（仅动态构建）：使用 <code>-DFEATURE_sql_mysql</code> 内建在这份包里。</li>
+<li>SQLite （随 Qt 一起分发）：使用 <code>-DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF</code> 内建在这份包里。</li>
+<li>iODBC （macOS内置，已被 macOS 弃用许久。仅动态构建）：使用 <code>-DFEATURE_sql_odbc=ON</code> 内建在这份包里。</li>
+<li>MariaDB Connector/C 3.3 系列（仅动态构建）：使用 <code>-DFEATURE_sql_mysql=ON</code> 内建在这份包里。</li>
 </ol>
 </div>
 </div>
@@ -172,15 +173,15 @@
 这个版本我只会提供统一二进制构建。 <a href="https://developer.apple.com/documentation/apple-silicon/building-a-universal-macos-binary" target="_blank">统一二进制</a>在 Intel 和 Apple 芯片的 Mac 上都能原生运行。</div>
 </div>
 
-<h2 id="dynamic--shared-builds">Dynamic / Shared Builds</h2>
+<h2 id="动态--共享构建">动态 / 共享构建</h2>
 <h3 id="macos-universal">macOS-Universal</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.0-macOS-Universal-AppleClang14.0.3-20231012.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.0-macOS-Universal-AppleClang14.0.3-20231014.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/macOS-Universal/Qt6.6.0-macOS-Universal-AppleClang14.0.3-20231012.tar.xz" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/macOS-Universal/Qt6.6.0-macOS-Universal-AppleClang14.0.3-20231014.tar.xz" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -189,12 +190,12 @@
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.0-macOS-Universal-AppleClang14.0.3-noFramework-20231011.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.0-macOS-Universal-AppleClang14.0.3-noFramework-20231015.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/macOS-Universal/Qt6.6.0-macOS-Universal-AppleClang14.0.3-noFramework-20231011.tar.xz" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/macOS-Universal/Qt6.6.0-macOS-Universal-AppleClang14.0.3-noFramework-20231015.tar.xz" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -332,7 +333,7 @@
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 14 Oct 2023 11:38:12 CST</p>
+Site generated: Sun, 15 Oct 2023 18:58:33 CST</p>
 
           </div>
         </div>

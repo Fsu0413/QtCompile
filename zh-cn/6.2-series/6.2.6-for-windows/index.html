@@ -90,14 +90,14 @@
               <div class="topbar-content">
                 <div class="topbar-content-wrapper"><nav class="TableOfContents">
   <ul>
-    <li><a href="#dynamic--shared-builds">Dynamic / Shared Builds</a>
+    <li><a href="#动态--共享构建">动态 / 共享构建</a>
       <ul>
         <li><a href="#windows-msvc">Windows-MSVC</a></li>
         <li><a href="#windows-mingw">Windows-MinGW</a></li>
         <li><a href="#windows-mingw-llvm">Windows-MinGW-LLVM</a></li>
       </ul>
     </li>
-    <li><a href="#static-full-builds">Static <code>Full</code> Builds</a>
+    <li><a href="#静态-full-构建">静态 <code>Full</code> 构建</a>
       <ul>
         <li><a href="#windows-msvc-1">Windows-MSVC</a></li>
         <li><a href="#windows-mingw-1">Windows-MinGW</a></li>
@@ -144,9 +144,9 @@
 
 <p>此版本中附带下列数据库：</p>
 <ol>
-<li>SQLite （随 Qt 一起分发）：使用 <code>-DFEATURE_sql_sqlite -DFEATURE_system_sqlite=OFF</code> 内建在这份包里。</li>
-<li>ODBC：使用 <code>-DFEATURE_sql_odbc</code> 内建在这份包里。</li>
-<li>MariaDB Connector/C 3.3 系列（仅动态构建）：使用 <code>-DFEATURE_sql_mysql</code> 内建在这份包里。</li>
+<li>SQLite （随 Qt 一起分发）：使用 <code>-DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF</code> 内建在这份包里。</li>
+<li>ODBC：使用 <code>-DFEATURE_sql_odbc=ON</code> 内建在这份包里。</li>
+<li>MariaDB Connector/C 3.3 系列（仅动态构建）：使用 <code>-DFEATURE_sql_mysql=ON</code> 内建在这份包里。</li>
 </ol>
 </div>
 </div>
@@ -190,7 +190,7 @@
 <a href="/zh-cn/miscellaneous/notes-for-this-repo/index.html#%e5%b7%b2%e6%9c%89%e7%9a%84%e8%a1%a5%e4%b8%81">已有的补丁</a></div>
 </div>
 
-<h2 id="dynamic--shared-builds">Dynamic / Shared Builds</h2>
+<h2 id="动态--共享构建">动态 / 共享构建</h2>
 <h3 id="windows-msvc">Windows-MSVC</h3>
 <table>
         <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.6-Windows-x86_64-VS2019-16.11.30-20231007.7z</b></th></tr></thead>
@@ -393,7 +393,7 @@
 </span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
-<h2 id="static-full-builds">Static <code>Full</code> Builds</h2>
+<h2 id="静态-full-构建">静态 <code>Full</code> 构建</h2>
 <h3 id="windows-msvc-1">Windows-MSVC</h3>
 <table>
         <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.6-Windows-x86_64-VS2019-16.11.30-staticFull-20231007.7z</b></th></tr></thead>
@@ -597,7 +597,7 @@
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 14 Oct 2023 11:38:12 CST</p>
+Site generated: Sun, 15 Oct 2023 18:58:33 CST</p>
 
           </div>
         </div>

@@ -90,13 +90,10 @@
               <div class="topbar-content">
                 <div class="topbar-content-wrapper"><nav class="TableOfContents">
   <ul>
-    <li><a href="#static-builds">Static Builds</a>
-      <ul>
-        <li><a href="#windows-host">Windows host</a></li>
-        <li><a href="#linux-host">Linux Host</a></li>
-        <li><a href="#macos-host">macOS Host</a></li>
-      </ul>
-    </li>
+    <li><a href="#静态构建">静态构建</a></li>
+    <li><a href="#交叉构建主机windows">交叉构建主机：Windows</a></li>
+    <li><a href="#交叉构建主机linux">交叉构建主机：Linux</a></li>
+    <li><a href="#交叉构建主机macos">交叉构建主机：macOS</a></li>
   </ul>
 </nav>
                 </div>
@@ -138,7 +135,7 @@
 
 <p>此版本中附带下列数据库：</p>
 <ol>
-<li>SQLite （随 Qt 一起分发）：使用 <code>-DFEATURE_sql_sqlite -DFEATURE_system_sqlite=OFF</code> 内建在这份包里。</li>
+<li>SQLite （随 Qt 一起分发）：使用 <code>-DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF</code> 内建在这份包里。</li>
 </ol>
 </div>
 </div>
@@ -170,8 +167,8 @@ WebAssembly 不支持二进制兼容性。在构建自己的代码的时候必�
 Qt 在 WebAssembly 平台上只能构建静态库。</div>
 </div>
 
-<h2 id="static-builds">Static Builds</h2>
-<h3 id="windows-host">Windows host</h3>
+<h2 id="静态构建">静态构建</h2>
+<h2 id="交叉构建主机windows">交叉构建主机：Windows</h2>
 <table>
         <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.0-WebAssembly-emscripten3.1.37-xWindows-x86_64-MinGW12.2.0-msvcrt-20231011.7z</b></th></tr></thead>
         <tbody>
@@ -186,7 +183,7 @@ Qt 在 WebAssembly 平台上只能构建静态库。</div>
             <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">emscripten-3.1.37</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
-<h3 id="linux-host">Linux Host</h3>
+<h2 id="交叉构建主机linux">交叉构建主机：Linux</h2>
 <table>
         <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.0-WebAssembly-emscripten3.1.37-xLinux-x86_64-gcc11.3.1-20231011.tar.xz</b></th></tr></thead>
         <tbody>
@@ -201,7 +198,7 @@ Qt 在 WebAssembly 平台上只能构建静态库。</div>
             <tr><td width="20%"><b>构建主机：</b></td><td width="30%">RockyLinux 9.2</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">emscripten-3.1.37</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
-<h3 id="macos-host">macOS Host</h3>
+<h2 id="交叉构建主机macos">交叉构建主机：macOS</h2>
 <table>
         <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.0-WebAssembly-emscripten3.1.37-xmacOS-Universal-AppleClang14.0.3-20231011.tar.xz</b></th></tr></thead>
         <tbody>
@@ -346,7 +343,7 @@ Qt 在 WebAssembly 平台上只能构建静态库。</div>
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 14 Oct 2023 11:38:12 CST</p>
+Site generated: Sun, 15 Oct 2023 18:58:33 CST</p>
 
           </div>
         </div>
