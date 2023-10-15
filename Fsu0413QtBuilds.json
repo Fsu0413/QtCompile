@@ -65,8 +65,8 @@
   },
   "q5_15mal": {
     "sort": 51518,
-    "fileName": "Qt5.15.11-macOS-Universal-AppleClang14.0.3-20231008.tar.xz",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/macOS-Universal/Qt5.15.11-macOS-Universal-AppleClang14.0.3-20231008.tar.xz",
+    "fileName": "Qt5.15.11-macOS-Universal-AppleClang14.0.3-20231015.tar.xz",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/macOS-Universal/Qt5.15.11-macOS-Universal-AppleClang14.0.3-20231015.tar.xz",
     "notes": "__NO WEBENGINE__ because of compile failure",
     "data": {
       "version": "5.15.11",
@@ -82,8 +82,8 @@
   },
   "q5_15malnf": {
     "sort": 51519,
-    "fileName": "Qt5.15.11-macOS-Universal-AppleClang14.0.3-noFramework-20231008.tar.xz",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/macOS-Universal/Qt5.15.11-macOS-Universal-AppleClang14.0.3-noFramework-20231008.tar.xz",
+    "fileName": "Qt5.15.11-macOS-Universal-AppleClang14.0.3-noFramework-20231015.tar.xz",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/macOS-Universal/Qt5.15.11-macOS-Universal-AppleClang14.0.3-noFramework-20231015.tar.xz",
     "notes": "__NO WEBENGINE__ because of compile failure",
     "data": {
       "version": "5.15.11",
@@ -655,8 +655,8 @@
   },
   "q6_2mal": {
     "sort": 60220,
-    "fileName": "Qt6.2.6-macOS-Universal-AppleClang14.0.3-20231007.tar.xz",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-Universal/Qt6.2.6-macOS-Universal-AppleClang14.0.3-20231007.tar.xz",
+    "fileName": "Qt6.2.6-macOS-Universal-AppleClang14.0.3-20231014.tar.xz",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-Universal/Qt6.2.6-macOS-Universal-AppleClang14.0.3-20231014.tar.xz",
     "data": {
       "version": "6.2.6",
       "platform": "macOS",
@@ -671,8 +671,8 @@
   },
   "q6_2malnf": {
     "sort": 60221,
-    "fileName": "Qt6.2.6-macOS-Universal-AppleClang14.0.3-noFramework-20231007.tar.xz",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-Universal/Qt6.2.6-macOS-Universal-AppleClang14.0.3-noFramework-20231007.tar.xz",
+    "fileName": "Qt6.2.6-macOS-Universal-AppleClang14.0.3-noFramework-20231014.tar.xz",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/macOS-Universal/Qt6.2.6-macOS-Universal-AppleClang14.0.3-noFramework-20231014.tar.xz",
     "data": {
       "version": "6.2.6",
       "platform": "macOS",
@@ -1361,8 +1361,8 @@
   },
   "q6_5mal": {
     "sort": 60519,
-    "fileName": "Qt6.5.3-macOS-Universal-AppleClang14.0.3-20231006.tar.xz",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/macOS-Universal/Qt6.5.3-macOS-Universal-AppleClang14.0.3-20231006.tar.xz",
+    "fileName": "Qt6.5.3-macOS-Universal-AppleClang14.0.3-20231014.tar.xz",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/macOS-Universal/Qt6.5.3-macOS-Universal-AppleClang14.0.3-20231014.tar.xz",
     "data": {
       "version": "6.5.3",
       "platform": "macOS",
@@ -1377,8 +1377,8 @@
   },
   "q6_5malnf": {
     "sort": 60520,
-    "fileName": "Qt6.5.3-macOS-Universal-AppleClang14.0.3-noFramework-20231006.tar.xz",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/macOS-Universal/Qt6.5.3-macOS-Universal-AppleClang14.0.3-noFramework-20231006.tar.xz",
+    "fileName": "Qt6.5.3-macOS-Universal-AppleClang14.0.3-noFramework-20231014.tar.xz",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/macOS-Universal/Qt6.5.3-macOS-Universal-AppleClang14.0.3-noFramework-20231014.tar.xz",
     "data": {
       "version": "6.5.3",
       "platform": "macOS",
@@ -1907,8 +1907,8 @@
   },
   "q6_6mal": {
     "sort": 60619,
-    "fileName": "Qt6.6.0-macOS-Universal-AppleClang14.0.3-20231012.tar.xz",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/macOS-Universal/Qt6.6.0-macOS-Universal-AppleClang14.0.3-20231012.tar.xz",
+    "fileName": "Qt6.6.0-macOS-Universal-AppleClang14.0.3-20231014.tar.xz",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/macOS-Universal/Qt6.6.0-macOS-Universal-AppleClang14.0.3-20231014.tar.xz",
     "data": {
       "version": "6.6.0",
       "platform": "macOS",
@@ -1923,8 +1923,8 @@
   },
   "q6_6malnf": {
     "sort": 60620,
-    "fileName": "Qt6.6.0-macOS-Universal-AppleClang14.0.3-noFramework-20231011.tar.xz",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/macOS-Universal/Qt6.6.0-macOS-Universal-AppleClang14.0.3-noFramework-20231011.tar.xz",
+    "fileName": "Qt6.6.0-macOS-Universal-AppleClang14.0.3-noFramework-20231015.tar.xz",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/macOS-Universal/Qt6.6.0-macOS-Universal-AppleClang14.0.3-noFramework-20231015.tar.xz",
     "data": {
       "version": "6.6.0",
       "platform": "macOS",
