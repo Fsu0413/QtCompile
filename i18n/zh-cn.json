@@ -152,5 +152,26 @@
 	},
 	"fsqtbuild_i18n_sql_iodbcmac": {
 		"other": "iODBC （macOS内置，已被 macOS 弃用许久。仅动态构建）"
+	},
+	"fsqtbuild_i18n_h2dynamic": {
+		"other": "动态 / 共享构建"
+	},
+	"fsqtbuild_i18n_h2dynamicarg": {
+		"other": "动态 / 共享构建 （%s）"
+	},
+	"fsqtbuild_i18n_h2staticlite": {
+		"other": "静态 `Lite` 构建"
+	},
+	"fsqtbuild_i18n_h2staticfull": {
+		"other": "静态 `Full` 构建"
+	},
+	"fsqtbuild_i18n_h2static": {
+		"other": "静态构建"
+	},
+	"fsqtbuild_i18n_h2legacy": {
+		"other": "遗留的构建"
+	},
+	"fsqtbuild_i18n_h3crosshost": {
+		"other": "交叉构建主机：%s"
 	}
 }

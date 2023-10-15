@@ -152,5 +152,26 @@
 	},
 	"fsqtbuild_i18n_sql_iodbcmac": {
 		"other": "iODBC (built in macOS yet deprecated since. Dynamic builds only)"
+	},
+	"fsqtbuild_i18n_h2dynamic": {
+		"other": "Dynamic / Shared Builds"
+	},
+	"fsqtbuild_i18n_h2dynamicarg": {
+		"other": "Dynamic / Shared Builds (%s)"
+	},
+	"fsqtbuild_i18n_h2staticlite": {
+		"other": "Static `Lite` Builds"
+	},
+	"fsqtbuild_i18n_h2staticfull": {
+		"other": "Static `Full` Builds"
+	},
+	"fsqtbuild_i18n_h2static": {
+		"other": "Static Builds"
+	},
+	"fsqtbuild_i18n_h2legacy": {
+		"other": "Legacy Builds"
+	},
+	"fsqtbuild_i18n_h3crosshost": {
+		"other": "%s Host"
 	}
 }
