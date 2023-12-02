@@ -4,9 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.120.4">
-    <meta name="generator" content="Relearn 5.22.1">
+    <meta name="generator" content="Relearn 5.23.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Fsu0413 的原版 Qt 构建">
+    <meta name="twitter:description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
+    <meta property="og:title" content="Fsu0413 的原版 Qt 构建">
+    <meta property="og:description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/qtcompile/index.html">
+    <meta property="og:site_name" content="Fsu0413 的原版 Qt 构建">
     <title>Fsu0413 的原版 Qt 构建</title>
     <link href="/qtcompile/index.html" rel="alternate" hreflang="x-default">
     <link href="/qtcompile/index.html" rel="alternate" hreflang="zh-cn">
@@ -91,10 +99,6 @@
                 <div class="topbar-content-wrapper"><nav class="TableOfContents">
   <ul>
     <li><a href="#免责声明">免责声明</a></li>
-    <li><a href="#本版本库的一些备注">本版本库的一些备注</a></li>
-    <li><a href="#当前构建状况">当前构建状况</a></li>
-    <li><a href="#下载">下载</a></li>
-    <li><a href="#当前的失败项">当前的失败项</a></li>
     <li><a href="#更新记录">更新记录</a>
       <ul>
         <li><a href="#2023-年-10-月-15-日">2023 年 10 月 15 日</a></li>
@@ -146,13 +150,13 @@
 目前已经删除所有 OSDN 链接，拜托各位通过 SourceForge 进行下载。</p>
 <p>这边上传的时候发生的错误如下（通过 WinSCP 输出）：</p>
 <div class="expand">
-    <input type="checkbox" id="R-expand-226f64b8dacbe654d6b5d3d444206a00" aria-controls="R-expandcontent-226f64b8dacbe654d6b5d3d444206a00" >
-    <label class="expand-label" for="R-expand-226f64b8dacbe654d6b5d3d444206a00" >
+    <input type="checkbox" id="R-expand-4a5ff9c946f2c521e8361e4d4857a0bc" aria-controls="R-expandcontent-4a5ff9c946f2c521e8361e4d4857a0bc" >
+    <label class="expand-label" for="R-expand-4a5ff9c946f2c521e8361e4d4857a0bc" >
         <i class="fas fa-chevron-down"></i>
         <i class="fas fa-chevron-right"></i>
         展开
     </label>
-    <div id="R-expandcontent-226f64b8dacbe654d6b5d3d444206a00" class="expand-content">
+    <div id="R-expandcontent-4a5ff9c946f2c521e8361e4d4857a0bc" class="expand-content">
 <p>一般错误(服务器应该提供错误描述)。<br>
 错误码：4<br>
 服务器返回的错误消息：Failure</p>
@@ -173,14 +177,6 @@
 使用的代码为从 <a href="http://download.qt.io" target="_blank">这里</a> 获取的。我没有对源文件/生成的文件进行官方发布的补丁以外的任何修改。<br>
 <strong>这些包为“依原样”提供。我对您使用此二进制文件作出的任何事情不负任何责任。</strong><br>
 感谢 The Qt Company Ltd. 和众多 Qt 的开发者的绝妙工作！</p>
-<h2 id="本版本库的一些备注">本版本库的一些备注</h2>
-<p><a href="/qtcompile/miscellaneous/notes-for-this-repo/">这里</a></p>
-<h2 id="当前构建状况">当前构建状况</h2>
-<p><a href="/qtcompile/miscellaneous/current-build-status/">这里</a></p>
-<h2 id="下载">下载</h2>
-<p>参考左侧的目录。</p>
-<h2 id="当前的失败项">当前的失败项</h2>
-<p><a href="/qtcompile/miscellaneous/current-failures/">这里</a></p>
 <h2 id="更新记录">更新记录</h2>
 <h3 id="2023-年-10-月-15-日">2023 年 10 月 15 日</h3>
 <p>重新构建所有 macOS 版本，利用 macOS 附带的 iODBC 库构建 ODBC 数据库后端。</p>
@@ -188,7 +184,8 @@
 <p>重新构建了所有安卓版本，禁用了 OpenSSL 的线程配置。<br>
 更新 Qt 5.15.11 安卓版本，使用 OpenSSL 3.0.11。</p>
 <h3 id="2023-年-10-月-12-日">2023 年 10 月 12 日</h3>
-<p>误删了 Qt 5.15.10 macOS 的包（带 QtWebEngine 的那个）。因为我没有保留原来的包，它永久消失了。为此带来的不便我表示抱歉。</p>
+<p>误删了 Qt 5.15.10 macOS 的包（带 QtWebEngine 的那个）。<br>
+因为原来的包我没有存，所以也没有办法再次上传了。为此带来的不便我表示抱歉。</p>
 <p>更新 Qt 6.6.0，附带 OpenSSL 3.0.11。<br>
 更新 Qt 6.5.3 的安卓 arm （32位）版本（重新支持）。</p>
 <h3 id="2023-年-10-月-8-日">2023 年 10 月 8 日</h3>
@@ -205,7 +202,6 @@ Qt 5.12 系列的构建脚本和环境都爆破了。</p>
 <p><a href="/qtcompile/miscellaneous/histories/">这里</a></p>
 
             <footer class="footline">
-
             </footer>
           </article>
         </div>
@@ -333,7 +329,7 @@ Qt 5.12 系列的构建脚本和环境都爆破了。</p>
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 02 Dec 2023 13:51:09 CST</p>
+Site generated: Sat, 02 Dec 2023 14:05:50 CST</p>
 
           </div>
         </div>

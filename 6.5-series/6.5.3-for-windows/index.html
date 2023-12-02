@@ -4,9 +4,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.120.4">
-    <meta name="generator" content="Relearn 5.22.1">
+    <meta name="generator" content="Relearn 5.23.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="6.5.3 的 Windows 版本 :: Fsu0413 的原版 Qt 构建">
+    <meta name="twitter:description" content="备注 此版本中附带下列数据库：
+SQLite （随 Qt 一起分发）：使用 -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF 内建在这份包里。 ODBC：使用 -DFEATURE_sql_odbc=ON 内建在这份包里。 MariaDB Connector/C 3.3 系列（仅动态构建）：使用 -DFEATURE_sql_mysql=ON 内建在这份包里。 备注 从 Qt 6.2 开始 Qt 将 TLS 后端改成插件的形式。
+这个版本包含下列后端：
+OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启用链接的 OpenSSL 支持 Windows Secure Channel，使用 -DFEATURE_schannel=ON。在 MSVC 版本中支持 TLS 1.3 备注 所有构建配置了 -DFEATURE_icu=OFF 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 动态 / 共享构建 Windows-MSVC Qt6.5.3-Windows-x86_64-VS2022-17.7.4-20231006.7z 下载地址： SourceForge 链接 构建主机：Windows 11 10.0.22621工具链版本：VS2022 17.7.4 w/ Windows SDK 10.0.22621备注： Windows-MinGW Qt6.5.3-Windows-x86_64-MinGW12.2.0-msvcrt-20231007.7z 下载地址： SourceForge 链接 构建主机：Windows 11 10.">
+    <meta property="og:title" content="6.5.3 的 Windows 版本 :: Fsu0413 的原版 Qt 构建">
+    <meta property="og:description" content="备注 此版本中附带下列数据库：
+SQLite （随 Qt 一起分发）：使用 -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF 内建在这份包里。 ODBC：使用 -DFEATURE_sql_odbc=ON 内建在这份包里。 MariaDB Connector/C 3.3 系列（仅动态构建）：使用 -DFEATURE_sql_mysql=ON 内建在这份包里。 备注 从 Qt 6.2 开始 Qt 将 TLS 后端改成插件的形式。
+这个版本包含下列后端：
+OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启用链接的 OpenSSL 支持 Windows Secure Channel，使用 -DFEATURE_schannel=ON。在 MSVC 版本中支持 TLS 1.3 备注 所有构建配置了 -DFEATURE_icu=OFF 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 动态 / 共享构建 Windows-MSVC Qt6.5.3-Windows-x86_64-VS2022-17.7.4-20231006.7z 下载地址： SourceForge 链接 构建主机：Windows 11 10.0.22621工具链版本：VS2022 17.7.4 w/ Windows SDK 10.0.22621备注： Windows-MinGW Qt6.5.3-Windows-x86_64-MinGW12.2.0-msvcrt-20231007.7z 下载地址： SourceForge 链接 构建主机：Windows 11 10.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="/qtcompile/6.5-series/6.5.3-for-windows/index.html">
+    <meta property="article:section" content="6.5 系列 :: Fsu0413 的原版 Qt 构建">
+    <meta property="og:site_name" content="Fsu0413 的原版 Qt 构建">
     <title>6.5.3 的 Windows 版本 :: Fsu0413 的原版 Qt 构建</title>
     <link href="/qtcompile/6.5-series/6.5.3-for-windows/index.html" rel="alternate" hreflang="x-default">
     <link href="/qtcompile/6.5-series/6.5.3-for-windows/index.html" rel="alternate" hreflang="zh-cn">
@@ -400,7 +415,6 @@
     </table>
 
             <footer class="footline">
-
             </footer>
           </article>
         </div>
@@ -528,7 +542,7 @@
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 02 Dec 2023 13:51:09 CST</p>
+Site generated: Sat, 02 Dec 2023 14:05:49 CST</p>
 
           </div>
         </div>

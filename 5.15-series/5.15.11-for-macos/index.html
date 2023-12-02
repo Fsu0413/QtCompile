@@ -4,9 +4,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.120.4">
-    <meta name="generator" content="Relearn 5.22.1">
+    <meta name="generator" content="Relearn 5.23.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="5.15.11 的 macOS 版本 :: Fsu0413 的原版 Qt 构建">
+    <meta name="twitter:description" content="备注 此版本中附带下列数据库：
+SQLite （随 Qt 一起分发）：使用 -sql-sqlite 内建在这份包里。 iODBC （macOS内置，已被 macOS 弃用许久。仅动态构建）：使用 -sql-odbc 内建在这份包里。 MariaDB Connector/C 3.1 系列（仅动态构建）：使用 -sql-mysql 内建在这份包里。 备注 所有构建使用 -no-openssl -securetransport，意味着 macOS 提供的 Secure Transport 库作为 TLS 后端来使用。
+这个后端从 Qt 5.6 版本开始支持。 备注 所有构建配置了 -no-icu 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 Qt 于发布商业专用版 Qt 5.15 一年之后发布开源 Qt 5.15，但是 QtWebEngine 是个例外。它保持和 Qt 商业专用版相同的时间发布开源版本。
+原因是 QtWebEngine 使用了带有不允许闭源发布的协议的第三方工程。
+Qt 商业专用版长期支持版本已经发布了 5.15.15，所以这份版本构建时也使用 QtWebEngine 5.15.15。 （构建失败了……）
+补丁（多数是 CVE 问题） 我在构建 Qt 时应用补丁。想查看补丁列表的话，参考下页：
+已有的补丁 备注 这个版本我只会提供统一二进制构建。 统一二进制在 Intel 和 Apple 芯片的 Mac 上都能原生运行。 动态 / 共享构建 macOS-Universal Qt5.">
+    <meta property="og:title" content="5.15.11 的 macOS 版本 :: Fsu0413 的原版 Qt 构建">
+    <meta property="og:description" content="备注 此版本中附带下列数据库：
+SQLite （随 Qt 一起分发）：使用 -sql-sqlite 内建在这份包里。 iODBC （macOS内置，已被 macOS 弃用许久。仅动态构建）：使用 -sql-odbc 内建在这份包里。 MariaDB Connector/C 3.1 系列（仅动态构建）：使用 -sql-mysql 内建在这份包里。 备注 所有构建使用 -no-openssl -securetransport，意味着 macOS 提供的 Secure Transport 库作为 TLS 后端来使用。
+这个后端从 Qt 5.6 版本开始支持。 备注 所有构建配置了 -no-icu 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 Qt 于发布商业专用版 Qt 5.15 一年之后发布开源 Qt 5.15，但是 QtWebEngine 是个例外。它保持和 Qt 商业专用版相同的时间发布开源版本。
+原因是 QtWebEngine 使用了带有不允许闭源发布的协议的第三方工程。
+Qt 商业专用版长期支持版本已经发布了 5.15.15，所以这份版本构建时也使用 QtWebEngine 5.15.15。 （构建失败了……）
+补丁（多数是 CVE 问题） 我在构建 Qt 时应用补丁。想查看补丁列表的话，参考下页：
+已有的补丁 备注 这个版本我只会提供统一二进制构建。 统一二进制在 Intel 和 Apple 芯片的 Mac 上都能原生运行。 动态 / 共享构建 macOS-Universal Qt5.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="/qtcompile/5.15-series/5.15.11-for-macos/index.html">
+    <meta property="article:section" content="5.15 系列 :: Fsu0413 的原版 Qt 构建">
+    <meta property="og:site_name" content="Fsu0413 的原版 Qt 构建">
     <title>5.15.11 的 macOS 版本 :: Fsu0413 的原版 Qt 构建</title>
     <link href="/qtcompile/5.15-series/5.15.11-for-macos/index.html" rel="alternate" hreflang="x-default">
     <link href="/qtcompile/5.15-series/5.15.11-for-macos/index.html" rel="alternate" hreflang="zh-cn">
@@ -181,7 +202,7 @@
   <div class="box-content">
 <p>
 我在构建 Qt 时应用补丁。想查看补丁列表的话，参考下页：<br>
-<a href="/qtcompile/miscellaneous/notes-for-this-repo/index.html#%e5%b7%b2%e6%9c%89%e7%9a%84%e8%a1%a5%e4%b8%81">已有的补丁</a></div>
+<a href="/qtcompile/miscellaneous/notes-for-this-repo/index.html#%E5%B7%B2%E6%9C%89%E7%9A%84%E8%A1%A5%E4%B8%81">已有的补丁</a></div>
 </div>
 
 
@@ -240,7 +261,6 @@
     </table>
 
             <footer class="footline">
-
             </footer>
           </article>
         </div>
@@ -368,7 +388,7 @@
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 02 Dec 2023 13:51:09 CST</p>
+Site generated: Sat, 02 Dec 2023 14:05:49 CST</p>
 
           </div>
         </div>
