@@ -4,9 +4,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.120.4">
-    <meta name="generator" content="Relearn 5.22.1">
+    <meta name="generator" content="Relearn 5.23.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="5.9.9 的安卓版本 :: Fsu0413 的原版 Qt 构建">
+    <meta name="twitter:description" content="重要 这是最终版。即使有需求也不会再更新。构建环境已经爆破 备注 此版本中附带下列数据库：
+SQLite （随 Qt 一起分发）：使用 -sql-sqlite 内建在这份包里。 备注 所有构建使用 -openssl-linked，意味着 OpenSSL 链接到了 Qt，作为 TLS 后端来使用。
+它链接到了静态的 OpenSSL 1.0.2 系列库。
+安卓从 6.0 版本开始使用 BoringSSL 作为内建的 SSL / TLS 库。
+此库与 OpenSSL 的 API 不兼容！！所以无法使用。
+备注 所有构建配置了 -no-icu 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 使用 NDK r10e 版本，使用参数 -android-ndk-platform android-16 进行 32 位版本的构建。
+这意味着这些构建可能只能在安卓 4.1 以及之后的版本上运行。
+64 位版则使用参数 -android-ndk-platform android-21。
+由于 OpenSSL 1.0.2 系列还不支持 64 位安卓，我们临时使用 ./Configure linux-aarch64 对 OpenSSL 进行配置。">
+    <meta property="og:title" content="5.9.9 的安卓版本 :: Fsu0413 的原版 Qt 构建">
+    <meta property="og:description" content="重要 这是最终版。即使有需求也不会再更新。构建环境已经爆破 备注 此版本中附带下列数据库：
+SQLite （随 Qt 一起分发）：使用 -sql-sqlite 内建在这份包里。 备注 所有构建使用 -openssl-linked，意味着 OpenSSL 链接到了 Qt，作为 TLS 后端来使用。
+它链接到了静态的 OpenSSL 1.0.2 系列库。
+安卓从 6.0 版本开始使用 BoringSSL 作为内建的 SSL / TLS 库。
+此库与 OpenSSL 的 API 不兼容！！所以无法使用。
+备注 所有构建配置了 -no-icu 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 使用 NDK r10e 版本，使用参数 -android-ndk-platform android-16 进行 32 位版本的构建。
+这意味着这些构建可能只能在安卓 4.1 以及之后的版本上运行。
+64 位版则使用参数 -android-ndk-platform android-21。
+由于 OpenSSL 1.0.2 系列还不支持 64 位安卓，我们临时使用 ./Configure linux-aarch64 对 OpenSSL 进行配置。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="/zh-cn/legacy-lts-series/5.9-series/5.9.9-for-android/index.html">
+    <meta property="article:section" content="5.9 系列 :: Fsu0413 的原版 Qt 构建">
+    <meta property="og:site_name" content="Fsu0413 的原版 Qt 构建">
     <title>5.9.9 的安卓版本 :: Fsu0413 的原版 Qt 构建</title>
     <link href="/legacy-lts-series/5.9-series/5.9.9-for-android/index.html" rel="alternate" hreflang="x-default">
     <link href="/legacy-lts-series/5.9-series/5.9.9-for-android/index.html" rel="alternate" hreflang="en">
@@ -312,7 +337,6 @@
     </table>
 
             <footer class="footline">
-
             </footer>
           </article>
         </div>
@@ -440,7 +464,7 @@
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 02 Dec 2023 13:51:11 CST</p>
+Site generated: Sat, 02 Dec 2023 14:03:13 CST</p>
 
           </div>
         </div>

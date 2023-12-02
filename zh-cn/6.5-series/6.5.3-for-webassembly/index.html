@@ -4,9 +4,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.120.4">
-    <meta name="generator" content="Relearn 5.22.1">
+    <meta name="generator" content="Relearn 5.23.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="6.5.3 的 WebAssembly 版本 :: Fsu0413 的原版 Qt 构建">
+    <meta name="twitter:description" content=" 备注 此版本中附带下列数据库：
+SQLite （随 Qt 一起分发）：使用 -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF 内建在这份包里。 备注 所有构建配置了 -DFEATURE_icu=OFF 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 所有包使用了于 Qt Wiki 中推荐的 emscripten SDK 版本 3.1.25。
+WebAssembly 不支持二进制兼容性。在构建自己的代码的时候必须要使用 SDK 版本 3.1.25，否则会出现不可预料的错误。
+所有构建通过使用 -DFEATURE_thread=ON 启用了线程支持。
+备注 Qt 在 WebAssembly 平台上只能构建静态库。 静态构建 交叉构建主机：Windows Qt6.5.3-WebAssembly-emscripten3.1.25-xWindows-x86_64-MinGW12.2.0-msvcrt-20231007.7z 下载地址： SourceForge 链接 构建主机：Windows 11 10.0.22621工具链版本：emscripten-3.1.25备注： 交叉构建主机：Linux Qt6.5.3-WebAssembly-emscripten3.1.25-xLinux-x86_64-gcc11.3.1-20231006.tar.xz 下载地址： SourceForge 链接 构建主机：RockyLinux 9.2工具链版本：emscripten-3.1.25备注： 交叉构建主机：macOS Qt6.5.3-WebAssembly-emscripten3.1.25-xmacOS-Universal-AppleClang14.0.3-20231006.tar.xz 下载地址： SourceForge 链接 构建主机：macOS 13.6工具链版本：emscripten-3.1.25备注： ">
+    <meta property="og:title" content="6.5.3 的 WebAssembly 版本 :: Fsu0413 的原版 Qt 构建">
+    <meta property="og:description" content=" 备注 此版本中附带下列数据库：
+SQLite （随 Qt 一起分发）：使用 -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF 内建在这份包里。 备注 所有构建配置了 -DFEATURE_icu=OFF 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 所有包使用了于 Qt Wiki 中推荐的 emscripten SDK 版本 3.1.25。
+WebAssembly 不支持二进制兼容性。在构建自己的代码的时候必须要使用 SDK 版本 3.1.25，否则会出现不可预料的错误。
+所有构建通过使用 -DFEATURE_thread=ON 启用了线程支持。
+备注 Qt 在 WebAssembly 平台上只能构建静态库。 静态构建 交叉构建主机：Windows Qt6.5.3-WebAssembly-emscripten3.1.25-xWindows-x86_64-MinGW12.2.0-msvcrt-20231007.7z 下载地址： SourceForge 链接 构建主机：Windows 11 10.0.22621工具链版本：emscripten-3.1.25备注： 交叉构建主机：Linux Qt6.5.3-WebAssembly-emscripten3.1.25-xLinux-x86_64-gcc11.3.1-20231006.tar.xz 下载地址： SourceForge 链接 构建主机：RockyLinux 9.2工具链版本：emscripten-3.1.25备注： 交叉构建主机：macOS Qt6.5.3-WebAssembly-emscripten3.1.25-xmacOS-Universal-AppleClang14.0.3-20231006.tar.xz 下载地址： SourceForge 链接 构建主机：macOS 13.6工具链版本：emscripten-3.1.25备注： ">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="/zh-cn/6.5-series/6.5.3-for-webassembly/index.html">
+    <meta property="article:section" content="6.5 系列 :: Fsu0413 的原版 Qt 构建">
+    <meta property="og:site_name" content="Fsu0413 的原版 Qt 构建">
     <title>6.5.3 的 WebAssembly 版本 :: Fsu0413 的原版 Qt 构建</title>
     <link href="/6.5-series/6.5.3-for-webassembly/index.html" rel="alternate" hreflang="x-default">
     <link href="/6.5-series/6.5.3-for-webassembly/index.html" rel="alternate" hreflang="en">
@@ -215,7 +232,6 @@ Qt 在 WebAssembly 平台上只能构建静态库。</div>
     </table>
 
             <footer class="footline">
-
             </footer>
           </article>
         </div>
@@ -343,7 +359,7 @@ Qt 在 WebAssembly 平台上只能构建静态库。</div>
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 02 Dec 2023 13:51:10 CST</p>
+Site generated: Sat, 02 Dec 2023 14:03:12 CST</p>
 
           </div>
         </div>

@@ -4,9 +4,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.120.4">
-    <meta name="generator" content="Relearn 5.22.1">
+    <meta name="generator" content="Relearn 5.23.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Current failures :: Fsu0413&#39;s Original Qt builds">
+    <meta name="twitter:description" content="QDoc after Qt 5.12 cannot use static linked clang when using MSVC It uses libclang_static.lib but clang don&rsquo;t provide this one.
+I have decided not provide LLVM-based QDoc until I find a way to static link it.
+Update 3rd Nov, 2020:
+libclang_static.lib is packed seprately using script by Qt guys.
+Thanks &ldquo;lixinwei&rdquo; on QTCN.org for telling me related info. Original post (Sorry, it&rsquo;s in Chinese)
+Command line too long when building Qt 6.">
+    <meta property="og:title" content="Current failures :: Fsu0413&#39;s Original Qt builds">
+    <meta property="og:description" content="QDoc after Qt 5.12 cannot use static linked clang when using MSVC It uses libclang_static.lib but clang don&rsquo;t provide this one.
+I have decided not provide LLVM-based QDoc until I find a way to static link it.
+Update 3rd Nov, 2020:
+libclang_static.lib is packed seprately using script by Qt guys.
+Thanks &ldquo;lixinwei&rdquo; on QTCN.org for telling me related info. Original post (Sorry, it&rsquo;s in Chinese)
+Command line too long when building Qt 6.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="/miscellaneous/current-failures/index.html">
+    <meta property="article:section" content="Miscellaneous :: Fsu0413&#39;s Original Qt builds">
+    <meta property="og:site_name" content="Fsu0413&#39;s Original Qt builds">
     <title>Current failures :: Fsu0413&#39;s Original Qt builds</title>
     <link href="/miscellaneous/current-failures/index.html" rel="alternate" hreflang="x-default">
     <link href="/miscellaneous/current-failures/index.html" rel="alternate" hreflang="en">
@@ -172,7 +191,6 @@ I&rsquo;ve made patches on Qt 6.2.4 to fix the conflict but it conflicts with 6.
 <p>Subsequent patch of CVE-2023-38197 depends on patch of CVE-2023-37369 thus can&rsquo;t be applied either.</p>
 
             <footer class="footline">
-
             </footer>
           </article>
         </div>
@@ -300,7 +318,7 @@ I&rsquo;ve made patches on Qt 6.2.4 to fix the conflict but it conflicts with 6.
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 02 Dec 2023 13:51:10 CST</p>
+Site generated: Sat, 02 Dec 2023 14:03:12 CST</p>
 
           </div>
         </div>

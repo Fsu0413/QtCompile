@@ -4,9 +4,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.120.4">
-    <meta name="generator" content="Relearn 5.22.1">
+    <meta name="generator" content="Relearn 5.23.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="5.6.3 的 Windows 版本 :: Fsu0413 的原版 Qt 构建">
+    <meta name="twitter:description" content="重要 这是最终版。即使有需求也不会再更新。构建环境已经爆破 备注 此版本中附带下列数据库：
+SQLite （随 Qt 一起分发）：使用 -plugin-sql-sqlite 内建在这份包里。 ODBC：使用 -plugin-sql-odbc 内建在这份包里。 备注 所有构建使用 -openssl-linked，意味着 OpenSSL 链接到了 Qt，作为 TLS 后端来使用。
+它链接到了随包一起分发的 OpenSSL 1.0.2 系列库。
+动态和静态的 OpenSSL 分别包含在动态和静态的 Qt 库中。
+备注 所有构建配置了 -no-icu 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 动态 / 共享构建 Windows-MSVC Qt5.6.3-Windows-x86-VS2015-20200104.7z 下载地址： SourceForge 链接 构建主机：Windows 8.1 Update工具链版本：VS2015 Update 3备注： Qt5.6.3-Windows-x86_64-VS2015-20200104.7z 下载地址： SourceForge 链接 构建主机：Windows 8.1 Update工具链版本：VS2015 Update 3备注： Qt5.6.3-Windows-x86-VS2015-xp-20200104.7z 下载地址： SourceForge 链接 构建主机：Windows 8.1 Update工具链版本：VS2015 Update 3备注：XP COMPATIBLE, NO WEBENGINE/WEBVIEW, 32-bit ONLY, just for the unreconstructed people who want to use XP eagerly Qt5.">
+    <meta property="og:title" content="5.6.3 的 Windows 版本 :: Fsu0413 的原版 Qt 构建">
+    <meta property="og:description" content="重要 这是最终版。即使有需求也不会再更新。构建环境已经爆破 备注 此版本中附带下列数据库：
+SQLite （随 Qt 一起分发）：使用 -plugin-sql-sqlite 内建在这份包里。 ODBC：使用 -plugin-sql-odbc 内建在这份包里。 备注 所有构建使用 -openssl-linked，意味着 OpenSSL 链接到了 Qt，作为 TLS 后端来使用。
+它链接到了随包一起分发的 OpenSSL 1.0.2 系列库。
+动态和静态的 OpenSSL 分别包含在动态和静态的 Qt 库中。
+备注 所有构建配置了 -no-icu 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 动态 / 共享构建 Windows-MSVC Qt5.6.3-Windows-x86-VS2015-20200104.7z 下载地址： SourceForge 链接 构建主机：Windows 8.1 Update工具链版本：VS2015 Update 3备注： Qt5.6.3-Windows-x86_64-VS2015-20200104.7z 下载地址： SourceForge 链接 构建主机：Windows 8.1 Update工具链版本：VS2015 Update 3备注： Qt5.6.3-Windows-x86-VS2015-xp-20200104.7z 下载地址： SourceForge 链接 构建主机：Windows 8.1 Update工具链版本：VS2015 Update 3备注：XP COMPATIBLE, NO WEBENGINE/WEBVIEW, 32-bit ONLY, just for the unreconstructed people who want to use XP eagerly Qt5.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="/zh-cn/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html">
+    <meta property="article:section" content="5.6 系列 :: Fsu0413 的原版 Qt 构建">
+    <meta property="og:site_name" content="Fsu0413 的原版 Qt 构建">
     <title>5.6.3 的 Windows 版本 :: Fsu0413 的原版 Qt 构建</title>
     <link href="/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html" rel="alternate" hreflang="x-default">
     <link href="/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html" rel="alternate" hreflang="en">
@@ -378,7 +395,6 @@
     </table>
 
             <footer class="footline">
-
             </footer>
           </article>
         </div>
@@ -506,7 +522,7 @@
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 02 Dec 2023 13:51:11 CST</p>
+Site generated: Sat, 02 Dec 2023 14:03:13 CST</p>
 
           </div>
         </div>
