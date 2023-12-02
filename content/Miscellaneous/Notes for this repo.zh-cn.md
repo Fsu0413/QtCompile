@@ -207,7 +207,7 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 当前正在使用的是 OpenSSL 1.1.1 系列和 3.0 系列。  
 OpenSSL 1.1.1 系列 ~~将~~ 已于 {{% date 2023 9 11 %}}结束支持，而 OpenSSL 3.0 系列则是 {{% date 2026 9 7 %}}。
 
-由于 Qt 5.15.8 开始支持使用 OpenSSL 3.0 系列，在 OpenSSL 1.1 系列结束支持之后，我们可能会在 Qt 5.15 的安卓版构建中切换到 OpenSSL 3.0 系列。  
+由于 Qt 5.15.8 开始支持使用 OpenSSL 3.0 系列，在 OpenSSL 1.1 系列结束支持之后，我们 ~~可能会~~ 已经在 Qt 5.15 的安卓版构建中切换到 OpenSSL 3.0 系列。  
 现在可以确定的是 Qt 5.15 有 5 年的支持，不过目前不清楚 Qt 公司是否会在 {{% date 2024 5 26 %}}之后释放 Qt 5.15 后续版本的代码。  
 如果 Qt 5.15 后续版本的代码不公开的话，我们不会再升级到 OpenSSL 3.0 以后的版本。
 
@@ -218,11 +218,12 @@ OpenSSL 1.1.1 系列 ~~将~~ 已于 {{% date 2023 9 11 %}}结束支持，而 Ope
 | | macOS | {{% date 2024 5 26 %}} | 与 Qt 开源版 5.15 系列的终止支持日期保持一致。提前更新 WebEngine。（尽可能）包含 Xcode 和 macOS 更新 |
 | | 安卓 | {{% date 2026 9 7 %}} | 与 OpenSSL 3.0 的终止支持日期保持一致。 |
 | | WebAssembly | {{% date 2024 5 26 %}} | 与 Qt 开源版 5.15 系列的终止支持日期保持一致。 |
-| 6.2 Series | Windows 11 with VS2019 / VS2022 | {{% date 2026 9 7 %}} | 与 OpenSSL 3.0 的终止支持日期保持一致。包含 VS 版本升级。 |
+| 6.2 系列 | Windows 11 with VS2019 / VS2022 | {{% date 2026 9 7 %}} | 与 OpenSSL 3.0 的终止支持日期保持一致。包含 VS 版本升级。 |
 | | Windows 11 with MinGW / LLVM-MinGW | {{% date 2026 9 7 %}} |  与 OpenSSL 3.0 的终止支持日期保持一致。包含 MinGW 版本升级。  |
 | | macOS | {{% date 2026 9 7 %}} | 与 OpenSSL 3.0 的终止支持日期保持一致。（尽可能）包含 Xcode 和 macOS 更新 |
 | | 安卓 | {{% date 2026 9 7 %}} | S与 OpenSSL 3.0 的终止支持日期保持一致。会一直使用安卓 NDK r23 LTS 系列。 |
 | | WebAssembly | {{% date 2025 9 29 %}} | 与 Qt 开源版 6.2 系列的终止支持日期保持一致。 |
+| 6.5 系列 | ？ | 未决定 | 需要确认有没有更新的 OpenSSL 等第三方库。 |
 
 商业专属的 Qt 版本开源发布日（预计）
 
@@ -240,7 +241,8 @@ OpenSSL 1.1.1 系列 ~~将~~ 已于 {{% date 2023 9 11 %}}结束支持，而 Ope
 ## 之后可能会更新的内容
 
 ~~使用安卓 NDK r23 系列构建 Qt 5.15.7 以及之后的版本。~~ （构建失败了，包括 5.15.11 也失败了，将于 5.15.12 再次尝试）  
-~~使用带 MinGW-w64 v9 的 GCC 11 来构建 Qt 5.15.10 以及之后的版本。~~ （5.15.11 上尝试过，失败了，将于 5.15.12 再次尝试）  
+~~使用带 MinGW-w64 v9 的 GCC 11 来构建 Qt 5.15.10 以及之后的版本。~~ （5.15.11 上尝试过，失败了，将于 5.15.12 再次尝试）    
+使用安卓 NDK r25 系列构建 Qt 6.2.7 以及之后的版本。  
 
 ## 已有的补丁
 
@@ -254,7 +256,7 @@ OpenSSL 1.1.1 系列 ~~将~~ 已于 {{% date 2023 9 11 %}}结束支持，而 Ope
 
 | 问题 \ Qt 版本 | 5.15.11 | 6.2.6 | 6.5.3 |
 |-|-|-|-|
-| CVE-2023-24607 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-24607-qtbase-5.15.diff) （5.15.13） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-24607-qtbase-6.2.diff) （6.2.8） | 附带 |
+| CVE-2023-24607 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-24607-qtbase-5.15.diff) （5.15.13） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-24607-qtbase-6.2.diff) （6.2.8） | - |
 | CVE-2023-32573 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-32573-qtsvg-5.15.diff) （5.15.14） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-32573-qtsvg-6.2.diff) （6.2.9） | 附带 |
 | （仅限 5.15 系列）macOS 构建修复 | [仅限 macOS](https://invent.kde.org/qt/qt/qtlocation-mapboxgl/-/commit/5a07e1967dcc925d9def47accadae991436b9686 "KDE 提供的补丁") （5.15.14） | - | - |
 | CVE-2023-32762 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-32762-qtbase-5.15.diff) （5.15.14） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-32762-qtbase-6.2.diff) （6.2.9） | 附带 |
@@ -263,5 +265,6 @@ OpenSSL 1.1.1 系列 ~~将~~ 已于 {{% date 2023 9 11 %}}结束支持，而 Ope
 | CVE-2023-34410 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-34410-qtbase-5.15.diff) （5.15.15） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-34410-qtbase-6.2.diff) （6.2.9） | 附带 |
 | CVE-2023-37369 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-37369-qtbase-5.15.diff) （5.15.15） | [**×**](# "官方补丁冲突，依赖 Qt 6.2.9 上的一个提交，暂无发行版与项目解决冲突。已放弃调查") （6.2.10） | 附带 |
 | CVE-2023-38197 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-38197-qtbase-5.15.diff) （5.15.15） | [**×**](# "依赖 CVE-2023-37369 的补丁") （6.2.10） | 附带 |
-| CVE-2023-43114 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-43114-5.15.patch) （5.15.16） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-43114-6.2.patch) （6.2.10） | 附带 |
+| CVE-2023-43114 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-43114-5.15.patch) （5.15.16） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-43114-6.2.patch) （6.2.10） | [**×**](# "因原邮件信息错误，未合入") （6.5.4） |
 | CVE-2023-4863 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-4863-5.15.patch) （5.15.16） | [**×**](# "官方补丁冲突。由于只有第三方库更新，直接等新版应该更靠谱") （6.2.10） | 附带 |
+| CVE-2023-45872 | - | [**×**](# "") （6.2.11） | - |
