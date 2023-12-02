@@ -4,7 +4,9 @@
 	"theme": "relearn",
 	"params": {
 		"always-open": true,
-		"author": "Fsu0413",
+		"author": {
+			"name": "Fsu0413"
+		},
 		"description": "Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.",
 		"disableSearch": true,
 		"disableNextPrev": true,

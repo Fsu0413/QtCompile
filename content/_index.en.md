@@ -31,22 +31,6 @@ The code used is downloaded from [here](http://download.qt.io), I made no change
 __THESE PACKAGE ARE PROVIDED "As is", I have no responsibility that you mess up your things with this binaries.__  
 Thanks for The Qt Company Ltd. and the programmers of Qt for their fantastic work!!
 
-## Notes for this repo
-
-[Here]({{% relref "miscellaneous/notes for this repo" %}})
-
-## Current build status
-
-[Here]({{% relref "miscellaneous/current build status" %}})
-
-## Downloads
-
-Please refer to the content lists in the left area.
-
-## Current failures
-
-[Here]({{% relref "miscellaneous/current failures" %}})
-
 ## Update History
 
 ### {{% date 2023 10 15 %}}
@@ -57,7 +41,8 @@ Rebuild all Android version, with OpenSSL Thread disabled.
 Update 5.15.11 for Android, use OpenSSL 3.0.11.
 
 ### {{% date 2023 10 12 %}}
-Removed Qt 5.15.10 macOS package (with QtWebEngine) by mistake. Since I didn't preserve the original package it is lost. Sorry for inconvenience.
+Removed Qt 5.15.10 macOS package (with QtWebEngine) by mistake.  
+Since I didn't preserve the original package it is lost. Sorry for inconvenience.
 
 Update Qt 6.6.0, with OpenSSL 3.0.11.  
 Update Qt 6.5.3 Android arm (32-bit) version (restart support).

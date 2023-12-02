@@ -32,22 +32,6 @@ OSDN 目前发生技术问题，上传下载均有问题。
 __这些包为“依原样”提供。我对您使用此二进制文件作出的任何事情不负任何责任。__  
 感谢 The Qt Company Ltd. 和众多 Qt 的开发者的绝妙工作！
 
-## 本版本库的一些备注
-
-[这里]({{% relref "miscellaneous/notes for this repo" %}})
-
-## 当前构建状况
-
-[这里]({{% relref "miscellaneous/current build status" %}})
-
-## 下载
-
-参考左侧的目录。
-
-## 当前的失败项
-
-[这里]({{% relref "miscellaneous/current failures" %}})
-
 ## 更新记录
 
 ### {{% date 2023 10 15 %}}
@@ -58,7 +42,8 @@ __这些包为“依原样”提供。我对您使用此二进制文件作出的
 更新 Qt 5.15.11 安卓版本，使用 OpenSSL 3.0.11。
 
 ### {{% date 2023 10 12 %}}
-误删了 Qt 5.15.10 macOS 的包（带 QtWebEngine 的那个）。因为我没有保留原来的包，它永久消失了。为此带来的不便我表示抱歉。
+误删了 Qt 5.15.10 macOS 的包（带 QtWebEngine 的那个）。  
+因为原来的包我没有存，所以也没有办法再次上传了。为此带来的不便我表示抱歉。
 
 更新 Qt 6.6.0，附带 OpenSSL 3.0.11。   
 更新 Qt 6.5.3 的安卓 arm （32位）版本（重新支持）。
