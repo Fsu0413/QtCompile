@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.119.0">
+    <meta name="generator" content="Hugo 0.120.4">
     <meta name="generator" content="Relearn 5.22.1">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
@@ -271,7 +271,7 @@ All of our EOL schedule becomes meaningless. We should re-consider the EOL date 
 <p>Note: since OpenSSL is currently built on all versions of my build except for WebAssembly, all of my builds should persist until EOL of that specific OpenSSL version.<br>
 Currently OpenSSL 1.1.1 and 3.0 series are used.<br>
 OpenSSL 1.1.1 series <del>reaches</del> reached EOL until 11th Sep, 2023, while OpenSSL 3.0 series does until 7th Sep, 2026.</p>
-<p>Since Qt 5.15.8 starts supporting OpenSSL 3.0 series we may switch to OpenSSL 3.0 series on our Qt 5.15 Android builds after EOL of OpenSSL 1.1 series.<br>
+<p>Since Qt 5.15.8 starts supporting OpenSSL 3.0 series we <del>may switch</del> have switched to OpenSSL 3.0 series on our Qt 5.15 Android builds after EOL of OpenSSL 1.1 series.<br>
 Currently it is certain that Qt 5.15 will be supported for 5 years, but it is unknown that tQtC will provide source code of Qt 5.15 after 26th May, 2024.<br>
 If subsequent version of Qt 5.15 remains private we won&rsquo;t upgrade OpenSSL to post-3.0 version.</p>
 <table>
@@ -344,6 +344,12 @@ If subsequent version of Qt 5.15 remains private we won&rsquo;t upgrade OpenSSL 
 <td>29th Sep, 2025</td>
 <td>Same as EOL of Qt opensource 6.2</td>
 </tr>
+<tr>
+<td>6.5 Series</td>
+<td>?</td>
+<td>TBD</td>
+<td>Updated OpenSSL or third party libraries should be checked beforehand.</td>
+</tr>
 </tbody>
 </table>
 <p>Commericial-only Qt Open Source Release Date (ETA)</p>
@@ -400,7 +406,8 @@ If subsequent version of Qt 5.15 remains private we won&rsquo;t upgrade OpenSSL 
 </table>
 <h2 id="incoming-update-for-future-release">Incoming update for future release</h2>
 <p><del>Use Android NDK r23 series for building Qt 5.15.7 onwards.</del> (Build failed also on 5.15.11. Will test it on 5.15.12)<br>
-<del>Use GCC 11 with MinGW-w64 v9 for building Qt 5.15.10 onwards.</del> (Build failed on 5.15.11. Will test it on 5.15.12)</p>
+<del>Use GCC 11 with MinGW-w64 v9 for building Qt 5.15.10 onwards.</del> (Build failed on 5.15.11. Will test it on 5.15.12)<br>
+Use Android NDK r25 series for building Qt 6.2.7 onwards.</p>
 <h2 id="existing-patches">Existing Patches</h2>
 <p>Starting from 12th Mar, 2022 I am shipping Qt with patches from Qt.<br>
 Most of them are CVE patches which can be downloaded from <a href="https://download.qt.io/" target="_blank">Qt Downloads</a>, others are build fixes which are download from Qt Gerrit or KDE.</p>
@@ -422,7 +429,7 @@ Version number in brackets are the version when the corresponding patch will be 
 <td>CVE-2023-24607</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-24607-qtbase-5.15.diff" target="_blank">√</a> (5.15.13)</td>
 <td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-24607-qtbase-6.2.diff" target="_blank">√</a> (6.2.8)</td>
-<td>shipped</td>
+<td>-</td>
 </tr>
 <tr>
 <td>CVE-2023-32573</td>
@@ -476,13 +483,19 @@ Version number in brackets are the version when the corresponding patch will be 
 <td>CVE-2023-43114</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-43114-5.15.patch" target="_blank">√</a> (5.15.16)</td>
 <td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-43114-6.2.patch" target="_blank">√</a> (6.2.10)</td>
-<td>shipped</td>
+<td><a href="#" title="Not done due to error in original mail."><strong>×</strong></a> (6.5.4)</td>
 </tr>
 <tr>
 <td>CVE-2023-4863</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-4863-5.15.patch" target="_blank">√</a> (5.15.16)</td>
 <td><a href="#" title="Official patch causes CONFLICT. Since it only updates third-party project let&#39;s wait for later versions"><strong>×</strong></a> (6.2.10)</td>
 <td>shipped</td>
+</tr>
+<tr>
+<td>CVE-2023-45872</td>
+<td>-</td>
+<td><a href="#"><strong>×</strong></a> (6.2.11)</td>
+<td>-</td>
 </tr>
 </tbody>
 </table>
@@ -616,7 +629,7 @@ Version number in brackets are the version when the corresponding patch will be 
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sun, 15 Oct 2023 18:58:50 CST</p>
+Site generated: Sat, 02 Dec 2023 13:51:10 CST</p>
 
           </div>
         </div>
