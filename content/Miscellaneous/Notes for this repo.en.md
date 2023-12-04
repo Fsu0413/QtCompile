@@ -233,6 +233,7 @@ Commericial-only Qt Open Source Release Date (ETA)
 | 5.15.13 | {{% date 2023 3 9 %}} | {{% date 2024 3 9 %}} |
 | 5.15.14 | {{% date 2023 5 25 %}} | {{% date 2024 5 25 %}} |
 | 5.15.15 | {{% date 2023 8 31 %}} | {{% date 2024 8 31 %}} (Need to check if Qt will really release this version to opensource on that day) |
+| 5.15.16 | {{% date 2023 11 17 %}} | {{% date 2024 11 17 %}} |
 | 6.2.7 | {{% date 2023 1 2 %}} | {{% date 2024 1 2 %}} |
 | 6.2.8 | {{% date 2023 4 18 %}} | {{% date 2024 4 18 %}} |
 | 6.2.9 | {{% date 2023 7 4 %}} | {{% date 2024 7 4 %}} |
@@ -265,6 +266,6 @@ Version number in brackets are the version when the corresponding patch will be 
 | CVE-2023-34410 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-34410-qtbase-5.15.diff) (5.15.15) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-34410-qtbase-6.2.diff) (6.2.9) | shipped |
 | CVE-2023-37369 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-37369-qtbase-5.15.diff) (5.15.15) | [**×**](# "Official patch causes CONFLICT. Depends on a commit of Qt 6.2.9. Given up investigating due to no active distro / project is fixing this issue") (6.2.10) | shipped |
 | CVE-2023-38197 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-38197-qtbase-5.15.diff) (5.15.15) | [**×**](# "Depends on patch of CVE-2023-37369") (6.2.10) | shipped |
-| CVE-2023-43114 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-43114-5.15.patch) (5.15.16) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-43114-6.2.patch) (6.2.10) | [**×**](# "Not done due to error in original mail.") (6.5.4) |
+| CVE-2023-43114 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-43114-5.15.patch) (5.15.16) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-43114-6.2.patch) (6.2.10) | [√](https://download.qt.io/official_releases/qt/6.5/CVE-2023-43114-6.5.patch) (6.5.4) |
 | CVE-2023-4863 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-4863-5.15.patch) (5.15.16) | [**×**](# "Official patch causes CONFLICT. Since it only updates third-party project let's wait for later versions") (6.2.10) | shipped |
-| CVE-2023-45872 | - | [**×**](# "") (6.2.11) | - |
+| CVE-2023-45872 | - | [**×**](# "Official patch causes CONFLICT. Reason is unknown and will not be investigated.") (6.2.11) | - |

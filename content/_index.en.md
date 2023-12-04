@@ -33,6 +33,12 @@ Thanks for The Qt Company Ltd. and the programmers of Qt for their fantastic wor
 
 ## Update History
 
+### {{% date 2023 12 4 %}}
+Update Qt 6.6.1.   
+Rebuild Qt 6.5.3 with patch CVE-2023-43114.   
+Update OpenSSL 3.0.12. Rebuild all packages which use OpenSSL, including Qt 5.15 Android and Qt 6.2 non-WebAssembly.   
+Update MariaDB Connector C to 3.3.8 / 3.1.23.
+
 ### {{% date 2023 10 15 %}}
 Rebuild all macOS version, with new ODBC database backend build on top of iODBC library bundled in macOS.
 
@@ -40,26 +46,6 @@ Rebuild all macOS version, with new ODBC database backend build on top of iODBC 
 Rebuild all Android version, with OpenSSL Thread disabled.  
 Update 5.15.11 for Android, use OpenSSL 3.0.11.
 
-### {{% date 2023 10 12 %}}
-Removed Qt 5.15.10 macOS package (with QtWebEngine) by mistake.  
-Since I didn't preserve the original package it is lost. Sorry for inconvenience.
-
-Update Qt 6.6.0, with OpenSSL 3.0.11.  
-Update Qt 6.5.3 Android arm (32-bit) version (restart support).
-
-### {{% date 2023 10 8 %}}
-Update Qt 5.15.11 / 6.2.6 / 6.5.3 with OpenSSL 1.1.1w / 3.0.11.  
-Apply patch for CVE-2023-4863 in all supported 5.15.11 versions. (Conflict on Qt 6.2.6)  
-Apply patch for CVE-2023-43114 in all supported 5.15.11 and 6.2.6 versions.   
-Update MariaDB Connector C to 3.3.7 / 3.1.22.
-
-### {{% date 2023 10 6 %}}
-Update Qt 5.12.12 with OpenSSL 1.1.1w.
-
-Since OpenSSL 1.1.1 series has reached EOL, there will be no further Qt 5.12 builds.  
-i.e., this build is the last build of these packages.  
-The build script and environment of Qt 5.12 series has been destructed.
-
-### Before Sep. 2023
+### Before {{% date 2023 10 12 %}}
 
 [Here]({{% relref "miscellaneous/histories" %}})

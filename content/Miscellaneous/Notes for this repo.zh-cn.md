@@ -233,6 +233,7 @@ OpenSSL 1.1.1 系列 ~~将~~ 已于 {{% date 2023 9 11 %}}结束支持，而 Ope
 | 5.15.13 | {{% date 2023 3 9 %}} | {{% date 2024 3 9 %}} |
 | 5.15.14 | {{% date 2023 5 25 %}} | {{% date 2024 5 25 %}} |
 | 5.15.15 | {{% date 2023 8 31 %}} | {{% date 2024 8 31 %}} （届时需要确认 Qt 到底是否真的发布了开源版本） |
+| 5.15.16 | {{% date 2023 11 17 %}} | {{% date 2024 11 17 %}} |
 | 6.2.7 | {{% date 2023 1 2 %}} | {{% date 2024 1 2 %}} |
 | 6.2.8 | {{% date 2023 4 18 %}} | {{% date 2024 4 18 %}} |
 | 6.2.9 | {{% date 2023 7 4 %}} | {{% date 2024 7 4 %}} |
@@ -265,6 +266,6 @@ OpenSSL 1.1.1 系列 ~~将~~ 已于 {{% date 2023 9 11 %}}结束支持，而 Ope
 | CVE-2023-34410 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-34410-qtbase-5.15.diff) （5.15.15） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-34410-qtbase-6.2.diff) （6.2.9） | 附带 |
 | CVE-2023-37369 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-37369-qtbase-5.15.diff) （5.15.15） | [**×**](# "官方补丁冲突，依赖 Qt 6.2.9 上的一个提交，暂无发行版与项目解决冲突。已放弃调查") （6.2.10） | 附带 |
 | CVE-2023-38197 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-38197-qtbase-5.15.diff) （5.15.15） | [**×**](# "依赖 CVE-2023-37369 的补丁") （6.2.10） | 附带 |
-| CVE-2023-43114 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-43114-5.15.patch) （5.15.16） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-43114-6.2.patch) （6.2.10） | [**×**](# "因原邮件信息错误，未合入") （6.5.4） |
+| CVE-2023-43114 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-43114-5.15.patch) （5.15.16） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-43114-6.2.patch) （6.2.10） | [√](https://download.qt.io/official_releases/qt/6.5/CVE-2023-43114-6.5.patch) （6.5.4） |
 | CVE-2023-4863 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-4863-5.15.patch) （5.15.16） | [**×**](# "官方补丁冲突。由于只有第三方库更新，直接等新版应该更靠谱") （6.2.10） | 附带 |
-| CVE-2023-45872 | - | [**×**](# "") （6.2.11） | - |
+| CVE-2023-45872 | - | [**×**](# "官方补丁冲突。原因未知且没有调查计划") （6.2.11） | - |
