@@ -7,25 +7,6 @@
     <meta name="generator" content="Relearn 5.23.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="6.2.6 的 Windows 版本 :: Fsu0413 的原版 Qt 构建">
-    <meta name="twitter:description" content="备注 此版本中附带下列数据库：
-SQLite （随 Qt 一起分发）：使用 -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF 内建在这份包里。 ODBC：使用 -DFEATURE_sql_odbc=ON 内建在这份包里。 MariaDB Connector/C 3.3 系列（仅动态构建）：使用 -DFEATURE_sql_mysql=ON 内建在这份包里。 备注 从 Qt 6.2 开始 Qt 将 TLS 后端改成插件的形式。
-这个版本包含下列后端：
-OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启用链接的 OpenSSL 支持 Windows Secure Channel，使用 -DFEATURE_schannel=ON。在 MSVC 版本中支持 TLS 1.3 备注 所有构建配置了 -DFEATURE_icu=OFF 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 此版本不附带 QtWebEngine。
-补丁（多数是 CVE 问题） 我在构建 Qt 时应用补丁。想查看补丁列表的话，参考下页：
-已有的补丁 动态 / 共享构建 Windows-MSVC Qt6.2.6-Windows-x86_64-VS2019-16.11.30-20231007.7z 下载地址： SourceForge 链接 构建主机：Windows 11 10.">
-    <meta property="og:title" content="6.2.6 的 Windows 版本 :: Fsu0413 的原版 Qt 构建">
-    <meta property="og:description" content="备注 此版本中附带下列数据库：
-SQLite （随 Qt 一起分发）：使用 -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF 内建在这份包里。 ODBC：使用 -DFEATURE_sql_odbc=ON 内建在这份包里。 MariaDB Connector/C 3.3 系列（仅动态构建）：使用 -DFEATURE_sql_mysql=ON 内建在这份包里。 备注 从 Qt 6.2 开始 Qt 将 TLS 后端改成插件的形式。
-这个版本包含下列后端：
-OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启用链接的 OpenSSL 支持 Windows Secure Channel，使用 -DFEATURE_schannel=ON。在 MSVC 版本中支持 TLS 1.3 备注 所有构建配置了 -DFEATURE_icu=OFF 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 此版本不附带 QtWebEngine。
-补丁（多数是 CVE 问题） 我在构建 Qt 时应用补丁。想查看补丁列表的话，参考下页：
-已有的补丁 动态 / 共享构建 Windows-MSVC Qt6.2.6-Windows-x86_64-VS2019-16.11.30-20231007.7z 下载地址： SourceForge 链接 构建主机：Windows 11 10.">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="/zh-cn/6.2-series/6.2.6-for-windows/index.html">
-    <meta property="article:section" content="6.2 系列 :: Fsu0413 的原版 Qt 构建">
-    <meta property="og:site_name" content="Fsu0413 的原版 Qt 构建">
     <title>6.2.6 的 Windows 版本 :: Fsu0413 的原版 Qt 构建</title>
     <link href="/6.2-series/6.2.6-for-windows/index.html" rel="alternate" hreflang="x-default">
     <link href="/6.2-series/6.2.6-for-windows/index.html" rel="alternate" hreflang="en">
@@ -212,46 +193,46 @@ OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启�
 <h2 id="动态--共享构建">动态 / 共享构建</h2>
 <h3 id="windows-msvc">Windows-MSVC</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.6-Windows-x86_64-VS2019-16.11.30-20231007.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.6-Windows-x86_64-VS2019-16.11.32-20231203.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.6-Windows-x86_64-VS2019-16.11.30-20231007.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.6-Windows-x86_64-VS2019-16.11.32-20231203.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">VS2019 16.11.30 w/ Windows SDK 10.0.22000</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">VS2019 16.11.32 w/ Windows SDK 10.0.22000</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.6-Windows-x86_64-VS2022-17.7.4-20231007.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.6-Windows-x86_64-VS2022-17.8.2-20231203.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.6-Windows-x86_64-VS2022-17.7.4-20231007.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.6-Windows-x86_64-VS2022-17.8.2-20231203.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">VS2022 17.7.4 w/ Windows SDK 10.0.22621</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">VS2022 17.8.2 w/ Windows SDK 10.0.22621</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <h3 id="windows-mingw">Windows-MinGW</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.6-Windows-x86_64-MinGW11.2.0-20231008.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.6-Windows-x86_64-MinGW11.2.0-20231203.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.6-Windows-x86_64-MinGW11.2.0-20231008.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.6-Windows-x86_64-MinGW11.2.0-20231203.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ GCC 11.2.0</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ GCC 11.2.0</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
 <span class="btn cstyle grey">
   <a href="https://github.com/cristianadam/mingw-builds/releases/download/v11.2.0-rev4/x86_64-11.2.0-release-posix-seh-rt_v9-rev4.7z" target="_blank">
     64 位 MinGW-w64 w/ GCC 11.2.0
@@ -260,17 +241,17 @@ OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启�
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.6-Windows-x86_64-MinGW12.2.0-msvcrt-20231008.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.6-Windows-x86_64-MinGW12.2.0-msvcrt-20231203.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.6-Windows-x86_64-MinGW12.2.0-msvcrt-20231008.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.6-Windows-x86_64-MinGW12.2.0-msvcrt-20231203.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ GCC 12.2.0 MSVCRT</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ GCC 12.2.0 MSVCRT</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
 <span class="btn cstyle grey">
   <a href="https://github.com/niXman/mingw-builds-binaries/releases/download/12.2.0-rt_v10-rev2/x86_64-12.2.0-release-posix-seh-msvcrt-rt_v10-rev2.7z" target="_blank">
     64 位 MinGW-w64 w/ GCC 12.2.0 MSVCRT
@@ -279,17 +260,17 @@ OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启�
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.6-Windows-x86_64-MinGW12.2.0-ucrt-20231007.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.6-Windows-x86_64-MinGW12.2.0-ucrt-20231203.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.6-Windows-x86_64-MinGW12.2.0-ucrt-20231007.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.6-Windows-x86_64-MinGW12.2.0-ucrt-20231203.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ GCC 12.2.0 UCRT</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ GCC 12.2.0 UCRT</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
 <span class="btn cstyle grey">
   <a href="https://github.com/niXman/mingw-builds-binaries/releases/download/12.2.0-rt_v10-rev2/x86_64-12.2.0-release-posix-seh-ucrt-rt_v10-rev2.7z" target="_blank">
     64 位 MinGW-w64 w/ GCC 12.2.0 UCRT
@@ -299,17 +280,17 @@ OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启�
     </table>
 <h3 id="windows-mingw-llvm">Windows-MinGW-LLVM</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.6-Windows-x86_64-llvm-mingw-15.0.0-ucrt-20231007.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.6-Windows-x86_64-llvm-mingw-15.0.0-ucrt-20231203.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.6-Windows-x86_64-llvm-mingw-15.0.0-ucrt-20231007.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.6-Windows-x86_64-llvm-mingw-15.0.0-ucrt-20231203.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ LLVM 15.0.0 UCRT</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ LLVM 15.0.0 UCRT</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
 <span class="btn cstyle grey">
   <a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20220906/llvm-mingw-20220906-ucrt-x86_64.zip" target="_blank">
     64 位 MinGW-W64 w/ LLVM 15.0.0 UCRT
@@ -318,17 +299,17 @@ OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启�
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.6-Windows-x86_64-llvm-mingw-15.0.0-msvcrt-20231007.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.6-Windows-x86_64-llvm-mingw-15.0.0-msvcrt-20231203.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.6-Windows-x86_64-llvm-mingw-15.0.0-msvcrt-20231007.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.6-Windows-x86_64-llvm-mingw-15.0.0-msvcrt-20231203.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ LLVM 15.0.0 MSVCRT</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ LLVM 15.0.0 MSVCRT</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
 <span class="btn cstyle grey">
   <a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20220906/llvm-mingw-20220906-msvcrt-x86_64.zip" target="_blank">
     64 位 MinGW-W64 w/ LLVM 15.0.0 MSVCRT
@@ -337,17 +318,17 @@ OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启�
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.6-Windows-x86_64-llvm-mingw-16.0.6-ucrt-20231007.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.6-Windows-x86_64-llvm-mingw-16.0.6-ucrt-20231203.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.6-Windows-x86_64-llvm-mingw-16.0.6-ucrt-20231007.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.6-Windows-x86_64-llvm-mingw-16.0.6-ucrt-20231203.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ LLVM 16.0.6 UCRT</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ LLVM 16.0.6 UCRT</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
 <span class="btn cstyle grey">
   <a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20230614/llvm-mingw-20230614-ucrt-x86_64.zip" target="_blank">
     64 位 MinGW-W64 w/ LLVM 16.0.6 UCRT
@@ -356,17 +337,17 @@ OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启�
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.6-Windows-x86_64-llvm-mingw-16.0.6-msvcrt-20231007.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.6-Windows-x86_64-llvm-mingw-16.0.6-msvcrt-20231203.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.6-Windows-x86_64-llvm-mingw-16.0.6-msvcrt-20231007.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.6-Windows-x86_64-llvm-mingw-16.0.6-msvcrt-20231203.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ LLVM 16.0.6 MSVCRT</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ LLVM 16.0.6 MSVCRT</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
 <span class="btn cstyle grey">
   <a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20230614/llvm-mingw-20230614-msvcrt-x86_64.zip" target="_blank">
     64 位 MinGW-W64 w/ LLVM 16.0.6 MSVCRT
@@ -375,39 +356,39 @@ OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启�
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.6-Windows-x86_64-llvm-mingw-17.0.2-ucrt-20231007.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.6-Windows-x86_64-llvm-mingw-17.0.6-ucrt-20231203.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.6-Windows-x86_64-llvm-mingw-17.0.2-ucrt-20231007.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.6-Windows-x86_64-llvm-mingw-17.0.6-ucrt-20231203.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ LLVM 17.0.2 UCRT</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ LLVM 17.0.6 UCRT</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
 <span class="btn cstyle grey">
-  <a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20231003/llvm-mingw-20231003-ucrt-x86_64.zip" target="_blank">
-    64 位 MinGW-W64 w/ LLVM 17.0.2 UCRT
+  <a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20231128/llvm-mingw-20231128-ucrt-x86_64.zip" target="_blank">
+    64 位 MinGW-W64 w/ LLVM 17.0.6 UCRT
   </a>
 </span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.6-Windows-x86_64-llvm-mingw-17.0.2-msvcrt-20231007.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.6-Windows-x86_64-llvm-mingw-17.0.6-msvcrt-20231203.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.6-Windows-x86_64-llvm-mingw-17.0.2-msvcrt-20231007.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.6-Windows-x86_64-llvm-mingw-17.0.6-msvcrt-20231203.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ LLVM 17.0.2 MSVCRT</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ LLVM 17.0.6 MSVCRT</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
 <span class="btn cstyle grey">
-  <a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20231003/llvm-mingw-20231003-msvcrt-x86_64.zip" target="_blank">
-    64 位 MinGW-W64 w/ LLVM 17.0.2 MSVCRT
+  <a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20231128/llvm-mingw-20231128-msvcrt-x86_64.zip" target="_blank">
+    64 位 MinGW-W64 w/ LLVM 17.0.6 MSVCRT
   </a>
 </span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
@@ -415,32 +396,32 @@ OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启�
 <h2 id="静态-full-构建">静态 <code>Full</code> 构建</h2>
 <h3 id="windows-msvc-1">Windows-MSVC</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.6-Windows-x86_64-VS2019-16.11.30-staticFull-20231007.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.6-Windows-x86_64-VS2019-16.11.32-staticFull-20231203.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.6-Windows-x86_64-VS2019-16.11.30-staticFull-20231007.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.6-Windows-x86_64-VS2019-16.11.32-staticFull-20231203.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">VS2019 16.11.30 w/ Windows SDK 10.0.22000</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">VS2019 16.11.32 w/ Windows SDK 10.0.22000</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <h3 id="windows-mingw-1">Windows-MinGW</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.6-Windows-x86_64-MinGW11.2.0-staticFull-20231008.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.6-Windows-x86_64-MinGW11.2.0-staticFull-20231203.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.6-Windows-x86_64-MinGW11.2.0-staticFull-20231008.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.6-Windows-x86_64-MinGW11.2.0-staticFull-20231203.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ GCC 11.2.0</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ GCC 11.2.0</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
 <span class="btn cstyle grey">
   <a href="https://github.com/cristianadam/mingw-builds/releases/download/v11.2.0-rev4/x86_64-11.2.0-release-posix-seh-rt_v9-rev4.7z" target="_blank">
     64 位 MinGW-w64 w/ GCC 11.2.0
@@ -449,17 +430,17 @@ OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启�
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.6-Windows-x86_64-MinGW12.2.0-msvcrt-staticFull-20231007.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.6-Windows-x86_64-MinGW12.2.0-msvcrt-staticFull-20231203.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.6-Windows-x86_64-MinGW12.2.0-msvcrt-staticFull-20231007.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.6-Windows-x86_64-MinGW12.2.0-msvcrt-staticFull-20231203.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ GCC 12.2.0 MSVCRT</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ GCC 12.2.0 MSVCRT</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
 <span class="btn cstyle grey">
   <a href="https://github.com/niXman/mingw-builds-binaries/releases/download/12.2.0-rt_v10-rev2/x86_64-12.2.0-release-posix-seh-msvcrt-rt_v10-rev2.7z" target="_blank">
     64 位 MinGW-w64 w/ GCC 12.2.0 MSVCRT
@@ -468,17 +449,17 @@ OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启�
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.6-Windows-x86_64-MinGW12.2.0-ucrt-staticFull-20231007.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.6-Windows-x86_64-MinGW12.2.0-ucrt-staticFull-20231203.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.6-Windows-x86_64-MinGW12.2.0-ucrt-staticFull-20231007.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/Qt6.2.6-Windows-x86_64-MinGW12.2.0-ucrt-staticFull-20231203.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ GCC 12.2.0 UCRT</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ GCC 12.2.0 UCRT</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%">
 <span class="btn cstyle grey">
   <a href="https://github.com/niXman/mingw-builds-binaries/releases/download/12.2.0-rt_v10-rev2/x86_64-12.2.0-release-posix-seh-ucrt-rt_v10-rev2.7z" target="_blank">
     64 位 MinGW-w64 w/ GCC 12.2.0 UCRT
@@ -525,10 +506,10 @@ OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启�
           <li data-nav-id="/zh-cn/6.5-series/6.5.3-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.3-for-android/index.html">6.5.3 的安卓版本</a></li>
           <li data-nav-id="/zh-cn/6.5-series/6.5.3-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.3-for-webassembly/index.html">6.5.3 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/6.6-series/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/index.html">6.6 系列</a><ul id="R-subsections-1ed6b84157e01806d9a8b5df1e4be9ef" class="morespace collapsible-menu">
-          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-windows/index.html">6.6.0 的 Windows 版本</a></li>
-          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-macos/index.html">6.6.0 的 macOS 版本</a></li>
-          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-android/index.html">6.6.0 的安卓版本</a></li>
-          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-webassembly/index.html">6.6.0 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-windows/index.html">6.6.1 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-macos/index.html">6.6.1 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-android/index.html">6.6.1 的安卓版本</a></li>
+          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-webassembly/index.html">6.6.1 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/miscellaneous/index.html" class=""><a class="padding" href="/zh-cn/miscellaneous/index.html">杂项</a><ul id="R-subsections-caff385dd336661e79f294480ee20799" class="morespace collapsible-menu">
           <li data-nav-id="/zh-cn/miscellaneous/notes-for-this-repo/index.html" class=""><a class="padding" href="/zh-cn/miscellaneous/notes-for-this-repo/index.html">本仓库的一些备注</a></li>
           <li data-nav-id="/zh-cn/miscellaneous/current-build-status/index.html" class=""><a class="padding" href="/zh-cn/miscellaneous/current-build-status/index.html">当前构建状态</a></li>
@@ -615,7 +596,7 @@ OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启�
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 02 Dec 2023 14:03:12 CST</p>
+Site generated: Mon, 04 Dec 2023 21:03:35 CST</p>
 
           </div>
         </div>

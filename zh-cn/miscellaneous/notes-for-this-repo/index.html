@@ -7,57 +7,6 @@
     <meta name="generator" content="Relearn 5.23.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="本仓库的一些备注 :: Fsu0413 的原版 Qt 构建">
-    <meta name="twitter:description" content="中文 / 多语言支持 虽然这个网站的维护者（Fsu0413，也就是我）是中国人，是中文母语使用者，不过此网站最初做成的时候是只有嘤文版的。
-目前我正在逐步在此网站上添加简体中文支持。
-得益于 Hugo 自带的多语言支持和 近期新换的 Relearn 主题，本网站 近期刚刚 支持多语言。
-目前的中文也仅仅处于刚刚开始组织语言的阶段。有一些内容还没有写完。
-不过主要内容均使用中文重新写了一遍，应该不会影响大家下载二进制文件了。
-对网站建设有建议和意见的可以去 GitHub 上提出 issue。
-网站镜像 最近 我在中国大陆使用 Gitee Pages 服务构建了一个此网站的镜像。
-这个镜像配置的默认语言改为简体中文。
-由于 Gitee 的自定义域名服务只提供给付费用户，目前中文站是在 Gitee 的域名下的。
-如果之后我对此服务感觉不错的话，我可能会付费使用这个服务。
-Gitee Pages （中国大陆，使用简体中文作为默认语言）
-Github Pages （美国，使用英语作为默认语言）
-可复现的构建 为了实现对 Qt 的可复现的构建，我使用一系列脚本进行构建和打包。
-如果您对构建方法感兴趣的话，可以参考下面的 GitHub 仓库。
-GitHub
-但是不太好的一点是这个网站是手工编辑的。
-这个网站的源码如下：
-GitHub
-对静态构建的备注 我不在大型项目中使用静态构建。我并不认为使用静态构建是很明智的选择。
-我可以理解使用静态构建的目的是为了仅发布单一可执行程序，但是事实上有如下限制：
-在程序不以 (L)GPLv3 许可协议发布的情况下，使用静态构建并不免费。 部分模块无法构建。（比如 WebEngine 之类的） 不能使用动态链接的插件。 在构建期不执行链接操作，会在后续过程中导致可能的链接问题 这边还是建议在大型项目中停止使用静态构建。相信我，这么做更加自由。
-静态 Lite 构建和静态 Full 构建 （2022 年 3 月 8 日更新） 静态 Lite 构建跳过了大多数 Qt 模块。只对 QtCore、QtDeclarative（QtQml 2），QtXmlPatterns 和 QtXXXExtras 进行了构建。">
-    <meta property="og:title" content="本仓库的一些备注 :: Fsu0413 的原版 Qt 构建">
-    <meta property="og:description" content="中文 / 多语言支持 虽然这个网站的维护者（Fsu0413，也就是我）是中国人，是中文母语使用者，不过此网站最初做成的时候是只有嘤文版的。
-目前我正在逐步在此网站上添加简体中文支持。
-得益于 Hugo 自带的多语言支持和 近期新换的 Relearn 主题，本网站 近期刚刚 支持多语言。
-目前的中文也仅仅处于刚刚开始组织语言的阶段。有一些内容还没有写完。
-不过主要内容均使用中文重新写了一遍，应该不会影响大家下载二进制文件了。
-对网站建设有建议和意见的可以去 GitHub 上提出 issue。
-网站镜像 最近 我在中国大陆使用 Gitee Pages 服务构建了一个此网站的镜像。
-这个镜像配置的默认语言改为简体中文。
-由于 Gitee 的自定义域名服务只提供给付费用户，目前中文站是在 Gitee 的域名下的。
-如果之后我对此服务感觉不错的话，我可能会付费使用这个服务。
-Gitee Pages （中国大陆，使用简体中文作为默认语言）
-Github Pages （美国，使用英语作为默认语言）
-可复现的构建 为了实现对 Qt 的可复现的构建，我使用一系列脚本进行构建和打包。
-如果您对构建方法感兴趣的话，可以参考下面的 GitHub 仓库。
-GitHub
-但是不太好的一点是这个网站是手工编辑的。
-这个网站的源码如下：
-GitHub
-对静态构建的备注 我不在大型项目中使用静态构建。我并不认为使用静态构建是很明智的选择。
-我可以理解使用静态构建的目的是为了仅发布单一可执行程序，但是事实上有如下限制：
-在程序不以 (L)GPLv3 许可协议发布的情况下，使用静态构建并不免费。 部分模块无法构建。（比如 WebEngine 之类的） 不能使用动态链接的插件。 在构建期不执行链接操作，会在后续过程中导致可能的链接问题 这边还是建议在大型项目中停止使用静态构建。相信我，这么做更加自由。
-静态 Lite 构建和静态 Full 构建 （2022 年 3 月 8 日更新） 静态 Lite 构建跳过了大多数 Qt 模块。只对 QtCore、QtDeclarative（QtQml 2），QtXmlPatterns 和 QtXXXExtras 进行了构建。">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="/zh-cn/miscellaneous/notes-for-this-repo/index.html">
-    <meta property="article:section" content="杂项 :: Fsu0413 的原版 Qt 构建">
-    <meta property="og:site_name" content="Fsu0413 的原版 Qt 构建">
     <title>本仓库的一些备注 :: Fsu0413 的原版 Qt 构建</title>
     <link href="/miscellaneous/notes-for-this-repo/index.html" rel="alternate" hreflang="x-default">
     <link href="/miscellaneous/notes-for-this-repo/index.html" rel="alternate" hreflang="en">
@@ -434,6 +383,11 @@ OpenSSL 1.1.1 系列 <del>将</del> 已于 2023 年 9 月 11 日结束支持，�
 <td>2024 年 8 月 31 日 （届时需要确认 Qt 到底是否真的发布了开源版本）</td>
 </tr>
 <tr>
+<td>5.15.16</td>
+<td>2023 年 11 月 17 日</td>
+<td>2024 年 11 月 17 日</td>
+</tr>
+<tr>
 <td>6.2.7</td>
 <td>2023 年 1 月 2 日</td>
 <td>2024 年 1 月 2 日</td>
@@ -534,7 +488,7 @@ OpenSSL 1.1.1 系列 <del>将</del> 已于 2023 年 9 月 11 日结束支持，�
 <td>CVE-2023-43114</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-43114-5.15.patch" target="_blank">√</a> （5.15.16）</td>
 <td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-43114-6.2.patch" target="_blank">√</a> （6.2.10）</td>
-<td><a href="" title="因原邮件信息错误，未合入"><strong>×</strong></a> （6.5.4）</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.5/CVE-2023-43114-6.5.patch" target="_blank">√</a> （6.5.4）</td>
 </tr>
 <tr>
 <td>CVE-2023-4863</td>
@@ -545,7 +499,7 @@ OpenSSL 1.1.1 系列 <del>将</del> 已于 2023 年 9 月 11 日结束支持，�
 <tr>
 <td>CVE-2023-45872</td>
 <td>-</td>
-<td><a href=""><strong>×</strong></a> （6.2.11）</td>
+<td><a href="" title="官方补丁冲突。原因未知且没有调查计划"><strong>×</strong></a> （6.2.11）</td>
 <td>-</td>
 </tr>
 </tbody>
@@ -589,10 +543,10 @@ OpenSSL 1.1.1 系列 <del>将</del> 已于 2023 年 9 月 11 日结束支持，�
           <li data-nav-id="/zh-cn/6.5-series/6.5.3-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.3-for-android/index.html">6.5.3 的安卓版本</a></li>
           <li data-nav-id="/zh-cn/6.5-series/6.5.3-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.3-for-webassembly/index.html">6.5.3 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/6.6-series/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/index.html">6.6 系列</a><ul id="R-subsections-1ed6b84157e01806d9a8b5df1e4be9ef" class="morespace collapsible-menu">
-          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-windows/index.html">6.6.0 的 Windows 版本</a></li>
-          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-macos/index.html">6.6.0 的 macOS 版本</a></li>
-          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-android/index.html">6.6.0 的安卓版本</a></li>
-          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-webassembly/index.html">6.6.0 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-windows/index.html">6.6.1 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-macos/index.html">6.6.1 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-android/index.html">6.6.1 的安卓版本</a></li>
+          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-webassembly/index.html">6.6.1 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/miscellaneous/index.html" class="parent "><a class="padding" href="/zh-cn/miscellaneous/index.html">杂项</a><ul id="R-subsections-caff385dd336661e79f294480ee20799" class="morespace collapsible-menu">
           <li data-nav-id="/zh-cn/miscellaneous/notes-for-this-repo/index.html" class="active"><a class="padding" href="/zh-cn/miscellaneous/notes-for-this-repo/index.html">本仓库的一些备注</a></li>
           <li data-nav-id="/zh-cn/miscellaneous/current-build-status/index.html" class=""><a class="padding" href="/zh-cn/miscellaneous/current-build-status/index.html">当前构建状态</a></li>
@@ -679,7 +633,7 @@ OpenSSL 1.1.1 系列 <del>将</del> 已于 2023 年 9 月 11 日结束支持，�
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 02 Dec 2023 14:03:13 CST</p>
+Site generated: Mon, 04 Dec 2023 21:03:36 CST</p>
 
           </div>
         </div>

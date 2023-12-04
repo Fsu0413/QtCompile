@@ -7,35 +7,6 @@
     <meta name="generator" content="Relearn 5.23.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="之前的历史 :: Fsu0413 的原版 Qt 构建">
-    <meta name="twitter:description" content="2023 年 8 月 5 日 更新 Qt 5.12.12。
-更新 Qt 5.15.10。应用 CVE-2023-37369 和 CVE-2023-38197 的补丁。
-更新 Qt 6.2.5。
-更新 Qt 6.5.2。
-更新 OpenSSL 到 3.0.10 / 1.1.1v。
-OSDN 侧遇到技术问题，暂时停用。目前所有预编译包均仅上传到 SourceForge。
-2023 年 6 月 14 日 更新 Qt 5.15.10 系列，附带 QtWebEngine 和 QtScript 5.15.14。
-对于所有受支持的 5.15.10 和 6.2.4 版本，应用 CVE-2023-34410 补丁。
-更新 LLVM-MinGW 到 20230603。重新构建了 Qt 6.2.4 和 Qt 6.5.1 的 LLVM-MinGW 的包。
-删除原 OSDN Chamber。文件上传下载服务转移到 Project。
-2023 年 6 月 3 日 对于所有受支持的 5.">
-    <meta property="og:title" content="之前的历史 :: Fsu0413 的原版 Qt 构建">
-    <meta property="og:description" content="2023 年 8 月 5 日 更新 Qt 5.12.12。
-更新 Qt 5.15.10。应用 CVE-2023-37369 和 CVE-2023-38197 的补丁。
-更新 Qt 6.2.5。
-更新 Qt 6.5.2。
-更新 OpenSSL 到 3.0.10 / 1.1.1v。
-OSDN 侧遇到技术问题，暂时停用。目前所有预编译包均仅上传到 SourceForge。
-2023 年 6 月 14 日 更新 Qt 5.15.10 系列，附带 QtWebEngine 和 QtScript 5.15.14。
-对于所有受支持的 5.15.10 和 6.2.4 版本，应用 CVE-2023-34410 补丁。
-更新 LLVM-MinGW 到 20230603。重新构建了 Qt 6.2.4 和 Qt 6.5.1 的 LLVM-MinGW 的包。
-删除原 OSDN Chamber。文件上传下载服务转移到 Project。
-2023 年 6 月 3 日 对于所有受支持的 5.">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="/zh-cn/miscellaneous/histories/index.html">
-    <meta property="article:section" content="杂项 :: Fsu0413 的原版 Qt 构建">
-    <meta property="og:site_name" content="Fsu0413 的原版 Qt 构建">
     <title>之前的历史 :: Fsu0413 的原版 Qt 构建</title>
     <link href="/miscellaneous/histories/index.html" rel="alternate" hreflang="x-default">
     <link href="/miscellaneous/histories/index.html" rel="alternate" hreflang="en">
@@ -119,6 +90,13 @@ OSDN 侧遇到技术问题，暂时停用。目前所有预编译包均仅上传
               <div class="topbar-content">
                 <div class="topbar-content-wrapper"><nav class="TableOfContents">
   <ul>
+    <li>
+      <ul>
+        <li><a href="#2023-年-10-月-12-日">2023 年 10 月 12 日</a></li>
+        <li><a href="#2023-年-10-月-8-日">2023 年 10 月 8 日</a></li>
+        <li><a href="#2023-年-10-月-6-日">2023 年 10 月 6 日</a></li>
+      </ul>
+    </li>
     <li><a href="#2023-年-8-月-5-日">2023 年 8 月 5 日</a></li>
     <li><a href="#2023-年-6-月-14-日">2023 年 6 月 14 日</a></li>
     <li><a href="#2023-年-6-月-3-日">2023 年 6 月 3 日</a></li>
@@ -251,6 +229,21 @@ OSDN 侧遇到技术问题，暂时停用。目前所有预编译包均仅上传
             </header>
 <h1 id="之前的历史">之前的历史</h1>
 
+<h3 id="2023-年-10-月-12-日">2023 年 10 月 12 日</h3>
+<p>误删了 Qt 5.15.10 macOS 的包（带 QtWebEngine 的那个）。<br>
+因为原来的包我没有存，所以也没有办法再次上传了。为此带来的不便我表示抱歉。</p>
+<p>更新 Qt 6.6.0，附带 OpenSSL 3.0.11。<br>
+更新 Qt 6.5.3 的安卓 arm （32位）版本（重新支持）。</p>
+<h3 id="2023-年-10-月-8-日">2023 年 10 月 8 日</h3>
+<p>更新 Qt 5.15.11 / 6.2.6 / 6.5.3，使用 OpenSSL 1.1.1w / 3.0.11。<br>
+对于所有受支持的 5.15.11 版本，应用 CVE-2023-4863 补丁。（此补丁在 6.2.6 上有冲突） <br>
+对于所有受支持的 5.15.11 和 6.2.6 版本，应用 CVE-2023-43114 补丁。<br>
+更新 MariaDB Connector C 到 3.3.7 / 3.1.22。</p>
+<h3 id="2023-年-10-月-6-日">2023 年 10 月 6 日</h3>
+<p>更新 Qt 5.12.12，使用 OpenSSL 1.1.1w。</p>
+<p>由于 OpenSSL 1.1.1 系列已经结束生命周期，不会再有 Qt 5.12 的构建了。<br>
+也就是说这次的构建是这些包的最后一次构建了。<br>
+Qt 5.12 系列的构建脚本和环境都爆破了。</p>
 <h2 id="2023-年-8-月-5-日">2023 年 8 月 5 日</h2>
 <p>更新 Qt 5.12.12。<br>
 更新 Qt 5.15.10。应用 CVE-2023-37369 和 CVE-2023-38197 的补丁。<br>
@@ -631,13 +624,13 @@ SF.net 恢复，文件重新上传到 SF.net。</p>
 <h2 id="2017-年以前黑历史仅有嘤文">2017 年以前（黑历史，仅有嘤文）</h2>
 
 <div class="expand">
-    <input type="checkbox" id="R-expand-a0197e3e692e44703f6b2c2316f7b00d" aria-controls="R-expandcontent-a0197e3e692e44703f6b2c2316f7b00d" >
-    <label class="expand-label" for="R-expand-a0197e3e692e44703f6b2c2316f7b00d" >
+    <input type="checkbox" id="R-expand-8cd7bedf36a15bc6f8c4ee391cd33ddd" aria-controls="R-expandcontent-8cd7bedf36a15bc6f8c4ee391cd33ddd" >
+    <label class="expand-label" for="R-expand-8cd7bedf36a15bc6f8c4ee391cd33ddd" >
         <i class="fas fa-chevron-down"></i>
         <i class="fas fa-chevron-right"></i>
         展开
     </label>
-    <div id="R-expandcontent-a0197e3e692e44703f6b2c2316f7b00d" class="expand-content">
+    <div id="R-expandcontent-8cd7bedf36a15bc6f8c4ee391cd33ddd" class="expand-content">
 
 <p>是的，我想写一些东西，但是不知道怎么写。。。</p>
 <h3 id="2016-年-7-月-23-日">2016 年 7 月 23 日</h3>
@@ -732,10 +725,10 @@ Upload 5.6.1 VS2015 Static packages.</p>
           <li data-nav-id="/zh-cn/6.5-series/6.5.3-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.3-for-android/index.html">6.5.3 的安卓版本</a></li>
           <li data-nav-id="/zh-cn/6.5-series/6.5.3-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.3-for-webassembly/index.html">6.5.3 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/6.6-series/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/index.html">6.6 系列</a><ul id="R-subsections-1ed6b84157e01806d9a8b5df1e4be9ef" class="morespace collapsible-menu">
-          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-windows/index.html">6.6.0 的 Windows 版本</a></li>
-          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-macos/index.html">6.6.0 的 macOS 版本</a></li>
-          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-android/index.html">6.6.0 的安卓版本</a></li>
-          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-webassembly/index.html">6.6.0 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-windows/index.html">6.6.1 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-macos/index.html">6.6.1 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-android/index.html">6.6.1 的安卓版本</a></li>
+          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-webassembly/index.html">6.6.1 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/miscellaneous/index.html" class="parent "><a class="padding" href="/zh-cn/miscellaneous/index.html">杂项</a><ul id="R-subsections-caff385dd336661e79f294480ee20799" class="morespace collapsible-menu">
           <li data-nav-id="/zh-cn/miscellaneous/notes-for-this-repo/index.html" class=""><a class="padding" href="/zh-cn/miscellaneous/notes-for-this-repo/index.html">本仓库的一些备注</a></li>
           <li data-nav-id="/zh-cn/miscellaneous/current-build-status/index.html" class=""><a class="padding" href="/zh-cn/miscellaneous/current-build-status/index.html">当前构建状态</a></li>
@@ -822,7 +815,7 @@ Upload 5.6.1 VS2015 Static packages.</p>
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 02 Dec 2023 14:03:13 CST</p>
+Site generated: Mon, 04 Dec 2023 21:03:36 CST</p>
 
           </div>
         </div>

@@ -7,14 +7,6 @@
     <meta name="generator" content="Relearn 5.23.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Fsu0413 的原版 Qt 构建">
-    <meta name="twitter:description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
-    <meta property="og:title" content="Fsu0413 的原版 Qt 构建">
-    <meta property="og:description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="/zh-cn/index.html">
-    <meta property="og:site_name" content="Fsu0413 的原版 Qt 构建">
     <title>Fsu0413 的原版 Qt 构建</title>
     <link href="/index.html" rel="alternate" hreflang="x-default">
     <link href="/index.html" rel="alternate" hreflang="en">
@@ -101,12 +93,10 @@
     <li><a href="#免责声明">免责声明</a></li>
     <li><a href="#更新记录">更新记录</a>
       <ul>
+        <li><a href="#2023-年-12-月-4-日">2023 年 12 月 4 日</a></li>
         <li><a href="#2023-年-10-月-15-日">2023 年 10 月 15 日</a></li>
         <li><a href="#2023-年-10-月-14-日">2023 年 10 月 14 日</a></li>
-        <li><a href="#2023-年-10-月-12-日">2023 年 10 月 12 日</a></li>
-        <li><a href="#2023-年-10-月-8-日">2023 年 10 月 8 日</a></li>
-        <li><a href="#2023-年-10-月-6-日">2023 年 10 月 6 日</a></li>
-        <li><a href="#2023-年-9-月以前">2023 年 9 月以前</a></li>
+        <li><a href="#2023-年-10-月-12-日以前">2023 年 10 月 12 日以前</a></li>
       </ul>
     </li>
   </ul>
@@ -150,13 +140,13 @@
 目前已经删除所有 OSDN 链接，拜托各位通过 SourceForge 进行下载。</p>
 <p>这边上传的时候发生的错误如下（通过 WinSCP 输出）：</p>
 <div class="expand">
-    <input type="checkbox" id="R-expand-ee716dbdd825b43d5887d9efbec96b5b" aria-controls="R-expandcontent-ee716dbdd825b43d5887d9efbec96b5b" >
-    <label class="expand-label" for="R-expand-ee716dbdd825b43d5887d9efbec96b5b" >
+    <input type="checkbox" id="R-expand-ec9194d1048e641bef962a7ac8052774" aria-controls="R-expandcontent-ec9194d1048e641bef962a7ac8052774" >
+    <label class="expand-label" for="R-expand-ec9194d1048e641bef962a7ac8052774" >
         <i class="fas fa-chevron-down"></i>
         <i class="fas fa-chevron-right"></i>
         展开
     </label>
-    <div id="R-expandcontent-ee716dbdd825b43d5887d9efbec96b5b" class="expand-content">
+    <div id="R-expandcontent-ec9194d1048e641bef962a7ac8052774" class="expand-content">
 <p>一般错误(服务器应该提供错误描述)。<br>
 错误码：4<br>
 服务器返回的错误消息：Failure</p>
@@ -178,27 +168,17 @@
 <strong>这些包为“依原样”提供。我对您使用此二进制文件作出的任何事情不负任何责任。</strong><br>
 感谢 The Qt Company Ltd. 和众多 Qt 的开发者的绝妙工作！</p>
 <h2 id="更新记录">更新记录</h2>
+<h3 id="2023-年-12-月-4-日">2023 年 12 月 4 日</h3>
+<p>更新 Qt 6.6.1。<br>
+重新构建 Qt 6.5.3，包含 CVE-2023-43114 的补丁。<br>
+更新 OpenSSL 3.0.12。重新构建了所有使用 OpenSSL 的版本，包含 Qt 5.15 的安卓版和 Qt 6.2 的 WebAssembly 以外的版本。<br>
+更新 MariaDB Connector C 到 3.3.8 / 3.1.23。</p>
 <h3 id="2023-年-10-月-15-日">2023 年 10 月 15 日</h3>
 <p>重新构建所有 macOS 版本，利用 macOS 附带的 iODBC 库构建 ODBC 数据库后端。</p>
 <h3 id="2023-年-10-月-14-日">2023 年 10 月 14 日</h3>
 <p>重新构建了所有安卓版本，禁用了 OpenSSL 的线程配置。<br>
 更新 Qt 5.15.11 安卓版本，使用 OpenSSL 3.0.11。</p>
-<h3 id="2023-年-10-月-12-日">2023 年 10 月 12 日</h3>
-<p>误删了 Qt 5.15.10 macOS 的包（带 QtWebEngine 的那个）。<br>
-因为原来的包我没有存，所以也没有办法再次上传了。为此带来的不便我表示抱歉。</p>
-<p>更新 Qt 6.6.0，附带 OpenSSL 3.0.11。<br>
-更新 Qt 6.5.3 的安卓 arm （32位）版本（重新支持）。</p>
-<h3 id="2023-年-10-月-8-日">2023 年 10 月 8 日</h3>
-<p>更新 Qt 5.15.11 / 6.2.6 / 6.5.3，使用 OpenSSL 1.1.1w / 3.0.11。<br>
-对于所有受支持的 5.15.11 版本，应用 CVE-2023-4863 补丁。（此补丁在 6.2.6 上有冲突） <br>
-对于所有受支持的 5.15.11 和 6.2.6 版本，应用 CVE-2023-43114 补丁。<br>
-更新 MariaDB Connector C 到 3.3.7 / 3.1.22。</p>
-<h3 id="2023-年-10-月-6-日">2023 年 10 月 6 日</h3>
-<p>更新 Qt 5.12.12，使用 OpenSSL 1.1.1w。</p>
-<p>由于 OpenSSL 1.1.1 系列已经结束生命周期，不会再有 Qt 5.12 的构建了。<br>
-也就是说这次的构建是这些包的最后一次构建了。<br>
-Qt 5.12 系列的构建脚本和环境都爆破了。</p>
-<h3 id="2023-年-9-月以前">2023 年 9 月以前</h3>
+<h3 id="2023-年-10-月-12-日以前">2023 年 10 月 12 日以前</h3>
 <p><a href="/zh-cn/miscellaneous/histories/index.html">这里</a></p>
 
             <footer class="footline">
@@ -239,10 +219,10 @@ Qt 5.12 系列的构建脚本和环境都爆破了。</p>
           <li data-nav-id="/zh-cn/6.5-series/6.5.3-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.3-for-android/index.html">6.5.3 的安卓版本</a></li>
           <li data-nav-id="/zh-cn/6.5-series/6.5.3-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.3-for-webassembly/index.html">6.5.3 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/6.6-series/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/index.html">6.6 系列</a><ul id="R-subsections-1ed6b84157e01806d9a8b5df1e4be9ef" class="morespace collapsible-menu">
-          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-windows/index.html">6.6.0 的 Windows 版本</a></li>
-          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-macos/index.html">6.6.0 的 macOS 版本</a></li>
-          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-android/index.html">6.6.0 的安卓版本</a></li>
-          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-webassembly/index.html">6.6.0 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-windows/index.html">6.6.1 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-macos/index.html">6.6.1 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-android/index.html">6.6.1 的安卓版本</a></li>
+          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-webassembly/index.html">6.6.1 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/miscellaneous/index.html" class=""><a class="padding" href="/zh-cn/miscellaneous/index.html">杂项</a><ul id="R-subsections-caff385dd336661e79f294480ee20799" class="morespace collapsible-menu">
           <li data-nav-id="/zh-cn/miscellaneous/notes-for-this-repo/index.html" class=""><a class="padding" href="/zh-cn/miscellaneous/notes-for-this-repo/index.html">本仓库的一些备注</a></li>
           <li data-nav-id="/zh-cn/miscellaneous/current-build-status/index.html" class=""><a class="padding" href="/zh-cn/miscellaneous/current-build-status/index.html">当前构建状态</a></li>
@@ -329,7 +309,7 @@ Qt 5.12 系列的构建脚本和环境都爆破了。</p>
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 02 Dec 2023 14:03:13 CST</p>
+Site generated: Mon, 04 Dec 2023 21:03:36 CST</p>
 
           </div>
         </div>
