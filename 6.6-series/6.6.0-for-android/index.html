@@ -7,26 +7,7 @@
     <meta name="generator" content="Relearn 5.23.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="6.6.0 的安卓版本 :: Fsu0413 的原版 Qt 构建">
-    <meta name="twitter:description" content="备注 此版本中附带下列数据库：
-SQLite （随 Qt 一起分发）：使用 -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF 内建在这份包里。 备注 从 Qt 6.2 开始 Qt 将 TLS 后端改成插件的形式。
-这个版本包含下列后端：
-OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启用链接的 OpenSSL 支持 备注 Since Qt 6.3 I drop x86 builds for community.
-备注 所有构建配置了 -DFEATURE_icu=OFF 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 动态 / 共享构建 （NDK r26） 备注 使用 NDK r26 版本，使用参数 -DANDROID_NATIVE_API_LEVEL=27 进行构建。
-这意味着这些构建可能只能在安卓 8.1 以及之后的版本上运行。 交叉构建主机：Windows Qt6.6.0-Android-arm-Clang-NDKr26-xWindows-x86_64-MinGW12.2.0-msvcrt-20231013.7z 下载地址： SourceForge 链接 构建主机：Windows 11 10.0.22621工具链版本：ndk r26备注： Qt6.6.0-Android-arm64-Clang-NDKr26-xWindows-x86_64-MinGW12.2.0-msvcrt-20231013.7z 下载地址： SourceForge 链接 构建主机：Windows 11 10.">
-    <meta property="og:title" content="6.6.0 的安卓版本 :: Fsu0413 的原版 Qt 构建">
-    <meta property="og:description" content="备注 此版本中附带下列数据库：
-SQLite （随 Qt 一起分发）：使用 -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF 内建在这份包里。 备注 从 Qt 6.2 开始 Qt 将 TLS 后端改成插件的形式。
-这个版本包含下列后端：
-OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启用链接的 OpenSSL 支持 备注 Since Qt 6.3 I drop x86 builds for community.
-备注 所有构建配置了 -DFEATURE_icu=OFF 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 动态 / 共享构建 （NDK r26） 备注 使用 NDK r26 版本，使用参数 -DANDROID_NATIVE_API_LEVEL=27 进行构建。
-这意味着这些构建可能只能在安卓 8.1 以及之后的版本上运行。 交叉构建主机：Windows Qt6.6.0-Android-arm-Clang-NDKr26-xWindows-x86_64-MinGW12.2.0-msvcrt-20231013.7z 下载地址： SourceForge 链接 构建主机：Windows 11 10.0.22621工具链版本：ndk r26备注： Qt6.6.0-Android-arm64-Clang-NDKr26-xWindows-x86_64-MinGW12.2.0-msvcrt-20231013.7z 下载地址： SourceForge 链接 构建主机：Windows 11 10.">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="/qtcompile/6.6-series/6.6.0-for-android/index.html">
-    <meta property="article:section" content="6.6 系列 :: Fsu0413 的原版 Qt 构建">
-    <meta property="og:site_name" content="Fsu0413 的原版 Qt 构建">
-    <title>6.6.0 的安卓版本 :: Fsu0413 的原版 Qt 构建</title>
+    <title>6.6.1 的安卓版本 :: Fsu0413 的原版 Qt 构建</title>
     <link href="/qtcompile/6.6-series/6.6.0-for-android/index.html" rel="alternate" hreflang="x-default">
     <link href="/qtcompile/6.6-series/6.6.0-for-android/index.html" rel="alternate" hreflang="zh-cn">
     <link href="/qtcompile/en/6.6-series/6.6.0-for-android/index.html" rel="alternate" hreflang="en">
@@ -122,7 +103,7 @@ OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启�
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/qtcompile/index.html"><span itemprop="name">Fsu0413 的原版 Qt 构建</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/qtcompile/6.6-series/index.html"><span itemprop="name">6.6 系列</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">6.6.0 的安卓版本</span><meta itemprop="position" content="3"></li>
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">6.6.1 的安卓版本</span><meta itemprop="position" content="3"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
@@ -145,7 +126,7 @@ OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启�
           <article class="default">
             <header class="headline">
             </header>
-<h1 id="660-的安卓版本">6.6.0 的安卓版本</h1>
+<h1 id="661-的安卓版本">6.6.1 的安卓版本</h1>
 
 
 <div class="box notices cstyle info">
@@ -199,131 +180,131 @@ OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启�
 </div>
 <h2 id="交叉构建主机windows">交叉构建主机：Windows</h2>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.0-Android-arm-Clang-NDKr26-xWindows-x86_64-MinGW12.2.0-msvcrt-20231013.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.1-Android-arm-Clang-NDKr26b-xWindows-x86_64-MinGW12.2.0-msvcrt-20231204.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.0-Android-arm-Clang-NDKr26-xWindows-x86_64-MinGW12.2.0-msvcrt-20231013.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.1-Android-arm-Clang-NDKr26b-xWindows-x86_64-MinGW12.2.0-msvcrt-20231204.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r26</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r26b</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.0-Android-arm64-Clang-NDKr26-xWindows-x86_64-MinGW12.2.0-msvcrt-20231013.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.1-Android-arm64-Clang-NDKr26b-xWindows-x86_64-MinGW12.2.0-msvcrt-20231204.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.0-Android-arm64-Clang-NDKr26-xWindows-x86_64-MinGW12.2.0-msvcrt-20231013.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.1-Android-arm64-Clang-NDKr26b-xWindows-x86_64-MinGW12.2.0-msvcrt-20231204.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r26</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r26b</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.0-Android-x86_64-Clang-NDKr26-xWindows-x86_64-MinGW12.2.0-msvcrt-20231013.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.1-Android-x86_64-Clang-NDKr26b-xWindows-x86_64-MinGW12.2.0-msvcrt-20231204.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.0-Android-x86_64-Clang-NDKr26-xWindows-x86_64-MinGW12.2.0-msvcrt-20231013.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.1-Android-x86_64-Clang-NDKr26b-xWindows-x86_64-MinGW12.2.0-msvcrt-20231204.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22621</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r26</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r26b</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <h2 id="交叉构建主机linux">交叉构建主机：Linux</h2>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.0-Android-arm-Clang-NDKr26-xLinux-x86_64-gcc11.3.1-20231013.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.1-Android-arm-Clang-NDKr26b-xLinux-x86_64-gcc11.4.1-20231203.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.0-Android-arm-Clang-NDKr26-xLinux-x86_64-gcc11.3.1-20231013.tar.xz" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.1-Android-arm-Clang-NDKr26b-xLinux-x86_64-gcc11.4.1-20231203.tar.xz" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">RockyLinux 9.2</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r26</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">RockyLinux 9.3</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r26b</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.0-Android-arm64-Clang-NDKr26-xLinux-x86_64-gcc11.3.1-20231013.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.1-Android-arm64-Clang-NDKr26b-xLinux-x86_64-gcc11.4.1-20231203.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.0-Android-arm64-Clang-NDKr26-xLinux-x86_64-gcc11.3.1-20231013.tar.xz" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.1-Android-arm64-Clang-NDKr26b-xLinux-x86_64-gcc11.4.1-20231203.tar.xz" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">RockyLinux 9.2</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r26</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">RockyLinux 9.3</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r26b</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.0-Android-x86_64-Clang-NDKr26-xLinux-x86_64-gcc11.3.1-20231013.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.1-Android-x86_64-Clang-NDKr26b-xLinux-x86_64-gcc11.4.1-20231203.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.0-Android-x86_64-Clang-NDKr26-xLinux-x86_64-gcc11.3.1-20231013.tar.xz" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.1-Android-x86_64-Clang-NDKr26b-xLinux-x86_64-gcc11.4.1-20231203.tar.xz" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">RockyLinux 9.2</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r26</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">RockyLinux 9.3</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r26b</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <h2 id="交叉构建主机macos">交叉构建主机：macOS</h2>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.0-Android-arm-Clang-NDKr26-xmacOS-Universal-AppleClang14.0.3-20231013.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.1-Android-arm-Clang-NDKr26b-xmacOS-Universal-AppleClang14.0.3-20231203.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.0-Android-arm-Clang-NDKr26-xmacOS-Universal-AppleClang14.0.3-20231013.tar.xz" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.1-Android-arm-Clang-NDKr26b-xmacOS-Universal-AppleClang14.0.3-20231203.tar.xz" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 13.6</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r26</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 13.6.1</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r26b</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.0-Android-arm64-Clang-NDKr26-xmacOS-Universal-AppleClang14.0.3-20231013.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.1-Android-arm64-Clang-NDKr26b-xmacOS-Universal-AppleClang14.0.3-20231203.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.0-Android-arm64-Clang-NDKr26-xmacOS-Universal-AppleClang14.0.3-20231013.tar.xz" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.1-Android-arm64-Clang-NDKr26b-xmacOS-Universal-AppleClang14.0.3-20231203.tar.xz" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 13.6</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r26</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 13.6.1</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r26b</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.0-Android-x86_64-Clang-NDKr26-xmacOS-Universal-AppleClang14.0.3-20231013.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.1-Android-x86_64-Clang-NDKr26b-xmacOS-Universal-AppleClang14.0.3-20231203.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.0-Android-x86_64-Clang-NDKr26-xmacOS-Universal-AppleClang14.0.3-20231013.tar.xz" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.1-Android-x86_64-Clang-NDKr26b-xmacOS-Universal-AppleClang14.0.3-20231203.tar.xz" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 13.6</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r26</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 13.6.1</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r26b</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 
@@ -365,10 +346,10 @@ OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启�
           <li data-nav-id="/qtcompile/6.5-series/6.5.3-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.3-for-android/index.html">6.5.3 的安卓版本</a></li>
           <li data-nav-id="/qtcompile/6.5-series/6.5.3-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.3-for-webassembly/index.html">6.5.3 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/6.6-series/index.html" class="parent "><a class="padding" href="/qtcompile/6.6-series/index.html">6.6 系列</a><ul id="R-subsections-1ed6b84157e01806d9a8b5df1e4be9ef" class="morespace collapsible-menu">
-          <li data-nav-id="/qtcompile/6.6-series/6.6.0-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.6-series/6.6.0-for-windows/index.html">6.6.0 的 Windows 版本</a></li>
-          <li data-nav-id="/qtcompile/6.6-series/6.6.0-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.6-series/6.6.0-for-macos/index.html">6.6.0 的 macOS 版本</a></li>
-          <li data-nav-id="/qtcompile/6.6-series/6.6.0-for-android/index.html" class="active"><a class="padding" href="/qtcompile/6.6-series/6.6.0-for-android/index.html">6.6.0 的安卓版本</a></li>
-          <li data-nav-id="/qtcompile/6.6-series/6.6.0-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.6-series/6.6.0-for-webassembly/index.html">6.6.0 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/qtcompile/6.6-series/6.6.0-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.6-series/6.6.0-for-windows/index.html">6.6.1 的 Windows 版本</a></li>
+          <li data-nav-id="/qtcompile/6.6-series/6.6.0-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.6-series/6.6.0-for-macos/index.html">6.6.1 的 macOS 版本</a></li>
+          <li data-nav-id="/qtcompile/6.6-series/6.6.0-for-android/index.html" class="active"><a class="padding" href="/qtcompile/6.6-series/6.6.0-for-android/index.html">6.6.1 的安卓版本</a></li>
+          <li data-nav-id="/qtcompile/6.6-series/6.6.0-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.6-series/6.6.0-for-webassembly/index.html">6.6.1 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/miscellaneous/index.html" class=""><a class="padding" href="/qtcompile/miscellaneous/index.html">杂项</a><ul id="R-subsections-caff385dd336661e79f294480ee20799" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/miscellaneous/notes-for-this-repo/index.html" class=""><a class="padding" href="/qtcompile/miscellaneous/notes-for-this-repo/index.html">本仓库的一些备注</a></li>
           <li data-nav-id="/qtcompile/miscellaneous/current-build-status/index.html" class=""><a class="padding" href="/qtcompile/miscellaneous/current-build-status/index.html">当前构建状态</a></li>
@@ -455,7 +436,7 @@ OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启�
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 02 Dec 2023 14:05:49 CST</p>
+Site generated: Mon, 04 Dec 2023 21:03:29 CST</p>
 
           </div>
         </div>
