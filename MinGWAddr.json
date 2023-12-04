@@ -76,12 +76,12 @@
   },
   "wx6u7": {
     "bits": "64",
-    "description": "MinGW-W64 w/ LLVM 17.0.2 UCRT",
-    "addr": "https://github.com/mstorsjo/llvm-mingw/releases/download/20231003/llvm-mingw-20231003-ucrt-x86_64.zip"
+    "description": "MinGW-W64 w/ LLVM 17.0.6 UCRT",
+    "addr": "https://github.com/mstorsjo/llvm-mingw/releases/download/20231128/llvm-mingw-20231128-ucrt-x86_64.zip"
   },
   "wx6s7": {
     "bits": "64",
-    "description": "MinGW-W64 w/ LLVM 17.0.2 MSVCRT",
-    "addr": "https://github.com/mstorsjo/llvm-mingw/releases/download/20231003/llvm-mingw-20231003-msvcrt-x86_64.zip"
+    "description": "MinGW-W64 w/ LLVM 17.0.6 MSVCRT",
+    "addr": "https://github.com/mstorsjo/llvm-mingw/releases/download/20231128/llvm-mingw-20231128-msvcrt-x86_64.zip"
   }
 }
