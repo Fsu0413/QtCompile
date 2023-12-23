@@ -10,9 +10,6 @@ isMaxWidthPreferred: true
 My Qt builds is with linked OpenSSL support for most platforms.  
 Here is a list of OpenSSL builds of mine.
 
-Note:   
-OpenSSL 1.1.1 series on Windows is only for Qt 5.12 series. For Qt 5 after 5.13 we are using SChannel.
-
 OpenSSL 3 series is used on Qt 6 after 6.2.3.  
 Since Qt 6.2 changes tls backend to plugin, one can use more than one tls backend when building.  
 On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using OpenSSL alongwith SecureTransport.

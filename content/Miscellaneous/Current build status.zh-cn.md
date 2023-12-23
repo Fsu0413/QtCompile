@@ -10,9 +10,6 @@ isMaxWidthPreferred: true
 我的 Qt 构建在大部分平台上使用链接的 OpenSSL。  
 下面是我构建 OpenSSL 的列表。
 
-注：  
-Windows 上的 OpenSSL 1.1.1 系列仅用于 Qt 5.12 系列。从 5.13 以后的 Qt 5 开始我们使用 SChannel。
-
 OpenSSL 3 系列在 6.2.3 以及更新的 Qt 6 版本上使用。  
 自从 Qt 6.2 将 tls 后端换成了插件，我们可以用多于一个的后端来构建。  
 在 Windows 上我们使用 OpenSSL 和 SChannel，而在 macOS 上我们使用 OpenSSL 和 SecureTransport。

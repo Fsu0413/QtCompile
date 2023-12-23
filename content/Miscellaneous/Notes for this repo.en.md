@@ -252,7 +252,7 @@ Most of them are CVE patches which can be downloaded from [Qt Downloads](https:/
 
 Following is a table for patches of each version I am currently building.  
 Note that I won't patch an active version of Qt and will simply wait for future release. So only Commericial LTS and EOL version are patched.  
-A patch will removed from following table when this patch is shipped or not planned to be applied in all of the maintained versions.  
+A patch will removed from following table when this patch is shipped or not needed to be applied in all of the maintained versions.  
 Version number in brackets are the version when the corresponding patch will be shipped.
 
 | Issue \ Qt Version | 5.15.11 | 6.2.6 | 6.5.3 |
