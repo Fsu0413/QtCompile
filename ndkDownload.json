@@ -1,0 +1,27 @@
+{
+  "r10e": {
+    "Windows": "https://dl.google.com/android/repository/android-ndk-r10e-windows-x86_64.zip",
+    "Linux": "https://dl.google.com/android/repository/android-ndk-r10e-linux-x86_64.zip",
+    "macOS": "https://dl.google.com/android/repository/android-ndk-r10e-darwin-x86_64.zip"
+  },
+  "r21e": {
+    "Windows": "https://dl.google.com/android/repository/android-ndk-r21e-windows-x86_64.zip",
+    "Linux": "https://dl.google.com/android/repository/android-ndk-r21e-linux-x86_64.zip",
+    "macOS": "https://dl.google.com/android/repository/android-ndk-r21e-darwin-x86_64.zip"
+  },
+  "r23c": {
+    "Windows": "https://dl.google.com/android/repository/android-ndk-r23c-windows.zip",
+    "Linux": "https://dl.google.com/android/repository/android-ndk-r23c-linux.zip",
+    "macOS": "https://dl.google.com/android/repository/android-ndk-r23c-darwin.dmg"
+  },
+  "r25c": {
+    "Windows": "https://dl.google.com/android/repository/android-ndk-r25c-windows.zip",
+    "Linux": "https://dl.google.com/android/repository/android-ndk-r25c-linux.zip",
+    "macOS": "https://dl.google.com/android/repository/android-ndk-r25c-darwin.dmg"
+  },
+  "r26b": {
+    "Windows": "https://dl.google.com/android/repository/android-ndk-r26b-windows.zip",
+    "Linux": "https://dl.google.com/android/repository/android-ndk-r26b-linux.zip",
+    "macOS": "https://dl.google.com/android/repository/android-ndk-r26b-darwin.dmg"
+  }
+}
