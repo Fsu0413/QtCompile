@@ -4,6 +4,13 @@ draft: false
 weight: 4
 ---
 
+## {{% date 2023 10 15 %}}
+Rebuild all macOS version, with new ODBC database backend build on top of iODBC library bundled in macOS.
+
+## {{% date 2023 10 14 %}}
+Rebuild all Android version, with OpenSSL Thread disabled.  
+Update 5.15.11 for Android, use OpenSSL 3.0.11.
+
 ## {{% date 2023 10 12 %}}
 Removed Qt 5.15.10 macOS package (with QtWebEngine) by mistake.  
 Since I didn't preserve the original package it is lost. Sorry for inconvenience.

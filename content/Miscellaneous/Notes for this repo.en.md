@@ -241,8 +241,7 @@ Commericial-only Qt Open Source Release Date (ETA)
 
 ## Incoming update for future release
 
-~~Use Android NDK r23 series for building Qt 5.15.7 onwards.~~ (Build failed also on 5.15.11. Will test it on 5.15.12)  
-~~Use GCC 11 with MinGW-w64 v9 for building Qt 5.15.10 onwards.~~ (Build failed on 5.15.11. Will test it on 5.15.12)   
+~~Use GCC 11 with MinGW-w64 v9 for building following Qt 5.15 series.~~ (Build failed on 5.15.12)   
 Use Android NDK r25 series for building Qt 6.2.7 onwards.  
 
 ## Existing Patches
@@ -255,7 +254,7 @@ Note that I won't patch an active version of Qt and will simply wait for future 
 A patch will removed from following table when this patch is shipped or not needed to be applied in all of the maintained versions.  
 Version number in brackets are the version when the corresponding patch will be shipped.
 
-| Issue \ Qt Version | 5.15.11 | 6.2.6 | 6.5.3 |
+| Issue \ Qt Version | 5.15.12 | 6.2.7 | 6.5.3 |
 |-|-|-|-|
 | CVE-2023-24607 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-24607-qtbase-5.15.diff) (5.15.13) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-24607-qtbase-6.2.diff) (6.2.8) | - |
 | CVE-2023-32573 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-32573-qtsvg-5.15.diff) (5.15.14) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-32573-qtsvg-6.2.diff) (6.2.9) | shipped |
@@ -269,3 +268,4 @@ Version number in brackets are the version when the corresponding patch will be 
 | CVE-2023-43114 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-43114-5.15.patch) (5.15.16) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-43114-6.2.patch) (6.2.10) | [√](https://download.qt.io/official_releases/qt/6.5/CVE-2023-43114-6.5.patch) (6.5.4) |
 | CVE-2023-4863 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-4863-5.15.patch) (5.15.16) | [**×**](# "Official patch causes CONFLICT. Since it only updates third-party project let's wait for later versions") (6.2.10) | shipped |
 | CVE-2023-45872 | - | [**×**](# "Official patch causes CONFLICT. Reason is unknown and will not be investigated.") (6.2.11) | - |
+| CVE-2023-51714 (Not yet announced by tQtC) | √ [1](https://download.qt.io/official_releases/qt/5.15/0001-CVE-2023-51714-qtbase-5.15.diff) [2](https://download.qt.io/official_releases/qt/5.15/0002-CVE-2023-51714-qtbase-5.15.diff) | √ [1](https://download.qt.io/official_releases/qt/6.2/0001-CVE-2023-51714-qtbase-6.2.diff) [2](https://download.qt.io/official_releases/qt/6.2/0002-CVE-2023-51714-qtbase-6.2.diff) | √ [1](https://download.qt.io/official_releases/qt/6.5/0001-CVE-2023-51714-qtbase-6.5.diff) [2](https://download.qt.io/official_releases/qt/6.5/0002-CVE-2023-51714-qtbase-6.5.diff) |

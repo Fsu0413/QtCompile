@@ -241,8 +241,7 @@ OpenSSL 1.1.1 系列 ~~将~~ 已于 {{% date 2023 9 11 %}}结束支持，而 Ope
 
 ## 之后可能会更新的内容
 
-~~使用安卓 NDK r23 系列构建 Qt 5.15.7 以及之后的版本。~~ （构建失败了，包括 5.15.11 也失败了，将于 5.15.12 再次尝试）  
-~~使用带 MinGW-w64 v9 的 GCC 11 来构建 Qt 5.15.10 以及之后的版本。~~ （5.15.11 上尝试过，失败了，将于 5.15.12 再次尝试）    
+~~使用带 MinGW-w64 v9 的 GCC 11 来构建 Qt 5.15 系列之后的版本。~~ （5.15.12 上构建失败了）    
 使用安卓 NDK r25 系列构建 Qt 6.2.7 以及之后的版本。  
 
 ## 已有的补丁
@@ -255,7 +254,7 @@ OpenSSL 1.1.1 系列 ~~将~~ 已于 {{% date 2023 9 11 %}}结束支持，而 Ope
 若某个补丁在所有的正在维护的版本均已附带或没有应用的必要，则该补丁将会从此表中删除。  
 括号中的版本号为附带该补丁的发布版本。
 
-| 问题 \ Qt 版本 | 5.15.11 | 6.2.6 | 6.5.3 |
+| 问题 \ Qt 版本 | 5.15.12 | 6.2.7 | 6.5.3 |
 |-|-|-|-|
 | CVE-2023-24607 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-24607-qtbase-5.15.diff) （5.15.13） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-24607-qtbase-6.2.diff) （6.2.8） | - |
 | CVE-2023-32573 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-32573-qtsvg-5.15.diff) （5.15.14） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-32573-qtsvg-6.2.diff) （6.2.9） | 附带 |
@@ -269,3 +268,4 @@ OpenSSL 1.1.1 系列 ~~将~~ 已于 {{% date 2023 9 11 %}}结束支持，而 Ope
 | CVE-2023-43114 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-43114-5.15.patch) （5.15.16） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-43114-6.2.patch) （6.2.10） | [√](https://download.qt.io/official_releases/qt/6.5/CVE-2023-43114-6.5.patch) （6.5.4） |
 | CVE-2023-4863 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-4863-5.15.patch) （5.15.16） | [**×**](# "官方补丁冲突。由于只有第三方库更新，直接等新版应该更靠谱") （6.2.10） | 附带 |
 | CVE-2023-45872 | - | [**×**](# "官方补丁冲突。原因未知且没有调查计划") （6.2.11） | - |
+| CVE-2023-51714 （Qt 公司暂未发布公告） | √ [1](https://download.qt.io/official_releases/qt/5.15/0001-CVE-2023-51714-qtbase-5.15.diff) [2](https://download.qt.io/official_releases/qt/5.15/0002-CVE-2023-51714-qtbase-5.15.diff) | √ [1](https://download.qt.io/official_releases/qt/6.2/0001-CVE-2023-51714-qtbase-6.2.diff) [2](https://download.qt.io/official_releases/qt/6.2/0002-CVE-2023-51714-qtbase-6.2.diff) | √ [1](https://download.qt.io/official_releases/qt/6.5/0001-CVE-2023-51714-qtbase-6.5.diff) [2](https://download.qt.io/official_releases/qt/6.5/0002-CVE-2023-51714-qtbase-6.5.diff) |
