@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.120.4">
+    <meta name="generator" content="Hugo 0.121.1">
     <meta name="generator" content="Relearn 5.23.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
@@ -90,7 +90,7 @@
               <div class="topbar-content">
                 <div class="topbar-content-wrapper"><nav class="TableOfContents">
   <ul>
-    <li><a href="#dynamic--shared-builds-ndk-r26">Dynamic / Shared Builds (NDK r26)</a></li>
+    <li><a href="#dynamic--shared-builds-ndk-r26b">Dynamic / Shared Builds (NDK r26b)</a></li>
     <li><a href="#windows-host">Windows Host</a></li>
     <li><a href="#linux-host">Linux Host</a></li>
     <li><a href="#macos-host">macOS Host</a></li>
@@ -136,8 +136,7 @@
 <p>Following database backend is distributed with this version:</p>
 <ol>
 <li>SQLite (distributed with Qt): Built in the package using command <code>-DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF</code>.</li>
-</ol>
-</div>
+</ol></div>
 </div>
 
 
@@ -149,8 +148,7 @@
 Following backend(s) are built in the package:</p>
 <ol>
 <li>OpenSSL 3.0 series using <code>-DFEATURE_openssl=ON -DINPUT_openssl=linked</code> for enabling linked OpenSSL support</li>
-</ol>
-</div>
+</ol></div>
 </div>
 
 
@@ -169,13 +167,13 @@ Following backend(s) are built in the package:</p>
 All builds have <code>-DFEATURE_icu=OFF</code> because I think the ICU library is too big and, in most of the conditions, useless for common users.</div>
 </div>
 
-<h2 id="dynamic--shared-builds-ndk-r26">Dynamic / Shared Builds (NDK r26)</h2>
+<h2 id="dynamic--shared-builds-ndk-r26b">Dynamic / Shared Builds (NDK r26b)</h2>
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
   <div class="box-content">
 <p>
-Built using NDK r26 with <code>-DANDROID_NATIVE_API_LEVEL=27</code> argument.<br>
+Built using NDK r26b with <code>-DANDROID_NATIVE_API_LEVEL=27</code> argument.<br>
 It means the APK built using these builds may only be run on Android 8.1 and later.</div>
 </div>
 <h2 id="windows-host">Windows Host</h2>
@@ -331,15 +329,15 @@ It means the APK built using these builds may only be run on Android 8.1 and lat
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
           <li data-nav-id="/5.15-series/index.html" class=""><a class="padding" href="/5.15-series/index.html">5.15 series</a><ul id="R-subsections-dfde3005aa1a1a9f4665d82e5e9612d8" class="morespace collapsible-menu">
-          <li data-nav-id="/5.15-series/5.15.11-for-windows/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-windows/index.html">5.15.11 for Windows</a></li>
-          <li data-nav-id="/5.15-series/5.15.11-for-macos/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-macos/index.html">5.15.11 for macOS</a></li>
-          <li data-nav-id="/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-android/index.html">5.15.11 for Android</a></li>
-          <li data-nav-id="/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-webassembly/index.html">5.15.11 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/5.15-series/5.15.11-for-windows/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-windows/index.html">5.15.12 for Windows</a></li>
+          <li data-nav-id="/5.15-series/5.15.11-for-macos/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-macos/index.html">5.15.12 for macOS</a></li>
+          <li data-nav-id="/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-android/index.html">5.15.12 for Android</a></li>
+          <li data-nav-id="/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-webassembly/index.html">5.15.12 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/6.2-series/index.html" class=""><a class="padding" href="/6.2-series/index.html">6.2 series</a><ul id="R-subsections-c2b87e4570db0ee260cc7de2c4b80e99" class="morespace collapsible-menu">
-          <li data-nav-id="/6.2-series/6.2.6-for-windows/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-windows/index.html">6.2.6 for Windows</a></li>
-          <li data-nav-id="/6.2-series/6.2.6-for-macos/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-macos/index.html">6.2.6 for macOS</a></li>
-          <li data-nav-id="/6.2-series/6.2.6-for-android/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-android/index.html">6.2.6 for Android</a></li>
-          <li data-nav-id="/6.2-series/6.2.6-for-webassembly/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-webassembly/index.html">6.2.6 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/6.2-series/6.2.6-for-windows/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-windows/index.html">6.2.7 for Windows</a></li>
+          <li data-nav-id="/6.2-series/6.2.6-for-macos/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-macos/index.html">6.2.7 for macOS</a></li>
+          <li data-nav-id="/6.2-series/6.2.6-for-android/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-android/index.html">6.2.7 for Android</a></li>
+          <li data-nav-id="/6.2-series/6.2.6-for-webassembly/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-webassembly/index.html">6.2.7 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/6.5-series/index.html" class=""><a class="padding" href="/6.5-series/index.html">6.5 series</a><ul id="R-subsections-1870fa5a2d192ec83aafe29160552269" class="morespace collapsible-menu">
           <li data-nav-id="/6.5-series/6.5.3-for-windows/index.html" class=""><a class="padding" href="/6.5-series/6.5.3-for-windows/index.html">6.5.3 for Windows</a></li>
           <li data-nav-id="/6.5-series/6.5.3-for-macos/index.html" class=""><a class="padding" href="/6.5-series/6.5.3-for-macos/index.html">6.5.3 for macOS</a></li>
@@ -436,7 +434,7 @@ It means the APK built using these builds may only be run on Android 8.1 and lat
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Mon, 04 Dec 2023 21:03:35 CST</p>
+Site generated: Mon, 25 Dec 2023 21:48:34 CST</p>
 
           </div>
         </div>

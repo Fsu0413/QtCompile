@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.120.4">
+    <meta name="generator" content="Hugo 0.121.1">
     <meta name="generator" content="Relearn 5.23.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
@@ -93,10 +93,9 @@
     <li><a href="#disclaimer">Disclaimer</a></li>
     <li><a href="#update-history">Update History</a>
       <ul>
+        <li><a href="#25th-dec-2023">25th Dec, 2023</a></li>
         <li><a href="#4th-dec-2023">4th Dec, 2023</a></li>
-        <li><a href="#15th-oct-2023">15th Oct, 2023</a></li>
-        <li><a href="#14th-oct-2023">14th Oct, 2023</a></li>
-        <li><a href="#before-12th-oct-2023">Before 12th Oct, 2023</a></li>
+        <li><a href="#before-nov-2023">Before Nov. 2023</a></li>
       </ul>
     </li>
   </ul>
@@ -140,13 +139,13 @@
 All links to OSDN are removed for now. Please download from SourceForge.</p>
 <p>Error during upload is as following (Output by WinSCP).</p>
 <div class="expand">
-    <input type="checkbox" id="R-expand-09c240cc7356a28f17589f71797db2d7" aria-controls="R-expandcontent-09c240cc7356a28f17589f71797db2d7" >
-    <label class="expand-label" for="R-expand-09c240cc7356a28f17589f71797db2d7" >
+    <input type="checkbox" id="R-expand-17c501bc99162354795fe1b833ecbe45" aria-controls="R-expandcontent-17c501bc99162354795fe1b833ecbe45" >
+    <label class="expand-label" for="R-expand-17c501bc99162354795fe1b833ecbe45" >
         <i class="fas fa-chevron-down"></i>
         <i class="fas fa-chevron-right"></i>
         Expand me&hellip;
     </label>
-    <div id="R-expandcontent-09c240cc7356a28f17589f71797db2d7" class="expand-content">
+    <div id="R-expandcontent-17c501bc99162354795fe1b833ecbe45" class="expand-content">
 <p>General failure (server should provide error description).<br>
 Error code: 4<br>
 Error message from server: Failure</p>
@@ -168,17 +167,16 @@ The code used is downloaded from <a href="http://download.qt.io" target="_blank"
 <strong>THESE PACKAGE ARE PROVIDED &ldquo;As is&rdquo;, I have no responsibility that you mess up your things with this binaries.</strong><br>
 Thanks for The Qt Company Ltd. and the programmers of Qt for their fantastic work!!</p>
 <h2 id="update-history">Update History</h2>
+<h3 id="25th-dec-2023">25th Dec, 2023</h3>
+<p>Update Qt 5.15.12 &amp; 6.2.7 with existing patches.<br>
+Apply patches of CVE-2023-51714 which is not yet announced by tQtC for all LTS Qt versions.</p>
+<p>Merry Christmas!</p>
 <h3 id="4th-dec-2023">4th Dec, 2023</h3>
 <p>Update Qt 6.6.1.<br>
 Rebuild Qt 6.5.3 with patch CVE-2023-43114.<br>
 Update OpenSSL 3.0.12. Rebuild all packages which use OpenSSL, including Qt 5.15 Android and Qt 6.2 non-WebAssembly.<br>
 Update MariaDB Connector C to 3.3.8 / 3.1.23.</p>
-<h3 id="15th-oct-2023">15th Oct, 2023</h3>
-<p>Rebuild all macOS version, with new ODBC database backend build on top of iODBC library bundled in macOS.</p>
-<h3 id="14th-oct-2023">14th Oct, 2023</h3>
-<p>Rebuild all Android version, with OpenSSL Thread disabled.<br>
-Update 5.15.11 for Android, use OpenSSL 3.0.11.</p>
-<h3 id="before-12th-oct-2023">Before 12th Oct, 2023</h3>
+<h3 id="before-nov-2023">Before Nov. 2023</h3>
 <p><a href="/miscellaneous/histories/index.html">Here</a></p>
 
             <footer class="footline">
@@ -204,15 +202,15 @@ Update 5.15.11 for Android, use OpenSSL 3.0.11.</p>
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
           <li data-nav-id="/5.15-series/index.html" class=""><a class="padding" href="/5.15-series/index.html">5.15 series</a><ul id="R-subsections-dfde3005aa1a1a9f4665d82e5e9612d8" class="morespace collapsible-menu">
-          <li data-nav-id="/5.15-series/5.15.11-for-windows/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-windows/index.html">5.15.11 for Windows</a></li>
-          <li data-nav-id="/5.15-series/5.15.11-for-macos/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-macos/index.html">5.15.11 for macOS</a></li>
-          <li data-nav-id="/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-android/index.html">5.15.11 for Android</a></li>
-          <li data-nav-id="/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-webassembly/index.html">5.15.11 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/5.15-series/5.15.11-for-windows/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-windows/index.html">5.15.12 for Windows</a></li>
+          <li data-nav-id="/5.15-series/5.15.11-for-macos/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-macos/index.html">5.15.12 for macOS</a></li>
+          <li data-nav-id="/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-android/index.html">5.15.12 for Android</a></li>
+          <li data-nav-id="/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-webassembly/index.html">5.15.12 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/6.2-series/index.html" class=""><a class="padding" href="/6.2-series/index.html">6.2 series</a><ul id="R-subsections-c2b87e4570db0ee260cc7de2c4b80e99" class="morespace collapsible-menu">
-          <li data-nav-id="/6.2-series/6.2.6-for-windows/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-windows/index.html">6.2.6 for Windows</a></li>
-          <li data-nav-id="/6.2-series/6.2.6-for-macos/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-macos/index.html">6.2.6 for macOS</a></li>
-          <li data-nav-id="/6.2-series/6.2.6-for-android/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-android/index.html">6.2.6 for Android</a></li>
-          <li data-nav-id="/6.2-series/6.2.6-for-webassembly/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-webassembly/index.html">6.2.6 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/6.2-series/6.2.6-for-windows/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-windows/index.html">6.2.7 for Windows</a></li>
+          <li data-nav-id="/6.2-series/6.2.6-for-macos/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-macos/index.html">6.2.7 for macOS</a></li>
+          <li data-nav-id="/6.2-series/6.2.6-for-android/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-android/index.html">6.2.7 for Android</a></li>
+          <li data-nav-id="/6.2-series/6.2.6-for-webassembly/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-webassembly/index.html">6.2.7 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/6.5-series/index.html" class=""><a class="padding" href="/6.5-series/index.html">6.5 series</a><ul id="R-subsections-1870fa5a2d192ec83aafe29160552269" class="morespace collapsible-menu">
           <li data-nav-id="/6.5-series/6.5.3-for-windows/index.html" class=""><a class="padding" href="/6.5-series/6.5.3-for-windows/index.html">6.5.3 for Windows</a></li>
           <li data-nav-id="/6.5-series/6.5.3-for-macos/index.html" class=""><a class="padding" href="/6.5-series/6.5.3-for-macos/index.html">6.5.3 for macOS</a></li>
@@ -309,7 +307,7 @@ Update 5.15.11 for Android, use OpenSSL 3.0.11.</p>
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Mon, 04 Dec 2023 21:03:35 CST</p>
+Site generated: Mon, 25 Dec 2023 21:48:34 CST</p>
 
           </div>
         </div>

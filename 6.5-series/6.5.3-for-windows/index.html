@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.120.4">
+    <meta name="generator" content="Hugo 0.121.1">
     <meta name="generator" content="Relearn 5.23.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
@@ -147,8 +147,7 @@
 <li>SQLite (distributed with Qt): Built in the package using command <code>-DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF</code>.</li>
 <li>ODBC: Built in the package using command <code>-DFEATURE_sql_odbc=ON</code>.</li>
 <li>MariaDB Connector/C 3.3 series (Dynamic builds only): Built in the package using command <code>-DFEATURE_sql_mysql=ON</code>.</li>
-</ol>
-</div>
+</ol></div>
 </div>
 
 
@@ -161,8 +160,7 @@ Following backend(s) are built in the package:</p>
 <ol>
 <li>OpenSSL 3.0 series using <code>-DFEATURE_openssl=ON -DINPUT_openssl=linked</code> for enabling linked OpenSSL support</li>
 <li>Windows Secure Channel using <code>-DFEATURE_schannel=ON</code> with TLS 1.3 support on MSVC version</li>
-</ol>
-</div>
+</ol></div>
 </div>
 
 
@@ -176,27 +174,27 @@ All builds have <code>-DFEATURE_icu=OFF</code> because I think the ICU library i
 <h2 id="dynamic--shared-builds">Dynamic / Shared Builds</h2>
 <h3 id="windows-msvc">Windows-MSVC</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Windows-x86_64-VS2022-17.8.2-20231203.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Windows-x86_64-VS2022-17.8.3-20231224.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.3-Windows-x86_64-VS2022-17.8.2-20231203.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.3-Windows-x86_64-VS2022-17.8.3-20231224.7z" target="_blank">
     SourceForge link
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">VS2022 17.8.2 w/ Windows SDK 10.0.22621</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">VS2022 17.8.3 w/ Windows SDK 10.0.22621</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <h3 id="windows-mingw">Windows-MinGW</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Windows-x86_64-MinGW12.2.0-msvcrt-20231203.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Windows-x86_64-MinGW12.2.0-msvcrt-20231225.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.3-Windows-x86_64-MinGW12.2.0-msvcrt-20231203.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.3-Windows-x86_64-MinGW12.2.0-msvcrt-20231225.7z" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -210,12 +208,12 @@ All builds have <code>-DFEATURE_icu=OFF</code> because I think the ICU library i
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Windows-x86_64-MinGW12.2.0-ucrt-20231203.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Windows-x86_64-MinGW12.2.0-ucrt-20231225.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.3-Windows-x86_64-MinGW12.2.0-ucrt-20231203.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.3-Windows-x86_64-MinGW12.2.0-ucrt-20231225.7z" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -230,12 +228,12 @@ All builds have <code>-DFEATURE_icu=OFF</code> because I think the ICU library i
     </table>
 <h3 id="windows-mingw-llvm">Windows-MinGW-LLVM</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Windows-x86_64-llvm-mingw-16.0.6-ucrt-20231203.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Windows-x86_64-llvm-mingw-16.0.6-ucrt-20231224.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.3-Windows-x86_64-llvm-mingw-16.0.6-ucrt-20231203.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.3-Windows-x86_64-llvm-mingw-16.0.6-ucrt-20231224.7z" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -249,12 +247,12 @@ All builds have <code>-DFEATURE_icu=OFF</code> because I think the ICU library i
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Windows-x86_64-llvm-mingw-16.0.6-msvcrt-20231203.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Windows-x86_64-llvm-mingw-16.0.6-msvcrt-20231224.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.3-Windows-x86_64-llvm-mingw-16.0.6-msvcrt-20231203.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.3-Windows-x86_64-llvm-mingw-16.0.6-msvcrt-20231224.7z" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -268,12 +266,12 @@ All builds have <code>-DFEATURE_icu=OFF</code> because I think the ICU library i
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Windows-x86_64-llvm-mingw-17.0.6-ucrt-20231203.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Windows-x86_64-llvm-mingw-17.0.6-ucrt-20231224.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.3-Windows-x86_64-llvm-mingw-17.0.6-ucrt-20231203.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.3-Windows-x86_64-llvm-mingw-17.0.6-ucrt-20231224.7z" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -287,12 +285,12 @@ All builds have <code>-DFEATURE_icu=OFF</code> because I think the ICU library i
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Windows-x86_64-llvm-mingw-17.0.6-msvcrt-20231203.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Windows-x86_64-llvm-mingw-17.0.6-msvcrt-20231224.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.3-Windows-x86_64-llvm-mingw-17.0.6-msvcrt-20231203.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.3-Windows-x86_64-llvm-mingw-17.0.6-msvcrt-20231224.7z" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -308,27 +306,27 @@ All builds have <code>-DFEATURE_icu=OFF</code> because I think the ICU library i
 <h2 id="static-full-builds">Static <code>Full</code> Builds</h2>
 <h3 id="windows-msvc-1">Windows-MSVC</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Windows-x86_64-VS2022-17.8.2-staticFull-20231203.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Windows-x86_64-VS2022-17.8.3-staticFull-20231224.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.3-Windows-x86_64-VS2022-17.8.2-staticFull-20231203.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.3-Windows-x86_64-VS2022-17.8.3-staticFull-20231224.7z" target="_blank">
     SourceForge link
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">VS2022 17.8.2 w/ Windows SDK 10.0.22621</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">VS2022 17.8.3 w/ Windows SDK 10.0.22621</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <h3 id="windows-mingw-1">Windows-MinGW</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Windows-x86_64-MinGW12.2.0-msvcrt-staticFull-20231203.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Windows-x86_64-MinGW12.2.0-msvcrt-staticFull-20231223.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.3-Windows-x86_64-MinGW12.2.0-msvcrt-staticFull-20231203.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.3-Windows-x86_64-MinGW12.2.0-msvcrt-staticFull-20231223.7z" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -342,12 +340,12 @@ All builds have <code>-DFEATURE_icu=OFF</code> because I think the ICU library i
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Windows-x86_64-MinGW12.2.0-ucrt-staticFull-20231203.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Windows-x86_64-MinGW12.2.0-ucrt-staticFull-20231224.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.3-Windows-x86_64-MinGW12.2.0-ucrt-staticFull-20231203.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.3-Windows-x86_64-MinGW12.2.0-ucrt-staticFull-20231224.7z" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -361,12 +359,12 @@ All builds have <code>-DFEATURE_icu=OFF</code> because I think the ICU library i
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Windows-x86_64-MinGW13.2.0-msvcrt-staticFull-20231203.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Windows-x86_64-MinGW13.2.0-msvcrt-staticFull-20231224.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.3-Windows-x86_64-MinGW13.2.0-msvcrt-staticFull-20231203.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.3-Windows-x86_64-MinGW13.2.0-msvcrt-staticFull-20231224.7z" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -380,12 +378,12 @@ All builds have <code>-DFEATURE_icu=OFF</code> because I think the ICU library i
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Windows-x86_64-MinGW13.2.0-ucrt-staticFull-20231203.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Windows-x86_64-MinGW13.2.0-ucrt-staticFull-20231224.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.3-Windows-x86_64-MinGW13.2.0-ucrt-staticFull-20231203.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.3-Windows-x86_64-MinGW13.2.0-ucrt-staticFull-20231224.7z" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -422,15 +420,15 @@ All builds have <code>-DFEATURE_icu=OFF</code> because I think the ICU library i
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
           <li data-nav-id="/5.15-series/index.html" class=""><a class="padding" href="/5.15-series/index.html">5.15 series</a><ul id="R-subsections-dfde3005aa1a1a9f4665d82e5e9612d8" class="morespace collapsible-menu">
-          <li data-nav-id="/5.15-series/5.15.11-for-windows/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-windows/index.html">5.15.11 for Windows</a></li>
-          <li data-nav-id="/5.15-series/5.15.11-for-macos/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-macos/index.html">5.15.11 for macOS</a></li>
-          <li data-nav-id="/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-android/index.html">5.15.11 for Android</a></li>
-          <li data-nav-id="/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-webassembly/index.html">5.15.11 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/5.15-series/5.15.11-for-windows/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-windows/index.html">5.15.12 for Windows</a></li>
+          <li data-nav-id="/5.15-series/5.15.11-for-macos/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-macos/index.html">5.15.12 for macOS</a></li>
+          <li data-nav-id="/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-android/index.html">5.15.12 for Android</a></li>
+          <li data-nav-id="/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-webassembly/index.html">5.15.12 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/6.2-series/index.html" class=""><a class="padding" href="/6.2-series/index.html">6.2 series</a><ul id="R-subsections-c2b87e4570db0ee260cc7de2c4b80e99" class="morespace collapsible-menu">
-          <li data-nav-id="/6.2-series/6.2.6-for-windows/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-windows/index.html">6.2.6 for Windows</a></li>
-          <li data-nav-id="/6.2-series/6.2.6-for-macos/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-macos/index.html">6.2.6 for macOS</a></li>
-          <li data-nav-id="/6.2-series/6.2.6-for-android/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-android/index.html">6.2.6 for Android</a></li>
-          <li data-nav-id="/6.2-series/6.2.6-for-webassembly/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-webassembly/index.html">6.2.6 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/6.2-series/6.2.6-for-windows/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-windows/index.html">6.2.7 for Windows</a></li>
+          <li data-nav-id="/6.2-series/6.2.6-for-macos/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-macos/index.html">6.2.7 for macOS</a></li>
+          <li data-nav-id="/6.2-series/6.2.6-for-android/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-android/index.html">6.2.7 for Android</a></li>
+          <li data-nav-id="/6.2-series/6.2.6-for-webassembly/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-webassembly/index.html">6.2.7 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/6.5-series/index.html" class="parent "><a class="padding" href="/6.5-series/index.html">6.5 series</a><ul id="R-subsections-1870fa5a2d192ec83aafe29160552269" class="morespace collapsible-menu">
           <li data-nav-id="/6.5-series/6.5.3-for-windows/index.html" class="active"><a class="padding" href="/6.5-series/6.5.3-for-windows/index.html">6.5.3 for Windows</a></li>
           <li data-nav-id="/6.5-series/6.5.3-for-macos/index.html" class=""><a class="padding" href="/6.5-series/6.5.3-for-macos/index.html">6.5.3 for macOS</a></li>
@@ -527,7 +525,7 @@ All builds have <code>-DFEATURE_icu=OFF</code> because I think the ICU library i
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Mon, 04 Dec 2023 21:03:35 CST</p>
+Site generated: Mon, 25 Dec 2023 21:48:34 CST</p>
 
           </div>
         </div>

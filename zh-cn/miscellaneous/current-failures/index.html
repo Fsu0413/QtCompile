@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.120.4">
+    <meta name="generator" content="Hugo 0.121.1">
     <meta name="generator" content="Relearn 5.23.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
@@ -92,7 +92,7 @@
   <ul>
     <li><a href="#qt-512-以后的-qdoc-使用-msvc-构建时无法使用静态链接的-clang">Qt 5.12 以后的 QDoc 使用 MSVC 构建时无法使用静态链接的 clang</a></li>
     <li><a href="#使用-mingw-构建-qt-62-系列时命令行过长">使用 MinGW 构建 Qt 6.2 系列时命令行过长</a></li>
-    <li><a href="#qtopcua-的问题2023-年-9-月-2-日更新">QtOpcUa 的问题（2023 年 9 月 2 日更新）</a></li>
+    <li><a href="#qtopcua-的问题2023-年-12-月-25-日更新">QtOpcUa 的问题（2023 年 12 月 25 日更新）</a></li>
     <li><a href="#使用更高版本的-qtwebengine-构建-qt-624-产生的多种多样的失败">使用更高版本的 QtWebEngine 构建 Qt 6.2.4 产生的多种多样的失败</a></li>
     <li><a href="#cve-2023-37369-的补丁与-qt-624--625-冲突">CVE-2023-37369 的补丁与 Qt 6.2.4 / 6.2.5 冲突</a></li>
   </ul>
@@ -137,7 +137,7 @@
 非常感谢 QtCN 的 lixinwei 提供相关信息。 <a href="http://www.qtcn.org/bbs/job.php?action=topost&amp;tid=85983&amp;pid=200952" target="_blank">原帖参考</a></p>
 <h2 id="使用-mingw-构建-qt-62-系列时命令行过长">使用 MinGW 构建 Qt 6.2 系列时命令行过长</h2>
 <p>参考 <a href="https://bugreports.qt.io/browse/QTBUG-96339" target="_blank">QTBUG-96339</a> - 暂时使用 CMake 3.20.2 绕过这个问题</p>
-<h2 id="qtopcua-的问题2023-年-9-月-2-日更新">QtOpcUa 的问题（2023 年 9 月 2 日更新）</h2>
+<h2 id="qtopcua-的问题2023-年-12-月-25-日更新">QtOpcUa 的问题（2023 年 12 月 25 日更新）</h2>
 <p><del>目前</del> 以前 QtOpcUa 与 OpenSSL 3.0 系列存在兼容性问题。<br>
 在 Qt 那帮人更新他们自己的 open62541 版本之前，暂时禁用 QtOpcUa 的构建。<br>
 这个修改将于 Qt 6.2.3 的构建和打包时落实。</p>
@@ -153,6 +153,9 @@ open62541 于 2022 年 11 月 14 日发布了 1.3.4 版本。QtOpcUa 6.5 更新�
 我将于 Qt 6.5 的构建上重新尝试启用 QtOpcUa 模块进行构建。（2023 年 1 月 23 日之前的构建中没有此模块）</p>
 <p>2023 年 9 月 2 日更新：<br>
 预估在构建于 2023 年 1 月 2 日发布的 Qt 6.2.7 的时候可以附带 QtOpcUa 了。</p>
+<p>2023 年 12 月 25 日更新：
+Qt 6.2.7 发布，但是 open62541 还是 1.1 版本。<br>
+等下个版本的 Qt 6.2 再看看。</p>
 <h2 id="使用更高版本的-qtwebengine-构建-qt-624-产生的多种多样的失败">使用更高版本的 QtWebEngine 构建 Qt 6.2.4 产生的多种多样的失败</h2>
 <p>在 macOS 上使用 Xcode 14.1 构建带有 QtWebEngine 6.3.2 的 Qt 6.2.4 会失败。使用 Xcode 14.0.1 的时候还是好的。可能是因为 QtWebEngine 6.3.2 不兼容 macOS Ventura SDK。<br>
 在 macOS 和 Windows 上构建带有 QtWebEngine 6.4.0 的 Qt 6.2.4 会失败。在 <code>gn</code> 过程中还是好的，但是出了 <code>gn</code> 就失败。Windows 和 macOS 上的错误不同。</p>
@@ -194,15 +197,15 @@ Qt 公司在他们自己的 yocto 仓库 <code>meta-qt6</code> 中记录了所�
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
           <li data-nav-id="/zh-cn/5.15-series/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/index.html">5.15 系列</a><ul id="R-subsections-6265c888ec9e92bab195ca36e833839a" class="morespace collapsible-menu">
-          <li data-nav-id="/zh-cn/5.15-series/5.15.11-for-windows/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.11-for-windows/index.html">5.15.11 的 Windows 版本</a></li>
-          <li data-nav-id="/zh-cn/5.15-series/5.15.11-for-macos/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.11-for-macos/index.html">5.15.11 的 macOS 版本</a></li>
-          <li data-nav-id="/zh-cn/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.11-for-android/index.html">5.15.11 的安卓版本</a></li>
-          <li data-nav-id="/zh-cn/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.11-for-webassembly/index.html">5.15.11 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.11-for-windows/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.11-for-windows/index.html">5.15.12 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.11-for-macos/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.11-for-macos/index.html">5.15.12 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.11-for-android/index.html">5.15.12 的安卓版本</a></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.11-for-webassembly/index.html">5.15.12 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/6.2-series/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/index.html">6.2 系列</a><ul id="R-subsections-106fe2487cf90a2754e3f4a06da071f3" class="morespace collapsible-menu">
-          <li data-nav-id="/zh-cn/6.2-series/6.2.6-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.6-for-windows/index.html">6.2.6 的 Windows 版本</a></li>
-          <li data-nav-id="/zh-cn/6.2-series/6.2.6-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.6-for-macos/index.html">6.2.6 的 macOS 版本</a></li>
-          <li data-nav-id="/zh-cn/6.2-series/6.2.6-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.6-for-android/index.html">6.2.6 的安卓版本</a></li>
-          <li data-nav-id="/zh-cn/6.2-series/6.2.6-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.6-for-webassembly/index.html">6.2.6 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/6.2-series/6.2.6-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.6-for-windows/index.html">6.2.7 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/6.2-series/6.2.6-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.6-for-macos/index.html">6.2.7 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/6.2-series/6.2.6-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.6-for-android/index.html">6.2.7 的安卓版本</a></li>
+          <li data-nav-id="/zh-cn/6.2-series/6.2.6-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.6-for-webassembly/index.html">6.2.7 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/6.5-series/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/index.html">6.5 系列</a><ul id="R-subsections-a4a8142fcca3c91cc086ca3a4afab485" class="morespace collapsible-menu">
           <li data-nav-id="/zh-cn/6.5-series/6.5.3-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.3-for-windows/index.html">6.5.3 的 Windows 版本</a></li>
           <li data-nav-id="/zh-cn/6.5-series/6.5.3-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.3-for-macos/index.html">6.5.3 的 macOS 版本</a></li>
@@ -299,7 +302,7 @@ Qt 公司在他们自己的 yocto 仓库 <code>meta-qt6</code> 中记录了所�
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Mon, 04 Dec 2023 21:03:36 CST</p>
+Site generated: Mon, 25 Dec 2023 21:48:35 CST</p>
 
           </div>
         </div>
