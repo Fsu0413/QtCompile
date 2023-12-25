@@ -64,7 +64,7 @@
       "version": "3.1.23",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "VS2022 17.8.2",
+      "toolchain": "VS2022 17.8.3",
       "arch": "x86_64"
     },
     "sort": 30107
@@ -104,7 +104,7 @@
       "version": "3.3.8",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "VS2022 17.8.2",
+      "toolchain": "VS2022 17.8.3",
       "arch": "x86_64"
     },
     "sort": 30302

@@ -26,7 +26,7 @@
       "version": "3.0.12",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "VS2022 17.8.2",
+      "toolchain": "VS2022 17.8.3",
       "arch": "x86_64",
       "variant": ""
     },
@@ -37,7 +37,7 @@
       "version": "3.0.12",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "VS2022 17.8.2",
+      "toolchain": "VS2022 17.8.3",
       "arch": "x86_64",
       "variant": "-static"
     },
@@ -422,7 +422,7 @@
       "version": "3.0.12",
       "platform": "Android",
       "buildHost": "RockyLinux 9.3",
-      "toolchain": "ndk r26",
+      "toolchain": "ndk r26b",
       "arch": "arm",
       "variant": "android-27, -static"
     },
@@ -433,7 +433,7 @@
       "version": "3.0.12",
       "platform": "Android",
       "buildHost": "RockyLinux 9.3",
-      "toolchain": "ndk r26",
+      "toolchain": "ndk r26b",
       "arch": "arm64",
       "variant": "android-27, -static"
     },
@@ -444,7 +444,7 @@
       "version": "3.0.12",
       "platform": "Android",
       "buildHost": "RockyLinux 9.3",
-      "toolchain": "ndk r26",
+      "toolchain": "ndk r26b",
       "arch": "x86",
       "variant": "android-27, -static"
     },
@@ -455,7 +455,7 @@
       "version": "3.0.12",
       "platform": "Android",
       "buildHost": "RockyLinux 9.3",
-      "toolchain": "ndk r26",
+      "toolchain": "ndk r26b",
       "arch": "x86_64",
       "variant": "android-27, -static"
     },
