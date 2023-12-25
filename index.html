@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.120.4">
+    <meta name="generator" content="Hugo 0.121.1">
     <meta name="generator" content="Relearn 5.23.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
@@ -93,10 +93,9 @@
     <li><a href="#免责声明">免责声明</a></li>
     <li><a href="#更新记录">更新记录</a>
       <ul>
+        <li><a href="#2023-年-12-月-25-日">2023 年 12 月 25 日</a></li>
         <li><a href="#2023-年-12-月-4-日">2023 年 12 月 4 日</a></li>
-        <li><a href="#2023-年-10-月-15-日">2023 年 10 月 15 日</a></li>
-        <li><a href="#2023-年-10-月-14-日">2023 年 10 月 14 日</a></li>
-        <li><a href="#2023-年-10-月-12-日以前">2023 年 10 月 12 日以前</a></li>
+        <li><a href="#2023-年-11-月以前">2023 年 11 月以前</a></li>
       </ul>
     </li>
   </ul>
@@ -140,13 +139,13 @@
 目前已经删除所有 OSDN 链接，拜托各位通过 SourceForge 进行下载。</p>
 <p>这边上传的时候发生的错误如下（通过 WinSCP 输出）：</p>
 <div class="expand">
-    <input type="checkbox" id="R-expand-ac85772848353e3ba52c2f9606a32c99" aria-controls="R-expandcontent-ac85772848353e3ba52c2f9606a32c99" >
-    <label class="expand-label" for="R-expand-ac85772848353e3ba52c2f9606a32c99" >
+    <input type="checkbox" id="R-expand-c83e8243df692587deb8e9c6ad8c0f0c" aria-controls="R-expandcontent-c83e8243df692587deb8e9c6ad8c0f0c" >
+    <label class="expand-label" for="R-expand-c83e8243df692587deb8e9c6ad8c0f0c" >
         <i class="fas fa-chevron-down"></i>
         <i class="fas fa-chevron-right"></i>
         展开
     </label>
-    <div id="R-expandcontent-ac85772848353e3ba52c2f9606a32c99" class="expand-content">
+    <div id="R-expandcontent-c83e8243df692587deb8e9c6ad8c0f0c" class="expand-content">
 <p>一般错误(服务器应该提供错误描述)。<br>
 错误码：4<br>
 服务器返回的错误消息：Failure</p>
@@ -168,17 +167,16 @@
 <strong>这些包为“依原样”提供。我对您使用此二进制文件作出的任何事情不负任何责任。</strong><br>
 感谢 The Qt Company Ltd. 和众多 Qt 的开发者的绝妙工作！</p>
 <h2 id="更新记录">更新记录</h2>
+<h3 id="2023-年-12-月-25-日">2023 年 12 月 25 日</h3>
+<p>更新 Qt 5.15.12 和 6.2.7。附带所有已有补丁。<br>
+为所有长期支持版本的 Qt 应用 Qt 公司尚未发布公告的 CVE-2023-51714 的补丁。</p>
+<p>圣诞节快乐！</p>
 <h3 id="2023-年-12-月-4-日">2023 年 12 月 4 日</h3>
 <p>更新 Qt 6.6.1。<br>
 重新构建 Qt 6.5.3，包含 CVE-2023-43114 的补丁。<br>
 更新 OpenSSL 3.0.12。重新构建了所有使用 OpenSSL 的版本，包含 Qt 5.15 的安卓版和 Qt 6.2 的 WebAssembly 以外的版本。<br>
 更新 MariaDB Connector C 到 3.3.8 / 3.1.23。</p>
-<h3 id="2023-年-10-月-15-日">2023 年 10 月 15 日</h3>
-<p>重新构建所有 macOS 版本，利用 macOS 附带的 iODBC 库构建 ODBC 数据库后端。</p>
-<h3 id="2023-年-10-月-14-日">2023 年 10 月 14 日</h3>
-<p>重新构建了所有安卓版本，禁用了 OpenSSL 的线程配置。<br>
-更新 Qt 5.15.11 安卓版本，使用 OpenSSL 3.0.11。</p>
-<h3 id="2023-年-10-月-12-日以前">2023 年 10 月 12 日以前</h3>
+<h3 id="2023-年-11-月以前">2023 年 11 月以前</h3>
 <p><a href="/qtcompile/miscellaneous/histories/">这里</a></p>
 
             <footer class="footline">
@@ -204,15 +202,15 @@
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
           <li data-nav-id="/qtcompile/5.15-series/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/index.html">5.15 系列</a><ul id="R-subsections-6265c888ec9e92bab195ca36e833839a" class="morespace collapsible-menu">
-          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-windows/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-windows/index.html">5.15.11 的 Windows 版本</a></li>
-          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-macos/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-macos/index.html">5.15.11 的 macOS 版本</a></li>
-          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-android/index.html">5.15.11 的安卓版本</a></li>
-          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-webassembly/index.html">5.15.11 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-windows/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-windows/index.html">5.15.12 的 Windows 版本</a></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-macos/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-macos/index.html">5.15.12 的 macOS 版本</a></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-android/index.html">5.15.12 的安卓版本</a></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-webassembly/index.html">5.15.12 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/6.2-series/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/index.html">6.2 系列</a><ul id="R-subsections-106fe2487cf90a2754e3f4a06da071f3" class="morespace collapsible-menu">
-          <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-windows/index.html">6.2.6 的 Windows 版本</a></li>
-          <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-macos/index.html">6.2.6 的 macOS 版本</a></li>
-          <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-android/index.html">6.2.6 的安卓版本</a></li>
-          <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-webassembly/index.html">6.2.6 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-windows/index.html">6.2.7 的 Windows 版本</a></li>
+          <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-macos/index.html">6.2.7 的 macOS 版本</a></li>
+          <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-android/index.html">6.2.7 的安卓版本</a></li>
+          <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-webassembly/index.html">6.2.7 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/6.5-series/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/index.html">6.5 系列</a><ul id="R-subsections-a4a8142fcca3c91cc086ca3a4afab485" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/6.5-series/6.5.3-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.3-for-windows/index.html">6.5.3 的 Windows 版本</a></li>
           <li data-nav-id="/qtcompile/6.5-series/6.5.3-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.3-for-macos/index.html">6.5.3 的 macOS 版本</a></li>
@@ -309,7 +307,7 @@
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Mon, 04 Dec 2023 21:03:30 CST</p>
+Site generated: Mon, 25 Dec 2023 21:47:03 CST</p>
 
           </div>
         </div>
