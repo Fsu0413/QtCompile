@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.121.1">
+    <meta name="generator" content="Hugo 0.122.0">
     <meta name="generator" content="Relearn 5.23.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
@@ -102,7 +102,7 @@
     <li><a href="#qt-6-支持的平台2023-年-6-月-14-日更新">Qt 6 支持的平台（2023 年 6 月 14 日更新）</a></li>
     <li><a href="#gpg-签名-2021-年-2-月-6-日更新">GPG 签名 （2021 年 2 月 6 日更新）</a></li>
     <li><a href="#弃用-windows-10-1809-之前的版本以及-32-位-windows-重要备注2023-年-3-月-25-日更新">弃用 Windows 10 1809 之前的版本以及 32 位 Windows （重要备注！！）（2023 年 3 月 25 日更新）</a></li>
-    <li><a href="#对当前构建的-qt-版本的已经决定的结束支持日期2023-年-10-月-6-日更新">对当前构建的 Qt 版本的已经决定的结束支持日期（2023 年 10 月 6 日更新）</a></li>
+    <li><a href="#对当前构建的-qt-版本的已经决定的结束支持日期2024-年-1-月-25-日更新">对当前构建的 Qt 版本的已经决定的结束支持日期（2024 年 1 月 25 日更新）</a></li>
     <li><a href="#之后可能会更新的内容">之后可能会更新的内容</a></li>
     <li><a href="#已有的补丁">已有的补丁</a></li>
   </ul>
@@ -265,13 +265,10 @@ Linux - toolchain provided by RedHat modified by RockyLinux developers with GCC,
 <p>从 2020 年 6 月 3 日（Qt 5.15 发布和 Qt 5.9 结束支持）开始，Windows 8.1 上我只支持 VS2015 和 MinGW 7.3 的构建。<br>
 Windows 10 已经变得越来越流行，而且添加更多更多的新特性。大家可以尽快切换到 Windows 10 了。</p>
 <p>从 2020 年 1 月 6 日（OpenSSL 1.0.2 系列结束支持）开始，我不再支持 Windows 8 以及更早的版本。请升级到 Windows 8.1 或更新版本。</p>
-<h2 id="对当前构建的-qt-版本的已经决定的结束支持日期2023-年-10-月-6-日更新">对当前构建的 Qt 版本的已经决定的结束支持日期（2023 年 10 月 6 日更新）</h2>
-<p>（2022 年 3 月 4 日更新）Qt 公司之前突然发布了开源的 5.15.3 版本，从那以后所有事情都变了。<br>
-我们之前的结束支持计划都没了意义。我们需要重新考虑 5.15 的结束支持日期。</p>
+<h2 id="对当前构建的-qt-版本的已经决定的结束支持日期2024-年-1-月-25-日更新">对当前构建的 Qt 版本的已经决定的结束支持日期（2024 年 1 月 25 日更新）</h2>
 <p>注：我们在除了 WebAssembly 以外的平台上构建 OpenSSL，所有我们的构建都需要至少支持到那个 OpenSSL 支持的日期。<br>
-当前正在使用的是 OpenSSL 1.1.1 系列和 3.0 系列。<br>
-OpenSSL 1.1.1 系列 <del>将</del> 已于 2023 年 9 月 11 日结束支持，而 OpenSSL 3.0 系列则是 2026 年 9 月 7 日。</p>
-<p>由于 Qt 5.15.8 开始支持使用 OpenSSL 3.0 系列，在 OpenSSL 1.1 系列结束支持之后，我们 <del>可能会</del> 已经在 Qt 5.15 的安卓版构建中切换到 OpenSSL 3.0 系列。<br>
+当前正在使用的是 OpenSSL 3.0 系列，将于 2026 年 9 月 7 日结束支持。</p>
+<p>我们已经在 Qt 5.15 的安卓版构建中使用 OpenSSL 3.0 系列。<br>
 现在可以确定的是 Qt 5.15 有 5 年的支持，不过目前不清楚 Qt 公司是否会在 2024 年 5 月 26 日之后释放 Qt 5.15 后续版本的代码。<br>
 如果 Qt 5.15 后续版本的代码不公开的话，我们不会再升级到 OpenSSL 3.0 以后的版本。</p>
 <table>
@@ -287,19 +284,19 @@ OpenSSL 1.1.1 系列 <del>将</del> 已于 2023 年 9 月 11 日结束支持，�
 <tr>
 <td>5.15 系列</td>
 <td>Windows 11 with VS2019 (动态) / VS2022</td>
-<td>2024 年 5 月 26 日</td>
+<td>2024 或 2026 年 5 月 26 日</td>
 <td>与 Qt 开源版 5.15 系列的终止支持日期保持一致。提前更新 WebEngine。包含 VS2019/22 的 VS 版本升级。</td>
 </tr>
 <tr>
 <td></td>
 <td>Windows with VS2015 / VS2017 / VS2019 (静态) / MinGW 8.1.0</td>
-<td>2024 年 5 月 26 日</td>
+<td>2024 或 2026 年 5 月 26 日</td>
 <td>与 Qt 开源版 5.15 系列的终止支持日期保持一致。包含 VS2017/9/22 的 VS 版本升级。</td>
 </tr>
 <tr>
 <td></td>
 <td>macOS</td>
-<td>2024 年 5 月 26 日</td>
+<td>2024 或 2026 年 5 月 26 日</td>
 <td>与 Qt 开源版 5.15 系列的终止支持日期保持一致。提前更新 WebEngine。（尽可能）包含 Xcode 和 macOS 更新</td>
 </tr>
 <tr>
@@ -311,7 +308,7 @@ OpenSSL 1.1.1 系列 <del>将</del> 已于 2023 年 9 月 11 日结束支持，�
 <tr>
 <td></td>
 <td>WebAssembly</td>
-<td>2024 年 5 月 26 日</td>
+<td>2024 或 2026 年 5 月 26 日</td>
 <td>与 Qt 开源版 5.15 系列的终止支持日期保持一致。</td>
 </tr>
 <tr>
@@ -336,7 +333,7 @@ OpenSSL 1.1.1 系列 <del>将</del> 已于 2023 年 9 月 11 日结束支持，�
 <td></td>
 <td>安卓</td>
 <td>2026 年 9 月 7 日</td>
-<td>S与 OpenSSL 3.0 的终止支持日期保持一致。会一直使用安卓 NDK r23 LTS 系列。</td>
+<td>与 OpenSSL 3.0 的终止支持日期保持一致。</td>
 </tr>
 <tr>
 <td></td>
@@ -347,7 +344,7 @@ OpenSSL 1.1.1 系列 <del>将</del> 已于 2023 年 9 月 11 日结束支持，�
 <tr>
 <td>6.5 系列</td>
 <td>？</td>
-<td>未决定</td>
+<td>（暂定）2027 年 4 月 3 日</td>
 <td>需要确认有没有更新的 OpenSSL 等第三方库。</td>
 </tr>
 </tbody>
@@ -407,11 +404,21 @@ OpenSSL 1.1.1 系列 <del>将</del> 已于 2023 年 9 月 11 日结束支持，�
 <td>2023 年 10 月 9 日</td>
 <td>2024 年 10 月 9 日</td>
 </tr>
+<tr>
+<td>6.2.11</td>
+<td>2024 年 1 月 16 日</td>
+<td>2025 年 1 月 16 日</td>
+</tr>
+<tr>
+<td>6.5.4</td>
+<td>2024 年 1 月 11 日</td>
+<td>2025 年 1 月 11 日</td>
+</tr>
 </tbody>
 </table>
 <h2 id="之后可能会更新的内容">之后可能会更新的内容</h2>
 <p><del>使用带 MinGW-w64 v9 的 GCC 11 来构建 Qt 5.15 系列之后的版本。</del> （5.15.12 上构建失败了） <br>
-使用安卓 NDK r25 系列构建 Qt 6.2.7 以及之后的版本。</p>
+使用安卓 NDK r25 系列构建 Qt 6.2.8 以及之后的版本。</p>
 <h2 id="已有的补丁">已有的补丁</h2>
 <p>从 2022 年 3 月 12 日开始我的 Qt 构建包含部分 Qt 提供的补丁。<br>
 多数是可以从 <a href="https://download.qt.io/" target="_blank">Qt 下载站</a> 下载的 CVE 补丁，另外一些是可以从 Qt Gerrit 或者 KDE 下载的一些修复构建的补丁。</p>
@@ -502,10 +509,10 @@ OpenSSL 1.1.1 系列 <del>将</del> 已于 2023 年 9 月 11 日结束支持，�
 <td>-</td>
 </tr>
 <tr>
-<td>CVE-2023-51714 （Qt 公司暂未发布公告）</td>
-<td>√ <a href="https://download.qt.io/official_releases/qt/5.15/0001-CVE-2023-51714-qtbase-5.15.diff" target="_blank">1</a> <a href="https://download.qt.io/official_releases/qt/5.15/0002-CVE-2023-51714-qtbase-5.15.diff" target="_blank">2</a></td>
-<td>√ <a href="https://download.qt.io/official_releases/qt/6.2/0001-CVE-2023-51714-qtbase-6.2.diff" target="_blank">1</a> <a href="https://download.qt.io/official_releases/qt/6.2/0002-CVE-2023-51714-qtbase-6.2.diff" target="_blank">2</a></td>
-<td>√ <a href="https://download.qt.io/official_releases/qt/6.5/0001-CVE-2023-51714-qtbase-6.5.diff" target="_blank">1</a> <a href="https://download.qt.io/official_releases/qt/6.5/0002-CVE-2023-51714-qtbase-6.5.diff" target="_blank">2</a></td>
+<td>CVE-2023-51714</td>
+<td>√ <a href="https://download.qt.io/official_releases/qt/5.15/0001-CVE-2023-51714-qtbase-5.15.diff" target="_blank">1</a> <a href="https://download.qt.io/official_releases/qt/5.15/0002-CVE-2023-51714-qtbase-5.15.diff" target="_blank">2</a> （5.15.17）</td>
+<td>√ <a href="https://download.qt.io/official_releases/qt/6.2/0001-CVE-2023-51714-qtbase-6.2.diff" target="_blank">1</a> <a href="https://download.qt.io/official_releases/qt/6.2/0002-CVE-2023-51714-qtbase-6.2.diff" target="_blank">2</a> （6.2.11）</td>
+<td>√ <a href="https://download.qt.io/official_releases/qt/6.5/0001-CVE-2023-51714-qtbase-6.5.diff" target="_blank">1</a> <a href="https://download.qt.io/official_releases/qt/6.5/0002-CVE-2023-51714-qtbase-6.5.diff" target="_blank">2</a> （6.5.4）</td>
 </tr>
 </tbody>
 </table>
@@ -638,7 +645,7 @@ OpenSSL 1.1.1 系列 <del>将</del> 已于 2023 年 9 月 11 日结束支持，�
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Mon, 25 Dec 2023 21:47:03 CST</p>
+Site generated: Wed, 07 Feb 2024 07:37:34 CST</p>
 
           </div>
         </div>
