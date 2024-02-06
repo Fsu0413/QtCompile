@@ -13,7 +13,7 @@
         "style" "info"
         "title" (T "Note")
         "icon" "fas fa-info-circle"
-        "content" ((printf (T $ndkStatement) $ndkVer (print $ndkInstruction $ndkPlatform) $ndkAndroid) | markdownify)
+        "content" ((printf (T $ndkStatement) $ndkVer (print $ndkInstruction $ndkPlatform)) | markdownify)
     )}}
 {{- else -}}
     <p class="fsu0413_error">NO ANDROID PLATFORM {{$ndkPlatform}}</p>

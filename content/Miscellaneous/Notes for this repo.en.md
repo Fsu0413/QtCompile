@@ -198,32 +198,28 @@ WINDOWS 10 IS MORE AND MORE POPULAR, AND RECEIVING MORE AND MORE NEW FEATURES. O
 
 SINCE {{% date 2020 1 6 %}} (OpenSSL 1.0.2 EOL) NO LATER BUILD WILL SUPPORT WINDOWS 8 AND EARLIER BY ME, PLEASE UPDATE TO WINDOWS 8.1 AND LATER.
 
-## Decided EOL of current building Qt LTS versions (Updated {{% date 2023 10 6 %}})
-
-(Updated {{% date 2022 3 4 %}}) tQtC released Qt opensource 5.15.3 for a sudden and all the things changed since then.  
-All of our EOL schedule becomes meaningless. We should re-consider the EOL date since Qt 5.15.
+## Decided EOL of current building Qt LTS versions (Updated {{% date 2024 1 25 %}})
 
 Note: since OpenSSL is currently built on all versions of my build except for WebAssembly, all of my builds should persist until EOL of that specific OpenSSL version.  
-Currently OpenSSL 1.1.1 and 3.0 series are used.  
-OpenSSL 1.1.1 series ~~reaches~~ reached EOL until {{% date 2023 9 11 %}}, while OpenSSL 3.0 series does until {{% date 2026 9 7 %}}.
+Currently OpenSSL 3.0 series are used, which will reach EOL until {{% date 2026 9 7 %}}.
 
-Since Qt 5.15.8 starts supporting OpenSSL 3.0 series we ~~may switch~~ have switched to OpenSSL 3.0 series on our Qt 5.15 Android builds after EOL of OpenSSL 1.1 series.  
+We are currently using OpenSSL 3.0 series on our Qt 5.15 Android builds.  
 Currently it is certain that Qt 5.15 will be supported for 5 years, but it is unknown that tQtC will provide source code of Qt 5.15 after {{% date 2024 5 26 %}}.  
 If subsequent version of Qt 5.15 remains private we won't upgrade OpenSSL to post-3.0 version.
 
 | Qt version | Build Target | EOL date | Notes |
 |-|-|-|-|
-| 5.15 Series | Windows 11 with VS2019 (Shared) / VS2022 | {{% date 2024 5 26 %}} | Same as EOL of Qt opensource 5.15, with WebEngine got update ahead of time, with VS version update within VS2019/22 |
-| | Windows with VS2015 / VS2017 / VS2019 (static) / MinGW | {{% date 2024 5 26 %}} | Same as EOL of Qt opensource 5.15, with VS version update within VS2017/9/22 |
-| | macOS | {{% date 2024 5 26 %}} | Same as EOL of Qt opensource 5.15, with WebEngine got update ahead of time, with (at best effort) Xcode and macOS update |
+| 5.15 Series | Windows 11 with VS2019 (Shared) / VS2022 | {{% date "2024 or 2026" 5 26 %}} | Same as EOL of Qt opensource 5.15, with WebEngine got update ahead of time, with VS version update within VS2019/22 |
+| | Windows with VS2015 / VS2017 / VS2019 (static) / MinGW | {{% date "2024 or 2026" 5 26 %}} | Same as EOL of Qt opensource 5.15, with VS version update within VS2017/9/22 |
+| | macOS | {{% date "2024 or 2026" 5 26 %}} | Same as EOL of Qt opensource 5.15, with WebEngine got update ahead of time, with (at best effort) Xcode and macOS update |
 | | Android | {{% date 2026 9 7 %}} | Same as EOL of OpenSSL 3.0 series. |
-| | WebAssembly | {{% date 2024 5 26 %}} | Same as EOL of Qt opensource 5.15 |
+| | WebAssembly | {{% date "2024 or 2026" 5 26 %}} | Same as EOL of Qt opensource 5.15 |
 | 6.2 Series | Windows 11 with VS2019 / VS2022 | {{% date 2026 9 7 %}} | Same as EOL of OpenSSL 3.0 series, with VS version update |
 | | Windows 11 with MinGW / LLVM-MinGW | {{% date 2026 9 7 %}} | Same as EOL of OpenSSL 3.0 series, with MinGW version update |
 | | macOS | {{% date 2026 9 7 %}} | Same as EOL of OpenSSL 3.0 series, with (at best effort) Xcode and macOS update |
 | | Android | {{% date 2026 9 7 %}} | Same as EOL of OpenSSL 3.0 series, Will stuck at Android NDK r23 LTS series |
 | | WebAssembly | {{% date 2025 9 29 %}} | Same as EOL of Qt opensource 6.2 |
-| 6.5 Series | ? | TBD | Updated OpenSSL or third party libraries should be checked beforehand. |
+| 6.5 Series | ? | {{% date 2027 4 3 %}} (tentitive) | Updated OpenSSL or third party libraries should be checked beforehand. |
 
 Commericial-only Qt Open Source Release Date (ETA)
 
@@ -238,11 +234,13 @@ Commericial-only Qt Open Source Release Date (ETA)
 | 6.2.8 | {{% date 2023 4 18 %}} | {{% date 2024 4 18 %}} |
 | 6.2.9 | {{% date 2023 7 4 %}} | {{% date 2024 7 4 %}} |
 | 6.2.10 | {{% date 2023 10 9 %}} | {{% date 2024 10 9 %}} |
+| 6.2.11 | {{% date 2024 1 16 %}} | {{% date 2025 1 16 %}} |
+| 6.5.4 | {{% date 2024 1 11 %}} | {{% date 2025 1 11 %}} |
 
 ## Incoming update for future release
 
 ~~Use GCC 11 with MinGW-w64 v9 for building following Qt 5.15 series.~~ (Build failed on 5.15.12)   
-Use Android NDK r25 series for building Qt 6.2.7 onwards.  
+Use Android NDK r25 series for building Qt 6.2.8 onwards.  
 
 ## Existing Patches
 
@@ -268,4 +266,4 @@ Version number in brackets are the version when the corresponding patch will be 
 | CVE-2023-43114 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-43114-5.15.patch) (5.15.16) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-43114-6.2.patch) (6.2.10) | [√](https://download.qt.io/official_releases/qt/6.5/CVE-2023-43114-6.5.patch) (6.5.4) |
 | CVE-2023-4863 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-4863-5.15.patch) (5.15.16) | [**×**](# "Official patch causes CONFLICT. Since it only updates third-party project let's wait for later versions") (6.2.10) | shipped |
 | CVE-2023-45872 | - | [**×**](# "Official patch causes CONFLICT. Reason is unknown and will not be investigated.") (6.2.11) | - |
-| CVE-2023-51714 (Not yet announced by tQtC) | √ [1](https://download.qt.io/official_releases/qt/5.15/0001-CVE-2023-51714-qtbase-5.15.diff) [2](https://download.qt.io/official_releases/qt/5.15/0002-CVE-2023-51714-qtbase-5.15.diff) | √ [1](https://download.qt.io/official_releases/qt/6.2/0001-CVE-2023-51714-qtbase-6.2.diff) [2](https://download.qt.io/official_releases/qt/6.2/0002-CVE-2023-51714-qtbase-6.2.diff) | √ [1](https://download.qt.io/official_releases/qt/6.5/0001-CVE-2023-51714-qtbase-6.5.diff) [2](https://download.qt.io/official_releases/qt/6.5/0002-CVE-2023-51714-qtbase-6.5.diff) |
+| CVE-2023-51714 | √ [1](https://download.qt.io/official_releases/qt/5.15/0001-CVE-2023-51714-qtbase-5.15.diff) [2](https://download.qt.io/official_releases/qt/5.15/0002-CVE-2023-51714-qtbase-5.15.diff) (5.15.17) | √ [1](https://download.qt.io/official_releases/qt/6.2/0001-CVE-2023-51714-qtbase-6.2.diff) [2](https://download.qt.io/official_releases/qt/6.2/0002-CVE-2023-51714-qtbase-6.2.diff) (6.2.11) | √ [1](https://download.qt.io/official_releases/qt/6.5/0001-CVE-2023-51714-qtbase-6.5.diff) [2](https://download.qt.io/official_releases/qt/6.5/0002-CVE-2023-51714-qtbase-6.5.diff) (6.5.4) |

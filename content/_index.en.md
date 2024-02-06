@@ -33,6 +33,10 @@ Thanks for The Qt Company Ltd. and the programmers of Qt for their fantastic wor
 
 ## Update History
 
+### {{% date 2024 2 7 %}}
+Update Qt 5.15 & 6.2.7 & 6.5.3 Android version with updated API level.  
+Update OpenSSL to 3.0.13.
+
 ### {{% date 2023 12 25 %}}
 Update Qt 5.15.12 & 6.2.7 with existing patches.   
 Apply patches of CVE-2023-51714 which is not yet announced by tQtC for all LTS Qt versions.
