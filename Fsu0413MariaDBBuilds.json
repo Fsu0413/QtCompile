@@ -24,7 +24,7 @@
       "version": "3.1.23",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "VS2017 15.9.58",
+      "toolchain": "VS2017 15.9.59",
       "arch": "x86"
     },
     "sort": 30103
@@ -34,7 +34,7 @@
       "version": "3.1.23",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "VS2017 15.9.58",
+      "toolchain": "VS2017 15.9.59",
       "arch": "x86_64"
     },
     "sort": 30104
@@ -44,7 +44,7 @@
       "version": "3.1.23",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "VS2019 16.11.32",
+      "toolchain": "VS2019 16.11.33",
       "arch": "x86"
     },
     "sort": 30105
@@ -54,7 +54,7 @@
       "version": "3.1.23",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "VS2019 16.11.32",
+      "toolchain": "VS2019 16.11.33",
       "arch": "x86_64"
     },
     "sort": 30106
@@ -64,7 +64,7 @@
       "version": "3.1.23",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "VS2022 17.8.3",
+      "toolchain": "VS2022 17.8.6",
       "arch": "x86_64"
     },
     "sort": 30107
@@ -83,7 +83,7 @@
     "data": {
       "version": "3.1.23",
       "platform": "macOS",
-      "buildHost": "macOS 13.6.1",
+      "buildHost": "macOS 13.6.3",
       "toolchain": "AppleClang 14.0.3",
       "arch": "Universal (x86_64, arm64)"
     },
@@ -94,7 +94,7 @@
       "version": "3.3.8",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "VS2019 16.11.32",
+      "toolchain": "VS2019 16.11.33",
       "arch": "x86_64"
     },
     "sort": 30301
@@ -104,7 +104,7 @@
       "version": "3.3.8",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "VS2022 17.8.3",
+      "toolchain": "VS2022 17.8.6",
       "arch": "x86_64"
     },
     "sort": 30302
@@ -223,7 +223,7 @@
     "data": {
       "version": "3.3.8",
       "platform": "macOS",
-      "buildHost": "macOS 13.6.1",
+      "buildHost": "macOS 13.6.3",
       "toolchain": "AppleClang 14.0.3",
       "arch": "Universal (x86_64, arm64)"
     },
