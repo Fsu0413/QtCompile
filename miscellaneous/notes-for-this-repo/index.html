@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.121.1">
+    <meta name="generator" content="Hugo 0.122.0">
     <meta name="generator" content="Relearn 5.23.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
@@ -102,7 +102,7 @@
     <li><a href="#qt-6-support-platforms-updated-14th-jun-2023">Qt 6 support platforms (updated 14th Jun, 2023)</a></li>
     <li><a href="#gpg-sign-updated-6th-feb-2021">GPG sign (Updated 6th Feb, 2021)</a></li>
     <li><a href="#windows-10-before-version-1809-and-32-bit-windows-deprecation-important-notes-updated-25th-mar-2023">Windows 10 before version 1809 and 32-bit Windows deprecation (IMPORTANT NOTES!!) (updated 25th Mar, 2023)</a></li>
-    <li><a href="#decided-eol-of-current-building-qt-lts-versions-updated-6th-oct-2023">Decided EOL of current building Qt LTS versions (Updated 6th Oct, 2023)</a></li>
+    <li><a href="#decided-eol-of-current-building-qt-lts-versions-updated-25th-jan-2024">Decided EOL of current building Qt LTS versions (Updated 25th Jan, 2024)</a></li>
     <li><a href="#incoming-update-for-future-release">Incoming update for future release</a></li>
     <li><a href="#existing-patches">Existing Patches</a></li>
   </ul>
@@ -265,13 +265,10 @@ Since 25th Mar, 2023 all builds don&rsquo;t support Windows 8.1. Existing VS2015
 <p>SINCE 3rd Jun, 2020 (Qt 5.15 release and Qt 5.9 EOL) ONLY VS2015 AND MINGW 7.3 BUILDS SUPPORTS WINDOWS 8.1 by me.<br>
 WINDOWS 10 IS MORE AND MORE POPULAR, AND RECEIVING MORE AND MORE NEW FEATURES. ONE SHOULD SWITCH TO WINDOWS 10 ASAP.</p>
 <p>SINCE 6th Jan, 2020 (OpenSSL 1.0.2 EOL) NO LATER BUILD WILL SUPPORT WINDOWS 8 AND EARLIER BY ME, PLEASE UPDATE TO WINDOWS 8.1 AND LATER.</p>
-<h2 id="decided-eol-of-current-building-qt-lts-versions-updated-6th-oct-2023">Decided EOL of current building Qt LTS versions (Updated 6th Oct, 2023)</h2>
-<p>(Updated 4th Mar, 2022) tQtC released Qt opensource 5.15.3 for a sudden and all the things changed since then.<br>
-All of our EOL schedule becomes meaningless. We should re-consider the EOL date since Qt 5.15.</p>
+<h2 id="decided-eol-of-current-building-qt-lts-versions-updated-25th-jan-2024">Decided EOL of current building Qt LTS versions (Updated 25th Jan, 2024)</h2>
 <p>Note: since OpenSSL is currently built on all versions of my build except for WebAssembly, all of my builds should persist until EOL of that specific OpenSSL version.<br>
-Currently OpenSSL 1.1.1 and 3.0 series are used.<br>
-OpenSSL 1.1.1 series <del>reaches</del> reached EOL until 11th Sep, 2023, while OpenSSL 3.0 series does until 7th Sep, 2026.</p>
-<p>Since Qt 5.15.8 starts supporting OpenSSL 3.0 series we <del>may switch</del> have switched to OpenSSL 3.0 series on our Qt 5.15 Android builds after EOL of OpenSSL 1.1 series.<br>
+Currently OpenSSL 3.0 series are used, which will reach EOL until 7th Sep, 2026.</p>
+<p>We are currently using OpenSSL 3.0 series on our Qt 5.15 Android builds.<br>
 Currently it is certain that Qt 5.15 will be supported for 5 years, but it is unknown that tQtC will provide source code of Qt 5.15 after 26th May, 2024.<br>
 If subsequent version of Qt 5.15 remains private we won&rsquo;t upgrade OpenSSL to post-3.0 version.</p>
 <table>
@@ -287,19 +284,19 @@ If subsequent version of Qt 5.15 remains private we won&rsquo;t upgrade OpenSSL 
 <tr>
 <td>5.15 Series</td>
 <td>Windows 11 with VS2019 (Shared) / VS2022</td>
-<td>26th May, 2024</td>
+<td>26th May, 2024 or 2026</td>
 <td>Same as EOL of Qt opensource 5.15, with WebEngine got update ahead of time, with VS version update within VS2019/22</td>
 </tr>
 <tr>
 <td></td>
 <td>Windows with VS2015 / VS2017 / VS2019 (static) / MinGW</td>
-<td>26th May, 2024</td>
+<td>26th May, 2024 or 2026</td>
 <td>Same as EOL of Qt opensource 5.15, with VS version update within VS2017/9/22</td>
 </tr>
 <tr>
 <td></td>
 <td>macOS</td>
-<td>26th May, 2024</td>
+<td>26th May, 2024 or 2026</td>
 <td>Same as EOL of Qt opensource 5.15, with WebEngine got update ahead of time, with (at best effort) Xcode and macOS update</td>
 </tr>
 <tr>
@@ -311,7 +308,7 @@ If subsequent version of Qt 5.15 remains private we won&rsquo;t upgrade OpenSSL 
 <tr>
 <td></td>
 <td>WebAssembly</td>
-<td>26th May, 2024</td>
+<td>26th May, 2024 or 2026</td>
 <td>Same as EOL of Qt opensource 5.15</td>
 </tr>
 <tr>
@@ -347,7 +344,7 @@ If subsequent version of Qt 5.15 remains private we won&rsquo;t upgrade OpenSSL 
 <tr>
 <td>6.5 Series</td>
 <td>?</td>
-<td>TBD</td>
+<td>3rd Apr, 2027 (tentitive)</td>
 <td>Updated OpenSSL or third party libraries should be checked beforehand.</td>
 </tr>
 </tbody>
@@ -407,11 +404,21 @@ If subsequent version of Qt 5.15 remains private we won&rsquo;t upgrade OpenSSL 
 <td>9th Oct, 2023</td>
 <td>9th Oct, 2024</td>
 </tr>
+<tr>
+<td>6.2.11</td>
+<td>16th Jan, 2024</td>
+<td>16th Jan, 2025</td>
+</tr>
+<tr>
+<td>6.5.4</td>
+<td>11th Jan, 2024</td>
+<td>11th Jan, 2025</td>
+</tr>
 </tbody>
 </table>
 <h2 id="incoming-update-for-future-release">Incoming update for future release</h2>
 <p><del>Use GCC 11 with MinGW-w64 v9 for building following Qt 5.15 series.</del> (Build failed on 5.15.12)<br>
-Use Android NDK r25 series for building Qt 6.2.7 onwards.</p>
+Use Android NDK r25 series for building Qt 6.2.8 onwards.</p>
 <h2 id="existing-patches">Existing Patches</h2>
 <p>Starting from 12th Mar, 2022 I am shipping Qt with patches from Qt.<br>
 Most of them are CVE patches which can be downloaded from <a href="https://download.qt.io/" target="_blank">Qt Downloads</a>, others are build fixes which are download from Qt Gerrit or KDE.</p>
@@ -502,10 +509,10 @@ Version number in brackets are the version when the corresponding patch will be 
 <td>-</td>
 </tr>
 <tr>
-<td>CVE-2023-51714 (Not yet announced by tQtC)</td>
-<td>√ <a href="https://download.qt.io/official_releases/qt/5.15/0001-CVE-2023-51714-qtbase-5.15.diff" target="_blank">1</a> <a href="https://download.qt.io/official_releases/qt/5.15/0002-CVE-2023-51714-qtbase-5.15.diff" target="_blank">2</a></td>
-<td>√ <a href="https://download.qt.io/official_releases/qt/6.2/0001-CVE-2023-51714-qtbase-6.2.diff" target="_blank">1</a> <a href="https://download.qt.io/official_releases/qt/6.2/0002-CVE-2023-51714-qtbase-6.2.diff" target="_blank">2</a></td>
-<td>√ <a href="https://download.qt.io/official_releases/qt/6.5/0001-CVE-2023-51714-qtbase-6.5.diff" target="_blank">1</a> <a href="https://download.qt.io/official_releases/qt/6.5/0002-CVE-2023-51714-qtbase-6.5.diff" target="_blank">2</a></td>
+<td>CVE-2023-51714</td>
+<td>√ <a href="https://download.qt.io/official_releases/qt/5.15/0001-CVE-2023-51714-qtbase-5.15.diff" target="_blank">1</a> <a href="https://download.qt.io/official_releases/qt/5.15/0002-CVE-2023-51714-qtbase-5.15.diff" target="_blank">2</a> (5.15.17)</td>
+<td>√ <a href="https://download.qt.io/official_releases/qt/6.2/0001-CVE-2023-51714-qtbase-6.2.diff" target="_blank">1</a> <a href="https://download.qt.io/official_releases/qt/6.2/0002-CVE-2023-51714-qtbase-6.2.diff" target="_blank">2</a> (6.2.11)</td>
+<td>√ <a href="https://download.qt.io/official_releases/qt/6.5/0001-CVE-2023-51714-qtbase-6.5.diff" target="_blank">1</a> <a href="https://download.qt.io/official_releases/qt/6.5/0002-CVE-2023-51714-qtbase-6.5.diff" target="_blank">2</a> (6.5.4)</td>
 </tr>
 </tbody>
 </table>
@@ -638,7 +645,7 @@ Version number in brackets are the version when the corresponding patch will be 
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Mon, 25 Dec 2023 21:48:34 CST</p>
+Site generated: Wed, 07 Feb 2024 07:37:47 CST</p>
 
           </div>
         </div>
