@@ -90,10 +90,13 @@
               <div class="topbar-content">
                 <div class="topbar-content-wrapper"><nav class="TableOfContents">
   <ul>
-    <li><a href="#dynamic--shared-builds-ndk-r10e">Dynamic / Shared Builds (NDK r10e)</a></li>
-    <li><a href="#windows-host">Windows Host</a></li>
-    <li><a href="#linux-host">Linux Host</a></li>
-    <li><a href="#macos-host">macOS Host</a></li>
+    <li><a href="#dynamic--shared-builds-ndk-r10e">Dynamic / Shared Builds (NDK r10e)</a>
+      <ul>
+        <li><a href="#windows-host">Windows Host</a></li>
+        <li><a href="#linux-host">Linux Host</a></li>
+        <li><a href="#macos-host">macOS Host</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
                 </div>
@@ -174,9 +177,10 @@ All builds have <code>-no-icu</code> because I think the ICU library is too big 
   <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
   <div class="box-content">
 <p>
-Built using NDK r10e with <code>-android-ndk-platform android-9</code> argument.</div>
+Built using NDK r10e with <code>-android-ndk-platform android-9</code> argument.<br>
+It means the APK built using these builds can only be run on Android 2.3 and later.</div>
 </div>
-<h2 id="windows-host">Windows Host</h2>
+<h3 id="windows-host">Windows Host</h3>
 <table>
         <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.6.3-Android-arm-gcc-NDKr10e-XWindows-x86_64-MinGW4.9.4-20200105.7z</b></th></tr></thead>
         <tbody>
@@ -205,7 +209,7 @@ Built using NDK r10e with <code>-android-ndk-platform android-9</code> argument.
             <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 10 10.0.18363</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r10e</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
-<h2 id="linux-host">Linux Host</h2>
+<h3 id="linux-host">Linux Host</h3>
 <table>
         <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.6.3-Android-arm-gcc-NDKr10e-xLinux-x86_64-gcc4.8.5-20200105.tar.xz</b></th></tr></thead>
         <tbody>
@@ -234,7 +238,7 @@ Built using NDK r10e with <code>-android-ndk-platform android-9</code> argument.
             <tr><td width="20%"><b>Build Host:</b></td><td width="30%">CentOS 7.7</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r10e</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
-<h2 id="macos-host">macOS Host</h2>
+<h3 id="macos-host">macOS Host</h3>
 <table>
         <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.6.3-Android-arm-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz</b></th></tr></thead>
         <tbody>
@@ -302,10 +306,10 @@ Built using NDK r10e with <code>-android-ndk-platform android-9</code> argument.
           <li data-nav-id="/6.5-series/6.5.3-for-android/index.html" class=""><a class="padding" href="/6.5-series/6.5.3-for-android/index.html">6.5.3 for Android</a></li>
           <li data-nav-id="/6.5-series/6.5.3-for-webassembly/index.html" class=""><a class="padding" href="/6.5-series/6.5.3-for-webassembly/index.html">6.5.3 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/6.6-series/index.html" class=""><a class="padding" href="/6.6-series/index.html">6.6 series</a><ul id="R-subsections-251fabc502a6554f591098a179d20356" class="morespace collapsible-menu">
-          <li data-nav-id="/6.6-series/6.6.0-for-windows/index.html" class=""><a class="padding" href="/6.6-series/6.6.0-for-windows/index.html">6.6.1 for Windows</a></li>
-          <li data-nav-id="/6.6-series/6.6.0-for-macos/index.html" class=""><a class="padding" href="/6.6-series/6.6.0-for-macos/index.html">6.6.1 for macOS</a></li>
-          <li data-nav-id="/6.6-series/6.6.0-for-android/index.html" class=""><a class="padding" href="/6.6-series/6.6.0-for-android/index.html">6.6.1 for Android</a></li>
-          <li data-nav-id="/6.6-series/6.6.0-for-webassembly/index.html" class=""><a class="padding" href="/6.6-series/6.6.0-for-webassembly/index.html">6.6.1 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/6.6-series/6.6.0-for-windows/index.html" class=""><a class="padding" href="/6.6-series/6.6.0-for-windows/index.html">6.6.2 for Windows</a></li>
+          <li data-nav-id="/6.6-series/6.6.0-for-macos/index.html" class=""><a class="padding" href="/6.6-series/6.6.0-for-macos/index.html">6.6.2 for macOS</a></li>
+          <li data-nav-id="/6.6-series/6.6.0-for-android/index.html" class=""><a class="padding" href="/6.6-series/6.6.0-for-android/index.html">6.6.2 for Android</a></li>
+          <li data-nav-id="/6.6-series/6.6.0-for-webassembly/index.html" class=""><a class="padding" href="/6.6-series/6.6.0-for-webassembly/index.html">6.6.2 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/miscellaneous/index.html" class=""><a class="padding" href="/miscellaneous/index.html">Miscellaneous</a><ul id="R-subsections-59c45accf7e43befe663d68447543959" class="morespace collapsible-menu">
           <li data-nav-id="/miscellaneous/notes-for-this-repo/index.html" class=""><a class="padding" href="/miscellaneous/notes-for-this-repo/index.html">Notes for this repo</a></li>
           <li data-nav-id="/miscellaneous/current-build-status/index.html" class=""><a class="padding" href="/miscellaneous/current-build-status/index.html">Current build status</a></li>
@@ -392,7 +396,7 @@ Built using NDK r10e with <code>-android-ndk-platform android-9</code> argument.
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Wed, 07 Feb 2024 07:37:46 CST</p>
+Site generated: Sat, 17 Feb 2024 14:41:49 CST</p>
 
           </div>
         </div>
