@@ -90,10 +90,13 @@
               <div class="topbar-content">
                 <div class="topbar-content-wrapper"><nav class="TableOfContents">
   <ul>
-    <li><a href="#动态--共享构建-ndk-r23c">动态 / 共享构建 （NDK r23c）</a></li>
-    <li><a href="#交叉构建主机windows">交叉构建主机：Windows</a></li>
-    <li><a href="#交叉构建主机linux">交叉构建主机：Linux</a></li>
-    <li><a href="#交叉构建主机macos">交叉构建主机：macOS</a></li>
+    <li><a href="#动态--共享构建-ndk-r23c">动态 / 共享构建 （NDK r23c）</a>
+      <ul>
+        <li><a href="#交叉构建主机windows">交叉构建主机：Windows</a></li>
+        <li><a href="#交叉构建主机linux">交叉构建主机：Linux</a></li>
+        <li><a href="#交叉构建主机macos">交叉构建主机：macOS</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
                 </div>
@@ -160,30 +163,30 @@
 </div>
 
 
-<div class="box notices cstyle info">
-  <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
-  <div class="box-content">
-<p>
-使用 NDK r23c 版本，使用参数 <code>-DANDROID_NATIVE_API_LEVEL=31</code> 进行构建。</div>
-</div>
-
 <div class="box notices cstyle primary">
   <div class="box-label"><i class="fas fa-check-square"></i> 补丁（多数是 CVE 问题）</div>
   <div class="box-content">
 <p>
-我在构建 Qt 时应用补丁。想查看补丁列表的话，参考下页：<br>
-<a href="/qtcompile/miscellaneous/notes-for-this-repo/index.html#%E5%B7%B2%E6%9C%89%E7%9A%84%E8%A1%A5%E4%B8%81">已有的补丁</a></div>
+我在构建 Qt 时应用补丁。想查看补丁列表的话，参考<a href="/qtcompile/miscellaneous/notes-for-this-repo/index.html#%E5%B7%B2%E6%9C%89%E7%9A%84%E8%A1%A5%E4%B8%81">此页</a>。</div>
 </div>
 
 <h2 id="动态--共享构建-ndk-r23c">动态 / 共享构建 （NDK r23c）</h2>
-<h2 id="交叉构建主机windows">交叉构建主机：Windows</h2>
+
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
+  <div class="box-content">
+<p>
+使用 NDK r23c 版本，使用参数 <code>-DANDROID_NATIVE_API_LEVEL=24</code> 进行构建。<br>
+这意味着这些构建只能在安卓 7.0 以及之后的版本上运行。</div>
+</div>
+<h3 id="交叉构建主机windows">交叉构建主机：Windows</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.7-Android-arm-Clang-NDKr23c-xWindows-x86_64-MinGW11.2.0-20240206.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.7-Android-arm-Clang-NDKr23c-xWindows-x86_64-MinGW11.2.0-20240216.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/r23/Qt6.2.7-Android-arm-Clang-NDKr23c-xWindows-x86_64-MinGW11.2.0-20240206.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/r23/Qt6.2.7-Android-arm-Clang-NDKr23c-xWindows-x86_64-MinGW11.2.0-20240216.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -192,12 +195,12 @@
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.7-Android-arm64-Clang-NDKr23c-xWindows-x86_64-MinGW11.2.0-20240206.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.7-Android-arm64-Clang-NDKr23c-xWindows-x86_64-MinGW11.2.0-20240216.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/r23/Qt6.2.7-Android-arm64-Clang-NDKr23c-xWindows-x86_64-MinGW11.2.0-20240206.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/r23/Qt6.2.7-Android-arm64-Clang-NDKr23c-xWindows-x86_64-MinGW11.2.0-20240216.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -206,12 +209,12 @@
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.7-Android-x86-Clang-NDKr23c-xWindows-x86_64-MinGW11.2.0-20240206.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.7-Android-x86-Clang-NDKr23c-xWindows-x86_64-MinGW11.2.0-20240216.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/r23/Qt6.2.7-Android-x86-Clang-NDKr23c-xWindows-x86_64-MinGW11.2.0-20240206.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/r23/Qt6.2.7-Android-arm-Clang-NDKr23c-xWindows-x86_64-MinGW11.2.0-20240216.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -220,12 +223,12 @@
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.7-Android-x86_64-Clang-NDKr23c-xWindows-x86_64-MinGW11.2.0-20240206.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.7-Android-x86_64-Clang-NDKr23c-xWindows-x86_64-MinGW11.2.0-20240216.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/r23/Qt6.2.7-Android-x86_64-Clang-NDKr23c-xWindows-x86_64-MinGW11.2.0-20240206.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/r23/Qt6.2.7-Android-x86_64-Clang-NDKr23c-xWindows-x86_64-MinGW11.2.0-20240216.7z" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -233,14 +236,14 @@
             <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r23c</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
-<h2 id="交叉构建主机linux">交叉构建主机：Linux</h2>
+<h3 id="交叉构建主机linux">交叉构建主机：Linux</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.7-Android-arm-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20240205.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.7-Android-arm-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20240215.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/r23/Qt6.2.7-Android-arm-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20240205.tar.xz" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/r23/Qt6.2.7-Android-arm-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20240215.tar.xz" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -249,12 +252,12 @@
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.7-Android-arm64-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20240206.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.7-Android-arm64-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20240215.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/r23/Qt6.2.7-Android-arm64-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20240206.tar.xz" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/r23/Qt6.2.7-Android-arm64-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20240215.tar.xz" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -263,12 +266,12 @@
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.7-Android-x86-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20240206.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.7-Android-x86-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20240215.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/r23/Qt6.2.7-Android-x86-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20240206.tar.xz" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/r23/Qt6.2.7-Android-arm-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20240215.tar.xz" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -277,12 +280,12 @@
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.7-Android-x86_64-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20240206.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.7-Android-x86_64-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20240215.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/r23/Qt6.2.7-Android-x86_64-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20240206.tar.xz" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/r23/Qt6.2.7-Android-x86_64-Clang-NDKr23c-xLinux-x86_64-gcc8.5.0-20240215.tar.xz" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
@@ -290,61 +293,61 @@
             <tr><td width="20%"><b>构建主机：</b></td><td width="30%">RockyLinux 8.9</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r23c</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
-<h2 id="交叉构建主机macos">交叉构建主机：macOS</h2>
+<h3 id="交叉构建主机macos">交叉构建主机：macOS</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.7-Android-arm-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.3-20240206.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.7-Android-arm-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.3-20240216.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/r23/Qt6.2.7-Android-arm-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.3-20240206.tar.xz" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/r23/Qt6.2.7-Android-arm-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.3-20240216.tar.xz" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 13.6.3</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r23c</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 13.6.4</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r23c</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.7-Android-arm64-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.3-20240206.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.7-Android-arm64-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.3-20240216.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/r23/Qt6.2.7-Android-arm64-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.3-20240206.tar.xz" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/r23/Qt6.2.7-Android-arm64-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.3-20240216.tar.xz" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 13.6.3</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r23c</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 13.6.4</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r23c</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.7-Android-x86-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.3-20240206.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.7-Android-x86-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.3-20240216.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/r23/Qt6.2.7-Android-x86-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.3-20240206.tar.xz" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/r23/Qt6.2.7-Android-arm-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.3-20240216.tar.xz" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 13.6.3</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r23c</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 13.6.4</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r23c</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.7-Android-x86_64-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.3-20240206.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.7-Android-x86_64-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.3-20240216.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/r23/Qt6.2.7-Android-x86_64-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.3-20240206.tar.xz" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Android/r23/Qt6.2.7-Android-x86_64-Clang-NDKr23c-xmacOS-Universal-AppleClang14.0.3-20240216.tar.xz" target="_blank">
     SourceForge 链接
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 13.6.3</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r23c</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 13.6.4</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r23c</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 
@@ -386,10 +389,10 @@
           <li data-nav-id="/qtcompile/6.5-series/6.5.3-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.3-for-android/index.html">6.5.3 的安卓版本</a></li>
           <li data-nav-id="/qtcompile/6.5-series/6.5.3-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.3-for-webassembly/index.html">6.5.3 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/6.6-series/index.html" class=""><a class="padding" href="/qtcompile/6.6-series/index.html">6.6 系列</a><ul id="R-subsections-1ed6b84157e01806d9a8b5df1e4be9ef" class="morespace collapsible-menu">
-          <li data-nav-id="/qtcompile/6.6-series/6.6.0-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.6-series/6.6.0-for-windows/index.html">6.6.1 的 Windows 版本</a></li>
-          <li data-nav-id="/qtcompile/6.6-series/6.6.0-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.6-series/6.6.0-for-macos/index.html">6.6.1 的 macOS 版本</a></li>
-          <li data-nav-id="/qtcompile/6.6-series/6.6.0-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.6-series/6.6.0-for-android/index.html">6.6.1 的安卓版本</a></li>
-          <li data-nav-id="/qtcompile/6.6-series/6.6.0-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.6-series/6.6.0-for-webassembly/index.html">6.6.1 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/qtcompile/6.6-series/6.6.0-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.6-series/6.6.0-for-windows/index.html">6.6.2 的 Windows 版本</a></li>
+          <li data-nav-id="/qtcompile/6.6-series/6.6.0-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.6-series/6.6.0-for-macos/index.html">6.6.2 的 macOS 版本</a></li>
+          <li data-nav-id="/qtcompile/6.6-series/6.6.0-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.6-series/6.6.0-for-android/index.html">6.6.2 的安卓版本</a></li>
+          <li data-nav-id="/qtcompile/6.6-series/6.6.0-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.6-series/6.6.0-for-webassembly/index.html">6.6.2 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/miscellaneous/index.html" class=""><a class="padding" href="/qtcompile/miscellaneous/index.html">杂项</a><ul id="R-subsections-caff385dd336661e79f294480ee20799" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/miscellaneous/notes-for-this-repo/index.html" class=""><a class="padding" href="/qtcompile/miscellaneous/notes-for-this-repo/index.html">本仓库的一些备注</a></li>
           <li data-nav-id="/qtcompile/miscellaneous/current-build-status/index.html" class=""><a class="padding" href="/qtcompile/miscellaneous/current-build-status/index.html">当前构建状态</a></li>
@@ -476,7 +479,7 @@
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Wed, 07 Feb 2024 07:37:33 CST</p>
+Site generated: Sat, 17 Feb 2024 14:41:57 CST</p>
 
           </div>
         </div>

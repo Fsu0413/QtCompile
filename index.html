@@ -93,10 +93,9 @@
     <li><a href="#免责声明">免责声明</a></li>
     <li><a href="#更新记录">更新记录</a>
       <ul>
+        <li><a href="#2024-年-2-月-17-日">2024 年 2 月 17 日</a></li>
         <li><a href="#2024-年-2-月-7-日">2024 年 2 月 7 日</a></li>
-        <li><a href="#2023-年-12-月-25-日">2023 年 12 月 25 日</a></li>
-        <li><a href="#2023-年-12-月-4-日">2023 年 12 月 4 日</a></li>
-        <li><a href="#2023-年-11-月以前">2023 年 11 月以前</a></li>
+        <li><a href="#2024-年以前">2024 年以前</a></li>
       </ul>
     </li>
   </ul>
@@ -140,13 +139,13 @@
 目前已经删除所有 OSDN 链接，拜托各位通过 SourceForge 进行下载。</p>
 <p>这边上传的时候发生的错误如下（通过 WinSCP 输出）：</p>
 <div class="expand">
-    <input type="checkbox" id="R-expand-2074de5ef0e3c3432379a2609bf8c6a0" aria-controls="R-expandcontent-2074de5ef0e3c3432379a2609bf8c6a0" >
-    <label class="expand-label" for="R-expand-2074de5ef0e3c3432379a2609bf8c6a0" >
+    <input type="checkbox" id="R-expand-89fa695a17688ae554eae6fcd2ce79f5" aria-controls="R-expandcontent-89fa695a17688ae554eae6fcd2ce79f5" >
+    <label class="expand-label" for="R-expand-89fa695a17688ae554eae6fcd2ce79f5" >
         <i class="fas fa-chevron-down"></i>
         <i class="fas fa-chevron-right"></i>
         展开
     </label>
-    <div id="R-expandcontent-2074de5ef0e3c3432379a2609bf8c6a0" class="expand-content">
+    <div id="R-expandcontent-89fa695a17688ae554eae6fcd2ce79f5" class="expand-content">
 <p>一般错误(服务器应该提供错误描述)。<br>
 错误码：4<br>
 服务器返回的错误消息：Failure</p>
@@ -168,19 +167,15 @@
 <strong>这些包为“依原样”提供。我对您使用此二进制文件作出的任何事情不负任何责任。</strong><br>
 感谢 The Qt Company Ltd. 和众多 Qt 的开发者的绝妙工作！</p>
 <h2 id="更新记录">更新记录</h2>
+<h3 id="2024-年-2-月-17-日">2024 年 2 月 17 日</h3>
+<p>更新 Qt 6.6.2。<br>
+为所有长期支持版本的 Qt 应用 CVE-2024-25580 的补丁。<br>
+复原安卓 API Level，原因是使用提升了的 API Level 构建 Qt 会导致低版本安卓无法安装使用这份 Qt 的程序。</p>
+<p>删除 Windows 平台使用 MinGW-LLVM 15.0.0 的构建。</p>
 <h3 id="2024-年-2-月-7-日">2024 年 2 月 7 日</h3>
 <p>更新 Qt 5.15、6.2.7 和 6.5.3 的安卓版，提升了 API level。<br>
 更新 OpenSSL 到 3.0.13。</p>
-<h3 id="2023-年-12-月-25-日">2023 年 12 月 25 日</h3>
-<p>更新 Qt 5.15.12 和 6.2.7。附带所有已有补丁。<br>
-为所有长期支持版本的 Qt 应用 Qt 公司尚未发布公告的 CVE-2023-51714 的补丁。</p>
-<p>圣诞节快乐！</p>
-<h3 id="2023-年-12-月-4-日">2023 年 12 月 4 日</h3>
-<p>更新 Qt 6.6.1。<br>
-重新构建 Qt 6.5.3，包含 CVE-2023-43114 的补丁。<br>
-更新 OpenSSL 3.0.12。重新构建了所有使用 OpenSSL 的版本，包含 Qt 5.15 的安卓版和 Qt 6.2 的 WebAssembly 以外的版本。<br>
-更新 MariaDB Connector C 到 3.3.8 / 3.1.23。</p>
-<h3 id="2023-年-11-月以前">2023 年 11 月以前</h3>
+<h3 id="2024-年以前">2024 年以前</h3>
 <p><a href="/qtcompile/miscellaneous/histories/">这里</a></p>
 
             <footer class="footline">
@@ -221,10 +216,10 @@
           <li data-nav-id="/qtcompile/6.5-series/6.5.3-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.3-for-android/index.html">6.5.3 的安卓版本</a></li>
           <li data-nav-id="/qtcompile/6.5-series/6.5.3-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.3-for-webassembly/index.html">6.5.3 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/6.6-series/index.html" class=""><a class="padding" href="/qtcompile/6.6-series/index.html">6.6 系列</a><ul id="R-subsections-1ed6b84157e01806d9a8b5df1e4be9ef" class="morespace collapsible-menu">
-          <li data-nav-id="/qtcompile/6.6-series/6.6.0-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.6-series/6.6.0-for-windows/index.html">6.6.1 的 Windows 版本</a></li>
-          <li data-nav-id="/qtcompile/6.6-series/6.6.0-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.6-series/6.6.0-for-macos/index.html">6.6.1 的 macOS 版本</a></li>
-          <li data-nav-id="/qtcompile/6.6-series/6.6.0-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.6-series/6.6.0-for-android/index.html">6.6.1 的安卓版本</a></li>
-          <li data-nav-id="/qtcompile/6.6-series/6.6.0-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.6-series/6.6.0-for-webassembly/index.html">6.6.1 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/qtcompile/6.6-series/6.6.0-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.6-series/6.6.0-for-windows/index.html">6.6.2 的 Windows 版本</a></li>
+          <li data-nav-id="/qtcompile/6.6-series/6.6.0-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.6-series/6.6.0-for-macos/index.html">6.6.2 的 macOS 版本</a></li>
+          <li data-nav-id="/qtcompile/6.6-series/6.6.0-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.6-series/6.6.0-for-android/index.html">6.6.2 的安卓版本</a></li>
+          <li data-nav-id="/qtcompile/6.6-series/6.6.0-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.6-series/6.6.0-for-webassembly/index.html">6.6.2 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/miscellaneous/index.html" class=""><a class="padding" href="/qtcompile/miscellaneous/index.html">杂项</a><ul id="R-subsections-caff385dd336661e79f294480ee20799" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/miscellaneous/notes-for-this-repo/index.html" class=""><a class="padding" href="/qtcompile/miscellaneous/notes-for-this-repo/index.html">本仓库的一些备注</a></li>
           <li data-nav-id="/qtcompile/miscellaneous/current-build-status/index.html" class=""><a class="padding" href="/qtcompile/miscellaneous/current-build-status/index.html">当前构建状态</a></li>
@@ -311,7 +306,7 @@
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Wed, 07 Feb 2024 07:37:34 CST</p>
+Site generated: Sat, 17 Feb 2024 14:41:57 CST</p>
 
           </div>
         </div>

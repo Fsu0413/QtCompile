@@ -90,14 +90,20 @@
               <div class="topbar-content">
                 <div class="topbar-content-wrapper"><nav class="TableOfContents">
   <ul>
-    <li><a href="#dynamic--shared-builds-ndk-r26b">Dynamic / Shared Builds (NDK r26b)</a></li>
-    <li><a href="#windows-host">Windows Host</a></li>
-    <li><a href="#linux-host">Linux Host</a></li>
-    <li><a href="#macos-host">macOS Host</a></li>
-    <li><a href="#dynamic--shared-builds-ndk-r25c">Dynamic / Shared Builds (NDK r25c)</a></li>
-    <li><a href="#windows-host-1">Windows Host</a></li>
-    <li><a href="#linux-host-1">Linux Host</a></li>
-    <li><a href="#macos-host-1">macOS Host</a></li>
+    <li><a href="#dynamic--shared-builds-ndk-r26c">Dynamic / Shared Builds (NDK r26c)</a>
+      <ul>
+        <li><a href="#windows-host">Windows Host</a></li>
+        <li><a href="#linux-host">Linux Host</a></li>
+        <li><a href="#macos-host">macOS Host</a></li>
+      </ul>
+    </li>
+    <li><a href="#dynamic--shared-builds-ndk-r25c">Dynamic / Shared Builds (NDK r25c)</a>
+      <ul>
+        <li><a href="#windows-host-1">Windows Host</a></li>
+        <li><a href="#linux-host-1">Linux Host</a></li>
+        <li><a href="#macos-host-1">macOS Host</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
                 </div>
@@ -171,141 +177,142 @@ Following backend(s) are built in the package:</p>
 All builds have <code>-DFEATURE_icu=OFF</code> because I think the ICU library is too big and, in most of the conditions, useless for common users.</div>
 </div>
 
-<h2 id="dynamic--shared-builds-ndk-r26b">Dynamic / Shared Builds (NDK r26b)</h2>
+<h2 id="dynamic--shared-builds-ndk-r26c">Dynamic / Shared Builds (NDK r26c)</h2>
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
   <div class="box-content">
 <p>
-Built using NDK r26b with <code>-DANDROID_NATIVE_API_LEVEL=33</code> argument.</div>
+Built using NDK r26c with <code>-DANDROID_NATIVE_API_LEVEL=27</code> argument.<br>
+It means the APK built using these builds can only be run on Android 8.1 and later.</div>
 </div>
-<h2 id="windows-host">Windows Host</h2>
+<h3 id="windows-host">Windows Host</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-arm-Clang-NDKr26b-xWindows-x86_64-MinGW12.2.0-msvcrt-20240206.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-arm-Clang-NDKr26c-xWindows-x86_64-MinGW12.2.0-msvcrt-20240216.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm-Clang-NDKr26b-xWindows-x86_64-MinGW12.2.0-msvcrt-20240206.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm-Clang-NDKr26c-xWindows-x86_64-MinGW12.2.0-msvcrt-20240216.7z" target="_blank">
     SourceForge link
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r26b</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r26c</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-arm64-Clang-NDKr26b-xWindows-x86_64-MinGW12.2.0-msvcrt-20240206.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-arm64-Clang-NDKr26c-xWindows-x86_64-MinGW12.2.0-msvcrt-20240216.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm64-Clang-NDKr26b-xWindows-x86_64-MinGW12.2.0-msvcrt-20240206.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm64-Clang-NDKr26c-xWindows-x86_64-MinGW12.2.0-msvcrt-20240216.7z" target="_blank">
     SourceForge link
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r26b</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r26c</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-x86_64-Clang-NDKr26b-xWindows-x86_64-MinGW12.2.0-msvcrt-20240206.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-x86_64-Clang-NDKr26c-xWindows-x86_64-MinGW12.2.0-msvcrt-20240216.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-x86_64-Clang-NDKr26b-xWindows-x86_64-MinGW12.2.0-msvcrt-20240206.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-x86_64-Clang-NDKr26c-xWindows-x86_64-MinGW12.2.0-msvcrt-20240216.7z" target="_blank">
     SourceForge link
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r26b</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r26c</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
-<h2 id="linux-host">Linux Host</h2>
+<h3 id="linux-host">Linux Host</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-arm-Clang-NDKr26b-xLinux-x86_64-gcc11.4.1-20240205.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-arm-Clang-NDKr26c-xLinux-x86_64-gcc11.4.1-20240215.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm-Clang-NDKr26b-xLinux-x86_64-gcc11.4.1-20240205.tar.xz" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm-Clang-NDKr26c-xLinux-x86_64-gcc11.4.1-20240215.tar.xz" target="_blank">
     SourceForge link
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">RockyLinux 9.3</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r26b</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
-        </tbody>
-    </table>
-<table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-arm64-Clang-NDKr26b-xLinux-x86_64-gcc11.4.1-20240206.tar.xz</b></th></tr></thead>
-        <tbody>
-            <tr><td width="20%"><b>Download:</b></td>
-                <td colspan="4" width="80%">
-<span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm64-Clang-NDKr26b-xLinux-x86_64-gcc11.4.1-20240206.tar.xz" target="_blank">
-    SourceForge link
-  </a>
-</span></td>
-            </tr>
-            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">RockyLinux 9.3</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r26b</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">RockyLinux 9.3</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r26c</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-x86_64-Clang-NDKr26b-xLinux-x86_64-gcc11.4.1-20240206.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-arm64-Clang-NDKr26c-xLinux-x86_64-gcc11.4.1-20240215.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-x86_64-Clang-NDKr26b-xLinux-x86_64-gcc11.4.1-20240206.tar.xz" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm64-Clang-NDKr26c-xLinux-x86_64-gcc11.4.1-20240215.tar.xz" target="_blank">
     SourceForge link
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">RockyLinux 9.3</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r26b</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
-        </tbody>
-    </table>
-<h2 id="macos-host">macOS Host</h2>
-<table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-arm-Clang-NDKr26b-xmacOS-Universal-AppleClang14.0.3-20240206.tar.xz</b></th></tr></thead>
-        <tbody>
-            <tr><td width="20%"><b>Download:</b></td>
-                <td colspan="4" width="80%">
-<span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm-Clang-NDKr26b-xmacOS-Universal-AppleClang14.0.3-20240206.tar.xz" target="_blank">
-    SourceForge link
-  </a>
-</span></td>
-            </tr>
-            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 13.6.3</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r26b</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">RockyLinux 9.3</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r26c</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-arm64-Clang-NDKr26b-xmacOS-Universal-AppleClang14.0.3-20240206.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-x86_64-Clang-NDKr26c-xLinux-x86_64-gcc11.4.1-20240215.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm64-Clang-NDKr26b-xmacOS-Universal-AppleClang14.0.3-20240206.tar.xz" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-x86_64-Clang-NDKr26c-xLinux-x86_64-gcc11.4.1-20240215.tar.xz" target="_blank">
     SourceForge link
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 13.6.3</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r26b</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">RockyLinux 9.3</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r26c</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+        </tbody>
+    </table>
+<h3 id="macos-host">macOS Host</h3>
+<table>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-arm-Clang-NDKr26c-xmacOS-Universal-AppleClang14.0.3-20240216.tar.xz</b></th></tr></thead>
+        <tbody>
+            <tr><td width="20%"><b>Download:</b></td>
+                <td colspan="4" width="80%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm-Clang-NDKr26c-xmacOS-Universal-AppleClang14.0.3-20240216.tar.xz" target="_blank">
+    SourceForge link
+  </a>
+</span></td>
+            </tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 13.6.4</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r26c</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-x86_64-Clang-NDKr26b-xmacOS-Universal-AppleClang14.0.3-20240206.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-arm64-Clang-NDKr26c-xmacOS-Universal-AppleClang14.0.3-20240216.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-x86_64-Clang-NDKr26b-xmacOS-Universal-AppleClang14.0.3-20240206.tar.xz" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm64-Clang-NDKr26c-xmacOS-Universal-AppleClang14.0.3-20240216.tar.xz" target="_blank">
     SourceForge link
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 13.6.3</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r26b</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 13.6.4</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r26c</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+        </tbody>
+    </table>
+<table>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-x86_64-Clang-NDKr26c-xmacOS-Universal-AppleClang14.0.3-20240216.tar.xz</b></th></tr></thead>
+        <tbody>
+            <tr><td width="20%"><b>Download:</b></td>
+                <td colspan="4" width="80%">
+<span class="btn cstyle orange">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-x86_64-Clang-NDKr26c-xmacOS-Universal-AppleClang14.0.3-20240216.tar.xz" target="_blank">
+    SourceForge link
+  </a>
+</span></td>
+            </tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 13.6.4</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r26c</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <h2 id="dynamic--shared-builds-ndk-r25c">Dynamic / Shared Builds (NDK r25c)</h2>
@@ -314,16 +321,17 @@ Built using NDK r26b with <code>-DANDROID_NATIVE_API_LEVEL=33</code> argument.</
   <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
   <div class="box-content">
 <p>
-Built using NDK r25c with <code>-DANDROID_NATIVE_API_LEVEL=33</code> argument.</div>
+Built using NDK r25c with <code>-DANDROID_NATIVE_API_LEVEL=27</code> argument.<br>
+It means the APK built using these builds can only be run on Android 8.1 and later.</div>
 </div>
-<h2 id="windows-host-1">Windows Host</h2>
+<h3 id="windows-host-1">Windows Host</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-arm-Clang-NDKr25c-xWindows-x86_64-MinGW12.2.0-msvcrt-20240206.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-arm-Clang-NDKr25c-xWindows-x86_64-MinGW12.2.0-msvcrt-20240216.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r25/Qt6.5.3-Android-arm-Clang-NDKr25c-xWindows-x86_64-MinGW12.2.0-msvcrt-20240206.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r25/Qt6.5.3-Android-arm-Clang-NDKr25c-xWindows-x86_64-MinGW12.2.0-msvcrt-20240216.7z" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -332,12 +340,12 @@ Built using NDK r25c with <code>-DANDROID_NATIVE_API_LEVEL=33</code> argument.</
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-arm64-Clang-NDKr25c-xWindows-x86_64-MinGW12.2.0-msvcrt-20240206.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-arm64-Clang-NDKr25c-xWindows-x86_64-MinGW12.2.0-msvcrt-20240216.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r25/Qt6.5.3-Android-arm64-Clang-NDKr25c-xWindows-x86_64-MinGW12.2.0-msvcrt-20240206.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r25/Qt6.5.3-Android-arm64-Clang-NDKr25c-xWindows-x86_64-MinGW12.2.0-msvcrt-20240216.7z" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -346,12 +354,12 @@ Built using NDK r25c with <code>-DANDROID_NATIVE_API_LEVEL=33</code> argument.</
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-x86_64-Clang-NDKr25c-xWindows-x86_64-MinGW12.2.0-msvcrt-20240206.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-x86_64-Clang-NDKr25c-xWindows-x86_64-MinGW12.2.0-msvcrt-20240216.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r25/Qt6.5.3-Android-x86_64-Clang-NDKr25c-xWindows-x86_64-MinGW12.2.0-msvcrt-20240206.7z" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r25/Qt6.5.3-Android-x86_64-Clang-NDKr25c-xWindows-x86_64-MinGW12.2.0-msvcrt-20240216.7z" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -359,14 +367,14 @@ Built using NDK r25c with <code>-DANDROID_NATIVE_API_LEVEL=33</code> argument.</
             <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r25c</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
-<h2 id="linux-host-1">Linux Host</h2>
+<h3 id="linux-host-1">Linux Host</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-arm-Clang-NDKr25c-xLinux-x86_64-gcc11.4.1-20240205.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-arm-Clang-NDKr25c-xLinux-x86_64-gcc11.4.1-20240215.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r25/Qt6.5.3-Android-arm-Clang-NDKr25c-xLinux-x86_64-gcc11.4.1-20240205.tar.xz" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r25/Qt6.5.3-Android-arm-Clang-NDKr25c-xLinux-x86_64-gcc11.4.1-20240215.tar.xz" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -375,12 +383,12 @@ Built using NDK r25c with <code>-DANDROID_NATIVE_API_LEVEL=33</code> argument.</
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-arm64-Clang-NDKr25c-xLinux-x86_64-gcc11.4.1-20240205.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-arm64-Clang-NDKr25c-xLinux-x86_64-gcc11.4.1-20240215.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r25/Qt6.5.3-Android-arm64-Clang-NDKr25c-xLinux-x86_64-gcc11.4.1-20240205.tar.xz" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r25/Qt6.5.3-Android-arm64-Clang-NDKr25c-xLinux-x86_64-gcc11.4.1-20240215.tar.xz" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -389,12 +397,12 @@ Built using NDK r25c with <code>-DANDROID_NATIVE_API_LEVEL=33</code> argument.</
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-x86_64-Clang-NDKr25c-xLinux-x86_64-gcc11.4.1-20240206.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-x86_64-Clang-NDKr25c-xLinux-x86_64-gcc11.4.1-20240215.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r25/Qt6.5.3-Android-x86_64-Clang-NDKr25c-xLinux-x86_64-gcc11.4.1-20240206.tar.xz" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r25/Qt6.5.3-Android-x86_64-Clang-NDKr25c-xLinux-x86_64-gcc11.4.1-20240215.tar.xz" target="_blank">
     SourceForge link
   </a>
 </span></td>
@@ -402,47 +410,47 @@ Built using NDK r25c with <code>-DANDROID_NATIVE_API_LEVEL=33</code> argument.</
             <tr><td width="20%"><b>Build Host:</b></td><td width="30%">RockyLinux 9.3</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r25c</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
-<h2 id="macos-host-1">macOS Host</h2>
+<h3 id="macos-host-1">macOS Host</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-arm-Clang-NDKr25c-xmacOS-Universal-AppleClang14.0.3-20240206.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-arm-Clang-NDKr25c-xmacOS-Universal-AppleClang14.0.3-20240216.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r25/Qt6.5.3-Android-arm-Clang-NDKr25c-xmacOS-Universal-AppleClang14.0.3-20240206.tar.xz" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r25/Qt6.5.3-Android-arm-Clang-NDKr25c-xmacOS-Universal-AppleClang14.0.3-20240216.tar.xz" target="_blank">
     SourceForge link
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 13.6.3</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r25c</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 13.6.4</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r25c</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-arm64-Clang-NDKr25c-xmacOS-Universal-AppleClang14.0.3-20240206.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-arm64-Clang-NDKr25c-xmacOS-Universal-AppleClang14.0.3-20240216.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r25/Qt6.5.3-Android-arm64-Clang-NDKr25c-xmacOS-Universal-AppleClang14.0.3-20240206.tar.xz" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r25/Qt6.5.3-Android-arm64-Clang-NDKr25c-xmacOS-Universal-AppleClang14.0.3-20240216.tar.xz" target="_blank">
     SourceForge link
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 13.6.3</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r25c</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 13.6.4</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r25c</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-x86_64-Clang-NDKr25c-xmacOS-Universal-AppleClang14.0.3-20240206.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-x86_64-Clang-NDKr25c-xmacOS-Universal-AppleClang14.0.3-20240216.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
                 <td colspan="4" width="80%">
 <span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r25/Qt6.5.3-Android-x86_64-Clang-NDKr25c-xmacOS-Universal-AppleClang14.0.3-20240206.tar.xz" target="_blank">
+  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r25/Qt6.5.3-Android-x86_64-Clang-NDKr25c-xmacOS-Universal-AppleClang14.0.3-20240216.tar.xz" target="_blank">
     SourceForge link
   </a>
 </span></td>
             </tr>
-            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 13.6.3</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r25c</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 13.6.4</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r25c</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 
@@ -484,10 +492,10 @@ Built using NDK r25c with <code>-DANDROID_NATIVE_API_LEVEL=33</code> argument.</
           <li data-nav-id="/qtcompile/en/6.5-series/6.5.3-for-android/index.html" class="active"><a class="padding" href="/qtcompile/en/6.5-series/6.5.3-for-android/index.html">6.5.3 for Android</a></li>
           <li data-nav-id="/qtcompile/en/6.5-series/6.5.3-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/en/6.5-series/6.5.3-for-webassembly/index.html">6.5.3 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/qtcompile/en/6.6-series/index.html" class=""><a class="padding" href="/qtcompile/en/6.6-series/index.html">6.6 series</a><ul id="R-subsections-251fabc502a6554f591098a179d20356" class="morespace collapsible-menu">
-          <li data-nav-id="/qtcompile/en/6.6-series/6.6.0-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/6.6-series/6.6.0-for-windows/index.html">6.6.1 for Windows</a></li>
-          <li data-nav-id="/qtcompile/en/6.6-series/6.6.0-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/6.6-series/6.6.0-for-macos/index.html">6.6.1 for macOS</a></li>
-          <li data-nav-id="/qtcompile/en/6.6-series/6.6.0-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/6.6-series/6.6.0-for-android/index.html">6.6.1 for Android</a></li>
-          <li data-nav-id="/qtcompile/en/6.6-series/6.6.0-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/en/6.6-series/6.6.0-for-webassembly/index.html">6.6.1 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/qtcompile/en/6.6-series/6.6.0-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/6.6-series/6.6.0-for-windows/index.html">6.6.2 for Windows</a></li>
+          <li data-nav-id="/qtcompile/en/6.6-series/6.6.0-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/6.6-series/6.6.0-for-macos/index.html">6.6.2 for macOS</a></li>
+          <li data-nav-id="/qtcompile/en/6.6-series/6.6.0-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/6.6-series/6.6.0-for-android/index.html">6.6.2 for Android</a></li>
+          <li data-nav-id="/qtcompile/en/6.6-series/6.6.0-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/en/6.6-series/6.6.0-for-webassembly/index.html">6.6.2 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/qtcompile/en/miscellaneous/index.html" class=""><a class="padding" href="/qtcompile/en/miscellaneous/index.html">Miscellaneous</a><ul id="R-subsections-59c45accf7e43befe663d68447543959" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/en/miscellaneous/notes-for-this-repo/index.html" class=""><a class="padding" href="/qtcompile/en/miscellaneous/notes-for-this-repo/index.html">Notes for this repo</a></li>
           <li data-nav-id="/qtcompile/en/miscellaneous/current-build-status/index.html" class=""><a class="padding" href="/qtcompile/en/miscellaneous/current-build-status/index.html">Current build status</a></li>
@@ -574,7 +582,7 @@ Built using NDK r25c with <code>-DANDROID_NATIVE_API_LEVEL=33</code> argument.</
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Wed, 07 Feb 2024 07:37:34 CST</p>
+Site generated: Sat, 17 Feb 2024 14:41:57 CST</p>
 
           </div>
         </div>
