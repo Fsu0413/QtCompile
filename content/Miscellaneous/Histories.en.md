@@ -4,6 +4,18 @@ draft: false
 weight: 4
 ---
 
+## {{% date 2023 12 25 %}}
+Update Qt 5.15.12 & 6.2.7 with existing patches.   
+Apply patches of CVE-2023-51714 ~~which is not yet announced by tQtC~~ for all LTS Qt versions.
+
+Merry Christmas!
+
+## {{% date 2023 12 4 %}}
+Update Qt 6.6.1.   
+Rebuild Qt 6.5.3 with patch CVE-2023-43114.   
+Update OpenSSL 3.0.12. Rebuild all packages which use OpenSSL, including Qt 5.15 Android and Qt 6.2 non-WebAssembly.   
+Update MariaDB Connector C to 3.3.8 / 3.1.23.
+
 ## {{% date 2023 10 15 %}}
 Rebuild all macOS version, with new ODBC database backend build on top of iODBC library bundled in macOS.
 

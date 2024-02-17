@@ -10,9 +10,15 @@ isMaxWidthPreferred: true
 我的 Qt 构建在大部分平台上使用链接的 OpenSSL。  
 下面是我构建 OpenSSL 的列表。
 
-OpenSSL 3 系列在 6.2.3 以及更新的 Qt 6 版本上使用。  
+OpenSSL 3 系列在 6.2.3 以及更新的 Qt 6 版本和于 {{% date 2023 9 11 %}}后构建的 Qt 5.15 版本上使用。  
 自从 Qt 6.2 将 tls 后端换成了插件，我们可以用多于一个的后端来构建。  
 在 Windows 上我们使用 OpenSSL 和 SChannel，而在 macOS 上我们使用 OpenSSL 和 SecureTransport。
+
+{{% notice style="info" title="备注"  icon="fas fa-info-circle" %}}
+虽然我同时还在维护 [openssl-externalCMake](https://github.com/Fsu0413/openssl-externalCMake) 我并未使用该项目构建 OpenSSL。  
+那个项目构建出来的 OpenSSL 还没有通过测试用例。  
+所以现在的所有构建还是使用原来的基于 Perl 的构建方法。
+{{% /notice %}}
 
 {{% OpenSSLSeries %}}
 

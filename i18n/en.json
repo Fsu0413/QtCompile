@@ -121,10 +121,10 @@
 		"other": "Secure Transport library provided by macOS using `-DFEATURE_securetransport=ON`"
 	},
 	"fsqtbuild_i18n_ndk": {
-		"other": "Built using NDK %s with `%s` argument."
+		"other": "Built using NDK %s with `%s` argument.  \nIt means the APK built using these builds can only be run on Android %s and later."
 	},
 	"fsqtbuild_i18n_ndk59": {
-		"other": "Built using NDK %s with `%s` argument for 32-bit version.  \nFor 64-bit version `-android-ndk-platform android-21` is used instead.  \nTemporarily using `./Configure linux-aarch64` for configuring OpenSSL 1.0.2 series since it didn't support 64-bit Android yet."
+		"other": "Built using NDK %s with `%s` argument for 32-bit version.  \nIt means the APK built using these builds can only be run on Android %s and later.\n\nFor 64-bit version `-android-ndk-platform android-21` is used instead.  \nTemporarily using `./Configure linux-aarch64` for configuring OpenSSL 1.0.2 series since it didn't support 64-bit Android yet."
 	},
 	"fsqtbuild_i18n_macOSUniversal": {
 		"other": "I'll provide only Universal Binary builds of macOS of this version. [Universal binaries](https://developer.apple.com/documentation/apple-silicon/building-a-universal-macos-binary) run natively on Intel Macs and Apple Sillicon Macs."
@@ -133,7 +133,7 @@
 		"other": "Patches (mostly CVE issue)"
 	},
 	"fsqtbuild_i18n_patches": {
-		"other": "I build Qt with patches. See following page for a list of patches:"
+		"other": "I build Qt with patches. See [this page](%s) for a list of patches."
 	},
 	"fsqtbuild_i18n_patchesTag": {
 		"other": "existing-patches"

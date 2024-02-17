@@ -225,12 +225,10 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 
 | Qt 版本 | 商业专属发布日 | 开源发布日 |
 |-|-|-|
-| 5.15.12 | {{% date 2022 12 27 %}} | {{% date 2023 12 27 %}} |
 | 5.15.13 | {{% date 2023 3 9 %}} | {{% date 2024 3 9 %}} |
 | 5.15.14 | {{% date 2023 5 25 %}} | {{% date 2024 5 25 %}} |
 | 5.15.15 | {{% date 2023 8 31 %}} | {{% date 2024 8 31 %}} （届时需要确认 Qt 到底是否真的发布了开源版本） |
 | 5.15.16 | {{% date 2023 11 17 %}} | {{% date 2024 11 17 %}} |
-| 6.2.7 | {{% date 2023 1 2 %}} | {{% date 2024 1 2 %}} |
 | 6.2.8 | {{% date 2023 4 18 %}} | {{% date 2024 4 18 %}} |
 | 6.2.9 | {{% date 2023 7 4 %}} | {{% date 2024 7 4 %}} |
 | 6.2.10 | {{% date 2023 10 9 %}} | {{% date 2024 10 9 %}} |
@@ -240,7 +238,7 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 ## 之后可能会更新的内容
 
 ~~使用带 MinGW-w64 v9 的 GCC 11 来构建 Qt 5.15 系列之后的版本。~~ （5.15.12 上构建失败了）    
-使用安卓 NDK r25 系列构建 Qt 6.2.8 以及之后的版本。  
+使用安卓 NDK r25 系列构建 Qt 5.15.13 / 6.2.8 以及之后的版本。  
 
 ## 已有的补丁
 
@@ -267,3 +265,4 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 | CVE-2023-4863 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-4863-5.15.patch) （5.15.16） | [**×**](# "官方补丁冲突。由于只有第三方库更新，直接等新版应该更靠谱") （6.2.10） | 附带 |
 | CVE-2023-45872 | - | [**×**](# "官方补丁冲突。原因未知且没有调查计划") （6.2.11） | - |
 | CVE-2023-51714 | √ [1](https://download.qt.io/official_releases/qt/5.15/0001-CVE-2023-51714-qtbase-5.15.diff) [2](https://download.qt.io/official_releases/qt/5.15/0002-CVE-2023-51714-qtbase-5.15.diff) （5.15.17） | √ [1](https://download.qt.io/official_releases/qt/6.2/0001-CVE-2023-51714-qtbase-6.2.diff) [2](https://download.qt.io/official_releases/qt/6.2/0002-CVE-2023-51714-qtbase-6.2.diff) （6.2.11） | √ [1](https://download.qt.io/official_releases/qt/6.5/0001-CVE-2023-51714-qtbase-6.5.diff) [2](https://download.qt.io/official_releases/qt/6.5/0002-CVE-2023-51714-qtbase-6.5.diff) （6.5.4） |
+| CVE-2024-25580 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2024-25580-qtbase-5.15.diff) （5.15.17） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2024-25580-qtbase-6.2.diff) （6.2.12） | [√](https://download.qt.io/official_releases/qt/6.5/CVE-2024-25580-qtbase-6.5.diff) （6.5.5） |

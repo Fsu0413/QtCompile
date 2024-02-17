@@ -10,9 +10,15 @@ isMaxWidthPreferred: true
 My Qt builds is with linked OpenSSL support for most platforms.  
 Here is a list of OpenSSL builds of mine.
 
-OpenSSL 3 series is used on Qt 6 after 6.2.3.  
+OpenSSL 3 series is used on Qt 6 after 6.2.3 and Qt 5.15 after {{% date 2023 9 11 %}}.  
 Since Qt 6.2 changes tls backend to plugin, one can use more than one tls backend when building.  
 On Windows we are using OpenSSL alongwith SChannel, while on macOS we are using OpenSSL alongwith SecureTransport.
+
+{{% notice style="info" title="Note"  icon="fas fa-info-circle" %}}
+Although I simultaneously maintain [openssl-externalCMake](https://github.com/Fsu0413/openssl-externalCMake) I don't use it for building OpenSSL.  
+The OpenSSL built by that project still do not pass the test cases.  
+So the builds here are still using original Perl-based build instruction.
+{{% /notice %}}
 
 {{% OpenSSLSeries %}}
 

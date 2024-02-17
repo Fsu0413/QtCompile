@@ -225,12 +225,10 @@ Commericial-only Qt Open Source Release Date (ETA)
 
 | Qt Version | Commericial Release Date | Open Source Release Date |
 |-|-|-|
-| 5.15.12 | {{% date 2022 12 27 %}} | {{% date 2023 12 27 %}} |
 | 5.15.13 | {{% date 2023 3 9 %}} | {{% date 2024 3 9 %}} |
 | 5.15.14 | {{% date 2023 5 25 %}} | {{% date 2024 5 25 %}} |
 | 5.15.15 | {{% date 2023 8 31 %}} | {{% date 2024 8 31 %}} (Need to check if Qt will really release this version to opensource on that day) |
 | 5.15.16 | {{% date 2023 11 17 %}} | {{% date 2024 11 17 %}} |
-| 6.2.7 | {{% date 2023 1 2 %}} | {{% date 2024 1 2 %}} |
 | 6.2.8 | {{% date 2023 4 18 %}} | {{% date 2024 4 18 %}} |
 | 6.2.9 | {{% date 2023 7 4 %}} | {{% date 2024 7 4 %}} |
 | 6.2.10 | {{% date 2023 10 9 %}} | {{% date 2024 10 9 %}} |
@@ -240,7 +238,7 @@ Commericial-only Qt Open Source Release Date (ETA)
 ## Incoming update for future release
 
 ~~Use GCC 11 with MinGW-w64 v9 for building following Qt 5.15 series.~~ (Build failed on 5.15.12)   
-Use Android NDK r25 series for building Qt 6.2.8 onwards.  
+Use Android NDK r25 series for building Qt 5.15.13 / 6.2.8 onwards.  
 
 ## Existing Patches
 
@@ -267,3 +265,4 @@ Version number in brackets are the version when the corresponding patch will be 
 | CVE-2023-4863 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-4863-5.15.patch) (5.15.16) | [**×**](# "Official patch causes CONFLICT. Since it only updates third-party project let's wait for later versions") (6.2.10) | shipped |
 | CVE-2023-45872 | - | [**×**](# "Official patch causes CONFLICT. Reason is unknown and will not be investigated.") (6.2.11) | - |
 | CVE-2023-51714 | √ [1](https://download.qt.io/official_releases/qt/5.15/0001-CVE-2023-51714-qtbase-5.15.diff) [2](https://download.qt.io/official_releases/qt/5.15/0002-CVE-2023-51714-qtbase-5.15.diff) (5.15.17) | √ [1](https://download.qt.io/official_releases/qt/6.2/0001-CVE-2023-51714-qtbase-6.2.diff) [2](https://download.qt.io/official_releases/qt/6.2/0002-CVE-2023-51714-qtbase-6.2.diff) (6.2.11) | √ [1](https://download.qt.io/official_releases/qt/6.5/0001-CVE-2023-51714-qtbase-6.5.diff) [2](https://download.qt.io/official_releases/qt/6.5/0002-CVE-2023-51714-qtbase-6.5.diff) (6.5.4) |
+| CVE-2024-25580 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2024-25580-qtbase-5.15.diff) (5.15.17) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2024-25580-qtbase-6.2.diff) (6.2.12) | [√](https://download.qt.io/official_releases/qt/6.5/CVE-2024-25580-qtbase-6.5.diff) (6.5.5) |

@@ -3,5 +3,5 @@
     "style" "primary"
     "title" (T "fsqtbuild_i18n_patchesTitle")
     "icon" "fas fa-check-square"
-    "content" ((print (T "fsqtbuild_i18n_patches" ) "  \n" "[" (T "fsqtbuild_i18n_patchesTag") "](" ( absLangURL "miscellaneous/notes-for-this-repo/index.html" ) "#" ( T "fsqtbuild_i18n_patchesTag" ) ")"  ) | markdownify)
+    "content" ((printf (T "fsqtbuild_i18n_patches" ) ( absLangURL ( print "miscellaneous/notes-for-this-repo/index.html"  "#" ( T "fsqtbuild_i18n_patchesTag" ) ) ) ) | markdownify)
 )}}

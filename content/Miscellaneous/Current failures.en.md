@@ -68,3 +68,7 @@ I've made patches on Qt 6.2.4 to fix the conflict but it conflicts with 6.2.5 ag
 I won't apply this patch before Qt 6.2.9 unless there are packagers / Linux distros who are aware of this issue and made patches.
 
 Subsequent patch of CVE-2023-38197 depends on patch of CVE-2023-37369 thus can't be applied either.
+
+Update {{% date 2024 2 16 %}}:  
+There are currently many security branch which can not be applied on Qt 6.2 series.  
+Since I have had trouble during investigation of previous patches, I won't investigate any solution for the patches that can't be applied, instead I'll just apply the patches when it applies cleanly.
