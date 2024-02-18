@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.122.0">
-    <meta name="generator" content="Relearn 5.23.2">
+    <meta name="generator" content="Relearn 5.24.1">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>6.6.2 的安卓版本 :: Fsu0413 的原版 Qt 构建</title>
@@ -19,6 +19,7 @@
     <link href="/css/fonts.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css" rel="stylesheet"></noscript>
     <link href="/css/theme.css" rel="stylesheet">
     <link href="/css/theme-relearn-dark.css" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css" rel="stylesheet" id="R-variant-chroma-style">
     <link href="/css/variant.css" rel="stylesheet">
     <link href="/css/print.css" rel="stylesheet" media="print">
     <link href="/css/ie.css" rel="stylesheet">
@@ -29,18 +30,20 @@
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
       var root_url="/";
       var baseUri=root_url.replace(/\/$/, '');
-      // translations
-      window.T_Copy_to_clipboard = '复制到剪贴板';
-      window.T_Copied_to_clipboard = '复制到剪贴板！';
-      window.T_Copy_link_to_clipboard = '将链接复制到剪贴板';
-      window.T_Link_copied_to_clipboard = '链接复制到剪贴板！';
-      window.T_Reset_view = '重置视图';
-      window.T_View_reset = '查看重置！';
-      window.T_No_results_found = '找不到\u0022{0}\u0022的结果';
-      window.T_N_results_found = '为\u0022{0}\u0022找到 {1} 个结果';
-      // some further base stuff
-      var baseUriFull='/';
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='/';
+      // variant stuff
+      window.relearn.themeVariantModifier='';
       window.variants && variants.init( [ 'relearn-dark', 'relearn-bright', 'relearn-light', 'zen-dark', 'zen-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
+      // translations
+      window.T_Copy_to_clipboard = `复制到剪贴板`;
+      window.T_Copied_to_clipboard = `复制到剪贴板！`;
+      window.T_Copy_link_to_clipboard = `将链接复制到剪贴板`;
+      window.T_Link_copied_to_clipboard = `链接复制到剪贴板！`;
+      window.T_Reset_view = `重置视图`;
+      window.T_View_reset = `查看重置！`;
+      window.T_No_results_found = `找不到"{0}"的结果`;
+      window.T_N_results_found = `为"{0}"找到 {1} 个结果`;
     </script><style>
     p.fsu0413_leftFooter {
         text-align: center;
@@ -78,15 +81,9 @@
         <div class="topbar-wrapper">
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
-            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-              <button class="topbar-control" onclick="toggleNav()" type="button" title="导航 (CTRL&#43;ALT&#43;n)">
-                <i class="fa-fw fas fa-bars"></i>
-              </button>
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="导航 (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
             </div>
-            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-              <button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="目录 (CTRL&#43;ALT&#43;t)">
-                <i class="fa-fw fas fa-list-alt"></i>
-              </button>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="目录 (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper"><nav class="TableOfContents">
   <ul>
@@ -109,10 +106,7 @@
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">6.6.2 的安卓版本</span><meta itemprop="position" content="3"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-              <button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="更多">
-                <i class="fa-fw fas fa-ellipsis-v"></i>
-              </button>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="更多"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
                   <div class="topbar-area topbar-area-more" data-area="more">
@@ -184,42 +178,27 @@
         <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.2-Android-arm-Clang-NDKr26c-xWindows-x86_64-MinGW12.2.0-msvcrt-20240215.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%">
-<span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.2-Android-arm-Clang-NDKr26c-xWindows-x86_64-MinGW12.2.0-msvcrt-20240215.7z" target="_blank">
-    SourceForge 链接
-  </a>
-</span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.2-Android-arm-Clang-NDKr26c-xWindows-x86_64-MinGW12.2.0-msvcrt-20240215.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r26c</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%">With <a href="https://codereview.qt-project.org/c/qt/qtopcua/&#43;/540751" target="_blank">this patch</a> applied otherwise build don&rsquo;t pass using MSVC</td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r26c</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%">With <a href="https://codereview.qt-project.org/c/qt/qtopcua/+/540751" target="_blank">this patch</a> applied otherwise build don&rsquo;t pass using MSVC</td></tr>
         </tbody>
     </table>
 <table>
         <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.2-Android-arm64-Clang-NDKr26c-xWindows-x86_64-MinGW12.2.0-msvcrt-20240215.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%">
-<span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.2-Android-arm64-Clang-NDKr26c-xWindows-x86_64-MinGW12.2.0-msvcrt-20240215.7z" target="_blank">
-    SourceForge 链接
-  </a>
-</span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.2-Android-arm64-Clang-NDKr26c-xWindows-x86_64-MinGW12.2.0-msvcrt-20240215.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r26c</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%">With <a href="https://codereview.qt-project.org/c/qt/qtopcua/&#43;/540751" target="_blank">this patch</a> applied otherwise build don&rsquo;t pass using MSVC</td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r26c</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%">With <a href="https://codereview.qt-project.org/c/qt/qtopcua/+/540751" target="_blank">this patch</a> applied otherwise build don&rsquo;t pass using MSVC</td></tr>
         </tbody>
     </table>
 <table>
         <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.2-Android-x86_64-Clang-NDKr26c-xWindows-x86_64-MinGW12.2.0-msvcrt-20240215.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%">
-<span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.2-Android-x86_64-Clang-NDKr26c-xWindows-x86_64-MinGW12.2.0-msvcrt-20240215.7z" target="_blank">
-    SourceForge 链接
-  </a>
-</span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.2-Android-x86_64-Clang-NDKr26c-xWindows-x86_64-MinGW12.2.0-msvcrt-20240215.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r26c</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%">With <a href="https://codereview.qt-project.org/c/qt/qtopcua/&#43;/540751" target="_blank">this patch</a> applied otherwise build don&rsquo;t pass using MSVC</td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r26c</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%">With <a href="https://codereview.qt-project.org/c/qt/qtopcua/+/540751" target="_blank">this patch</a> applied otherwise build don&rsquo;t pass using MSVC</td></tr>
         </tbody>
     </table>
 <h3 id="交叉构建主机linux">交叉构建主机：Linux</h3>
@@ -227,12 +206,7 @@
         <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.2-Android-arm-Clang-NDKr26c-xLinux-x86_64-gcc11.4.1-20240215.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%">
-<span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.2-Android-arm-Clang-NDKr26c-xLinux-x86_64-gcc11.4.1-20240215.tar.xz" target="_blank">
-    SourceForge 链接
-  </a>
-</span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.2-Android-arm-Clang-NDKr26c-xLinux-x86_64-gcc11.4.1-20240215.tar.xz" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>构建主机：</b></td><td width="30%">RockyLinux 9.3</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r26c</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
@@ -241,12 +215,7 @@
         <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.2-Android-arm64-Clang-NDKr26c-xLinux-x86_64-gcc11.4.1-20240215.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%">
-<span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.2-Android-arm64-Clang-NDKr26c-xLinux-x86_64-gcc11.4.1-20240215.tar.xz" target="_blank">
-    SourceForge 链接
-  </a>
-</span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.2-Android-arm64-Clang-NDKr26c-xLinux-x86_64-gcc11.4.1-20240215.tar.xz" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>构建主机：</b></td><td width="30%">RockyLinux 9.3</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r26c</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
@@ -255,12 +224,7 @@
         <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.2-Android-x86_64-Clang-NDKr26c-xLinux-x86_64-gcc11.4.1-20240215.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%">
-<span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.2-Android-x86_64-Clang-NDKr26c-xLinux-x86_64-gcc11.4.1-20240215.tar.xz" target="_blank">
-    SourceForge 链接
-  </a>
-</span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.2-Android-x86_64-Clang-NDKr26c-xLinux-x86_64-gcc11.4.1-20240215.tar.xz" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>构建主机：</b></td><td width="30%">RockyLinux 9.3</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r26c</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
@@ -270,12 +234,7 @@
         <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.2-Android-arm-Clang-NDKr26c-xmacOS-Universal-AppleClang14.0.3-20240215.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%">
-<span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.2-Android-arm-Clang-NDKr26c-xmacOS-Universal-AppleClang14.0.3-20240215.tar.xz" target="_blank">
-    SourceForge 链接
-  </a>
-</span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.2-Android-arm-Clang-NDKr26c-xmacOS-Universal-AppleClang14.0.3-20240215.tar.xz" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 13.6.4</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r26c</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
@@ -284,12 +243,7 @@
         <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.2-Android-arm64-Clang-NDKr26c-xmacOS-Universal-AppleClang14.0.3-20240215.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%">
-<span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.2-Android-arm64-Clang-NDKr26c-xmacOS-Universal-AppleClang14.0.3-20240215.tar.xz" target="_blank">
-    SourceForge 链接
-  </a>
-</span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.2-Android-arm64-Clang-NDKr26c-xmacOS-Universal-AppleClang14.0.3-20240215.tar.xz" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 13.6.4</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r26c</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
@@ -298,12 +252,7 @@
         <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.2-Android-x86_64-Clang-NDKr26c-xmacOS-Universal-AppleClang14.0.3-20240215.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%">
-<span class="btn cstyle orange">
-  <a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.2-Android-x86_64-Clang-NDKr26c-xmacOS-Universal-AppleClang14.0.3-20240215.tar.xz" target="_blank">
-    SourceForge 链接
-  </a>
-</span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/Android/r26/Qt6.6.2-Android-x86_64-Clang-NDKr26c-xmacOS-Universal-AppleClang14.0.3-20240215.tar.xz" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 13.6.4</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r26c</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
@@ -378,7 +327,7 @@
         <div id="R-shortcuts">
           <div class="nav-title padding">更多</div>
           <ul class="space">
-            <li><a class="padding" href="https://github.com/Fsu0413/QtCompile"><i class='fab fa-fw fa-github'></i> GitHub 仓库</a></li>
+            <li><a class="padding" href="https://github.com/Fsu0413/QtCompile"><i class='fab fa-fw fa-github'></i> GitHub 版本库</a></li>
             <li><a class="padding" href="http://www.qtcn.org/bbs/read.php?tid=85733&amp;ds=1&amp;page=1&amp;toread=1#194070"><i class='fas fa-poll-h'></i> 论坛发布贴</a></li>
           </ul>
         </div>
@@ -437,7 +386,7 @@
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sun, 18 Feb 2024 10:16:51 CST</p>
+Site generated: Sun, 18 Feb 2024 11:46:09 CST</p>
 
           </div>
         </div>
