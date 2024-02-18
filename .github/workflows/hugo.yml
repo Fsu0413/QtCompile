@@ -18,13 +18,13 @@ jobs:
           - branch: ge
             root: /qtcompile/
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           ref: 'build'
           path: 'build'
           submodules: 'recursive'
 
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           ref: ${{ matrix.target.branch }}-pages
           path: 'public'
