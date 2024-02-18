@@ -52,6 +52,7 @@ jobs:
           hugo --ignoreCache --verbose --configDir config_${{ matrix.target.branch }} -d ../public -b ${{ matrix.target.root }}
 
       - name: commit
+        if: ${{ github.ref == 'refs/heads/build' }}
         run: |
           git -C public config --local user.name "update"
           git -C public config --local user.email "update.bot@github.actions"
