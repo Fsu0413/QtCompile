@@ -58,7 +58,7 @@
 			"menu": {
 				"shortcuts": [
 					{
-						"name": "<i class='fab fa-fw fa-github'></i> GitHub 仓库",
+						"name": "<i class='fab fa-fw fa-github'></i> GitHub 版本库",
 						"url": "https://github.com/Fsu0413/QtCompile",
 						"weight": 1
 					},
