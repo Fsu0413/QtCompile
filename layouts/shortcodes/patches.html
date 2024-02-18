@@ -1,8 +1,7 @@
-<!-- TODO: do not use absLangURL since shortcode "link" already have support for language aware URLs -->
 {{ partial "shortcodes/notice.html" (dict
     "page" .Page
     "style" "primary"
     "title" (T "fsqtbuild_i18n_patchesTitle")
     "icon" "fas fa-check-square"
-    "content" ((printf (T "fsqtbuild_i18n_patches" ) ( absLangURL ( print "miscellaneous/notes-for-this-repo/index.html"  "#" ( T "fsqtbuild_i18n_patchesTag" ) ) ) ) | markdownify)
+    "content" ((printf (T "fsqtbuild_i18n_patches" ) (print "/Miscellaneous/NotesForThisRepo#" ( T "fsqtbuild_i18n_patchesTag" ) ) ) | markdownify )
 )}}
