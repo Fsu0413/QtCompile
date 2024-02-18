@@ -47,4 +47,4 @@ __这些包为“依原样”提供。我对您使用此二进制文件作出的
 
 ### 2024 年以前
 
-[这里]({{% relref "miscellaneous/histories" %}})
+[这里](/Miscellaneous/Histories)

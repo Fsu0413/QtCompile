@@ -46,4 +46,4 @@ Update OpenSSL to 3.0.13.
 
 ### Before Jan. 2024
 
-[Here]({{% relref "miscellaneous/histories" %}})
+[Here](/Miscellaneous/Histories)
