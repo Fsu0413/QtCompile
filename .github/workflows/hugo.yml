@@ -58,7 +58,4 @@ jobs:
           git -C public config --local user.email "update.bot@github.actions"
           git -C public add -A
           git -C public commit -m "`date +%Y%m%d%H%M%S` commit"
-          mkdir $HOME/.ssh && ssh-keyscan -t rsa github.com > $HOME/.ssh/known_hosts
-          echo "${PRIVATE_KEY}" > $HOME/.ssh/id_rsa
-          chmod 600 $HOME/.ssh/id_rsa
-          git -C public push 'git@github.com:Fsu0413/QtCompile.git' HEAD:refs/heads/${{ matrix.target.branch }}-pages
+          git -C public push origin HEAD:refs/heads/${{ matrix.target.branch }}-pages
