@@ -1,5 +1,5 @@
 ---
-title: "Notes for this repo"
+title: "Notes for this repository"
 draft: false
 weight: 1
 ---
@@ -29,7 +29,7 @@ I may purchage the service later when the service seems good enough for me.
 ## Reproduciable building
 
 I use a set of scripts to do the build and packaging for [reproducible building](https://reproducible-builds.org/) Qt.  
-If you are interested in build method, please check the following GitHub repo.
+If you are interested in build method, please check the following GitHub repository.
 
 [GitHub](https://github.com/Fsu0413/Fs-scripts)
 
@@ -100,7 +100,7 @@ Other decompresser users should query for their latest version, since it may sup
 
 Arch Linux and MSYS2 switched to zst for their package manager recently.  
 Only recent GNU `tar` (1.31 or later) and recent `bsdtar` (3.3.3 or later) directly supports `.tar.zst` compress method.  
-I will not use zst because the compress ratio is not as good as LZMA2(xz).
+I will not use zst here because the compress ratio is not as good as LZMA2(xz).
 
 ## Difference of this Qt and offically distributed Qt (Updated {{% date 2023 1 8 %}})
 

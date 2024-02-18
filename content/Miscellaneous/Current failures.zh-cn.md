@@ -52,9 +52,9 @@ Qt 6.2.7 发布，但是 open62541 还是 1.1 版本。
 QtWebEngine 自从 6.2.4 之后就没再针对 LTS 版本发布新版，而是直接拿更新的 QtWebEngine（比如 6.3 之类的）作为 6.2 LTS 系列发布。  
 但是因为 QtWebEngine 的二进制文件的版本号和实际版本号不同，除了官方打包负责人之外没人知道 Qt 具体用了 QtWebEngine 的哪个版本来打包的。
 
-{{% date 2023 3 25%}}更新：  
-QtWebEngine 依然在其自己的分支上开发，但是只有 `qtwebengine-chromium` 仓库对外公开了。  
-Qt 公司在他们自己的 yocto 仓库 `meta-qt6` 中记录了所有发布版本的 commit SHA1，但是在 `qtwebengine` 仓库中找不到对应的 commit。  
+{{% date 2023 3 25 %}}更新：  
+QtWebEngine 依然在其自己的分支上开发，但是只有 `qtwebengine-chromium` 版本库对外公开了。  
+Qt 公司在他们自己的 yocto 版本库 `meta-qt6` 中记录了所有发布版本的 commit SHA1，但是在 `qtwebengine` 版本库中找不到对应的 commit。  
 如果强行使用不匹配的 `qtwebengine` 和 `qtwebengine-chromium` 版本对 QtWebEngine 进行构建的话我觉得也不会通过。即使我们足够幸运构建通过了，我也不认为它能正确工作。
 
 所以我不会再提供附带 QtWebEngine 的 Qt 6.2 LTS 系列的版本。  

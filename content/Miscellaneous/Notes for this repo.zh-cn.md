@@ -1,5 +1,5 @@
 ---
-title: "本仓库的一些备注"
+title: "本版本库的一些备注"
 draft: false
 weight: 1
 ---
@@ -29,7 +29,7 @@ weight: 1
 ## 可复现的构建
 
 为了实现对 Qt 的[可复现的构建](https://reproducible-builds.org/)，我使用一系列脚本进行构建和打包。  
-如果您对构建方法感兴趣的话，可以参考下面的 GitHub 仓库。
+如果您对构建方法感兴趣的话，可以参考下面的 GitHub 版本库。
 
 [GitHub](https://github.com/Fsu0413/Fs-scripts)
 
@@ -100,7 +100,7 @@ tar -cf - xxx | 7zr a -txz -m0=LZMA2:d256m:fb273 -mmt=3 -myx -si -- xxx.tar.xz
 
 近期 Arch Linux 和 MSYS2 在将他们的包管理工具的压缩算法改为了 zstd。  
 只有较新的 GNU `tar`（1.31 以及更新）和较新的 `bsdtar`（3.3.3 以及更新）直接支持 `.tar.zst` 压缩方法。  
-我不会在此仓库使用 zstd，因为压缩比不如 LZMA2。
+我不会在这里使用 zstd，因为压缩比不如 LZMA2。
 
 ## 这份 Qt 和官方发布的 Qt 的区别（{{% date 2023 1 8 %}}更新）
 
