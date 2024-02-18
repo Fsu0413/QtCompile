@@ -3,7 +3,22 @@ name: update
 on: [push]
 
 jobs:
-  coding:
+  sync:
+    if: ${{ github.ref == 'refs/heads/gh-pages' }}
+    strategy:
+      matrix:
+        remote:
+          - name: coding
+            url: git@e.coding.net:Fsu0413/QtCompile.git
+          - name: osdn
+            url: fsu0413@git.osdn.net:/gitroot/fsu0413-qtbuilds/QtBuilds.git
+          - name: gitcode
+            url: git@gitcode.net:Fsu0413/QtCompile.git
+          - name: sourceforge
+            url: ssh://fsu0413@git.code.sf.net/p/fsu0413-qtbuilds/QtCompile
+          - name: gitee
+            url: git@gitee.com:Fsu0413/QtCompile.git
+    name: ${{ matrix.remote.name }}
     runs-on: ubuntu-latest
     steps:
     - uses: codions/git-sync@v1.0.2
@@ -11,49 +26,5 @@ jobs:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         SOURCE_REPO: git@github.com:${{ github.repository }}.git
         SOURCE_BRANCH: gh-pages
-        DESTINATION_REPO: git@e.coding.net:Fsu0413/QtCompile.git
-        DESTINATION_BRANCH: gh-pages
-
-  osdn:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: codions/git-sync@v1.0.2
-      with:
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        SOURCE_REPO: git@github.com:${{ github.repository }}.git
-        SOURCE_BRANCH: gh-pages
-        DESTINATION_REPO: fsu0413@git.osdn.net:/gitroot/fsu0413-qtbuilds/QtBuilds.git
-        DESTINATION_BRANCH: gh-pages
-
-  gitcode:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: codions/git-sync@v1.0.2
-      with:
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        SOURCE_REPO: git@github.com:${{ github.repository }}.git
-        SOURCE_BRANCH: gh-pages
-        DESTINATION_REPO: git@gitcode.net:Fsu0413/QtCompile.git
-        DESTINATION_BRANCH: gh-pages
-
-  sourceforge:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: codions/git-sync@v1.0.2
-      with:
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        SOURCE_REPO: git@github.com:${{ github.repository }}.git
-        SOURCE_BRANCH: gh-pages
-        DESTINATION_REPO: ssh://fsu0413@git.code.sf.net/p/fsu0413-qtbuilds/QtCompile
-        DESTINATION_BRANCH: gh-pages
-
-  gitee:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: codions/git-sync@v1.0.2
-      with:
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        SOURCE_REPO: git@github.com:${{ github.repository }}.git
-        SOURCE_BRANCH: gh-pages
-        DESTINATION_REPO: git@gitee.com:Fsu0413/QtCompile.git
+        DESTINATION_REPO: ${{ matrix.remote.url }}
         DESTINATION_BRANCH: gh-pages
