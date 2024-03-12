@@ -19,6 +19,27 @@
                 </td>
             </tr>
             <tr><td width="20%"><b>{{ T "Build Host" }}{{ T ":" }}</b></td><td width="30%">{{- .data.buildHost -}}</td><td colspan="2" width="20%"><b>{{ T "Toolchain Version" }}{{ T ":" }}</b></td><td width="30%">{{- .data.toolchain -}}</td></tr>
+            {{- if and .ndkHost .ndkVer -}}
+                <tr><td width="20%"><b>{{ T "Android NDK download" }}{{ T ":" }}</b></td><td colspan="4" width="80%">
+                    {{- $ndkData := site.Data.ndkDownload -}}
+                    {{- $ndkver := index $ndkData .ndkVer -}}
+                    {{- if $ndkver -}}
+                        {{- $ndkDownload := index $ndkver .ndkHost -}}
+                        {{- if $ndkDownload -}}
+                            {{- partial "shortcodes/button.html" (dict
+                                "page" .
+                                "href" $ndkDownload
+                                "style" "green"
+                                "content" (print "Android NDK " .ndkVer " on " .ndkHost)
+                            ) -}}
+                        {{- else -}}
+                            <p class="fsu0413_error">WTF IS ANDROID NDK {{ .ndkVer -}} ON PLATFORM {{- .ndkHost -}}</p>
+                        {{- end -}}
+                    {{- else -}}
+                        <p class="fsu0413_error">WTF IS ANDROID NDK {{ .ndkVer -}}</p>
+                    {{- end -}}
+                </td></tr>
+            {{- end -}}
             {{- if .MinGWConf -}}
                 <tr><td width="20%"><b>{{ T "MinGW Used" }}{{ T ":" }}</b></td><td colspan="4" width="80%">
                     {{- $mingwdata := site.Data.MinGWAddr -}}
