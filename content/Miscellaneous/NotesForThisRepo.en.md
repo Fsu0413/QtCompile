@@ -225,7 +225,6 @@ Commericial-only Qt Open Source Release Date (ETA)
 
 | Qt Version | Commericial Release Date | Open Source Release Date |
 |-|-|-|
-| 5.15.13 | {{% date 2023 3 9 %}} | {{% date 2024 3 9 %}} |
 | 5.15.14 | {{% date 2023 5 25 %}} | {{% date 2024 5 25 %}} |
 | 5.15.15 | {{% date 2023 8 31 %}} | {{% date 2024 8 31 %}} (Need to check if Qt will really release this version to opensource on that day) |
 | 5.15.16 | {{% date 2023 11 17 %}} | {{% date 2024 11 17 %}} |
@@ -234,6 +233,7 @@ Commericial-only Qt Open Source Release Date (ETA)
 | 6.2.10 | {{% date 2023 10 9 %}} | {{% date 2024 10 9 %}} |
 | 6.2.11 | {{% date 2024 1 16 %}} | {{% date 2025 1 16 %}} |
 | 6.5.4 | {{% date 2024 1 11 %}} | {{% date 2025 1 11 %}} |
+| 6.5.5 | {{% date 2024 3 4 %}} | {{% date 2025 3 4 %}} |
 
 ## Incoming update for future release
 
@@ -250,9 +250,9 @@ Note that I won't patch an active version of Qt and will simply wait for future 
 A patch will removed from following table when this patch is shipped or not needed to be applied in all of the maintained versions.  
 Version number in brackets are the version when the corresponding patch will be shipped.
 
-| Issue \ Qt Version | 5.15.12 | 6.2.7 | 6.5.3 |
+| Issue \ Qt Version | 5.15.13 | 6.2.7 | 6.5.3 |
 |-|-|-|-|
-| CVE-2023-24607 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-24607-qtbase-5.15.diff) (5.15.13) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-24607-qtbase-6.2.diff) (6.2.8) | - |
+| CVE-2023-24607 | shipped | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-24607-qtbase-6.2.diff) (6.2.8) | - |
 | CVE-2023-32573 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-32573-qtsvg-5.15.diff) (5.15.14) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-32573-qtsvg-6.2.diff) (6.2.9) | shipped |
 | (5.15 series specific) macOS build fix | [macOS only](https://invent.kde.org/qt/qt/qtlocation-mapboxgl/-/commit/5a07e1967dcc925d9def47accadae991436b9686 "Patch provided by KDE") (5.15.14) | - | - |
 | CVE-2023-32762 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-32762-qtbase-5.15.diff) (5.15.14) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-32762-qtbase-6.2.diff) (6.2.9) | shipped |
@@ -266,3 +266,13 @@ Version number in brackets are the version when the corresponding patch will be 
 | CVE-2023-45872 | - | [**×**](# "Official patch causes CONFLICT. Reason is unknown and will not be investigated.") (6.2.11) | - |
 | CVE-2023-51714 | √ [1](https://download.qt.io/official_releases/qt/5.15/0001-CVE-2023-51714-qtbase-5.15.diff) [2](https://download.qt.io/official_releases/qt/5.15/0002-CVE-2023-51714-qtbase-5.15.diff) (5.15.17) | √ [1](https://download.qt.io/official_releases/qt/6.2/0001-CVE-2023-51714-qtbase-6.2.diff) [2](https://download.qt.io/official_releases/qt/6.2/0002-CVE-2023-51714-qtbase-6.2.diff) (6.2.11) | √ [1](https://download.qt.io/official_releases/qt/6.5/0001-CVE-2023-51714-qtbase-6.5.diff) [2](https://download.qt.io/official_releases/qt/6.5/0002-CVE-2023-51714-qtbase-6.5.diff) (6.5.4) |
 | CVE-2024-25580 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2024-25580-qtbase-5.15.diff) (5.15.17) | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2024-25580-qtbase-6.2.diff) (6.2.12) | [√](https://download.qt.io/official_releases/qt/6.5/CVE-2024-25580-qtbase-6.5.diff) (6.5.5) |
+
+Starting from {{% date 2024 3 12 %}} I provided some simple fixes about build problem.  
+Currently only LTS version will be patched.
+
+| Issue \ Qt Version | 5.15.13 |
+|-|-|
+| Qt 5.15 series can't be built using later MinGW-w64 which has its `_WIN32_WINNT` defaults to `0x0A00` | [2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase.diff) |
+| Qt 5.15 series `angle` can't be built using GCC 11 or later | [2024-Fs-angle-fix-build-on-gcc11-qtbase.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-angle-fix-build-on-gcc11-qtbase.diff) |
+| Qt 5.15 series `d3d12` Qt Quick Scene Graph plugin can't find `fxc`, and can't find `_uuidof` function | [2024-Fs-d3d12-fix-compile-with-later-mingw-qtdeclarative.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-d3d12-fix-compile-with-later-mingw-qtdeclarative.diff) |
+| Qt 5.15 and 6.2 series can't be built using Android NDK r25 or later | [2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase.diff) |

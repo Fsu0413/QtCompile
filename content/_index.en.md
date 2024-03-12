@@ -27,11 +27,17 @@ Common reasons for the Error code 4 are:
 ## Disclaimer
 
 These binaries built by Fsu0413 are __TOTALLY UNTESTED__. Use at your own risk.  
-The code used is downloaded from [here](http://download.qt.io), I made no changes to the source/generated files, except for officially announced patches.  
+The code used is downloaded from [here](http://download.qt.io), and patches applied on top of code are [listed here](/Miscellaneous/NotesForThisRepo#existing-patches) only for dealing with some simple and minor compile / build fixes.  
 __THESE PACKAGE ARE PROVIDED "As is", I have no responsibility that you mess up your things with this binaries.__  
 Thanks for The Qt Company Ltd. and the programmers of Qt for their fantastic work!!
 
 ## Update History
+
+### {{% date 2024 3 12 %}}
+Update Qt 5.15.13.  
+Update Visual Studio 2022 to 17.9.2.
+
+Patch Qt 5.15 series to be built with newer MinGW-w64 and Android NDK versions.
 
 ### {{% date 2024 2 17 %}}
 Update Qt 6.6.2.    

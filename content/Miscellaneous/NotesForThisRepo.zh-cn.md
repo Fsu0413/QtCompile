@@ -225,7 +225,6 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 
 | Qt 版本 | 商业专属发布日 | 开源发布日 |
 |-|-|-|
-| 5.15.13 | {{% date 2023 3 9 %}} | {{% date 2024 3 9 %}} |
 | 5.15.14 | {{% date 2023 5 25 %}} | {{% date 2024 5 25 %}} |
 | 5.15.15 | {{% date 2023 8 31 %}} | {{% date 2024 8 31 %}} （届时需要确认 Qt 到底是否真的发布了开源版本） |
 | 5.15.16 | {{% date 2023 11 17 %}} | {{% date 2024 11 17 %}} |
@@ -234,6 +233,7 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 | 6.2.10 | {{% date 2023 10 9 %}} | {{% date 2024 10 9 %}} |
 | 6.2.11 | {{% date 2024 1 16 %}} | {{% date 2025 1 16 %}} |
 | 6.5.4 | {{% date 2024 1 11 %}} | {{% date 2025 1 11 %}} |
+| 6.5.5 | {{% date 2024 3 4 %}} | {{% date 2025 3 4 %}} |
 
 ## 之后可能会更新的内容
 
@@ -250,9 +250,9 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 若某个补丁在所有的正在维护的版本均已附带或没有应用的必要，则该补丁将会从此表中删除。  
 括号中的版本号为附带该补丁的发布版本。
 
-| 问题 \ Qt 版本 | 5.15.12 | 6.2.7 | 6.5.3 |
+| 问题 \ Qt 版本 | 5.15.13 | 6.2.7 | 6.5.3 |
 |-|-|-|-|
-| CVE-2023-24607 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-24607-qtbase-5.15.diff) （5.15.13） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-24607-qtbase-6.2.diff) （6.2.8） | - |
+| CVE-2023-24607 | 附带 | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-24607-qtbase-6.2.diff) （6.2.8） | - |
 | CVE-2023-32573 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-32573-qtsvg-5.15.diff) （5.15.14） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-32573-qtsvg-6.2.diff) （6.2.9） | 附带 |
 | （仅限 5.15 系列）macOS 构建修复 | [仅限 macOS](https://invent.kde.org/qt/qt/qtlocation-mapboxgl/-/commit/5a07e1967dcc925d9def47accadae991436b9686 "KDE 提供的补丁") （5.15.14） | - | - |
 | CVE-2023-32762 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-32762-qtbase-5.15.diff) （5.15.14） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-32762-qtbase-6.2.diff) （6.2.9） | 附带 |
@@ -266,3 +266,13 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 | CVE-2023-45872 | - | [**×**](# "官方补丁冲突。原因未知且没有调查计划") （6.2.11） | - |
 | CVE-2023-51714 | √ [1](https://download.qt.io/official_releases/qt/5.15/0001-CVE-2023-51714-qtbase-5.15.diff) [2](https://download.qt.io/official_releases/qt/5.15/0002-CVE-2023-51714-qtbase-5.15.diff) （5.15.17） | √ [1](https://download.qt.io/official_releases/qt/6.2/0001-CVE-2023-51714-qtbase-6.2.diff) [2](https://download.qt.io/official_releases/qt/6.2/0002-CVE-2023-51714-qtbase-6.2.diff) （6.2.11） | √ [1](https://download.qt.io/official_releases/qt/6.5/0001-CVE-2023-51714-qtbase-6.5.diff) [2](https://download.qt.io/official_releases/qt/6.5/0002-CVE-2023-51714-qtbase-6.5.diff) （6.5.4） |
 | CVE-2024-25580 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2024-25580-qtbase-5.15.diff) （5.15.17） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2024-25580-qtbase-6.2.diff) （6.2.12） | [√](https://download.qt.io/official_releases/qt/6.5/CVE-2024-25580-qtbase-6.5.diff) （6.5.5） |
+
+从 {{% date 2024 3 12 %}}开始我的 Qt 构建会包含一些简单的关于构建问题的修复。  
+目前只有 LTS 版本应用这些补丁。
+
+| 问题 \ Qt 版本 | 5.15.13 |
+|-|-|
+| 使用 `_WIN32_WINNT` 的默认值为 `0x0A00` 的新版 MinGW-w64 上 Qt 5.15 系列无法构建 | [2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase.diff) |
+| 使用 GCC 11 或更新的版本无法构建 Qt 5.15 系列上的 `angle` | [2024-Fs-angle-fix-build-on-gcc11-qtbase.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-angle-fix-build-on-gcc11-qtbase.diff) |
+| Qt 5.15 系列的 `d3d12` Qt Quick Scene Graph 插件无法找到 `fxc`，并且找不到 `_uuidof` 函数 | [2024-Fs-d3d12-fix-compile-with-later-mingw-qtdeclarative.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-d3d12-fix-compile-with-later-mingw-qtdeclarative.diff) |
+| 使用 Android NDK r25 或更新的版本无法构建 Qt 5.15 和 6.2 系列 | [2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase.diff) |
