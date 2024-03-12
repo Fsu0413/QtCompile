@@ -267,6 +267,8 @@
   "q5_6wx6g4_aa3n0": {
     "fileName": "Qt5.6.3-Android-arm-gcc-NDKr10e-XWindows-x86_64-MinGW4.9.4-20200105.7z",
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Android/Windows-x86_64-hosted/Qt5.6.3-Android-arm-gcc-NDKr10e-XWindows-x86_64-MinGW4.9.4-20200105.7z",
+    "ndkHost": "Windows",
+    "ndkVer": "r10e",
     "data": {
       "version": "5.6.3",
       "platform": "Android",
@@ -282,6 +284,8 @@
   "q5_6wx6g4_ax3n0": {
     "fileName": "Qt5.6.3-Android-x86-gcc-NDKr10e-XWindows-x86_64-MinGW4.9.4-20200105.7z",
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Android/Windows-x86_64-hosted/Qt5.6.3-Android-x86-gcc-NDKr10e-XWindows-x86_64-MinGW4.9.4-20200105.7z",
+    "ndkHost": "Windows",
+    "ndkVer": "r10e",
     "data": {
       "version": "5.6.3",
       "platform": "Android",
@@ -297,6 +301,8 @@
   "q5_6lx6_aa3n0": {
     "fileName": "Qt5.6.3-Android-arm-gcc-NDKr10e-xLinux-x86_64-gcc4.8.5-20200105.tar.xz",
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Android/Linux-x86_64-hosted/Qt5.6.3-Android-arm-gcc-NDKr10e-xLinux-x86_64-gcc4.8.5-20200105.tar.xz",
+    "ndkHost": "Linux",
+    "ndkVer": "r10e",
     "data": {
       "version": "5.6.3",
       "platform": "Android",
@@ -312,6 +318,8 @@
   "q5_6lx6_ax3n0": {
     "fileName": "Qt5.6.3-Android-x86-gcc-NDKr10e-xLinux-x86_64-gcc4.8.5-20200105.tar.xz",
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Android/Linux-x86_64-hosted/Qt5.6.3-Android-x86-gcc-NDKr10e-xLinux-x86_64-gcc4.8.5-20200105.tar.xz",
+    "ndkHost": "Linux",
+    "ndkVer": "r10e",
     "data": {
       "version": "5.6.3",
       "platform": "Android",
@@ -327,6 +335,8 @@
   "q5_6mx6_aa3n0": {
     "fileName": "Qt5.6.3-Android-arm-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz",
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Android/macOS-x86_64-hosted/Qt5.6.3-Android-arm-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz",
+    "ndkHost": "macOS",
+    "ndkVer": "r10e",
     "data": {
       "version": "5.6.3",
       "platform": "Android",
@@ -342,6 +352,8 @@
   "q5_6mx6_ax3n0": {
     "fileName": "Qt5.6.3-Android-x86-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz",
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.6/Android/macOS-x86_64-hosted/Qt5.6.3-Android-x86-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz",
+    "ndkHost": "macOS",
+    "ndkVer": "r10e",
     "data": {
       "version": "5.6.3",
       "platform": "Android",
@@ -479,6 +491,8 @@
   "q5_9wx6g7_aa3n0": {
     "fileName": "Qt5.9.9-Android-arm-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z",
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/Windows-x86_64-hosted/Qt5.9.9-Android-arm-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z",
+    "ndkHost": "Windows",
+    "ndkVer": "r10e",
     "data": {
       "version": "5.9.9",
       "platform": "Android",
@@ -494,6 +508,8 @@
   "q5_9wx6g7_aa6n0": {
     "fileName": "Qt5.9.9-Android-arm64-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z",
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/Windows-x86_64-hosted/Qt5.9.9-Android-arm64-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z",
+    "ndkHost": "Windows",
+    "ndkVer": "r10e",
     "data": {
       "version": "5.9.9",
       "platform": "Android",
@@ -509,6 +525,8 @@
   "q5_9wx6g7_ax3n0": {
     "fileName": "Qt5.9.9-Android-x86-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z",
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/Windows-x86_64-hosted/Qt5.9.9-Android-x86-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z",
+    "ndkHost": "Windows",
+    "ndkVer": "r10e",
     "data": {
       "version": "5.9.9",
       "platform": "Android",
@@ -524,6 +542,8 @@
   "q5_9lx6_aa3n0": {
     "fileName": "Qt5.9.9-Android-arm-gcc-NDKr10e-xLinux-x86_64-gcc8.3.1-20200201.tar.xz",
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/Linux-x86_64-hosted/Qt5.9.9-Android-arm-gcc-NDKr10e-xLinux-x86_64-gcc8.3.1-20200201.tar.xz",
+    "ndkHost": "Linux",
+    "ndkVer": "r10e",
     "data": {
       "version": "5.9.9",
       "platform": "Android",
@@ -539,6 +559,8 @@
   "q5_9lx6_aa6n0": {
     "fileName": "Qt5.9.9-Android-arm64-gcc-NDKr10e-xLinux-x86_64-gcc8.3.1-20200201.tar.xz",
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/Linux-x86_64-hosted/Qt5.9.9-Android-arm64-gcc-NDKr10e-xLinux-x86_64-gcc8.3.1-20200201.tar.xz",
+    "ndkHost": "Linux",
+    "ndkVer": "r10e",
     "data": {
       "version": "5.9.9",
       "platform": "Android",
@@ -554,6 +576,8 @@
   "q5_9lx6_ax3n0": {
     "fileName": "Qt5.9.9-Android-x86-gcc-NDKr10e-xLinux-x86_64-gcc8.3.1-20200201.tar.xz",
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/Linux-x86_64-hosted/Qt5.9.9-Android-x86-gcc-NDKr10e-xLinux-x86_64-gcc8.3.1-20200201.tar.xz",
+    "ndkHost": "Linux",
+    "ndkVer": "r10e",
     "data": {
       "version": "5.9.9",
       "platform": "Android",
@@ -569,6 +593,8 @@
   "q5_9mx6_aa3n0": {
     "fileName": "Qt5.9.9-Android-arm-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz",
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/macOS-x86_64-hosted/Qt5.9.9-Android-arm-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz",
+    "ndkHost": "macOS",
+    "ndkVer": "r10e",
     "data": {
       "version": "5.9.9",
       "platform": "Android",
@@ -584,6 +610,8 @@
   "q5_9mx6_aa6n0": {
     "fileName": "Qt5.9.9-Android-arm64-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz",
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/macOS-x86_64-hosted/Qt5.9.9-Android-arm64-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz",
+    "ndkHost": "macOS",
+    "ndkVer": "r10e",
     "data": {
       "version": "5.9.9",
       "platform": "Android",
@@ -599,6 +627,8 @@
   "q5_9mx6_ax3n0": {
     "fileName": "Qt5.9.9-Android-x86-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz",
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/macOS-x86_64-hosted/Qt5.9.9-Android-x86-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz",
+    "ndkHost": "macOS",
+    "ndkVer": "r10e",
     "data": {
       "version": "5.9.9",
       "platform": "Android",
@@ -613,7 +643,9 @@
   },
   "q5_12lx6_aa6nl": {
     "fileName": "Qt5.12.12-Android-arm64-Clang-NDKr21e-xLinux-x86_64-gcc8.5.0-20231006.tar.xz",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-arm64-Clang-NDKr21e-xLinux-x86_64-gcc8.5.0-20231006.tar.xz/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-arm64-Clang-NDKr21e-xLinux-x86_64-gcc8.5.0-20231006.tar.xz",
+    "ndkHost": "Linux",
+    "ndkVer": "r21e",
     "data": {
       "version": "5.12.12",
       "platform": "Android",
@@ -628,7 +660,9 @@
   },
   "q5_12mx6_aa6nl": {
     "fileName": "Qt5.12.12-Android-arm64-Clang-NDKr21e-xmacOS-x86_64-AppleClang12.0.5-20231006.tar.xz",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-arm64-Clang-NDKr21e-xmacOS-x86_64-AppleClang12.0.5-20231006.tar.xz/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-arm64-Clang-NDKr21e-xmacOS-x86_64-AppleClang12.0.5-20231006.tar.xz",
+    "ndkHost": "macOS",
+    "ndkVer": "r21e",
     "data": {
       "version": "5.12.12",
       "platform": "Android",
@@ -643,7 +677,9 @@
   },
   "q5_12wx6g7_aa6nl": {
     "fileName": "Qt5.12.12-Android-arm64-Clang-NDKr21e-xWindows-x86_64-MinGW7.3.0-20231006.7z",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-arm64-Clang-NDKr21e-xWindows-x86_64-MinGW7.3.0-20231006.7z/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-arm64-Clang-NDKr21e-xWindows-x86_64-MinGW7.3.0-20231006.7z",
+    "ndkHost": "Windows",
+    "ndkVer": "r21e",
     "data": {
       "version": "5.12.12",
       "platform": "Android",
@@ -658,7 +694,9 @@
   },
   "q5_12lx6_aa3nl": {
     "fileName": "Qt5.12.12-Android-arm-Clang-NDKr21e-xLinux-x86_64-gcc8.5.0-20231006.tar.xz",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-arm-Clang-NDKr21e-xLinux-x86_64-gcc8.5.0-20231006.tar.xz/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-arm-Clang-NDKr21e-xLinux-x86_64-gcc8.5.0-20231006.tar.xz",
+    "ndkHost": "Linux",
+    "ndkVer": "r21e",
     "data": {
       "version": "5.12.12",
       "platform": "Android",
@@ -673,7 +711,9 @@
   },
   "q5_12mx6_aa3nl": {
     "fileName": "Qt5.12.12-Android-arm-Clang-NDKr21e-xmacOS-x86_64-AppleClang12.0.5-20231006.tar.xz",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-arm-Clang-NDKr21e-xmacOS-x86_64-AppleClang12.0.5-20231006.tar.xz/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-arm-Clang-NDKr21e-xmacOS-x86_64-AppleClang12.0.5-20231006.tar.xz",
+    "ndkHost": "macOS",
+    "ndkVer": "r21e",
     "data": {
       "version": "5.12.12",
       "platform": "Android",
@@ -688,7 +728,9 @@
   },
   "q5_12wx6g7_aa3nl": {
     "fileName": "Qt5.12.12-Android-arm-Clang-NDKr21e-xWindows-x86_64-MinGW7.3.0-20231006.7z",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-arm-Clang-NDKr21e-xWindows-x86_64-MinGW7.3.0-20231006.7z/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-arm-Clang-NDKr21e-xWindows-x86_64-MinGW7.3.0-20231006.7z",
+    "ndkHost": "Windows",
+    "ndkVer": "r21e",
     "data": {
       "version": "5.12.12",
       "platform": "Android",
@@ -703,7 +745,9 @@
   },
   "q5_12lx6_ax3nl": {
     "fileName": "Qt5.12.12-Android-x86-Clang-NDKr21e-xLinux-x86_64-gcc8.5.0-20231006.tar.xz",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-x86-Clang-NDKr21e-xLinux-x86_64-gcc8.5.0-20231006.tar.xz/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-x86-Clang-NDKr21e-xLinux-x86_64-gcc8.5.0-20231006.tar.xz",
+    "ndkHost": "Linux",
+    "ndkVer": "r21e",
     "data": {
       "version": "5.12.12",
       "platform": "Android",
@@ -718,7 +762,9 @@
   },
   "q5_12mx6_ax3nl": {
     "fileName": "Qt5.12.12-Android-x86-Clang-NDKr21e-xmacOS-x86_64-AppleClang12.0.5-20231006.tar.xz",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-x86-Clang-NDKr21e-xmacOS-x86_64-AppleClang12.0.5-20231006.tar.xz/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-x86-Clang-NDKr21e-xmacOS-x86_64-AppleClang12.0.5-20231006.tar.xz",
+    "ndkHost": "macOS",
+    "ndkVer": "r21e",
     "data": {
       "version": "5.12.12",
       "platform": "Android",
@@ -733,7 +779,9 @@
   },
   "q5_12wx6g7_ax3nl": {
     "fileName": "Qt5.12.12-Android-x86-Clang-NDKr21e-xWindows-x86_64-MinGW7.3.0-20231006.7z",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-x86-Clang-NDKr21e-xWindows-x86_64-MinGW7.3.0-20231006.7z/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Android/Qt5.12.12-Android-x86-Clang-NDKr21e-xWindows-x86_64-MinGW7.3.0-20231006.7z",
+    "ndkHost": "Windows",
+    "ndkVer": "r21e",
     "data": {
       "version": "5.12.12",
       "platform": "Android",
@@ -808,7 +856,7 @@
   },
   "q5_12wx3g7": {
     "fileName": "Qt5.12.12-Windows-x86-MinGW7.3.0-20231006.7z",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86/Qt5.12.12-Windows-x86-MinGW7.3.0-20231006.7z/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86/Qt5.12.12-Windows-x86-MinGW7.3.0-20231006.7z",
     "MinGWConf": "wx3g7",
     "data": {
       "version": "5.12.12",
@@ -824,7 +872,7 @@
   },
   "q5_12wx3v5": {
     "fileName": "Qt5.12.12-Windows-x86-VS2015-20231006.7z",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86/Qt5.12.12-Windows-x86-VS2015-20231006.7z/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86/Qt5.12.12-Windows-x86-VS2015-20231006.7z",
     "notes": "__NO WEBENGINE__ because Qt has no support for QtWebEngine 5.12 for Visual Studio 2015",
     "data": {
       "version": "5.12.12",
@@ -840,7 +888,7 @@
   },
   "q5_12wx3v5st": {
     "fileName": "Qt5.12.12-Windows-x86-VS2015-static-20231006.7z",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86/Qt5.12.12-Windows-x86-VS2015-static-20231006.7z/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86/Qt5.12.12-Windows-x86-VS2015-static-20231006.7z",
     "data": {
       "version": "5.12.12",
       "platform": "Windows",
@@ -855,7 +903,7 @@
   },
   "q5_12wx3v7": {
     "fileName": "Qt5.12.12-Windows-x86-VS2017-15.9.57-20231006.7z",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86/Qt5.12.12-Windows-x86-VS2017-15.9.57-20231006.7z/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86/Qt5.12.12-Windows-x86-VS2017-15.9.57-20231006.7z",
     "data": {
       "version": "5.12.12",
       "platform": "Windows",
@@ -870,7 +918,7 @@
   },
   "q5_12wx3v7st": {
     "fileName": "Qt5.12.12-Windows-x86-VS2017-15.9.57-static-20231006.7z",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86/Qt5.12.12-Windows-x86-VS2017-15.9.57-static-20231006.7z/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86/Qt5.12.12-Windows-x86-VS2017-15.9.57-static-20231006.7z",
     "data": {
       "version": "5.12.12",
       "platform": "Windows",
@@ -885,7 +933,7 @@
   },
   "q5_12wx3v9": {
     "fileName": "Qt5.12.12-Windows-x86-VS2019-16.11.30-20231006.7z",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86/Qt5.12.12-Windows-x86-VS2019-16.11.30-20231006.7z/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86/Qt5.12.12-Windows-x86-VS2019-16.11.30-20231006.7z",
     "notes": "__NO WEBENGINE__ because of compile failure",
     "data": {
       "version": "5.12.12",
@@ -901,7 +949,7 @@
   },
   "q5_12wx6g7": {
     "fileName": "Qt5.12.12-Windows-x86_64-MinGW7.3.0-20231006.7z",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86_64/Qt5.12.12-Windows-x86_64-MinGW7.3.0-20231006.7z/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86_64/Qt5.12.12-Windows-x86_64-MinGW7.3.0-20231006.7z",
     "MinGWConf": "wx6g7",
     "data": {
       "version": "5.12.12",
@@ -917,7 +965,7 @@
   },
   "q5_12wx6v5": {
     "fileName": "Qt5.12.12-Windows-x86_64-VS2015-20231006.7z",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86_64/Qt5.12.12-Windows-x86_64-VS2015-20231006.7z/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86_64/Qt5.12.12-Windows-x86_64-VS2015-20231006.7z",
     "notes": "__NO WEBENGINE__ because Qt has no support for QtWebEngine 5.12 for Visual Studio 2015",
     "data": {
       "version": "5.12.12",
@@ -933,7 +981,7 @@
   },
   "q5_12wx6v7": {
     "fileName": "Qt5.12.12-Windows-x86_64-VS2017-15.9.57-20231006.7z",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86_64/Qt5.12.12-Windows-x86_64-VS2017-15.9.57-20231006.7z/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86_64/Qt5.12.12-Windows-x86_64-VS2017-15.9.57-20231006.7z",
     "data": {
       "version": "5.12.12",
       "platform": "Windows",
@@ -948,7 +996,7 @@
   },
   "q5_12wx6v9": {
     "fileName": "Qt5.12.12-Windows-x86_64-VS2019-16.11.30-20231006.7z",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86_64/Qt5.12.12-Windows-x86_64-VS2019-16.11.30-20231006.7z/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.12/Windows-x86_64/Qt5.12.12-Windows-x86_64-VS2019-16.11.30-20231006.7z",
     "notes": "__NO WEBENGINE__ because of compile failure",
     "data": {
       "version": "5.12.12",

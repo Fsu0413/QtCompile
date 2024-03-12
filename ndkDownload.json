@@ -7,7 +7,7 @@
   "r21e": {
     "Windows": "https://dl.google.com/android/repository/android-ndk-r21e-windows-x86_64.zip",
     "Linux": "https://dl.google.com/android/repository/android-ndk-r21e-linux-x86_64.zip",
-    "macOS": "https://dl.google.com/android/repository/android-ndk-r21e-darwin-x86_64.zip"
+    "macOS": "https://dl.google.com/android/repository/android-ndk-r21-darwin-x86_64.dmg"
   },
   "r23c": {
     "Windows": "https://dl.google.com/android/repository/android-ndk-r23c-windows.zip",
