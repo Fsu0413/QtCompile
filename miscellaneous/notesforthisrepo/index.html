@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.122.0">
-    <meta name="generator" content="Relearn 5.24.1">
+    <meta name="generator" content="Hugo 0.123.8">
+    <meta name="generator" content="Relearn 5.25.0">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>Notes for this repository :: Fsu0413&#39;s Original Qt builds</title>
@@ -354,11 +354,6 @@ If subsequent version of Qt 5.15 remains private we won&rsquo;t upgrade OpenSSL 
 </thead>
 <tbody>
 <tr>
-<td>5.15.13</td>
-<td>9th Mar, 2023</td>
-<td>9th Mar, 2024</td>
-</tr>
-<tr>
 <td>5.15.14</td>
 <td>25th May, 2023</td>
 <td>25th May, 2024</td>
@@ -398,6 +393,11 @@ If subsequent version of Qt 5.15 remains private we won&rsquo;t upgrade OpenSSL 
 <td>11th Jan, 2024</td>
 <td>11th Jan, 2025</td>
 </tr>
+<tr>
+<td>6.5.5</td>
+<td>4th Mar, 2024</td>
+<td>4th Mar, 2025</td>
+</tr>
 </tbody>
 </table>
 <h2 id="incoming-update-for-future-release">Incoming update for future release</h2>
@@ -414,7 +414,7 @@ Version number in brackets are the version when the corresponding patch will be 
 <thead>
 <tr>
 <th>Issue \ Qt Version</th>
-<th>5.15.12</th>
+<th>5.15.13</th>
 <th>6.2.7</th>
 <th>6.5.3</th>
 </tr>
@@ -422,7 +422,7 @@ Version number in brackets are the version when the corresponding patch will be 
 <tbody>
 <tr>
 <td>CVE-2023-24607</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-24607-qtbase-5.15.diff" target="_blank">√</a> (5.15.13)</td>
+<td>shipped</td>
 <td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-24607-qtbase-6.2.diff" target="_blank">√</a> (6.2.8)</td>
 <td>-</td>
 </tr>
@@ -465,13 +465,13 @@ Version number in brackets are the version when the corresponding patch will be 
 <tr>
 <td>CVE-2023-37369</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-37369-qtbase-5.15.diff" target="_blank">√</a> (5.15.15)</td>
-<td><a title="Official patch causes CONFLICT. Depends on a commit of Qt 6.2.9. Given up investigating due to no active distro / project is fixing this issue"><strong>×</strong></a> (6.2.10)</td>
+<td><a href="/miscellaneous/notesforthisrepo/index.html" title="Official patch causes CONFLICT. Depends on a commit of Qt 6.2.9. Given up investigating due to no active distro / project is fixing this issue"><strong>×</strong></a> (6.2.10)</td>
 <td>shipped</td>
 </tr>
 <tr>
 <td>CVE-2023-38197</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-38197-qtbase-5.15.diff" target="_blank">√</a> (5.15.15)</td>
-<td><a title="Depends on patch of CVE-2023-37369"><strong>×</strong></a> (6.2.10)</td>
+<td><a href="/miscellaneous/notesforthisrepo/index.html" title="Depends on patch of CVE-2023-37369"><strong>×</strong></a> (6.2.10)</td>
 <td>shipped</td>
 </tr>
 <tr>
@@ -483,13 +483,13 @@ Version number in brackets are the version when the corresponding patch will be 
 <tr>
 <td>CVE-2023-4863</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-4863-5.15.patch" target="_blank">√</a> (5.15.16)</td>
-<td><a title="Official patch causes CONFLICT. Since it only updates third-party project let's wait for later versions"><strong>×</strong></a> (6.2.10)</td>
+<td><a href="/miscellaneous/notesforthisrepo/index.html" title="Official patch causes CONFLICT. Since it only updates third-party project let's wait for later versions"><strong>×</strong></a> (6.2.10)</td>
 <td>shipped</td>
 </tr>
 <tr>
 <td>CVE-2023-45872</td>
 <td>-</td>
-<td><a title="Official patch causes CONFLICT. Reason is unknown and will not be investigated."><strong>×</strong></a> (6.2.11)</td>
+<td><a href="/miscellaneous/notesforthisrepo/index.html" title="Official patch causes CONFLICT. Reason is unknown and will not be investigated."><strong>×</strong></a> (6.2.11)</td>
 <td>-</td>
 </tr>
 <tr>
@@ -503,6 +503,34 @@ Version number in brackets are the version when the corresponding patch will be 
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2024-25580-qtbase-5.15.diff" target="_blank">√</a> (5.15.17)</td>
 <td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2024-25580-qtbase-6.2.diff" target="_blank">√</a> (6.2.12)</td>
 <td><a href="https://download.qt.io/official_releases/qt/6.5/CVE-2024-25580-qtbase-6.5.diff" target="_blank">√</a> (6.5.5)</td>
+</tr>
+</tbody>
+</table>
+<p>Starting from 12th Mar, 2024 I provided some simple fixes about build problem.<br>
+Currently only LTS version will be patched.</p>
+<table>
+<thead>
+<tr>
+<th>Issue \ Qt Version</th>
+<th>5.15.13</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Qt 5.15 series can&rsquo;t be built using later MinGW-w64 which has its <code>_WIN32_WINNT</code> defaults to <code>0x0A00</code></td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase.diff" target="_blank">2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase.diff</a></td>
+</tr>
+<tr>
+<td>Qt 5.15 series <code>angle</code> can&rsquo;t be built using GCC 11 or later</td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-angle-fix-build-on-gcc11-qtbase.diff" target="_blank">2024-Fs-angle-fix-build-on-gcc11-qtbase.diff</a></td>
+</tr>
+<tr>
+<td>Qt 5.15 series <code>d3d12</code> Qt Quick Scene Graph plugin can&rsquo;t find <code>fxc</code>, and can&rsquo;t find <code>_uuidof</code> function</td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-d3d12-fix-compile-with-later-mingw-qtdeclarative.diff" target="_blank">2024-Fs-d3d12-fix-compile-with-later-mingw-qtdeclarative.diff</a></td>
+</tr>
+<tr>
+<td>Qt 5.15 and 6.2 series can&rsquo;t be built using Android NDK r25 or later</td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase.diff" target="_blank">2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase.diff</a></td>
 </tr>
 </tbody>
 </table>
@@ -529,44 +557,44 @@ Version number in brackets are the version when the corresponding patch will be 
       <div id="R-content-wrapper" class="highlightable">
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
-          <li data-nav-id="/5.15-series/index.html" class=""><a class="padding" href="/5.15-series/index.html">5.15 series</a><ul id="R-subsections-dfde3005aa1a1a9f4665d82e5e9612d8" class="morespace collapsible-menu">
-          <li data-nav-id="/5.15-series/5.15.11-for-windows/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-windows/index.html">5.15.12 for Windows</a></li>
-          <li data-nav-id="/5.15-series/5.15.11-for-macos/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-macos/index.html">5.15.12 for macOS</a></li>
-          <li data-nav-id="/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-android/index.html">5.15.12 for Android</a></li>
-          <li data-nav-id="/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-webassembly/index.html">5.15.12 for WebAssembly</a></li></ul></li>
-          <li data-nav-id="/6.2-series/index.html" class=""><a class="padding" href="/6.2-series/index.html">6.2 series</a><ul id="R-subsections-c2b87e4570db0ee260cc7de2c4b80e99" class="morespace collapsible-menu">
+          <li data-nav-id="/5.15-series/index.html" class=""><a class="padding" href="/5.15-series/index.html">5.15 series</a><ul id="R-subsections-d374b83d03acc30b906324bf7f6b9899" class="morespace collapsible-menu">
+          <li data-nav-id="/5.15-series/5.15.11-for-windows/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-windows/index.html">5.15.13 for Windows</a></li>
+          <li data-nav-id="/5.15-series/5.15.11-for-macos/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-macos/index.html">5.15.13 for macOS</a></li>
+          <li data-nav-id="/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-android/index.html">5.15.13 for Android</a></li>
+          <li data-nav-id="/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/5.15-series/5.15.11-for-webassembly/index.html">5.15.13 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/6.2-series/index.html" class=""><a class="padding" href="/6.2-series/index.html">6.2 series</a><ul id="R-subsections-f3427fcbeda6da3be7e077b630aae545" class="morespace collapsible-menu">
           <li data-nav-id="/6.2-series/6.2.6-for-windows/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-windows/index.html">6.2.7 for Windows</a></li>
           <li data-nav-id="/6.2-series/6.2.6-for-macos/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-macos/index.html">6.2.7 for macOS</a></li>
           <li data-nav-id="/6.2-series/6.2.6-for-android/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-android/index.html">6.2.7 for Android</a></li>
           <li data-nav-id="/6.2-series/6.2.6-for-webassembly/index.html" class=""><a class="padding" href="/6.2-series/6.2.6-for-webassembly/index.html">6.2.7 for WebAssembly</a></li></ul></li>
-          <li data-nav-id="/6.5-series/index.html" class=""><a class="padding" href="/6.5-series/index.html">6.5 series</a><ul id="R-subsections-1870fa5a2d192ec83aafe29160552269" class="morespace collapsible-menu">
+          <li data-nav-id="/6.5-series/index.html" class=""><a class="padding" href="/6.5-series/index.html">6.5 series</a><ul id="R-subsections-18a4c979f7cbac2afeb0fd2f6e4dfee1" class="morespace collapsible-menu">
           <li data-nav-id="/6.5-series/6.5.3-for-windows/index.html" class=""><a class="padding" href="/6.5-series/6.5.3-for-windows/index.html">6.5.3 for Windows</a></li>
           <li data-nav-id="/6.5-series/6.5.3-for-macos/index.html" class=""><a class="padding" href="/6.5-series/6.5.3-for-macos/index.html">6.5.3 for macOS</a></li>
           <li data-nav-id="/6.5-series/6.5.3-for-android/index.html" class=""><a class="padding" href="/6.5-series/6.5.3-for-android/index.html">6.5.3 for Android</a></li>
           <li data-nav-id="/6.5-series/6.5.3-for-webassembly/index.html" class=""><a class="padding" href="/6.5-series/6.5.3-for-webassembly/index.html">6.5.3 for WebAssembly</a></li></ul></li>
-          <li data-nav-id="/6.6-series/index.html" class=""><a class="padding" href="/6.6-series/index.html">6.6 series</a><ul id="R-subsections-251fabc502a6554f591098a179d20356" class="morespace collapsible-menu">
+          <li data-nav-id="/6.6-series/index.html" class=""><a class="padding" href="/6.6-series/index.html">6.6 series</a><ul id="R-subsections-a9e8a8520a9b963200eae23933ab25ff" class="morespace collapsible-menu">
           <li data-nav-id="/6.6-series/6.6.0-for-windows/index.html" class=""><a class="padding" href="/6.6-series/6.6.0-for-windows/index.html">6.6.2 for Windows</a></li>
           <li data-nav-id="/6.6-series/6.6.0-for-macos/index.html" class=""><a class="padding" href="/6.6-series/6.6.0-for-macos/index.html">6.6.2 for macOS</a></li>
           <li data-nav-id="/6.6-series/6.6.0-for-android/index.html" class=""><a class="padding" href="/6.6-series/6.6.0-for-android/index.html">6.6.2 for Android</a></li>
           <li data-nav-id="/6.6-series/6.6.0-for-webassembly/index.html" class=""><a class="padding" href="/6.6-series/6.6.0-for-webassembly/index.html">6.6.2 for WebAssembly</a></li></ul></li>
-          <li data-nav-id="/miscellaneous/index.html" class="parent "><a class="padding" href="/miscellaneous/index.html">Miscellaneous</a><ul id="R-subsections-59c45accf7e43befe663d68447543959" class="morespace collapsible-menu">
+          <li data-nav-id="/miscellaneous/index.html" class="parent "><a class="padding" href="/miscellaneous/index.html">Miscellaneous</a><ul id="R-subsections-fbd0e6ecd70e8ab847a5d20136c55334" class="morespace collapsible-menu">
           <li data-nav-id="/miscellaneous/notesforthisrepo/index.html" class="active"><a class="padding" href="/miscellaneous/notesforthisrepo/index.html">Notes for this repository</a></li>
           <li data-nav-id="/miscellaneous/current-build-status/index.html" class=""><a class="padding" href="/miscellaneous/current-build-status/index.html">Current build status</a></li>
           <li data-nav-id="/miscellaneous/current-failures/index.html" class=""><a class="padding" href="/miscellaneous/current-failures/index.html">Current failures</a></li>
           <li data-nav-id="/miscellaneous/histories/index.html" class=""><a class="padding" href="/miscellaneous/histories/index.html">Previous Histories</a></li></ul></li>
-          <li data-nav-id="/legacy-lts-series/index.html" class=""><a class="padding" href="/legacy-lts-series/index.html">Legacy LTS Series</a><ul id="R-subsections-5cd0b6ebd88105014c721df753e3aba0" class="morespace collapsible-menu">
-          <li data-nav-id="/legacy-lts-series/4.8-series/index.html" class="alwaysopen"><a class="padding" href="/legacy-lts-series/4.8-series/index.html">4.8 series</a><ul id="R-subsections-fde90e23068d0005e4f65b64b693e2ea" class="morespace collapsible-menu">
+          <li data-nav-id="/legacy-lts-series/index.html" class=""><a class="padding" href="/legacy-lts-series/index.html">Legacy LTS Series</a><ul id="R-subsections-730218419a8619fdefe59e074e041861" class="morespace collapsible-menu">
+          <li data-nav-id="/legacy-lts-series/4.8-series/index.html" class="alwaysopen"><a class="padding" href="/legacy-lts-series/4.8-series/index.html">4.8 series</a><ul id="R-subsections-5a7aaa7fcfa9e44f9aa267a8a1b98ed7" class="morespace collapsible-menu">
           <li data-nav-id="/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html" class=""><a class="padding" href="/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html">4.8.7 for Windows</a></li>
           <li data-nav-id="/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html" class=""><a class="padding" href="/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html">4.8.7 for macOS</a></li></ul></li>
-          <li data-nav-id="/legacy-lts-series/5.6-series/index.html" class="alwaysopen"><a class="padding" href="/legacy-lts-series/5.6-series/index.html">5.6 series</a><ul id="R-subsections-1796b7c7d02948092a040169069ea60b" class="morespace collapsible-menu">
+          <li data-nav-id="/legacy-lts-series/5.6-series/index.html" class="alwaysopen"><a class="padding" href="/legacy-lts-series/5.6-series/index.html">5.6 series</a><ul id="R-subsections-bbc786282a85026b96f7cc14b5daa443" class="morespace collapsible-menu">
           <li data-nav-id="/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html" class=""><a class="padding" href="/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html">5.6.3 for Windows</a></li>
           <li data-nav-id="/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html" class=""><a class="padding" href="/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html">5.6.3 for macOS</a></li>
           <li data-nav-id="/legacy-lts-series/5.6-series/5.6.3-for-android/index.html" class=""><a class="padding" href="/legacy-lts-series/5.6-series/5.6.3-for-android/index.html">5.6.3 for Android</a></li></ul></li>
-          <li data-nav-id="/legacy-lts-series/5.9-series/index.html" class="alwaysopen"><a class="padding" href="/legacy-lts-series/5.9-series/index.html">5.9 series</a><ul id="R-subsections-f8745d5ebc3d3c70b6d105e44a063326" class="morespace collapsible-menu">
+          <li data-nav-id="/legacy-lts-series/5.9-series/index.html" class="alwaysopen"><a class="padding" href="/legacy-lts-series/5.9-series/index.html">5.9 series</a><ul id="R-subsections-c8c1f21fb78dfca51b602bc79677a411" class="morespace collapsible-menu">
           <li data-nav-id="/legacy-lts-series/5.9-series/5.9.9-for-windows/index.html" class=""><a class="padding" href="/legacy-lts-series/5.9-series/5.9.9-for-windows/index.html">5.9.9 for Windows</a></li>
           <li data-nav-id="/legacy-lts-series/5.9-series/5.9.9-for-macos/index.html" class=""><a class="padding" href="/legacy-lts-series/5.9-series/5.9.9-for-macos/index.html">5.9.9 for macOS</a></li>
           <li data-nav-id="/legacy-lts-series/5.9-series/5.9.9-for-android/index.html" class=""><a class="padding" href="/legacy-lts-series/5.9-series/5.9.9-for-android/index.html">5.9.9 for Android</a></li></ul></li>
-          <li data-nav-id="/legacy-lts-series/5.12-series/index.html" class="alwaysopen"><a class="padding" href="/legacy-lts-series/5.12-series/index.html">5.12 series</a><ul id="R-subsections-1c9205acacd79bb25b30a84b030ea10b" class="morespace collapsible-menu">
+          <li data-nav-id="/legacy-lts-series/5.12-series/index.html" class="alwaysopen"><a class="padding" href="/legacy-lts-series/5.12-series/index.html">5.12 series</a><ul id="R-subsections-bf998861c2346df0882569093dd2357d" class="morespace collapsible-menu">
           <li data-nav-id="/legacy-lts-series/5.12-series/5.12.12-for-windows/index.html" class=""><a class="padding" href="/legacy-lts-series/5.12-series/5.12.12-for-windows/index.html">5.12.12 for Windows</a></li>
           <li data-nav-id="/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html" class=""><a class="padding" href="/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html">5.12.12 for macOS</a></li>
           <li data-nav-id="/legacy-lts-series/5.12-series/5.12.12-for-android/index.html" class=""><a class="padding" href="/legacy-lts-series/5.12-series/5.12.12-for-android/index.html">5.12.12 for Android</a></li>
@@ -635,7 +663,7 @@ Version number in brackets are the version when the corresponding patch will be 
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sun, 18 Feb 2024 14:01:09 CST</p>
+Site generated: Wed, 13 Mar 2024 08:39:53 CST</p>
 
           </div>
         </div>

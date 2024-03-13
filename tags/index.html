@@ -7,10 +7,10 @@
     <meta name="generator" content="Relearn 5.25.0">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
-    <title>6.6.2 for WebAssembly :: Fsu0413&#39;s Original Qt builds</title>
-    <link href="/6.6-series/6.6.0-for-webassembly/index.html" rel="alternate" hreflang="x-default">
-    <link href="/6.6-series/6.6.0-for-webassembly/index.html" rel="alternate" hreflang="en">
-    <link href="/zh-cn/6.6-series/6.6.0-for-webassembly/index.html" rel="alternate" hreflang="zh-cn">
+    <title>Tags :: Fsu0413&#39;s Original Qt builds</title>
+    <link href="/tags/index.html" rel="alternate" hreflang="x-default">
+    <link href="/tags/index.html" rel="alternate" hreflang="en">
+    <link href="/zh-cn/tags/index.html" rel="alternate" hreflang="zh-cn">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/css/fontawesome-all.min.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css" rel="stylesheet"></noscript>
     <link href="/css/nucleus.css" rel="stylesheet">
@@ -74,7 +74,7 @@
 </style>
 
   </head>
-  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/6.6-series/6.6.0-for-webassembly/index.html">
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/tags/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       <nav id="R-topbar">
@@ -85,25 +85,14 @@
             </div>
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
               <div class="topbar-content">
-                <div class="topbar-content-wrapper"><nav class="TableOfContents">
-  <ul>
-    <li><a href="#static-builds">Static Builds</a>
-      <ul>
-        <li><a href="#windows-host">Windows Host</a></li>
-        <li><a href="#linux-host">Linux Host</a></li>
-        <li><a href="#macos-host">macOS Host</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+                <div class="topbar-content-wrapper"> 
                 </div>
               </div>
             </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Fsu0413&#39;s Original Qt builds</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/6.6-series/index.html"><span itemprop="name">6.6 series</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">6.6.2 for WebAssembly</span><meta itemprop="position" content="3"></li>
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Tags</span><meta itemprop="position" content="2"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
@@ -120,85 +109,14 @@
       <div id="R-main-overlay"></div>
       <main id="R-body-inner" class="highlightable default" tabindex="-1">
         <div class="flex-block-wrapper">
-          <article class="default">
+          <article>
             <header class="headline">
             </header>
-<h1 id="662-for-webassembly">6.6.2 for WebAssembly</h1>
-
-
-<div class="box notices cstyle info">
-  <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
-  <div class="box-content">
-
-<p>Following database backend is distributed with this version:</p>
-<ol>
-<li>SQLite (distributed with Qt): Built in the package using command <code>-DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF</code>.</li>
-</ol></div>
-</div>
-
-
-<div class="box notices cstyle info">
-  <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
-  <div class="box-content">
-<p>
-All builds have <code>-DFEATURE_icu=OFF</code> because I think the ICU library is too big and, in most of the conditions, useless for common users.</div>
-</div>
-
-
-<div class="box notices cstyle info">
-  <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
-  <div class="box-content">
-
-<p>All packages are built using emscripten SDK 3.1.37 as recommended in Qt Wiki.<br>
-WebAssembly doesn&rsquo;t support ABI compatibility. You MUST use SDK 3.1.37 for building your own code, otherwise unpredicted error may occur.</p>
-<p>All builds have thread feature enabled using <code>-DFEATURE_thread=ON</code>.</p>
-</div>
-</div>
-
-
-<div class="box notices cstyle info">
-  <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
-  <div class="box-content">
-<p>
-Qt for WebAssembly can only be built to static libs.</div>
-</div>
-
-<h2 id="static-builds">Static Builds</h2>
-<h3 id="windows-host">Windows Host</h3>
-<table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.2-WebAssembly-emscripten3.1.37-xWindows-x86_64-MinGW12.2.0-msvcrt-20240215.7z</b></th></tr></thead>
-        <tbody>
-            <tr><td width="20%"><b>Download:</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/WebAssembly/Qt6.6.2-WebAssembly-emscripten3.1.37-xWindows-x86_64-MinGW12.2.0-msvcrt-20240215.7z" target="_blank"><span class="title">SourceForge link</span></a></span></td>
-            </tr>
-            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">emscripten-3.1.37</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%">With <a href="https://codereview.qt-project.org/c/qt/qtopcua/+/540751" target="_blank">this patch</a> applied otherwise build don&rsquo;t pass using MSVC</td></tr>
-        </tbody>
-    </table>
-<h3 id="linux-host">Linux Host</h3>
-<table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.2-WebAssembly-emscripten3.1.37-xLinux-x86_64-gcc11.4.1-20240215.tar.xz</b></th></tr></thead>
-        <tbody>
-            <tr><td width="20%"><b>Download:</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/WebAssembly/Qt6.6.2-WebAssembly-emscripten3.1.37-xLinux-x86_64-gcc11.4.1-20240215.tar.xz" target="_blank"><span class="title">SourceForge link</span></a></span></td>
-            </tr>
-            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">RockyLinux 9.3</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">emscripten-3.1.37</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
-        </tbody>
-    </table>
-<h3 id="macos-host">macOS Host</h3>
-<table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.6.2-WebAssembly-emscripten3.1.37-xmacOS-Universal-AppleClang14.0.3-20240215.tar.xz</b></th></tr></thead>
-        <tbody>
-            <tr><td width="20%"><b>Download:</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.6/WebAssembly/Qt6.6.2-WebAssembly-emscripten3.1.37-xmacOS-Universal-AppleClang14.0.3-20240215.tar.xz" target="_blank"><span class="title">SourceForge link</span></a></span></td>
-            </tr>
-            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 13.6.4</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">emscripten-3.1.37</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
-        </tbody>
-    </table>
+<h1 id="tags">Tags</h1>
 
             <footer class="footline">
             </footer>
-          </article>
-        </div>
+          </article>        </div>
       </main>
     </div>
     <aside id="R-sidebar" class="default-animation">
@@ -232,11 +150,11 @@ Qt for WebAssembly can only be built to static libs.</div>
           <li data-nav-id="/6.5-series/6.5.3-for-macos/index.html" class=""><a class="padding" href="/6.5-series/6.5.3-for-macos/index.html">6.5.3 for macOS</a></li>
           <li data-nav-id="/6.5-series/6.5.3-for-android/index.html" class=""><a class="padding" href="/6.5-series/6.5.3-for-android/index.html">6.5.3 for Android</a></li>
           <li data-nav-id="/6.5-series/6.5.3-for-webassembly/index.html" class=""><a class="padding" href="/6.5-series/6.5.3-for-webassembly/index.html">6.5.3 for WebAssembly</a></li></ul></li>
-          <li data-nav-id="/6.6-series/index.html" class="parent "><a class="padding" href="/6.6-series/index.html">6.6 series</a><ul id="R-subsections-a9e8a8520a9b963200eae23933ab25ff" class="morespace collapsible-menu">
+          <li data-nav-id="/6.6-series/index.html" class=""><a class="padding" href="/6.6-series/index.html">6.6 series</a><ul id="R-subsections-a9e8a8520a9b963200eae23933ab25ff" class="morespace collapsible-menu">
           <li data-nav-id="/6.6-series/6.6.0-for-windows/index.html" class=""><a class="padding" href="/6.6-series/6.6.0-for-windows/index.html">6.6.2 for Windows</a></li>
           <li data-nav-id="/6.6-series/6.6.0-for-macos/index.html" class=""><a class="padding" href="/6.6-series/6.6.0-for-macos/index.html">6.6.2 for macOS</a></li>
           <li data-nav-id="/6.6-series/6.6.0-for-android/index.html" class=""><a class="padding" href="/6.6-series/6.6.0-for-android/index.html">6.6.2 for Android</a></li>
-          <li data-nav-id="/6.6-series/6.6.0-for-webassembly/index.html" class="active"><a class="padding" href="/6.6-series/6.6.0-for-webassembly/index.html">6.6.2 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/6.6-series/6.6.0-for-webassembly/index.html" class=""><a class="padding" href="/6.6-series/6.6.0-for-webassembly/index.html">6.6.2 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/miscellaneous/index.html" class=""><a class="padding" href="/miscellaneous/index.html">Miscellaneous</a><ul id="R-subsections-fbd0e6ecd70e8ab847a5d20136c55334" class="morespace collapsible-menu">
           <li data-nav-id="/miscellaneous/notesforthisrepo/index.html" class=""><a class="padding" href="/miscellaneous/notesforthisrepo/index.html">Notes for this repository</a></li>
           <li data-nav-id="/miscellaneous/current-build-status/index.html" class=""><a class="padding" href="/miscellaneous/current-build-status/index.html">Current build status</a></li>
@@ -280,8 +198,8 @@ Qt for WebAssembly can only be built to static libs.</div>
                   <div class="control-style">
                     <label class="a11y-only" for="R-select-language">Language</label>
                     <select id="R-select-language" onchange="location = baseUri + this.value;">
-                      <option id="R-en" value="/6.6-series/6.6.0-for-webassembly/index.html" lang="en" selected>English</option>
-                      <option id="R-zh-cn" value="/zh-cn/6.6-series/6.6.0-for-webassembly/index.html" lang="zh-cn">简体中文（中国）</option>
+                      <option id="R-en" value="/tags/index.html" lang="en" selected>English</option>
+                      <option id="R-zh-cn" value="/zh-cn/tags/index.html" lang="zh-cn">简体中文（中国）</option>
                     </select>
                   </div>
                   <div class="clear"></div>
