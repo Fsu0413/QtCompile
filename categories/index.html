@@ -7,10 +7,10 @@
     <meta name="generator" content="Relearn 5.25.0">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
-    <title>5.9.9 的安卓版本 :: Fsu0413 的原版 Qt 构建</title>
-    <link href="/qtcompile/legacy-lts-series/5.9-series/5.9.9-for-android/index.html" rel="alternate" hreflang="x-default">
-    <link href="/qtcompile/legacy-lts-series/5.9-series/5.9.9-for-android/index.html" rel="alternate" hreflang="zh-cn">
-    <link href="/qtcompile/en/legacy-lts-series/5.9-series/5.9.9-for-android/index.html" rel="alternate" hreflang="en">
+    <title>类别 :: Fsu0413 的原版 Qt 构建</title>
+    <link href="/qtcompile/categories/index.html" rel="alternate" hreflang="x-default">
+    <link href="/qtcompile/categories/index.html" rel="alternate" hreflang="zh-cn">
+    <link href="/qtcompile/en/categories/index.html" rel="alternate" hreflang="en">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/qtcompile/css/fontawesome-all.min.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/qtcompile/css/fontawesome-all.min.css" rel="stylesheet"></noscript>
     <link href="/qtcompile/css/nucleus.css" rel="stylesheet">
@@ -74,7 +74,7 @@
 </style>
 
   </head>
-  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/qtcompile/legacy-lts-series/5.9-series/5.9.9-for-android/index.html">
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/qtcompile/categories/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       <nav id="R-topbar">
@@ -85,26 +85,14 @@
             </div>
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="目录 (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
               <div class="topbar-content">
-                <div class="topbar-content-wrapper"><nav class="TableOfContents">
-  <ul>
-    <li><a href="#动态--共享构建-ndk-r10e">动态 / 共享构建 （NDK r10e）</a>
-      <ul>
-        <li><a href="#交叉构建主机windows">交叉构建主机：Windows</a></li>
-        <li><a href="#交叉构建主机linux">交叉构建主机：Linux</a></li>
-        <li><a href="#交叉构建主机macos">交叉构建主机：macOS</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+                <div class="topbar-content-wrapper"> 
                 </div>
               </div>
             </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/qtcompile/index.html"><span itemprop="name">Fsu0413 的原版 Qt 构建</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/qtcompile/legacy-lts-series/index.html"><span itemprop="name">遗留的长期支持版本系列</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/qtcompile/legacy-lts-series/5.9-series/index.html"><span itemprop="name">5.9 系列</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">5.9.9 的安卓版本</span><meta itemprop="position" content="4"></li>
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">类别</span><meta itemprop="position" content="2"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="更多"><i class="fa-fw fas fa-ellipsis-v"></i></button>
@@ -121,153 +109,14 @@
       <div id="R-main-overlay"></div>
       <main id="R-body-inner" class="highlightable default" tabindex="-1">
         <div class="flex-block-wrapper">
-          <article class="default">
+          <article>
             <header class="headline">
             </header>
-<h1 id="599-的安卓版本">5.9.9 的安卓版本</h1>
-
-
-<div class="box notices cstyle warning">
-  <div class="box-label"><i class="fas fa-exclamation-triangle"></i> 重要</div>
-  <div class="box-content">
-<p>
-这是最终版。即使有需求也不会再更新。构建环境已经爆破</div>
-</div>
-
-
-<div class="box notices cstyle info">
-  <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
-  <div class="box-content">
-
-<p>此版本中附带下列数据库：</p>
-<ol>
-<li>SQLite （随 Qt 一起分发）：使用 <code>-sql-sqlite</code> 内建在这份包里。</li>
-</ol></div>
-</div>
-
-
-<div class="box notices cstyle info">
-  <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
-  <div class="box-content">
-
-<p>所有构建使用 <code>-openssl-linked</code>，意味着 OpenSSL 链接到了 Qt，作为 TLS 后端来使用。<br>
-它链接到了静态的 OpenSSL 1.0.2 系列库。</p>
-<p>安卓从 6.0 版本开始使用 BoringSSL 作为内建的 SSL / TLS 库。<br>
-此库与 OpenSSL 的 API 不兼容！！所以无法使用。</p>
-</div>
-</div>
-
-
-<div class="box notices cstyle info">
-  <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
-  <div class="box-content">
-<p>
-所有构建配置了 <code>-no-icu</code> 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。</div>
-</div>
-
-<h2 id="动态--共享构建-ndk-r10e">动态 / 共享构建 （NDK r10e）</h2>
-
-<div class="box notices cstyle info">
-  <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
-  <div class="box-content">
-
-<p>使用 NDK r10e 版本，使用参数 <code>-android-ndk-platform android-16</code> 进行 32 位版本的构建。<br>
-这意味着这些构建只能在安卓 4.1 以及之后的版本上运行。</p>
-<p>64 位版则使用参数 <code>-android-ndk-platform android-21</code>。<br>
-由于 OpenSSL 1.0.2 系列还不支持 64 位安卓，我们临时使用 <code>./Configure linux-aarch64</code> 对 OpenSSL 进行配置。</p>
-<p>注意 NDK 并不提供二进制兼容性。<br>
-所以一定要使用与此版本 Qt 构建相同的 NDK 版本，不要遵从 Qt Creator 的建议。</p>
-</div>
-</div>
-<h3 id="交叉构建主机windows">交叉构建主机：Windows</h3>
-<table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.9.9-Android-arm-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z</b></th></tr></thead>
-        <tbody>
-            <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/Windows-x86_64-hosted/Qt5.9.9-Android-arm-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
-            </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 10 10.0.18363</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r10e</td></tr><tr><td width="20%"><b>安卓 NDK 下载：</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive green"><a href="https://dl.google.com/android/repository/android-ndk-r10e-windows-x86_64.zip" target="_blank"><span class="title">Android NDK r10e on Windows</span></a></span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
-        </tbody>
-    </table>
-<table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.9.9-Android-arm64-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z</b></th></tr></thead>
-        <tbody>
-            <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/Windows-x86_64-hosted/Qt5.9.9-Android-arm64-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
-            </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 10 10.0.18363</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r10e</td></tr><tr><td width="20%"><b>安卓 NDK 下载：</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive green"><a href="https://dl.google.com/android/repository/android-ndk-r10e-windows-x86_64.zip" target="_blank"><span class="title">Android NDK r10e on Windows</span></a></span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
-        </tbody>
-    </table>
-<table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.9.9-Android-x86-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z</b></th></tr></thead>
-        <tbody>
-            <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/Windows-x86_64-hosted/Qt5.9.9-Android-x86-gcc-NDKr10e-XWindows-x86_64-MinGW7.3.0-20200105.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
-            </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 10 10.0.18363</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r10e</td></tr><tr><td width="20%"><b>安卓 NDK 下载：</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive green"><a href="https://dl.google.com/android/repository/android-ndk-r10e-windows-x86_64.zip" target="_blank"><span class="title">Android NDK r10e on Windows</span></a></span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
-        </tbody>
-    </table>
-<h3 id="交叉构建主机linux">交叉构建主机：Linux</h3>
-<table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.9.9-Android-arm-gcc-NDKr10e-xLinux-x86_64-gcc8.3.1-20200201.tar.xz</b></th></tr></thead>
-        <tbody>
-            <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/Linux-x86_64-hosted/Qt5.9.9-Android-arm-gcc-NDKr10e-xLinux-x86_64-gcc8.3.1-20200201.tar.xz" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
-            </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">CentOS 8</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r10e</td></tr><tr><td width="20%"><b>安卓 NDK 下载：</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive green"><a href="https://dl.google.com/android/repository/android-ndk-r10e-linux-x86_64.zip" target="_blank"><span class="title">Android NDK r10e on Linux</span></a></span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
-        </tbody>
-    </table>
-<table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.9.9-Android-arm64-gcc-NDKr10e-xLinux-x86_64-gcc8.3.1-20200201.tar.xz</b></th></tr></thead>
-        <tbody>
-            <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/Linux-x86_64-hosted/Qt5.9.9-Android-arm64-gcc-NDKr10e-xLinux-x86_64-gcc8.3.1-20200201.tar.xz" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
-            </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">CentOS 8</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r10e</td></tr><tr><td width="20%"><b>安卓 NDK 下载：</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive green"><a href="https://dl.google.com/android/repository/android-ndk-r10e-linux-x86_64.zip" target="_blank"><span class="title">Android NDK r10e on Linux</span></a></span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
-        </tbody>
-    </table>
-<table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.9.9-Android-x86-gcc-NDKr10e-xLinux-x86_64-gcc8.3.1-20200201.tar.xz</b></th></tr></thead>
-        <tbody>
-            <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/Linux-x86_64-hosted/Qt5.9.9-Android-x86-gcc-NDKr10e-xLinux-x86_64-gcc8.3.1-20200201.tar.xz" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
-            </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">CentOS 8</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r10e</td></tr><tr><td width="20%"><b>安卓 NDK 下载：</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive green"><a href="https://dl.google.com/android/repository/android-ndk-r10e-linux-x86_64.zip" target="_blank"><span class="title">Android NDK r10e on Linux</span></a></span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
-        </tbody>
-    </table>
-<h3 id="交叉构建主机macos">交叉构建主机：macOS</h3>
-<table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.9.9-Android-arm-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz</b></th></tr></thead>
-        <tbody>
-            <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/macOS-x86_64-hosted/Qt5.9.9-Android-arm-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
-            </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 10.15</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r10e</td></tr><tr><td width="20%"><b>安卓 NDK 下载：</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive green"><a href="https://dl.google.com/android/repository/android-ndk-r10e-darwin-x86_64.zip" target="_blank"><span class="title">Android NDK r10e on macOS</span></a></span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
-        </tbody>
-    </table>
-<table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.9.9-Android-arm64-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz</b></th></tr></thead>
-        <tbody>
-            <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/macOS-x86_64-hosted/Qt5.9.9-Android-arm64-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
-            </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 10.15</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r10e</td></tr><tr><td width="20%"><b>安卓 NDK 下载：</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive green"><a href="https://dl.google.com/android/repository/android-ndk-r10e-darwin-x86_64.zip" target="_blank"><span class="title">Android NDK r10e on macOS</span></a></span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
-        </tbody>
-    </table>
-<table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.9.9-Android-x86-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz</b></th></tr></thead>
-        <tbody>
-            <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.9/Android/macOS-x86_64-hosted/Qt5.9.9-Android-x86-gcc-NDKr10e-xmacOS-x86_64-AppleClang11.0.0-20200105.tar.xz" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
-            </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 10.15</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">ndk r10e</td></tr><tr><td width="20%"><b>安卓 NDK 下载：</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive green"><a href="https://dl.google.com/android/repository/android-ndk-r10e-darwin-x86_64.zip" target="_blank"><span class="title">Android NDK r10e on macOS</span></a></span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
-        </tbody>
-    </table>
+<h1 id="类别">类别</h1>
 
             <footer class="footline">
             </footer>
-          </article>
-        </div>
+          </article>        </div>
       </main>
     </div>
     <aside id="R-sidebar" class="default-animation">
@@ -311,7 +160,7 @@
           <li data-nav-id="/qtcompile/miscellaneous/current-build-status/index.html" class=""><a class="padding" href="/qtcompile/miscellaneous/current-build-status/index.html">当前构建状态</a></li>
           <li data-nav-id="/qtcompile/miscellaneous/current-failures/index.html" class=""><a class="padding" href="/qtcompile/miscellaneous/current-failures/index.html">当前的失败项</a></li>
           <li data-nav-id="/qtcompile/miscellaneous/histories/index.html" class=""><a class="padding" href="/qtcompile/miscellaneous/histories/index.html">之前的历史</a></li></ul></li>
-          <li data-nav-id="/qtcompile/legacy-lts-series/index.html" class="parent "><a class="padding" href="/qtcompile/legacy-lts-series/index.html">遗留的长期支持版本系列</a><ul id="R-subsections-730218419a8619fdefe59e074e041861" class="morespace collapsible-menu">
+          <li data-nav-id="/qtcompile/legacy-lts-series/index.html" class=""><a class="padding" href="/qtcompile/legacy-lts-series/index.html">遗留的长期支持版本系列</a><ul id="R-subsections-730218419a8619fdefe59e074e041861" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/legacy-lts-series/4.8-series/index.html" class="alwaysopen"><a class="padding" href="/qtcompile/legacy-lts-series/4.8-series/index.html">4.8 系列</a><ul id="R-subsections-5a7aaa7fcfa9e44f9aa267a8a1b98ed7" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html" class=""><a class="padding" href="/qtcompile/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html">4.8.7 的 Windows 版本</a></li>
           <li data-nav-id="/qtcompile/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html" class=""><a class="padding" href="/qtcompile/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html">4.8.7 的 macOS 版本</a></li></ul></li>
@@ -319,10 +168,10 @@
           <li data-nav-id="/qtcompile/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html" class=""><a class="padding" href="/qtcompile/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html">5.6.3 的 Windows 版本</a></li>
           <li data-nav-id="/qtcompile/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html" class=""><a class="padding" href="/qtcompile/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html">5.6.3 的 macOS 版本</a></li>
           <li data-nav-id="/qtcompile/legacy-lts-series/5.6-series/5.6.3-for-android/index.html" class=""><a class="padding" href="/qtcompile/legacy-lts-series/5.6-series/5.6.3-for-android/index.html">5.6.3 的安卓版本</a></li></ul></li>
-          <li data-nav-id="/qtcompile/legacy-lts-series/5.9-series/index.html" class="parent alwaysopen"><a class="padding" href="/qtcompile/legacy-lts-series/5.9-series/index.html">5.9 系列</a><ul id="R-subsections-c8c1f21fb78dfca51b602bc79677a411" class="morespace collapsible-menu">
+          <li data-nav-id="/qtcompile/legacy-lts-series/5.9-series/index.html" class="alwaysopen"><a class="padding" href="/qtcompile/legacy-lts-series/5.9-series/index.html">5.9 系列</a><ul id="R-subsections-c8c1f21fb78dfca51b602bc79677a411" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/legacy-lts-series/5.9-series/5.9.9-for-windows/index.html" class=""><a class="padding" href="/qtcompile/legacy-lts-series/5.9-series/5.9.9-for-windows/index.html">5.9.9 的 Windows 版本</a></li>
           <li data-nav-id="/qtcompile/legacy-lts-series/5.9-series/5.9.9-for-macos/index.html" class=""><a class="padding" href="/qtcompile/legacy-lts-series/5.9-series/5.9.9-for-macos/index.html">5.9.9 的 macOS 版本</a></li>
-          <li data-nav-id="/qtcompile/legacy-lts-series/5.9-series/5.9.9-for-android/index.html" class="active"><a class="padding" href="/qtcompile/legacy-lts-series/5.9-series/5.9.9-for-android/index.html">5.9.9 的安卓版本</a></li></ul></li>
+          <li data-nav-id="/qtcompile/legacy-lts-series/5.9-series/5.9.9-for-android/index.html" class=""><a class="padding" href="/qtcompile/legacy-lts-series/5.9-series/5.9.9-for-android/index.html">5.9.9 的安卓版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/legacy-lts-series/5.12-series/index.html" class="alwaysopen"><a class="padding" href="/qtcompile/legacy-lts-series/5.12-series/index.html">5.12 系列</a><ul id="R-subsections-bf998861c2346df0882569093dd2357d" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/legacy-lts-series/5.12-series/5.12.12-for-windows/index.html" class=""><a class="padding" href="/qtcompile/legacy-lts-series/5.12-series/5.12.12-for-windows/index.html">5.12.12 的 Windows 版本</a></li>
           <li data-nav-id="/qtcompile/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html" class=""><a class="padding" href="/qtcompile/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html">5.12.12 的 macOS 版本</a></li>
@@ -349,8 +198,8 @@
                   <div class="control-style">
                     <label class="a11y-only" for="R-select-language">语言</label>
                     <select id="R-select-language" onchange="location = baseUri + this.value;">
-                      <option id="R-zh-cn" value="/qtcompile/legacy-lts-series/5.9-series/5.9.9-for-android/index.html" lang="zh-cn" selected>简体中文（中国）</option>
-                      <option id="R-en" value="/qtcompile/en/legacy-lts-series/5.9-series/5.9.9-for-android/index.html" lang="en">English</option>
+                      <option id="R-zh-cn" value="/qtcompile/categories/index.html" lang="zh-cn" selected>简体中文（中国）</option>
+                      <option id="R-en" value="/qtcompile/en/categories/index.html" lang="en">English</option>
                     </select>
                   </div>
                   <div class="clear"></div>
@@ -392,7 +241,7 @@
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Wed, 13 Mar 2024 08:40:00 CST</p>
+Site generated: Wed, 13 Mar 2024 08:39:59 CST</p>
 
           </div>
         </div>

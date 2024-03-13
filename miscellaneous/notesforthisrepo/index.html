@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.122.0">
-    <meta name="generator" content="Relearn 5.24.1">
+    <meta name="generator" content="Hugo 0.123.8">
+    <meta name="generator" content="Relearn 5.25.0">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>本版本库的一些备注 :: Fsu0413 的原版 Qt 构建</title>
@@ -354,11 +354,6 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 </thead>
 <tbody>
 <tr>
-<td>5.15.13</td>
-<td>2023 年 3 月 9 日</td>
-<td>2024 年 3 月 9 日</td>
-</tr>
-<tr>
 <td>5.15.14</td>
 <td>2023 年 5 月 25 日</td>
 <td>2024 年 5 月 25 日</td>
@@ -398,6 +393,11 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 <td>2024 年 1 月 11 日</td>
 <td>2025 年 1 月 11 日</td>
 </tr>
+<tr>
+<td>6.5.5</td>
+<td>2024 年 3 月 4 日</td>
+<td>2025 年 3 月 4 日</td>
+</tr>
 </tbody>
 </table>
 <h2 id="之后可能会更新的内容">之后可能会更新的内容</h2>
@@ -414,7 +414,7 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 <thead>
 <tr>
 <th>问题 \ Qt 版本</th>
-<th>5.15.12</th>
+<th>5.15.13</th>
 <th>6.2.7</th>
 <th>6.5.3</th>
 </tr>
@@ -422,7 +422,7 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 <tbody>
 <tr>
 <td>CVE-2023-24607</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-24607-qtbase-5.15.diff" target="_blank">√</a> （5.15.13）</td>
+<td>附带</td>
 <td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-24607-qtbase-6.2.diff" target="_blank">√</a> （6.2.8）</td>
 <td>-</td>
 </tr>
@@ -465,13 +465,13 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 <tr>
 <td>CVE-2023-37369</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-37369-qtbase-5.15.diff" target="_blank">√</a> （5.15.15）</td>
-<td><a title="官方补丁冲突，依赖 Qt 6.2.9 上的一个提交，暂无发行版与项目解决冲突。已放弃调查"><strong>×</strong></a> （6.2.10）</td>
+<td><a href="/qtcompile/miscellaneous/notesforthisrepo/index.html" title="官方补丁冲突，依赖 Qt 6.2.9 上的一个提交，暂无发行版与项目解决冲突。已放弃调查"><strong>×</strong></a> （6.2.10）</td>
 <td>附带</td>
 </tr>
 <tr>
 <td>CVE-2023-38197</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-38197-qtbase-5.15.diff" target="_blank">√</a> （5.15.15）</td>
-<td><a title="依赖 CVE-2023-37369 的补丁"><strong>×</strong></a> （6.2.10）</td>
+<td><a href="/qtcompile/miscellaneous/notesforthisrepo/index.html" title="依赖 CVE-2023-37369 的补丁"><strong>×</strong></a> （6.2.10）</td>
 <td>附带</td>
 </tr>
 <tr>
@@ -483,13 +483,13 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 <tr>
 <td>CVE-2023-4863</td>
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-4863-5.15.patch" target="_blank">√</a> （5.15.16）</td>
-<td><a title="官方补丁冲突。由于只有第三方库更新，直接等新版应该更靠谱"><strong>×</strong></a> （6.2.10）</td>
+<td><a href="/qtcompile/miscellaneous/notesforthisrepo/index.html" title="官方补丁冲突。由于只有第三方库更新，直接等新版应该更靠谱"><strong>×</strong></a> （6.2.10）</td>
 <td>附带</td>
 </tr>
 <tr>
 <td>CVE-2023-45872</td>
 <td>-</td>
-<td><a title="官方补丁冲突。原因未知且没有调查计划"><strong>×</strong></a> （6.2.11）</td>
+<td><a href="/qtcompile/miscellaneous/notesforthisrepo/index.html" title="官方补丁冲突。原因未知且没有调查计划"><strong>×</strong></a> （6.2.11）</td>
 <td>-</td>
 </tr>
 <tr>
@@ -503,6 +503,34 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 <td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2024-25580-qtbase-5.15.diff" target="_blank">√</a> （5.15.17）</td>
 <td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2024-25580-qtbase-6.2.diff" target="_blank">√</a> （6.2.12）</td>
 <td><a href="https://download.qt.io/official_releases/qt/6.5/CVE-2024-25580-qtbase-6.5.diff" target="_blank">√</a> （6.5.5）</td>
+</tr>
+</tbody>
+</table>
+<p>从 2024 年 3 月 12 日开始我的 Qt 构建会包含一些简单的关于构建问题的修复。<br>
+目前只有 LTS 版本应用这些补丁。</p>
+<table>
+<thead>
+<tr>
+<th>问题 \ Qt 版本</th>
+<th>5.15.13</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>使用 <code>_WIN32_WINNT</code> 的默认值为 <code>0x0A00</code> 的新版 MinGW-w64 上 Qt 5.15 系列无法构建</td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase.diff" target="_blank">2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase.diff</a></td>
+</tr>
+<tr>
+<td>使用 GCC 11 或更新的版本无法构建 Qt 5.15 系列上的 <code>angle</code></td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-angle-fix-build-on-gcc11-qtbase.diff" target="_blank">2024-Fs-angle-fix-build-on-gcc11-qtbase.diff</a></td>
+</tr>
+<tr>
+<td>Qt 5.15 系列的 <code>d3d12</code> Qt Quick Scene Graph 插件无法找到 <code>fxc</code>，并且找不到 <code>_uuidof</code> 函数</td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-d3d12-fix-compile-with-later-mingw-qtdeclarative.diff" target="_blank">2024-Fs-d3d12-fix-compile-with-later-mingw-qtdeclarative.diff</a></td>
+</tr>
+<tr>
+<td>使用 Android NDK r25 或更新的版本无法构建 Qt 5.15 和 6.2 系列</td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase.diff" target="_blank">2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase.diff</a></td>
 </tr>
 </tbody>
 </table>
@@ -529,44 +557,44 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
       <div id="R-content-wrapper" class="highlightable">
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
-          <li data-nav-id="/qtcompile/5.15-series/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/index.html">5.15 系列</a><ul id="R-subsections-6265c888ec9e92bab195ca36e833839a" class="morespace collapsible-menu">
-          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-windows/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-windows/index.html">5.15.12 的 Windows 版本</a></li>
-          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-macos/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-macos/index.html">5.15.12 的 macOS 版本</a></li>
-          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-android/index.html">5.15.12 的安卓版本</a></li>
-          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-webassembly/index.html">5.15.12 的 WebAssembly 版本</a></li></ul></li>
-          <li data-nav-id="/qtcompile/6.2-series/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/index.html">6.2 系列</a><ul id="R-subsections-106fe2487cf90a2754e3f4a06da071f3" class="morespace collapsible-menu">
+          <li data-nav-id="/qtcompile/5.15-series/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/index.html">5.15 系列</a><ul id="R-subsections-d374b83d03acc30b906324bf7f6b9899" class="morespace collapsible-menu">
+          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-windows/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-windows/index.html">5.15.13 的 Windows 版本</a></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-macos/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-macos/index.html">5.15.13 的 macOS 版本</a></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-android/index.html">5.15.13 的安卓版本</a></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-webassembly/index.html">5.15.13 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/qtcompile/6.2-series/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/index.html">6.2 系列</a><ul id="R-subsections-f3427fcbeda6da3be7e077b630aae545" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-windows/index.html">6.2.7 的 Windows 版本</a></li>
           <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-macos/index.html">6.2.7 的 macOS 版本</a></li>
           <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-android/index.html">6.2.7 的安卓版本</a></li>
           <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-webassembly/index.html">6.2.7 的 WebAssembly 版本</a></li></ul></li>
-          <li data-nav-id="/qtcompile/6.5-series/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/index.html">6.5 系列</a><ul id="R-subsections-a4a8142fcca3c91cc086ca3a4afab485" class="morespace collapsible-menu">
+          <li data-nav-id="/qtcompile/6.5-series/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/index.html">6.5 系列</a><ul id="R-subsections-18a4c979f7cbac2afeb0fd2f6e4dfee1" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/6.5-series/6.5.3-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.3-for-windows/index.html">6.5.3 的 Windows 版本</a></li>
           <li data-nav-id="/qtcompile/6.5-series/6.5.3-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.3-for-macos/index.html">6.5.3 的 macOS 版本</a></li>
           <li data-nav-id="/qtcompile/6.5-series/6.5.3-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.3-for-android/index.html">6.5.3 的安卓版本</a></li>
           <li data-nav-id="/qtcompile/6.5-series/6.5.3-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.3-for-webassembly/index.html">6.5.3 的 WebAssembly 版本</a></li></ul></li>
-          <li data-nav-id="/qtcompile/6.6-series/index.html" class=""><a class="padding" href="/qtcompile/6.6-series/index.html">6.6 系列</a><ul id="R-subsections-1ed6b84157e01806d9a8b5df1e4be9ef" class="morespace collapsible-menu">
+          <li data-nav-id="/qtcompile/6.6-series/index.html" class=""><a class="padding" href="/qtcompile/6.6-series/index.html">6.6 系列</a><ul id="R-subsections-a9e8a8520a9b963200eae23933ab25ff" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/6.6-series/6.6.0-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.6-series/6.6.0-for-windows/index.html">6.6.2 的 Windows 版本</a></li>
           <li data-nav-id="/qtcompile/6.6-series/6.6.0-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.6-series/6.6.0-for-macos/index.html">6.6.2 的 macOS 版本</a></li>
           <li data-nav-id="/qtcompile/6.6-series/6.6.0-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.6-series/6.6.0-for-android/index.html">6.6.2 的安卓版本</a></li>
           <li data-nav-id="/qtcompile/6.6-series/6.6.0-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.6-series/6.6.0-for-webassembly/index.html">6.6.2 的 WebAssembly 版本</a></li></ul></li>
-          <li data-nav-id="/qtcompile/miscellaneous/index.html" class="parent "><a class="padding" href="/qtcompile/miscellaneous/index.html">杂项</a><ul id="R-subsections-caff385dd336661e79f294480ee20799" class="morespace collapsible-menu">
+          <li data-nav-id="/qtcompile/miscellaneous/index.html" class="parent "><a class="padding" href="/qtcompile/miscellaneous/index.html">杂项</a><ul id="R-subsections-fbd0e6ecd70e8ab847a5d20136c55334" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/miscellaneous/notesforthisrepo/index.html" class="active"><a class="padding" href="/qtcompile/miscellaneous/notesforthisrepo/index.html">本版本库的一些备注</a></li>
           <li data-nav-id="/qtcompile/miscellaneous/current-build-status/index.html" class=""><a class="padding" href="/qtcompile/miscellaneous/current-build-status/index.html">当前构建状态</a></li>
           <li data-nav-id="/qtcompile/miscellaneous/current-failures/index.html" class=""><a class="padding" href="/qtcompile/miscellaneous/current-failures/index.html">当前的失败项</a></li>
           <li data-nav-id="/qtcompile/miscellaneous/histories/index.html" class=""><a class="padding" href="/qtcompile/miscellaneous/histories/index.html">之前的历史</a></li></ul></li>
-          <li data-nav-id="/qtcompile/legacy-lts-series/index.html" class=""><a class="padding" href="/qtcompile/legacy-lts-series/index.html">遗留的长期支持版本系列</a><ul id="R-subsections-2da9a100302eca246d29f40ea41d2bf7" class="morespace collapsible-menu">
-          <li data-nav-id="/qtcompile/legacy-lts-series/4.8-series/index.html" class="alwaysopen"><a class="padding" href="/qtcompile/legacy-lts-series/4.8-series/index.html">4.8 系列</a><ul id="R-subsections-6243f73e32eaaf24308f7dbe5cb00e04" class="morespace collapsible-menu">
+          <li data-nav-id="/qtcompile/legacy-lts-series/index.html" class=""><a class="padding" href="/qtcompile/legacy-lts-series/index.html">遗留的长期支持版本系列</a><ul id="R-subsections-730218419a8619fdefe59e074e041861" class="morespace collapsible-menu">
+          <li data-nav-id="/qtcompile/legacy-lts-series/4.8-series/index.html" class="alwaysopen"><a class="padding" href="/qtcompile/legacy-lts-series/4.8-series/index.html">4.8 系列</a><ul id="R-subsections-5a7aaa7fcfa9e44f9aa267a8a1b98ed7" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html" class=""><a class="padding" href="/qtcompile/legacy-lts-series/4.8-series/4.8.7-for-windows/index.html">4.8.7 的 Windows 版本</a></li>
           <li data-nav-id="/qtcompile/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html" class=""><a class="padding" href="/qtcompile/legacy-lts-series/4.8-series/4.8.7-for-macos/index.html">4.8.7 的 macOS 版本</a></li></ul></li>
-          <li data-nav-id="/qtcompile/legacy-lts-series/5.6-series/index.html" class="alwaysopen"><a class="padding" href="/qtcompile/legacy-lts-series/5.6-series/index.html">5.6 系列</a><ul id="R-subsections-5ca2792ddc9a9825cf8ec8f6764a4097" class="morespace collapsible-menu">
+          <li data-nav-id="/qtcompile/legacy-lts-series/5.6-series/index.html" class="alwaysopen"><a class="padding" href="/qtcompile/legacy-lts-series/5.6-series/index.html">5.6 系列</a><ul id="R-subsections-bbc786282a85026b96f7cc14b5daa443" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html" class=""><a class="padding" href="/qtcompile/legacy-lts-series/5.6-series/5.6.3-for-windows/index.html">5.6.3 的 Windows 版本</a></li>
           <li data-nav-id="/qtcompile/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html" class=""><a class="padding" href="/qtcompile/legacy-lts-series/5.6-series/5.6.3-for-macos/index.html">5.6.3 的 macOS 版本</a></li>
           <li data-nav-id="/qtcompile/legacy-lts-series/5.6-series/5.6.3-for-android/index.html" class=""><a class="padding" href="/qtcompile/legacy-lts-series/5.6-series/5.6.3-for-android/index.html">5.6.3 的安卓版本</a></li></ul></li>
-          <li data-nav-id="/qtcompile/legacy-lts-series/5.9-series/index.html" class="alwaysopen"><a class="padding" href="/qtcompile/legacy-lts-series/5.9-series/index.html">5.9 系列</a><ul id="R-subsections-b9f9d985d68e657d4e7d74700e7241c3" class="morespace collapsible-menu">
+          <li data-nav-id="/qtcompile/legacy-lts-series/5.9-series/index.html" class="alwaysopen"><a class="padding" href="/qtcompile/legacy-lts-series/5.9-series/index.html">5.9 系列</a><ul id="R-subsections-c8c1f21fb78dfca51b602bc79677a411" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/legacy-lts-series/5.9-series/5.9.9-for-windows/index.html" class=""><a class="padding" href="/qtcompile/legacy-lts-series/5.9-series/5.9.9-for-windows/index.html">5.9.9 的 Windows 版本</a></li>
           <li data-nav-id="/qtcompile/legacy-lts-series/5.9-series/5.9.9-for-macos/index.html" class=""><a class="padding" href="/qtcompile/legacy-lts-series/5.9-series/5.9.9-for-macos/index.html">5.9.9 的 macOS 版本</a></li>
           <li data-nav-id="/qtcompile/legacy-lts-series/5.9-series/5.9.9-for-android/index.html" class=""><a class="padding" href="/qtcompile/legacy-lts-series/5.9-series/5.9.9-for-android/index.html">5.9.9 的安卓版本</a></li></ul></li>
-          <li data-nav-id="/qtcompile/legacy-lts-series/5.12-series/index.html" class="alwaysopen"><a class="padding" href="/qtcompile/legacy-lts-series/5.12-series/index.html">5.12 系列</a><ul id="R-subsections-8f2a6bd86210a6244fd0ff0c916f8279" class="morespace collapsible-menu">
+          <li data-nav-id="/qtcompile/legacy-lts-series/5.12-series/index.html" class="alwaysopen"><a class="padding" href="/qtcompile/legacy-lts-series/5.12-series/index.html">5.12 系列</a><ul id="R-subsections-bf998861c2346df0882569093dd2357d" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/legacy-lts-series/5.12-series/5.12.12-for-windows/index.html" class=""><a class="padding" href="/qtcompile/legacy-lts-series/5.12-series/5.12.12-for-windows/index.html">5.12.12 的 Windows 版本</a></li>
           <li data-nav-id="/qtcompile/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html" class=""><a class="padding" href="/qtcompile/legacy-lts-series/5.12-series/5.12.12-for-macos/index.html">5.12.12 的 macOS 版本</a></li>
           <li data-nav-id="/qtcompile/legacy-lts-series/5.12-series/5.12.12-for-android/index.html" class=""><a class="padding" href="/qtcompile/legacy-lts-series/5.12-series/5.12.12-for-android/index.html">5.12.12 的安卓版本</a></li>
@@ -635,7 +663,7 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sun, 18 Feb 2024 14:01:09 CST</p>
+Site generated: Wed, 13 Mar 2024 08:40:00 CST</p>
 
           </div>
         </div>
