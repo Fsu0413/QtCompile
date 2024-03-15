@@ -270,9 +270,12 @@ Version number in brackets are the version when the corresponding patch will be 
 Starting from {{% date 2024 3 12 %}} I provided some simple fixes about build problem.  
 Currently only LTS version will be patched.
 
-| Issue \ Qt Version | 5.15.13 |
-|-|-|
-| Qt 5.15 series can't be built using later MinGW-w64 which has its `_WIN32_WINNT` defaults to `0x0A00` | [2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase.diff) |
-| Qt 5.15 series `angle` can't be built using GCC 11 or later | [2024-Fs-angle-fix-build-on-gcc11-qtbase.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-angle-fix-build-on-gcc11-qtbase.diff) |
-| Qt 5.15 series `d3d12` Qt Quick Scene Graph plugin can't find `fxc`, and can't find `_uuidof` function | [2024-Fs-d3d12-fix-compile-with-later-mingw-qtdeclarative.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-d3d12-fix-compile-with-later-mingw-qtdeclarative.diff) |
-| Qt 5.15 and 6.2 series can't be built using Android NDK r25 or later | [2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase.diff) |
+| Issue \ Qt Version | 5.15.13 | 6.2.7 | 6.5.3 |
+|-|-|-|-|
+| Qt 5.15 series can't be built using later MinGW-w64 which has its `_WIN32_WINNT` defaults to `0x0A00` | [2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase-5.15.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase-5.15.diff) | - | - |
+| Qt 5.15 series `angle` can't be built using GCC 11 or later | [2024-Fs-angle-fix-build-on-gcc11-qtbase-5.15.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-angle-fix-build-on-gcc11-qtbase-5.15.diff) | - | - |
+| Qt 5.15 series `d3d12` Qt Quick Scene Graph plugin can't find `fxc`, and can't find `_uuidof` function | [2024-Fs-d3d12-fix-compile-with-later-mingw-qtdeclarative-5.15.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-d3d12-fix-compile-with-later-mingw-qtdeclarative-5.15.diff) | - | - |
+| Qt 5.15 and 6.2 series can't be built using Android NDK r25 or later | [2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase-5.15.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase-5.15.diff) | [2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase-6.2.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase-6.2.diff) | - |
+| Qt 6.2 series QtShaderTools can't build using GCC 13 | - | [2024-Fs-glslang-fix-GCC-13-builds-qtshadertools-6.2.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-glslang-fix-GCC-13-builds-qtshadertools-6.2.diff) | - |
+| Qt 6.2 and 6.5 series Qt3D can't build using GCC 13 | - | [2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.2.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.2.diff) | [2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.5.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.5/2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.5.diff) |
+| Qt 6.2 series QtQuick3D can't build using GCC 13 | - | [2024-Fs-qtquick3dassimp-fix-GCC-13-builds-qtquick3d-6.2.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-qtquick3dassimp-fix-GCC-13-builds-qtquick3d-6.2.diff) | - |

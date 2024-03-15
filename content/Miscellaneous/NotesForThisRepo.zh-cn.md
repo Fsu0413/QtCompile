@@ -270,9 +270,12 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 从 {{% date 2024 3 12 %}}开始我的 Qt 构建会包含一些简单的关于构建问题的修复。  
 目前只有 LTS 版本应用这些补丁。
 
-| 问题 \ Qt 版本 | 5.15.13 |
-|-|-|
-| 使用 `_WIN32_WINNT` 的默认值为 `0x0A00` 的新版 MinGW-w64 上 Qt 5.15 系列无法构建 | [2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase.diff) |
-| 使用 GCC 11 或更新的版本无法构建 Qt 5.15 系列上的 `angle` | [2024-Fs-angle-fix-build-on-gcc11-qtbase.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-angle-fix-build-on-gcc11-qtbase.diff) |
-| Qt 5.15 系列的 `d3d12` Qt Quick Scene Graph 插件无法找到 `fxc`，并且找不到 `_uuidof` 函数 | [2024-Fs-d3d12-fix-compile-with-later-mingw-qtdeclarative.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-d3d12-fix-compile-with-later-mingw-qtdeclarative.diff) |
-| 使用 Android NDK r25 或更新的版本无法构建 Qt 5.15 和 6.2 系列 | [2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase.diff) |
+| 问题 \ Qt 版本 | 5.15.13 | 6.2.7 | 6.5.3 |
+|-|-|-|-|
+| 使用 `_WIN32_WINNT` 的默认值为 `0x0A00` 的新版 MinGW-w64 上 Qt 5.15 系列无法构建 | [2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase-5.15.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase-5.15.diff) | - | - |
+| 使用 GCC 11 或更新的版本无法构建 Qt 5.15 系列上的 `angle` | [2024-Fs-angle-fix-build-on-gcc11-qtbase-5.15.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-angle-fix-build-on-gcc11-qtbase-5.15.diff) | - | - |
+| Qt 5.15 系列的 `d3d12` Qt Quick Scene Graph 插件无法找到 `fxc`，并且找不到 `_uuidof` 函数 | [2024-Fs-d3d12-fix-compile-with-later-mingw-qtdeclarative-5.15.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-d3d12-fix-compile-with-later-mingw-qtdeclarative-5.15.diff) | - | - |
+| 使用 Android NDK r25 或更新的版本无法构建 Qt 5.15 和 6.2 系列 | [2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase-5.15.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase-5.15.diff) | [2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase-6.2.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase-6.2.diff) | - |
+| 使用 GCC 13 无法构建 Qt 6.2 系列上的 QtShaderTools | - | [2024-Fs-glslang-fix-GCC-13-builds-qtshadertools-6.2.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-glslang-fix-GCC-13-builds-qtshadertools-6.2.diff) | - |
+| 使用 GCC 13 无法构建 Qt 6.2 和 6.5 系列上的 Qt3D | - | [2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.2.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.2.diff) | [2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.5.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.5/2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.5.diff) |
+| 使用 GCC 13 无法构建 Qt 6.2 系列上的 QtQuick3D | - | [2024-Fs-qtquick3dassimp-fix-GCC-13-builds-qtquick3d-6.2.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-qtquick3dassimp-fix-GCC-13-builds-qtquick3d-6.2.diff) | - |
