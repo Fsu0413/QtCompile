@@ -513,24 +513,52 @@ Currently only LTS version will be patched.</p>
 <tr>
 <th>Issue \ Qt Version</th>
 <th>5.15.13</th>
+<th>6.2.7</th>
+<th>6.5.3</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Qt 5.15 series can&rsquo;t be built using later MinGW-w64 which has its <code>_WIN32_WINNT</code> defaults to <code>0x0A00</code></td>
-<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase.diff" target="_blank">2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase.diff</a></td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase-5.15.diff" target="_blank">2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase-5.15.diff</a></td>
+<td>-</td>
+<td>-</td>
 </tr>
 <tr>
 <td>Qt 5.15 series <code>angle</code> can&rsquo;t be built using GCC 11 or later</td>
-<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-angle-fix-build-on-gcc11-qtbase.diff" target="_blank">2024-Fs-angle-fix-build-on-gcc11-qtbase.diff</a></td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-angle-fix-build-on-gcc11-qtbase-5.15.diff" target="_blank">2024-Fs-angle-fix-build-on-gcc11-qtbase-5.15.diff</a></td>
+<td>-</td>
+<td>-</td>
 </tr>
 <tr>
 <td>Qt 5.15 series <code>d3d12</code> Qt Quick Scene Graph plugin can&rsquo;t find <code>fxc</code>, and can&rsquo;t find <code>_uuidof</code> function</td>
-<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-d3d12-fix-compile-with-later-mingw-qtdeclarative.diff" target="_blank">2024-Fs-d3d12-fix-compile-with-later-mingw-qtdeclarative.diff</a></td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-d3d12-fix-compile-with-later-mingw-qtdeclarative-5.15.diff" target="_blank">2024-Fs-d3d12-fix-compile-with-later-mingw-qtdeclarative-5.15.diff</a></td>
+<td>-</td>
+<td>-</td>
 </tr>
 <tr>
 <td>Qt 5.15 and 6.2 series can&rsquo;t be built using Android NDK r25 or later</td>
-<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase.diff" target="_blank">2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase.diff</a></td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase-5.15.diff" target="_blank">2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase-5.15.diff</a></td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase-6.2.diff" target="_blank">2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase-6.2.diff</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>Qt 6.2 series QtShaderTools can&rsquo;t build using GCC 13</td>
+<td>-</td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-glslang-fix-GCC-13-builds-qtshadertools-6.2.diff" target="_blank">2024-Fs-glslang-fix-GCC-13-builds-qtshadertools-6.2.diff</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>Qt 6.2 and 6.5 series Qt3D can&rsquo;t build using GCC 13</td>
+<td>-</td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.2.diff" target="_blank">2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.2.diff</a></td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.5/2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.5.diff" target="_blank">2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.5.diff</a></td>
+</tr>
+<tr>
+<td>Qt 6.2 series QtQuick3D can&rsquo;t build using GCC 13</td>
+<td>-</td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-qtquick3dassimp-fix-GCC-13-builds-qtquick3d-6.2.diff" target="_blank">2024-Fs-qtquick3dassimp-fix-GCC-13-builds-qtquick3d-6.2.diff</a></td>
+<td>-</td>
 </tr>
 </tbody>
 </table>
@@ -663,7 +691,7 @@ Currently only LTS version will be patched.</p>
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Wed, 13 Mar 2024 08:39:53 CST</p>
+Site generated: Fri, 15 Mar 2024 08:31:53 CST</p>
 
           </div>
         </div>

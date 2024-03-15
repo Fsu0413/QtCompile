@@ -513,24 +513,52 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 <tr>
 <th>问题 \ Qt 版本</th>
 <th>5.15.13</th>
+<th>6.2.7</th>
+<th>6.5.3</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>使用 <code>_WIN32_WINNT</code> 的默认值为 <code>0x0A00</code> 的新版 MinGW-w64 上 Qt 5.15 系列无法构建</td>
-<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase.diff" target="_blank">2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase.diff</a></td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase-5.15.diff" target="_blank">2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase-5.15.diff</a></td>
+<td>-</td>
+<td>-</td>
 </tr>
 <tr>
 <td>使用 GCC 11 或更新的版本无法构建 Qt 5.15 系列上的 <code>angle</code></td>
-<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-angle-fix-build-on-gcc11-qtbase.diff" target="_blank">2024-Fs-angle-fix-build-on-gcc11-qtbase.diff</a></td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-angle-fix-build-on-gcc11-qtbase-5.15.diff" target="_blank">2024-Fs-angle-fix-build-on-gcc11-qtbase-5.15.diff</a></td>
+<td>-</td>
+<td>-</td>
 </tr>
 <tr>
 <td>Qt 5.15 系列的 <code>d3d12</code> Qt Quick Scene Graph 插件无法找到 <code>fxc</code>，并且找不到 <code>_uuidof</code> 函数</td>
-<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-d3d12-fix-compile-with-later-mingw-qtdeclarative.diff" target="_blank">2024-Fs-d3d12-fix-compile-with-later-mingw-qtdeclarative.diff</a></td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-d3d12-fix-compile-with-later-mingw-qtdeclarative-5.15.diff" target="_blank">2024-Fs-d3d12-fix-compile-with-later-mingw-qtdeclarative-5.15.diff</a></td>
+<td>-</td>
+<td>-</td>
 </tr>
 <tr>
 <td>使用 Android NDK r25 或更新的版本无法构建 Qt 5.15 和 6.2 系列</td>
-<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase.diff" target="_blank">2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase.diff</a></td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase-5.15.diff" target="_blank">2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase-5.15.diff</a></td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase-6.2.diff" target="_blank">2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase-6.2.diff</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>使用 GCC 13 无法构建 Qt 6.2 系列上的 QtShaderTools</td>
+<td>-</td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-glslang-fix-GCC-13-builds-qtshadertools-6.2.diff" target="_blank">2024-Fs-glslang-fix-GCC-13-builds-qtshadertools-6.2.diff</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>使用 GCC 13 无法构建 Qt 6.2 和 6.5 系列上的 Qt3D</td>
+<td>-</td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.2.diff" target="_blank">2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.2.diff</a></td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.5/2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.5.diff" target="_blank">2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.5.diff</a></td>
+</tr>
+<tr>
+<td>使用 GCC 13 无法构建 Qt 6.2 系列上的 QtQuick3D</td>
+<td>-</td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-qtquick3dassimp-fix-GCC-13-builds-qtquick3d-6.2.diff" target="_blank">2024-Fs-qtquick3dassimp-fix-GCC-13-builds-qtquick3d-6.2.diff</a></td>
+<td>-</td>
 </tr>
 </tbody>
 </table>
@@ -663,7 +691,7 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Wed, 13 Mar 2024 08:39:55 CST</p>
+Site generated: Fri, 15 Mar 2024 08:31:53 CST</p>
 
           </div>
         </div>
