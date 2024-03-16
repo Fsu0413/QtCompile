@@ -4,6 +4,17 @@ draft: false
 weight: 4
 ---
 
+## {{% date 2024 2 17 %}}
+Update Qt 6.6.2.    
+Apply patches of CVE-2024-25580 for all LTS Qt versions.    
+Restored Android API Level since the updated API level makes programs using this Qt unable to be installed in lower version of Android.
+
+Remove builds of llvm-mingw 15.0.0 on Windows.
+
+## {{% date 2024 2 7 %}}
+Update Qt 5.15 & 6.2.7 & 6.5.3 Android version with updated API level.  
+Update OpenSSL to 3.0.13.
+
 ## {{% date 2023 12 25 %}}
 Update Qt 5.15.12 & 6.2.7 with existing patches.   
 Apply patches of CVE-2023-51714 ~~which is not yet announced by tQtC~~ for all LTS Qt versions.
@@ -56,7 +67,7 @@ OSDN service is temporarily stopping from being used due to technical problem. C
 ## {{% date 2023 6 14 %}}
 Update Qt 5.15.10 series with QtWebEngine / QtScript 5.15.14.  
 Apply patch for CVE-2023-34410 in all supported 5.15.10 and 6.2.4 versions.  
-Update LLVM-MinGW to 20230603. Qt 6.2.4 and Qt 6.5.1 LLVM-MinGW packages are rebuilt.
+Update llvm-mingw to 20230603. Qt 6.2.4 and Qt 6.5.1 llvm-mingw packages are rebuilt.
 
 OSDN Chamber is deleted. All file hosting service are migrated to Project.
 
@@ -155,7 +166,7 @@ Add Simplified Chinese to website.
 ## {{% date 2022 10 4 %}}
 Update Qt 6.4.0.  
 Update Qt 6.2.4 static builds with static runtime. Previous versions are without it.  
-Update Qt 6.2.4 LLVM-MinGW builds built with llvm 15.
+Update Qt 6.2.4 llvm-mingw builds built with llvm 15.
 
 Qt 6.3 builds are removed.
 
@@ -165,8 +176,8 @@ Update to Xcode 14 and rebuild all of macOS hosted Qt 6.2 onwards.
 
 ## {{% date 2022 9 12 %}}
 Update Qt 6.2.4 / 6.3.2 WebAssembly packages. They are currently built using PCH.  
-Update Qt 6.2.4 / 6.3.2 LLVM-MinGW packages. They are currently built with WMF support.  
-Update Qt 6.4.0-beta4. All configuration from previous 6.3 are available. RockyLinux 9 is used for Qt 6.4.0 Linux hosted build. WebAssembly and LLVM-MinGW packages are built using updated configuration today.
+Update Qt 6.2.4 / 6.3.2 llvm-mingw packages. They are currently built with WMF support.  
+Update Qt 6.4.0-beta4. All configuration from previous 6.3 are available. RockyLinux 9 is used for Qt 6.4.0 Linux hosted build. WebAssembly and llvm-mingw packages are built using updated configuration today.
 
 ## {{% date 2022 9 11 %}}
 Update Qt 6.3.2 with OpenSSL 3.0.5.  

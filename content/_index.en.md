@@ -33,22 +33,20 @@ Thanks for The Qt Company Ltd. and the programmers of Qt for their fantastic wor
 
 ## Update History
 
+### {{% date 2024 3 16 %}}
+Update Visual Studio 2022 to 17.9.3, rebuild all VS2022 packages (except for static one)    
+Build Qt 5.15 with [llvm-mingw](https://github.com/mstorsjo/llvm-mingw), now with Clang version 16, 17 and 18 series.  
+Upload builds of Qt 6.2 / 6.5 / 6.6 with llvm-mingw 18 series.    
+Build Qt 6.2 with Android NDK r25c.    
+Build Qt 6.2 and 6.5 with MinGW w/ GCC 13 series.
+
+Got a cold, ke ke ke....
+
 ### {{% date 2024 3 12 %}}
 Update Qt 5.15.13.  
 Update Visual Studio 2022 to 17.9.2.
 
 Patch Qt 5.15 series to be built with newer MinGW-w64 and Android NDK versions.
-
-### {{% date 2024 2 17 %}}
-Update Qt 6.6.2.    
-Apply patches of CVE-2024-25580 for all LTS Qt versions.    
-Restored Android API Level since the updated API level makes programs using this Qt unable to be installed in lower version of Android.
-
-Remove builds of MinGW-LLVM 15.0.0 on Windows.
-
-### {{% date 2024 2 7 %}}
-Update Qt 5.15 & 6.2.7 & 6.5.3 Android version with updated API level.  
-Update OpenSSL to 3.0.13.
 
 ### Before Jan. 2024
 

@@ -4,6 +4,17 @@ draft: false
 weight: 4
 ---
 
+## {{% date 2024 2 17 %}}
+更新 Qt 6.6.2。  
+为所有长期支持版本的 Qt 应用 CVE-2024-25580 的补丁。  
+复原安卓 API Level，原因是使用提升了的 API Level 构建 Qt 会导致低版本安卓无法安装使用这份 Qt 的程序。
+
+删除 Windows 平台使用 MinGW-LLVM 15.0.0 的构建。
+
+## {{% date 2024 2 7 %}}
+更新 Qt 5.15、6.2.7 和 6.5.3 的安卓版，提升了 API level。  
+更新 OpenSSL 到 3.0.13。
+
 ## {{% date 2023 12 25 %}}
 更新 Qt 5.15.12 和 6.2.7。附带所有已有补丁。   
 为所有长期支持版本的 Qt 应用 ~~Qt 公司尚未发布公告的~~ CVE-2023-51714 的补丁。
@@ -56,7 +67,7 @@ OSDN 侧遇到技术问题，暂时停用。目前所有预编译包均仅上传
 ## {{% date 2023 6 14 %}}
 更新 Qt 5.15.10 系列，附带 QtWebEngine 和 QtScript 5.15.14。  
 对于所有受支持的 5.15.10 和 6.2.4 版本，应用 CVE-2023-34410 补丁。  
-更新 LLVM-MinGW 到 20230603。重新构建了 Qt 6.2.4 和 Qt 6.5.1 的 LLVM-MinGW 的包。
+更新 llvm-mingw 到 20230603。重新构建了 Qt 6.2.4 和 Qt 6.5.1 的 llvm-mingw 的包。
 
 删除原 OSDN Chamber。文件上传下载服务转移到 Project。
 
@@ -155,7 +166,7 @@ Qt 6.2.4 的 Linux 和 macOS 主机交叉构建版在打包时额外附带主机
 ## {{% date 2022 10 4 %}}
 更新 Qt 6.4.0。  
 更新 Qt 6.2.4 静态构建，使用静态运行时。以前的版本不使用静态运行时。  
-更新 Qt 6.2.4 LLVM-MinGW 构建。使用 LLVM 15。
+更新 Qt 6.2.4 llvm-mingw 构建。使用 Clang 15。
 
 删除 Qt 6.3 系列的构建。
 
@@ -165,8 +176,8 @@ Qt 6.2.4 的 Linux 和 macOS 主机交叉构建版在打包时额外附带主机
 
 ## {{% date 2022 9 12 %}}
 更新 Qt 6.2.4 / 6.3.2 WebAssembly 包。现在启用了预编译头文件支持。  
-更新 Qt 6.2.4 / 6.3.2 LLVM-MinGW 包。现在启用了 WMF 支持。  
-更新 Qt 6.4.0-beta4。所有原来在 6.3 上的配置全部可用。使用 RockyLinux 9 进行 Qt 6.4.0 的 Linux 交叉构建主机。WebAssembly 和 LLVM-MinGW 包都使用了今天更新的配置进行构建。
+更新 Qt 6.2.4 / 6.3.2 llvm-mingw 包。现在启用了 WMF 支持。  
+更新 Qt 6.4.0-beta4。所有原来在 6.3 上的配置全部可用。使用 RockyLinux 9 进行 Qt 6.4.0 的 Linux 交叉构建主机。WebAssembly 和 llvm-mingw 包都使用了今天更新的配置进行构建。
 
 ## {{% date 2022 9 11 %}}
 更新 Qt 6.3.2，使用 OpenSSL 3.0.5。  
