@@ -90,10 +90,9 @@
     <li><a href="#免责声明">免责声明</a></li>
     <li><a href="#更新记录">更新记录</a>
       <ul>
+        <li><a href="#2024-年-3-月-16-日">2024 年 3 月 16 日</a></li>
         <li><a href="#2024-年-3-月-12-日">2024 年 3 月 12 日</a></li>
-        <li><a href="#2024-年-2-月-17-日">2024 年 2 月 17 日</a></li>
-        <li><a href="#2024-年-2-月-7-日">2024 年 2 月 7 日</a></li>
-        <li><a href="#2024-年以前">2024 年以前</a></li>
+        <li><a href="#2024-年-2-月以前">2024 年 2 月以前</a></li>
       </ul>
     </li>
   </ul>
@@ -134,13 +133,13 @@
 目前已经删除所有 OSDN 链接，拜托各位通过 SourceForge 进行下载。</p>
 <p>这边上传的时候发生的错误如下（通过 WinSCP 输出）：</p>
 <div class="expand">
-    <input type="checkbox" id="R-expand-361d2b4470e4a1df4ff68e50a0fc1f26" aria-controls="R-expandcontent-361d2b4470e4a1df4ff68e50a0fc1f26" >
-    <label class="expand-label" for="R-expand-361d2b4470e4a1df4ff68e50a0fc1f26" >
+    <input type="checkbox" id="R-expand-b05e71c6a0902f69d5f98ddcd5be24b6" aria-controls="R-expandcontent-b05e71c6a0902f69d5f98ddcd5be24b6" >
+    <label class="expand-label" for="R-expand-b05e71c6a0902f69d5f98ddcd5be24b6" >
         <i class="fas fa-chevron-down"></i>
         <i class="fas fa-chevron-right"></i>
         展开
     </label>
-    <div id="R-expandcontent-361d2b4470e4a1df4ff68e50a0fc1f26" class="expand-content">
+    <div id="R-expandcontent-b05e71c6a0902f69d5f98ddcd5be24b6" class="expand-content">
 <p>一般错误(服务器应该提供错误描述)。<br>
 错误码：4<br>
 服务器返回的错误消息：Failure</p>
@@ -162,19 +161,18 @@
 <strong>这些包为“依原样”提供。我对您使用此二进制文件作出的任何事情不负任何责任。</strong><br>
 感谢 The Qt Company Ltd. 和众多 Qt 的开发者的绝妙工作！</p>
 <h2 id="更新记录">更新记录</h2>
+<h3 id="2024-年-3-月-16-日">2024 年 3 月 16 日</h3>
+<p>更新 Visual Studio 2022 到 17.9.3，重新构建了所有 VS2022 的包（除了静态的）<br>
+使用 <a href="https://github.com/mstorsjo/llvm-mingw" target="_blank">llvm-mingw</a> 构建了 Qt 5.15。目前带了 Clang 16，17 和 18 系列。<br>
+上传 Qt 6.2 / 6.5 / 6.6 使用 llvm-mingw 18 系列的构建。<br>
+使用 Android NDK r25c 构建了 Qt 6.2。
+使用 MinGW w/ GCC 13 系列构建了 Qt 6.2 和 6.5 系列。</p>
+<p>感冒了，咳咳。。。。</p>
 <h3 id="2024-年-3-月-12-日">2024 年 3 月 12 日</h3>
 <p>更新 Qt 5.15.13。<br>
 更新 Visual Studio 2022 到 17.9.2。</p>
 <p>为 Qt 5.15 系列打上一些补丁，使之可以在更新的 MinGW-w64 和更新的安卓 NDK 上构建通过。</p>
-<h3 id="2024-年-2-月-17-日">2024 年 2 月 17 日</h3>
-<p>更新 Qt 6.6.2。<br>
-为所有长期支持版本的 Qt 应用 CVE-2024-25580 的补丁。<br>
-复原安卓 API Level，原因是使用提升了的 API Level 构建 Qt 会导致低版本安卓无法安装使用这份 Qt 的程序。</p>
-<p>删除 Windows 平台使用 MinGW-LLVM 15.0.0 的构建。</p>
-<h3 id="2024-年-2-月-7-日">2024 年 2 月 7 日</h3>
-<p>更新 Qt 5.15、6.2.7 和 6.5.3 的安卓版，提升了 API level。<br>
-更新 OpenSSL 到 3.0.13。</p>
-<h3 id="2024-年以前">2024 年以前</h3>
+<h3 id="2024-年-2-月以前">2024 年 2 月以前</h3>
 <p><a href="/zh-cn/miscellaneous/histories/index.html">这里</a></p>
 
             <footer class="footline">
@@ -305,7 +303,7 @@
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Fri, 15 Mar 2024 08:31:53 CST</p>
+Site generated: Sat, 16 Mar 2024 16:42:21 CST</p>
 
           </div>
         </div>
