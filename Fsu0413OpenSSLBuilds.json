@@ -26,7 +26,7 @@
       "version": "3.0.13",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "VS2022 17.9.0",
+      "toolchain": "VS2022 17.9.3",
       "arch": "x86_64",
       "variant": ""
     },
@@ -37,7 +37,7 @@
       "version": "3.0.13",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "VS2022 17.9.0",
+      "toolchain": "VS2022 17.9.3",
       "arch": "x86_64",
       "variant": "-static"
     },
@@ -162,7 +162,7 @@
       "arch": "x86_64",
       "variant": ""
     },
-    "sort": 30017
+    "sort": 30015
   },
   "o3_0wx6s6": {
     "data": {
@@ -173,7 +173,7 @@
       "arch": "x86_64",
       "variant": ""
     },
-    "sort": 30018
+    "sort": 30016
   },
   "o3_0wx6u7": {
     "data": {
@@ -184,7 +184,7 @@
       "arch": "x86_64",
       "variant": ""
     },
-    "sort": 30019
+    "sort": 30017
   },
   "o3_0wx6s7": {
     "data": {
@@ -192,6 +192,28 @@
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
       "toolchain": "MinGW-w64 w/ LLVM 17.0.6 MSVCRT",
+      "arch": "x86_64",
+      "variant": ""
+    },
+    "sort": 30018
+  },
+  "o3_0wx6u8": {
+    "data": {
+      "version": "3.0.13",
+      "platform": "Windows",
+      "buildHost": "Windows 11 10.0.22631",
+      "toolchain": "MinGW-w64 w/ LLVM 18.1.1 UCRT",
+      "arch": "x86_64",
+      "variant": ""
+    },
+    "sort": 30019
+  },
+  "o3_0wx6s8": {
+    "data": {
+      "version": "3.0.13",
+      "platform": "Windows",
+      "buildHost": "Windows 11 10.0.22631",
+      "toolchain": "MinGW-w64 w/ LLVM 18.1.1 MSVCRT",
       "arch": "x86_64",
       "variant": ""
     },
@@ -307,6 +329,50 @@
     },
     "sort": 30030
   },
+  "o3_0aa3nV25L23": {
+    "data": {
+      "version": "3.0.13",
+      "platform": "Android",
+      "buildHost": "RockyLinux 8.9",
+      "toolchain": "ndk r25c",
+      "arch": "arm",
+      "variant": "android-23, -static"
+    },
+    "sort": 30031
+  },
+  "o3_0aa6nV25L23": {
+    "data": {
+      "version": "3.0.13",
+      "platform": "Android",
+      "buildHost": "RockyLinux 8.9",
+      "toolchain": "ndk r25c",
+      "arch": "arm64",
+      "variant": "android-23, -static"
+    },
+    "sort": 30032
+  },
+  "o3_0ax3nV25L23": {
+    "data": {
+      "version": "3.0.13",
+      "platform": "Android",
+      "buildHost": "RockyLinux 8.9",
+      "toolchain": "ndk r25c",
+      "arch": "x86",
+      "variant": "android-23, -static"
+    },
+    "sort": 30033
+  },
+  "o3_0ax6nV25L23": {
+    "data": {
+      "version": "3.0.13",
+      "platform": "Android",
+      "buildHost": "RockyLinux 8.9",
+      "toolchain": "ndk r25c",
+      "arch": "x86_64",
+      "variant": "android-23, -static"
+    },
+    "sort": 30034
+  },
   "o3_0aa3nV23L24": {
     "data": {
       "version": "3.0.13",
@@ -316,7 +382,7 @@
       "arch": "arm",
       "variant": "android-24, -static"
     },
-    "sort": 30031
+    "sort": 30035
   },
   "o3_0aa6nV23L24": {
     "data": {
@@ -327,7 +393,7 @@
       "arch": "arm64",
       "variant": "android-24, -static"
     },
-    "sort": 30032
+    "sort": 30036
   },
   "o3_0ax3nV23L24": {
     "data": {
@@ -338,7 +404,7 @@
       "arch": "x86",
       "variant": "android-24, -static"
     },
-    "sort": 30033
+    "sort": 30037
   },
   "o3_0ax6nV23L24": {
     "data": {
@@ -349,7 +415,51 @@
       "arch": "x86_64",
       "variant": "android-24, -static"
     },
-    "sort": 30034
+    "sort": 30038
+  },
+  "o3_0aa3nV25L24": {
+    "data": {
+      "version": "3.0.13",
+      "platform": "Android",
+      "buildHost": "RockyLinux 8.9",
+      "toolchain": "ndk r25c",
+      "arch": "arm",
+      "variant": "android-24, -static"
+    },
+    "sort": 30039
+  },
+  "o3_0aa6nV25L24": {
+    "data": {
+      "version": "3.0.13",
+      "platform": "Android",
+      "buildHost": "RockyLinux 8.9",
+      "toolchain": "ndk r25c",
+      "arch": "arm64",
+      "variant": "android-24, -static"
+    },
+    "sort": 30040
+  },
+  "o3_0ax3nV25L24": {
+    "data": {
+      "version": "3.0.13",
+      "platform": "Android",
+      "buildHost": "RockyLinux 8.9",
+      "toolchain": "ndk r25c",
+      "arch": "x86",
+      "variant": "android-24, -static"
+    },
+    "sort": 30041
+  },
+  "o3_0ax6nV25L24": {
+    "data": {
+      "version": "3.0.13",
+      "platform": "Android",
+      "buildHost": "RockyLinux 8.9",
+      "toolchain": "ndk r25c",
+      "arch": "x86_64",
+      "variant": "android-24, -static"
+    },
+    "sort": 30042
   },
   "o3_0aa3nV25L27": {
     "data": {
@@ -360,7 +470,7 @@
       "arch": "arm",
       "variant": "android-27, -static"
     },
-    "sort": 30035
+    "sort": 30043
   },
   "o3_0aa6nV25L27": {
     "data": {
@@ -371,7 +481,7 @@
       "arch": "arm64",
       "variant": "android-27, -static"
     },
-    "sort": 30036
+    "sort": 30044
   },
   "o3_0ax3nV25L27": {
     "data": {
@@ -382,7 +492,7 @@
       "arch": "x86",
       "variant": "android-27, -static"
     },
-    "sort": 30037
+    "sort": 30045
   },
   "o3_0ax6nV25L27": {
     "data": {
@@ -393,7 +503,7 @@
       "arch": "x86_64",
       "variant": "android-27, -static"
     },
-    "sort": 30038
+    "sort": 30046
   },
   "o3_0aa3nV26L27": {
     "data": {
@@ -404,7 +514,7 @@
       "arch": "arm",
       "variant": "android-27, -static"
     },
-    "sort": 30039
+    "sort": 30047
   },
   "o3_0aa6nV26L27": {
     "data": {
@@ -415,7 +525,7 @@
       "arch": "arm64",
       "variant": "android-27, -static"
     },
-    "sort": 30040
+    "sort": 30048
   },
   "o3_0ax3nV26L27": {
     "data": {
@@ -426,7 +536,7 @@
       "arch": "x86",
       "variant": "android-27, -static"
     },
-    "sort": 30041
+    "sort": 30049
   },
   "o3_0ax6nV26L27": {
     "data": {
@@ -437,6 +547,6 @@
       "arch": "x86_64",
       "variant": "android-27, -static"
     },
-    "sort": 30042
+    "sort": 30050
   }
 }

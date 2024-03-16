@@ -64,7 +64,7 @@
       "version": "3.1.23",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "VS2022 17.9.0",
+      "toolchain": "VS2022 17.9.3",
       "arch": "x86_64"
     },
     "sort": 30107
@@ -77,7 +77,97 @@
       "toolchain": "MinGW-w64 w/ GCC 8.1.0",
       "arch": "x86_64"
     },
+    "sort": 30108
+  },
+  "m3_1wx6g1": {
+    "data": {
+      "version": "3.1.23",
+      "platform": "Windows",
+      "buildHost": "Windows 11 10.0.22631",
+      "toolchain": "MinGW-w64 w/ GCC 11.2.0",
+      "arch": "x86_64"
+    },
     "sort": 30109
+  },
+  "m3_1wx6p2": {
+    "data": {
+      "version": "3.1.23",
+      "platform": "Windows",
+      "buildHost": "Windows 11 10.0.22631",
+      "toolchain": "MinGW-w64 w/ GCC 12.2.0 UCRT",
+      "arch": "x86_64"
+    },
+    "sort": 30110
+  },
+  "m3_1wx6g2": {
+    "data": {
+      "version": "3.1.23",
+      "platform": "Windows",
+      "buildHost": "Windows 11 10.0.22631",
+      "toolchain": "MinGW-w64 w/ GCC 12.2.0 MSVCRT",
+      "arch": "x86_64"
+    },
+    "sort": 30111
+  },
+  "m3_1wx6u6": {
+    "data": {
+      "version": "3.1.23",
+      "platform": "Windows",
+      "buildHost": "Windows 11 10.0.22631",
+      "toolchain": "MinGW-w64 w/ LLVM 16.0.6 UCRT",
+      "arch": "x86_64"
+    },
+    "sort": 30112
+  },
+  "m3_1wx6s6": {
+    "data": {
+      "version": "3.1.23",
+      "platform": "Windows",
+      "buildHost": "Windows 11 10.0.22631",
+      "toolchain": "MinGW-w64 w/ LLVM 16.0.6 MSVCRT",
+      "arch": "x86_64"
+    },
+    "sort": 30113
+  },
+  "m3_1wx6u7": {
+    "data": {
+      "version": "3.1.23",
+      "platform": "Windows",
+      "buildHost": "Windows 11 10.0.22631",
+      "toolchain": "MinGW-w64 w/ LLVM 17.0.6 UCRT",
+      "arch": "x86_64"
+    },
+    "sort": 30114
+  },
+  "m3_1wx6s7": {
+    "data": {
+      "version": "3.1.23",
+      "platform": "Windows",
+      "buildHost": "Windows 11 10.0.22631",
+      "toolchain": "MinGW-w64 w/ LLVM 17.0.6 MSVCRT",
+      "arch": "x86_64"
+    },
+    "sort": 30115
+  },
+  "m3_1wx6u8": {
+    "data": {
+      "version": "3.1.23",
+      "platform": "Windows",
+      "buildHost": "Windows 11 10.0.22631",
+      "toolchain": "MinGW-w64 w/ LLVM 18.1.1 UCRT",
+      "arch": "x86_64"
+    },
+    "sort": 30116
+  },
+  "m3_1wx6s8": {
+    "data": {
+      "version": "3.1.23",
+      "platform": "Windows",
+      "buildHost": "Windows 11 10.0.22631",
+      "toolchain": "MinGW-w64 w/ LLVM 18.1.1 MSVCRT",
+      "arch": "x86_64"
+    },
+    "sort": 30117
   },
   "m3_1mal": {
     "data": {
@@ -87,7 +177,7 @@
       "toolchain": "AppleClang 14.0.3",
       "arch": "Universal (x86_64, arm64)"
     },
-    "sort": 30110
+    "sort": 30118
   },
   "m3_3wx6v9": {
     "data": {
@@ -104,7 +194,7 @@
       "version": "3.3.8",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "VS2022 17.9.2",
+      "toolchain": "VS2022 17.9.3",
       "arch": "x86_64"
     },
     "sort": 30302
@@ -167,7 +257,7 @@
       "toolchain": "MinGW-w64 w/ LLVM 16.0.6 UCRT",
       "arch": "x86_64"
     },
-    "sort": 30310
+    "sort": 30308
   },
   "m3_3wx6s6": {
     "data": {
@@ -177,7 +267,7 @@
       "toolchain": "MinGW-w64 w/ LLVM 16.0.6 MSVCRT",
       "arch": "x86_64"
     },
-    "sort": 30311
+    "sort": 30309
   },
   "m3_3wx6u7": {
     "data": {
@@ -187,7 +277,7 @@
       "toolchain": "MinGW-w64 w/ LLVM 17.0.6 UCRT",
       "arch": "x86_64"
     },
-    "sort": 30312
+    "sort": 30310
   },
   "m3_3wx6s7": {
     "data": {
@@ -195,6 +285,26 @@
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
       "toolchain": "MinGW-w64 w/ LLVM 17.0.6 MSVCRT",
+      "arch": "x86_64"
+    },
+    "sort": 30311
+  },
+  "m3_3wx6u8": {
+    "data": {
+      "version": "3.3.8",
+      "platform": "Windows",
+      "buildHost": "Windows 11 10.0.22631",
+      "toolchain": "MinGW-w64 w/ LLVM 18.1.1 UCRT",
+      "arch": "x86_64"
+    },
+    "sort": 30312
+  },
+  "m3_3wx6s8": {
+    "data": {
+      "version": "3.3.8",
+      "platform": "Windows",
+      "buildHost": "Windows 11 10.0.22631",
+      "toolchain": "MinGW-w64 w/ LLVM 18.1.1 MSVCRT",
       "arch": "x86_64"
     },
     "sort": 30313
