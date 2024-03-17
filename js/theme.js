@@ -217,23 +217,18 @@ function initMermaid( update, attrs ) {
             is_initialized = true;
 
             var graph = serializeGraph( parse );
+            var new_element = document.createElement( 'div' );
+            for( var attr of element.attributes ){
+                new_element.setAttribute( attr.name, attr.value );
+                element.removeAttribute( attr.name );
+            }
+            new_element.classList.add( 'mermaid-container' );
+            new_element.classList.remove( 'mermaid' );
+            element.classList.add( 'mermaid' );
+
             element.innerHTML = graph;
             if( element.offsetParent !== null ){
                 element.classList.add( 'mermaid-render' );
-            }
-            var new_element = document.createElement( 'div' );
-            new_element.classList.add( 'mermaid-container' );
-            if( element.classList.contains( 'align-right' ) ){
-                new_element.classList.add( 'align-right' );
-                element.classList.remove( 'align-right' );
-            }
-            if( element.classList.contains( 'align-center' ) ){
-                new_element.classList.add( 'align-center' );
-                element.classList.remove( 'align-center' );
-            }
-            if( element.classList.contains( 'align-left' ) ){
-                new_element.classList.add( 'align-left' );
-                element.classList.remove( 'align-left' );
             }
             new_element.innerHTML = '<div class="mermaid-code">' + graph + '</div>' + element.outerHTML;
             element.parentNode.replaceChild( new_element, element );
@@ -314,7 +309,7 @@ function initMermaid( update, attrs ) {
             postRenderCallback: function( id ){
                 // zoom for Mermaid
                 // https://github.com/mermaid-js/mermaid/issues/1860#issuecomment-1345440607
-                var svgs = d3.selectAll( 'body:not(.print) .mermaid.zoomable > #' + id );
+                var svgs = d3.selectAll( 'body:not(.print) .mermaid-container.zoomable > .mermaid > #' + id );
                 svgs.each( function(){
                     var parent = this.parentElement;
                     // we need to copy the maxWidth, otherwise our reset button will not align in the upper right
@@ -594,7 +589,8 @@ function initCodeClipboard(){
         var text = getCodeText( code );
         var inPre = code.parentNode.tagName.toLowerCase() == 'pre';
         var inTable = inPre &&
-            code.parentNode.parentNode.tagName.toLowerCase() == 'td';
+            code.parentNode.parentNode.tagName.toLowerCase() == 'td' &&
+            code.parentNode.parentNode.classList.contains('lntd');
         // avoid copy-to-clipboard for highlight shortcode in table lineno mode
         var isFirstLineCell = inTable &&
             code.parentNode.parentNode.parentNode.querySelector( 'td:first-child > pre > code' ) == code;
@@ -1171,7 +1167,19 @@ function initScrollPositionSaver(){
         state.contentScrollTop = +elc.scrollTop;
         window.history.replaceState( state, '', window.location );
     };
-    window.addEventListener( 'pagehide', savePosition );
+
+    var ticking = false;
+    elc.addEventListener( 'scroll', function( event ){
+        if( !ticking ){
+            window.requestAnimationFrame( function(){
+                savePosition();
+                ticking = false;
+            });
+            ticking = true;
+        }
+    });
+
+    document.addEventListener( "click", savePosition );
 }
 
 function scrollToPositions() {
@@ -1231,6 +1239,15 @@ function scrollToPositions() {
         return;
     }
 }
+
+window.addEventListener( 'popstate', function ( event ){
+    scrollToPositions();
+});
+
+const observer = new PerformanceObserver( function(){
+    scrollToPositions();
+});
+observer.observe({ type: "navigation" });
 
 function mark() {
     // mark some additional stuff as searchable
@@ -1529,7 +1546,6 @@ ready( function(){
     initImage();
     initExpand();
     initScrollPositionSaver();
-    scrollToPositions();
 });
 
 (function(){
@@ -1605,9 +1621,9 @@ ready( function(){
         });
     }
     function moveTopbarButtons(){
-        var isS = body.classList.contains( 'width-s' );
-        var isM = body.classList.contains( 'width-m' );
-        var isL = body.classList.contains( 'width-l' );
+        var isS = body.classList.contains( 'menu-width-s' );
+        var isM = body.classList.contains( 'menu-width-m' );
+        var isL = body.classList.contains( 'menu-width-l' );
         // move buttons once, width has a distinct value
         if( isS && !isM && !isL ){
             moveAreaTopbarButtons( 's' )
@@ -1651,9 +1667,9 @@ ready( function(){
             }
         })
     }
-    function setWidthS(e){ body.classList[ e.matches ? "add" : "remove" ]( 'width-s' ); }
-    function setWidthM(e){ body.classList[ e.matches ? "add" : "remove" ]( 'width-m' ); }
-    function setWidthL(e){ body.classList[ e.matches ? "add" : "remove" ]( 'width-l' ); }
+    function setWidthS(e){ body.classList[ e.matches ? "add" : "remove" ]( 'menu-width-s' ); }
+    function setWidthM(e){ body.classList[ e.matches ? "add" : "remove" ]( 'menu-width-m' ); }
+    function setWidthL(e){ body.classList[ e.matches ? "add" : "remove" ]( 'menu-width-l' ); }
     function onWidthChange( setWidth, e ){
         setWidth( e );
         moveTopbarButtons();
@@ -1672,4 +1688,16 @@ ready( function(){
     setWidthL( mql );
     moveTopbarButtons();
     adjustEmptyTopbarContents();
+})();
+
+(function(){
+    var body = document.querySelector( 'body' );
+    function setWidth(e){ body.classList[ e.matches ? "add" : "remove" ]( 'main-width-max' ); }
+    function onWidthChange( setWidth, e ){
+        setWidth( e );
+    }
+    var width = variants.getColorValue( 'MAIN-WIDTH-MAX' );
+    var mqm = window.matchMedia( 'screen and ( min-width: ' + width + ')' );
+    mqm.addEventListener( 'change', onWidthChange.bind( null, setWidth ) );
+    setWidth( mqm );
 })();
