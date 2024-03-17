@@ -48,6 +48,6 @@ Update Visual Studio 2022 to 17.9.2.
 
 Patch Qt 5.15 series to be built with newer MinGW-w64 and Android NDK versions.
 
-### Before Jan. 2024
+### Before Feb. 2024
 
 [Here](/Miscellaneous/Histories)
