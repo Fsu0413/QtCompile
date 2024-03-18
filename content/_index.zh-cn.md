@@ -34,6 +34,10 @@ __这些包为“依原样”提供。我对您使用此二进制文件作出的
 
 ## 更新记录
 
+### {{% date 2024 3 18 %}}
+添加 Windows on ARM64 的 Qt 6 系列构建。   
+为 Qt 6.2.7 应用 CVE-2023-4863。
+
 ### {{% date 2024 3 16 %}}
 更新 Visual Studio 2022 到 17.9.3，重新构建了所有 VS2022 的包（除了静态的）  
 使用 [llvm-mingw](https://github.com/mstorsjo/llvm-mingw) 构建了 Qt 5.15。目前带了 Clang 16，17 和 18 系列。  

@@ -33,6 +33,10 @@ Thanks for The Qt Company Ltd. and the programmers of Qt for their fantastic wor
 
 ## Update History
 
+### {{% date 2024 3 18 %}}
+Add Qt 6 series for Windows on ARM64.  
+Apply CVE-2023-4863 to Qt 6.2.7.
+
 ### {{% date 2024 3 16 %}}
 Update Visual Studio 2022 to 17.9.3, rebuild all VS2022 packages (except for static one)    
 Build Qt 5.15 with [llvm-mingw](https://github.com/mstorsjo/llvm-mingw), now with Clang version 16, 17 and 18 series.  
