@@ -87,7 +87,7 @@
               <div class="topbar-content">
                 <div class="topbar-content-wrapper"><nav class="TableOfContents">
   <ul>
-    <li><a href="#dynamic--shared-builds">Dynamic / Shared Builds</a>
+    <li><a href="#dynamic--shared-builds-x86_64">Dynamic / Shared Builds (x86_64)</a>
       <ul>
         <li><a href="#windows-msvc">Windows-MSVC</a></li>
         <li><a href="#windows-mingw">Windows-MinGW</a></li>
@@ -98,6 +98,11 @@
       <ul>
         <li><a href="#windows-msvc-1">Windows-MSVC</a></li>
         <li><a href="#windows-mingw-1">Windows-MinGW</a></li>
+      </ul>
+    </li>
+    <li><a href="#dynamic--shared-builds-arm64">Dynamic / Shared Builds (arm64)</a>
+      <ul>
+        <li><a href="#windows-msvc-2">Windows-MSVC</a></li>
       </ul>
     </li>
   </ul>
@@ -173,7 +178,7 @@ All builds have <code>-DFEATURE_icu=OFF</code> because I think the ICU library i
 I build Qt with patches. See <a href="/qtcompile/en/miscellaneous/notesforthisrepo/index.html#existing-patches">this page</a> for a list of patches.</div>
 </div>
 
-<h2 id="dynamic--shared-builds">Dynamic / Shared Builds</h2>
+<h2 id="dynamic--shared-builds-x86_64">Dynamic / Shared Builds (x86_64)</h2>
 <h3 id="windows-msvc">Windows-MSVC</h3>
 <table>
         <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Windows-x86_64-VS2022-17.9.3-20240315.7z</b></th></tr></thead>
@@ -324,6 +329,17 @@ I build Qt with patches. See <a href="/qtcompile/en/miscellaneous/notesforthisre
             <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">MinGW-w64 w/ GCC 13.2.0 MSVCRT</td></tr><tr><td width="20%"><b>MinGW Used:</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive grey"><a href="https://github.com/niXman/mingw-builds-binaries/releases/download/13.2.0-rt_v11-rev1/x86_64-13.2.0-release-posix-seh-msvcrt-rt_v11-rev1.7z" target="_blank"><span class="title">64-bit MinGW-w64 w/ GCC 13.2.0 MSVCRT</span></a></span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
+<h2 id="dynamic--shared-builds-arm64">Dynamic / Shared Builds (arm64)</h2>
+<h3 id="windows-msvc-2">Windows-MSVC</h3>
+<table>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Windows-arm64-VS2022-17.9.3-20240317.7z</b></th></tr></thead>
+        <tbody>
+            <tr><td width="20%"><b>Download:</b></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-arm64/Qt6.5.3-Windows-arm64-VS2022-17.9.3-20240317.7z" target="_blank"><span class="title">SourceForge link</span></a></span></td>
+            </tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">VS2022 17.9.3 w/ Windows SDK 10.0.22621</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+        </tbody>
+    </table>
 
             <footer class="footline">
             </footer>
@@ -453,7 +469,7 @@ I build Qt with patches. See <a href="/qtcompile/en/miscellaneous/notesforthisre
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sun, 17 Mar 2024 10:50:46 CST</p>
+Site generated: Mon, 18 Mar 2024 20:28:05 CST</p>
 
           </div>
         </div>
