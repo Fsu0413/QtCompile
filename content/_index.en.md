@@ -33,6 +33,12 @@ Thanks for The Qt Company Ltd. and the programmers of Qt for their fantastic wor
 
 ## Update History
 
+### {{% date 2024 3 25 %}} no update
+Add note about build failure about MySQL backend for Qt 5.15.  
+Simply investigate llvm build on Windows.
+
+Happy birthday to Iroi Imagay (the third time)!
+
 ### {{% date 2024 3 23 %}}
 Add Qt 5.15 series for Windows on ARM64.  
 

@@ -157,22 +157,19 @@ It uses completely different base structure than desktop and mobile one - it doe
 
 I did no studying or investigating about that part since my development at work has no relationship with Qt, so the above words is all I know about it.
 
-## Qt 6 support platforms (updated {{% date 2023 6 14 %}})
+## Qt 6 support platforms (updated {{% date 2024 3 24 %}})
 
 See {{% QtBug 113979 "Qt 6.6 TQC Supported Targets" %}} and its predecessors.
 
 Currently I am building Qt 6 for following platforms:
 
 Windows 11 - VS2019, x86_64, host and target  
+Windows 11 - VS2022, x86_64 / arm64, host and target  
 Windows 11 - MinGW, x86_64, host and target  
 macOS 13 - toolchain provided by Apple with AppleClang, x86_64 / arm64_v8a, host and target, universal  
-Android - NDK, arm / x86 / arm64 / x86_64, target only. No 32bit builds after 6.3  
+Android - NDK, arm / x86 / arm64 / x86_64, target only. No x86 builds after 6.3  
 WebAssembly - emscripten, target only  
 Linux - toolchain provided by RedHat modified by RockyLinux developers with GCC, x86_64, host only
-
-I will add build for following platforms:
-
-Windows 11 - VS2019, arm64, target only (been put away)
 
 Qt 6.2 is LTS release, but with Qt offering changes 2020 Qt 6.2 release to community comes one year later than it is released to commericial users.  
 I will add bulid for static version for Qt 6.2, but I don't exactly know how Qt guys operate with their release...

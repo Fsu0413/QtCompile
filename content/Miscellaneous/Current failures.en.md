@@ -4,14 +4,23 @@ draft: false
 weight: 3
 ---
 
-## QDoc after Qt 5.12 cannot use static linked clang when using MSVC
+## QDoc after Qt 5.12 cannot use static linked llvm / clang when using MSVC
 
-It uses `libclang_static.lib` but clang don't provide this one.  
+It uses `libclang_static.lib` but llvm / clang don't provide this one.  
 I have decided not provide LLVM-based QDoc until I find a way to static link it.
 
 Update {{% date 2020 11 3 %}}:  
 `libclang_static.lib` is packed seprately using script by Qt guys.  
 Thanks "lixinwei" on QTCN.org for telling me related info. [Original post](http://www.qtcn.org/bbs/job.php?action=topost&tid=85983&pid=200952) (Sorry, it's in Chinese)
+
+Update {{% date 2024 3 25 %}}:  
+I did some research about build of LLVM.  
+It reveals that, unfortunately, only LLVM 11.0.0 and above supports building static libraries on Windows.  
+Version before 10.0.1 supports only building shared library.   
+`libclang_static.lib` and `libclang.lib` static libraries in the llvm before 10.0.1 built by Qt are all patched by themselves.
+
+While using MinGW llvm supports full dynamic linking (just as built by the llvm-mingw project by mstorsjo), when using MSVC it doesn't. (Why?)   
+There may be no that much love for MSVC than MinGW.....
 
 ## Command line too long when building Qt 6.2 series for MinGW
 

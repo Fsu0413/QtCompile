@@ -157,22 +157,19 @@ LTS 只给商业许可，那么 LTS 的源码包是什么许可？
 
 由于我当时的开发任务与 Qt 无关，没有对该部分内容进行探究及调查，了解到的内容也就止步于此了。
 
-## Qt 6 支持的平台（{{% date 2023 6 14 %}}更新）
+## Qt 6 支持的平台（{{% date 2024 3 24 %}}更新）
 
 参考 {{% QtBug 113979 "Qt 6.6 TQC Supported Targets" %}} 和它的前置任务。
 
 现在我为如下平台构建 Qt 6。
 
 Windows 11 - VS2019, x86_64, host and target  
+Windows 11 - VS2022, x86_64 / arm64, host and target  
 Windows 11 - MinGW, x86_64, host and target  
 macOS 13 - toolchain provided by Apple with AppleClang, x86_64 / arm64_v8a, host and target, universal  
-Android - NDK, arm / x86 / arm64 / x86_64, target only. No 32bit builds after 6.3  
+Android - NDK, arm / x86 / arm64 / x86_64, target only. No x86 builds after 6.3  
 WebAssembly - emscripten, target only  
 Linux - toolchain provided by RedHat modified by RockyLinux developers with GCC, x86_64, host only
-
-我之后会为如下平台构建 Qt 6。
-
-Windows 11 - VS2019, arm64, target only （咕咕咕了）
 
 Qt 6.2 是 LTS 发布，但是在 Qt offering changes 2020 的影响下，Qt 6.2 对社区发布要比商业用户晚一年。  
 我会在 Qt 6.2 添加静态构建，但是我不是很确切的知道 Qt 的那帮人要怎么处理他们的发布。。。

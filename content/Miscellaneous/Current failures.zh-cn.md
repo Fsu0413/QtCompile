@@ -13,6 +13,15 @@ weight: 3
 `libclang_static.lib` 是 Qt 那帮人自己使用脚本打包的。  
 非常感谢 QtCN 的 lixinwei 提供相关信息。 [原帖参考](http://www.qtcn.org/bbs/job.php?action=topost&tid=85983&pid=200952)
 
+{{% date 2024 3 25 %}}更新：  
+调查了一下 LLVM 的构建。  
+实质上，LLVM 在 11.0.0 版本之后才支持在 Windows 上构建静态库。  
+在 10.0.1 版本之前，只有动态库是支持的。  
+静态库 `libclang_staic.lib` 和 `libclang.lib` 在 10.0.1 之前，都是在 Qt 构建 llvm 的时候打了补丁上去才构建出来的。
+
+目前如果使用 MinGW 的话，llvm 支持全动态链接（参考 mstorsjo 的 llvm-mingw 工程的构建产物），但是使用 MSVC 的话，则不支持。（为什么？）    
+可能 MinGW 比 MSVC 有更多人爱吧。。。
+
 ## 使用 MinGW 构建 Qt 6.2 系列时命令行过长
 
 参考 {{% QtBug 96339 %}} - 暂时使用 CMake 3.20.2 绕过这个问题
