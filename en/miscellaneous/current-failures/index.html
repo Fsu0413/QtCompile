@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.124.1">
-    <meta name="generator" content="Relearn 5.26.0">
+    <meta name="generator" content="Relearn 5.26.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>Current failures :: Fsu0413&#39;s Original Qt builds</title>
@@ -26,12 +26,10 @@
     <script src="/qtcompile/js/url.js"></script>
     <script src="/qtcompile/js/variant.js"></script>
     <script>
-      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
-      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
-      var root_url="/";
-      var baseUri=root_url.replace(/\/$/, '');
       window.relearn = window.relearn || {};
-      window.relearn.baseUriFull='qtcompile/';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='\/qtcompile';
       // variant stuff
       window.relearn.themeVariantModifier='';
       window.variants && variants.init( [ 'relearn-dark', 'relearn-bright', 'relearn-light', 'zen-dark', 'zen-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
@@ -87,7 +85,7 @@
               <div class="topbar-content">
                 <div class="topbar-content-wrapper"><nav class="TableOfContents">
   <ul>
-    <li><a href="#qdoc-after-qt-512-cannot-use-static-linked-clang-when-using-msvc">QDoc after Qt 5.12 cannot use static linked clang when using MSVC</a></li>
+    <li><a href="#qdoc-after-qt-512-cannot-use-static-linked-llvm--clang-when-using-msvc">QDoc after Qt 5.12 cannot use static linked llvm / clang when using MSVC</a></li>
     <li><a href="#command-line-too-long-when-building-qt-62-series-for-mingw">Command line too long when building Qt 6.2 series for MinGW</a></li>
     <li><a href="#qtopcua-issues-updated-25th-dec-2023">QtOpcUa issues (Updated 25th Dec, 2023)</a></li>
     <li><a href="#various-failures-building-higher-version-of-qtwebengine-on-qt-624">Various failures building higher version of QtWebEngine on Qt 6.2.4</a></li>
@@ -123,12 +121,19 @@
             </header>
 <h1 id="current-failures">Current failures</h1>
 
-<h2 id="qdoc-after-qt-512-cannot-use-static-linked-clang-when-using-msvc">QDoc after Qt 5.12 cannot use static linked clang when using MSVC</h2>
-<p>It uses <code>libclang_static.lib</code> but clang don&rsquo;t provide this one.<br>
+<h2 id="qdoc-after-qt-512-cannot-use-static-linked-llvm--clang-when-using-msvc">QDoc after Qt 5.12 cannot use static linked llvm / clang when using MSVC</h2>
+<p>It uses <code>libclang_static.lib</code> but llvm / clang don&rsquo;t provide this one.<br>
 I have decided not provide LLVM-based QDoc until I find a way to static link it.</p>
 <p>Update 3rd Nov, 2020:<br>
 <code>libclang_static.lib</code> is packed seprately using script by Qt guys.<br>
 Thanks &ldquo;lixinwei&rdquo; on QTCN.org for telling me related info. <a href="http://www.qtcn.org/bbs/job.php?action=topost&tid=85983&pid=200952" target="_blank">Original post</a> (Sorry, it&rsquo;s in Chinese)</p>
+<p>Update 25th Mar, 2024:<br>
+I did some research about build of LLVM.<br>
+It reveals that, unfortunately, only LLVM 11.0.0 and above supports building static libraries on Windows.<br>
+Version before 10.0.1 supports only building shared library.<br>
+<code>libclang_static.lib</code> and <code>libclang.lib</code> static libraries in the llvm before 10.0.1 built by Qt are all patched by themselves.</p>
+<p>While using MinGW llvm supports full dynamic linking (just as built by the llvm-mingw project by mstorsjo), when using MSVC it doesn&rsquo;t. (Why?)<br>
+There may be no that much love for MSVC than MinGW&hellip;..</p>
 <h2 id="command-line-too-long-when-building-qt-62-series-for-mingw">Command line too long when building Qt 6.2 series for MinGW</h2>
 <p>See <a href="https://bugreports.qt.io/browse/QTBUG-96339" target="_blank">QTBUG-96339</a> - workaround using CMake 3.20.2</p>
 <h2 id="qtopcua-issues-updated-25th-dec-2023">QtOpcUa issues (Updated 25th Dec, 2023)</h2>
@@ -251,13 +256,13 @@ Since I have had trouble during investigation of previous patches, I won&rsquo;t
             <ul>
               <li id="R-select-language-container" class="footerLangSwitch showLangSwitch">
                 <div class="padding menu-control">
-                  <i class="fas fa-language fa-fw"></i>
+                  <i class="fa-fw fas fa-language"></i>
                   <span>&nbsp;</span>
                   <div class="control-style">
                     <label class="a11y-only" for="R-select-language">Language</label>
-                    <select id="R-select-language" onchange="location = baseUri + this.value;">
-                      <option id="R-zh-cn" value="/qtcompile/miscellaneous/current-failures/index.html" lang="zh-cn">简体中文（中国）</option>
-                      <option id="R-en" value="/qtcompile/en/miscellaneous/current-failures/index.html" lang="en" selected>English</option>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-zh-cn" value="#R-select-language-zh-cn" data-url="/qtcompile/miscellaneous/current-failures/index.html" lang="zh-cn">简体中文（中国）</option>
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/qtcompile/en/miscellaneous/current-failures/index.html" lang="en" selected>English</option>
                     </select>
                   </div>
                   <div class="clear"></div>
@@ -265,21 +270,21 @@ Since I have had trouble during investigation of previous patches, I won&rsquo;t
               </li>
               <li id="R-select-variant-container" class="footerVariantSwitch showVariantSwitch">
                 <div class="padding menu-control">
-                  <i class="fas fa-paint-brush fa-fw"></i>
+                  <i class="fa-fw fas fa-paint-brush"></i>
                   <span>&nbsp;</span>
                   <div class="control-style">
                     <label class="a11y-only" for="R-select-variant">Theme</label>
                     <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
-                      <option id="R-relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
-                      <option id="R-relearn-bright" value="relearn-bright">Relearn Bright</option>
-                      <option id="R-relearn-light" value="relearn-light">Relearn Light</option>
-                      <option id="R-zen-dark" value="zen-dark">Zen Dark</option>
-                      <option id="R-zen-light" value="zen-light">Zen Light</option>
-                      <option id="R-learn" value="learn">Learn</option>
-                      <option id="R-neon" value="neon">Neon</option>
-                      <option id="R-red" value="red">Red</option>
-                      <option id="R-blue" value="blue">Blue</option>
-                      <option id="R-green" value="green">Green</option>
+                      <option id="R-select-variant-relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
+                      <option id="R-select-variant-relearn-bright" value="relearn-bright">Relearn Bright</option>
+                      <option id="R-select-variant-relearn-light" value="relearn-light">Relearn Light</option>
+                      <option id="R-select-variant-zen-dark" value="zen-dark">Zen Dark</option>
+                      <option id="R-select-variant-zen-light" value="zen-light">Zen Light</option>
+                      <option id="R-select-variant-learn" value="learn">Learn</option>
+                      <option id="R-select-variant-neon" value="neon">Neon</option>
+                      <option id="R-select-variant-red" value="red">Red</option>
+                      <option id="R-select-variant-blue" value="blue">Blue</option>
+                      <option id="R-select-variant-green" value="green">Green</option>
                     </select>
                   </div>
                   <div class="clear"></div>
@@ -288,7 +293,7 @@ Since I have had trouble during investigation of previous patches, I won&rsquo;t
               </li>
               <li class="footerVisitedLinks">
                 <div class="padding menu-control">
-                  <i class="fas fa-history fa-fw"></i>
+                  <i class="fa-fw fas fa-history"></i>
                   <span>&nbsp;</span>
                   <div class="control-style">
                     <button onclick="clearHistory();">Clear History</button>
@@ -299,7 +304,7 @@ Since I have had trouble during investigation of previous patches, I won&rsquo;t
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 23 Mar 2024 23:00:28 CST</p>
+Site generated: Mon, 25 Mar 2024 20:30:12 CST</p>
 
           </div>
         </div>

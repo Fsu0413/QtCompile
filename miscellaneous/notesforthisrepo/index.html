@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.124.1">
-    <meta name="generator" content="Relearn 5.26.0">
+    <meta name="generator" content="Relearn 5.26.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>本版本库的一些备注 :: Fsu0413 的原版 Qt 构建</title>
@@ -26,12 +26,10 @@
     <script src="/qtcompile/js/url.js"></script>
     <script src="/qtcompile/js/variant.js"></script>
     <script>
-      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
-      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
-      var root_url="/";
-      var baseUri=root_url.replace(/\/$/, '');
       window.relearn = window.relearn || {};
-      window.relearn.baseUriFull='qtcompile/';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='\/qtcompile';
       // variant stuff
       window.relearn.themeVariantModifier='';
       window.variants && variants.init( [ 'relearn-dark', 'relearn-bright', 'relearn-light', 'zen-dark', 'zen-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
@@ -96,7 +94,7 @@
     <li><a href="#对于发布的压缩文件的备注">对于发布的压缩文件的备注</a></li>
     <li><a href="#这份-qt-和官方发布的-qt-的区别2023-年-1-月-8-日更新">这份 Qt 和官方发布的 Qt 的区别（2023 年 1 月 8 日更新）</a></li>
     <li><a href="#qt-offering-changes-2020-2022-年-4-月-14-日更新">Qt offering changes 2020 （2022 年 4 月 14 日更新）</a></li>
-    <li><a href="#qt-6-支持的平台2023-年-6-月-14-日更新">Qt 6 支持的平台（2023 年 6 月 14 日更新）</a></li>
+    <li><a href="#qt-6-支持的平台2024-年-3-月-24-日更新">Qt 6 支持的平台（2024 年 3 月 24 日更新）</a></li>
     <li><a href="#gpg-签名-2021-年-2-月-6-日更新">GPG 签名 （2021 年 2 月 6 日更新）</a></li>
     <li><a href="#弃用-windows-10-1809-之前的版本以及-32-位-windows-重要备注2023-年-3-月-25-日更新">弃用 Windows 10 1809 之前的版本以及 32 位 Windows （重要备注！！）（2023 年 3 月 25 日更新）</a></li>
     <li><a href="#对当前构建的-qt-版本的已经决定的结束支持日期2024-年-1-月-25-日更新">对当前构建的 Qt 版本的已经决定的结束支持日期（2024 年 1 月 25 日更新）</a></li>
@@ -234,17 +232,16 @@ Qt 5.13 及以后的版本的 Windows 构建使用 SChannel 代替 OpenSSL 库�
 <p>（2023 年 9 月 2 日追加）前段时间有幸在公司中一个小型 MCU 项目中看到了 Qt for MCUs，是以二进制形式提供给我们的。<br>
 它使用与桌面及移动端 Qt 完全不同的基础架构，不使用 Qt Base 等现有的自由软件。</p>
 <p>由于我当时的开发任务与 Qt 无关，没有对该部分内容进行探究及调查，了解到的内容也就止步于此了。</p>
-<h2 id="qt-6-支持的平台2023-年-6-月-14-日更新">Qt 6 支持的平台（2023 年 6 月 14 日更新）</h2>
+<h2 id="qt-6-支持的平台2024-年-3-月-24-日更新">Qt 6 支持的平台（2024 年 3 月 24 日更新）</h2>
 <p>参考 <a href="https://bugreports.qt.io/browse/QTBUG-113979" target="_blank">Qt 6.6 TQC Supported Targets</a> 和它的前置任务。</p>
 <p>现在我为如下平台构建 Qt 6。</p>
 <p>Windows 11 - VS2019, x86_64, host and target<br>
+Windows 11 - VS2022, x86_64 / arm64, host and target<br>
 Windows 11 - MinGW, x86_64, host and target<br>
 macOS 13 - toolchain provided by Apple with AppleClang, x86_64 / arm64_v8a, host and target, universal<br>
-Android - NDK, arm / x86 / arm64 / x86_64, target only. No 32bit builds after 6.3<br>
+Android - NDK, arm / x86 / arm64 / x86_64, target only. No x86 builds after 6.3<br>
 WebAssembly - emscripten, target only<br>
 Linux - toolchain provided by RedHat modified by RockyLinux developers with GCC, x86_64, host only</p>
-<p>我之后会为如下平台构建 Qt 6。</p>
-<p>Windows 11 - VS2019, arm64, target only （咕咕咕了）</p>
 <p>Qt 6.2 是 LTS 发布，但是在 Qt offering changes 2020 的影响下，Qt 6.2 对社区发布要比商业用户晚一年。<br>
 我会在 Qt 6.2 添加静态构建，但是我不是很确切的知道 Qt 的那帮人要怎么处理他们的发布。。。</p>
 <p>我会在 Qt 6.2 及以后的版本使用 OpenSSL 3 系列。</p>
@@ -648,13 +645,13 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
             <ul>
               <li id="R-select-language-container" class="footerLangSwitch showLangSwitch">
                 <div class="padding menu-control">
-                  <i class="fas fa-language fa-fw"></i>
+                  <i class="fa-fw fas fa-language"></i>
                   <span>&nbsp;</span>
                   <div class="control-style">
                     <label class="a11y-only" for="R-select-language">语言</label>
-                    <select id="R-select-language" onchange="location = baseUri + this.value;">
-                      <option id="R-zh-cn" value="/qtcompile/miscellaneous/notesforthisrepo/index.html" lang="zh-cn" selected>简体中文（中国）</option>
-                      <option id="R-en" value="/qtcompile/en/miscellaneous/notesforthisrepo/index.html" lang="en">English</option>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-zh-cn" value="#R-select-language-zh-cn" data-url="/qtcompile/miscellaneous/notesforthisrepo/index.html" lang="zh-cn" selected>简体中文（中国）</option>
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/qtcompile/en/miscellaneous/notesforthisrepo/index.html" lang="en">English</option>
                     </select>
                   </div>
                   <div class="clear"></div>
@@ -662,21 +659,21 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
               </li>
               <li id="R-select-variant-container" class="footerVariantSwitch showVariantSwitch">
                 <div class="padding menu-control">
-                  <i class="fas fa-paint-brush fa-fw"></i>
+                  <i class="fa-fw fas fa-paint-brush"></i>
                   <span>&nbsp;</span>
                   <div class="control-style">
                     <label class="a11y-only" for="R-select-variant">主题</label>
                     <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
-                      <option id="R-relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
-                      <option id="R-relearn-bright" value="relearn-bright">Relearn Bright</option>
-                      <option id="R-relearn-light" value="relearn-light">Relearn Light</option>
-                      <option id="R-zen-dark" value="zen-dark">Zen Dark</option>
-                      <option id="R-zen-light" value="zen-light">Zen Light</option>
-                      <option id="R-learn" value="learn">Learn</option>
-                      <option id="R-neon" value="neon">Neon</option>
-                      <option id="R-red" value="red">Red</option>
-                      <option id="R-blue" value="blue">Blue</option>
-                      <option id="R-green" value="green">Green</option>
+                      <option id="R-select-variant-relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
+                      <option id="R-select-variant-relearn-bright" value="relearn-bright">Relearn Bright</option>
+                      <option id="R-select-variant-relearn-light" value="relearn-light">Relearn Light</option>
+                      <option id="R-select-variant-zen-dark" value="zen-dark">Zen Dark</option>
+                      <option id="R-select-variant-zen-light" value="zen-light">Zen Light</option>
+                      <option id="R-select-variant-learn" value="learn">Learn</option>
+                      <option id="R-select-variant-neon" value="neon">Neon</option>
+                      <option id="R-select-variant-red" value="red">Red</option>
+                      <option id="R-select-variant-blue" value="blue">Blue</option>
+                      <option id="R-select-variant-green" value="green">Green</option>
                     </select>
                   </div>
                   <div class="clear"></div>
@@ -685,7 +682,7 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
               </li>
               <li class="footerVisitedLinks">
                 <div class="padding menu-control">
-                  <i class="fas fa-history fa-fw"></i>
+                  <i class="fa-fw fas fa-history"></i>
                   <span>&nbsp;</span>
                   <div class="control-style">
                     <button onclick="clearHistory();">清理历史记录</button>
@@ -696,7 +693,7 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 23 Mar 2024 23:00:27 CST</p>
+Site generated: Mon, 25 Mar 2024 20:30:11 CST</p>
 
           </div>
         </div>
