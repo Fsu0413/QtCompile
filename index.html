@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.124.1">
-    <meta name="generator" content="Relearn 5.26.0">
+    <meta name="generator" content="Relearn 5.26.2">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>Fsu0413&#39;s Original Qt builds</title>
@@ -26,12 +26,10 @@
     <script src="/js/url.js"></script>
     <script src="/js/variant.js"></script>
     <script>
-      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
-      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
-      var root_url="/";
-      var baseUri=root_url.replace(/\/$/, '');
       window.relearn = window.relearn || {};
-      window.relearn.baseUriFull='/';
+      window.relearn.relBasePath='.';
+      window.relearn.relBaseUri='.';
+      window.relearn.absBaseUri='';
       // variant stuff
       window.relearn.themeVariantModifier='';
       window.variants && variants.init( [ 'relearn-dark', 'relearn-bright', 'relearn-light', 'zen-dark', 'zen-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
@@ -90,6 +88,7 @@
     <li><a href="#disclaimer">Disclaimer</a></li>
     <li><a href="#update-history">Update History</a>
       <ul>
+        <li><a href="#25th-mar-2024-no-update">25th Mar, 2024 no update</a></li>
         <li><a href="#23rd-mar-2024">23rd Mar, 2024</a></li>
         <li><a href="#18th-mar-2024">18th Mar, 2024</a></li>
         <li><a href="#16th-mar-2024">16th Mar, 2024</a></li>
@@ -135,13 +134,13 @@
 All links to OSDN are removed for now. Please download from SourceForge.</p>
 <p>Error during upload is as following (Output by WinSCP).</p>
 <div class="expand">
-    <input type="checkbox" id="R-expand-d52af10def237bf3d78018c3eed38f0d" aria-controls="R-expandcontent-d52af10def237bf3d78018c3eed38f0d" >
-    <label class="expand-label" for="R-expand-d52af10def237bf3d78018c3eed38f0d" >
-        <i class="fas fa-chevron-down"></i>
-        <i class="fas fa-chevron-right"></i>
+    <input type="checkbox" id="R-expand-61773ddb283aeec4b5a22be195ea5fbe" aria-controls="R-expandcontent-61773ddb283aeec4b5a22be195ea5fbe" >
+    <label class="expand-label" for="R-expand-61773ddb283aeec4b5a22be195ea5fbe" >
+        <i class="fa-fw fas fa-chevron-down"></i>
+        <i class="fa-fw fas fa-chevron-right"></i>
         Expand me&hellip;
     </label>
-    <div id="R-expandcontent-d52af10def237bf3d78018c3eed38f0d" class="expand-content">
+    <div id="R-expandcontent-61773ddb283aeec4b5a22be195ea5fbe" class="expand-content">
 <p>General failure (server should provide error description).<br>
 Error code: 4<br>
 Error message from server: Failure</p>
@@ -163,6 +162,10 @@ The code used is downloaded from <a href="http://download.qt.io" target="_blank"
 <strong>THESE PACKAGE ARE PROVIDED &ldquo;As is&rdquo;, I have no responsibility that you mess up your things with this binaries.</strong><br>
 Thanks for The Qt Company Ltd. and the programmers of Qt for their fantastic work!!</p>
 <h2 id="update-history">Update History</h2>
+<h3 id="25th-mar-2024-no-update">25th Mar, 2024 no update</h3>
+<p>Add note about build failure about MySQL backend for Qt 5.15.<br>
+Simply investigate llvm build on Windows.</p>
+<p>Happy birthday to Iroi Imagay (the third time)!</p>
 <h3 id="23rd-mar-2024">23rd Mar, 2024</h3>
 <p>Add Qt 5.15 series for Windows on ARM64.</p>
 <h3 id="18th-mar-2024">18th Mar, 2024</h3>
@@ -262,13 +265,13 @@ Update Visual Studio 2022 to 17.9.2.</p>
             <ul>
               <li id="R-select-language-container" class="footerLangSwitch showLangSwitch">
                 <div class="padding menu-control">
-                  <i class="fas fa-language fa-fw"></i>
+                  <i class="fa-fw fas fa-language"></i>
                   <span>&nbsp;</span>
                   <div class="control-style">
                     <label class="a11y-only" for="R-select-language">Language</label>
-                    <select id="R-select-language" onchange="location = baseUri + this.value;">
-                      <option id="R-en" value="/index.html" lang="en" selected>English</option>
-                      <option id="R-zh-cn" value="/zh-cn/index.html" lang="zh-cn">简体中文（中国）</option>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/index.html" lang="en" selected>English</option>
+                      <option id="R-select-language-zh-cn" value="#R-select-language-zh-cn" data-url="/zh-cn/index.html" lang="zh-cn">简体中文（中国）</option>
                     </select>
                   </div>
                   <div class="clear"></div>
@@ -276,21 +279,21 @@ Update Visual Studio 2022 to 17.9.2.</p>
               </li>
               <li id="R-select-variant-container" class="footerVariantSwitch showVariantSwitch">
                 <div class="padding menu-control">
-                  <i class="fas fa-paint-brush fa-fw"></i>
+                  <i class="fa-fw fas fa-paint-brush"></i>
                   <span>&nbsp;</span>
                   <div class="control-style">
                     <label class="a11y-only" for="R-select-variant">Theme</label>
                     <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
-                      <option id="R-relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
-                      <option id="R-relearn-bright" value="relearn-bright">Relearn Bright</option>
-                      <option id="R-relearn-light" value="relearn-light">Relearn Light</option>
-                      <option id="R-zen-dark" value="zen-dark">Zen Dark</option>
-                      <option id="R-zen-light" value="zen-light">Zen Light</option>
-                      <option id="R-learn" value="learn">Learn</option>
-                      <option id="R-neon" value="neon">Neon</option>
-                      <option id="R-red" value="red">Red</option>
-                      <option id="R-blue" value="blue">Blue</option>
-                      <option id="R-green" value="green">Green</option>
+                      <option id="R-select-variant-relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
+                      <option id="R-select-variant-relearn-bright" value="relearn-bright">Relearn Bright</option>
+                      <option id="R-select-variant-relearn-light" value="relearn-light">Relearn Light</option>
+                      <option id="R-select-variant-zen-dark" value="zen-dark">Zen Dark</option>
+                      <option id="R-select-variant-zen-light" value="zen-light">Zen Light</option>
+                      <option id="R-select-variant-learn" value="learn">Learn</option>
+                      <option id="R-select-variant-neon" value="neon">Neon</option>
+                      <option id="R-select-variant-red" value="red">Red</option>
+                      <option id="R-select-variant-blue" value="blue">Blue</option>
+                      <option id="R-select-variant-green" value="green">Green</option>
                     </select>
                   </div>
                   <div class="clear"></div>
@@ -299,7 +302,7 @@ Update Visual Studio 2022 to 17.9.2.</p>
               </li>
               <li class="footerVisitedLinks">
                 <div class="padding menu-control">
-                  <i class="fas fa-history fa-fw"></i>
+                  <i class="fa-fw fas fa-history"></i>
                   <span>&nbsp;</span>
                   <div class="control-style">
                     <button onclick="clearHistory();">Clear History</button>
@@ -310,7 +313,7 @@ Update Visual Studio 2022 to 17.9.2.</p>
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 23 Mar 2024 23:00:28 CST</p>
+Site generated: Mon, 25 Mar 2024 20:30:10 CST</p>
 
           </div>
         </div>
