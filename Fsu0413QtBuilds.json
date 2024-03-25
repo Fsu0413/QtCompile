@@ -333,6 +333,7 @@
     "sort": 51514,
     "fileName": "Qt5.15.13-Windows-arm64-VS2022-17.9.3-20240323.7z",
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-arm64/Qt5.15.13-Windows-arm64-VS2022-17.9.3-20240323.7z",
+    "notes": "__NO MySQL Database Backend__ because build failed (It linked with `/machine:x64`)",
     "data": {
       "version": "5.15.13",
       "platform": "Windows",
@@ -350,7 +351,7 @@
     "fileName": "Qt5.15.13-Windows-x86-MinGW8.1.0-20240311.7z",
     "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86/Qt5.15.13-Windows-x86-MinGW8.1.0-20240311.7z",
     "MinGWConf": "wx3g8",
-    "notes": "__NO MySQL Database Backend__ because compile failed",
+    "notes": "__NO MySQL Database Backend__ because compile failed (conflicting types for `mysql_load_plugin`)",
     "data": {
       "version": "5.15.13",
       "platform": "Windows",
