@@ -25,14 +25,8 @@
         color: gray;
     }
 {{ if .Page.Params.isMaxWidthPreferred }}
-    #R-body .flex-block-wrapper {
-        max-width: none;
-        width: 100%;
-    }
-    <!-- fix to following version once supported (expected relearn 5.26) -------- Do not work!!!
     :root {
-        --MAIN-WIDTH-MAX: 1000rem;
+        --MAIN-WIDTH-MAX: 1000%;
     }
-    -->
 {{ end }}
 </style>
