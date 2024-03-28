@@ -4,6 +4,25 @@ draft: false
 weight: 4
 ---
 
+## {{% date 2024 3 18 %}}
+添加 Windows on ARM64 的 Qt 6 系列构建。   
+为 Qt 6.2.7 应用 CVE-2023-4863。
+
+## {{% date 2024 3 16 %}}
+更新 Visual Studio 2022 到 17.9.3，重新构建了所有 VS2022 的包（除了静态的）  
+使用 [llvm-mingw](https://github.com/mstorsjo/llvm-mingw) 构建了 Qt 5.15。目前带了 Clang 16，17 和 18 系列。  
+上传 Qt 6.2 / 6.5 / 6.6 使用 llvm-mingw 18 系列的构建。  
+使用 Android NDK r25c 构建了 Qt 6.2。
+使用 MinGW w/ GCC 13 系列构建了 Qt 6.2 和 6.5 系列。
+
+感冒了，咳咳。。。。
+
+## {{% date 2024 3 12 %}}
+更新 Qt 5.15.13。  
+更新 Visual Studio 2022 到 17.9.2。
+
+为 Qt 5.15 系列打上一些补丁，使之可以在更新的 MinGW-w64 和更新的安卓 NDK 上构建通过。
+
 ## {{% date 2024 2 17 %}}
 更新 Qt 6.6.2。  
 为所有长期支持版本的 Qt 应用 CVE-2024-25580 的补丁。  

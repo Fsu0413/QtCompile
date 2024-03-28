@@ -34,6 +34,14 @@ __这些包为“依原样”提供。我对您使用此二进制文件作出的
 
 ## 更新记录
 
+### {{% date 2024 3 28 %}}
+更新 Qt 6.6.3 和 Qt 6.7.0-rc2 版本。   
+重新构建了 VS2022 和 llvm-mingw 18 的 Qt 5.15 / 6.2 / 6.5 版本。
+
+Qt 6 正在迁移 MinGW 构建，从基于 GCC 的工具链到使用 [llvm-mingw](https://github.com/mstorsjo/llvm-mingw) 的基于 LLVM 的工具链。    
+我也建议 MinGW 的使用者迁移过去，因为使用 LLVM 构建更快，生成更小的二进制文件，并且也支持 Windows on ARM（虽然我还没有调查在 WoA 上使用 llvm-mingw）。  
+详情参考 {{% QtBug 107516 %}}。
+
 ### {{% date 2024 3 25 %}} 无更新
 增加 Qt 5.15 部分 MySQL 后端构建失败的备注。  
 简单调查 llvm 在 Windows 上的构建。
@@ -43,25 +51,6 @@ __这些包为“依原样”提供。我对您使用此二进制文件作出的
 ### {{% date 2024 3 23 %}}
 添加 Windows on ARM64 的 Qt 5.15 系列构建。   
 
-### {{% date 2024 3 18 %}}
-添加 Windows on ARM64 的 Qt 6 系列构建。   
-为 Qt 6.2.7 应用 CVE-2023-4863。
-
-### {{% date 2024 3 16 %}}
-更新 Visual Studio 2022 到 17.9.3，重新构建了所有 VS2022 的包（除了静态的）  
-使用 [llvm-mingw](https://github.com/mstorsjo/llvm-mingw) 构建了 Qt 5.15。目前带了 Clang 16，17 和 18 系列。  
-上传 Qt 6.2 / 6.5 / 6.6 使用 llvm-mingw 18 系列的构建。  
-使用 Android NDK r25c 构建了 Qt 6.2。
-使用 MinGW w/ GCC 13 系列构建了 Qt 6.2 和 6.5 系列。
-
-感冒了，咳咳。。。。
-
-### {{% date 2024 3 12 %}}
-更新 Qt 5.15.13。  
-更新 Visual Studio 2022 到 17.9.2。
-
-为 Qt 5.15 系列打上一些补丁，使之可以在更新的 MinGW-w64 和更新的安卓 NDK 上构建通过。
-
-### 2024 年 2 月以前
+### {{% date 2024 3 18 %}}以前
 
 [这里](/Miscellaneous/Histories)

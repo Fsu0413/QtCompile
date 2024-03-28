@@ -33,6 +33,14 @@ Thanks for The Qt Company Ltd. and the programmers of Qt for their fantastic wor
 
 ## Update History
 
+### {{% date 2024 3 28 %}}
+Update Qt 6.6.3 and Qt 6.7.0-rc2 versions.   
+Rebuild VS2022 and llvm-mingw 18 builds for Qt 5.15 / 6.2 / 6.5.
+
+Qt 6 is migrating MinGW builds from GCC based toolchain to LLVM based one, using [llvm-mingw](https://github.com/mstorsjo/llvm-mingw).   
+I also suggest migrating since LLVM has faster build speed and produces smaller binaries, as well as supporting Windows on ARM (although I have not investigated about using llvm-mingw on WoA yet).  
+See {{% QtBug 107516 %}} for details.
+
 ### {{% date 2024 3 25 %}} no update
 Add note about build failure about MySQL backend for Qt 5.15.  
 Simply investigate llvm build on Windows.
@@ -42,25 +50,6 @@ Happy birthday to Iroi Imagay (the third time)!
 ### {{% date 2024 3 23 %}}
 Add Qt 5.15 series for Windows on ARM64.  
 
-### {{% date 2024 3 18 %}}
-Add Qt 6 series for Windows on ARM64.  
-Apply CVE-2023-4863 to Qt 6.2.7.
-
-### {{% date 2024 3 16 %}}
-Update Visual Studio 2022 to 17.9.3, rebuild all VS2022 packages (except for static one)    
-Build Qt 5.15 with [llvm-mingw](https://github.com/mstorsjo/llvm-mingw), now with Clang version 16, 17 and 18 series.  
-Upload builds of Qt 6.2 / 6.5 / 6.6 with llvm-mingw 18 series.    
-Build Qt 6.2 with Android NDK r25c.    
-Build Qt 6.2 and 6.5 with MinGW w/ GCC 13 series.
-
-Got a cold, ke ke ke....
-
-### {{% date 2024 3 12 %}}
-Update Qt 5.15.13.  
-Update Visual Studio 2022 to 17.9.2.
-
-Patch Qt 5.15 series to be built with newer MinGW-w64 and Android NDK versions.
-
-### Before Feb. 2024
+### Before {{% date 2024 3 18 %}}
 
 [Here](/Miscellaneous/Histories)
