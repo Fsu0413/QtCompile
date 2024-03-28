@@ -88,12 +88,10 @@
     <li><a href="#disclaimer">Disclaimer</a></li>
     <li><a href="#update-history">Update History</a>
       <ul>
+        <li><a href="#28th-mar-2024">28th Mar, 2024</a></li>
         <li><a href="#25th-mar-2024-no-update">25th Mar, 2024 no update</a></li>
         <li><a href="#23rd-mar-2024">23rd Mar, 2024</a></li>
-        <li><a href="#18th-mar-2024">18th Mar, 2024</a></li>
-        <li><a href="#16th-mar-2024">16th Mar, 2024</a></li>
-        <li><a href="#12th-mar-2024">12th Mar, 2024</a></li>
-        <li><a href="#before-feb-2024">Before Feb. 2024</a></li>
+        <li><a href="#before-18th-mar-2024">Before 18th Mar, 2024</a></li>
       </ul>
     </li>
   </ul>
@@ -134,13 +132,13 @@
 All links to OSDN are removed for now. Please download from SourceForge.</p>
 <p>Error during upload is as following (Output by WinSCP).</p>
 <div class="expand">
-    <input type="checkbox" id="R-expand-61773ddb283aeec4b5a22be195ea5fbe" aria-controls="R-expandcontent-61773ddb283aeec4b5a22be195ea5fbe" >
-    <label class="expand-label" for="R-expand-61773ddb283aeec4b5a22be195ea5fbe" >
+    <input type="checkbox" id="R-expand-ff7562cbce636b22677d823fff589d8f" aria-controls="R-expandcontent-ff7562cbce636b22677d823fff589d8f" >
+    <label class="expand-label" for="R-expand-ff7562cbce636b22677d823fff589d8f" >
         <i class="fa-fw fas fa-chevron-down"></i>
         <i class="fa-fw fas fa-chevron-right"></i>
         Expand me&hellip;
     </label>
-    <div id="R-expandcontent-61773ddb283aeec4b5a22be195ea5fbe" class="expand-content">
+    <div id="R-expandcontent-ff7562cbce636b22677d823fff589d8f" class="expand-content">
 <p>General failure (server should provide error description).<br>
 Error code: 4<br>
 Error message from server: Failure</p>
@@ -162,27 +160,19 @@ The code used is downloaded from <a href="http://download.qt.io" target="_blank"
 <strong>THESE PACKAGE ARE PROVIDED &ldquo;As is&rdquo;, I have no responsibility that you mess up your things with this binaries.</strong><br>
 Thanks for The Qt Company Ltd. and the programmers of Qt for their fantastic work!!</p>
 <h2 id="update-history">Update History</h2>
+<h3 id="28th-mar-2024">28th Mar, 2024</h3>
+<p>Update Qt 6.6.3 and Qt 6.7.0-rc2 versions.<br>
+Rebuild VS2022 and llvm-mingw 18 builds for Qt 5.15 / 6.2 / 6.5.</p>
+<p>Qt 6 is migrating MinGW builds from GCC based toolchain to LLVM based one, using <a href="https://github.com/mstorsjo/llvm-mingw" target="_blank">llvm-mingw</a>.<br>
+I also suggest migrating since LLVM has faster build speed and produces smaller binaries, as well as supporting Windows on ARM (although I have not investigated about using llvm-mingw on WoA yet).<br>
+See <a href="https://bugreports.qt.io/browse/QTBUG-107516" target="_blank">QTBUG-107516</a> for details.</p>
 <h3 id="25th-mar-2024-no-update">25th Mar, 2024 no update</h3>
 <p>Add note about build failure about MySQL backend for Qt 5.15.<br>
 Simply investigate llvm build on Windows.</p>
 <p>Happy birthday to Iroi Imagay (the third time)!</p>
 <h3 id="23rd-mar-2024">23rd Mar, 2024</h3>
 <p>Add Qt 5.15 series for Windows on ARM64.</p>
-<h3 id="18th-mar-2024">18th Mar, 2024</h3>
-<p>Add Qt 6 series for Windows on ARM64.<br>
-Apply CVE-2023-4863 to Qt 6.2.7.</p>
-<h3 id="16th-mar-2024">16th Mar, 2024</h3>
-<p>Update Visual Studio 2022 to 17.9.3, rebuild all VS2022 packages (except for static one) <br>
-Build Qt 5.15 with <a href="https://github.com/mstorsjo/llvm-mingw" target="_blank">llvm-mingw</a>, now with Clang version 16, 17 and 18 series.<br>
-Upload builds of Qt 6.2 / 6.5 / 6.6 with llvm-mingw 18 series. <br>
-Build Qt 6.2 with Android NDK r25c. <br>
-Build Qt 6.2 and 6.5 with MinGW w/ GCC 13 series.</p>
-<p>Got a cold, ke ke ke&hellip;.</p>
-<h3 id="12th-mar-2024">12th Mar, 2024</h3>
-<p>Update Qt 5.15.13.<br>
-Update Visual Studio 2022 to 17.9.2.</p>
-<p>Patch Qt 5.15 series to be built with newer MinGW-w64 and Android NDK versions.</p>
-<h3 id="before-feb-2024">Before Feb. 2024</h3>
+<h3 id="before-18th-mar-2024">Before 18th Mar, 2024</h3>
 <p><a href="/miscellaneous/histories/index.html">Here</a></p>
 
             <footer class="footline">
@@ -223,10 +213,15 @@ Update Visual Studio 2022 to 17.9.2.</p>
           <li data-nav-id="/6.5-series/6.5.3-for-android/index.html" class=""><a class="padding" href="/6.5-series/6.5.3-for-android/index.html">6.5.3 for Android</a></li>
           <li data-nav-id="/6.5-series/6.5.3-for-webassembly/index.html" class=""><a class="padding" href="/6.5-series/6.5.3-for-webassembly/index.html">6.5.3 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/6.6-series/index.html" class=""><a class="padding" href="/6.6-series/index.html">6.6 series</a><ul id="R-subsections-a9e8a8520a9b963200eae23933ab25ff" class="morespace collapsible-menu">
-          <li data-nav-id="/6.6-series/6.6.0-for-windows/index.html" class=""><a class="padding" href="/6.6-series/6.6.0-for-windows/index.html">6.6.2 for Windows</a></li>
-          <li data-nav-id="/6.6-series/6.6.0-for-macos/index.html" class=""><a class="padding" href="/6.6-series/6.6.0-for-macos/index.html">6.6.2 for macOS</a></li>
-          <li data-nav-id="/6.6-series/6.6.0-for-android/index.html" class=""><a class="padding" href="/6.6-series/6.6.0-for-android/index.html">6.6.2 for Android</a></li>
-          <li data-nav-id="/6.6-series/6.6.0-for-webassembly/index.html" class=""><a class="padding" href="/6.6-series/6.6.0-for-webassembly/index.html">6.6.2 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/6.6-series/6.6.0-for-windows/index.html" class=""><a class="padding" href="/6.6-series/6.6.0-for-windows/index.html">6.6.3 for Windows</a></li>
+          <li data-nav-id="/6.6-series/6.6.0-for-macos/index.html" class=""><a class="padding" href="/6.6-series/6.6.0-for-macos/index.html">6.6.3 for macOS</a></li>
+          <li data-nav-id="/6.6-series/6.6.0-for-android/index.html" class=""><a class="padding" href="/6.6-series/6.6.0-for-android/index.html">6.6.3 for Android</a></li>
+          <li data-nav-id="/6.6-series/6.6.0-for-webassembly/index.html" class=""><a class="padding" href="/6.6-series/6.6.0-for-webassembly/index.html">6.6.3 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/6.7-series/index.html" class=""><a class="padding" href="/6.7-series/index.html">6.7 series</a><ul id="R-subsections-7bba749b3ce093fe170f5d1dec09c5d9" class="morespace collapsible-menu">
+          <li data-nav-id="/6.7-series/6.7.0-for-windows/index.html" class=""><a class="padding" href="/6.7-series/6.7.0-for-windows/index.html">6.7.0-rc2 for Windows</a></li>
+          <li data-nav-id="/6.7-series/6.7.0-for-macos/index.html" class=""><a class="padding" href="/6.7-series/6.7.0-for-macos/index.html">6.7.0-rc2 for macOS</a></li>
+          <li data-nav-id="/6.7-series/6.7.0-for-android/index.html" class=""><a class="padding" href="/6.7-series/6.7.0-for-android/index.html">6.7.0-rc2 for Android</a></li>
+          <li data-nav-id="/6.7-series/6.7.0-for-webassembly/index.html" class=""><a class="padding" href="/6.7-series/6.7.0-for-webassembly/index.html">6.7.0-rc2 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/miscellaneous/index.html" class=""><a class="padding" href="/miscellaneous/index.html">Miscellaneous</a><ul id="R-subsections-fbd0e6ecd70e8ab847a5d20136c55334" class="morespace collapsible-menu">
           <li data-nav-id="/miscellaneous/notesforthisrepo/index.html" class=""><a class="padding" href="/miscellaneous/notesforthisrepo/index.html">Notes for this repository</a></li>
           <li data-nav-id="/miscellaneous/current-build-status/index.html" class=""><a class="padding" href="/miscellaneous/current-build-status/index.html">Current build status</a></li>
@@ -313,7 +308,7 @@ Update Visual Studio 2022 to 17.9.2.</p>
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Mon, 25 Mar 2024 20:30:10 CST</p>
+Site generated: Thu, 28 Mar 2024 21:06:46 CST</p>
 
           </div>
         </div>

@@ -88,12 +88,10 @@
     <li><a href="#免责声明">免责声明</a></li>
     <li><a href="#更新记录">更新记录</a>
       <ul>
+        <li><a href="#2024-年-3-月-28-日">2024 年 3 月 28 日</a></li>
         <li><a href="#2024-年-3-月-25-日-无更新">2024 年 3 月 25 日 无更新</a></li>
         <li><a href="#2024-年-3-月-23-日">2024 年 3 月 23 日</a></li>
-        <li><a href="#2024-年-3-月-18-日">2024 年 3 月 18 日</a></li>
-        <li><a href="#2024-年-3-月-16-日">2024 年 3 月 16 日</a></li>
-        <li><a href="#2024-年-3-月-12-日">2024 年 3 月 12 日</a></li>
-        <li><a href="#2024-年-2-月以前">2024 年 2 月以前</a></li>
+        <li><a href="#2024-年-3-月-18-日以前">2024 年 3 月 18 日以前</a></li>
       </ul>
     </li>
   </ul>
@@ -134,13 +132,13 @@
 目前已经删除所有 OSDN 链接，拜托各位通过 SourceForge 进行下载。</p>
 <p>这边上传的时候发生的错误如下（通过 WinSCP 输出）：</p>
 <div class="expand">
-    <input type="checkbox" id="R-expand-164e7443b05be3ee13d4cc8eed3142b3" aria-controls="R-expandcontent-164e7443b05be3ee13d4cc8eed3142b3" >
-    <label class="expand-label" for="R-expand-164e7443b05be3ee13d4cc8eed3142b3" >
+    <input type="checkbox" id="R-expand-079c72c2ffb62b1f411263628f8315c9" aria-controls="R-expandcontent-079c72c2ffb62b1f411263628f8315c9" >
+    <label class="expand-label" for="R-expand-079c72c2ffb62b1f411263628f8315c9" >
         <i class="fa-fw fas fa-chevron-down"></i>
         <i class="fa-fw fas fa-chevron-right"></i>
         展开
     </label>
-    <div id="R-expandcontent-164e7443b05be3ee13d4cc8eed3142b3" class="expand-content">
+    <div id="R-expandcontent-079c72c2ffb62b1f411263628f8315c9" class="expand-content">
 <p>一般错误(服务器应该提供错误描述)。<br>
 错误码：4<br>
 服务器返回的错误消息：Failure</p>
@@ -162,27 +160,19 @@
 <strong>这些包为“依原样”提供。我对您使用此二进制文件作出的任何事情不负任何责任。</strong><br>
 感谢 The Qt Company Ltd. 和众多 Qt 的开发者的绝妙工作！</p>
 <h2 id="更新记录">更新记录</h2>
+<h3 id="2024-年-3-月-28-日">2024 年 3 月 28 日</h3>
+<p>更新 Qt 6.6.3 和 Qt 6.7.0-rc2 版本。<br>
+重新构建了 VS2022 和 llvm-mingw 18 的 Qt 5.15 / 6.2 / 6.5 版本。</p>
+<p>Qt 6 正在迁移 MinGW 构建，从基于 GCC 的工具链到使用 <a href="https://github.com/mstorsjo/llvm-mingw" target="_blank">llvm-mingw</a> 的基于 LLVM 的工具链。 <br>
+我也建议 MinGW 的使用者迁移过去，因为使用 LLVM 构建更快，生成更小的二进制文件，并且也支持 Windows on ARM（虽然我还没有调查在 WoA 上使用 llvm-mingw）。<br>
+详情参考 <a href="https://bugreports.qt.io/browse/QTBUG-107516" target="_blank">QTBUG-107516</a>。</p>
 <h3 id="2024-年-3-月-25-日-无更新">2024 年 3 月 25 日 无更新</h3>
 <p>增加 Qt 5.15 部分 MySQL 后端构建失败的备注。<br>
 简单调查 llvm 在 Windows 上的构建。</p>
 <p>（第三次）祝基神奄（Iroi Imagay）生日快乐！！</p>
 <h3 id="2024-年-3-月-23-日">2024 年 3 月 23 日</h3>
 <p>添加 Windows on ARM64 的 Qt 5.15 系列构建。</p>
-<h3 id="2024-年-3-月-18-日">2024 年 3 月 18 日</h3>
-<p>添加 Windows on ARM64 的 Qt 6 系列构建。<br>
-为 Qt 6.2.7 应用 CVE-2023-4863。</p>
-<h3 id="2024-年-3-月-16-日">2024 年 3 月 16 日</h3>
-<p>更新 Visual Studio 2022 到 17.9.3，重新构建了所有 VS2022 的包（除了静态的）<br>
-使用 <a href="https://github.com/mstorsjo/llvm-mingw" target="_blank">llvm-mingw</a> 构建了 Qt 5.15。目前带了 Clang 16，17 和 18 系列。<br>
-上传 Qt 6.2 / 6.5 / 6.6 使用 llvm-mingw 18 系列的构建。<br>
-使用 Android NDK r25c 构建了 Qt 6.2。
-使用 MinGW w/ GCC 13 系列构建了 Qt 6.2 和 6.5 系列。</p>
-<p>感冒了，咳咳。。。。</p>
-<h3 id="2024-年-3-月-12-日">2024 年 3 月 12 日</h3>
-<p>更新 Qt 5.15.13。<br>
-更新 Visual Studio 2022 到 17.9.2。</p>
-<p>为 Qt 5.15 系列打上一些补丁，使之可以在更新的 MinGW-w64 和更新的安卓 NDK 上构建通过。</p>
-<h3 id="2024-年-2-月以前">2024 年 2 月以前</h3>
+<h3 id="2024-年-3-月-18-日以前">2024 年 3 月 18 日以前</h3>
 <p><a href="/zh-cn/miscellaneous/histories/index.html">这里</a></p>
 
             <footer class="footline">
@@ -223,10 +213,15 @@
           <li data-nav-id="/zh-cn/6.5-series/6.5.3-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.3-for-android/index.html">6.5.3 的安卓版本</a></li>
           <li data-nav-id="/zh-cn/6.5-series/6.5.3-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.3-for-webassembly/index.html">6.5.3 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/6.6-series/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/index.html">6.6 系列</a><ul id="R-subsections-a9e8a8520a9b963200eae23933ab25ff" class="morespace collapsible-menu">
-          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-windows/index.html">6.6.2 的 Windows 版本</a></li>
-          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-macos/index.html">6.6.2 的 macOS 版本</a></li>
-          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-android/index.html">6.6.2 的安卓版本</a></li>
-          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-webassembly/index.html">6.6.2 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-windows/index.html">6.6.3 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-macos/index.html">6.6.3 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-android/index.html">6.6.3 的安卓版本</a></li>
+          <li data-nav-id="/zh-cn/6.6-series/6.6.0-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.6-series/6.6.0-for-webassembly/index.html">6.6.3 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/6.7-series/index.html" class=""><a class="padding" href="/zh-cn/6.7-series/index.html">6.7 系列</a><ul id="R-subsections-7bba749b3ce093fe170f5d1dec09c5d9" class="morespace collapsible-menu">
+          <li data-nav-id="/zh-cn/6.7-series/6.7.0-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.7-series/6.7.0-for-windows/index.html">6.7.0-rc2 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/6.7-series/6.7.0-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.7-series/6.7.0-for-macos/index.html">6.7.0-rc2 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/6.7-series/6.7.0-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.7-series/6.7.0-for-android/index.html">6.7.0-rc2 的安卓版本</a></li>
+          <li data-nav-id="/zh-cn/6.7-series/6.7.0-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.7-series/6.7.0-for-webassembly/index.html">6.7.0-rc2 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/miscellaneous/index.html" class=""><a class="padding" href="/zh-cn/miscellaneous/index.html">杂项</a><ul id="R-subsections-fbd0e6ecd70e8ab847a5d20136c55334" class="morespace collapsible-menu">
           <li data-nav-id="/zh-cn/miscellaneous/notesforthisrepo/index.html" class=""><a class="padding" href="/zh-cn/miscellaneous/notesforthisrepo/index.html">本版本库的一些备注</a></li>
           <li data-nav-id="/zh-cn/miscellaneous/current-build-status/index.html" class=""><a class="padding" href="/zh-cn/miscellaneous/current-build-status/index.html">当前构建状态</a></li>
@@ -313,7 +308,7 @@
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Mon, 25 Mar 2024 20:30:10 CST</p>
+Site generated: Thu, 28 Mar 2024 21:06:47 CST</p>
 
           </div>
         </div>
