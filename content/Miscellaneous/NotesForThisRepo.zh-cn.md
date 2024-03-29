@@ -142,7 +142,7 @@ Qt 宣布了 [Qt offering changes 2020](https://www.qt.io/blog/qt-offering-chang
 LTS 只给商业许可，那么 LTS 的源码包是什么许可？  
 （{{% date 2022 3 8 %}}删除） ~~如果也是商业许可的话，Qt 基本就和稳定开源软件说拜拜了。~~  
 （{{% date 2022 3 8 %}}更新）按照现有的所有版本延迟一年发布的计划，举个例子一个安全补丁会延迟非常晚才被修复，尤其 Qt 公司构建的原版 Qt 更是这样。  
-再说了他们的 LTS 支持时间也不算长，Windows 支持 10 年，（{{% date 2022 4 14 %}}更新） ~~CentOS~~ RockyLinux 支持 10 年，他支持 3 年。。。。
+再说了他们的 LTS 支持时间也不算长，Windows 支持 10 年，（{{% date 2022 4 14 %}}更新） ~~CentOS~~ Rocky Linux 支持 10 年，他支持 3 年。。。。
 
 离线安装包只给商业许可，等于国内只能找网络通畅的时间（一般是早晨 8 点前）来用在线安装包安装 Qt 开源版了。
 
@@ -169,7 +169,7 @@ Windows 11 - MinGW, x86_64, host and target
 macOS 13 - toolchain provided by Apple with AppleClang, x86_64 / arm64_v8a, host and target, universal  
 Android - NDK, arm / x86 / arm64 / x86_64, target only. No x86 builds after 6.3  
 WebAssembly - emscripten, target only  
-Linux - toolchain provided by RedHat modified by RockyLinux developers with GCC, x86_64, host only
+Linux - toolchain provided by RedHat modified by Rocky Linux developers with GCC, x86_64, host only
 
 Qt 6.2 是 LTS 发布，但是在 Qt offering changes 2020 的影响下，Qt 6.2 对社区发布要比商业用户晚一年。  
 我会在 Qt 6.2 添加静态构建，但是我不是很确切的知道 Qt 的那帮人要怎么处理他们的发布。。。

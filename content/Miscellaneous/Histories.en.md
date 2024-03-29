@@ -196,7 +196,7 @@ Update to Xcode 14 and rebuild all of macOS hosted Qt 6.2 onwards.
 ## {{% date 2022 9 12 %}}
 Update Qt 6.2.4 / 6.3.2 WebAssembly packages. They are currently built using PCH.  
 Update Qt 6.2.4 / 6.3.2 llvm-mingw packages. They are currently built with WMF support.  
-Update Qt 6.4.0-beta4. All configuration from previous 6.3 are available. RockyLinux 9 is used for Qt 6.4.0 Linux hosted build. WebAssembly and llvm-mingw packages are built using updated configuration today.
+Update Qt 6.4.0-beta4. All configuration from previous 6.3 are available. Rocky Linux 9 is used for Qt 6.4.0 Linux hosted build. WebAssembly and llvm-mingw packages are built using updated configuration today.
 
 ## {{% date 2022 9 11 %}}
 Update Qt 6.3.2 with OpenSSL 3.0.5.  
@@ -325,7 +325,7 @@ Upload Qt 6.1.1 with previously failed Android versions.
 
 ## {{% date 2021 5 28 %}}
 Upload Qt 5.12.11 (Windows ARM64 version doesn't upload because of compile failure)  
-In-place reinstall RockyLinux 8 to replace the current CentOS 8 for Linux build host, preserving all configuration and environment.
+In-place reinstall Rocky Linux 8 to replace the current CentOS 8 for Linux build host, preserving all configuration and environment.
 
 ## {{% date 2021 5 13 %}}
 Upload Qt 5.15.2 with WebEngine 5.15.4 / QtScript 5.15.4.  

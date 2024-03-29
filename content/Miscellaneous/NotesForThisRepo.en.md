@@ -142,7 +142,7 @@ All files are compiled and linked from the same set of source code. It will not 
 LTS is only available for commercial license. So what is the license for the LTS source package?  
 (Removed {{% date 2022 3 8 %}}) ~~If it is also only available for commercial licenses, Qt basically says goodbye to stable open source software.~~  
 (Updated {{% date 2022 3 8 %}}) With current release schedule any patch will be delivered after 1 year. It will be too late before a security issue has got patched, espically for original version built by tQtC.  
-Besides, their LTS support time is not too long. Windows has 10 years of support time, (Updated {{% date 2022 4 14 %}}) ~~CentOS~~ RockyLinux has 10 years of support time, and Qt has only 3 years...
+Besides, their LTS support time is not too long. Windows has 10 years of support time, (Updated {{% date 2022 4 14 %}}) ~~CentOS~~ Rocky Linux has 10 years of support time, and Qt has only 3 years...
 
 The offline installation package is only available for commercial licenses, which means that peoples in China can only find the time (usually before 8 am) when the network is available to install the Qt open source version with the online installation package.
 
@@ -169,7 +169,7 @@ Windows 11 - MinGW, x86_64, host and target
 macOS 13 - toolchain provided by Apple with AppleClang, x86_64 / arm64_v8a, host and target, universal  
 Android - NDK, arm / x86 / arm64 / x86_64, target only. No x86 builds after 6.3  
 WebAssembly - emscripten, target only  
-Linux - toolchain provided by RedHat modified by RockyLinux developers with GCC, x86_64, host only
+Linux - toolchain provided by RedHat modified by Rocky Linux developers with GCC, x86_64, host only
 
 Qt 6.2 is LTS release, but with Qt offering changes 2020 Qt 6.2 release to community comes one year later than it is released to commericial users.  
 I will add bulid for static version for Qt 6.2, but I don't exactly know how Qt guys operate with their release...

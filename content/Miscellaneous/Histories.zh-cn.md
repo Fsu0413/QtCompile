@@ -196,7 +196,7 @@ Qt 6.2.4 的 Linux 和 macOS 主机交叉构建版在打包时额外附带主机
 ## {{% date 2022 9 12 %}}
 更新 Qt 6.2.4 / 6.3.2 WebAssembly 包。现在启用了预编译头文件支持。  
 更新 Qt 6.2.4 / 6.3.2 llvm-mingw 包。现在启用了 WMF 支持。  
-更新 Qt 6.4.0-beta4。所有原来在 6.3 上的配置全部可用。使用 RockyLinux 9 进行 Qt 6.4.0 的 Linux 交叉构建主机。WebAssembly 和 llvm-mingw 包都使用了今天更新的配置进行构建。
+更新 Qt 6.4.0-beta4。所有原来在 6.3 上的配置全部可用。使用 Rocky Linux 9 进行 Qt 6.4.0 的 Linux 交叉构建主机。WebAssembly 和 llvm-mingw 包都使用了今天更新的配置进行构建。
 
 ## {{% date 2022 9 11 %}}
 更新 Qt 6.3.2，使用 OpenSSL 3.0.5。  
@@ -325,7 +325,7 @@ Windows 主机版升级了 QQtPatcher 到 0.8.1，支持更多 5.12 特有的硬
 
 ## {{% date 2021 5 28 %}}
 上传 Qt 5.12.11 （Windows ARM64 版本没有上传，因为编译失败了）  
-用于编译 Linux 版本的发行版就地重装为 RockyLinux，除了发行版本身之外所有配置和环境均保留
+用于编译 Linux 版本的发行版就地重装为 Rocky Linux，除了发行版本身之外所有配置和环境均保留
 
 ## {{% date 2021 5 13 %}}
 上传 Qt 5.15.2 附带 QtWebEngine 5.15.4 和 QtScript 5.15.4。  
