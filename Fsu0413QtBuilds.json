@@ -8,7 +8,7 @@
     "data": {
       "version": "5.15.13",
       "platform": "Android",
-      "buildHost": "RockyLinux 8.9",
+      "buildHost": "Rocky Linux 8.9",
       "toolchain": "ndk r21e",
       "arch": "ALL",
       "variant": "android-23",
@@ -80,7 +80,7 @@
     "data": {
       "version": "5.15.13",
       "platform": "Android",
-      "buildHost": "RockyLinux 8.9",
+      "buildHost": "Rocky Linux 8.9",
       "toolchain": "ndk r23c",
       "arch": "ALL",
       "variant": "android-23",
@@ -152,7 +152,7 @@
     "data": {
       "version": "5.15.13",
       "platform": "Android",
-      "buildHost": "RockyLinux 8.9",
+      "buildHost": "Rocky Linux 8.9",
       "toolchain": "ndk r25c",
       "arch": "ALL",
       "variant": "android-23",
@@ -272,7 +272,7 @@
     "data": {
       "version": "5.15.13",
       "platform": "WebAssembly",
-      "buildHost": "RockyLinux 8.9",
+      "buildHost": "Rocky Linux 8.9",
       "toolchain": "emscripten-1.39.8",
       "arch": "-",
       "variant": "-feature-threads",
@@ -792,7 +792,7 @@
     "data": {
       "version": "6.2.7",
       "platform": "Android",
-      "buildHost": "RockyLinux 8.9",
+      "buildHost": "Rocky Linux 8.9",
       "toolchain": "ndk r23c",
       "arch": "arm64",
       "variant": "android-24",
@@ -846,7 +846,7 @@
     "data": {
       "version": "6.2.7",
       "platform": "Android",
-      "buildHost": "RockyLinux 8.9",
+      "buildHost": "Rocky Linux 8.9",
       "toolchain": "ndk r23c",
       "arch": "arm",
       "variant": "android-24",
@@ -900,7 +900,7 @@
     "data": {
       "version": "6.2.7",
       "platform": "Android",
-      "buildHost": "RockyLinux 8.9",
+      "buildHost": "Rocky Linux 8.9",
       "toolchain": "ndk r23c",
       "arch": "x86_64",
       "variant": "android-24",
@@ -954,7 +954,7 @@
     "data": {
       "version": "6.2.7",
       "platform": "Android",
-      "buildHost": "RockyLinux 8.9",
+      "buildHost": "Rocky Linux 8.9",
       "toolchain": "ndk r23c",
       "arch": "x86",
       "variant": "android-24",
@@ -1008,7 +1008,7 @@
     "data": {
       "version": "6.2.7",
       "platform": "Android",
-      "buildHost": "RockyLinux 8.9",
+      "buildHost": "Rocky Linux 8.9",
       "toolchain": "ndk r25c",
       "arch": "arm64",
       "variant": "android-24",
@@ -1062,7 +1062,7 @@
     "data": {
       "version": "6.2.7",
       "platform": "Android",
-      "buildHost": "RockyLinux 8.9",
+      "buildHost": "Rocky Linux 8.9",
       "toolchain": "ndk r25c",
       "arch": "arm",
       "variant": "android-24",
@@ -1116,7 +1116,7 @@
     "data": {
       "version": "6.2.7",
       "platform": "Android",
-      "buildHost": "RockyLinux 8.9",
+      "buildHost": "Rocky Linux 8.9",
       "toolchain": "ndk r25c",
       "arch": "x86_64",
       "variant": "android-24",
@@ -1170,7 +1170,7 @@
     "data": {
       "version": "6.2.7",
       "platform": "Android",
-      "buildHost": "RockyLinux 8.9",
+      "buildHost": "Rocky Linux 8.9",
       "toolchain": "ndk r25c",
       "arch": "x86",
       "variant": "android-24",
@@ -1270,7 +1270,7 @@
     "data": {
       "version": "6.2.7",
       "platform": "WebAssembly",
-      "buildHost": "RockyLinux 8.9",
+      "buildHost": "Rocky Linux 8.9",
       "toolchain": "emscripten-2.0.14",
       "arch": "-",
       "variant": "-feature-threads",
@@ -1598,7 +1598,7 @@
     "data": {
       "version": "6.2.7",
       "platform": "Linux",
-      "buildHost": "RockyLinux 8.9",
+      "buildHost": "Rocky Linux 8.9",
       "toolchain": "GCC 8.5.0",
       "arch": "x86_64",
       "variant": "-static(Lite)",
@@ -1630,7 +1630,7 @@
     "data": {
       "version": "6.5.3",
       "platform": "Android",
-      "buildHost": "RockyLinux 9.3",
+      "buildHost": "Rocky Linux 9.3",
       "toolchain": "ndk r25c",
       "arch": "arm64",
       "variant": "android-27",
@@ -1684,7 +1684,7 @@
     "data": {
       "version": "6.5.3",
       "platform": "Android",
-      "buildHost": "RockyLinux 9.3",
+      "buildHost": "Rocky Linux 9.3",
       "toolchain": "ndk r25c",
       "arch": "arm",
       "variant": "android-27",
@@ -1738,7 +1738,7 @@
     "data": {
       "version": "6.5.3",
       "platform": "Android",
-      "buildHost": "RockyLinux 9.3",
+      "buildHost": "Rocky Linux 9.3",
       "toolchain": "ndk r25c",
       "arch": "x86_64",
       "variant": "android-27",
@@ -1792,7 +1792,7 @@
     "data": {
       "version": "6.5.3",
       "platform": "Android",
-      "buildHost": "RockyLinux 9.3",
+      "buildHost": "Rocky Linux 9.3",
       "toolchain": "ndk r26c",
       "arch": "arm64",
       "variant": "android-27",
@@ -1846,7 +1846,7 @@
     "data": {
       "version": "6.5.3",
       "platform": "Android",
-      "buildHost": "RockyLinux 9.3",
+      "buildHost": "Rocky Linux 9.3",
       "toolchain": "ndk r26c",
       "arch": "arm",
       "variant": "android-27",
@@ -1900,7 +1900,7 @@
     "data": {
       "version": "6.5.3",
       "platform": "Android",
-      "buildHost": "RockyLinux 9.3",
+      "buildHost": "Rocky Linux 9.3",
       "toolchain": "ndk r26c",
       "arch": "x86_64",
       "variant": "android-27",
@@ -2000,7 +2000,7 @@
     "data": {
       "version": "6.5.3",
       "platform": "WebAssembly",
-      "buildHost": "RockyLinux 9.3",
+      "buildHost": "Rocky Linux 9.3",
       "toolchain": "emscripten-3.1.25",
       "arch": "-",
       "variant": "-feature-threads",
@@ -2346,7 +2346,7 @@
     "data": {
       "version": "6.5.3",
       "platform": "Linux",
-      "buildHost": "RockyLinux 9.3",
+      "buildHost": "Rocky Linux 9.3",
       "toolchain": "GCC 11.4.1",
       "arch": "x86_64",
       "variant": "-static(Lite)",
@@ -2378,7 +2378,7 @@
     "data": {
       "version": "6.6.3",
       "platform": "Android",
-      "buildHost": "RockyLinux 9.3",
+      "buildHost": "Rocky Linux 9.3",
       "toolchain": "ndk r26c",
       "arch": "arm64",
       "variant": "android-27",
@@ -2432,7 +2432,7 @@
     "data": {
       "version": "6.6.3",
       "platform": "Android",
-      "buildHost": "RockyLinux 9.3",
+      "buildHost": "Rocky Linux 9.3",
       "toolchain": "ndk r26c",
       "arch": "arm",
       "variant": "android-27",
@@ -2486,7 +2486,7 @@
     "data": {
       "version": "6.6.3",
       "platform": "Android",
-      "buildHost": "RockyLinux 9.3",
+      "buildHost": "Rocky Linux 9.3",
       "toolchain": "ndk r26c",
       "arch": "x86_64",
       "variant": "android-27",
@@ -2570,7 +2570,7 @@
     "data": {
       "version": "6.6.3",
       "platform": "WebAssembly",
-      "buildHost": "RockyLinux 9.3",
+      "buildHost": "Rocky Linux 9.3",
       "toolchain": "emscripten-3.1.37",
       "arch": "-",
       "variant": "-feature-threads",
@@ -2798,7 +2798,7 @@
     "data": {
       "version": "6.6.3",
       "platform": "Linux",
-      "buildHost": "RockyLinux 9.3",
+      "buildHost": "Rocky Linux 9.3",
       "toolchain": "GCC 11.4.1",
       "arch": "x86_64",
       "variant": "-static(Lite)",

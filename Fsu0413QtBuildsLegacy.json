@@ -649,7 +649,7 @@
     "data": {
       "version": "5.12.12",
       "platform": "Android",
-      "buildHost": "RockyLinux 8.8",
+      "buildHost": "Rocky Linux 8.8",
       "toolchain": "ndk r21e",
       "arch": "arm64",
       "variant": "android-21",
@@ -700,7 +700,7 @@
     "data": {
       "version": "5.12.12",
       "platform": "Android",
-      "buildHost": "RockyLinux 8.8",
+      "buildHost": "Rocky Linux 8.8",
       "toolchain": "ndk r21e",
       "arch": "arm",
       "variant": "android-21",
@@ -751,7 +751,7 @@
     "data": {
       "version": "5.12.12",
       "platform": "Android",
-      "buildHost": "RockyLinux 8.8",
+      "buildHost": "Rocky Linux 8.8",
       "toolchain": "ndk r21e",
       "arch": "x86",
       "variant": "android-21",
@@ -830,7 +830,7 @@
     "data": {
       "version": "5.12.12",
       "platform": "WebAssembly",
-      "buildHost": "RockyLinux 8.4",
+      "buildHost": "Rocky Linux 8.4",
       "toolchain": "emscripten-1.38.16",
       "arch": "-",
       "variant": "",
