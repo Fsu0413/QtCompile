@@ -1,7 +1,6 @@
----
-title: "4.8 系列"
-draft: false
-weight: 408
----
+{
+  "title": "4.8 系列",
+  "weight": 408
+}
 
 {{% children sort="weight" %}}

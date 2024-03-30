@@ -1,8 +1,7 @@
----
-title: "Miscellaneous"
-draft: false
-weight: 9998
----
+{
+  "title": "Miscellaneous",
+  "weight": 9998
+}
 
 This folder contains miscellaneous contents.
 

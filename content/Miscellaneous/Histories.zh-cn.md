@@ -1,8 +1,7 @@
----
-title: "之前的历史"
-draft: false
-weight: 4
----
+{
+  "title": "之前的历史",
+  "weight": 4
+}
 
 ## {{% date 2024 3 18 %}}
 添加 Windows on ARM64 的 Qt 6 系列构建。   

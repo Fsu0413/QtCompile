@@ -1,8 +1,7 @@
----
-title: "本版本库的一些备注"
-draft: false
-weight: 1
----
+{
+  "title": "本版本库的一些备注",
+  "weight": 1
+}
 
 ## 中文 / 多语言支持
 

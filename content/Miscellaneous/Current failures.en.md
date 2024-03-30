@@ -1,8 +1,7 @@
----
-title: "Current failures"
-draft: false
-weight: 3
----
+{
+  "title": "Current failures",
+  "weight": 3
+}
 
 ## QDoc after Qt 5.12 cannot use static linked llvm / clang when using MSVC
 

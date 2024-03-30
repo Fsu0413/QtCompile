@@ -1,8 +1,7 @@
----
-title: "当前的失败项"
-draft: false
-weight: 3
----
+{
+  "title": "当前的失败项",
+  "weight": 3
+}
 
 ## Qt 5.12 以后的 QDoc 使用 MSVC 构建时无法使用静态链接的 clang
 

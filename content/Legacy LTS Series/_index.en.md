@@ -1,8 +1,7 @@
----
-title: "Legacy LTS Series"
-draft: false
-weight: 9999
----
+{
+  "title": "Legacy LTS Series",
+  "weight": 9999
+}
 
 ## Not maintained
 

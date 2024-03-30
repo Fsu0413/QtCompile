@@ -1,8 +1,7 @@
----
-title: "Fsu0413 的原版 Qt 构建"
-draft: false
-archetype: "home"
----
+{
+  "title": "Fsu0413 的原版 Qt 构建",
+  "archetype": "home"
+}
 
 {{% notice style="info" title="备注"  icon="fas fa-info-circle" %}}
 OSDN 目前发生技术问题，上传下载均有问题。  

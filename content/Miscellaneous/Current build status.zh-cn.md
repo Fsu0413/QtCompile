@@ -1,9 +1,8 @@
----
-title: "当前构建状态"
-draft: false
-weight: 2
-isMaxWidthPreferred: true
----
+{
+  "title": "当前构建状态",
+  "weight": 2,
+  "isMaxWidthPreferred": true
+}
 
 ## OpenSSL 状态
 

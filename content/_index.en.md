@@ -1,8 +1,7 @@
----
-title: "Fsu0413\'s Original Qt builds"
-draft: false
-archetype: "home"
----
+{
+  "title": "Fsu0413's Original Qt builds",
+  "archetype": "home"
+}
 
 {{% notice style="info" title="Note"  icon="fas fa-info-circle" %}}
 Currently there is technical problem on OSDN. Download / Upload are having problems.  

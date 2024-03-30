@@ -1,8 +1,7 @@
----
-title: "Notes for this repository"
-draft: false
-weight: 1
----
+{
+  "title": "Notes for this repository",
+  "weight": 1
+}
 
 ## Chinese / Multilingual Support
 

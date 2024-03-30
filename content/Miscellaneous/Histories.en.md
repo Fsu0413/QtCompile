@@ -1,8 +1,7 @@
----
-title: "Previous Histories"
-draft: false
-weight: 4
----
+{
+  "title": "Previous Histories",
+  "weight": 4
+}
 
 ## {{% date 2024 3 18 %}}
 Add Qt 6 series for Windows on ARM64.  
