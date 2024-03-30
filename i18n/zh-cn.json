@@ -5,6 +5,9 @@
 	"Platform": {
 		"other": "平台"
 	},
+	"Target Platform": {
+		"other": "目标平台"
+	},
 	"Build Host" : {
 		"other": "构建主机"
 	},

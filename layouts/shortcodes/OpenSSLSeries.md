@@ -1,4 +1,4 @@
-| {{ T "OpenSSL Version" }} | {{ T "Platform" }} | {{ T "Build Host" }} | {{ T "Toolchain Version" }} | {{ T "Architecture" }} | {{ T "Variant" }} |
+| {{ T "OpenSSL Version" }} | {{ T "Target Platform" }} | {{ T "Build Host" }} | {{ T "Toolchain Version" }} | {{ T "Architecture" }} | {{ T "Variant" }} |
 |-|-|-|-|-|-|
 {{- range sort site.Data.Fsu0413OpenSSLBuilds "sort" }}
 |{{- .data.version -}}

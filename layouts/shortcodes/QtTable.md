@@ -1,7 +1,8 @@
-| {{ T "Qt Version" }} | {{ T "Build Host" }} | {{ T "Toolchain Version" }} | {{ T "Architecture" }} | {{ T "Variant" }} | {{ T "Uploaded" }} |
-|-|-|-|-|-|-|
+| {{ T "Qt Version" }} | {{ T "Target Platform" }} | {{ T "Build Host" }} | {{ T "Toolchain Version" }} | {{ T "Architecture" }} | {{ T "Variant" }} | {{ T "Uploaded" }} |
+|-|-|-|-|-|-|-|
 {{- range sort site.Data.Fsu0413QtBuilds "sort" }}
 |{{- .data.version -}}
+|{{- .data.platform -}}
 |{{- .data.buildHost -}}
 |{{- .data.toolchain -}}
 |{{- .data.arch -}}

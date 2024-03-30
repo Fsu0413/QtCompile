@@ -5,6 +5,9 @@
 	"Platform": {
 		"other": "Platform"
 	},
+	"Target Platform": {
+		"other": "Target Platform"
+	},
 	"Build Host": {
 		"other": "Build Host"
 	},
