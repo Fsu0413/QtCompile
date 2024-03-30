@@ -9,7 +9,6 @@
       "toolchain": "VS2010 SP1",
       "arch": "x86",
       "variant": "",
-      "mkspecs": "win32-msvc2010",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -25,7 +24,6 @@
       "toolchain": "MinGW-w64 w/ GCC 4.9.4",
       "arch": "x86",
       "variant": "",
-      "mkspecs": "win32-g++",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -40,7 +38,6 @@
       "toolchain": "AppleClang 6.1",
       "arch": "x86_64",
       "variant": "-framework",
-      "mkspecs": "macx-llvm",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -55,7 +52,6 @@
       "toolchain": "AppleClang 6.1",
       "arch": "x86_64",
       "variant": "-no-framework",
-      "mkspecs": "macx-llvm",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -71,7 +67,6 @@
       "toolchain": "VS2010 SP1",
       "arch": "x86",
       "variant": "",
-      "mkspecs": "win32-msvc2010",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -87,7 +82,6 @@
       "toolchain": "VS2010 SP1",
       "arch": "x86",
       "variant": "-static",
-      "mkspecs": "win32-msvc2010",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -103,7 +97,6 @@
       "toolchain": "VS2010 SP1",
       "arch": "x86",
       "variant": "-static(Full)",
-      "mkspecs": "win32-msvc2010",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -119,7 +112,6 @@
       "toolchain": "MinGW-w64 w/ GCC 4.9.4",
       "arch": "x86",
       "variant": "",
-      "mkspecs": "win32-g++",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -135,7 +127,6 @@
       "toolchain": "MinGW-w64 w/ GCC 4.9.4",
       "arch": "x86_64",
       "variant": "",
-      "mkspecs": "win32-g++",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -151,7 +142,6 @@
       "toolchain": "MinGW-w64 w/ GCC 4.9.4",
       "arch": "x86",
       "variant": "-static",
-      "mkspecs": "win32-g++",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -167,7 +157,6 @@
       "toolchain": "MinGW-w64 w/ GCC 4.9.4",
       "arch": "x86",
       "variant": "-static(Full)",
-      "mkspecs": "win32-g++",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -182,7 +171,6 @@
       "toolchain": "VS2015 Update 3",
       "arch": "x86",
       "variant": "",
-      "mkspecs": "win32-msvc2015",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -197,7 +185,6 @@
       "toolchain": "VS2015 Update 3",
       "arch": "x86_64",
       "variant": "",
-      "mkspecs": "win32-msvc2015",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -213,7 +200,6 @@
       "toolchain": "VS2015 Update 3",
       "arch": "x86",
       "variant": "-target xp",
-      "mkspecs": "win32-msvc2015",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -229,7 +215,6 @@
       "toolchain": "VS2015 Update 3",
       "arch": "x86",
       "variant": "-target xp,-static",
-      "mkspecs": "win32-msvc2015",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -244,7 +229,6 @@
       "toolchain": "AppleClang 6.1",
       "arch": "x86_64",
       "variant": "-framework",
-      "mkspecs": "macx-clang",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -259,7 +243,6 @@
       "toolchain": "AppleClang 6.1",
       "arch": "x86_64",
       "variant": "-no-framework",
-      "mkspecs": "macx-clang",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -271,12 +254,11 @@
     "ndkVer": "r10e",
     "data": {
       "version": "5.6.3",
-      "platform": "Android",
+      "platform": "Android-9",
       "buildHost": "Windows 10 10.0.18363",
       "toolchain": "ndk r10e",
       "arch": "arm",
       "variant": "",
-      "mkspecs": "android-g++",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -288,12 +270,11 @@
     "ndkVer": "r10e",
     "data": {
       "version": "5.6.3",
-      "platform": "Android",
+      "platform": "Android-9",
       "buildHost": "Windows 10 10.0.18363",
       "toolchain": "ndk r10e",
       "arch": "x86",
       "variant": "",
-      "mkspecs": "android-g++",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -305,12 +286,11 @@
     "ndkVer": "r10e",
     "data": {
       "version": "5.6.3",
-      "platform": "Android",
+      "platform": "Android-9",
       "buildHost": "CentOS 7.7",
       "toolchain": "ndk r10e",
       "arch": "arm",
       "variant": "",
-      "mkspecs": "android-g++",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -322,12 +302,11 @@
     "ndkVer": "r10e",
     "data": {
       "version": "5.6.3",
-      "platform": "Android",
+      "platform": "Android-9",
       "buildHost": "CentOS 7.7",
       "toolchain": "ndk r10e",
       "arch": "x86",
       "variant": "",
-      "mkspecs": "android-g++",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -339,12 +318,11 @@
     "ndkVer": "r10e",
     "data": {
       "version": "5.6.3",
-      "platform": "Android",
+      "platform": "Android-9",
       "buildHost": "macOS 10.15",
       "toolchain": "ndk r10e",
       "arch": "arm",
       "variant": "",
-      "mkspecs": "android-g++",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -356,12 +334,11 @@
     "ndkVer": "r10e",
     "data": {
       "version": "5.6.3",
-      "platform": "Android",
+      "platform": "Android-9",
       "buildHost": "macOS 10.15",
       "toolchain": "ndk r10e",
       "arch": "x86",
       "variant": "",
-      "mkspecs": "android-g++",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -376,7 +353,6 @@
       "toolchain": "VS2015 Update 3",
       "arch": "x86",
       "variant": "",
-      "mkspecs": "win32-msvc",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -391,7 +367,6 @@
       "toolchain": "VS2015 Update 3",
       "arch": "x86_64",
       "variant": "",
-      "mkspecs": "win32-msvc",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -406,7 +381,6 @@
       "toolchain": "VS2017 15.9.23",
       "arch": "x86",
       "variant": "",
-      "mkspecs": "win32-msvc",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -421,7 +395,6 @@
       "toolchain": "VS2017 15.9.23",
       "arch": "x86_64",
       "variant": "",
-      "mkspecs": "win32-msvc",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -437,7 +410,6 @@
       "toolchain": "MinGW-w64 w/ GCC 7.3.0",
       "arch": "x86",
       "variant": "",
-      "mkspecs": "win32-g++",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -453,7 +425,6 @@
       "toolchain": "MinGW-w64 w/ GCC 7.3.0",
       "arch": "x86_64",
       "variant": "",
-      "mkspecs": "win32-g++",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -468,7 +439,6 @@
       "toolchain": "AppleClang 10.0",
       "arch": "x86_64",
       "variant": "-framework",
-      "mkspecs": "macx-clang",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -483,7 +453,6 @@
       "toolchain": "AppleClang 10.0",
       "arch": "x86_64",
       "variant": "-no-framework",
-      "mkspecs": "macx-clang",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -495,12 +464,11 @@
     "ndkVer": "r10e",
     "data": {
       "version": "5.9.9",
-      "platform": "Android",
+      "platform": "Android-16",
       "buildHost": "Windows 10 10.0.18363",
       "toolchain": "ndk r10e",
       "arch": "arm",
       "variant": "",
-      "mkspecs": "android-g++",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -512,12 +480,11 @@
     "ndkVer": "r10e",
     "data": {
       "version": "5.9.9",
-      "platform": "Android",
+      "platform": "Android-21",
       "buildHost": "Windows 10 10.0.18363",
       "toolchain": "ndk r10e",
       "arch": "arm64",
       "variant": "",
-      "mkspecs": "android-g++",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -529,12 +496,11 @@
     "ndkVer": "r10e",
     "data": {
       "version": "5.9.9",
-      "platform": "Android",
+      "platform": "Android-16",
       "buildHost": "Windows 10 10.0.18363",
       "toolchain": "ndk r10e",
       "arch": "x86",
       "variant": "",
-      "mkspecs": "android-g++",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -546,12 +512,11 @@
     "ndkVer": "r10e",
     "data": {
       "version": "5.9.9",
-      "platform": "Android",
+      "platform": "Android-16",
       "buildHost": "CentOS 8",
       "toolchain": "ndk r10e",
       "arch": "arm",
       "variant": "",
-      "mkspecs": "android-g++",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -563,12 +528,11 @@
     "ndkVer": "r10e",
     "data": {
       "version": "5.9.9",
-      "platform": "Android",
+      "platform": "Android-21",
       "buildHost": "CentOS 8",
       "toolchain": "ndk r10e",
       "arch": "arm64",
       "variant": "",
-      "mkspecs": "android-g++",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -580,12 +544,11 @@
     "ndkVer": "r10e",
     "data": {
       "version": "5.9.9",
-      "platform": "Android",
+      "platform": "Android-16",
       "buildHost": "CentOS 8",
       "toolchain": "ndk r10e",
       "arch": "x86",
       "variant": "",
-      "mkspecs": "android-g++",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -597,12 +560,11 @@
     "ndkVer": "r10e",
     "data": {
       "version": "5.9.9",
-      "platform": "Android",
+      "platform": "Android-16",
       "buildHost": "macOS 10.15",
       "toolchain": "ndk r10e",
       "arch": "arm",
       "variant": "",
-      "mkspecs": "android-g++",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -614,12 +576,11 @@
     "ndkVer": "r10e",
     "data": {
       "version": "5.9.9",
-      "platform": "Android",
+      "platform": "Android-21",
       "buildHost": "macOS 10.15",
       "toolchain": "ndk r10e",
       "arch": "arm64",
       "variant": "",
-      "mkspecs": "android-g++",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -631,12 +592,11 @@
     "ndkVer": "r10e",
     "data": {
       "version": "5.9.9",
-      "platform": "Android",
+      "platform": "Android-16",
       "buildHost": "macOS 10.15",
       "toolchain": "ndk r10e",
       "arch": "x86",
       "variant": "",
-      "mkspecs": "android-g++",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -648,12 +608,11 @@
     "ndkVer": "r21e",
     "data": {
       "version": "5.12.12",
-      "platform": "Android",
+      "platform": "Android-21",
       "buildHost": "Rocky Linux 8.8",
       "toolchain": "ndk r21e",
       "arch": "arm64",
-      "variant": "android-21",
-      "mkspecs": "android-clang",
+      "variant": "",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -665,12 +624,11 @@
     "ndkVer": "r21e",
     "data": {
       "version": "5.12.12",
-      "platform": "Android",
+      "platform": "Android-21",
       "buildHost": "macOS 11.7.9",
       "toolchain": "ndk r21e",
       "arch": "arm64",
-      "variant": "android-21",
-      "mkspecs": "android-clang",
+      "variant": "",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -682,12 +640,11 @@
     "ndkVer": "r21e",
     "data": {
       "version": "5.12.12",
-      "platform": "Android",
+      "platform": "Android-21",
       "buildHost": "Windows 11 10.0.22621",
       "toolchain": "ndk r21e",
       "arch": "arm64",
-      "variant": "android-21",
-      "mkspecs": "android-clang",
+      "variant": "",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -699,12 +656,11 @@
     "ndkVer": "r21e",
     "data": {
       "version": "5.12.12",
-      "platform": "Android",
+      "platform": "Android-21",
       "buildHost": "Rocky Linux 8.8",
       "toolchain": "ndk r21e",
       "arch": "arm",
-      "variant": "android-21",
-      "mkspecs": "android-clang",
+      "variant": "",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -716,12 +672,11 @@
     "ndkVer": "r21e",
     "data": {
       "version": "5.12.12",
-      "platform": "Android",
+      "platform": "Android-21",
       "buildHost": "macOS 11.7.9",
       "toolchain": "ndk r21e",
       "arch": "arm",
-      "variant": "android-21",
-      "mkspecs": "android-clang",
+      "variant": "",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -733,12 +688,11 @@
     "ndkVer": "r21e",
     "data": {
       "version": "5.12.12",
-      "platform": "Android",
+      "platform": "Android-21",
       "buildHost": "Windows 11 10.0.22621",
       "toolchain": "ndk r21e",
       "arch": "arm",
-      "variant": "android-21",
-      "mkspecs": "android-clang",
+      "variant": "",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -750,12 +704,11 @@
     "ndkVer": "r21e",
     "data": {
       "version": "5.12.12",
-      "platform": "Android",
+      "platform": "Android-21",
       "buildHost": "Rocky Linux 8.8",
       "toolchain": "ndk r21e",
       "arch": "x86",
-      "variant": "android-21",
-      "mkspecs": "android-clang",
+      "variant": "",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -767,12 +720,11 @@
     "ndkVer": "r21e",
     "data": {
       "version": "5.12.12",
-      "platform": "Android",
+      "platform": "Android-21",
       "buildHost": "macOS 11.7.9",
       "toolchain": "ndk r21e",
       "arch": "x86",
-      "variant": "android-21",
-      "mkspecs": "android-clang",
+      "variant": "",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -784,12 +736,11 @@
     "ndkVer": "r21e",
     "data": {
       "version": "5.12.12",
-      "platform": "Android",
+      "platform": "Android-21",
       "buildHost": "Windows 11 10.0.22621",
       "toolchain": "ndk r21e",
       "arch": "x86",
-      "variant": "android-21",
-      "mkspecs": "android-clang",
+      "variant": "",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -804,7 +755,6 @@
       "toolchain": "AppleClang 12.0.0",
       "arch": "x86_64",
       "variant": "-framework",
-      "mkspecs": "macx-clang",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -819,7 +769,6 @@
       "toolchain": "AppleClang 12.0.0",
       "arch": "x86_64",
       "variant": "-no-framework",
-      "mkspecs": "macx-clang",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -834,7 +783,6 @@
       "toolchain": "emscripten-1.38.16",
       "arch": "-",
       "variant": "",
-      "mkspecs": "wasm-emscripten",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -849,7 +797,6 @@
       "toolchain": "emscripten-1.38.16",
       "arch": "-",
       "variant": "",
-      "mkspecs": "wasm-emscripten",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -865,7 +812,6 @@
       "toolchain": "MinGW-w64 w/ GCC 7.3.0",
       "arch": "x86",
       "variant": "",
-      "mkspecs": "win32-g++",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -881,7 +827,6 @@
       "toolchain": "VS2015 Update 3",
       "arch": "x86",
       "variant": "",
-      "mkspecs": "win32-msvc",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -896,7 +841,6 @@
       "toolchain": "VS2015 Update 3",
       "arch": "x86",
       "variant": "-static(Lite)",
-      "mkspecs": "win32-msvc",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -911,7 +855,6 @@
       "toolchain": "VS2017 15.9.57 w/ Windows SDK 10.0.17763",
       "arch": "x86",
       "variant": "",
-      "mkspecs": "win32-msvc",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -926,7 +869,6 @@
       "toolchain": "VS2017 15.9.57 w/ Windows SDK 10.0.17763",
       "arch": "x86",
       "variant": "-static(Lite)",
-      "mkspecs": "win32-msvc",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -942,7 +884,6 @@
       "toolchain": "VS2019 16.11.30 w/ Windows SDK 10.0.22000",
       "arch": "x86",
       "variant": "",
-      "mkspecs": "win32-msvc",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -958,7 +899,6 @@
       "toolchain": "MinGW-w64 w/ GCC 7.3.0",
       "arch": "x86_64",
       "variant": "",
-      "mkspecs": "win32-g++",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -974,7 +914,6 @@
       "toolchain": "VS2015 Update 3",
       "arch": "x86_64",
       "variant": "",
-      "mkspecs": "win32-msvc",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -989,7 +928,6 @@
       "toolchain": "VS2017 15.9.57 w/ Windows SDK 10.0.17763",
       "arch": "x86_64",
       "variant": "",
-      "mkspecs": "win32-msvc",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -1005,7 +943,6 @@
       "toolchain": "VS2019 16.11.30 w/ Windows SDK 10.0.22000",
       "arch": "x86_64",
       "variant": "",
-      "mkspecs": "win32-msvc",
       "uploaded": "√",
       "configuration": "√"
     }

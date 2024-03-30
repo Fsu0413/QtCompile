@@ -7,12 +7,11 @@
     "ndkVer": "r26c",
     "data": {
       "version": "6.7.0-rc2",
-      "platform": "Android",
+      "platform": "Android-27",
       "buildHost": "Rocky Linux 9.3",
       "toolchain": "ndk r26c",
       "arch": "arm64",
-      "variant": "android-27",
-      "mkspecs": "android-clang",
+      "variant": "",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -25,12 +24,11 @@
     "ndkVer": "r26c",
     "data": {
       "version": "6.7.0-rc2",
-      "platform": "Android",
+      "platform": "Android-27",
       "buildHost": "macOS 13.6.6",
       "toolchain": "ndk r26c",
       "arch": "arm64",
-      "variant": "android-27",
-      "mkspecs": "android-clang",
+      "variant": "",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -43,12 +41,11 @@
     "ndkVer": "r26c",
     "data": {
       "version": "6.7.0-rc2",
-      "platform": "Android",
+      "platform": "Android-27",
       "buildHost": "Windows 11 10.0.22631",
       "toolchain": "ndk r26c",
       "arch": "arm64",
-      "variant": "android-27",
-      "mkspecs": "android-clang",
+      "variant": "",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -61,12 +58,11 @@
     "ndkVer": "r26c",
     "data": {
       "version": "6.7.0-rc2",
-      "platform": "Android",
+      "platform": "Android-27",
       "buildHost": "Rocky Linux 9.3",
       "toolchain": "ndk r26c",
       "arch": "arm",
-      "variant": "android-27",
-      "mkspecs": "android-clang",
+      "variant": "",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -79,12 +75,11 @@
     "ndkVer": "r26c",
     "data": {
       "version": "6.7.0-rc2",
-      "platform": "Android",
+      "platform": "Android-27",
       "buildHost": "macOS 13.6.6",
       "toolchain": "ndk r26c",
       "arch": "arm",
-      "variant": "android-27",
-      "mkspecs": "android-clang",
+      "variant": "",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -97,12 +92,11 @@
     "ndkVer": "r26c",
     "data": {
       "version": "6.7.0-rc2",
-      "platform": "Android",
+      "platform": "Android-27",
       "buildHost": "Windows 11 10.0.22631",
       "toolchain": "ndk r26c",
       "arch": "arm",
-      "variant": "android-27",
-      "mkspecs": "android-clang",
+      "variant": "",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -115,12 +109,11 @@
     "ndkVer": "r26c",
     "data": {
       "version": "6.7.0-rc2",
-      "platform": "Android",
+      "platform": "Android-27",
       "buildHost": "Rocky Linux 9.3",
       "toolchain": "ndk r26c",
       "arch": "x86_64",
-      "variant": "android-27",
-      "mkspecs": "android-clang",
+      "variant": "",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -133,12 +126,11 @@
     "ndkVer": "r26c",
     "data": {
       "version": "6.7.0-rc2",
-      "platform": "Android",
+      "platform": "Android-27",
       "buildHost": "macOS 13.6.6",
       "toolchain": "ndk r26c",
       "arch": "x86_64",
-      "variant": "android-27",
-      "mkspecs": "android-clang",
+      "variant": "",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -151,12 +143,11 @@
     "ndkVer": "r26c",
     "data": {
       "version": "6.7.0-rc2",
-      "platform": "Android",
+      "platform": "Android-27",
       "buildHost": "Windows 11 10.0.22631",
       "toolchain": "ndk r26c",
       "arch": "x86_64",
-      "variant": "android-27",
-      "mkspecs": "android-clang",
+      "variant": "",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -172,7 +163,6 @@
       "toolchain": "AppleClang 14.0.3",
       "arch": "Universal (x86_64, arm64)",
       "variant": "-framework",
-      "mkspecs": "macx-clang",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -188,7 +178,6 @@
       "toolchain": "AppleClang 14.0.3",
       "arch": "Universal (x86_64, arm64)",
       "variant": "-no-framework",
-      "mkspecs": "macx-clang",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -204,7 +193,6 @@
       "toolchain": "emscripten-3.1.50",
       "arch": "-",
       "variant": "-feature-threads",
-      "mkspecs": "wasm-emscripten",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -220,7 +208,6 @@
       "toolchain": "emscripten-3.1.50",
       "arch": "-",
       "variant": "-feature-threads",
-      "mkspecs": "wasm-emscripten",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -236,7 +223,6 @@
       "toolchain": "emscripten-3.1.50",
       "arch": "-",
       "variant": "-feature-threads",
-      "mkspecs": "wasm-emscripten",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -252,7 +238,6 @@
       "toolchain": "VS2022 17.9.5 w/ Windows SDK 10.0.22621",
       "arch": "arm64",
       "variant": "",
-      "mkspecs": "win32-msvc",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -269,7 +254,6 @@
       "toolchain": "MinGW-w64 w/ LLVM 18.1.2 MSVCRT",
       "arch": "x86_64",
       "variant": "",
-      "mkspecs": "win32-clang-g++",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -286,7 +270,6 @@
       "toolchain": "MinGW-w64 w/ LLVM 18.1.2 UCRT",
       "arch": "x86_64",
       "variant": "",
-      "mkspecs": "win32-clang-g++",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -303,7 +286,6 @@
       "toolchain": "MinGW-w64 w/ GCC 13.2.0 MSVCRT",
       "arch": "x86_64",
       "variant": "",
-      "mkspecs": "win32-g++",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -320,7 +302,6 @@
       "toolchain": "MinGW-w64 w/ GCC 13.2.0 UCRT",
       "arch": "x86_64",
       "variant": "",
-      "mkspecs": "win32-g++",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -336,7 +317,6 @@
       "toolchain": "VS2022 17.9.5 w/ Windows SDK 10.0.22621",
       "arch": "x86_64",
       "variant": "",
-      "mkspecs": "win32-msvc",
       "uploaded": "√",
       "configuration": "√"
     }
@@ -350,7 +330,6 @@
       "toolchain": "MinGW-w64 w/ GCC 13.2.0 MSVCRT",
       "arch": "x86_64",
       "variant": "-static(Lite)",
-      "mkspecs": "win32-g++",
       "uploaded": "Won't upload seprately, used in cross-compiled Qt",
       "configuration": "√"
     }
@@ -364,7 +343,6 @@
       "toolchain": "GCC 11.4.1",
       "arch": "x86_64",
       "variant": "-static(Lite)",
-      "mkspecs": "linux-g++",
       "uploaded": "Won't upload seprately, used in cross-compiled Qt",
       "configuration": "√"
     }
@@ -378,7 +356,6 @@
       "toolchain": "AppleClang 14.0.3",
       "arch": "Universal (x86_64, arm64)",
       "variant": "-static(Lite)",
-      "mkspecs": "macx-clang",
       "uploaded": "Won't upload seprately, used in cross-compiled Qt",
       "configuration": "√"
     }
