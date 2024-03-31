@@ -37,6 +37,8 @@ But `libarchive` (which macOS and Windows is using. `bsdtar` is from this librar
 
 This banner will be put here until the result gets clear. I will continuously pay attention to related news, and will do repacking of all released packages if necessary.
 
+More details can be found in Lasse Collin (Initial maintainer of `xz`)'s [post](https://tukaani.org/xz-backdoor/) on the official website of `xz`.
+
 ## Disclaimer
 
 These binaries built by Fsu0413 are __TOTALLY UNTESTED__. Use at your own risk.  
