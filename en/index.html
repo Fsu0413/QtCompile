@@ -85,6 +85,7 @@
               <div class="topbar-content">
                 <div class="topbar-content-wrapper"><nav class="TableOfContents">
   <ul>
+    <li><a href="#xz-backdoor"><code>xz</code> backdoor</a></li>
     <li><a href="#disclaimer">Disclaimer</a></li>
     <li><a href="#update-history">Update History</a>
       <ul>
@@ -132,13 +133,13 @@
 All links to OSDN are removed for now. Please download from SourceForge.</p>
 <p>Error during upload is as following (Output by WinSCP).</p>
 <div class="expand">
-    <input type="checkbox" id="R-expand-9631a29ce1635a1e9f7b49d4387ab95e" aria-controls="R-expandcontent-9631a29ce1635a1e9f7b49d4387ab95e" >
-    <label class="expand-label" for="R-expand-9631a29ce1635a1e9f7b49d4387ab95e" >
+    <input type="checkbox" id="R-expand-96ff711d4103659988dda3330e4ab441" aria-controls="R-expandcontent-96ff711d4103659988dda3330e4ab441" >
+    <label class="expand-label" for="R-expand-96ff711d4103659988dda3330e4ab441" >
         <i class="fa-fw fas fa-chevron-down"></i>
         <i class="fa-fw fas fa-chevron-right"></i>
         Expand me&hellip;
     </label>
-    <div id="R-expandcontent-9631a29ce1635a1e9f7b49d4387ab95e" class="expand-content">
+    <div id="R-expandcontent-96ff711d4103659988dda3330e4ab441" class="expand-content">
 <p>General failure (server should provide error description).<br>
 Error code: 4<br>
 Error message from server: Failure</p>
@@ -154,6 +155,15 @@ Error message from server: Failure</p>
 </div>
 </div>
 </div>
+<h2 id="xz-backdoor"><code>xz</code> backdoor</h2>
+<p>Just saw surprisingly that <code>xz</code> have been backdoored upstream by a trusted maintainer.<br>
+All investigation result shows that a user called JiaT75 is the bad guy, and this backdoor is revealed to be working only on x86_64 systemd-based Linux distributions, and is used for injecting OpenSSH for estabilishing unauthorized connections. It is not for manipulating files during {,de}compression.</p>
+<p>XZ packages built by this project are <strong>NOT</strong> compressed using the original <code>xz</code> tool. They are using <code>7z</code> from Igor Pavlov on Windows / <code>p7zip</code> from jinfeihan57 on non-Windows.<br>
+But when building other packages <code>tar -xJf xxx.tar.xz</code> is still called for decompressing packages of dependencies like OpenSSL, MariaDB and host Qt static <code>Lite</code> packages. This step still invokes the <code>xz</code> program.<br>
+It is shown that</p>
+<p>All Linux build machine we are using are Rocky Linux which derives from RHEL. It does not upgrade software on major version just like RHEL, so we may be unaffected.<br>
+But <code>libarchive</code> (which macOS and Windows is using. <code>bsdtar</code> is from this library) also contains code authored by the bad guy. <code>libarchive</code> have already started re-reviewing the code the bad guy authored.</p>
+<p>This banner will be put here until the result gets clear. I will continuously pay attention to related news, and will do repacking of all released packages if necessary.</p>
 <h2 id="disclaimer">Disclaimer</h2>
 <p>These binaries built by Fsu0413 are <strong>TOTALLY UNTESTED</strong>. Use at your own risk.<br>
 The code used is downloaded from <a href="http://download.qt.io" target="_blank">here</a>, and patches applied on top of code are <a href="/qtcompile/en/miscellaneous/notesforthisrepo/index.html#existing-patches">listed here</a> only for dealing with some simple and minor compile / build fixes.<br>
@@ -308,7 +318,7 @@ Simply investigate llvm build on Windows.</p>
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 30 Mar 2024 13:51:04 CST</p>
+Site generated: Sun, 31 Mar 2024 13:44:10 CST</p>
 
           </div>
         </div>
