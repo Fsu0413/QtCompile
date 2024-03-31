@@ -23,6 +23,20 @@ Common reasons for the Error code 4 are:
 {{% /expand %}}
 {{% /notice %}}
 
+## `xz` backdoor
+
+Just saw surprisingly that `xz` have been backdoored upstream by a trusted maintainer.   
+All investigation result shows that a user called JiaT75 is the bad guy, and this backdoor is revealed to be working only on x86_64 systemd-based Linux distributions, and is used for injecting OpenSSH for estabilishing unauthorized connections. It is not for manipulating files during {,de}compression.
+
+XZ packages built by this project are **NOT** compressed using the original `xz` tool. They are using `7z` from Igor Pavlov on Windows / `p7zip` from jinfeihan57 on non-Windows.  
+But when building other packages `tar -xJf xxx.tar.xz` is still called for decompressing packages of dependencies like OpenSSL, MariaDB and host Qt static `Lite` packages. This step still invokes the `xz` program.  
+It is shown that 
+
+All Linux build machine we are using are Rocky Linux which derives from RHEL. It does not upgrade software on major version just like RHEL, so we may be unaffected.   
+But `libarchive` (which macOS and Windows is using. `bsdtar` is from this library) also contains code authored by the bad guy. `libarchive` have already started re-reviewing the code the bad guy authored.
+
+This banner will be put here until the result gets clear. I will continuously pay attention to related news, and will do repacking of all released packages if necessary.
+
 ## Disclaimer
 
 These binaries built by Fsu0413 are __TOTALLY UNTESTED__. Use at your own risk.  
