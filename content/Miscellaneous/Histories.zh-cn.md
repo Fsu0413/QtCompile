@@ -3,6 +3,9 @@
   "weight": 4
 }
 
+## {{% date 2024 3 23 %}}
+添加 Windows on ARM64 的 Qt 5.15 系列构建。   
+
 ## {{% date 2024 3 18 %}}
 添加 Windows on ARM64 的 Qt 6 系列构建。   
 为 Qt 6.2.7 应用 CVE-2023-4863。

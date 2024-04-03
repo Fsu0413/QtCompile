@@ -48,6 +48,9 @@ Thanks for The Qt Company Ltd. and the programmers of Qt for their fantastic wor
 
 ## Update History
 
+### {{% date 2024 4 3 %}}
+Update Qt 6.7.0 versions.
+
 ### {{% date 2024 3 28 %}}
 Update Qt 6.6.3 and Qt 6.7.0-rc2 versions.   
 Rebuild VS2022 and llvm-mingw 18 builds for Qt 5.15 / 6.2 / 6.5.
@@ -62,9 +65,6 @@ Simply investigate llvm build on Windows.
 
 Happy birthday to Iroi Imagay (the third time)!
 
-### {{% date 2024 3 23 %}}
-Add Qt 5.15 series for Windows on ARM64.  
-
-### Before {{% date 2024 3 18 %}}
+### Before {{% date 2024 3 23 %}}
 
 [Here](/Miscellaneous/Histories)

@@ -3,6 +3,9 @@
   "weight": 4
 }
 
+## {{% date 2024 3 23 %}}
+Add Qt 5.15 series for Windows on ARM64.  
+
 ## {{% date 2024 3 18 %}}
 Add Qt 6 series for Windows on ARM64.  
 Apply CVE-2023-4863 to Qt 6.2.7.
