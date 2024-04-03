@@ -173,7 +173,7 @@
     "data": {
       "version": "3.1.23",
       "platform": "macOS",
-      "buildHost": "macOS 13.6.4",
+      "buildHost": "macOS 13.6.6",
       "toolchain": "AppleClang 14.0.3",
       "arch": "Universal (x86_64, arm64)"
     },
@@ -323,7 +323,7 @@
     "data": {
       "version": "3.3.8",
       "platform": "macOS",
-      "buildHost": "macOS 13.6.4",
+      "buildHost": "macOS 13.6.6",
       "toolchain": "AppleClang 14.0.3",
       "arch": "Universal (x86_64, arm64)"
     },
