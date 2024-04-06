@@ -85,14 +85,14 @@
               <div class="topbar-content">
                 <div class="topbar-content-wrapper"><nav class="TableOfContents">
   <ul>
-    <li><a href="#xz-backdoor"><code>xz</code> backdoor</a></li>
+    <li><a href="#xz-backdoor-update-6th-apr-2024-this-paragraph-will-be-removed-during-next-update"><code>xz</code> backdoor (Update 6th Apr, 2024. This paragraph will be removed during next update)</a></li>
     <li><a href="#disclaimer">Disclaimer</a></li>
     <li><a href="#update-history">Update History</a>
       <ul>
+        <li><a href="#6th-apr-2024">6th Apr, 2024</a></li>
         <li><a href="#3rd-apr-2024">3rd Apr, 2024</a></li>
         <li><a href="#28th-mar-2024">28th Mar, 2024</a></li>
-        <li><a href="#25th-mar-2024-no-update">25th Mar, 2024 no update</a></li>
-        <li><a href="#before-23rd-mar-2024">Before 23rd Mar, 2024</a></li>
+        <li><a href="#before-25th-mar-2024">Before 25th Mar, 2024</a></li>
       </ul>
     </li>
   </ul>
@@ -133,13 +133,13 @@
 All links to OSDN are removed for now. Please download from SourceForge.</p>
 <p>Error during upload is as following (Output by WinSCP).</p>
 <div class="expand">
-    <input type="checkbox" id="R-expand-d81ba6ce29f60fa530961d92c2cc03d0" aria-controls="R-expandcontent-d81ba6ce29f60fa530961d92c2cc03d0" >
-    <label class="expand-label" for="R-expand-d81ba6ce29f60fa530961d92c2cc03d0" >
+    <input type="checkbox" id="R-expand-b57bc3e3083931d562a8ce95c90ed134" aria-controls="R-expandcontent-b57bc3e3083931d562a8ce95c90ed134" >
+    <label class="expand-label" for="R-expand-b57bc3e3083931d562a8ce95c90ed134" >
         <i class="fa-fw fas fa-chevron-down"></i>
         <i class="fa-fw fas fa-chevron-right"></i>
         Expand me&hellip;
     </label>
-    <div id="R-expandcontent-d81ba6ce29f60fa530961d92c2cc03d0" class="expand-content">
+    <div id="R-expandcontent-b57bc3e3083931d562a8ce95c90ed134" class="expand-content">
 <p>General failure (server should provide error description).<br>
 Error code: 4<br>
 Error message from server: Failure</p>
@@ -155,15 +155,15 @@ Error message from server: Failure</p>
 </div>
 </div>
 </div>
-<h2 id="xz-backdoor"><code>xz</code> backdoor</h2>
+<h2 id="xz-backdoor-update-6th-apr-2024-this-paragraph-will-be-removed-during-next-update"><code>xz</code> backdoor (Update 6th Apr, 2024. This paragraph will be removed during next update)</h2>
 <p>Just saw surprisingly that <code>xz</code> have been backdoored upstream by a trusted maintainer.<br>
 All investigation result shows that a user called JiaT75 is the bad guy, and this backdoor is revealed to be working only on x86_64 systemd-based Linux distributions, and is used for injecting OpenSSH for estabilishing unauthorized connections. It is not for manipulating files during {,de}compression.</p>
 <p>XZ packages built by this project are <strong>NOT</strong> compressed using the original <code>xz</code> tool. They are using <code>7z</code> from Igor Pavlov on Windows / <code>p7zip</code> from jinfeihan57 on non-Windows.<br>
 But when building other packages <code>tar -xJf xxx.tar.xz</code> is still called for decompressing packages of dependencies like OpenSSL, MariaDB and host Qt static <code>Lite</code> packages. This step still invokes the <code>xz</code> program.<br>
 It is shown that</p>
 <p>All Linux build machine we are using are Rocky Linux which derives from RHEL. It does not upgrade software on major version just like RHEL, so we may be unaffected.<br>
-But <code>libarchive</code> (which macOS and Windows is using. <code>bsdtar</code> is from this library) also contains code authored by the bad guy. <code>libarchive</code> have already started re-reviewing the code the bad guy authored.</p>
-<p>This banner will be put here until the result gets clear. I will continuously pay attention to related news, and will do repacking of all released packages if necessary.</p>
+But <code>libarchive</code> (which macOS and Windows is using. <code>bsdtar</code> is from this library) also contains code authored by the bad guy. <code>libarchive</code> have already (Update 6th Apr, 2024) <del>started</del> finished re-reviewing the code the bad guy authored.</p>
+<p>This banner will be put here until the result gets clear. <del>I will continuously pay attention to related news, and will do repacking of all released packages if necessary.</del> (Update 6th Apr, 2024) Seems like it is not necessary. All existing analysis of the backdoor is not saying a word about code for {,de}compression.</p>
 <p>More details can be found in Lasse Collin (Initial maintainer of <code>xz</code>)&rsquo;s <a href="https://tukaani.org/xz-backdoor/" target="_blank">post</a> on the official website of <code>xz</code>.</p>
 <h2 id="disclaimer">Disclaimer</h2>
 <p>These binaries built by Fsu0413 are <strong>TOTALLY UNTESTED</strong>. Use at your own risk.<br>
@@ -171,6 +171,8 @@ The code used is downloaded from <a href="http://download.qt.io" target="_blank"
 <strong>THESE PACKAGE ARE PROVIDED &ldquo;As is&rdquo;, I have no responsibility that you mess up your things with this binaries.</strong><br>
 Thanks for The Qt Company Ltd. and the programmers of Qt for their fantastic work!!</p>
 <h2 id="update-history">Update History</h2>
+<h3 id="6th-apr-2024">6th Apr, 2024</h3>
+<p>Rebuild versions built by llvm-mingw 18 series toolchain, using llvm-mingw 18.1.3.</p>
 <h3 id="3rd-apr-2024">3rd Apr, 2024</h3>
 <p>Update Qt 6.7.0 versions.</p>
 <h3 id="28th-mar-2024">28th Mar, 2024</h3>
@@ -179,11 +181,7 @@ Rebuild VS2022 and llvm-mingw 18 builds for Qt 5.15 / 6.2 / 6.5.</p>
 <p>Qt 6 is migrating MinGW builds from GCC based toolchain to LLVM based one, using <a href="https://github.com/mstorsjo/llvm-mingw" target="_blank">llvm-mingw</a>.<br>
 I also suggest migrating since LLVM has faster build speed and produces smaller binaries, as well as supporting Windows on ARM (although I have not investigated about using llvm-mingw on WoA yet).<br>
 See <a href="https://bugreports.qt.io/browse/QTBUG-107516" target="_blank">QTBUG-107516</a> for details.</p>
-<h3 id="25th-mar-2024-no-update">25th Mar, 2024 no update</h3>
-<p>Add note about build failure about MySQL backend for Qt 5.15.<br>
-Simply investigate llvm build on Windows.</p>
-<p>Happy birthday to Iroi Imagay (the third time)!</p>
-<h3 id="before-23rd-mar-2024">Before 23rd Mar, 2024</h3>
+<h3 id="before-25th-mar-2024">Before 25th Mar, 2024</h3>
 <p><a href="/qtcompile/en/miscellaneous/histories/index.html">Here</a></p>
 
             <footer class="footline">
@@ -314,7 +312,7 @@ Simply investigate llvm build on Windows.</p>
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Wed, 03 Apr 2024 08:26:38 CST</p>
+Site generated: Sat, 06 Apr 2024 20:28:14 CST</p>
 
           </div>
         </div>
