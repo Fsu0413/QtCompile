@@ -3,6 +3,12 @@
   "weight": 4
 }
 
+## {{% date 2024 3 25 %}} 无更新
+增加 Qt 5.15 部分 MySQL 后端构建失败的备注。  
+简单调查 llvm 在 Windows 上的构建。
+
+（第三次）祝基神奄（Iroi Imagay）生日快乐！！
+
 ## {{% date 2024 3 23 %}}
 添加 Windows on ARM64 的 Qt 5.15 系列构建。   
 

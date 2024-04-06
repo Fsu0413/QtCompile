@@ -23,7 +23,7 @@ Common reasons for the Error code 4 are:
 {{% /expand %}}
 {{% /notice %}}
 
-## `xz` backdoor
+## `xz` backdoor (Update {{% date 2024 4 6 %}}. This paragraph will be removed during next update)
 
 Just saw surprisingly that `xz` have been backdoored upstream by a trusted maintainer.   
 All investigation result shows that a user called JiaT75 is the bad guy, and this backdoor is revealed to be working only on x86_64 systemd-based Linux distributions, and is used for injecting OpenSSH for estabilishing unauthorized connections. It is not for manipulating files during {,de}compression.
@@ -33,9 +33,9 @@ But when building other packages `tar -xJf xxx.tar.xz` is still called for decom
 It is shown that 
 
 All Linux build machine we are using are Rocky Linux which derives from RHEL. It does not upgrade software on major version just like RHEL, so we may be unaffected.   
-But `libarchive` (which macOS and Windows is using. `bsdtar` is from this library) also contains code authored by the bad guy. `libarchive` have already started re-reviewing the code the bad guy authored.
+But `libarchive` (which macOS and Windows is using. `bsdtar` is from this library) also contains code authored by the bad guy. `libarchive` have already (Update {{% date 2024 4 6 %}}) ~~started~~ finished re-reviewing the code the bad guy authored.
 
-This banner will be put here until the result gets clear. I will continuously pay attention to related news, and will do repacking of all released packages if necessary.
+This banner will be put here until the result gets clear. ~~I will continuously pay attention to related news, and will do repacking of all released packages if necessary.~~ (Update {{% date 2024 4 6 %}}) Seems like it is not necessary. All existing analysis of the backdoor is not saying a word about code for {,de}compression.
 
 More details can be found in Lasse Collin (Initial maintainer of `xz`)'s [post](https://tukaani.org/xz-backdoor/) on the official website of `xz`.
 
@@ -48,6 +48,9 @@ Thanks for The Qt Company Ltd. and the programmers of Qt for their fantastic wor
 
 ## Update History
 
+### {{% date 2024 4 6 %}}
+Rebuild versions built by llvm-mingw 18 series toolchain, using llvm-mingw 18.1.3.
+
 ### {{% date 2024 4 3 %}}
 Update Qt 6.7.0 versions.
 
@@ -59,12 +62,6 @@ Qt 6 is migrating MinGW builds from GCC based toolchain to LLVM based one, using
 I also suggest migrating since LLVM has faster build speed and produces smaller binaries, as well as supporting Windows on ARM (although I have not investigated about using llvm-mingw on WoA yet).  
 See {{% QtBug 107516 %}} for details.
 
-### {{% date 2024 3 25 %}} no update
-Add note about build failure about MySQL backend for Qt 5.15.  
-Simply investigate llvm build on Windows.
-
-Happy birthday to Iroi Imagay (the third time)!
-
-### Before {{% date 2024 3 23 %}}
+### Before {{% date 2024 3 25 %}}
 
 [Here](/Miscellaneous/Histories)

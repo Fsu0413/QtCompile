@@ -28,7 +28,7 @@ I may purchage the service later when the service seems good enough for me.
 ## Reproduciable building
 
 I use a set of scripts to do the build and packaging for [reproducible building](https://reproducible-builds.org/) Qt.  
-If you are interested in build method, please check the following GitHub repository.
+If you are interested in build method, please check the following GitHub repository. (**PLEASE DO NOT FORK THIS REPOSITORY!**)
 
 [GitHub](https://github.com/Fsu0413/Fs-scripts)
 
@@ -231,11 +231,6 @@ Commericial-only Qt Open Source Release Date (ETA)
 | 6.2.12 | {{% date 2024 3 22 %}} | {{% date 2025 3 22 %}} |
 | 6.5.4 | {{% date 2024 1 11 %}} | {{% date 2025 1 11 %}} |
 | 6.5.5 | {{% date 2024 3 4 %}} | {{% date 2025 3 4 %}} |
-
-## Incoming update for future release
-
-~~Use GCC 11 with MinGW-w64 v9 for building following Qt 5.15 series.~~ (Build failed on 5.15.12)   
-Use Android NDK r25 series for building Qt 5.15.13 / 6.2.8 onwards.  
 
 ## Existing Patches
 
