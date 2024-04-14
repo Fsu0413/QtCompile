@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.124.1">
-    <meta name="generator" content="Relearn 5.26.2">
+    <meta name="generator" content="Relearn 5.27.0">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>当前的失败项 :: Fsu0413 的原版 Qt 构建</title>
@@ -119,6 +119,7 @@
           <article class="default">
             <header class="headline">
             </header>
+
 <h1 id="当前的失败项">当前的失败项</h1>
 
 <h2 id="qt-512-以后的-qdoc-使用-msvc-构建时无法使用静态链接的-clang">Qt 5.12 以后的 QDoc 使用 MSVC 构建时无法使用静态链接的 clang</h2>
@@ -126,7 +127,7 @@
 我决定在找到使用静态链接的 clang 方法之前，不再提供基于 LLVM 的 QDoc。</p>
 <p>2020 年 11 月 3 日更新：<br>
 <code>libclang_static.lib</code> 是 Qt 那帮人自己使用脚本打包的。<br>
-非常感谢 QtCN 的 lixinwei 提供相关信息。 <a href="http://www.qtcn.org/bbs/job.php?action=topost&tid=85983&pid=200952" target="_blank">原帖参考</a></p>
+非常感谢 QtCN 的 lixinwei 提供相关信息。 <a href="http://www.qtcn.org/bbs/job.php?action=topost&tid=85983&pid=200952" rel="external" target="_blank">原帖参考</a></p>
 <p>2024 年 3 月 25 日更新：<br>
 调查了一下 LLVM 的构建。<br>
 实质上，LLVM 在 11.0.0 版本之后才支持在 Windows 上构建静态库。<br>
@@ -135,7 +136,7 @@
 <p>目前如果使用 MinGW 的话，llvm 支持全动态链接（参考 mstorsjo 的 llvm-mingw 工程的构建产物），但是使用 MSVC 的话，则不支持。（为什么？） <br>
 可能 MinGW 比 MSVC 有更多人爱吧。。。</p>
 <h2 id="使用-mingw-构建-qt-62-系列时命令行过长">使用 MinGW 构建 Qt 6.2 系列时命令行过长</h2>
-<p>参考 <a href="https://bugreports.qt.io/browse/QTBUG-96339" target="_blank">QTBUG-96339</a> - <del>暂时</del>使用 CMake 3.20.2 绕过这个问题</p>
+<p>参考 <a href="https://bugreports.qt.io/browse/QTBUG-96339" rel="external" target="_blank">QTBUG-96339</a> - <del>暂时</del>使用 CMake 3.20.2 绕过这个问题</p>
 <h2 id="qtopcua-的问题2023-年-12-月-25-日更新">QtOpcUa 的问题（2023 年 12 月 25 日更新）</h2>
 <p><del>目前</del> 以前 QtOpcUa 与 OpenSSL 3.0 系列存在兼容性问题。<br>
 在 Qt 那帮人更新他们自己的 open62541 版本之前，暂时禁用 QtOpcUa 的构建。<br>
@@ -145,7 +146,7 @@
 <del>我不清楚是否我们可以把 QtOpcUa 带回到 Qt 6.4 了。。。。</del></p>
 <p>2022 年 11 月 6 日更新：<br>
 open62541 没有在 1.3.3 版本之后发布任何新版本，所以 QtOpcUa 6.4 不会有 open62541 的 OpenSSL 3.0 支持。<br>
-目前在 GitHub 上有一个已经合入的 Pull Request 添加了 OpenSSL 3.0 支持。参考 <a href="https://github.com/open62541/open62541/pull/5349" target="_blank">Github Pull Request</a>。<br>
+目前在 GitHub 上有一个已经合入的 Pull Request 添加了 OpenSSL 3.0 支持。参考 <a href="https://github.com/open62541/open62541/pull/5349" rel="external" target="_blank">Github Pull Request</a>。<br>
 下一个版本的 open62541 就会包含这个修改，届时我会重新启用 QtOpcUa 的构建。</p>
 <p>2023 年 1 月 23 日更新：<br>
 open62541 于 2022 年 11 月 14 日发布了 1.3.4 版本。QtOpcUa 6.5 更新附带的 open62541 附带的就是这个版本。<br>
@@ -304,7 +305,7 @@ Qt 6.2 系列上目前已经有很多安全补丁无法应用。<br>
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sun, 14 Apr 2024 08:31:25 CST</p>
+Site generated: Sun, 14 Apr 2024 09:12:28 CST</p>
 
           </div>
         </div>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.124.1">
-    <meta name="generator" content="Relearn 5.26.2">
+    <meta name="generator" content="Relearn 5.27.0">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>本版本库的一些备注 :: Fsu0413 的原版 Qt 构建</title>
@@ -128,29 +128,30 @@
           <article class="default">
             <header class="headline">
             </header>
+
 <h1 id="本版本库的一些备注">本版本库的一些备注</h1>
 
 <h2 id="中文--多语言支持">中文 / 多语言支持</h2>
 <p>虽然这个网站的维护者（Fsu0413，也就是我）是中国人，是中文母语使用者，不过此网站最初做成的时候是只有嘤文版的。<br>
 目前我正在逐步在此网站上添加简体中文支持。</p>
-<p>得益于 <a href="https://gohugo.io/" target="_blank">Hugo</a> 自带的多语言支持和 <del>近期新换的</del> <a href="https://mcshelby.github.io/hugo-theme-relearn/" target="_blank">Relearn</a> 主题，本网站 <del>近期刚刚</del> 支持多语言。<br>
+<p>得益于 <a href="https://gohugo.io/" rel="external" target="_blank">Hugo</a> 自带的多语言支持和 <del>近期新换的</del> <a href="https://mcshelby.github.io/hugo-theme-relearn/" rel="external" target="_blank">Relearn</a> 主题，本网站 <del>近期刚刚</del> 支持多语言。<br>
 <del>目前的中文也仅仅处于刚刚开始组织语言的阶段。有一些内容还没有写完。</del><br>
 <del>不过主要内容均使用中文重新写了一遍，应该不会影响大家下载二进制文件了。</del></p>
-<p>对网站建设有建议和意见的可以<a href="https://github.com/Fsu0413/QtCompile/issues/new" target="_blank">去 GitHub 上提出 issue</a>。</p>
+<p>对网站建设有建议和意见的可以<a href="https://github.com/Fsu0413/QtCompile/issues/new" rel="external" target="_blank">去 GitHub 上提出 issue</a>。</p>
 <h2 id="网站镜像">网站镜像</h2>
 <p><del>最近</del> 我在中国大陆使用 Gitee Pages 服务构建了一个此网站的镜像。<br>
 这个镜像配置的默认语言改为简体中文。</p>
 <p>由于 Gitee 的自定义域名服务只提供给付费用户，目前中文站是在 Gitee 的域名下的。<br>
 如果之后我对此服务感觉不错的话，我可能会付费使用这个服务。</p>
-<p><a href="https://fsu0413.gitee.io/qtcompile/" target="_blank">Gitee Pages （中国大陆，使用简体中文作为默认语言）</a><br>
-<a href="https://build-qt.fsu0413.me/" target="_blank">Github Pages （美国，使用英语作为默认语言）</a></p>
+<p><a href="https://fsu0413.gitee.io/qtcompile/" rel="external" target="_blank">Gitee Pages （中国大陆，使用简体中文作为默认语言）</a><br>
+<a href="https://build-qt.fsu0413.me/" rel="external" target="_blank">Github Pages （美国，使用英语作为默认语言）</a></p>
 <h2 id="可复现的构建">可复现的构建</h2>
-<p>为了实现对 Qt 的<a href="https://reproducible-builds.org/" target="_blank">可复现的构建</a>，我使用一系列脚本进行构建和打包。<br>
+<p>为了实现对 Qt 的<a href="https://reproducible-builds.org/" rel="external" target="_blank">可复现的构建</a>，我使用一系列脚本进行构建和打包。<br>
 如果您对构建方法感兴趣的话，可以参考下面的 GitHub 版本库。（<strong>不要 FORK 这个版本库！！！！</strong>）</p>
-<p><a href="https://github.com/Fsu0413/Fs-scripts" target="_blank">GitHub</a></p>
+<p><a href="https://github.com/Fsu0413/Fs-scripts" rel="external" target="_blank">GitHub</a></p>
 <p>但是不太好的一点是这个网站是手工编辑的。<br>
 这个网站的源码如下：</p>
-<p><a href="https://github.com/Fsu0413/QtCompile" target="_blank">GitHub</a></p>
+<p><a href="https://github.com/Fsu0413/QtCompile" rel="external" target="_blank">GitHub</a></p>
 <h2 id="对静态构建的备注">对静态构建的备注</h2>
 <p>我不在大型项目中使用静态构建。我并不认为使用静态构建是很明智的选择。</p>
 <p>我可以理解使用静态构建的目的是为了仅发布单一可执行程序，但是事实上有如下限制：</p>
@@ -207,7 +208,7 @@ Qt 5.13 及以后的版本的 Windows 构建使用 SChannel 代替 OpenSSL 库�
 <p>（2022 年 4 月 14 日更新）<strong>没有调试库，这大约节省了整个 Qt 包的大半部分空间。</strong><br>
 （不要在没有商业定制化的情况下请求添加这个东西，主要是我不用。注：商业定制化还没有开始运营）</p>
 <p>没有示例程序，这大约节省了整个 Qt 包的大半部分空间。</p>
-<p>没有文档（而且在 Qt 5.12 之后由于 <code>QDoc</code> 依赖 <code>clang</code> 导致 <code>QDoc</code> 也没有了）。因为 Qt 文档可以在 <a href="http://doc.qt.io" target="_blank">http://doc.qt.io</a> 随时查阅，没有必要在包里面再放一份文档。</p>
+<p>没有文档（而且在 Qt 5.12 之后由于 <code>QDoc</code> 依赖 <code>clang</code> 导致 <code>QDoc</code> 也没有了）。因为 Qt 文档可以在 <a href="http://doc.qt.io" rel="external" target="_blank">http://doc.qt.io</a> 随时查阅，没有必要在包里面再放一份文档。</p>
 <p>（2023 年 1 月 8 日更新） <strong>没有证书</strong> 。这对某些非开发人员来说可能是灾难性的。<br>
 由于二进制程序证书需要非常昂贵的价格购买，而我作为个人开发者不可能购买如此昂贵的应用程序证书来进行可信度校验。<br>
 所以在运行我构建的 Qt 的时候，会提示程序不被信任的问题。<br>
@@ -215,7 +216,7 @@ Qt 5.13 及以后的版本的 Windows 构建使用 SChannel 代替 OpenSSL 库�
 在此之前，可能会实现基于 GPG 的校验。（虽然咕咕咕了）<br>
 （由于 Qt 5.14 以前的版本需要在安装后对 Qt 打补丁，所以无法校验。Qt 5.14 以及以后的版本可以重定位，解决了这个问题）</p>
 <h2 id="qt-offering-changes-2020-2022-年-4-月-14-日更新">Qt offering changes 2020 （2022 年 4 月 14 日更新）</h2>
-<p>Qt 宣布了 <a href="https://www.qt.io/blog/qt-offering-changes-2020" target="_blank">Qt offering changes 2020</a>。<br>
+<p>Qt 宣布了 <a href="https://www.qt.io/blog/qt-offering-changes-2020" rel="external" target="_blank">Qt offering changes 2020</a>。<br>
 下面是我对这个博客的一些想法。</p>
 <p>首先我是有 Qt 账户的，不过安装 Qt 开发包为啥需要 Qt 账户我一直不明白。<br>
 都是一套源码编译出来的东西，登录个 Qt 账户也不会不一样，又不会给 Qt 增加任何功能，他们说的什么“这可以协助优化 Qt”根本就是在扯淡。</p>
@@ -232,7 +233,7 @@ Qt 5.13 及以后的版本的 Windows 构建使用 SChannel 代替 OpenSSL 库�
 它使用与桌面及移动端 Qt 完全不同的基础架构，不使用 Qt Base 等现有的自由软件。</p>
 <p>由于我当时的开发任务与 Qt 无关，没有对该部分内容进行探究及调查，了解到的内容也就止步于此了。</p>
 <h2 id="qt-6-支持的平台2024-年-3-月-24-日更新">Qt 6 支持的平台（2024 年 3 月 24 日更新）</h2>
-<p>参考 <a href="https://bugreports.qt.io/browse/QTBUG-113979" target="_blank">Qt 6.6 TQC Supported Targets</a> 和它的前置任务。</p>
+<p>参考 <a href="https://bugreports.qt.io/browse/QTBUG-113979" rel="external" target="_blank">Qt 6.6 TQC Supported Targets</a> 和它的前置任务。</p>
 <p>现在我为如下平台构建 Qt 6。</p>
 <p>Windows 11 - VS2019, x86_64, host and target<br>
 Windows 11 - VS2022, x86_64 / arm64, host and target<br>
@@ -403,7 +404,7 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 </table>
 <h2 id="已有的补丁">已有的补丁</h2>
 <p>从 2022 年 3 月 12 日开始我的 Qt 构建包含部分 Qt 提供的补丁。<br>
-多数是可以从 <a href="https://download.qt.io/" target="_blank">Qt 下载站</a> 下载的 CVE 补丁，另外一些是可以从 Qt Gerrit 或者 KDE 下载的一些修复构建的补丁。</p>
+多数是可以从 <a href="https://download.qt.io/" rel="external" target="_blank">Qt 下载站</a> 下载的 CVE 补丁，另外一些是可以从 Qt Gerrit 或者 KDE 下载的一些修复构建的补丁。</p>
 <p>下面这个表列出了我构建每个版本时所应用的补丁。<br>
 注：我不会对当前正在活跃开发的 Qt 应用补丁，而是单纯等待新版本发布。所以应用补丁的只有商业 LTS 版本和结束生命周期的版本。<br>
 若某个补丁在所有的正在维护的版本均已附带或没有应用的必要，则该补丁将会从此表中删除。<br>
@@ -421,67 +422,67 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 <tr>
 <td>CVE-2023-24607</td>
 <td>附带</td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-24607-qtbase-6.2.diff" target="_blank">√</a> （6.2.8）</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-24607-qtbase-6.2.diff" rel="external" target="_blank">√</a> （6.2.8）</td>
 <td>-</td>
 </tr>
 <tr>
 <td>CVE-2023-32573</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-32573-qtsvg-5.15.diff" target="_blank">√</a> （5.15.14）</td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-32573-qtsvg-6.2.diff" target="_blank">√</a> （6.2.9）</td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-32573-qtsvg-5.15.diff" rel="external" target="_blank">√</a> （5.15.14）</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-32573-qtsvg-6.2.diff" rel="external" target="_blank">√</a> （6.2.9）</td>
 <td>附带</td>
 </tr>
 <tr>
 <td>（仅限 5.15 系列）Clang 构建修复</td>
-<td><a href="https://invent.kde.org/qt/qt/qtlocation-mapboxgl/-/commit/5a07e1967dcc925d9def47accadae991436b9686" target="_blank" title="KDE 提供的补丁">√</a> （5.15.14）</td>
+<td><a href="https://invent.kde.org/qt/qt/qtlocation-mapboxgl/-/commit/5a07e1967dcc925d9def47accadae991436b9686" rel="external" target="_blank" title="KDE 提供的补丁">√</a> （5.15.14）</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
 <td>CVE-2023-32762</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-32762-qtbase-5.15.diff" target="_blank">√</a> （5.15.14）</td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-32762-qtbase-6.2.diff" target="_blank">√</a> （6.2.9）</td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-32762-qtbase-5.15.diff" rel="external" target="_blank">√</a> （5.15.14）</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-32762-qtbase-6.2.diff" rel="external" target="_blank">√</a> （6.2.9）</td>
 <td>附带</td>
 </tr>
 <tr>
 <td>CVE-2023-32763</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-32763-qtbase-5.15.diff" target="_blank">√</a> （5.15.15）</td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-32763-qtbase-6.2.diff" target="_blank">√</a> （6.2.9）</td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-32763-qtbase-5.15.diff" rel="external" target="_blank">√</a> （5.15.15）</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-32763-qtbase-6.2.diff" rel="external" target="_blank">√</a> （6.2.9）</td>
 <td>附带</td>
 </tr>
 <tr>
 <td>CVE-2023-33285</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-33285-qtbase-5.15.diff" target="_blank">√</a> （5.15.14）</td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-33285-qtbase-6.2.diff" target="_blank">√</a> （6.2.9）</td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-33285-qtbase-5.15.diff" rel="external" target="_blank">√</a> （5.15.14）</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-33285-qtbase-6.2.diff" rel="external" target="_blank">√</a> （6.2.9）</td>
 <td>附带</td>
 </tr>
 <tr>
 <td>CVE-2023-34410</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-34410-qtbase-5.15.diff" target="_blank">√</a> （5.15.15）</td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-34410-qtbase-6.2.diff" target="_blank">√</a> （6.2.9）</td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-34410-qtbase-5.15.diff" rel="external" target="_blank">√</a> （5.15.15）</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-34410-qtbase-6.2.diff" rel="external" target="_blank">√</a> （6.2.9）</td>
 <td>附带</td>
 </tr>
 <tr>
 <td>CVE-2023-37369</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-37369-qtbase-5.15.diff" target="_blank">√</a> （5.15.15）</td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-37369-qtbase-5.15.diff" rel="external" target="_blank">√</a> （5.15.15）</td>
 <td><a href="/qtcompile/miscellaneous/notesforthisrepo/index.html" title="官方补丁冲突，依赖 Qt 6.2.9 上的一个提交，暂无发行版与项目解决冲突。已放弃调查"><strong>×</strong></a> （6.2.10）</td>
 <td>附带</td>
 </tr>
 <tr>
 <td>CVE-2023-38197</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-38197-qtbase-5.15.diff" target="_blank">√</a> （5.15.15）</td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-38197-qtbase-5.15.diff" rel="external" target="_blank">√</a> （5.15.15）</td>
 <td><a href="/qtcompile/miscellaneous/notesforthisrepo/index.html" title="依赖 CVE-2023-37369 的补丁"><strong>×</strong></a> （6.2.10）</td>
 <td>附带</td>
 </tr>
 <tr>
 <td>CVE-2023-43114</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-43114-5.15.patch" target="_blank">√</a> （5.15.16）</td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-43114-6.2.patch" target="_blank">√</a> （6.2.10）</td>
-<td><a href="https://download.qt.io/official_releases/qt/6.5/CVE-2023-43114-6.5.patch" target="_blank">√</a> （6.5.4）</td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-43114-5.15.patch" rel="external" target="_blank">√</a> （5.15.16）</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-43114-6.2.patch" rel="external" target="_blank">√</a> （6.2.10）</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.5/CVE-2023-43114-6.5.patch" rel="external" target="_blank">√</a> （6.5.4）</td>
 </tr>
 <tr>
 <td>CVE-2023-4863</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-4863-5.15.patch" target="_blank">√</a> （5.15.16）</td>
-<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2023-09-22-CVE-2023-4863-qtimageformats-6.2.patch" target="_blank" title="Fsu0413 制作的补丁">√</a> （6.2.10）</td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-4863-5.15.patch" rel="external" target="_blank">√</a> （5.15.16）</td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2023-09-22-CVE-2023-4863-qtimageformats-6.2.patch" rel="external" target="_blank" title="Fsu0413 制作的补丁">√</a> （6.2.10）</td>
 <td>附带</td>
 </tr>
 <tr>
@@ -492,15 +493,15 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 </tr>
 <tr>
 <td>CVE-2023-51714</td>
-<td>√ <a href="https://download.qt.io/official_releases/qt/5.15/0001-CVE-2023-51714-qtbase-5.15.diff" target="_blank">1</a> <a href="https://download.qt.io/official_releases/qt/5.15/0002-CVE-2023-51714-qtbase-5.15.diff" target="_blank">2</a> （5.15.17）</td>
-<td>√ <a href="https://download.qt.io/official_releases/qt/6.2/0001-CVE-2023-51714-qtbase-6.2.diff" target="_blank">1</a> <a href="https://download.qt.io/official_releases/qt/6.2/0002-CVE-2023-51714-qtbase-6.2.diff" target="_blank">2</a> （6.2.11）</td>
-<td>√ <a href="https://download.qt.io/official_releases/qt/6.5/0001-CVE-2023-51714-qtbase-6.5.diff" target="_blank">1</a> <a href="https://download.qt.io/official_releases/qt/6.5/0002-CVE-2023-51714-qtbase-6.5.diff" target="_blank">2</a> （6.5.4）</td>
+<td>√ <a href="https://download.qt.io/official_releases/qt/5.15/0001-CVE-2023-51714-qtbase-5.15.diff" rel="external" target="_blank">1</a> <a href="https://download.qt.io/official_releases/qt/5.15/0002-CVE-2023-51714-qtbase-5.15.diff" rel="external" target="_blank">2</a> （5.15.17）</td>
+<td>√ <a href="https://download.qt.io/official_releases/qt/6.2/0001-CVE-2023-51714-qtbase-6.2.diff" rel="external" target="_blank">1</a> <a href="https://download.qt.io/official_releases/qt/6.2/0002-CVE-2023-51714-qtbase-6.2.diff" rel="external" target="_blank">2</a> （6.2.11）</td>
+<td>√ <a href="https://download.qt.io/official_releases/qt/6.5/0001-CVE-2023-51714-qtbase-6.5.diff" rel="external" target="_blank">1</a> <a href="https://download.qt.io/official_releases/qt/6.5/0002-CVE-2023-51714-qtbase-6.5.diff" rel="external" target="_blank">2</a> （6.5.4）</td>
 </tr>
 <tr>
 <td>CVE-2024-25580</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2024-25580-qtbase-5.15.diff" target="_blank">√</a> （5.15.17）</td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2024-25580-qtbase-6.2.diff" target="_blank">√</a> （6.2.12）</td>
-<td><a href="https://download.qt.io/official_releases/qt/6.5/CVE-2024-25580-qtbase-6.5.diff" target="_blank">√</a> （6.5.5）</td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2024-25580-qtbase-5.15.diff" rel="external" target="_blank">√</a> （5.15.17）</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2024-25580-qtbase-6.2.diff" rel="external" target="_blank">√</a> （6.2.12）</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.5/CVE-2024-25580-qtbase-6.5.diff" rel="external" target="_blank">√</a> （6.5.5）</td>
 </tr>
 </tbody>
 </table>
@@ -518,44 +519,44 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 <tbody>
 <tr>
 <td>使用 <code>_WIN32_WINNT</code> 的默认值为 <code>0x0A00</code> 的新版 MinGW-w64 上 Qt 5.15 系列无法构建</td>
-<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase-5.15.diff" target="_blank">2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase-5.15.diff</a></td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase-5.15.diff" rel="external" target="_blank">2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase-5.15.diff</a></td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
 <td>使用 GCC 11 或更新的版本无法构建 Qt 5.15 系列上的 <code>angle</code></td>
-<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-angle-fix-build-on-gcc11-qtbase-5.15.diff" target="_blank">2024-Fs-angle-fix-build-on-gcc11-qtbase-5.15.diff</a></td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-angle-fix-build-on-gcc11-qtbase-5.15.diff" rel="external" target="_blank">2024-Fs-angle-fix-build-on-gcc11-qtbase-5.15.diff</a></td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
 <td>Qt 5.15 系列的 <code>d3d12</code> Qt Quick Scene Graph 插件无法找到 <code>fxc</code>，并且找不到 <code>_uuidof</code> 函数</td>
-<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-d3d12-fix-compile-with-later-mingw-qtdeclarative-5.15.diff" target="_blank">2024-Fs-d3d12-fix-compile-with-later-mingw-qtdeclarative-5.15.diff</a></td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-d3d12-fix-compile-with-later-mingw-qtdeclarative-5.15.diff" rel="external" target="_blank">2024-Fs-d3d12-fix-compile-with-later-mingw-qtdeclarative-5.15.diff</a></td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
 <td>使用 Android NDK r25 或更新的版本无法构建 Qt 5.15 和 6.2 系列</td>
-<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase-5.15.diff" target="_blank">2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase-5.15.diff</a></td>
-<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase-6.2.diff" target="_blank">2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase-6.2.diff</a></td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase-5.15.diff" rel="external" target="_blank">2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase-5.15.diff</a></td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase-6.2.diff" rel="external" target="_blank">2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase-6.2.diff</a></td>
 <td>-</td>
 </tr>
 <tr>
 <td>使用 GCC 13 无法构建 Qt 6.2 系列上的 QtShaderTools</td>
 <td>-</td>
-<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-glslang-fix-GCC-13-builds-qtshadertools-6.2.diff" target="_blank">2024-Fs-glslang-fix-GCC-13-builds-qtshadertools-6.2.diff</a></td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-glslang-fix-GCC-13-builds-qtshadertools-6.2.diff" rel="external" target="_blank">2024-Fs-glslang-fix-GCC-13-builds-qtshadertools-6.2.diff</a></td>
 <td>-</td>
 </tr>
 <tr>
 <td>使用 GCC 13 无法构建 Qt 6.2 和 6.5 系列上的 Qt3D</td>
 <td>-</td>
-<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.2.diff" target="_blank">2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.2.diff</a></td>
-<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.5/2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.5.diff" target="_blank">2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.5.diff</a></td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.2.diff" rel="external" target="_blank">2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.2.diff</a></td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.5/2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.5.diff" rel="external" target="_blank">2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.5.diff</a></td>
 </tr>
 <tr>
 <td>使用 GCC 13 无法构建 Qt 6.2 系列上的 QtQuick3D</td>
 <td>-</td>
-<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-qtquick3dassimp-fix-GCC-13-builds-qtquick3d-6.2.diff" target="_blank">2024-Fs-qtquick3dassimp-fix-GCC-13-builds-qtquick3d-6.2.diff</a></td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-qtquick3dassimp-fix-GCC-13-builds-qtquick3d-6.2.diff" rel="external" target="_blank">2024-Fs-qtquick3dassimp-fix-GCC-13-builds-qtquick3d-6.2.diff</a></td>
 <td>-</td>
 </tr>
 </tbody>
@@ -689,7 +690,7 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sun, 14 Apr 2024 08:31:25 CST</p>
+Site generated: Sun, 14 Apr 2024 09:12:28 CST</p>
 
           </div>
         </div>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.124.1">
-    <meta name="generator" content="Relearn 5.26.2">
+    <meta name="generator" content="Relearn 5.27.0">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>之前的历史 :: Fsu0413 的原版 Qt 构建</title>
@@ -227,14 +227,15 @@
           <article class="default">
             <header class="headline">
             </header>
+
 <h1 id="之前的历史">之前的历史</h1>
 
 <h2 id="2024-年-3-月-28-日">2024 年 3 月 28 日</h2>
 <p>更新 Qt 6.6.3 和 Qt 6.7.0-rc2 版本。<br>
 重新构建了 VS2022 和 llvm-mingw 18 的 Qt 5.15 / 6.2 / 6.5 版本。</p>
-<p>Qt 6 正在迁移 MinGW 构建，从基于 GCC 的工具链到使用 <a href="https://github.com/mstorsjo/llvm-mingw" target="_blank">llvm-mingw</a> 的基于 LLVM 的工具链。 <br>
+<p>Qt 6 正在迁移 MinGW 构建，从基于 GCC 的工具链到使用 <a href="https://github.com/mstorsjo/llvm-mingw" rel="external" target="_blank">llvm-mingw</a> 的基于 LLVM 的工具链。 <br>
 我也建议 MinGW 的使用者迁移过去，因为使用 LLVM 构建更快，生成更小的二进制文件，并且也支持 Windows on ARM（虽然我还没有调查在 WoA 上使用 llvm-mingw）。<br>
-详情参考 <a href="https://bugreports.qt.io/browse/QTBUG-107516" target="_blank">QTBUG-107516</a>。</p>
+详情参考 <a href="https://bugreports.qt.io/browse/QTBUG-107516" rel="external" target="_blank">QTBUG-107516</a>。</p>
 <h2 id="2024-年-3-月-25-日-无更新">2024 年 3 月 25 日 无更新</h2>
 <p>增加 Qt 5.15 部分 MySQL 后端构建失败的备注。<br>
 简单调查 llvm 在 Windows 上的构建。</p>
@@ -246,7 +247,7 @@
 为 Qt 6.2.7 应用 CVE-2023-4863。</p>
 <h2 id="2024-年-3-月-16-日">2024 年 3 月 16 日</h2>
 <p>更新 Visual Studio 2022 到 17.9.3，重新构建了所有 VS2022 的包（除了静态的）<br>
-使用 <a href="https://github.com/mstorsjo/llvm-mingw" target="_blank">llvm-mingw</a> 构建了 Qt 5.15。目前带了 Clang 16，17 和 18 系列。<br>
+使用 <a href="https://github.com/mstorsjo/llvm-mingw" rel="external" target="_blank">llvm-mingw</a> 构建了 Qt 5.15。目前带了 Clang 16，17 和 18 系列。<br>
 上传 Qt 6.2 / 6.5 / 6.6 使用 llvm-mingw 18 系列的构建。<br>
 使用 Android NDK r25c 构建了 Qt 6.2。
 使用 MinGW w/ GCC 13 系列构建了 Qt 6.2 和 6.5 系列。</p>
@@ -324,10 +325,10 @@ Qt 5.12 系列的构建脚本和环境都爆破了。</p>
 <h2 id="2023-年-5-月-9-日">2023 年 5 月 9 日</h2>
 <p>更新 Qt 5.15.9 / 6.5.0。<br>
 删除 Qt 6.4 系列。</p>
-<p>OpenSSL 于 2023 年 4 月 20 日发布的 <a href="https://www.openssl.org/news/secadv/20230420.txt" target="_blank">微小更新</a> 仅适用于 ASM 构建的 OpenSSL 二进制文件。<br>
+<p>OpenSSL 于 2023 年 4 月 20 日发布的 <a href="https://www.openssl.org/news/secadv/20230420.txt" rel="external" target="_blank">微小更新</a> 仅适用于 ASM 构建的 OpenSSL 二进制文件。<br>
 由于我构建的 OpenSSL 均为非 ASM 构建，所以对我的构建没有影响。此更新不会被应用到我构建的版本中。</p>
 <h2 id="2023-年-3-月-25-日">2023 年 3 月 25 日</h2>
-<p>更新 OpenSSL 1.1.1t / 3.0.8，附带 <a href="https://www.openssl.org/news/secadv/20230322.txt" target="_blank">微小更新</a>。<br>
+<p>更新 OpenSSL 1.1.1t / 3.0.8，附带 <a href="https://www.openssl.org/news/secadv/20230322.txt" rel="external" target="_blank">微小更新</a>。<br>
 更新 Qt 5.12.12 / 5.15.8 / 6.2.4，使用这份 OpenSSL 重新构建，其中 5.15.8 附带 QtWebEngine 5.15.13。<br>
 更新 Qt 6.4.3 和 Qt 6.5.0-rc。</p>
 <p>由于 Windows 8.1 结束生命周期，之前使用 Windows 8.1 构建的版本迁移到 Windows 10 10.0.19045 重新构建。<br>
@@ -343,13 +344,13 @@ Qt 5.12 系列的构建脚本和环境都爆破了。</p>
 使用更多 Visual Studio 版本对 Qt 5.15 系列进行静态 <code>full</code> 构建。不再继续对 Qt 5.12 进行静态 <code>full</code> 构建。</p>
 <h2 id="2023-年-1-月-28-日">2023 年 1 月 28 日</h2>
 <p>更新 Qt 6.5.0-beta2 包。（含有 QtOpcUa）<br>
-更新 Qt 6.2.4 静态 <code>full</code> 构建。提供一个对 <a href="https://bugreports.qt.io/browse/QTBUG-102877" target="_blank">QTBUG-102877</a> 的绕过方案。</p>
+更新 Qt 6.2.4 静态 <code>full</code> 构建。提供一个对 <a href="https://bugreports.qt.io/browse/QTBUG-102877" rel="external" target="_blank">QTBUG-102877</a> 的绕过方案。</p>
 <h2 id="2023-年-1-月-23-日">2023 年 1 月 23 日</h2>
 <p>更新 Qt 6.5.0-beta1 包。（没有 QtOpcUa）<br>
 更新 Qt 6.2.4 / Qt 6.4.2，在 Windows 上带上静态的 <code>libgcc</code> 。之前的版本依赖 <code>libgcc</code> 的 DLL。受影响的版本是所有的交叉构建版和静态 <code>full</code> 构建。</p>
 <h2 id="2023-年-1-月-8-日">2023 年 1 月 8 日</h2>
 <p>更新 Qt 6.4.2 / 5.15.8 包。<br>
-更新 Qt 6.2.4 包，构建时使用带 <a href="https://www.openssl.org/news/secadv/20221213.txt" target="_blank">微小更新</a> 的 OpenSSL 3.0.7。</p>
+更新 Qt 6.2.4 包，构建时使用带 <a href="https://www.openssl.org/news/secadv/20221213.txt" rel="external" target="_blank">微小更新</a> 的 OpenSSL 3.0.7。</p>
 <p>此前 Qt 6 Linux 主机版的交叉构建包存在问题，导致主机工具没有正确部署。<br>
 本次的包修复了此问题。</p>
 <h2 id="2022-年-11-月-20-日">2022 年 11 月 20 日</h2>
@@ -369,7 +370,7 @@ Qt 6.2.4 / 6.4.1，安卓 / WebAssembly 包全部进行了更新。</p>
 <h2 id="2022-年-11-月-6-日">2022 年 11 月 6 日</h2>
 <p>更新 Qt 5.15.7，附带 OpenSSL 1.1.1s（macOS 除外，QtWebEngine 编译失败了）。现有补丁全部应用。<br>
 更新 Qt 5.12.12，附带 OpenSSL 1.1.1s。</p>
-<p>网站重新构建，更换主题为有更好多语言支持的 <a href="https://mcshelby.github.io/hugo-theme-relearn/" target="_blank">Relearn</a> 。<br>
+<p>网站重新构建，更换主题为有更好多语言支持的 <a href="https://mcshelby.github.io/hugo-theme-relearn/" rel="external" target="_blank">Relearn</a> 。<br>
 网站添加简体中文。</p>
 <h2 id="2022-年-10-月-4-日">2022 年 10 月 4 日</h2>
 <p>更新 Qt 6.4.0。<br>
@@ -449,7 +450,7 @@ Windows 主机版升级了 QQtPatcher 到 0.8.1，支持更多 5.12 特有的硬
 <p>由于 Qt 5.12 系列已经结束生命周期，并且 macOS 和 WebAssembly 版本不使用 OpenSSL，这次构建是这些平台的最后一次构建。<br>
 其他使用 OpenSSL 的构建将会持续构建到 OpenSSL 1.1.1 系列结束生命周期，也就是 2023 年 9 月 11 日。</p>
 <h2 id="2021-年-10-月-19-日">2021 年 10 月 19 日</h2>
-<p>上传 Qt 6.2.0，使用 <a href="https://github.com/mstorsjo/llvm-mingw" target="_blank">mstorsjo 的基于 LLVM 的 MinGW-w64 工具链</a>。<br>
+<p>上传 Qt 6.2.0，使用 <a href="https://github.com/mstorsjo/llvm-mingw" rel="external" target="_blank">mstorsjo 的基于 LLVM 的 MinGW-w64 工具链</a>。<br>
 目前只实现了 x86_64 的构建，包含 UCRT 和 msvcrt 两个版本。</p>
 <p>这个构建使用了更新的 v9 版本的 MinGW-w64，以前的基于 GCC 8.1.0 的版本还在用 v6。<br>
 如果想尝试一些新事物的话，我推荐使用这个版本。</p>
@@ -485,7 +486,7 @@ Windows 主机版升级了 QQtPatcher 到 0.8.1，支持更多 5.12 特有的硬
 Qt 6.1 系列直接附带所有 addon。我不用每次手工下载 addon 了。</p>
 <h2 id="2021-年-4-月-9-日">2021 年 4 月 9 日</h2>
 <p>上传包含 addon 的 6.0.3。<br>
-下载站使用 <a href="https://gohugo.io" target="_blank">Hugo</a> 重新生成，使用 <a href="https://thingsym.github.io/hugo-theme-techdoc/" target="_blank">techdoc</a> 主题。（<a href="http://amwiki.org/doc/" target="_blank">amWiki</a> 是基于 GitHub Atom 的，而且已经好久没更新了）</p>
+下载站使用 <a href="https://gohugo.io" rel="external" target="_blank">Hugo</a> 重新生成，使用 <a href="https://thingsym.github.io/hugo-theme-techdoc/" rel="external" target="_blank">techdoc</a> 主题。（<a href="http://amwiki.org/doc/" rel="external" target="_blank">amWiki</a> 是基于 GitHub Atom 的，而且已经好久没更新了）</p>
 <h2 id="2021-年-3-月-15-日">2021 年 3 月 15 日</h2>
 <p>上传包含 addon 的 6.0.2。（之前的版本没有 addon）<br>
 重新构建 5.15.2 安卓版本，使用 NDK r21e。<br>
@@ -635,8 +636,8 @@ Windows 7 结束生命周期后，将不会再有构建在 Windows 7 (Server 200
 <p>发现了一个打包的 bug。影响 5.12 以后的所有版本。<br>
 5.12.5 版本上会修复这个问题。</p>
 <h2 id="2019-年-8-月-3-日">2019 年 8 月 3 日</h2>
-<p>使用 <a href="http://amwiki.org/doc/" target="_blank">amWiki</a> 重新构建网站。<br>
-因为 <a href="http://amwiki.org/doc/" target="_blank">amWiki</a> 有内置的目录，所以没有必要再手写一遍下载内容列表了。</p>
+<p>使用 <a href="http://amwiki.org/doc/" rel="external" target="_blank">amWiki</a> 重新构建网站。<br>
+因为 <a href="http://amwiki.org/doc/" rel="external" target="_blank">amWiki</a> 有内置的目录，所以没有必要再手写一遍下载内容列表了。</p>
 <h2 id="2019-年-7-月-13-日">2019 年 7 月 13 日</h2>
 <p>因为之前发现的 QQtPatcher 的 bug， <strong>所有</strong> 的包都重做了。<br>
 VS2017 更新至 15.9.14。<br>
@@ -672,13 +673,13 @@ SF.net 恢复，文件重新上传到 SF.net。</p>
 <h2 id="2017-年以前黑历史仅有嘤文">2017 年以前（黑历史，仅有嘤文）</h2>
 
 <div class="expand">
-    <input type="checkbox" id="R-expand-9266b785ad40e1c6261d1341c7ffb780" aria-controls="R-expandcontent-9266b785ad40e1c6261d1341c7ffb780" >
-    <label class="expand-label" for="R-expand-9266b785ad40e1c6261d1341c7ffb780" >
+    <input type="checkbox" id="R-expand-a3949941ded75243e17324f69faedfd9" aria-controls="R-expandcontent-a3949941ded75243e17324f69faedfd9" >
+    <label class="expand-label" for="R-expand-a3949941ded75243e17324f69faedfd9" >
         <i class="fa-fw fas fa-chevron-down"></i>
         <i class="fa-fw fas fa-chevron-right"></i>
         展开
     </label>
-    <div id="R-expandcontent-9266b785ad40e1c6261d1341c7ffb780" class="expand-content">
+    <div id="R-expandcontent-a3949941ded75243e17324f69faedfd9" class="expand-content">
 
 <p>是的，我想写一些东西，但是不知道怎么写。。。</p>
 <h3 id="2016-年-7-月-23-日">2016 年 7 月 23 日</h3>
@@ -863,7 +864,7 @@ Upload 5.6.1 VS2015 Static packages.</p>
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sun, 14 Apr 2024 08:31:25 CST</p>
+Site generated: Sun, 14 Apr 2024 09:12:28 CST</p>
 
           </div>
         </div>

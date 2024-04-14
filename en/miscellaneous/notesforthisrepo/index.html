@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.124.1">
-    <meta name="generator" content="Relearn 5.26.2">
+    <meta name="generator" content="Relearn 5.27.0">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>Notes for this repository :: Fsu0413&#39;s Original Qt builds</title>
@@ -128,29 +128,30 @@
           <article class="default">
             <header class="headline">
             </header>
+
 <h1 id="notes-for-this-repository">Notes for this repository</h1>
 
 <h2 id="chinese--multilingual-support">Chinese / Multilingual Support</h2>
 <p>This website was English only since when it was initially built, although the maintainer of this website (me, Fsu0413) is a Chinese native speaker from the PRC.<br>
 Currently I am gradually adding Simplified Chinese support on this website.</p>
-<p><del>Recently</del> this website has gained multilingual support thanks to the built-in multilingual support of <a href="https://gohugo.io/" target="_blank">Hugo</a> and the <del>recently switched</del> <a href="https://mcshelby.github.io/hugo-theme-relearn/" target="_blank">Relearn</a> theme.<br>
+<p><del>Recently</del> this website has gained multilingual support thanks to the built-in multilingual support of <a href="https://gohugo.io/" rel="external" target="_blank">Hugo</a> and the <del>recently switched</del> <a href="https://mcshelby.github.io/hugo-theme-relearn/" rel="external" target="_blank">Relearn</a> theme.<br>
 <del>Current Chinese support is in the stage of writing texts. There is a bunch of things which are not finished.</del><br>
 <del>But the main contents are rewritten using Chinese, which shouldn&rsquo;t bother us for downloading binaries.</del></p>
-<p>If there are any constructive advices, feel free to <a href="https://github.com/Fsu0413/QtCompile/issues/new" target="_blank">create issue on Github</a>.</p>
+<p>If there are any constructive advices, feel free to <a href="https://github.com/Fsu0413/QtCompile/issues/new" rel="external" target="_blank">create issue on Github</a>.</p>
 <h2 id="website-mirror">Website Mirror</h2>
 <p><del>Recently</del> I created a mirror of this website in the Greatest China, using service of Gitee Pages.<br>
 This mirror is configured to be displaying Simplified Chinese by default.</p>
 <p>Due to the customize domain name function is only available under purchaged service of Gitee, Chinese mirror has to be under the domain of Gitee for now.<br>
 I may purchage the service later when the service seems good enough for me.</p>
-<p><a href="https://build-qt.fsu0413.me/" target="_blank">Github Pages (America, with English as default language)</a><br>
-<a href="https://fsu0413.gitee.io/qtcompile/" target="_blank">Gitee Pages (The Greatest China, with Chinese-S as default language)</a></p>
+<p><a href="https://build-qt.fsu0413.me/" rel="external" target="_blank">Github Pages (America, with English as default language)</a><br>
+<a href="https://fsu0413.gitee.io/qtcompile/" rel="external" target="_blank">Gitee Pages (The Greatest China, with Chinese-S as default language)</a></p>
 <h2 id="reproduciable-building">Reproduciable building</h2>
-<p>I use a set of scripts to do the build and packaging for <a href="https://reproducible-builds.org/" target="_blank">reproducible building</a> Qt.<br>
+<p>I use a set of scripts to do the build and packaging for <a href="https://reproducible-builds.org/" rel="external" target="_blank">reproducible building</a> Qt.<br>
 If you are interested in build method, please check the following GitHub repository. (<strong>PLEASE DO NOT FORK THIS REPOSITORY!</strong>)</p>
-<p><a href="https://github.com/Fsu0413/Fs-scripts" target="_blank">GitHub</a></p>
+<p><a href="https://github.com/Fsu0413/Fs-scripts" rel="external" target="_blank">GitHub</a></p>
 <p>However unfortunely, this website is manually edited.<br>
 Source of this site is:</p>
-<p><a href="https://github.com/Fsu0413/QtCompile" target="_blank">GitHub</a></p>
+<p><a href="https://github.com/Fsu0413/QtCompile" rel="external" target="_blank">GitHub</a></p>
 <h2 id="notes-on-static-builds">Notes on static builds</h2>
 <p>I don&rsquo;t use static builds in huge projects. I don&rsquo;t think it is wise to use a static build there.</p>
 <p>Maybe you just want to distribute a single portable executable binary file, but there is limitations:</p>
@@ -207,7 +208,7 @@ Windows builds after and including Qt 5.13 are using SChannel instead of OpenSSL
 <p>(Updated 14th Apr, 2022) <strong>No debug libs, which cuts more than a half of the size of the whole Qt package.</strong><br>
 (Kindly please don&rsquo;t request it without commericial customization since I don&rsquo;t use it. Note that commerical customization has not started yet)</p>
 <p>No examples, which cuts more than a half of the size of the whole Qt package.</p>
-<p>No docs (and no <code>QDoc</code> for Qt 5.12 and later since it depends on Clang), since Qt docs can be read from <a href="http://doc.qt.io" target="_blank">http://doc.qt.io</a> at any time, it is no need to bondle doc to the package.</p>
+<p>No docs (and no <code>QDoc</code> for Qt 5.12 and later since it depends on Clang), since Qt docs can be read from <a href="http://doc.qt.io" rel="external" target="_blank">http://doc.qt.io</a> at any time, it is no need to bondle doc to the package.</p>
 <p>(Updated 8th Jan, 2023) <strong>No certificate</strong> which may be devastating for especially non-developers.<br>
 Binary program certificate must be bought on expensive price, yet I as a personal developer can&rsquo;t afford it for only a simple trust verification.<br>
 This leads to a problem that the program is reported to be not trusted when running my build of Qt.<br>
@@ -215,7 +216,7 @@ There is no solution for this problem at the moment. I won&rsquo;t buy certifica
 It is possible to implement GPG verifiiation before certificate can be bought. (Although it has been put away for a long time&hellip;)<br>
 (Qt before 5.14 can&rsquo;t be trusted due to patch of Qt after install. Qt 5.14 and later can be relocated which resolves this problem)</p>
 <h2 id="qt-offering-changes-2020-updated-14th-apr-2022">Qt offering changes 2020 (updated 14th Apr, 2022)</h2>
-<p>Qt just announced <a href="https://www.qt.io/blog/qt-offering-changes-2020" target="_blank">Qt offering changes 2020</a>.<br>
+<p>Qt just announced <a href="https://www.qt.io/blog/qt-offering-changes-2020" rel="external" target="_blank">Qt offering changes 2020</a>.<br>
 Following is my opinion of this blog.</p>
 <p>First of all, I have a Qt account, but I don’t understand why I need a Qt account to install the Qt development kit.<br>
 All files are compiled and linked from the same set of source code. It will not change even if you log in to your Qt account. It will not add any features to Qt. &ldquo;This can help optimize Qt&rdquo; is simply nonsense.</p>
@@ -232,7 +233,7 @@ This will definitely lose money.</p>
 It uses completely different base structure than desktop and mobile one - it does not use current existing free software like Qt Base, etc..</p>
 <p>I did no studying or investigating about that part since my development at work has no relationship with Qt, so the above words is all I know about it.</p>
 <h2 id="qt-6-support-platforms-updated-24th-mar-2024">Qt 6 support platforms (updated 24th Mar, 2024)</h2>
-<p>See <a href="https://bugreports.qt.io/browse/QTBUG-113979" target="_blank">Qt 6.6 TQC Supported Targets</a> and its predecessors.</p>
+<p>See <a href="https://bugreports.qt.io/browse/QTBUG-113979" rel="external" target="_blank">Qt 6.6 TQC Supported Targets</a> and its predecessors.</p>
 <p>Currently I am building Qt 6 for following platforms:</p>
 <p>Windows 11 - VS2019, x86_64, host and target<br>
 Windows 11 - VS2022, x86_64 / arm64, host and target<br>
@@ -403,7 +404,7 @@ If subsequent version of Qt 5.15 remains private we won&rsquo;t upgrade OpenSSL 
 </table>
 <h2 id="existing-patches">Existing Patches</h2>
 <p>Starting from 12th Mar, 2022 I am shipping Qt with patches from Qt.<br>
-Most of them are CVE patches which can be downloaded from <a href="https://download.qt.io/" target="_blank">Qt Downloads</a>, others are build fixes which are download from Qt Gerrit or KDE.</p>
+Most of them are CVE patches which can be downloaded from <a href="https://download.qt.io/" rel="external" target="_blank">Qt Downloads</a>, others are build fixes which are download from Qt Gerrit or KDE.</p>
 <p>Following is a table for patches of each version I am currently building.<br>
 Note that I won&rsquo;t patch an active version of Qt and will simply wait for future release. So only Commericial LTS and EOL version are patched.<br>
 A patch will removed from following table when this patch is shipped or not needed to be applied in all of the maintained versions.<br>
@@ -421,67 +422,67 @@ Version number in brackets are the version when the corresponding patch will be 
 <tr>
 <td>CVE-2023-24607</td>
 <td>shipped</td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-24607-qtbase-6.2.diff" target="_blank">√</a> (6.2.8)</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-24607-qtbase-6.2.diff" rel="external" target="_blank">√</a> (6.2.8)</td>
 <td>-</td>
 </tr>
 <tr>
 <td>CVE-2023-32573</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-32573-qtsvg-5.15.diff" target="_blank">√</a> (5.15.14)</td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-32573-qtsvg-6.2.diff" target="_blank">√</a> (6.2.9)</td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-32573-qtsvg-5.15.diff" rel="external" target="_blank">√</a> (5.15.14)</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-32573-qtsvg-6.2.diff" rel="external" target="_blank">√</a> (6.2.9)</td>
 <td>shipped</td>
 </tr>
 <tr>
 <td>(5.15 series specific) Clang build fix</td>
-<td><a href="https://invent.kde.org/qt/qt/qtlocation-mapboxgl/-/commit/5a07e1967dcc925d9def47accadae991436b9686" target="_blank" title="Patch provided by KDE">√</a> (5.15.14)</td>
+<td><a href="https://invent.kde.org/qt/qt/qtlocation-mapboxgl/-/commit/5a07e1967dcc925d9def47accadae991436b9686" rel="external" target="_blank" title="Patch provided by KDE">√</a> (5.15.14)</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
 <td>CVE-2023-32762</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-32762-qtbase-5.15.diff" target="_blank">√</a> (5.15.14)</td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-32762-qtbase-6.2.diff" target="_blank">√</a> (6.2.9)</td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-32762-qtbase-5.15.diff" rel="external" target="_blank">√</a> (5.15.14)</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-32762-qtbase-6.2.diff" rel="external" target="_blank">√</a> (6.2.9)</td>
 <td>shipped</td>
 </tr>
 <tr>
 <td>CVE-2023-32763</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-32763-qtbase-5.15.diff" target="_blank">√</a> (5.15.15)</td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-32763-qtbase-6.2.diff" target="_blank">√</a> (6.2.9)</td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-32763-qtbase-5.15.diff" rel="external" target="_blank">√</a> (5.15.15)</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-32763-qtbase-6.2.diff" rel="external" target="_blank">√</a> (6.2.9)</td>
 <td>shipped</td>
 </tr>
 <tr>
 <td>CVE-2023-33285</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-33285-qtbase-5.15.diff" target="_blank">√</a> (5.15.14)</td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-33285-qtbase-6.2.diff" target="_blank">√</a> (6.2.9)</td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-33285-qtbase-5.15.diff" rel="external" target="_blank">√</a> (5.15.14)</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-33285-qtbase-6.2.diff" rel="external" target="_blank">√</a> (6.2.9)</td>
 <td>shipped</td>
 </tr>
 <tr>
 <td>CVE-2023-34410</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-34410-qtbase-5.15.diff" target="_blank">√</a> (5.15.15)</td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-34410-qtbase-6.2.diff" target="_blank">√</a> (6.2.9)</td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-34410-qtbase-5.15.diff" rel="external" target="_blank">√</a> (5.15.15)</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-34410-qtbase-6.2.diff" rel="external" target="_blank">√</a> (6.2.9)</td>
 <td>shipped</td>
 </tr>
 <tr>
 <td>CVE-2023-37369</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-37369-qtbase-5.15.diff" target="_blank">√</a> (5.15.15)</td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-37369-qtbase-5.15.diff" rel="external" target="_blank">√</a> (5.15.15)</td>
 <td><a href="/qtcompile/en/miscellaneous/notesforthisrepo/index.html" title="Official patch causes CONFLICT. Depends on a commit of Qt 6.2.9. Given up investigating due to no active distro / project is fixing this issue"><strong>×</strong></a> (6.2.10)</td>
 <td>shipped</td>
 </tr>
 <tr>
 <td>CVE-2023-38197</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-38197-qtbase-5.15.diff" target="_blank">√</a> (5.15.15)</td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-38197-qtbase-5.15.diff" rel="external" target="_blank">√</a> (5.15.15)</td>
 <td><a href="/qtcompile/en/miscellaneous/notesforthisrepo/index.html" title="Depends on patch of CVE-2023-37369"><strong>×</strong></a> (6.2.10)</td>
 <td>shipped</td>
 </tr>
 <tr>
 <td>CVE-2023-43114</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-43114-5.15.patch" target="_blank">√</a> (5.15.16)</td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-43114-6.2.patch" target="_blank">√</a> (6.2.10)</td>
-<td><a href="https://download.qt.io/official_releases/qt/6.5/CVE-2023-43114-6.5.patch" target="_blank">√</a> (6.5.4)</td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-43114-5.15.patch" rel="external" target="_blank">√</a> (5.15.16)</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2023-43114-6.2.patch" rel="external" target="_blank">√</a> (6.2.10)</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.5/CVE-2023-43114-6.5.patch" rel="external" target="_blank">√</a> (6.5.4)</td>
 </tr>
 <tr>
 <td>CVE-2023-4863</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-4863-5.15.patch" target="_blank">√</a> (5.15.16)</td>
-<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2023-09-22-CVE-2023-4863-qtimageformats-6.2.patch" target="_blank" title="Patch made by Fsu0413">√</a> (6.2.10)</td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2023-4863-5.15.patch" rel="external" target="_blank">√</a> (5.15.16)</td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2023-09-22-CVE-2023-4863-qtimageformats-6.2.patch" rel="external" target="_blank" title="Patch made by Fsu0413">√</a> (6.2.10)</td>
 <td>shipped</td>
 </tr>
 <tr>
@@ -492,15 +493,15 @@ Version number in brackets are the version when the corresponding patch will be 
 </tr>
 <tr>
 <td>CVE-2023-51714</td>
-<td>√ <a href="https://download.qt.io/official_releases/qt/5.15/0001-CVE-2023-51714-qtbase-5.15.diff" target="_blank">1</a> <a href="https://download.qt.io/official_releases/qt/5.15/0002-CVE-2023-51714-qtbase-5.15.diff" target="_blank">2</a> (5.15.17)</td>
-<td>√ <a href="https://download.qt.io/official_releases/qt/6.2/0001-CVE-2023-51714-qtbase-6.2.diff" target="_blank">1</a> <a href="https://download.qt.io/official_releases/qt/6.2/0002-CVE-2023-51714-qtbase-6.2.diff" target="_blank">2</a> (6.2.11)</td>
-<td>√ <a href="https://download.qt.io/official_releases/qt/6.5/0001-CVE-2023-51714-qtbase-6.5.diff" target="_blank">1</a> <a href="https://download.qt.io/official_releases/qt/6.5/0002-CVE-2023-51714-qtbase-6.5.diff" target="_blank">2</a> (6.5.4)</td>
+<td>√ <a href="https://download.qt.io/official_releases/qt/5.15/0001-CVE-2023-51714-qtbase-5.15.diff" rel="external" target="_blank">1</a> <a href="https://download.qt.io/official_releases/qt/5.15/0002-CVE-2023-51714-qtbase-5.15.diff" rel="external" target="_blank">2</a> (5.15.17)</td>
+<td>√ <a href="https://download.qt.io/official_releases/qt/6.2/0001-CVE-2023-51714-qtbase-6.2.diff" rel="external" target="_blank">1</a> <a href="https://download.qt.io/official_releases/qt/6.2/0002-CVE-2023-51714-qtbase-6.2.diff" rel="external" target="_blank">2</a> (6.2.11)</td>
+<td>√ <a href="https://download.qt.io/official_releases/qt/6.5/0001-CVE-2023-51714-qtbase-6.5.diff" rel="external" target="_blank">1</a> <a href="https://download.qt.io/official_releases/qt/6.5/0002-CVE-2023-51714-qtbase-6.5.diff" rel="external" target="_blank">2</a> (6.5.4)</td>
 </tr>
 <tr>
 <td>CVE-2024-25580</td>
-<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2024-25580-qtbase-5.15.diff" target="_blank">√</a> (5.15.17)</td>
-<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2024-25580-qtbase-6.2.diff" target="_blank">√</a> (6.2.12)</td>
-<td><a href="https://download.qt.io/official_releases/qt/6.5/CVE-2024-25580-qtbase-6.5.diff" target="_blank">√</a> (6.5.5)</td>
+<td><a href="https://download.qt.io/official_releases/qt/5.15/CVE-2024-25580-qtbase-5.15.diff" rel="external" target="_blank">√</a> (5.15.17)</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.2/CVE-2024-25580-qtbase-6.2.diff" rel="external" target="_blank">√</a> (6.2.12)</td>
+<td><a href="https://download.qt.io/official_releases/qt/6.5/CVE-2024-25580-qtbase-6.5.diff" rel="external" target="_blank">√</a> (6.5.5)</td>
 </tr>
 </tbody>
 </table>
@@ -518,44 +519,44 @@ Currently only LTS version will be patched.</p>
 <tbody>
 <tr>
 <td>Qt 5.15 series can&rsquo;t be built using later MinGW-w64 which has its <code>_WIN32_WINNT</code> defaults to <code>0x0A00</code></td>
-<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase-5.15.diff" target="_blank">2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase-5.15.diff</a></td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase-5.15.diff" rel="external" target="_blank">2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase-5.15.diff</a></td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
 <td>Qt 5.15 series <code>angle</code> can&rsquo;t be built using GCC 11 or later</td>
-<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-angle-fix-build-on-gcc11-qtbase-5.15.diff" target="_blank">2024-Fs-angle-fix-build-on-gcc11-qtbase-5.15.diff</a></td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-angle-fix-build-on-gcc11-qtbase-5.15.diff" rel="external" target="_blank">2024-Fs-angle-fix-build-on-gcc11-qtbase-5.15.diff</a></td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
 <td>Qt 5.15 series <code>d3d12</code> Qt Quick Scene Graph plugin can&rsquo;t find <code>fxc</code>, and can&rsquo;t find <code>_uuidof</code> function</td>
-<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-d3d12-fix-compile-with-later-mingw-qtdeclarative-5.15.diff" target="_blank">2024-Fs-d3d12-fix-compile-with-later-mingw-qtdeclarative-5.15.diff</a></td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-d3d12-fix-compile-with-later-mingw-qtdeclarative-5.15.diff" rel="external" target="_blank">2024-Fs-d3d12-fix-compile-with-later-mingw-qtdeclarative-5.15.diff</a></td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
 <td>Qt 5.15 and 6.2 series can&rsquo;t be built using Android NDK r25 or later</td>
-<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase-5.15.diff" target="_blank">2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase-5.15.diff</a></td>
-<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase-6.2.diff" target="_blank">2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase-6.2.diff</a></td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase-5.15.diff" rel="external" target="_blank">2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase-5.15.diff</a></td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase-6.2.diff" rel="external" target="_blank">2024-Fs-qlogging-fix-Android-NDK-r25-builds-qtbase-6.2.diff</a></td>
 <td>-</td>
 </tr>
 <tr>
 <td>Qt 6.2 series QtShaderTools can&rsquo;t build using GCC 13</td>
 <td>-</td>
-<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-glslang-fix-GCC-13-builds-qtshadertools-6.2.diff" target="_blank">2024-Fs-glslang-fix-GCC-13-builds-qtshadertools-6.2.diff</a></td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-glslang-fix-GCC-13-builds-qtshadertools-6.2.diff" rel="external" target="_blank">2024-Fs-glslang-fix-GCC-13-builds-qtshadertools-6.2.diff</a></td>
 <td>-</td>
 </tr>
 <tr>
 <td>Qt 6.2 and 6.5 series Qt3D can&rsquo;t build using GCC 13</td>
 <td>-</td>
-<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.2.diff" target="_blank">2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.2.diff</a></td>
-<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.5/2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.5.diff" target="_blank">2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.5.diff</a></td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.2.diff" rel="external" target="_blank">2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.2.diff</a></td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.5/2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.5.diff" rel="external" target="_blank">2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.5.diff</a></td>
 </tr>
 <tr>
 <td>Qt 6.2 series QtQuick3D can&rsquo;t build using GCC 13</td>
 <td>-</td>
-<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-qtquick3dassimp-fix-GCC-13-builds-qtquick3d-6.2.diff" target="_blank">2024-Fs-qtquick3dassimp-fix-GCC-13-builds-qtquick3d-6.2.diff</a></td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-qtquick3dassimp-fix-GCC-13-builds-qtquick3d-6.2.diff" rel="external" target="_blank">2024-Fs-qtquick3dassimp-fix-GCC-13-builds-qtquick3d-6.2.diff</a></td>
 <td>-</td>
 </tr>
 </tbody>
@@ -689,7 +690,7 @@ Currently only LTS version will be patched.</p>
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sun, 14 Apr 2024 08:31:25 CST</p>
+Site generated: Sun, 14 Apr 2024 09:12:28 CST</p>
 
           </div>
         </div>

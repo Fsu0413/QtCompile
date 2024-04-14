@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.124.1">
-    <meta name="generator" content="Relearn 5.26.2">
+    <meta name="generator" content="Relearn 5.27.0">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>Current failures :: Fsu0413&#39;s Original Qt builds</title>
@@ -119,6 +119,7 @@
           <article class="default">
             <header class="headline">
             </header>
+
 <h1 id="current-failures">Current failures</h1>
 
 <h2 id="qdoc-after-qt-512-cannot-use-static-linked-llvm--clang-when-using-msvc">QDoc after Qt 5.12 cannot use static linked llvm / clang when using MSVC</h2>
@@ -126,7 +127,7 @@
 I have decided not provide LLVM-based QDoc until I find a way to static link it.</p>
 <p>Update 3rd Nov, 2020:<br>
 <code>libclang_static.lib</code> is packed seprately using script by Qt guys.<br>
-Thanks &ldquo;lixinwei&rdquo; on QTCN.org for telling me related info. <a href="http://www.qtcn.org/bbs/job.php?action=topost&tid=85983&pid=200952" target="_blank">Original post</a> (Sorry, it&rsquo;s in Chinese)</p>
+Thanks &ldquo;lixinwei&rdquo; on QTCN.org for telling me related info. <a href="http://www.qtcn.org/bbs/job.php?action=topost&tid=85983&pid=200952" rel="external" target="_blank">Original post</a> (Sorry, it&rsquo;s in Chinese)</p>
 <p>Update 25th Mar, 2024:<br>
 I did some research about build of LLVM.<br>
 It reveals that, unfortunately, only LLVM 11.0.0 and above supports building static libraries on Windows.<br>
@@ -135,7 +136,7 @@ Version before 10.0.1 supports only building shared library.<br>
 <p>While using MinGW llvm supports full dynamic linking (just as built by the llvm-mingw project by mstorsjo), when using MSVC it doesn&rsquo;t. (Why?)<br>
 There may be no that much love for MSVC than MinGW&hellip;..</p>
 <h2 id="command-line-too-long-when-building-qt-62-series-for-mingw">Command line too long when building Qt 6.2 series for MinGW</h2>
-<p>See <a href="https://bugreports.qt.io/browse/QTBUG-96339" target="_blank">QTBUG-96339</a> - <del>temporarily</del> workaround using CMake 3.20.2</p>
+<p>See <a href="https://bugreports.qt.io/browse/QTBUG-96339" rel="external" target="_blank">QTBUG-96339</a> - <del>temporarily</del> workaround using CMake 3.20.2</p>
 <h2 id="qtopcua-issues-updated-25th-dec-2023">QtOpcUa issues (Updated 25th Dec, 2023)</h2>
 <p>QtOpcUa <del>is currently</del> was previously not compatible with OpenSSL 3.0 series.<br>
 Temporarily disabling QtOpcUa build until the Qt guys update their open62541 version.<br>
@@ -145,7 +146,7 @@ This change takes place since building and packaging of Qt 6.2.3 (when OpenSSL 3
 <del>I don&rsquo;t know if we can bring QtOpcUa back in Qt 6.4&hellip;</del></p>
 <p>Update 6th Nov, 2022:<br>
 open62541 hasn&rsquo;t release any version after 1.3.3 so there is no OpenSSL 3.0 support on open62541 of QtOpcUa 6.4.<br>
-There is a merged Pull Request on Github which added OpenSSL 3.0 support. Reference: <a href="https://github.com/open62541/open62541/pull/5349" target="_blank">Github Pull Request</a>.<br>
+There is a merged Pull Request on Github which added OpenSSL 3.0 support. Reference: <a href="https://github.com/open62541/open62541/pull/5349" rel="external" target="_blank">Github Pull Request</a>.<br>
 I will restart building with QtOpcUa when this change is got integrated in next released version of open62541.</p>
 <p>Update 23rd Jan, 2023:<br>
 open62541 released 1.3.4 at 14th Nov, 2022. QtOpcUa 6.5 ships this version of open62541.<br>
@@ -304,7 +305,7 @@ Since I have had trouble during investigation of previous patches, I won&rsquo;t
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sun, 14 Apr 2024 08:31:25 CST</p>
+Site generated: Sun, 14 Apr 2024 09:12:28 CST</p>
 
           </div>
         </div>

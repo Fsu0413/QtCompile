@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.124.1">
-    <meta name="generator" content="Relearn 5.26.2">
+    <meta name="generator" content="Relearn 5.27.0">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <title>6.5.3 for Android :: Fsu0413&#39;s Original Qt builds</title>
@@ -85,7 +85,7 @@
               <div class="topbar-content">
                 <div class="topbar-content-wrapper"><nav class="TableOfContents">
   <ul>
-    <li><a href="#dynamic--shared-builds-ndk-r26c">Dynamic / Shared Builds (NDK r26c)</a>
+    <li><a href="#dynamic--shared-builds-ndk-r26d">Dynamic / Shared Builds (NDK r26d)</a>
       <ul>
         <li><a href="#windows-host">Windows Host</a></li>
         <li><a href="#linux-host">Linux Host</a></li>
@@ -128,6 +128,7 @@
           <article class="default">
             <header class="headline">
             </header>
+
 <h1 id="653-for-android">6.5.3 for Android</h1>
 
 
@@ -177,13 +178,13 @@ All builds have <code>-DFEATURE_icu=OFF</code> because I think the ICU library i
 I build Qt with patches. See <a href="/qtcompile/en/miscellaneous/notesforthisrepo/index.html#existing-patches">this page</a> for a list of patches.</div>
 </div>
 
-<h2 id="dynamic--shared-builds-ndk-r26c">Dynamic / Shared Builds (NDK r26c)</h2>
+<h2 id="dynamic--shared-builds-ndk-r26d">Dynamic / Shared Builds (NDK r26d)</h2>
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
   <div class="box-content">
 
-<p>Built using NDK r26c with <code>-DANDROID_NATIVE_API_LEVEL=27</code> argument.<br>
+<p>Built using NDK r26d with <code>-DANDROID_NATIVE_API_LEVEL=27</code> argument.<br>
 It means the APK built using these builds can only be run on Android 8.1 and later.</p>
 <p>Please note that NDK does not provide binary compatibility.<br>
 So it is needed to use same version of NDK as this Qt built and ignore the suggested NDK version of Qt Creator.</p>
@@ -194,7 +195,7 @@ So it is needed to use same version of NDK as this Qt built and ignore the sugge
         <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-arm-Clang-NDKr26d-xWindows-x86_64-MinGW12.2.0-msvcrt-20240413.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm-Clang-NDKr26d-xWindows-x86_64-MinGW12.2.0-msvcrt-20240413.7z/download" target="_blank"><span class="title">SourceForge link</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm-Clang-NDKr26d-xWindows-x86_64-MinGW12.2.0-msvcrt-20240413.7z" target="_blank"><span class="title">SourceForge link</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r26d</td></tr><tr><td width="20%"><b>Android NDK Download:</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive green"><a href="https://dl.google.com/android/repository/android-ndk-r26d-windows.zip" target="_blank"><span class="title">Android NDK r26d on Windows</span></a></span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
@@ -203,7 +204,7 @@ So it is needed to use same version of NDK as this Qt built and ignore the sugge
         <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-arm64-Clang-NDKr26d-xWindows-x86_64-MinGW12.2.0-msvcrt-20240413.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm64-Clang-NDKr26d-xWindows-x86_64-MinGW12.2.0-msvcrt-20240413.7z/download" target="_blank"><span class="title">SourceForge link</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm64-Clang-NDKr26d-xWindows-x86_64-MinGW12.2.0-msvcrt-20240413.7z" target="_blank"><span class="title">SourceForge link</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r26d</td></tr><tr><td width="20%"><b>Android NDK Download:</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive green"><a href="https://dl.google.com/android/repository/android-ndk-r26d-windows.zip" target="_blank"><span class="title">Android NDK r26d on Windows</span></a></span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
@@ -212,7 +213,7 @@ So it is needed to use same version of NDK as this Qt built and ignore the sugge
         <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-x86_64-Clang-NDKr26d-xWindows-x86_64-MinGW12.2.0-msvcrt-20240413.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-x86_64-Clang-NDKr26d-xWindows-x86_64-MinGW12.2.0-msvcrt-20240413.7z/download" target="_blank"><span class="title">SourceForge link</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-x86_64-Clang-NDKr26d-xWindows-x86_64-MinGW12.2.0-msvcrt-20240413.7z" target="_blank"><span class="title">SourceForge link</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r26d</td></tr><tr><td width="20%"><b>Android NDK Download:</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive green"><a href="https://dl.google.com/android/repository/android-ndk-r26d-windows.zip" target="_blank"><span class="title">Android NDK r26d on Windows</span></a></span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
@@ -222,7 +223,7 @@ So it is needed to use same version of NDK as this Qt built and ignore the sugge
         <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-arm-Clang-NDKr26d-xLinux-x86_64-gcc11.4.1-20240413.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm-Clang-NDKr26d-xLinux-x86_64-gcc11.4.1-20240413.tar.xz/download" target="_blank"><span class="title">SourceForge link</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm-Clang-NDKr26d-xLinux-x86_64-gcc11.4.1-20240413.tar.xz" target="_blank"><span class="title">SourceForge link</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Rocky Linux 9.3</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r26d</td></tr><tr><td width="20%"><b>Android NDK Download:</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive green"><a href="https://dl.google.com/android/repository/android-ndk-r26d-linux.zip" target="_blank"><span class="title">Android NDK r26d on Linux</span></a></span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
@@ -231,7 +232,7 @@ So it is needed to use same version of NDK as this Qt built and ignore the sugge
         <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-arm64-Clang-NDKr26d-xLinux-x86_64-gcc11.4.1-20240413.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm64-Clang-NDKr26d-xLinux-x86_64-gcc11.4.1-20240413.tar.xz/download" target="_blank"><span class="title">SourceForge link</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm64-Clang-NDKr26d-xLinux-x86_64-gcc11.4.1-20240413.tar.xz" target="_blank"><span class="title">SourceForge link</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Rocky Linux 9.3</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r26d</td></tr><tr><td width="20%"><b>Android NDK Download:</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive green"><a href="https://dl.google.com/android/repository/android-ndk-r26d-linux.zip" target="_blank"><span class="title">Android NDK r26d on Linux</span></a></span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
@@ -240,7 +241,7 @@ So it is needed to use same version of NDK as this Qt built and ignore the sugge
         <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-x86_64-Clang-NDKr26d-xLinux-x86_64-gcc11.4.1-20240413.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-x86_64-Clang-NDKr26d-xLinux-x86_64-gcc11.4.1-20240413.tar.xz/download" target="_blank"><span class="title">SourceForge link</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-x86_64-Clang-NDKr26d-xLinux-x86_64-gcc11.4.1-20240413.tar.xz" target="_blank"><span class="title">SourceForge link</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Rocky Linux 9.3</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r26d</td></tr><tr><td width="20%"><b>Android NDK Download:</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive green"><a href="https://dl.google.com/android/repository/android-ndk-r26d-linux.zip" target="_blank"><span class="title">Android NDK r26d on Linux</span></a></span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
@@ -250,7 +251,7 @@ So it is needed to use same version of NDK as this Qt built and ignore the sugge
         <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-arm-Clang-NDKr26d-xmacOS-Universal-AppleClang14.0.3-20240413.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm-Clang-NDKr26d-xmacOS-Universal-AppleClang14.0.3-20240413.tar.xz/download" target="_blank"><span class="title">SourceForge link</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm-Clang-NDKr26d-xmacOS-Universal-AppleClang14.0.3-20240413.tar.xz" target="_blank"><span class="title">SourceForge link</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 13.6.6</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r26d</td></tr><tr><td width="20%"><b>Android NDK Download:</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive green"><a href="https://dl.google.com/android/repository/android-ndk-r26d-darwin.dmg" target="_blank"><span class="title">Android NDK r26d on macOS</span></a></span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
@@ -259,7 +260,7 @@ So it is needed to use same version of NDK as this Qt built and ignore the sugge
         <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-arm64-Clang-NDKr26d-xmacOS-Universal-AppleClang14.0.3-20240413.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm64-Clang-NDKr26d-xmacOS-Universal-AppleClang14.0.3-20240413.tar.xz/download" target="_blank"><span class="title">SourceForge link</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm64-Clang-NDKr26d-xmacOS-Universal-AppleClang14.0.3-20240413.tar.xz" target="_blank"><span class="title">SourceForge link</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 13.6.6</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r26d</td></tr><tr><td width="20%"><b>Android NDK Download:</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive green"><a href="https://dl.google.com/android/repository/android-ndk-r26d-darwin.dmg" target="_blank"><span class="title">Android NDK r26d on macOS</span></a></span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
@@ -268,7 +269,7 @@ So it is needed to use same version of NDK as this Qt built and ignore the sugge
         <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-Android-x86_64-Clang-NDKr26d-xmacOS-Universal-AppleClang14.0.3-20240413.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-x86_64-Clang-NDKr26d-xmacOS-Universal-AppleClang14.0.3-20240413.tar.xz/download" target="_blank"><span class="title">SourceForge link</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-x86_64-Clang-NDKr26d-xmacOS-Universal-AppleClang14.0.3-20240413.tar.xz" target="_blank"><span class="title">SourceForge link</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 13.6.6</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">ndk r26d</td></tr><tr><td width="20%"><b>Android NDK Download:</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive green"><a href="https://dl.google.com/android/repository/android-ndk-r26d-darwin.dmg" target="_blank"><span class="title">Android NDK r26d on macOS</span></a></span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
@@ -498,7 +499,7 @@ So it is needed to use same version of NDK as this Qt built and ignore the sugge
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sun, 14 Apr 2024 08:31:25 CST</p>
+Site generated: Sun, 14 Apr 2024 09:12:28 CST</p>
 
           </div>
         </div>
