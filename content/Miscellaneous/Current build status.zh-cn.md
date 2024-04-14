@@ -6,7 +6,7 @@
 
 ## OpenSSL 状态
 
-我的 Qt 构建在大部分平台上使用链接的 OpenSSL。  
+我的 Qt 构建在大部分平台上附带链接的 OpenSSL。（目前只）使用 LTS 版本的 OpenSSL。  
 下面是我构建 OpenSSL 的列表。
 
 OpenSSL 3 系列在 6.2.3 以及更新的 Qt 6 版本和于 {{% date 2023 9 11 %}}后构建的 Qt 5.15 版本上使用。  
@@ -21,6 +21,17 @@ OpenSSL 3 系列在 6.2.3 以及更新的 Qt 6 版本和于 {{% date 2023 9 11 %
 
 {{% OpenSSLSeries %}}
 
+| Qt 版本 | 使用的 OpenSSL 版本 |
+|-|-|
+| Qt 4.8 系列 | OpenSSL 1.0.2u |
+| Qt 5.6 系列 | OpenSSL 1.0.2u （macOS 除外） |
+| Qt 5.9 系列 | OpenSSL 1.0.2u （macOS 除外） |
+| Qt 5.12 系列 | OpenSSL 1.1.1w （macOS 除外） |
+| Qt 5.15 系列 | OpenSSL 3.0.13 （Windows 和 macOS 除外） |
+| Qt 6.2 系列 | OpenSSL 3.0.13 |
+| Qt 6.5 系列 | OpenSSL 3.0.13 |
+| Qt 6.7 系列 | OpenSSL 3.0.13 |
+
 ## MariaDB 状态
 
 从 {{% date 2023 2 8 %}}开始，Qt 5.15 及以上的桌面版构建中附带 MariaDB connector/C 的动态库。
@@ -31,10 +42,18 @@ OpenSSL 3 系列在 6.2.3 以及更新的 Qt 6 版本和于 {{% date 2023 9 11 %
 1. 使用新版 MySQL（8.0 及以后的版本）需要下载并构建整个 MySQL 数据库。而 MySQL 数据库太大，构建较费事。
 1. MySQL 出自 Oracle。而 Oracle 有打击开源社区的历史。
 
-在 Qt 5.15 版本上，我们使用 MariaDB connector/C 3.1 系列的版本。  
-在 Qt 6.2 以及更高的版本上，我们使用 MariaDB connector/C 3.3 系列的版本。
-
 {{% mariaDBSeries %}}
+
+| Qt 版本 | 使用的 MariaDB connector/C 版本 |
+|-|-|
+| ~~Qt 4.8 系列~~ | 不适用（结束生命周期） |
+| ~~Qt 5.6 系列~~ | 不适用（结束生命周期） |
+| ~~Qt 5.9 系列~~ | 不适用（结束生命周期） |
+| ~~Qt 5.12 系列~~ | 不适用（未开发。且于 macOS 上结束生命周期） |
+| Qt 5.15 系列 | MariaDB connector/C 3.1.23 |
+| Qt 6.2 系列 | MariaDB connector/C 3.3.8 |
+| Qt 6.5 系列 | MariaDB connector/C 3.3.8 |
+| Qt 6.7 系列 | MariaDB connector/C 3.3.8 |
 
 ## Qt 构建表
 
@@ -42,3 +61,7 @@ OpenSSL 3 系列在 6.2.3 以及更新的 Qt 6 版本和于 {{% date 2023 9 11 %
 **如果需要非 LTS 版本的静态构建，请直接联系我寻求商业定制。**
 
 {{% QtTable %}}
+
+{{% expand "遗留的构建" %}}
+{{% QtTable 1 %}}
+{{% /expand %}}

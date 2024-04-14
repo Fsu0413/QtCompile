@@ -3,6 +3,14 @@
   "weight": 4
 }
 
+## {{% date 2024 3 28 %}}
+Update Qt 6.6.3 and Qt 6.7.0-rc2 versions.   
+Rebuild VS2022 and llvm-mingw 18 builds for Qt 5.15 / 6.2 / 6.5.
+
+Qt 6 is migrating MinGW builds from GCC based toolchain to LLVM based one, using [llvm-mingw](https://github.com/mstorsjo/llvm-mingw).   
+I also suggest migrating since LLVM has faster build speed and produces smaller binaries, as well as supporting Windows on ARM (although I have not investigated about using llvm-mingw on WoA yet).  
+See {{% QtBug 107516 %}} for details.
+
 ## {{% date 2024 3 25 %}} no update
 Add note about build failure about MySQL backend for Qt 5.15.  
 Simply investigate llvm build on Windows.
@@ -237,7 +245,7 @@ Qt 5.15 are not updated for now since security issues of built versions are not 
 Upload Qt 6.3.0 versions.  
 Update Qt 5.15 / 6.2 with CVE patches.
 
-Happy birthday to me!
+Happy birthday to me (the 30th time)!
 
 ## {{% date 2022 3 25 %}}
 Upload Qt 6.2.4 versions.  

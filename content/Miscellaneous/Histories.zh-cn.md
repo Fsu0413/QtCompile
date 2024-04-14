@@ -3,6 +3,14 @@
   "weight": 4
 }
 
+## {{% date 2024 3 28 %}}
+更新 Qt 6.6.3 和 Qt 6.7.0-rc2 版本。   
+重新构建了 VS2022 和 llvm-mingw 18 的 Qt 5.15 / 6.2 / 6.5 版本。
+
+Qt 6 正在迁移 MinGW 构建，从基于 GCC 的工具链到使用 [llvm-mingw](https://github.com/mstorsjo/llvm-mingw) 的基于 LLVM 的工具链。    
+我也建议 MinGW 的使用者迁移过去，因为使用 LLVM 构建更快，生成更小的二进制文件，并且也支持 Windows on ARM（虽然我还没有调查在 WoA 上使用 llvm-mingw）。  
+详情参考 {{% QtBug 107516 %}}。
+
 ## {{% date 2024 3 25 %}} 无更新
 增加 Qt 5.15 部分 MySQL 后端构建失败的备注。  
 简单调查 llvm 在 Windows 上的构建。
@@ -237,7 +245,7 @@ Qt 5.15.5 暂时没有更新。之前构建的版本没有安全补丁。
 上传 Qt 6.3.0 版本。  
 上传 Qt 5.15 / Qt 6.2，带 CVE 补丁。
 
-祝我生日快乐！
+（第 30 次）祝我生日快乐！
 
 ## {{% date 2022 3 25 %}}
 上传 Qt 6.2.4 版本。  

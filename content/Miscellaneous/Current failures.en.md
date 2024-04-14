@@ -23,7 +23,7 @@ There may be no that much love for MSVC than MinGW.....
 
 ## Command line too long when building Qt 6.2 series for MinGW
 
-See {{% QtBug 96339 %}} - workaround using CMake 3.20.2
+See {{% QtBug 96339 %}} - ~~temporarily~~ workaround using CMake 3.20.2
 
 ## QtOpcUa issues (Updated {{% date 2023 12 25 %}})
 
