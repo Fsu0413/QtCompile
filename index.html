@@ -85,14 +85,13 @@
               <div class="topbar-content">
                 <div class="topbar-content-wrapper"><nav class="TableOfContents">
   <ul>
-    <li><a href="#xz-后门-2024-年-4-月-6-日更新下次更新时将去除这段内容"><code>xz</code> 后门 （2024 年 4 月 6 日更新，下次更新时将去除这段内容）</a></li>
     <li><a href="#免责声明">免责声明</a></li>
     <li><a href="#更新记录">更新记录</a>
       <ul>
+        <li><a href="#2024-年-4-月-13-日">2024 年 4 月 13 日</a></li>
         <li><a href="#2024-年-4-月-6-日">2024 年 4 月 6 日</a></li>
         <li><a href="#2024-年-4-月-3-日">2024 年 4 月 3 日</a></li>
-        <li><a href="#2024-年-3-月-28-日">2024 年 3 月 28 日</a></li>
-        <li><a href="#2024-年-3-月-25-日以前">2024 年 3 月 25 日以前</a></li>
+        <li><a href="#2024-年-4-月以前">2024 年 4 月以前</a></li>
       </ul>
     </li>
   </ul>
@@ -133,13 +132,13 @@
 目前已经删除所有 OSDN 链接，拜托各位通过 SourceForge 进行下载。</p>
 <p>这边上传的时候发生的错误如下（通过 WinSCP 输出）：</p>
 <div class="expand">
-    <input type="checkbox" id="R-expand-c3d77116b97e46addbdacc5095687cde" aria-controls="R-expandcontent-c3d77116b97e46addbdacc5095687cde" >
-    <label class="expand-label" for="R-expand-c3d77116b97e46addbdacc5095687cde" >
+    <input type="checkbox" id="R-expand-b67b349974f61642291beaf1686a8bc2" aria-controls="R-expandcontent-b67b349974f61642291beaf1686a8bc2" >
+    <label class="expand-label" for="R-expand-b67b349974f61642291beaf1686a8bc2" >
         <i class="fa-fw fas fa-chevron-down"></i>
         <i class="fa-fw fas fa-chevron-right"></i>
         展开
     </label>
-    <div id="R-expandcontent-c3d77116b97e46addbdacc5095687cde" class="expand-content">
+    <div id="R-expandcontent-b67b349974f61642291beaf1686a8bc2" class="expand-content">
 <p>一般错误(服务器应该提供错误描述)。<br>
 错误码：4<br>
 服务器返回的错误消息：Failure</p>
@@ -155,32 +154,20 @@
 </div>
 </div>
 </div>
-<h2 id="xz-后门-2024-年-4-月-6-日更新下次更新时将去除这段内容"><code>xz</code> 后门 （2024 年 4 月 6 日更新，下次更新时将去除这段内容）</h2>
-<p>听闻 <code>xz</code> 上游被一个深受信任的维护者添加了后门后，我虎躯一震。<br>
-所有目前已有的调查结果表明这个后门来自一个叫 JiaT75 的家伙，而且揭露这个后门只在 x86_64 架构、使用 systemd 的 Linux 发行版上运行，用来注入 OpenSSH 以建立未认证的连接。并不是为了在压缩 / 解压缩时对文件做手脚。</p>
-<p>此项目生成的 XZ 包并<strong>不</strong>使用原来的 <code>xz</code> 工具进行压缩的。而是使用（在 Windows 上）Igor Pavlov 维护的 <code>7z</code> 或者（在非 Windows 上）jinfeihan57 维护的 <code>p7zip</code>。<br>
-但是在构建其他包时，为了解压缩类似 OpenSSL、MariaDB 以及 Qt 静态 <code>Lite</code> 的依赖包，调用的命令还是 <code>tar -xjf xxx.tar.xz</code>。这一步还是会使用到原来的 <code>xz</code> 程序。</p>
-<p>现在我使用的所有的 Linux 构建用电脑均使用基于 RHEL 的 Rocky Linux。因为 Rocky Linux 类似 RHEL 一样不更新软件的大版本，我们可能没有受到影响。<br>
-但是这个家伙的代码同时存在于 <code>libarchive</code>（在 macOS 和 Windows 上存在。<code>bsdtar</code> 来源于这个库）中。<code>libarchive</code> 目前已经（2024 年 4 月 6 日更新）<del>开始重新评审</del>重新评审完这个家伙所做的代码了，并且已经修改了部分内容。</p>
-<p>这一部分内容会在事情明朗之前一直放在这里，我将持续关注相关内容。<del>如果有必要的话，我可能会对所有这个版本库中的内容做重新打包。</del>（2024 年 4 月 6 日更新）看来没必要，现在所有的分析结果都没有提到后门对正常的压缩 / 解压缩的代码的影响。</p>
-<p>在 <code>xz</code> 的官网上 Lasse Collin（<code>xz</code> 的最初维护者）的<a href="https://tukaani.org/xz-backdoor/" target="_blank">发文</a>中可以找到更多信息。（但是我这边需要使用魔法才可以访问）</p>
 <h2 id="免责声明">免责声明</h2>
 <p>这些由 Fsu0413 构建的二进制文件 <strong>完全未经测试</strong> ，使用时请自行承担风险。<br>
 使用的代码为从 <a href="http://download.qt.io" target="_blank">这里</a> 获取的，并且为了应对一些微小并且简单的编译 / 构建问题，所应用的补丁<a href="/qtcompile/miscellaneous/notesforthisrepo/index.html#已有的补丁">见这里</a>。<br>
 <strong>这些包为“依原样”提供。我对您使用此二进制文件作出的任何事情不负任何责任。</strong><br>
 感谢 The Qt Company Ltd. 和众多 Qt 的开发者的绝妙工作！</p>
 <h2 id="更新记录">更新记录</h2>
+<h3 id="2024-年-4-月-13-日">2024 年 4 月 13 日</h3>
+<p>使用 NDK r26d 重新构建所有使用 NDK r26 系列工具链的版本。</p>
+<p>（第 32 次）祝我生日快乐！</p>
 <h3 id="2024-年-4-月-6-日">2024 年 4 月 6 日</h3>
 <p>使用 llvm-mingw 18.1.3 重新构建所有使用 llvm-mingw 18 系列工具链的版本。</p>
 <h3 id="2024-年-4-月-3-日">2024 年 4 月 3 日</h3>
 <p>更新 Qt 6.7.0 版本。</p>
-<h3 id="2024-年-3-月-28-日">2024 年 3 月 28 日</h3>
-<p>更新 Qt 6.6.3 和 Qt 6.7.0-rc2 版本。<br>
-重新构建了 VS2022 和 llvm-mingw 18 的 Qt 5.15 / 6.2 / 6.5 版本。</p>
-<p>Qt 6 正在迁移 MinGW 构建，从基于 GCC 的工具链到使用 <a href="https://github.com/mstorsjo/llvm-mingw" target="_blank">llvm-mingw</a> 的基于 LLVM 的工具链。 <br>
-我也建议 MinGW 的使用者迁移过去，因为使用 LLVM 构建更快，生成更小的二进制文件，并且也支持 Windows on ARM（虽然我还没有调查在 WoA 上使用 llvm-mingw）。<br>
-详情参考 <a href="https://bugreports.qt.io/browse/QTBUG-107516" target="_blank">QTBUG-107516</a>。</p>
-<h3 id="2024-年-3-月-25-日以前">2024 年 3 月 25 日以前</h3>
+<h3 id="2024-年-4-月以前">2024 年 4 月以前</h3>
 <p><a href="/qtcompile/miscellaneous/histories/index.html">这里</a></p>
 
             <footer class="footline">
@@ -311,7 +298,7 @@
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 06 Apr 2024 20:28:14 CST</p>
+Site generated: Sun, 14 Apr 2024 08:31:24 CST</p>
 
           </div>
         </div>

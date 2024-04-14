@@ -124,7 +124,7 @@
 <h1 id="当前构建状态">当前构建状态</h1>
 
 <h2 id="openssl-状态">OpenSSL 状态</h2>
-<p>我的 Qt 构建在大部分平台上使用链接的 OpenSSL。<br>
+<p>我的 Qt 构建在大部分平台上附带链接的 OpenSSL。（目前只）使用 LTS 版本的 OpenSSL。<br>
 下面是我构建 OpenSSL 的列表。</p>
 <p>OpenSSL 3 系列在 6.2.3 以及更新的 Qt 6 版本和于 2023 年 9 月 11 日后构建的 Qt 5.15 版本上使用。<br>
 自从 Qt 6.2 将 tls 后端换成了插件，我们可以用多于一个的后端来构建。<br>
@@ -531,7 +531,7 @@
 <td>3.0.13</td>
 <td>Android-27</td>
 <td>Rocky Linux 9.3</td>
-<td>ndk r26c</td>
+<td>ndk r26d</td>
 <td>arm</td>
 <td>-static</td>
 </tr>
@@ -539,7 +539,7 @@
 <td>3.0.13</td>
 <td>Android-27</td>
 <td>Rocky Linux 9.3</td>
-<td>ndk r26c</td>
+<td>ndk r26d</td>
 <td>arm64</td>
 <td>-static</td>
 </tr>
@@ -547,7 +547,7 @@
 <td>3.0.13</td>
 <td>Android-27</td>
 <td>Rocky Linux 9.3</td>
-<td>ndk r26c</td>
+<td>ndk r26d</td>
 <td>x86</td>
 <td>-static</td>
 </tr>
@@ -555,9 +555,51 @@
 <td>3.0.13</td>
 <td>Android-27</td>
 <td>Rocky Linux 9.3</td>
-<td>ndk r26c</td>
+<td>ndk r26d</td>
 <td>x86_64</td>
 <td>-static</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Qt 版本</th>
+<th>使用的 OpenSSL 版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Qt 4.8 系列</td>
+<td>OpenSSL 1.0.2u</td>
+</tr>
+<tr>
+<td>Qt 5.6 系列</td>
+<td>OpenSSL 1.0.2u （macOS 除外）</td>
+</tr>
+<tr>
+<td>Qt 5.9 系列</td>
+<td>OpenSSL 1.0.2u （macOS 除外）</td>
+</tr>
+<tr>
+<td>Qt 5.12 系列</td>
+<td>OpenSSL 1.1.1w （macOS 除外）</td>
+</tr>
+<tr>
+<td>Qt 5.15 系列</td>
+<td>OpenSSL 3.0.13 （Windows 和 macOS 除外）</td>
+</tr>
+<tr>
+<td>Qt 6.2 系列</td>
+<td>OpenSSL 3.0.13</td>
+</tr>
+<tr>
+<td>Qt 6.5 系列</td>
+<td>OpenSSL 3.0.13</td>
+</tr>
+<tr>
+<td>Qt 6.7 系列</td>
+<td>OpenSSL 3.0.13</td>
 </tr>
 </tbody>
 </table>
@@ -570,8 +612,6 @@
 <li>使用新版 MySQL（8.0 及以后的版本）需要下载并构建整个 MySQL 数据库。而 MySQL 数据库太大，构建较费事。</li>
 <li>MySQL 出自 Oracle。而 Oracle 有打击开源社区的历史。</li>
 </ol>
-<p>在 Qt 5.15 版本上，我们使用 MariaDB connector/C 3.1 系列的版本。<br>
-在 Qt 6.2 以及更高的版本上，我们使用 MariaDB connector/C 3.3 系列的版本。</p>
 <table>
 <thead>
 <tr>
@@ -813,6 +853,48 @@
 <td>macOS 13.6.6</td>
 <td>AppleClang 14.0.3</td>
 <td>Universal (x86_64, arm64)</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Qt 版本</th>
+<th>使用的 MariaDB connector/C 版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><del>Qt 4.8 系列</del></td>
+<td>不适用（结束生命周期）</td>
+</tr>
+<tr>
+<td><del>Qt 5.6 系列</del></td>
+<td>不适用（结束生命周期）</td>
+</tr>
+<tr>
+<td><del>Qt 5.9 系列</del></td>
+<td>不适用（结束生命周期）</td>
+</tr>
+<tr>
+<td><del>Qt 5.12 系列</del></td>
+<td>不适用（未开发。且于 macOS 上结束生命周期）</td>
+</tr>
+<tr>
+<td>Qt 5.15 系列</td>
+<td>MariaDB connector/C 3.1.23</td>
+</tr>
+<tr>
+<td>Qt 6.2 系列</td>
+<td>MariaDB connector/C 3.3.8</td>
+</tr>
+<tr>
+<td>Qt 6.5 系列</td>
+<td>MariaDB connector/C 3.3.8</td>
+</tr>
+<tr>
+<td>Qt 6.7 系列</td>
+<td>MariaDB connector/C 3.3.8</td>
 </tr>
 </tbody>
 </table>
@@ -1979,7 +2061,7 @@
 <td>6.5.3</td>
 <td>Android-27</td>
 <td>Windows 11 10.0.22631</td>
-<td>ndk r26c</td>
+<td>ndk r26d</td>
 <td>arm</td>
 <td></td>
 <td>√</td>
@@ -1988,7 +2070,7 @@
 <td>6.5.3</td>
 <td>Android-27</td>
 <td>Windows 11 10.0.22631</td>
-<td>ndk r26c</td>
+<td>ndk r26d</td>
 <td>arm64</td>
 <td></td>
 <td>√</td>
@@ -1997,7 +2079,7 @@
 <td>6.5.3</td>
 <td>Android-27</td>
 <td>Windows 11 10.0.22631</td>
-<td>ndk r26c</td>
+<td>ndk r26d</td>
 <td>x86_64</td>
 <td></td>
 <td>√</td>
@@ -2006,7 +2088,7 @@
 <td>6.5.3</td>
 <td>Android-27</td>
 <td>Rocky Linux 9.3</td>
-<td>ndk r26c</td>
+<td>ndk r26d</td>
 <td>arm</td>
 <td></td>
 <td>√</td>
@@ -2015,7 +2097,7 @@
 <td>6.5.3</td>
 <td>Android-27</td>
 <td>Rocky Linux 9.3</td>
-<td>ndk r26c</td>
+<td>ndk r26d</td>
 <td>arm64</td>
 <td></td>
 <td>√</td>
@@ -2024,7 +2106,7 @@
 <td>6.5.3</td>
 <td>Android-27</td>
 <td>Rocky Linux 9.3</td>
-<td>ndk r26c</td>
+<td>ndk r26d</td>
 <td>x86_64</td>
 <td></td>
 <td>√</td>
@@ -2032,8 +2114,8 @@
 <tr>
 <td>6.5.3</td>
 <td>Android-27</td>
-<td>macOS 13.6.4</td>
-<td>ndk r26c</td>
+<td>macOS 13.6.6</td>
+<td>ndk r26d</td>
 <td>arm</td>
 <td></td>
 <td>√</td>
@@ -2041,8 +2123,8 @@
 <tr>
 <td>6.5.3</td>
 <td>Android-27</td>
-<td>macOS 13.6.4</td>
-<td>ndk r26c</td>
+<td>macOS 13.6.6</td>
+<td>ndk r26d</td>
 <td>arm64</td>
 <td></td>
 <td>√</td>
@@ -2050,8 +2132,8 @@
 <tr>
 <td>6.5.3</td>
 <td>Android-27</td>
-<td>macOS 13.6.4</td>
-<td>ndk r26c</td>
+<td>macOS 13.6.6</td>
+<td>ndk r26d</td>
 <td>x86_64</td>
 <td></td>
 <td>√</td>
@@ -2186,7 +2268,7 @@
 <td>6.7.0</td>
 <td>Android-27</td>
 <td>Windows 11 10.0.22631</td>
-<td>ndk r26c</td>
+<td>ndk r26d</td>
 <td>arm</td>
 <td></td>
 <td>√</td>
@@ -2195,7 +2277,7 @@
 <td>6.7.0</td>
 <td>Android-27</td>
 <td>Windows 11 10.0.22631</td>
-<td>ndk r26c</td>
+<td>ndk r26d</td>
 <td>arm64</td>
 <td></td>
 <td>√</td>
@@ -2204,7 +2286,7 @@
 <td>6.7.0</td>
 <td>Android-27</td>
 <td>Windows 11 10.0.22631</td>
-<td>ndk r26c</td>
+<td>ndk r26d</td>
 <td>x86_64</td>
 <td></td>
 <td>√</td>
@@ -2213,7 +2295,7 @@
 <td>6.7.0</td>
 <td>Android-27</td>
 <td>Rocky Linux 9.3</td>
-<td>ndk r26c</td>
+<td>ndk r26d</td>
 <td>arm</td>
 <td></td>
 <td>√</td>
@@ -2222,7 +2304,7 @@
 <td>6.7.0</td>
 <td>Android-27</td>
 <td>Rocky Linux 9.3</td>
-<td>ndk r26c</td>
+<td>ndk r26d</td>
 <td>arm64</td>
 <td></td>
 <td>√</td>
@@ -2231,7 +2313,7 @@
 <td>6.7.0</td>
 <td>Android-27</td>
 <td>Rocky Linux 9.3</td>
-<td>ndk r26c</td>
+<td>ndk r26d</td>
 <td>x86_64</td>
 <td></td>
 <td>√</td>
@@ -2240,7 +2322,7 @@
 <td>6.7.0</td>
 <td>Android-27</td>
 <td>macOS 13.6.6</td>
-<td>ndk r26c</td>
+<td>ndk r26d</td>
 <td>arm</td>
 <td></td>
 <td>√</td>
@@ -2249,7 +2331,7 @@
 <td>6.7.0</td>
 <td>Android-27</td>
 <td>macOS 13.6.6</td>
-<td>ndk r26c</td>
+<td>ndk r26d</td>
 <td>arm64</td>
 <td></td>
 <td>√</td>
@@ -2258,7 +2340,7 @@
 <td>6.7.0</td>
 <td>Android-27</td>
 <td>macOS 13.6.6</td>
-<td>ndk r26c</td>
+<td>ndk r26d</td>
 <td>x86_64</td>
 <td></td>
 <td>√</td>
@@ -2292,6 +2374,600 @@
 </tr>
 </tbody>
 </table>
+
+<div class="expand">
+    <input type="checkbox" id="R-expand-f41b585600c4b224a689cfaf76b39fdb" aria-controls="R-expandcontent-f41b585600c4b224a689cfaf76b39fdb" >
+    <label class="expand-label" for="R-expand-f41b585600c4b224a689cfaf76b39fdb" >
+        <i class="fa-fw fas fa-chevron-down"></i>
+        <i class="fa-fw fas fa-chevron-right"></i>
+        遗留的构建
+    </label>
+    <div id="R-expandcontent-f41b585600c4b224a689cfaf76b39fdb" class="expand-content">
+
+<table>
+<thead>
+<tr>
+<th>Qt 版本</th>
+<th>目标平台</th>
+<th>构建主机</th>
+<th>工具链版本</th>
+<th>架构</th>
+<th>变体</th>
+<th>已上传</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4.8.7</td>
+<td>Windows</td>
+<td>Windows XP SP3</td>
+<td>VS2010 SP1</td>
+<td>x86</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>4.8.7</td>
+<td>Windows</td>
+<td>Windows XP SP3</td>
+<td>MinGW-w64 w/ GCC 4.9.4</td>
+<td>x86</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>4.8.7</td>
+<td>macOS</td>
+<td>OS X 10.10</td>
+<td>AppleClang 6.1</td>
+<td>x86_64</td>
+<td>-framework</td>
+<td>√</td>
+</tr>
+<tr>
+<td>4.8.7</td>
+<td>macOS</td>
+<td>OS X 10.10</td>
+<td>AppleClang 6.1</td>
+<td>x86_64</td>
+<td>-no-framework</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.6.3</td>
+<td>Windows</td>
+<td>Windows XP SP3</td>
+<td>VS2010 SP1</td>
+<td>x86</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.6.3</td>
+<td>Windows</td>
+<td>Windows XP SP3</td>
+<td>VS2010 SP1</td>
+<td>x86</td>
+<td>-static(Lite)</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.6.3</td>
+<td>Windows</td>
+<td>Windows XP SP3</td>
+<td>VS2010 SP1</td>
+<td>x86</td>
+<td>-static(Full)</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.6.3</td>
+<td>Windows</td>
+<td>Windows 8.1 Update</td>
+<td>VS2015 Update 3</td>
+<td>x86</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.6.3</td>
+<td>Windows</td>
+<td>Windows 8.1 Update</td>
+<td>VS2015 Update 3</td>
+<td>x86</td>
+<td>-target xp</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.6.3</td>
+<td>Windows</td>
+<td>Windows 8.1 Update</td>
+<td>VS2015 Update 3</td>
+<td>x86</td>
+<td>-target xp,-static(Lite)</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.6.3</td>
+<td>Windows</td>
+<td>Windows 8.1 Update</td>
+<td>VS2015 Update 3</td>
+<td>x86_64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.6.3</td>
+<td>Windows</td>
+<td>Windows XP SP3</td>
+<td>MinGW-w64 w/ GCC 4.9.4</td>
+<td>x86</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.6.3</td>
+<td>Windows</td>
+<td>Windows XP SP3</td>
+<td>MinGW-w64 w/ GCC 4.9.4</td>
+<td>x86</td>
+<td>-static(Lite)</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.6.3</td>
+<td>Windows</td>
+<td>Windows XP SP3</td>
+<td>MinGW-w64 w/ GCC 4.9.4</td>
+<td>x86</td>
+<td>-static(Full)</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.6.3</td>
+<td>Windows</td>
+<td>Windows 8.1 Update</td>
+<td>MinGW-w64 w/ GCC 4.9.4</td>
+<td>x86_64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.6.3</td>
+<td>macOS</td>
+<td>OS X 10.10</td>
+<td>AppleClang 6.1</td>
+<td>x86_64</td>
+<td>-framework</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.6.3</td>
+<td>macOS</td>
+<td>OS X 10.10</td>
+<td>AppleClang 6.1</td>
+<td>x86_64</td>
+<td>-no-framework</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.6.3</td>
+<td>Android-9</td>
+<td>Windows 10 10.0.18363</td>
+<td>ndk r10e</td>
+<td>arm</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.6.3</td>
+<td>Android-9</td>
+<td>Windows 10 10.0.18363</td>
+<td>ndk r10e</td>
+<td>x86</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.6.3</td>
+<td>Android-9</td>
+<td>CentOS 7.7</td>
+<td>ndk r10e</td>
+<td>arm</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.6.3</td>
+<td>Android-9</td>
+<td>CentOS 7.7</td>
+<td>ndk r10e</td>
+<td>x86</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.6.3</td>
+<td>Android-9</td>
+<td>macOS 10.15</td>
+<td>ndk r10e</td>
+<td>arm</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.6.3</td>
+<td>Android-9</td>
+<td>macOS 10.15</td>
+<td>ndk r10e</td>
+<td>x86</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.9.9</td>
+<td>Windows</td>
+<td>Windows 8.1 Update</td>
+<td>VS2015 Update 3</td>
+<td>x86</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.9.9</td>
+<td>Windows</td>
+<td>Windows 8.1 Update</td>
+<td>VS2015 Update 3</td>
+<td>x86_64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.9.9</td>
+<td>Windows</td>
+<td>Windows 10 10.0.18363</td>
+<td>VS2017 15.9.23</td>
+<td>x86</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.9.9</td>
+<td>Windows</td>
+<td>Windows 10 10.0.18363</td>
+<td>VS2017 15.9.23</td>
+<td>x86_64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.9.9</td>
+<td>Windows</td>
+<td>Windows 8.1 Update</td>
+<td>MinGW-w64 w/ GCC 7.3.0</td>
+<td>x86</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.9.9</td>
+<td>Windows</td>
+<td>Windows 8.1 Update</td>
+<td>MinGW-w64 w/ GCC 7.3.0</td>
+<td>x86_64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.9.9</td>
+<td>macOS</td>
+<td>macOS 10.14</td>
+<td>AppleClang 10.0</td>
+<td>x86_64</td>
+<td>-framework</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.9.9</td>
+<td>macOS</td>
+<td>macOS 10.14</td>
+<td>AppleClang 10.0</td>
+<td>x86_64</td>
+<td>-no-framework</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.9.9</td>
+<td>Android-16</td>
+<td>Windows 10 10.0.18363</td>
+<td>ndk r10e</td>
+<td>arm</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.9.9</td>
+<td>Android-21</td>
+<td>Windows 10 10.0.18363</td>
+<td>ndk r10e</td>
+<td>arm64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.9.9</td>
+<td>Android-16</td>
+<td>Windows 10 10.0.18363</td>
+<td>ndk r10e</td>
+<td>x86</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.9.9</td>
+<td>Android-16</td>
+<td>CentOS 8</td>
+<td>ndk r10e</td>
+<td>arm</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.9.9</td>
+<td>Android-21</td>
+<td>CentOS 8</td>
+<td>ndk r10e</td>
+<td>arm64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.9.9</td>
+<td>Android-16</td>
+<td>CentOS 8</td>
+<td>ndk r10e</td>
+<td>x86</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.9.9</td>
+<td>Android-16</td>
+<td>macOS 10.15</td>
+<td>ndk r10e</td>
+<td>arm</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.9.9</td>
+<td>Android-21</td>
+<td>macOS 10.15</td>
+<td>ndk r10e</td>
+<td>arm64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.9.9</td>
+<td>Android-16</td>
+<td>macOS 10.15</td>
+<td>ndk r10e</td>
+<td>x86</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>Windows</td>
+<td>Windows 10 10.0.19045</td>
+<td>VS2015 Update 3</td>
+<td>x86</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>Windows</td>
+<td>Windows 10 10.0.19045</td>
+<td>VS2015 Update 3</td>
+<td>x86</td>
+<td>-static(Lite)</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>Windows</td>
+<td>Windows 10 10.0.19045</td>
+<td>VS2015 Update 3</td>
+<td>x86_64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>Windows</td>
+<td>Windows 11 10.0.22621</td>
+<td>VS2017 15.9.57</td>
+<td>x86</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>Windows</td>
+<td>Windows 11 10.0.22621</td>
+<td>VS2017 15.9.57</td>
+<td>x86</td>
+<td>-static(Lite)</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>Windows</td>
+<td>Windows 11 10.0.22621</td>
+<td>VS2017 15.9.57</td>
+<td>x86_64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>Windows</td>
+<td>Windows 11 10.0.22621</td>
+<td>VS2019 16.11.30</td>
+<td>x86</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>Windows</td>
+<td>Windows 11 10.0.22621</td>
+<td>VS2019 16.11.30</td>
+<td>x86_64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>Windows</td>
+<td>Windows 10 10.0.19045</td>
+<td>MinGW-w64 w/ GCC 7.3.0</td>
+<td>x86</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>Windows</td>
+<td>Windows 10 10.0.19045</td>
+<td>MinGW-w64 w/ GCC 7.3.0</td>
+<td>x86_64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>macOS</td>
+<td>macOS 10.15.7</td>
+<td>AppleClang 12.0.0</td>
+<td>x86_64</td>
+<td>-framework</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>macOS</td>
+<td>macOS 10.15.7</td>
+<td>AppleClang 12.0.0</td>
+<td>x86_64</td>
+<td>-no-framework</td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>Android-21</td>
+<td>Windows 11 10.0.22621</td>
+<td>ndk r21e</td>
+<td>arm</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>Android-21</td>
+<td>Windows 11 10.0.22621</td>
+<td>ndk r21e</td>
+<td>arm64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>Android-21</td>
+<td>Windows 11 10.0.22621</td>
+<td>ndk r21e</td>
+<td>x86</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>Android-21</td>
+<td>Rocky Linux 8.8</td>
+<td>ndk r21e</td>
+<td>arm</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>Android-21</td>
+<td>Rocky Linux 8.8</td>
+<td>ndk r21e</td>
+<td>arm64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>Android-21</td>
+<td>Rocky Linux 8.8</td>
+<td>ndk r21e</td>
+<td>x86</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>Android-21</td>
+<td>macOS 11.7.9</td>
+<td>ndk r21e</td>
+<td>arm</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>Android-21</td>
+<td>macOS 11.7.9</td>
+<td>ndk r21e</td>
+<td>arm64</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>Android-21</td>
+<td>macOS 11.7.9</td>
+<td>ndk r21e</td>
+<td>x86</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>WebAssembly</td>
+<td>Rocky Linux 8.4</td>
+<td>emscripten-1.38.16</td>
+<td>-</td>
+<td></td>
+<td>√</td>
+</tr>
+<tr>
+<td>5.12.12</td>
+<td>WebAssembly</td>
+<td>macOS 11.6.1</td>
+<td>emscripten-1.38.16</td>
+<td>-</td>
+<td></td>
+<td>√</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 
             <footer class="footline">
             </footer>
@@ -2421,7 +3097,7 @@
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 06 Apr 2024 20:28:14 CST</p>
+Site generated: Sun, 14 Apr 2024 08:31:25 CST</p>
 
           </div>
         </div>
