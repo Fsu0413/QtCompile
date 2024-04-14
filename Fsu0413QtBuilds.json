@@ -1682,7 +1682,7 @@
   "q6_5lx6_aa6nV26": {
     "sort": 60537,
     "fileName": "Qt6.5.3-Android-arm64-Clang-NDKr26d-xLinux-x86_64-gcc11.4.1-20240413.tar.xz",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm64-Clang-NDKr26d-xLinux-x86_64-gcc11.4.1-20240413.tar.xz/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm64-Clang-NDKr26d-xLinux-x86_64-gcc11.4.1-20240413.tar.xz",
     "ndkHost": "Linux",
     "ndkVer": "r26d",
     "data": {
@@ -1699,7 +1699,7 @@
   "q6_5mal_aa6nV26": {
     "sort": 60540,
     "fileName": "Qt6.5.3-Android-arm64-Clang-NDKr26d-xmacOS-Universal-AppleClang14.0.3-20240413.tar.xz",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm64-Clang-NDKr26d-xmacOS-Universal-AppleClang14.0.3-20240413.tar.xz/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm64-Clang-NDKr26d-xmacOS-Universal-AppleClang14.0.3-20240413.tar.xz",
     "ndkHost": "macOS",
     "ndkVer": "r26d",
     "data": {
@@ -1716,7 +1716,7 @@
   "q6_5wx6g2_aa6nV26": {
     "sort": 60534,
     "fileName": "Qt6.5.3-Android-arm64-Clang-NDKr26d-xWindows-x86_64-MinGW12.2.0-msvcrt-20240413.7z",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm64-Clang-NDKr26d-xWindows-x86_64-MinGW12.2.0-msvcrt-20240413.7z/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm64-Clang-NDKr26d-xWindows-x86_64-MinGW12.2.0-msvcrt-20240413.7z",
     "ndkHost": "Windows",
     "ndkVer": "r26d",
     "data": {
@@ -1733,7 +1733,7 @@
   "q6_5lx6_aa3nV26": {
     "sort": 60536,
     "fileName": "Qt6.5.3-Android-arm-Clang-NDKr26d-xLinux-x86_64-gcc11.4.1-20240413.tar.xz",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm-Clang-NDKr26d-xLinux-x86_64-gcc11.4.1-20240413.tar.xz/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm-Clang-NDKr26d-xLinux-x86_64-gcc11.4.1-20240413.tar.xz",
     "ndkHost": "Linux",
     "ndkVer": "r26d",
     "data": {
@@ -1750,7 +1750,7 @@
   "q6_5mal_aa3nV26": {
     "sort": 60539,
     "fileName": "Qt6.5.3-Android-arm-Clang-NDKr26d-xmacOS-Universal-AppleClang14.0.3-20240413.tar.xz",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm-Clang-NDKr26d-xmacOS-Universal-AppleClang14.0.3-20240413.tar.xz/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm-Clang-NDKr26d-xmacOS-Universal-AppleClang14.0.3-20240413.tar.xz",
     "ndkHost": "macOS",
     "ndkVer": "r26d",
     "data": {
@@ -1767,7 +1767,7 @@
   "q6_5wx6g2_aa3nV26": {
     "sort": 60533,
     "fileName": "Qt6.5.3-Android-arm-Clang-NDKr26d-xWindows-x86_64-MinGW12.2.0-msvcrt-20240413.7z",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm-Clang-NDKr26d-xWindows-x86_64-MinGW12.2.0-msvcrt-20240413.7z/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-arm-Clang-NDKr26d-xWindows-x86_64-MinGW12.2.0-msvcrt-20240413.7z",
     "ndkHost": "Windows",
     "ndkVer": "r26d",
     "data": {
@@ -1784,7 +1784,7 @@
   "q6_5lx6_ax6nV26": {
     "sort": 60538,
     "fileName": "Qt6.5.3-Android-x86_64-Clang-NDKr26d-xLinux-x86_64-gcc11.4.1-20240413.tar.xz",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-x86_64-Clang-NDKr26d-xLinux-x86_64-gcc11.4.1-20240413.tar.xz/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-x86_64-Clang-NDKr26d-xLinux-x86_64-gcc11.4.1-20240413.tar.xz",
     "ndkHost": "Linux",
     "ndkVer": "r26d",
     "data": {
@@ -1801,7 +1801,7 @@
   "q6_5mal_ax6nV26": {
     "sort": 60541,
     "fileName": "Qt6.5.3-Android-x86_64-Clang-NDKr26d-xmacOS-Universal-AppleClang14.0.3-20240413.tar.xz",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-x86_64-Clang-NDKr26d-xmacOS-Universal-AppleClang14.0.3-20240413.tar.xz/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-x86_64-Clang-NDKr26d-xmacOS-Universal-AppleClang14.0.3-20240413.tar.xz",
     "ndkHost": "macOS",
     "ndkVer": "r26d",
     "data": {
@@ -1818,7 +1818,7 @@
   "q6_5wx6g2_ax6nV26": {
     "sort": 60535,
     "fileName": "Qt6.5.3-Android-x86_64-Clang-NDKr26d-xWindows-x86_64-MinGW12.2.0-msvcrt-20240413.7z",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-x86_64-Clang-NDKr26d-xWindows-x86_64-MinGW12.2.0-msvcrt-20240413.7z/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Android/r26/Qt6.5.3-Android-x86_64-Clang-NDKr26d-xWindows-x86_64-MinGW12.2.0-msvcrt-20240413.7z",
     "ndkHost": "Windows",
     "ndkVer": "r26d",
     "data": {
@@ -2233,7 +2233,7 @@
   "q6_7lx6_aa6nV26": {
     "sort": 60720,
     "fileName": "Qt6.7.0-Android-arm64-Clang-NDKr26d-xLinux-x86_64-gcc11.4.1-20240413.tar.xz",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.7/Android/r26/Qt6.7.0-Android-arm64-Clang-NDKr26d-xLinux-x86_64-gcc11.4.1-20240413.tar.xz/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.7/Android/r26/Qt6.7.0-Android-arm64-Clang-NDKr26d-xLinux-x86_64-gcc11.4.1-20240413.tar.xz",
     "ndkHost": "Linux",
     "ndkVer": "r26d",
     "data": {
@@ -2250,7 +2250,7 @@
   "q6_7mal_aa6nV26": {
     "sort": 60723,
     "fileName": "Qt6.7.0-Android-arm64-Clang-NDKr26d-xmacOS-Universal-AppleClang14.0.3-20240413.tar.xz",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.7/Android/r26/Qt6.7.0-Android-arm64-Clang-NDKr26d-xmacOS-Universal-AppleClang14.0.3-20240413.tar.xz/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.7/Android/r26/Qt6.7.0-Android-arm64-Clang-NDKr26d-xmacOS-Universal-AppleClang14.0.3-20240413.tar.xz",
     "ndkHost": "macOS",
     "ndkVer": "r26d",
     "data": {
@@ -2267,7 +2267,7 @@
   "q6_7wx6g3_aa6nV26": {
     "sort": 60717,
     "fileName": "Qt6.7.0-Android-arm64-Clang-NDKr26d-xWindows-x86_64-MinGW13.2.0-msvcrt-20240413.7z",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.7/Android/r26/Qt6.7.0-Android-arm64-Clang-NDKr26d-xWindows-x86_64-MinGW13.2.0-msvcrt-20240413.7z/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.7/Android/r26/Qt6.7.0-Android-arm64-Clang-NDKr26d-xWindows-x86_64-MinGW13.2.0-msvcrt-20240413.7z",
     "ndkHost": "Windows",
     "ndkVer": "r26d",
     "data": {
@@ -2284,7 +2284,7 @@
   "q6_7lx6_aa3nV26": {
     "sort": 60719,
     "fileName": "Qt6.7.0-Android-arm-Clang-NDKr26d-xLinux-x86_64-gcc11.4.1-20240413.tar.xz",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.7/Android/r26/Qt6.7.0-Android-arm-Clang-NDKr26d-xLinux-x86_64-gcc11.4.1-20240413.tar.xz/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.7/Android/r26/Qt6.7.0-Android-arm-Clang-NDKr26d-xLinux-x86_64-gcc11.4.1-20240413.tar.xz",
     "ndkHost": "Linux",
     "ndkVer": "r26d",
     "data": {
@@ -2301,7 +2301,7 @@
   "q6_7mal_aa3nV26": {
     "sort": 60722,
     "fileName": "Qt6.7.0-Android-arm-Clang-NDKr26d-xmacOS-Universal-AppleClang14.0.3-20240413.tar.xz",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.7/Android/r26/Qt6.7.0-Android-arm-Clang-NDKr26d-xmacOS-Universal-AppleClang14.0.3-20240413.tar.xz/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.7/Android/r26/Qt6.7.0-Android-arm-Clang-NDKr26d-xmacOS-Universal-AppleClang14.0.3-20240413.tar.xz",
     "ndkHost": "macOS",
     "ndkVer": "r26d",
     "data": {
@@ -2318,7 +2318,7 @@
   "q6_7wx6g3_aa3nV26": {
     "sort": 60716,
     "fileName": "Qt6.7.0-Android-arm-Clang-NDKr26d-xWindows-x86_64-MinGW13.2.0-msvcrt-20240413.7z",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.7/Android/r26/Qt6.7.0-Android-arm-Clang-NDKr26d-xWindows-x86_64-MinGW13.2.0-msvcrt-20240413.7z/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.7/Android/r26/Qt6.7.0-Android-arm-Clang-NDKr26d-xWindows-x86_64-MinGW13.2.0-msvcrt-20240413.7z",
     "ndkHost": "Windows",
     "ndkVer": "r26d",
     "data": {
@@ -2335,7 +2335,7 @@
   "q6_7lx6_ax6nV26": {
     "sort": 60721,
     "fileName": "Qt6.7.0-Android-x86_64-Clang-NDKr26d-xLinux-x86_64-gcc11.4.1-20240413.tar.xz",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.7/Android/r26/Qt6.7.0-Android-x86_64-Clang-NDKr26d-xLinux-x86_64-gcc11.4.1-20240413.tar.xz/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.7/Android/r26/Qt6.7.0-Android-x86_64-Clang-NDKr26d-xLinux-x86_64-gcc11.4.1-20240413.tar.xz",
     "ndkHost": "Linux",
     "ndkVer": "r26d",
     "data": {
@@ -2352,7 +2352,7 @@
   "q6_7mal_ax6nV26": {
     "sort": 60724,
     "fileName": "Qt6.7.0-Android-x86_64-Clang-NDKr26d-xmacOS-Universal-AppleClang14.0.3-20240413.tar.xz",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.7/Android/r26/Qt6.7.0-Android-x86_64-Clang-NDKr26d-xmacOS-Universal-AppleClang14.0.3-20240413.tar.xz/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.7/Android/r26/Qt6.7.0-Android-x86_64-Clang-NDKr26d-xmacOS-Universal-AppleClang14.0.3-20240413.tar.xz",
     "ndkHost": "macOS",
     "ndkVer": "r26d",
     "data": {
@@ -2369,7 +2369,7 @@
   "q6_7wx6g3_ax6nV26": {
     "sort": 60718,
     "fileName": "Qt6.7.0-Android-x86_64-Clang-NDKr26d-xWindows-x86_64-MinGW13.2.0-msvcrt-20240413.7z",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.7/Android/r26/Qt6.7.0-Android-x86_64-Clang-NDKr26d-xWindows-x86_64-MinGW13.2.0-msvcrt-20240413.7z/download",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.7/Android/r26/Qt6.7.0-Android-x86_64-Clang-NDKr26d-xWindows-x86_64-MinGW13.2.0-msvcrt-20240413.7z",
     "ndkHost": "Windows",
     "ndkVer": "r26d",
     "data": {
