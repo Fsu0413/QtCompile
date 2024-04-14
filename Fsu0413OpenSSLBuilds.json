@@ -521,7 +521,7 @@
       "version": "3.0.13",
       "platform": "Android-27",
       "buildHost": "Rocky Linux 9.3",
-      "toolchain": "ndk r26c",
+      "toolchain": "ndk r26d",
       "arch": "arm",
       "variant": "-static"
     },
@@ -532,7 +532,7 @@
       "version": "3.0.13",
       "platform": "Android-27",
       "buildHost": "Rocky Linux 9.3",
-      "toolchain": "ndk r26c",
+      "toolchain": "ndk r26d",
       "arch": "arm64",
       "variant": "-static"
     },
@@ -543,7 +543,7 @@
       "version": "3.0.13",
       "platform": "Android-27",
       "buildHost": "Rocky Linux 9.3",
-      "toolchain": "ndk r26c",
+      "toolchain": "ndk r26d",
       "arch": "x86",
       "variant": "-static"
     },
@@ -554,7 +554,7 @@
       "version": "3.0.13",
       "platform": "Android-27",
       "buildHost": "Rocky Linux 9.3",
-      "toolchain": "ndk r26c",
+      "toolchain": "ndk r26d",
       "arch": "x86_64",
       "variant": "-static"
     },
