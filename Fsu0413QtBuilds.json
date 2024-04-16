@@ -312,14 +312,14 @@
   },
   "q5_15wa6v2": {
     "sort": 51514,
-    "fileName": "Qt5.15.13-Windows-arm64-VS2022-17.9.5-20240327.7z",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-arm64/Qt5.15.13-Windows-arm64-VS2022-17.9.5-20240327.7z",
+    "fileName": "Qt5.15.13-Windows-arm64-VS2022-17.9.6-20240416.7z",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-arm64/MSVC/Qt5.15.13-Windows-arm64-VS2022-17.9.6-20240416.7z",
     "notes": "__NO MySQL Database Backend__ because build failed (It linked with `/machine:x64`)",
     "data": {
       "version": "5.15.13",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "VS2022 17.9.5",
+      "toolchain": "VS2022 17.9.6",
       "arch": "arm64",
       "variant": "",
       "uploaded": "√",
@@ -392,14 +392,14 @@
   },
   "q5_15wx3v7": {
     "sort": 51505,
-    "fileName": "Qt5.15.13-Windows-x86-VS2017-15.9.60-20240311.7z",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86/Qt5.15.13-Windows-x86-VS2017-15.9.60-20240311.7z",
+    "fileName": "Qt5.15.13-Windows-x86-VS2017-15.9.61-20240416.7z",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86/MSVC/Qt5.15.13-Windows-x86-VS2017-15.9.61-20240416.7z",
     "notes": "__NO WEBENGINE__ because of compile failure",
     "data": {
       "version": "5.15.13",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "VS2017 15.9.60",
+      "toolchain": "VS2017 15.9.61",
       "arch": "x86",
       "variant": "",
       "uploaded": "√",
@@ -423,14 +423,14 @@
   },
   "q5_15wx3v9": {
     "sort": 51509,
-    "fileName": "Qt5.15.13-Windows-x86-VS2019-16.11.34-20240311.7z",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86/Qt5.15.13-Windows-x86-VS2019-16.11.34-20240311.7z",
+    "fileName": "Qt5.15.13-Windows-x86-VS2019-16.11.35-20240416.7z",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86/MSVC/Qt5.15.13-Windows-x86-VS2019-16.11.35-20240416.7z",
     "notes": "With WebEngine 5.15.16",
     "data": {
       "version": "5.15.13",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "VS2019 16.11.34",
+      "toolchain": "VS2019 16.11.35",
       "arch": "x86",
       "variant": "",
       "uploaded": "√",
@@ -661,14 +661,14 @@
   },
   "q5_15wx6v7": {
     "sort": 51507,
-    "fileName": "Qt5.15.13-Windows-x86_64-VS2017-15.9.60-20240310.7z",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/Qt5.15.13-Windows-x86_64-VS2017-15.9.60-20240310.7z",
+    "fileName": "Qt5.15.13-Windows-x86_64-VS2017-15.9.61-20240416.7z",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MSVC/Qt5.15.13-Windows-x86_64-VS2017-15.9.61-20240416.7z",
     "notes": "__NO WEBENGINE__ because of compile failure",
     "data": {
       "version": "5.15.13",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "VS2017 15.9.60",
+      "toolchain": "VS2017 15.9.61",
       "arch": "x86_64",
       "variant": "",
       "uploaded": "√",
@@ -692,14 +692,14 @@
   },
   "q5_15wx6v9": {
     "sort": 51511,
-    "fileName": "Qt5.15.13-Windows-x86_64-VS2019-16.11.34-20240310.7z",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/Qt5.15.13-Windows-x86_64-VS2019-16.11.34-20240310.7z",
+    "fileName": "Qt5.15.13-Windows-x86_64-VS2019-16.11.35-20240416.7z",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MSVC/Qt5.15.13-Windows-x86_64-VS2019-16.11.35-20240416.7z",
     "notes": "With WebEngine 5.15.16",
     "data": {
       "version": "5.15.13",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "VS2019 16.11.34",
+      "toolchain": "VS2019 16.11.35",
       "arch": "x86_64",
       "variant": "",
       "uploaded": "√",
@@ -723,14 +723,14 @@
   },
   "q5_15wx6v2": {
     "sort": 51513,
-    "fileName": "Qt5.15.13-Windows-x86_64-VS2022-17.9.5-20240327.7z",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/Qt5.15.13-Windows-x86_64-VS2022-17.9.5-20240327.7z",
+    "fileName": "Qt5.15.13-Windows-x86_64-VS2022-17.9.6-20240416.7z",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MSVC/Qt5.15.13-Windows-x86_64-VS2022-17.9.6-20240416.7z",
     "notes": "With WebEngine 5.15.16",
     "data": {
       "version": "5.15.13",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "VS2022 17.9.5",
+      "toolchain": "VS2022 17.9.6",
       "arch": "x86_64",
       "variant": "",
       "uploaded": "√",
@@ -1924,13 +1924,13 @@
   },
   "q6_5wa6v2": {
     "sort": 60503,
-    "fileName": "Qt6.5.3-Windows-arm64-VS2022-17.9.5-20240328.7z",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-arm64/Qt6.5.3-Windows-arm64-VS2022-17.9.5-20240328.7z",
+    "fileName": "Qt6.5.3-Windows-arm64-VS2022-17.9.6-20240416.7z",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-arm64/MSVC/Qt6.5.3-Windows-arm64-VS2022-17.9.6-20240416.7z",
     "data": {
       "version": "6.5.3",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "VS2022 17.9.5",
+      "toolchain": "VS2022 17.9.6",
       "arch": "arm64",
       "variant": "",
       "uploaded": "√",
@@ -2161,15 +2161,30 @@
       "configuration": "√"
     }
   },
-  "q6_5wx6v2": {
-    "sort": 60501,
-    "fileName": "Qt6.5.3-Windows-x86_64-VS2022-17.9.5-20240328.7z",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/Qt6.5.3-Windows-x86_64-VS2022-17.9.5-20240328.7z",
+  "q6_5wx6v9": {
+    "sort": 60500,
+    "fileName": "Qt6.5.3-Windows-x86_64-VS2019-16.11.35-20240416.7z",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/MSVC/Qt6.5.3-Windows-x86_64-VS2019-16.11.35-20240416.7z",
     "data": {
       "version": "6.5.3",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "VS2022 17.9.5",
+      "toolchain": "VS2019 16.11.35",
+      "arch": "x86_64",
+      "variant": "",
+      "uploaded": "√",
+      "configuration": "√"
+    }
+  },
+  "q6_5wx6v2": {
+    "sort": 60501,
+    "fileName": "Qt6.5.3-Windows-x86_64-VS2022-17.9.6-20240416.7z",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/Windows-x86_64/MSVC/Qt6.5.3-Windows-x86_64-VS2022-17.9.6-20240416.7z",
+    "data": {
+      "version": "6.5.3",
+      "platform": "Windows",
+      "buildHost": "Windows 11 10.0.22631",
+      "toolchain": "VS2022 17.9.6",
       "arch": "x86_64",
       "variant": "",
       "uploaded": "√",
@@ -2460,13 +2475,13 @@
   },
   "q6_7wa6v2": {
     "sort": 60702,
-    "fileName": "Qt6.7.0-Windows-arm64-VS2022-17.9.5-20240402.7z",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.7/Windows-arm64/MSVC/Qt6.7.0-Windows-arm64-VS2022-17.9.5-20240402.7z",
+    "fileName": "Qt6.7.0-Windows-arm64-VS2022-17.9.6-20240416.7z",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.7/Windows-arm64/MSVC/Qt6.7.0-Windows-arm64-VS2022-17.9.6-20240416.7z",
     "data": {
       "version": "6.7.0",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "VS2022 17.9.5",
+      "toolchain": "VS2022 17.9.6",
       "arch": "arm64",
       "variant": "",
       "uploaded": "√",
@@ -2537,15 +2552,30 @@
       "configuration": "√"
     }
   },
-  "q6_7wx6v2": {
+  "q6_7wx6v9": {
     "sort": 60701,
-    "fileName": "Qt6.7.0-Windows-x86_64-VS2022-17.9.5-20240402.7z",
-    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.7/Windows-x86_64/MSVC/Qt6.7.0-Windows-x86_64-VS2022-17.9.5-20240402.7z",
+    "fileName": "Qt6.7.0-Windows-x86_64-VS2019-16.11.35-20240416.7z",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.7/Windows-x86_64/MSVC/Qt6.7.0-Windows-x86_64-VS2019-16.11.35-20240416.7z",
     "data": {
       "version": "6.7.0",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "VS2022 17.9.5",
+      "toolchain": "VS2019 16.11.35",
+      "arch": "x86_64",
+      "variant": "",
+      "uploaded": "√",
+      "configuration": "√"
+    }
+  },
+  "q6_7wx6v2": {
+    "sort": 60701,
+    "fileName": "Qt6.7.0-Windows-x86_64-VS2022-17.9.6-20240417.7z",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.7/Windows-x86_64/MSVC/Qt6.7.0-Windows-x86_64-VS2022-17.9.6-20240417.7z",
+    "data": {
+      "version": "6.7.0",
+      "platform": "Windows",
+      "buildHost": "Windows 11 10.0.22631",
+      "toolchain": "VS2022 17.9.6",
       "arch": "x86_64",
       "variant": "",
       "uploaded": "√",
