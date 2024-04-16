@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.124.1">
+    <meta name="generator" content="Hugo 0.125.0">
     <meta name="generator" content="Relearn 5.27.0">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
@@ -164,6 +164,15 @@
 这个版本我只会提供统一二进制构建。 <a href="https://developer.apple.com/documentation/apple-silicon/building-a-universal-macos-binary" rel="external" target="_blank">统一二进制</a>在 Intel 和 Apple 芯片的 Mac 上都能原生运行。</div>
 </div>
 
+
+<div class="box notices cstyle warning">
+  <div class="box-label"><i class="fas fa-skull-crossbones"></i> 二进制兼容性警告</div>
+  <div class="box-content">
+
+<p>这个版本的 Qt 6.7.0 存在一个已知的二进制兼容性问题，已经作为 <a href="https://bugreports.qt.io/browse/QTBUG-123997" rel="external" target="_blank">QTBUG-123997</a> 报告。<br>
+链接 Qt Multimedia 的动态库 / 共享对象的二进制需要在升级到 6.7.0 / 从 6.7.0 升级到后续版本时重新构建。</p>
+</div>
+</div>
 <h2 id="动态--共享构建">动态 / 共享构建</h2>
 <h3 id="macos-universal">macOS-Universal</h3>
 <table>
@@ -313,7 +322,7 @@
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sun, 14 Apr 2024 09:12:27 CST</p>
+Site generated: Wed, 17 Apr 2024 07:50:47 CST</p>
 
           </div>
         </div>
