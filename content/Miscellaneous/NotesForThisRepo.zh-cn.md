@@ -244,20 +244,21 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 
 | 问题 \ Qt 版本 | 5.15.13 | 6.2.7 | 6.5.3 |
 |-|-|-|-|
-| CVE-2023-24607 | 附带 | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-24607-qtbase-6.2.diff) （6.2.8） | - |
-| CVE-2023-32573 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-32573-qtsvg-5.15.diff) （5.15.14） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-32573-qtsvg-6.2.diff) （6.2.9） | 附带 |
+| CVE-2023-24607 | 附带 | [√](https://download.qt.io/archive/qt/6.2/CVE-2023-24607-qtbase-6.2.diff) （6.2.8） | - |
+| CVE-2023-32573 | [√](https://download.qt.io/archive/qt/5.15/CVE-2023-32573-qtsvg-5.15.diff) （5.15.14） | [√](https://download.qt.io/archive/qt/6.2/CVE-2023-32573-qtsvg-6.2.diff) （6.2.9） | 附带 |
 | （仅限 5.15 系列）Clang 构建修复 | [√](https://invent.kde.org/qt/qt/qtlocation-mapboxgl/-/commit/5a07e1967dcc925d9def47accadae991436b9686 "KDE 提供的补丁") （5.15.14） | - | - |
-| CVE-2023-32762 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-32762-qtbase-5.15.diff) （5.15.14） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-32762-qtbase-6.2.diff) （6.2.9） | 附带 |
-| CVE-2023-32763 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-32763-qtbase-5.15.diff) （5.15.15） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-32763-qtbase-6.2.diff) （6.2.9） | 附带 |
-| CVE-2023-33285 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-33285-qtbase-5.15.diff) （5.15.14） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-33285-qtbase-6.2.diff) （6.2.9） | 附带 |
-| CVE-2023-34410 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-34410-qtbase-5.15.diff) （5.15.15） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-34410-qtbase-6.2.diff) （6.2.9） | 附带 |
-| CVE-2023-37369 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-37369-qtbase-5.15.diff) （5.15.15） | [**×**](# "官方补丁冲突，依赖 Qt 6.2.9 上的一个提交，暂无发行版与项目解决冲突。已放弃调查") （6.2.10） | 附带 |
-| CVE-2023-38197 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-38197-qtbase-5.15.diff) （5.15.15） | [**×**](# "依赖 CVE-2023-37369 的补丁") （6.2.10） | 附带 |
-| CVE-2023-43114 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-43114-5.15.patch) （5.15.16） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2023-43114-6.2.patch) （6.2.10） | [√](https://download.qt.io/official_releases/qt/6.5/CVE-2023-43114-6.5.patch) （6.5.4） |
-| CVE-2023-4863 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2023-4863-5.15.patch) （5.15.16） | [√](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2023-09-22-CVE-2023-4863-qtimageformats-6.2.patch "Fsu0413 制作的补丁") （6.2.10） | 附带 |
-| CVE-2023-45872 | - | [**×**](# "官方补丁冲突。原因未知且没有调查计划") （6.2.11） | - |
-| CVE-2023-51714 | √ [1](https://download.qt.io/official_releases/qt/5.15/0001-CVE-2023-51714-qtbase-5.15.diff) [2](https://download.qt.io/official_releases/qt/5.15/0002-CVE-2023-51714-qtbase-5.15.diff) （5.15.17） | √ [1](https://download.qt.io/official_releases/qt/6.2/0001-CVE-2023-51714-qtbase-6.2.diff) [2](https://download.qt.io/official_releases/qt/6.2/0002-CVE-2023-51714-qtbase-6.2.diff) （6.2.11） | √ [1](https://download.qt.io/official_releases/qt/6.5/0001-CVE-2023-51714-qtbase-6.5.diff) [2](https://download.qt.io/official_releases/qt/6.5/0002-CVE-2023-51714-qtbase-6.5.diff) （6.5.4） |
-| CVE-2024-25580 | [√](https://download.qt.io/official_releases/qt/5.15/CVE-2024-25580-qtbase-5.15.diff) （5.15.17） | [√](https://download.qt.io/official_releases/qt/6.2/CVE-2024-25580-qtbase-6.2.diff) （6.2.12） | [√](https://download.qt.io/official_releases/qt/6.5/CVE-2024-25580-qtbase-6.5.diff) （6.5.5） |
+| CVE-2023-32762 | [√](https://download.qt.io/archive/qt/5.15/CVE-2023-32762-qtbase-5.15.diff) （5.15.14） | [√](https://download.qt.io/archive/qt/6.2/CVE-2023-32762-qtbase-6.2.diff) （6.2.9） | 附带 |
+| CVE-2023-32763 | [√](https://download.qt.io/archive/qt/5.15/CVE-2023-32763-qtbase-5.15.diff) （5.15.15） | [√](https://download.qt.io/archive/qt/6.2/CVE-2023-32763-qtbase-6.2.diff) （6.2.9） | 附带 |
+| CVE-2023-33285 | [√](https://download.qt.io/archive/qt/5.15/CVE-2023-33285-qtbase-5.15.diff) （5.15.14） | [√](https://download.qt.io/archive/qt/6.2/CVE-2023-33285-qtbase-6.2.diff) （6.2.9） | 附带 |
+| CVE-2023-34410 | [√](https://download.qt.io/archive/qt/5.15/CVE-2023-34410-qtbase-5.15.diff) （5.15.15） | [√](https://download.qt.io/archive/qt/6.2/CVE-2023-34410-qtbase-6.2.diff) （6.2.9） | 附带 |
+| CVE-2023-37369 | [√](https://download.qt.io/archive/qt/5.15/CVE-2023-37369-qtbase-5.15.diff) （5.15.15） | [**×**](https://download.qt.io/archive/qt/6.2/CVE-2023-37369-qtbase-6.2.diff "官方补丁冲突，依赖 Qt 6.2.9 上的一个提交，暂无发行版与项目解决冲突。已放弃调查") （6.2.10） | 附带 |
+| CVE-2023-38197 | [√](https://download.qt.io/archive/qt/5.15/CVE-2023-38197-qtbase-5.15.diff) （5.15.15） | [**×**](https://download.qt.io/archive/qt/6.2/CVE-2023-38197-qtbase-6.2.diff "依赖 CVE-2023-37369 的补丁") （6.2.10） | 附带 |
+| CVE-2023-43114 | [√](https://download.qt.io/archive/qt/5.15/CVE-2023-43114-5.15.patch) （5.15.16） | [√](https://download.qt.io/archive/qt/6.2/CVE-2023-43114-6.2.patch) （6.2.10） | [√](https://download.qt.io/archive/qt/6.5/CVE-2023-43114-6.5.patch) （6.5.4） |
+| CVE-2023-4863 | [√](https://download.qt.io/archive/qt/5.15/CVE-2023-4863-5.15.patch) （5.15.16） | [√](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2023-09-22-CVE-2023-4863-qtimageformats-6.2.patch "Fsu0413 制作的补丁") （6.2.10） | 附带 |
+| CVE-2023-45872 | - | [**×**](https://download.qt.io/archive/qt/6.2/CVE-2023-45872-qtsvg-6.2.10.diff "官方补丁冲突。原因未知且没有调查计划") （6.2.11） | - |
+| CVE-2023-51714 | √ [1](https://download.qt.io/archive/qt/5.15/0001-CVE-2023-51714-qtbase-5.15.diff) [2](https://download.qt.io/archive/qt/5.15/0002-CVE-2023-51714-qtbase-5.15.diff) （5.15.17） | √ [1](https://download.qt.io/archive/qt/6.2/0001-CVE-2023-51714-qtbase-6.2.diff) [2](https://download.qt.io/archive/qt/6.2/0002-CVE-2023-51714-qtbase-6.2.diff) （6.2.11） | √ [1](https://download.qt.io/archive/qt/6.5/0001-CVE-2023-51714-qtbase-6.5.diff) [2](https://download.qt.io/archive/qt/6.5/0002-CVE-2023-51714-qtbase-6.5.diff) （6.5.4） |
+| CVE-2024-25580 | [√](https://download.qt.io/archive/qt/5.15/CVE-2024-25580-qtbase-5.15.diff) （5.15.17） | [√](https://download.qt.io/archive/qt/6.2/CVE-2024-25580-qtbase-6.2.diff) （6.2.12） | [√](https://download.qt.io/archive/qt/6.5/CVE-2024-25580-qtbase-6.5.diff) （6.5.5） |
+| CVE-2024-30161 | - | - | [**x**](https://download.qt.io/archive/qt/6.5/CVE-2024-30161-qtbase-6.5.diff "影响 6.5.4 和 6.5.5，不影响 6.5.3") （6.5.6） |
 
 从 {{% date 2024 3 12 %}}开始我的 Qt 构建会包含一些简单的关于构建问题的修复。  
 目前只有 LTS 版本应用这些补丁。
