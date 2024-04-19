@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.125.0">
+    <meta name="generator" content="Hugo 0.125.1">
     <meta name="generator" content="Relearn 5.27.0">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
@@ -88,11 +88,9 @@
     <li><a href="#免责声明">免责声明</a></li>
     <li><a href="#更新记录">更新记录</a>
       <ul>
+        <li><a href="#2024-年-4-月-19-日">2024 年 4 月 19 日</a></li>
         <li><a href="#2024-年-4-月-17-日">2024 年 4 月 17 日</a></li>
-        <li><a href="#2024-年-4-月-13-日">2024 年 4 月 13 日</a></li>
-        <li><a href="#2024-年-4-月-6-日">2024 年 4 月 6 日</a></li>
-        <li><a href="#2024-年-4-月-3-日">2024 年 4 月 3 日</a></li>
-        <li><a href="#2024-年-4-月以前">2024 年 4 月以前</a></li>
+        <li><a href="#2024-年-4-月-13-日以前">2024 年 4 月 13 日以前</a></li>
       </ul>
     </li>
   </ul>
@@ -134,13 +132,13 @@
 目前已经删除所有 OSDN 链接，拜托各位通过 SourceForge 进行下载。</p>
 <p>这边上传的时候发生的错误如下（通过 WinSCP 输出）：</p>
 <div class="expand">
-    <input type="checkbox" id="R-expand-c5ec6dd903b7096f0787b7a58f201d51" aria-controls="R-expandcontent-c5ec6dd903b7096f0787b7a58f201d51" >
-    <label class="expand-label" for="R-expand-c5ec6dd903b7096f0787b7a58f201d51" >
+    <input type="checkbox" id="R-expand-ffb8ee056003b971c51ef4c03612fd8d" aria-controls="R-expandcontent-ffb8ee056003b971c51ef4c03612fd8d" >
+    <label class="expand-label" for="R-expand-ffb8ee056003b971c51ef4c03612fd8d" >
         <i class="fa-fw fas fa-chevron-down"></i>
         <i class="fa-fw fas fa-chevron-right"></i>
         展开
     </label>
-    <div id="R-expandcontent-c5ec6dd903b7096f0787b7a58f201d51" class="expand-content">
+    <div id="R-expandcontent-ffb8ee056003b971c51ef4c03612fd8d" class="expand-content">
 <p>一般错误(服务器应该提供错误描述)。<br>
 错误码：4<br>
 服务器返回的错误消息：Failure</p>
@@ -162,17 +160,15 @@
 <strong>这些包为“依原样”提供。我对您使用此二进制文件作出的任何事情不负任何责任。</strong><br>
 感谢 The Qt Company Ltd. 和众多 Qt 的开发者的绝妙工作！</p>
 <h2 id="更新记录">更新记录</h2>
+<h3 id="2024-年-4-月-19-日">2024 年 4 月 19 日</h3>
+<p>更新 Qt 6.2.8。<br>
+使用 llvm-mingw 18.1.4 重新构建所有使用 llvm-mingw 18 系列工具链的版本。</p>
+<p>鉴于现在已经没有更多计划的 Qt 6 构建，我把“Qt 6 支持的平台”章节从备注页中删掉了。<br>
+最初的 Qt 6.0 已经发布超过 3 年了，所有计划的构建目标都已经达成了。这个章节已经没用了。</p>
 <h3 id="2024-年-4-月-17-日">2024 年 4 月 17 日</h3>
 <p>添加使用 VS2019 构建的 Qt 6.5 和 6.7。<br>
 重新构建了 Qt 5.15 / 6.5 / 6.7，使用更新的 VS2017 15.9.61 / VS2019 16.11.35 / VS2022 17.9.6。（静态构建除外）</p>
-<h3 id="2024-年-4-月-13-日">2024 年 4 月 13 日</h3>
-<p>使用 NDK r26d 重新构建所有使用 NDK r26 系列工具链的版本。</p>
-<p>（第 32 次）祝我生日快乐！</p>
-<h3 id="2024-年-4-月-6-日">2024 年 4 月 6 日</h3>
-<p>使用 llvm-mingw 18.1.3 重新构建所有使用 llvm-mingw 18 系列工具链的版本。</p>
-<h3 id="2024-年-4-月-3-日">2024 年 4 月 3 日</h3>
-<p>更新 Qt 6.7.0 版本。</p>
-<h3 id="2024-年-4-月以前">2024 年 4 月以前</h3>
+<h3 id="2024-年-4-月-13-日以前">2024 年 4 月 13 日以前</h3>
 <p><a href="/qtcompile/miscellaneous/histories/index.html">这里</a></p>
 
             <footer class="footline">
@@ -203,10 +199,10 @@
           <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-android/index.html">5.15.13 的安卓版本</a></li>
           <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-webassembly/index.html">5.15.13 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/6.2-series/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/index.html">6.2 系列</a><ul id="R-subsections-f3427fcbeda6da3be7e077b630aae545" class="morespace collapsible-menu">
-          <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-windows/index.html">6.2.7 的 Windows 版本</a></li>
-          <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-macos/index.html">6.2.7 的 macOS 版本</a></li>
-          <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-android/index.html">6.2.7 的安卓版本</a></li>
-          <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-webassembly/index.html">6.2.7 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-windows/index.html">6.2.8 的 Windows 版本</a></li>
+          <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-macos/index.html">6.2.8 的 macOS 版本</a></li>
+          <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-android/index.html">6.2.8 的安卓版本</a></li>
+          <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-webassembly/index.html">6.2.8 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/6.5-series/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/index.html">6.5 系列</a><ul id="R-subsections-18a4c979f7cbac2afeb0fd2f6e4dfee1" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/6.5-series/6.5.3-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.3-for-windows/index.html">6.5.3 的 Windows 版本</a></li>
           <li data-nav-id="/qtcompile/6.5-series/6.5.3-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.3-for-macos/index.html">6.5.3 的 macOS 版本</a></li>
@@ -303,7 +299,7 @@
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Wed, 17 Apr 2024 07:50:47 CST</p>
+Site generated: Fri, 19 Apr 2024 21:29:35 CST</p>
 
           </div>
         </div>

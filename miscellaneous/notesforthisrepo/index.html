@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.125.0">
+    <meta name="generator" content="Hugo 0.125.1">
     <meta name="generator" content="Relearn 5.27.0">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
@@ -93,8 +93,7 @@
     <li><a href="#对使用旧版本-qt-的备注">对使用旧版本 Qt 的备注</a></li>
     <li><a href="#对于发布的压缩文件的备注">对于发布的压缩文件的备注</a></li>
     <li><a href="#这份-qt-和官方发布的-qt-的区别2023-年-1-月-8-日更新">这份 Qt 和官方发布的 Qt 的区别（2023 年 1 月 8 日更新）</a></li>
-    <li><a href="#qt-offering-changes-2020-2022-年-4-月-14-日更新">Qt offering changes 2020 （2022 年 4 月 14 日更新）</a></li>
-    <li><a href="#qt-6-支持的平台2024-年-3-月-24-日更新">Qt 6 支持的平台（2024 年 3 月 24 日更新）</a></li>
+    <li><a href="#qt-offering-changes-2020-2023-年-9-月-2-日更新">Qt offering changes 2020 （2023 年 9 月 2 日更新）</a></li>
     <li><a href="#gpg-签名-2021-年-2-月-6-日更新">GPG 签名 （2021 年 2 月 6 日更新）</a></li>
     <li><a href="#弃用-windows-10-1809-之前的版本以及-32-位-windows-重要备注2023-年-3-月-25-日更新">弃用 Windows 10 1809 之前的版本以及 32 位 Windows （重要备注！！）（2023 年 3 月 25 日更新）</a></li>
     <li><a href="#对当前构建的-qt-版本的已经决定的结束支持日期2024-年-1-月-25-日更新">对当前构建的 Qt 版本的已经决定的结束支持日期（2024 年 1 月 25 日更新）</a></li>
@@ -215,7 +214,7 @@ Qt 5.13 及以后的版本的 Windows 构建使用 SChannel 代替 OpenSSL 库�
 此问题在我这里暂时无法解决，除非以后开始进行商务化定制，拿到收入后，再去购买证书进行校验。<br>
 在此之前，可能会实现基于 GPG 的校验。（虽然咕咕咕了）<br>
 （由于 Qt 5.14 以前的版本需要在安装后对 Qt 打补丁，所以无法校验。Qt 5.14 以及以后的版本可以重定位，解决了这个问题）</p>
-<h2 id="qt-offering-changes-2020-2022-年-4-月-14-日更新">Qt offering changes 2020 （2022 年 4 月 14 日更新）</h2>
+<h2 id="qt-offering-changes-2020-2023-年-9-月-2-日更新">Qt offering changes 2020 （2023 年 9 月 2 日更新）</h2>
 <p>Qt 宣布了 <a href="https://www.qt.io/blog/qt-offering-changes-2020" rel="external" target="_blank">Qt offering changes 2020</a>。<br>
 下面是我对这个博客的一些想法。</p>
 <p>首先我是有 Qt 账户的，不过安装 Qt 开发包为啥需要 Qt 账户我一直不明白。<br>
@@ -232,19 +231,6 @@ Qt 5.13 及以后的版本的 Windows 构建使用 SChannel 代替 OpenSSL 库�
 <p>（2023 年 9 月 2 日追加）前段时间有幸在公司中一个小型 MCU 项目中看到了 Qt for MCUs，是以二进制形式提供给我们的。<br>
 它使用与桌面及移动端 Qt 完全不同的基础架构，不使用 Qt Base 等现有的自由软件。</p>
 <p>由于我当时的开发任务与 Qt 无关，没有对该部分内容进行探究及调查，了解到的内容也就止步于此了。</p>
-<h2 id="qt-6-支持的平台2024-年-3-月-24-日更新">Qt 6 支持的平台（2024 年 3 月 24 日更新）</h2>
-<p>参考 <a href="https://bugreports.qt.io/browse/QTBUG-113979" rel="external" target="_blank">Qt 6.6 TQC Supported Targets</a> 和它的前置任务。</p>
-<p>现在我为如下平台构建 Qt 6。</p>
-<p>Windows 11 - VS2019, x86_64, host and target<br>
-Windows 11 - VS2022, x86_64 / arm64, host and target<br>
-Windows 11 - MinGW, x86_64, host and target<br>
-macOS 13 - toolchain provided by Apple with AppleClang, x86_64 / arm64_v8a, host and target, universal<br>
-Android - NDK, arm / x86 / arm64 / x86_64, target only. No x86 builds after 6.3<br>
-WebAssembly - emscripten, target only<br>
-Linux - toolchain provided by RedHat modified by Rocky Linux developers with GCC, x86_64, host only</p>
-<p>Qt 6.2 是 LTS 发布，但是在 Qt offering changes 2020 的影响下，Qt 6.2 对社区发布要比商业用户晚一年。<br>
-我会在 Qt 6.2 添加静态构建，但是我不是很确切的知道 Qt 的那帮人要怎么处理他们的发布。。。</p>
-<p>我会在 Qt 6.2 及以后的版本使用 OpenSSL 3 系列。</p>
 <h2 id="gpg-签名-2021-年-2-月-6-日更新">GPG 签名 （2021 年 2 月 6 日更新）</h2>
 <p>我正在找个方法用 GPG 去签名每个包，但是还没有找到好方法。<br>
 我不想在上传包的时候还要再上传一个签名文件，我觉得浪费上传步骤。。。。</p>
@@ -364,11 +350,6 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 <td>5.15.16</td>
 <td>2023 年 11 月 17 日</td>
 <td>2024 年 11 月 17 日</td>
-</tr>
-<tr>
-<td>6.2.8</td>
-<td>2023 年 4 月 18 日</td>
-<td>2024 年 4 月 18 日</td>
 </tr>
 <tr>
 <td>6.2.9</td>
@@ -596,10 +577,10 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
           <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-android/index.html">5.15.13 的安卓版本</a></li>
           <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-webassembly/index.html">5.15.13 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/6.2-series/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/index.html">6.2 系列</a><ul id="R-subsections-f3427fcbeda6da3be7e077b630aae545" class="morespace collapsible-menu">
-          <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-windows/index.html">6.2.7 的 Windows 版本</a></li>
-          <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-macos/index.html">6.2.7 的 macOS 版本</a></li>
-          <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-android/index.html">6.2.7 的安卓版本</a></li>
-          <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-webassembly/index.html">6.2.7 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-windows/index.html">6.2.8 的 Windows 版本</a></li>
+          <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-macos/index.html">6.2.8 的 macOS 版本</a></li>
+          <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-android/index.html">6.2.8 的安卓版本</a></li>
+          <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-webassembly/index.html">6.2.8 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/6.5-series/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/index.html">6.5 系列</a><ul id="R-subsections-18a4c979f7cbac2afeb0fd2f6e4dfee1" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/6.5-series/6.5.3-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.3-for-windows/index.html">6.5.3 的 Windows 版本</a></li>
           <li data-nav-id="/qtcompile/6.5-series/6.5.3-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.3-for-macos/index.html">6.5.3 的 macOS 版本</a></li>
@@ -696,7 +677,7 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Wed, 17 Apr 2024 07:50:47 CST</p>
+Site generated: Fri, 19 Apr 2024 21:29:35 CST</p>
 
           </div>
         </div>
