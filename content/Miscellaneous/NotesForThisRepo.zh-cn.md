@@ -130,7 +130,7 @@ Qt 5.13 及以后的版本的 Windows 构建使用 SChannel 代替 OpenSSL 库�
 在此之前，可能会实现基于 GPG 的校验。（虽然咕咕咕了）  
 （由于 Qt 5.14 以前的版本需要在安装后对 Qt 打补丁，所以无法校验。Qt 5.14 以及以后的版本可以重定位，解决了这个问题）
 
-## Qt offering changes 2020 （{{% date 2022 4 14 %}}更新）
+## Qt offering changes 2020 （{{% date 2023 9 2 %}}更新）
 
 Qt 宣布了 [Qt offering changes 2020](https://www.qt.io/blog/qt-offering-changes-2020)。  
 下面是我对这个博客的一些想法。
@@ -155,25 +155,6 @@ LTS 只给商业许可，那么 LTS 的源码包是什么许可？
 它使用与桌面及移动端 Qt 完全不同的基础架构，不使用 Qt Base 等现有的自由软件。
 
 由于我当时的开发任务与 Qt 无关，没有对该部分内容进行探究及调查，了解到的内容也就止步于此了。
-
-## Qt 6 支持的平台（{{% date 2024 3 24 %}}更新）
-
-参考 {{% QtBug 113979 "Qt 6.6 TQC Supported Targets" %}} 和它的前置任务。
-
-现在我为如下平台构建 Qt 6。
-
-Windows 11 - VS2019, x86_64, host and target  
-Windows 11 - VS2022, x86_64 / arm64, host and target  
-Windows 11 - MinGW, x86_64, host and target  
-macOS 13 - toolchain provided by Apple with AppleClang, x86_64 / arm64_v8a, host and target, universal  
-Android - NDK, arm / x86 / arm64 / x86_64, target only. No x86 builds after 6.3  
-WebAssembly - emscripten, target only  
-Linux - toolchain provided by RedHat modified by Rocky Linux developers with GCC, x86_64, host only
-
-Qt 6.2 是 LTS 发布，但是在 Qt offering changes 2020 的影响下，Qt 6.2 对社区发布要比商业用户晚一年。  
-我会在 Qt 6.2 添加静态构建，但是我不是很确切的知道 Qt 的那帮人要怎么处理他们的发布。。。
-
-我会在 Qt 6.2 及以后的版本使用 OpenSSL 3 系列。
 
 ## GPG 签名 （{{% date 2021 2 6 %}}更新）
 
@@ -224,7 +205,6 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 | 5.15.14 | {{% date 2023 5 25 %}} | {{% date 2024 5 25 %}} |
 | 5.15.15 | {{% date 2023 8 31 %}} | {{% date 2024 8 31 %}} （届时需要确认 Qt 到底是否真的发布了开源版本） |
 | 5.15.16 | {{% date 2023 11 17 %}} | {{% date 2024 11 17 %}} |
-| 6.2.8 | {{% date 2023 4 18 %}} | {{% date 2024 4 18 %}} |
 | 6.2.9 | {{% date 2023 7 4 %}} | {{% date 2024 7 4 %}} |
 | 6.2.10 | {{% date 2023 10 9 %}} | {{% date 2024 10 9 %}} |
 | 6.2.11 | {{% date 2024 1 16 %}} | {{% date 2025 1 16 %}} |

@@ -130,7 +130,7 @@ There is no solution for this problem at the moment. I won't buy certificate for
 It is possible to implement GPG verifiiation before certificate can be bought. (Although it has been put away for a long time...)  
 (Qt before 5.14 can't be trusted due to patch of Qt after install. Qt 5.14 and later can be relocated which resolves this problem)
 
-## Qt offering changes 2020 (updated {{% date 2022 4 14 %}})
+## Qt offering changes 2020 (updated {{% date 2023 9 2 %}})
 
 Qt just announced [Qt offering changes 2020](https://www.qt.io/blog/qt-offering-changes-2020).  
 Following is my opinion of this blog.
@@ -155,25 +155,6 @@ I will continue my amateur job of building Qt. I hope Qt for MCUs will be open s
 It uses completely different base structure than desktop and mobile one - it does not use current existing free software like Qt Base, etc..
 
 I did no studying or investigating about that part since my development at work has no relationship with Qt, so the above words is all I know about it.
-
-## Qt 6 support platforms (updated {{% date 2024 3 24 %}})
-
-See {{% QtBug 113979 "Qt 6.6 TQC Supported Targets" %}} and its predecessors.
-
-Currently I am building Qt 6 for following platforms:
-
-Windows 11 - VS2019, x86_64, host and target  
-Windows 11 - VS2022, x86_64 / arm64, host and target  
-Windows 11 - MinGW, x86_64, host and target  
-macOS 13 - toolchain provided by Apple with AppleClang, x86_64 / arm64_v8a, host and target, universal  
-Android - NDK, arm / x86 / arm64 / x86_64, target only. No x86 builds after 6.3  
-WebAssembly - emscripten, target only  
-Linux - toolchain provided by RedHat modified by Rocky Linux developers with GCC, x86_64, host only
-
-Qt 6.2 is LTS release, but with Qt offering changes 2020 Qt 6.2 release to community comes one year later than it is released to commericial users.  
-I will add bulid for static version for Qt 6.2, but I don't exactly know how Qt guys operate with their release...
-
-I am using OpenSSL 3 series for Qt 6.2 onwards.
 
 ## GPG sign (Updated {{% date 2021 2 6 %}})
 
@@ -224,7 +205,6 @@ Commericial-only Qt Open Source Release Date (ETA)
 | 5.15.14 | {{% date 2023 5 25 %}} | {{% date 2024 5 25 %}} |
 | 5.15.15 | {{% date 2023 8 31 %}} | {{% date 2024 8 31 %}} (Need to check if Qt will really release this version to opensource on that day) |
 | 5.15.16 | {{% date 2023 11 17 %}} | {{% date 2024 11 17 %}} |
-| 6.2.8 | {{% date 2023 4 18 %}} | {{% date 2024 4 18 %}} |
 | 6.2.9 | {{% date 2023 7 4 %}} | {{% date 2024 7 4 %}} |
 | 6.2.10 | {{% date 2023 10 9 %}} | {{% date 2024 10 9 %}} |
 | 6.2.11 | {{% date 2024 1 16 %}} | {{% date 2025 1 16 %}} |

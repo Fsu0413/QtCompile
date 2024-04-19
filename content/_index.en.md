@@ -32,21 +32,17 @@ Thanks for The Qt Company Ltd. and the programmers of Qt for their fantastic wor
 
 ## Update History
 
+### {{% date 2024 4 19 %}}
+Update Qt 6.2.8.  
+Rebuild versions built by llvm-mingw 18 series toolchain, using llvm-mingw 18.1.4.
+
+Remove "Qt 6 support platforms" section from notes since there is nothing we are planning for Qt 6 build right now.  
+Initial version of Qt 6.0 has released for more than 3 years, and all targets planned for build has achieved. This section have no future use.
+
 ### {{% date 2024 4 17 %}}
 Add builds of Qt 6.5 and 6.7, using VS2019.  
 Rebuild Qt 5.15 / 6.5 / 6.7 using updated VS2017 15.9.61 / VS2019 16.11.35 / VS2022 17.9.6. (except for static builds)
 
-### {{% date 2024 4 13 %}}
-Rebuild versions built by NDK r26 series toolchain, using NDK r26d.
-
-Happy birthday to me (the 32nd time)!
-
-### {{% date 2024 4 6 %}}
-Rebuild versions built by llvm-mingw 18 series toolchain, using llvm-mingw 18.1.3.
-
-### {{% date 2024 4 3 %}}
-Update Qt 6.7.0 versions.
-
-### Before Apr. 2024
+### Before {{% date 2024 4 13 %}}
 
 [Here](/Miscellaneous/Histories)

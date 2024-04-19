@@ -3,6 +3,17 @@
   "weight": 4
 }
 
+## {{% date 2024 4 13 %}}
+Rebuild versions built by NDK r26 series toolchain, using NDK r26d.
+
+Happy birthday to me (the 32nd time)!
+
+## {{% date 2024 4 6 %}}
+Rebuild versions built by llvm-mingw 18 series toolchain, using llvm-mingw 18.1.3.
+
+## {{% date 2024 4 3 %}}
+Update Qt 6.7.0 versions.
+
 ## {{% date 2024 3 28 %}}
 Update Qt 6.6.3 and Qt 6.7.0-rc2 versions.   
 Rebuild VS2022 and llvm-mingw 18 builds for Qt 5.15 / 6.2 / 6.5.

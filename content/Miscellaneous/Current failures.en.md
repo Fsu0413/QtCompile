@@ -25,7 +25,7 @@ There may be no that much love for MSVC than MinGW.....
 
 See {{% QtBug 96339 %}} - ~~temporarily~~ workaround using CMake 3.20.2
 
-## QtOpcUa issues (Updated {{% date 2023 12 25 %}})
+## QtOpcUa issues (Updated {{% date 2024 4 19 %}})
 
 QtOpcUa ~~is currently~~ was previously not compatible with OpenSSL 3.0 series.  
 Temporarily disabling QtOpcUa build until the Qt guys update their open62541 version.  
@@ -48,8 +48,12 @@ Update {{% date 2023 9 2 %}}:
 It is estimated that we can build QtOpcUa on Qt 6.2.7 which was released on {{% date 2023 1 2 %}}.
 
 Update {{% date 2023 12 25 %}}:
-Qt 6.2.7 released with open62541 version 1.1.  
+Qt 6.2.7 released with open62541 version still being 1.1.  
 We'd wait for next version of Qt 6.2.
+
+Update {{% date 204 4 19 %}}:
+Qt 6.2.8 released with open62541 version still being 1.1.  
+I don't want to wait again and again and will permanently disable QtOpcUa for Qt 6.2 series.
 
 ## Various failures building higher version of QtWebEngine on Qt 6.2.4
 
@@ -79,4 +83,4 @@ Subsequent patch of CVE-2023-38197 depends on patch of CVE-2023-37369 thus can't
 
 Update {{% date 2024 2 16 %}}:  
 There are currently many security patches which can not be applied on Qt 6.2 series.  
-Since I have had trouble during investigation of previous patches, I won't investigate any solution for the patches that can't be applied, instead I'll just apply the patches when it applies cleanly.
+Since I have had trouble during investigation of previous patches, I won't (possibily) investigate any solution for the patches that can't be applied, instead I'll just apply the patches when it applies cleanly.
