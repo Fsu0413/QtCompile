@@ -32,6 +32,14 @@ Thanks for The Qt Company Ltd. and the programmers of Qt for their fantastic wor
 
 ## Update History
 
+### {{% date 2024 5 12 %}}
+Rebuild all Qt 6 static builds. Remove OpenSSL builtin from these versions.  
+Reason is that it is [Repo](https://github.com/Fsu0413/QtCompile/issues/25)[rted](https://github.com/Fsu0413/QtCompile/issues/22) that Qt won't be working without OpenSSL header file.
+
+Rebuild versions (except for Qt 6.7) built by llvm-mingw 18 series toolchain, using llvm-mingw 18.1.5.
+
+Rebuild Qt 5.15 MinGW (GCC 11.2.0 and later, LLVM all) versions, fixed a problem which causes that the MySQL (MariaDB) plugin wasn't built.
+
 ### {{% date 2024 4 19 %}}
 Update Qt 6.2.8.  
 Rebuild versions built by llvm-mingw 18 series toolchain, using llvm-mingw 18.1.4.
@@ -39,10 +47,6 @@ Rebuild versions built by llvm-mingw 18 series toolchain, using llvm-mingw 18.1.
 Remove "Qt 6 support platforms" section from notes since there is nothing we are planning for Qt 6 build right now.  
 Initial version of Qt 6.0 has released for more than 3 years, and all targets planned for build has achieved. This section have no future use.
 
-### {{% date 2024 4 17 %}}
-Add builds of Qt 6.5 and 6.7, using VS2019.  
-Rebuild Qt 5.15 / 6.5 / 6.7 using updated VS2017 15.9.61 / VS2019 16.11.35 / VS2022 17.9.6. (except for static builds)
-
-### Before {{% date 2024 4 13 %}}
+### Before {{% date 2024 4 17 %}}
 
 [Here](/Miscellaneous/Histories)

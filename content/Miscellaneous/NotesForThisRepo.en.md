@@ -238,7 +238,8 @@ Version number in brackets are the version when the corresponding patch will be 
 | CVE-2023-45872 | - | [**×**](https://download.qt.io/archive/qt/6.2/CVE-2023-45872-qtsvg-6.2.10.diff "Official patch causes CONFLICT. Reason is unknown and will not be investigated.") (6.2.11) | - |
 | CVE-2023-51714 | √ [1](https://download.qt.io/archive/qt/5.15/0001-CVE-2023-51714-qtbase-5.15.diff) [2](https://download.qt.io/archive/qt/5.15/0002-CVE-2023-51714-qtbase-5.15.diff) (5.15.17) | √ [1](https://download.qt.io/archive/qt/6.2/0001-CVE-2023-51714-qtbase-6.2.diff) [2](https://download.qt.io/archive/qt/6.2/0002-CVE-2023-51714-qtbase-6.2.diff) (6.2.11) | √ [1](https://download.qt.io/archive/qt/6.5/0001-CVE-2023-51714-qtbase-6.5.diff) [2](https://download.qt.io/archive/qt/6.5/0002-CVE-2023-51714-qtbase-6.5.diff) (6.5.4) |
 | CVE-2024-25580 | [√](https://download.qt.io/archive/qt/5.15/CVE-2024-25580-qtbase-5.15.diff) (5.15.17) | [√](https://download.qt.io/archive/qt/6.2/CVE-2024-25580-qtbase-6.2.diff) (6.2.12) | [√](https://download.qt.io/archive/qt/6.5/CVE-2024-25580-qtbase-6.5.diff) (6.5.5) |
-| CVE-2024-30161 | - | - | [**x**](https://download.qt.io/archive/qt/6.5/CVE-2024-30161-qtbase-6.5.diff "Affects 6.5.4 and 6.5.5, not 6.5.3") （6.5.6） |
+| CVE-2024-30161 | - | - | [**x**](https://download.qt.io/archive/qt/6.5/CVE-2024-30161-qtbase-6.5.diff "Affects 6.5.4 and 6.5.5, not 6.5.3") (6.5.6) |
+| CVE-2024-33861 | - | - | [**x**](https://download.qt.io/archive/qt/6.5/CVE-2024-33861-qtbase-6.5.diff "Not affected. It affects only ICU build of Qt but we are not using ICU") (6.5.6) |
 
 Starting from {{% date 2024 3 12 %}} I provided some simple fixes about build problem.  
 Currently only LTS version will be patched.

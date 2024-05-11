@@ -112,13 +112,13 @@
 		"other": "从 Qt 6.2 开始 Qt 将 TLS 后端改成插件的形式。  \n这个版本包含下列后端：\n"
 	},
 	"fsqtbuild_i18n_qt6tls_openssl3": {
-		"other": "OpenSSL 3.0 系列，使用 `-DFEATURE_openssl=ON -DINPUT_openssl=linked` 来启用链接的 OpenSSL 支持"
+		"other": "OpenSSL 3.0 系列，使用 `-DFEATURE_openssl=ON -DINPUT_openssl=linked` 来启用链接的 OpenSSL 支持（仅动态构建）"
 	},
 	"fsqtbuild_i18n_qt6tls_openssl31": {
-		"other": "OpenSSL 3.1 系列，使用 `-DFEATURE_openssl=ON -DINPUT_openssl=linked` 来启用链接的 OpenSSL 支持"
+		"other": "OpenSSL 3.1 系列，使用 `-DFEATURE_openssl=ON -DINPUT_openssl=linked` 来启用链接的 OpenSSL 支持（仅动态构建）"
 	},
 	"fsqtbuild_i18n_qt6tls_openssl32": {
-		"other": "OpenSSL 3.2 系列，使用 `-DFEATURE_openssl=ON -DINPUT_openssl=linked` 来启用链接的 OpenSSL 支持"
+		"other": "OpenSSL 3.2 系列，使用 `-DFEATURE_openssl=ON -DINPUT_openssl=linked` 来启用链接的 OpenSSL 支持（仅动态构建）"
 	},
 	"fsqtbuild_i18n_qt6tls_schannel": {
 		"other": "Windows Secure Channel，使用 `-DFEATURE_schannel=ON`。在 MSVC 版本中支持 TLS 1.3"

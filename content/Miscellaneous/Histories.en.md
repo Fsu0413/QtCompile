@@ -3,6 +3,10 @@
   "weight": 4
 }
 
+## {{% date 2024 4 17 %}}
+Add builds of Qt 6.5 and 6.7, using VS2019.  
+Rebuild Qt 5.15 / 6.5 / 6.7 using updated VS2017 15.9.61 / VS2019 16.11.35 / VS2022 17.9.6. (except for static builds)
+
 ## {{% date 2024 4 13 %}}
 Rebuild versions built by NDK r26 series toolchain, using NDK r26d.
 

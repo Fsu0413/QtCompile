@@ -239,6 +239,7 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 | CVE-2023-51714 | √ [1](https://download.qt.io/archive/qt/5.15/0001-CVE-2023-51714-qtbase-5.15.diff) [2](https://download.qt.io/archive/qt/5.15/0002-CVE-2023-51714-qtbase-5.15.diff) （5.15.17） | √ [1](https://download.qt.io/archive/qt/6.2/0001-CVE-2023-51714-qtbase-6.2.diff) [2](https://download.qt.io/archive/qt/6.2/0002-CVE-2023-51714-qtbase-6.2.diff) （6.2.11） | √ [1](https://download.qt.io/archive/qt/6.5/0001-CVE-2023-51714-qtbase-6.5.diff) [2](https://download.qt.io/archive/qt/6.5/0002-CVE-2023-51714-qtbase-6.5.diff) （6.5.4） |
 | CVE-2024-25580 | [√](https://download.qt.io/archive/qt/5.15/CVE-2024-25580-qtbase-5.15.diff) （5.15.17） | [√](https://download.qt.io/archive/qt/6.2/CVE-2024-25580-qtbase-6.2.diff) （6.2.12） | [√](https://download.qt.io/archive/qt/6.5/CVE-2024-25580-qtbase-6.5.diff) （6.5.5） |
 | CVE-2024-30161 | - | - | [**x**](https://download.qt.io/archive/qt/6.5/CVE-2024-30161-qtbase-6.5.diff "影响 6.5.4 和 6.5.5，不影响 6.5.3") （6.5.6） |
+| CVE-2024-33861 | - | - | [**x**](https://download.qt.io/archive/qt/6.5/CVE-2024-33861-qtbase-6.5.diff "咱们不受影响。这个问题只影响附带 ICU 的构建，而咱们的构建不附带 ICU。") （6.5.6） |
 
 从 {{% date 2024 3 12 %}}开始我的 Qt 构建会包含一些简单的关于构建问题的修复。  
 目前只有 LTS 版本应用这些补丁。
