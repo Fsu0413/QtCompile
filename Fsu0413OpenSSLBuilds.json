@@ -4,51 +4,29 @@
       "version": "3.0.13",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "VS2019 16.11.34",
+      "toolchain": "VS2019 16.11.35",
       "arch": "x86_64",
       "variant": ""
     },
     "sort": 30001
-  },
-  "o3_0wx6v9st": {
-    "data": {
-      "version": "3.0.13",
-      "platform": "Windows",
-      "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "VS2019 16.11.34",
-      "arch": "x86_64",
-      "variant": "-static"
-    },
-    "sort": 30002
   },
   "o3_0wx6v2": {
     "data": {
       "version": "3.0.13",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "VS2022 17.9.5",
+      "toolchain": "VS2022 17.9.6",
       "arch": "x86_64",
       "variant": ""
     },
     "sort": 30003
-  },
-  "o3_0wx6v2st": {
-    "data": {
-      "version": "3.0.13",
-      "platform": "Windows",
-      "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "VS2022 17.9.5",
-      "arch": "x86_64",
-      "variant": "-static"
-    },
-    "sort": 30004
   },
   "o3_0wa6v2": {
     "data": {
       "version": "3.0.13",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "VS2022 17.9.5",
+      "toolchain": "VS2022 17.9.6",
       "arch": "arm64",
       "variant": ""
     },
@@ -65,17 +43,6 @@
     },
     "sort": 30006
   },
-  "o3_0wx6g1st": {
-    "data": {
-      "version": "3.0.13",
-      "platform": "Windows",
-      "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "MinGW-w64 w/ GCC 11.2.0",
-      "arch": "x86_64",
-      "variant": "-static"
-    },
-    "sort": 30007
-  },
   "o3_0wx6p2": {
     "data": {
       "version": "3.0.13",
@@ -86,17 +53,6 @@
       "variant": ""
     },
     "sort": 30008
-  },
-  "o3_0wx6p2st": {
-    "data": {
-      "version": "3.0.13",
-      "platform": "Windows",
-      "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "MinGW-w64 w/ GCC 12.2.0 UCRT",
-      "arch": "x86_64",
-      "variant": "-static"
-    },
-    "sort": 30009
   },
   "o3_0wx6g2": {
     "data": {
@@ -109,17 +65,6 @@
     },
     "sort": 30010
   },
-  "o3_0wx6g2st": {
-    "data": {
-      "version": "3.0.13",
-      "platform": "Windows",
-      "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "MinGW-w64 w/ GCC 12.2.0 MSVCRT",
-      "arch": "x86_64",
-      "variant": "-static"
-    },
-    "sort": 30011
-  },
   "o3_0wx6p3": {
     "data": {
       "version": "3.0.13",
@@ -131,17 +76,6 @@
     },
     "sort": 30012
   },
-  "o3_0wx6p3st": {
-    "data": {
-      "version": "3.0.13",
-      "platform": "Windows",
-      "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "MinGW-w64 w/ GCC 13.2.0 UCRT",
-      "arch": "x86_64",
-      "variant": "-static"
-    },
-    "sort": 30013
-  },
   "o3_0wx6g3": {
     "data": {
       "version": "3.0.13",
@@ -152,17 +86,6 @@
       "variant": ""
     },
     "sort": 30014
-  },
-  "o3_0wx6g3st": {
-    "data": {
-      "version": "3.0.13",
-      "platform": "Windows",
-      "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "MinGW-w64 w/ GCC 13.2.0 MSVCRT",
-      "arch": "x86_64",
-      "variant": "-static"
-    },
-    "sort": 30015
   },
   "o3_0wx6u6": {
     "data": {
