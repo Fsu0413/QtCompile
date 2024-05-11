@@ -1,6 +1,7 @@
 {
   "title": "Fsu0413's Original Qt builds",
-  "archetype": "home"
+  "archetype": "home",
+  "description": "Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available."
 }
 
 {{% notice style="info" title="Note"  icon="fas fa-info-circle" %}}

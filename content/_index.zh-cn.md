@@ -1,6 +1,7 @@
 {
   "title": "Fsu0413 的原版 Qt 构建",
-  "archetype": "home"
+  "archetype": "home",
+  "description": "个人构建的 Qt 4 以后的版本，附带内置的 SSL。包含多种选项。"
 }
 
 {{% notice style="info" title="备注"  icon="fas fa-info-circle" %}}
