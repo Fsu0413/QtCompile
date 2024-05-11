@@ -1,17 +1,61 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="zh-cn" dir="ltr" itemscope itemtype="http://schema.org/Article">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.125.1">
-    <meta name="generator" content="Relearn 5.27.0">
-    <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
+    <meta name="generator" content="Hugo 0.125.7">
+    <meta name="generator" content="Relearn 6.0.0">
+    <meta name="description" content="中文 / 多语言支持 虽然这个网站的维护者（Fsu0413，也就是我）是中国人，是中文母语使用者，不过此网站最初做成的时候是只有嘤文版的。
+目前我正在逐步在此网站上添加简体中文支持。
+得益于 Hugo 自带的多语言支持和 近期新换的 Relearn 主题，本网站 近期刚刚 支持多语言。
+目前的中文也仅仅处于刚刚开始组织语言的阶段。有一些内容还没有写完。
+不过主要内容均使用中文重新写了一遍，应该不会影响大家下载二进制文件了。
+对网站建设有建议和意见的可以去 GitHub 上提出 issue。
+网站镜像 最近 我在中国大陆使用 Gitee Pages 服务构建了一个此网站的镜像。
+这个镜像配置的默认语言改为简体中文。
+由于 Gitee 的自定义域名服务只提供给付费用户，目前中文站是在 Gitee 的域名下的。
+如果之后我对此服务感觉不错的话，我可能会付费使用这个服务。
+Gitee Pages （中国大陆，使用简体中文作为默认语言）
+Github Pages （美国，使用英语作为默认语言）
+可复现的构建 为了实现对 Qt 的可复现的构建，我使用一系列脚本进行构建和打包。
+如果您对构建方法感兴趣的话，可以参考下面的 GitHub 版本库。（不要 FORK 这个版本库！！！！）
+GitHub
+但是不太好的一点是这个网站是手工编辑的。
+这个网站的源码如下：
+GitHub
+对静态构建的备注 我不在大型项目中使用静态构建。我并不认为使用静态构建是很明智的选择。
+我可以理解使用静态构建的目的是为了仅发布单一可执行程序，但是事实上有如下限制：
+在程序不以 (L)GPLv3 许可协议发布的情况下，使用静态构建并不免费。 部分模块无法构建。（比如 WebEngine 之类的） 不能使用动态链接的插件。 在构建期不执行链接操作，会在后续过程中导致可能的链接问题 这边还是建议在大型项目中停止使用静态构建。相信我，这么做更加自由。
+静态 Lite 构建和静态 Full 构建 （2022 年 3 月 8 日更新） 静态 Lite 构建跳过了大多数 Qt 模块。只对 QtCore、QtDeclarative（QtQml 2），QtXmlPatterns 和 QtXXXExtras 进行了构建。">
     <meta name="author" content="Fsu0413">
+    <meta itemprop="name" content="本版本库的一些备注 :: Fsu0413 的原版 Qt 构建">
+    <meta itemprop="description" content="中文 / 多语言支持 虽然这个网站的维护者（Fsu0413，也就是我）是中国人，是中文母语使用者，不过此网站最初做成的时候是只有嘤文版的。
+目前我正在逐步在此网站上添加简体中文支持。
+得益于 Hugo 自带的多语言支持和 近期新换的 Relearn 主题，本网站 近期刚刚 支持多语言。
+目前的中文也仅仅处于刚刚开始组织语言的阶段。有一些内容还没有写完。
+不过主要内容均使用中文重新写了一遍，应该不会影响大家下载二进制文件了。
+对网站建设有建议和意见的可以去 GitHub 上提出 issue。
+网站镜像 最近 我在中国大陆使用 Gitee Pages 服务构建了一个此网站的镜像。
+这个镜像配置的默认语言改为简体中文。
+由于 Gitee 的自定义域名服务只提供给付费用户，目前中文站是在 Gitee 的域名下的。
+如果之后我对此服务感觉不错的话，我可能会付费使用这个服务。
+Gitee Pages （中国大陆，使用简体中文作为默认语言）
+Github Pages （美国，使用英语作为默认语言）
+可复现的构建 为了实现对 Qt 的可复现的构建，我使用一系列脚本进行构建和打包。
+如果您对构建方法感兴趣的话，可以参考下面的 GitHub 版本库。（不要 FORK 这个版本库！！！！）
+GitHub
+但是不太好的一点是这个网站是手工编辑的。
+这个网站的源码如下：
+GitHub
+对静态构建的备注 我不在大型项目中使用静态构建。我并不认为使用静态构建是很明智的选择。
+我可以理解使用静态构建的目的是为了仅发布单一可执行程序，但是事实上有如下限制：
+在程序不以 (L)GPLv3 许可协议发布的情况下，使用静态构建并不免费。 部分模块无法构建。（比如 WebEngine 之类的） 不能使用动态链接的插件。 在构建期不执行链接操作，会在后续过程中导致可能的链接问题 这边还是建议在大型项目中停止使用静态构建。相信我，这么做更加自由。
+静态 Lite 构建和静态 Full 构建 （2022 年 3 月 8 日更新） 静态 Lite 构建跳过了大多数 Qt 模块。只对 QtCore、QtDeclarative（QtQml 2），QtXmlPatterns 和 QtXXXExtras 进行了构建。">
+    <meta itemprop="wordCount" content="1204">
     <title>本版本库的一些备注 :: Fsu0413 的原版 Qt 构建</title>
     <link href="/qtcompile/miscellaneous/notesforthisrepo/index.html" rel="alternate" hreflang="x-default">
     <link href="/qtcompile/miscellaneous/notesforthisrepo/index.html" rel="alternate" hreflang="zh-cn">
     <link href="/qtcompile/en/miscellaneous/notesforthisrepo/index.html" rel="alternate" hreflang="en">
-    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/qtcompile/css/fontawesome-all.min.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/qtcompile/css/fontawesome-all.min.css" rel="stylesheet"></noscript>
     <link href="/qtcompile/css/nucleus.css" rel="stylesheet">
     <link href="/qtcompile/css/auto-complete.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/qtcompile/css/auto-complete.css" rel="stylesheet"></noscript>
@@ -22,8 +66,6 @@
     <link href="/qtcompile/css/chroma-relearn-dark.css" rel="stylesheet" id="R-variant-chroma-style">
     <link href="/qtcompile/css/variant.css" rel="stylesheet">
     <link href="/qtcompile/css/print.css" rel="stylesheet" media="print">
-    <link href="/qtcompile/css/ie.css" rel="stylesheet">
-    <script src="/qtcompile/js/url.js"></script>
     <script src="/qtcompile/js/variant.js"></script>
     <script>
       window.relearn = window.relearn || {};
@@ -31,7 +73,6 @@
       window.relearn.relBaseUri='..\/..\/..';
       window.relearn.absBaseUri='\/qtcompile';
       // variant stuff
-      window.relearn.themeVariantModifier='';
       window.variants && variants.init( [ 'relearn-dark', 'relearn-bright', 'relearn-light', 'zen-dark', 'zen-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
       // translations
       window.T_Copy_to_clipboard = `复制到剪贴板`;
@@ -490,6 +531,12 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 <td>-</td>
 <td><a href="https://download.qt.io/archive/qt/6.5/CVE-2024-30161-qtbase-6.5.diff" rel="external" target="_blank" title="影响 6.5.4 和 6.5.5，不影响 6.5.3"><strong>x</strong></a> （6.5.6）</td>
 </tr>
+<tr>
+<td>CVE-2024-33861</td>
+<td>-</td>
+<td>-</td>
+<td><a href="https://download.qt.io/archive/qt/6.5/CVE-2024-33861-qtbase-6.5.diff" rel="external" target="_blank" title="咱们不受影响。这个问题只影响附带 ICU 的构建，而咱们的构建不附带 ICU。"><strong>x</strong></a> （6.5.6）</td>
+</tr>
 </tbody>
 </table>
 <p>从 2024 年 3 月 12 日开始我的 Qt 构建会包含一些简单的关于构建问题的修复。<br>
@@ -677,7 +724,7 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Fri, 19 Apr 2024 21:29:35 CST</p>
+Site generated: Sun, 12 May 2024 07:28:56 CST</p>
 
           </div>
         </div>

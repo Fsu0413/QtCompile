@@ -1,17 +1,35 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="zh-cn" dir="ltr" itemscope itemtype="http://schema.org/Article">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.125.1">
-    <meta name="generator" content="Relearn 5.27.0">
-    <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
+    <meta name="generator" content="Hugo 0.125.7">
+    <meta name="generator" content="Relearn 6.0.0">
+    <meta name="description" content="OpenSSL 状态 我的 Qt 构建在大部分平台上附带链接的 OpenSSL。（目前只）使用 LTS 版本的 OpenSSL。
+下面是我构建 OpenSSL 的列表。
+OpenSSL 3 系列在 6.2.3 以及更新的 Qt 6 版本和于 2023 年 9 月 11 日后构建的 Qt 5.15 版本上使用。
+自从 Qt 6.2 将 tls 后端换成了插件，我们可以用多于一个的后端来构建。
+在 Windows 上我们使用 OpenSSL 和 SChannel，而在 macOS 上我们使用 OpenSSL 和 SecureTransport。
+备注 虽然我同时还在维护 openssl-externalCMake 我并未使用该项目构建 OpenSSL。
+那个项目构建出来的 OpenSSL 还没有通过测试用例。
+所以现在的所有构建还是使用原来的基于 Perl 的构建方法。
+OpenSSL 版本 目标平台 构建主机 工具链版本 架构 变体 3.0.13 Windows Windows 11 10.0.22631 VS2019 16.">
     <meta name="author" content="Fsu0413">
+    <meta itemprop="name" content="当前构建状态 :: Fsu0413 的原版 Qt 构建">
+    <meta itemprop="description" content="OpenSSL 状态 我的 Qt 构建在大部分平台上附带链接的 OpenSSL。（目前只）使用 LTS 版本的 OpenSSL。
+下面是我构建 OpenSSL 的列表。
+OpenSSL 3 系列在 6.2.3 以及更新的 Qt 6 版本和于 2023 年 9 月 11 日后构建的 Qt 5.15 版本上使用。
+自从 Qt 6.2 将 tls 后端换成了插件，我们可以用多于一个的后端来构建。
+在 Windows 上我们使用 OpenSSL 和 SChannel，而在 macOS 上我们使用 OpenSSL 和 SecureTransport。
+备注 虽然我同时还在维护 openssl-externalCMake 我并未使用该项目构建 OpenSSL。
+那个项目构建出来的 OpenSSL 还没有通过测试用例。
+所以现在的所有构建还是使用原来的基于 Perl 的构建方法。
+OpenSSL 版本 目标平台 构建主机 工具链版本 架构 变体 3.0.13 Windows Windows 11 10.0.22631 VS2019 16.">
+    <meta itemprop="wordCount" content="3337">
     <title>当前构建状态 :: Fsu0413 的原版 Qt 构建</title>
     <link href="/qtcompile/miscellaneous/current-build-status/index.html" rel="alternate" hreflang="x-default">
     <link href="/qtcompile/miscellaneous/current-build-status/index.html" rel="alternate" hreflang="zh-cn">
     <link href="/qtcompile/en/miscellaneous/current-build-status/index.html" rel="alternate" hreflang="en">
-    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/qtcompile/css/fontawesome-all.min.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/qtcompile/css/fontawesome-all.min.css" rel="stylesheet"></noscript>
     <link href="/qtcompile/css/nucleus.css" rel="stylesheet">
     <link href="/qtcompile/css/auto-complete.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/qtcompile/css/auto-complete.css" rel="stylesheet"></noscript>
@@ -22,8 +40,6 @@
     <link href="/qtcompile/css/chroma-relearn-dark.css" rel="stylesheet" id="R-variant-chroma-style">
     <link href="/qtcompile/css/variant.css" rel="stylesheet">
     <link href="/qtcompile/css/print.css" rel="stylesheet" media="print">
-    <link href="/qtcompile/css/ie.css" rel="stylesheet">
-    <script src="/qtcompile/js/url.js"></script>
     <script src="/qtcompile/js/variant.js"></script>
     <script>
       window.relearn = window.relearn || {};
@@ -31,7 +47,6 @@
       window.relearn.relBaseUri='..\/..\/..';
       window.relearn.absBaseUri='\/qtcompile';
       // variant stuff
-      window.relearn.themeVariantModifier='';
       window.variants && variants.init( [ 'relearn-dark', 'relearn-bright', 'relearn-light', 'zen-dark', 'zen-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
       // translations
       window.T_Copy_to_clipboard = `复制到剪贴板`;
@@ -308,7 +323,7 @@
 <td>3.0.13</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22631</td>
-<td>MinGW-w64 w/ LLVM 18.1.4 UCRT</td>
+<td>MinGW-w64 w/ LLVM 18.1.5 UCRT</td>
 <td>x86_64</td>
 <td></td>
 </tr>
@@ -316,7 +331,7 @@
 <td>3.0.13</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22631</td>
-<td>MinGW-w64 w/ LLVM 18.1.4 MSVCRT</td>
+<td>MinGW-w64 w/ LLVM 18.1.5 MSVCRT</td>
 <td>x86_64</td>
 <td></td>
 </tr>
@@ -733,14 +748,14 @@
 <td>3.1.23</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22631</td>
-<td>MinGW-w64 w/ LLVM 18.1.4 UCRT</td>
+<td>MinGW-w64 w/ LLVM 18.1.5 UCRT</td>
 <td>x86_64</td>
 </tr>
 <tr>
 <td>3.1.23</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22631</td>
-<td>MinGW-w64 w/ LLVM 18.1.4 MSVCRT</td>
+<td>MinGW-w64 w/ LLVM 18.1.5 MSVCRT</td>
 <td>x86_64</td>
 </tr>
 <tr>
@@ -838,14 +853,14 @@
 <td>3.3.8</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22631</td>
-<td>MinGW-w64 w/ LLVM 18.1.4 UCRT</td>
+<td>MinGW-w64 w/ LLVM 18.1.5 UCRT</td>
 <td>x86_64</td>
 </tr>
 <tr>
 <td>3.3.8</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22631</td>
-<td>MinGW-w64 w/ LLVM 18.1.4 MSVCRT</td>
+<td>MinGW-w64 w/ LLVM 18.1.5 MSVCRT</td>
 <td>x86_64</td>
 </tr>
 <tr>
@@ -1144,7 +1159,7 @@
 <td>5.15.13</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22631</td>
-<td>MinGW-w64 w/ LLVM 18.1.4 UCRT</td>
+<td>MinGW-w64 w/ LLVM 18.1.5 UCRT</td>
 <td>x86_64</td>
 <td></td>
 <td>√</td>
@@ -1153,7 +1168,7 @@
 <td>5.15.13</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22631</td>
-<td>MinGW-w64 w/ LLVM 18.1.4 MSVCRT</td>
+<td>MinGW-w64 w/ LLVM 18.1.5 MSVCRT</td>
 <td>x86_64</td>
 <td></td>
 <td>√</td>
@@ -1468,7 +1483,7 @@
 <td>6.2.8</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22631</td>
-<td>MinGW-w64 w/ LLVM 18.1.4 UCRT</td>
+<td>MinGW-w64 w/ LLVM 18.1.5 UCRT</td>
 <td>x86_64</td>
 <td></td>
 <td>√</td>
@@ -1477,7 +1492,7 @@
 <td>6.2.8</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22631</td>
-<td>MinGW-w64 w/ LLVM 18.1.4 MSVCRT</td>
+<td>MinGW-w64 w/ LLVM 18.1.5 MSVCRT</td>
 <td>x86_64</td>
 <td></td>
 <td>√</td>
@@ -1792,7 +1807,7 @@
 <td>6.5.3</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22631</td>
-<td>VS2022 17.9.0</td>
+<td>VS2022 17.9.6</td>
 <td>x86_64</td>
 <td>-static(Full)</td>
 <td>√</td>
@@ -1927,7 +1942,7 @@
 <td>6.5.3</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22631</td>
-<td>MinGW-w64 w/ LLVM 18.1.4 UCRT</td>
+<td>MinGW-w64 w/ LLVM 18.1.5 UCRT</td>
 <td>x86_64</td>
 <td></td>
 <td>√</td>
@@ -1936,7 +1951,7 @@
 <td>6.5.3</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22631</td>
-<td>MinGW-w64 w/ LLVM 18.1.4 MSVCRT</td>
+<td>MinGW-w64 w/ LLVM 18.1.5 MSVCRT</td>
 <td>x86_64</td>
 <td></td>
 <td>√</td>
@@ -1980,7 +1995,7 @@
 <tr>
 <td>6.5.3</td>
 <td>macOS</td>
-<td>macOS 13.6.4</td>
+<td>macOS 13.6.6</td>
 <td>AppleClang 14.0.3</td>
 <td>Universal (x86_64, arm64)</td>
 <td>-static(Full)</td>
@@ -2179,7 +2194,7 @@
 <td>6.7.0</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22631</td>
-<td>VS2019 16.11.35</td>
+<td>VS2022 17.9.6</td>
 <td>x86_64</td>
 <td></td>
 <td>√</td>
@@ -2188,7 +2203,7 @@
 <td>6.7.0</td>
 <td>Windows</td>
 <td>Windows 11 10.0.22631</td>
-<td>VS2022 17.9.6</td>
+<td>VS2019 16.11.35</td>
 <td>x86_64</td>
 <td></td>
 <td>√</td>
@@ -2395,13 +2410,13 @@
 </table>
 
 <div class="expand">
-    <input type="checkbox" id="R-expand-81c21adc6e67106a7e171fbe751154ef" aria-controls="R-expandcontent-81c21adc6e67106a7e171fbe751154ef" >
-    <label class="expand-label" for="R-expand-81c21adc6e67106a7e171fbe751154ef" >
+    <input type="checkbox" id="R-expand-37bcc10965d8597b79fe5f1f34f9f628" aria-controls="R-expandcontent-37bcc10965d8597b79fe5f1f34f9f628" >
+    <label class="expand-label" for="R-expand-37bcc10965d8597b79fe5f1f34f9f628" >
         <i class="fa-fw fas fa-chevron-down"></i>
         <i class="fa-fw fas fa-chevron-right"></i>
         遗留的构建
     </label>
-    <div id="R-expandcontent-81c21adc6e67106a7e171fbe751154ef" class="expand-content">
+    <div id="R-expandcontent-37bcc10965d8597b79fe5f1f34f9f628" class="expand-content">
 
 <table>
 <thead>
@@ -3116,7 +3131,7 @@
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Fri, 19 Apr 2024 21:29:35 CST</p>
+Site generated: Sun, 12 May 2024 07:28:56 CST</p>
 
           </div>
         </div>

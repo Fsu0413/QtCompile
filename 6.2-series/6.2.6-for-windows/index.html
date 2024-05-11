@@ -1,17 +1,27 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="zh-cn" dir="ltr" itemscope itemtype="http://schema.org/Article">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.125.1">
-    <meta name="generator" content="Relearn 5.27.0">
-    <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
+    <meta name="generator" content="Hugo 0.125.7">
+    <meta name="generator" content="Relearn 6.0.0">
+    <meta name="description" content="备注 此版本中附带下列数据库：
+SQLite （随 Qt 一起分发）：使用 -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF 内建在这份包里。 ODBC：使用 -DFEATURE_sql_odbc=ON 内建在这份包里。 MariaDB Connector/C 3.3 系列（仅动态构建）：使用 -DFEATURE_sql_mysql=ON 内建在这份包里。 备注 从 Qt 6.2 开始 Qt 将 TLS 后端改成插件的形式。
+这个版本包含下列后端：
+OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启用链接的 OpenSSL 支持（仅动态构建） Windows Secure Channel，使用 -DFEATURE_schannel=ON。在 MSVC 版本中支持 TLS 1.3 备注 所有构建配置了 -DFEATURE_icu=OFF 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 此版本不附带 QtWebEngine。
+补丁（多数是 CVE 问题） 我在构建 Qt 时应用补丁。想查看补丁列表的话，参考此页。 动态 / 共享构建 （x86_64） Windows-MSVC Qt6.2.8-Windows-x86_64-VS2019-16.11.35-20240418.7z 下载地址： SourceForge 链接 构建主机：Windows 11 10.">
     <meta name="author" content="Fsu0413">
+    <meta itemprop="name" content="6.2.8 的 Windows 版本 :: Fsu0413 的原版 Qt 构建">
+    <meta itemprop="description" content="备注 此版本中附带下列数据库：
+SQLite （随 Qt 一起分发）：使用 -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF 内建在这份包里。 ODBC：使用 -DFEATURE_sql_odbc=ON 内建在这份包里。 MariaDB Connector/C 3.3 系列（仅动态构建）：使用 -DFEATURE_sql_mysql=ON 内建在这份包里。 备注 从 Qt 6.2 开始 Qt 将 TLS 后端改成插件的形式。
+这个版本包含下列后端：
+OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启用链接的 OpenSSL 支持（仅动态构建） Windows Secure Channel，使用 -DFEATURE_schannel=ON。在 MSVC 版本中支持 TLS 1.3 备注 所有构建配置了 -DFEATURE_icu=OFF 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 此版本不附带 QtWebEngine。
+补丁（多数是 CVE 问题） 我在构建 Qt 时应用补丁。想查看补丁列表的话，参考此页。 动态 / 共享构建 （x86_64） Windows-MSVC Qt6.2.8-Windows-x86_64-VS2019-16.11.35-20240418.7z 下载地址： SourceForge 链接 构建主机：Windows 11 10.">
+    <meta itemprop="wordCount" content="320">
     <title>6.2.8 的 Windows 版本 :: Fsu0413 的原版 Qt 构建</title>
     <link href="/qtcompile/6.2-series/6.2.6-for-windows/index.html" rel="alternate" hreflang="x-default">
     <link href="/qtcompile/6.2-series/6.2.6-for-windows/index.html" rel="alternate" hreflang="zh-cn">
     <link href="/qtcompile/en/6.2-series/6.2.6-for-windows/index.html" rel="alternate" hreflang="en">
-    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/qtcompile/css/fontawesome-all.min.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/qtcompile/css/fontawesome-all.min.css" rel="stylesheet"></noscript>
     <link href="/qtcompile/css/nucleus.css" rel="stylesheet">
     <link href="/qtcompile/css/auto-complete.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/qtcompile/css/auto-complete.css" rel="stylesheet"></noscript>
@@ -22,8 +32,6 @@
     <link href="/qtcompile/css/chroma-relearn-dark.css" rel="stylesheet" id="R-variant-chroma-style">
     <link href="/qtcompile/css/variant.css" rel="stylesheet">
     <link href="/qtcompile/css/print.css" rel="stylesheet" media="print">
-    <link href="/qtcompile/css/ie.css" rel="stylesheet">
-    <script src="/qtcompile/js/url.js"></script>
     <script src="/qtcompile/js/variant.js"></script>
     <script>
       window.relearn = window.relearn || {};
@@ -31,7 +39,6 @@
       window.relearn.relBaseUri='..\/..\/..';
       window.relearn.absBaseUri='\/qtcompile';
       // variant stuff
-      window.relearn.themeVariantModifier='';
       window.variants && variants.init( [ 'relearn-dark', 'relearn-bright', 'relearn-light', 'zen-dark', 'zen-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
       // translations
       window.T_Copy_to_clipboard = `复制到剪贴板`;
@@ -156,7 +163,7 @@
 <p>从 Qt 6.2 开始 Qt 将 TLS 后端改成插件的形式。<br>
 这个版本包含下列后端：</p>
 <ol>
-<li>OpenSSL 3.0 系列，使用 <code>-DFEATURE_openssl=ON -DINPUT_openssl=linked</code> 来启用链接的 OpenSSL 支持</li>
+<li>OpenSSL 3.0 系列，使用 <code>-DFEATURE_openssl=ON -DINPUT_openssl=linked</code> 来启用链接的 OpenSSL 支持（仅动态构建）</li>
 <li>Windows Secure Channel，使用 <code>-DFEATURE_schannel=ON</code>。在 MSVC 版本中支持 TLS 1.3</li>
 </ol></div>
 </div>
@@ -289,40 +296,40 @@
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.8-Windows-x86_64-llvm-mingw-18.1.4-ucrt-20240418.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.8-Windows-x86_64-llvm-mingw-18.1.5-ucrt-20240511.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/MinGW-LLVM/Qt6.2.8-Windows-x86_64-llvm-mingw-18.1.4-ucrt-20240418.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/MinGW-LLVM/Qt6.2.8-Windows-x86_64-llvm-mingw-18.1.5-ucrt-20240511.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ LLVM 18.1.4 UCRT</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive grey"><a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20240417/llvm-mingw-20240417-ucrt-x86_64.zip" target="_blank"><span class="title">64 位 MinGW-w64 w/ LLVM 18.1.4 UCRT</span></a></span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ LLVM 18.1.5 UCRT</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive grey"><a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20240502/llvm-mingw-20240502-ucrt-x86_64.zip" target="_blank"><span class="title">64 位 MinGW-w64 w/ LLVM 18.1.5 UCRT</span></a></span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.8-Windows-x86_64-llvm-mingw-18.1.4-msvcrt-20240418.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.8-Windows-x86_64-llvm-mingw-18.1.5-msvcrt-20240511.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/MinGW-LLVM/Qt6.2.8-Windows-x86_64-llvm-mingw-18.1.4-msvcrt-20240418.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/MinGW-LLVM/Qt6.2.8-Windows-x86_64-llvm-mingw-18.1.5-msvcrt-20240511.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ LLVM 18.1.4 MSVCRT</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive grey"><a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20240417/llvm-mingw-20240417-msvcrt-x86_64.zip" target="_blank"><span class="title">64 位 MinGW-w64 w/ LLVM 18.1.4 MSVCRT</span></a></span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ LLVM 18.1.5 MSVCRT</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive grey"><a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20240502/llvm-mingw-20240502-msvcrt-x86_64.zip" target="_blank"><span class="title">64 位 MinGW-w64 w/ LLVM 18.1.5 MSVCRT</span></a></span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <h2 id="静态-full-构建">静态 <code>Full</code> 构建</h2>
 <h3 id="windows-msvc-1">Windows-MSVC</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.8-Windows-x86_64-VS2019-16.11.35-staticFull-20240418.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.8-Windows-x86_64-VS2019-16.11.35-staticFull-20240510.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/MSVC/Qt6.2.8-Windows-x86_64-VS2019-16.11.35-staticFull-20240418.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/MSVC/Qt6.2.8-Windows-x86_64-VS2019-16.11.35-staticFull-20240510.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">VS2019 16.11.35</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <h3 id="windows-mingw-1">Windows-MinGW</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.8-Windows-x86_64-MinGW11.2.0-staticFull-20240419.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.2.8-Windows-x86_64-MinGW11.2.0-staticFull-20240510.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/MinGW-GCC/Qt6.2.8-Windows-x86_64-MinGW11.2.0-staticFull-20240419.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.2/Windows-x86_64/MinGW-GCC/Qt6.2.8-Windows-x86_64-MinGW11.2.0-staticFull-20240510.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ GCC 11.2.0</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive grey"><a href="https://github.com/cristianadam/mingw-builds/releases/download/v11.2.0-rev4/x86_64-11.2.0-release-posix-seh-rt_v9-rev4.7z" target="_blank"><span class="title">64 位 MinGW-w64 w/ GCC 11.2.0</span></a></span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
@@ -467,7 +474,7 @@
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Fri, 19 Apr 2024 21:29:35 CST</p>
+Site generated: Sun, 12 May 2024 07:28:56 CST</p>
 
           </div>
         </div>

@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.125.1">
-    <meta name="generator" content="Relearn 5.27.0">
+    <meta name="generator" content="Hugo 0.125.7">
+    <meta name="generator" content="Relearn 6.0.0">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
+    <meta itemprop="name" content="Fsu0413&#39;s Original Qt builds">
+    <meta itemprop="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
+    <meta itemprop="wordCount" content="314">
     <title>Fsu0413&#39;s Original Qt builds</title>
     <link href="/qtcompile/index.html" rel="alternate" hreflang="x-default">
     <link href="/qtcompile/index.html" rel="alternate" hreflang="zh-cn">
     <link href="/qtcompile/en/index.html" rel="alternate" hreflang="en">
-    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/qtcompile/css/fontawesome-all.min.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/qtcompile/css/fontawesome-all.min.css" rel="stylesheet"></noscript>
     <link href="/qtcompile/css/nucleus.css" rel="stylesheet">
     <link href="/qtcompile/css/auto-complete.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/qtcompile/css/auto-complete.css" rel="stylesheet"></noscript>
@@ -22,8 +24,6 @@
     <link href="/qtcompile/css/chroma-relearn-dark.css" rel="stylesheet" id="R-variant-chroma-style">
     <link href="/qtcompile/css/variant.css" rel="stylesheet">
     <link href="/qtcompile/css/print.css" rel="stylesheet" media="print">
-    <link href="/qtcompile/css/ie.css" rel="stylesheet">
-    <script src="/qtcompile/js/url.js"></script>
     <script src="/qtcompile/js/variant.js"></script>
     <script>
       window.relearn = window.relearn || {};
@@ -31,7 +31,6 @@
       window.relearn.relBaseUri='..\/..';
       window.relearn.absBaseUri='\/qtcompile';
       // variant stuff
-      window.relearn.themeVariantModifier='';
       window.variants && variants.init( [ 'relearn-dark', 'relearn-bright', 'relearn-light', 'zen-dark', 'zen-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
       // translations
       window.T_Copy_to_clipboard = `Copy to clipboard`;
@@ -88,9 +87,9 @@
     <li><a href="#disclaimer">Disclaimer</a></li>
     <li><a href="#update-history">Update History</a>
       <ul>
+        <li><a href="#12th-may-2024">12th May, 2024</a></li>
         <li><a href="#19th-apr-2024">19th Apr, 2024</a></li>
-        <li><a href="#17th-apr-2024">17th Apr, 2024</a></li>
-        <li><a href="#before-13th-apr-2024">Before 13th Apr, 2024</a></li>
+        <li><a href="#before-17th-apr-2024">Before 17th Apr, 2024</a></li>
       </ul>
     </li>
   </ul>
@@ -132,13 +131,13 @@
 All links to OSDN are removed for now. Please download from SourceForge.</p>
 <p>Error during upload is as following (Output by WinSCP).</p>
 <div class="expand">
-    <input type="checkbox" id="R-expand-3335d9c1622da18025ce774b1735528d" aria-controls="R-expandcontent-3335d9c1622da18025ce774b1735528d" >
-    <label class="expand-label" for="R-expand-3335d9c1622da18025ce774b1735528d" >
+    <input type="checkbox" id="R-expand-4556e7cc61724d8f707dcf113204edb6" aria-controls="R-expandcontent-4556e7cc61724d8f707dcf113204edb6" >
+    <label class="expand-label" for="R-expand-4556e7cc61724d8f707dcf113204edb6" >
         <i class="fa-fw fas fa-chevron-down"></i>
         <i class="fa-fw fas fa-chevron-right"></i>
         Expand me&hellip;
     </label>
-    <div id="R-expandcontent-3335d9c1622da18025ce774b1735528d" class="expand-content">
+    <div id="R-expandcontent-4556e7cc61724d8f707dcf113204edb6" class="expand-content">
 <p>General failure (server should provide error description).<br>
 Error code: 4<br>
 Error message from server: Failure</p>
@@ -160,15 +159,17 @@ The code used is downloaded from <a href="http://download.qt.io" rel="external" 
 <strong>THESE PACKAGE ARE PROVIDED &ldquo;As is&rdquo;, I have no responsibility that you mess up your things with this binaries.</strong><br>
 Thanks for The Qt Company Ltd. and the programmers of Qt for their fantastic work!!</p>
 <h2 id="update-history">Update History</h2>
+<h3 id="12th-may-2024">12th May, 2024</h3>
+<p>Rebuild all Qt 6 static builds. Remove OpenSSL builtin from these versions.<br>
+Reason is that it is <a href="https://github.com/Fsu0413/QtCompile/issues/25" rel="external" target="_blank">Repo</a><a href="https://github.com/Fsu0413/QtCompile/issues/22" rel="external" target="_blank">rted</a> that Qt won&rsquo;t be working without OpenSSL header file.</p>
+<p>Rebuild versions (except for Qt 6.7) built by llvm-mingw 18 series toolchain, using llvm-mingw 18.1.5.</p>
+<p>Rebuild Qt 5.15 MinGW (GCC 11.2.0 and later, LLVM all) versions, fixed a problem which causes that the MySQL (MariaDB) plugin wasn&rsquo;t built.</p>
 <h3 id="19th-apr-2024">19th Apr, 2024</h3>
 <p>Update Qt 6.2.8.<br>
 Rebuild versions built by llvm-mingw 18 series toolchain, using llvm-mingw 18.1.4.</p>
 <p>Remove &ldquo;Qt 6 support platforms&rdquo; section from notes since there is nothing we are planning for Qt 6 build right now.<br>
 Initial version of Qt 6.0 has released for more than 3 years, and all targets planned for build has achieved. This section have no future use.</p>
-<h3 id="17th-apr-2024">17th Apr, 2024</h3>
-<p>Add builds of Qt 6.5 and 6.7, using VS2019.<br>
-Rebuild Qt 5.15 / 6.5 / 6.7 using updated VS2017 15.9.61 / VS2019 16.11.35 / VS2022 17.9.6. (except for static builds)</p>
-<h3 id="before-13th-apr-2024">Before 13th Apr, 2024</h3>
+<h3 id="before-17th-apr-2024">Before 17th Apr, 2024</h3>
 <p><a href="/qtcompile/en/miscellaneous/histories/index.html">Here</a></p>
 
             <footer class="footline">
@@ -299,7 +300,7 @@ Rebuild Qt 5.15 / 6.5 / 6.7 using updated VS2017 15.9.61 / VS2019 16.11.35 / VS2
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Fri, 19 Apr 2024 21:29:35 CST</p>
+Site generated: Sun, 12 May 2024 07:28:56 CST</p>
 
           </div>
         </div>

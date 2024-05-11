@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.125.1">
-    <meta name="generator" content="Relearn 5.27.0">
-    <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
+    <meta name="generator" content="Hugo 0.125.7">
+    <meta name="generator" content="Relearn 6.0.0">
+    <meta name="description" content="Chinese / Multilingual Support This website was English only since when it was initially built, although the maintainer of this website (me, Fsu0413) is a Chinese native speaker from the PRC.
+Currently I am gradually adding Simplified Chinese support on this website.
+Recently this website has gained multilingual support thanks to the built-in multilingual support of Hugo and the recently switched Relearn theme.
+Current Chinese support is in the stage of writing texts.">
     <meta name="author" content="Fsu0413">
+    <meta itemprop="name" content="Notes for this repository :: Fsu0413&#39;s Original Qt builds">
+    <meta itemprop="description" content="Chinese / Multilingual Support This website was English only since when it was initially built, although the maintainer of this website (me, Fsu0413) is a Chinese native speaker from the PRC.
+Currently I am gradually adding Simplified Chinese support on this website.
+Recently this website has gained multilingual support thanks to the built-in multilingual support of Hugo and the recently switched Relearn theme.
+Current Chinese support is in the stage of writing texts.">
+    <meta itemprop="wordCount" content="2598">
     <title>Notes for this repository :: Fsu0413&#39;s Original Qt builds</title>
     <link href="/qtcompile/miscellaneous/notesforthisrepo/index.html" rel="alternate" hreflang="x-default">
     <link href="/qtcompile/miscellaneous/notesforthisrepo/index.html" rel="alternate" hreflang="zh-cn">
     <link href="/qtcompile/en/miscellaneous/notesforthisrepo/index.html" rel="alternate" hreflang="en">
-    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/qtcompile/css/fontawesome-all.min.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/qtcompile/css/fontawesome-all.min.css" rel="stylesheet"></noscript>
     <link href="/qtcompile/css/nucleus.css" rel="stylesheet">
     <link href="/qtcompile/css/auto-complete.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/qtcompile/css/auto-complete.css" rel="stylesheet"></noscript>
@@ -22,8 +30,6 @@
     <link href="/qtcompile/css/chroma-relearn-dark.css" rel="stylesheet" id="R-variant-chroma-style">
     <link href="/qtcompile/css/variant.css" rel="stylesheet">
     <link href="/qtcompile/css/print.css" rel="stylesheet" media="print">
-    <link href="/qtcompile/css/ie.css" rel="stylesheet">
-    <script src="/qtcompile/js/url.js"></script>
     <script src="/qtcompile/js/variant.js"></script>
     <script>
       window.relearn = window.relearn || {};
@@ -31,7 +37,6 @@
       window.relearn.relBaseUri='..\/..\/..\/..';
       window.relearn.absBaseUri='\/qtcompile';
       // variant stuff
-      window.relearn.themeVariantModifier='';
       window.variants && variants.init( [ 'relearn-dark', 'relearn-bright', 'relearn-light', 'zen-dark', 'zen-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
       // translations
       window.T_Copy_to_clipboard = `Copy to clipboard`;
@@ -488,7 +493,13 @@ Version number in brackets are the version when the corresponding patch will be 
 <td>CVE-2024-30161</td>
 <td>-</td>
 <td>-</td>
-<td><a href="https://download.qt.io/archive/qt/6.5/CVE-2024-30161-qtbase-6.5.diff" rel="external" target="_blank" title="Affects 6.5.4 and 6.5.5, not 6.5.3"><strong>x</strong></a> （6.5.6）</td>
+<td><a href="https://download.qt.io/archive/qt/6.5/CVE-2024-30161-qtbase-6.5.diff" rel="external" target="_blank" title="Affects 6.5.4 and 6.5.5, not 6.5.3"><strong>x</strong></a> (6.5.6)</td>
+</tr>
+<tr>
+<td>CVE-2024-33861</td>
+<td>-</td>
+<td>-</td>
+<td><a href="https://download.qt.io/archive/qt/6.5/CVE-2024-33861-qtbase-6.5.diff" rel="external" target="_blank" title="Not affected. It affects only ICU build of Qt but we are not using ICU"><strong>x</strong></a> (6.5.6)</td>
 </tr>
 </tbody>
 </table>
@@ -677,7 +688,7 @@ Currently only LTS version will be patched.</p>
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Fri, 19 Apr 2024 21:29:36 CST</p>
+Site generated: Sun, 12 May 2024 07:28:56 CST</p>
 
           </div>
         </div>

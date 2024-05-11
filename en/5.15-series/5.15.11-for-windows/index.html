@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.125.1">
-    <meta name="generator" content="Relearn 5.27.0">
-    <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
+    <meta name="generator" content="Hugo 0.125.7">
+    <meta name="generator" content="Relearn 6.0.0">
+    <meta name="description" content="Note Following database backend is distributed with this version:
+SQLite (distributed with Qt): Built in the package using command -sql-sqlite. ODBC: Built in the package using command -sql-odbc. MariaDB Connector/C 3.1 series (Dynamic builds only): Built in the package using command -sql-mysql. Note All builds have -no-openssl -schannel, which means that Windows Secure Channel is used for TLS Backend.
+This backend is supported by Qt since Qt 5.13. Note All builds have -no-icu because I think the ICU library is too big and, in most of the conditions, useless for common users.">
     <meta name="author" content="Fsu0413">
+    <meta itemprop="name" content="5.15.13 for Windows :: Fsu0413&#39;s Original Qt builds">
+    <meta itemprop="description" content="Note Following database backend is distributed with this version:
+SQLite (distributed with Qt): Built in the package using command -sql-sqlite. ODBC: Built in the package using command -sql-odbc. MariaDB Connector/C 3.1 series (Dynamic builds only): Built in the package using command -sql-mysql. Note All builds have -no-openssl -schannel, which means that Windows Secure Channel is used for TLS Backend.
+This backend is supported by Qt since Qt 5.13. Note All builds have -no-icu because I think the ICU library is too big and, in most of the conditions, useless for common users.">
+    <meta itemprop="wordCount" content="642">
     <title>5.15.13 for Windows :: Fsu0413&#39;s Original Qt builds</title>
     <link href="/qtcompile/5.15-series/5.15.11-for-windows/index.html" rel="alternate" hreflang="x-default">
     <link href="/qtcompile/5.15-series/5.15.11-for-windows/index.html" rel="alternate" hreflang="zh-cn">
     <link href="/qtcompile/en/5.15-series/5.15.11-for-windows/index.html" rel="alternate" hreflang="en">
-    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/qtcompile/css/fontawesome-all.min.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/qtcompile/css/fontawesome-all.min.css" rel="stylesheet"></noscript>
     <link href="/qtcompile/css/nucleus.css" rel="stylesheet">
     <link href="/qtcompile/css/auto-complete.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/qtcompile/css/auto-complete.css" rel="stylesheet"></noscript>
@@ -22,8 +28,6 @@
     <link href="/qtcompile/css/chroma-relearn-dark.css" rel="stylesheet" id="R-variant-chroma-style">
     <link href="/qtcompile/css/variant.css" rel="stylesheet">
     <link href="/qtcompile/css/print.css" rel="stylesheet" media="print">
-    <link href="/qtcompile/css/ie.css" rel="stylesheet">
-    <script src="/qtcompile/js/url.js"></script>
     <script src="/qtcompile/js/variant.js"></script>
     <script>
       window.relearn = window.relearn || {};
@@ -31,7 +35,6 @@
       window.relearn.relBaseUri='..\/..\/..\/..';
       window.relearn.absBaseUri='\/qtcompile';
       // variant stuff
-      window.relearn.themeVariantModifier='';
       window.variants && variants.init( [ 'relearn-dark', 'relearn-bright', 'relearn-light', 'zen-dark', 'zen-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
       // translations
       window.T_Copy_to_clipboard = `Copy to clipboard`;
@@ -242,85 +245,85 @@ I build Qt with patches. See <a href="/qtcompile/en/miscellaneous/notesforthisre
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-MinGW11.2.0-20240315.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-MinGW11.2.0-20240512.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/Qt5.15.13-Windows-x86_64-MinGW11.2.0-20240315.7z" target="_blank"><span class="title">SourceForge link</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MinGW-GCC/Qt5.15.13-Windows-x86_64-MinGW11.2.0-20240512.7z" target="_blank"><span class="title">SourceForge link</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">MinGW-w64 w/ GCC 11.2.0</td></tr><tr><td width="20%"><b>MinGW Used:</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive grey"><a href="https://github.com/cristianadam/mingw-builds/releases/download/v11.2.0-rev4/x86_64-11.2.0-release-posix-seh-rt_v9-rev4.7z" target="_blank"><span class="title">64-bit MinGW-w64 w/ GCC 11.2.0</span></a></span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-MinGW12.2.0-ucrt-20240315.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-MinGW12.2.0-ucrt-20240512.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/Qt5.15.13-Windows-x86_64-MinGW12.2.0-ucrt-20240315.7z" target="_blank"><span class="title">SourceForge link</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MinGW-GCC/Qt5.15.13-Windows-x86_64-MinGW12.2.0-ucrt-20240512.7z" target="_blank"><span class="title">SourceForge link</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">MinGW-w64 w/ GCC 12.2.0 UCRT</td></tr><tr><td width="20%"><b>MinGW Used:</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive grey"><a href="https://github.com/niXman/mingw-builds-binaries/releases/download/12.2.0-rt_v10-rev2/x86_64-12.2.0-release-posix-seh-ucrt-rt_v10-rev2.7z" target="_blank"><span class="title">64-bit MinGW-w64 w/ GCC 12.2.0 UCRT</span></a></span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-MinGW12.2.0-msvcrt-20240315.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-MinGW12.2.0-msvcrt-20240512.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/Qt5.15.13-Windows-x86_64-MinGW12.2.0-msvcrt-20240315.7z" target="_blank"><span class="title">SourceForge link</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MinGW-GCC/Qt5.15.13-Windows-x86_64-MinGW12.2.0-msvcrt-20240512.7z" target="_blank"><span class="title">SourceForge link</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">MinGW-w64 w/ GCC 12.2.0 MSVCRT</td></tr><tr><td width="20%"><b>MinGW Used:</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive grey"><a href="https://github.com/niXman/mingw-builds-binaries/releases/download/12.2.0-rt_v10-rev2/x86_64-12.2.0-release-posix-seh-msvcrt-rt_v10-rev2.7z" target="_blank"><span class="title">64-bit MinGW-w64 w/ GCC 12.2.0 MSVCRT</span></a></span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <h3 id="windows-mingw-llvm">Windows-MinGW-LLVM</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-llvm-mingw-16.0.6-ucrt-20240316.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-llvm-mingw-16.0.6-ucrt-20240512.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/Qt5.15.13-Windows-x86_64-llvm-mingw-16.0.6-ucrt-20240316.7z" target="_blank"><span class="title">SourceForge link</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MinGW-LLVM/Qt5.15.13-Windows-x86_64-llvm-mingw-16.0.6-ucrt-20240512.7z" target="_blank"><span class="title">SourceForge link</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">MinGW-w64 w/ LLVM 16.0.6 UCRT</td></tr><tr><td width="20%"><b>MinGW Used:</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive grey"><a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20230614/llvm-mingw-20230614-ucrt-x86_64.zip" target="_blank"><span class="title">64-bit MinGW-W64 w/ LLVM 16.0.6 UCRT</span></a></span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-llvm-mingw-16.0.6-msvcrt-20240316.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-llvm-mingw-16.0.6-msvcrt-20240512.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/Qt5.15.13-Windows-x86_64-llvm-mingw-16.0.6-msvcrt-20240316.7z" target="_blank"><span class="title">SourceForge link</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MinGW-LLVM/Qt5.15.13-Windows-x86_64-llvm-mingw-16.0.6-msvcrt-20240512.7z" target="_blank"><span class="title">SourceForge link</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">MinGW-w64 w/ LLVM 16.0.6 MSVCRT</td></tr><tr><td width="20%"><b>MinGW Used:</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive grey"><a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20230614/llvm-mingw-20230614-msvcrt-x86_64.zip" target="_blank"><span class="title">64-bit MinGW-W64 w/ LLVM 16.0.6 MSVCRT</span></a></span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-llvm-mingw-17.0.6-ucrt-20240316.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-llvm-mingw-17.0.6-ucrt-20240512.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/Qt5.15.13-Windows-x86_64-llvm-mingw-17.0.6-ucrt-20240316.7z" target="_blank"><span class="title">SourceForge link</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MinGW-LLVM/Qt5.15.13-Windows-x86_64-llvm-mingw-17.0.6-ucrt-20240512.7z" target="_blank"><span class="title">SourceForge link</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">MinGW-w64 w/ LLVM 17.0.6 UCRT</td></tr><tr><td width="20%"><b>MinGW Used:</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive grey"><a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20231128/llvm-mingw-20231128-ucrt-x86_64.zip" target="_blank"><span class="title">64-bit MinGW-W64 w/ LLVM 17.0.6 UCRT</span></a></span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-llvm-mingw-17.0.6-msvcrt-20240316.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-llvm-mingw-17.0.6-msvcrt-20240512.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/Qt5.15.13-Windows-x86_64-llvm-mingw-17.0.6-msvcrt-20240316.7z" target="_blank"><span class="title">SourceForge link</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MinGW-LLVM/Qt5.15.13-Windows-x86_64-llvm-mingw-17.0.6-msvcrt-20240512.7z" target="_blank"><span class="title">SourceForge link</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">MinGW-w64 w/ LLVM 17.0.6 MSVCRT</td></tr><tr><td width="20%"><b>MinGW Used:</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive grey"><a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20231128/llvm-mingw-20231128-msvcrt-x86_64.zip" target="_blank"><span class="title">64-bit MinGW-W64 w/ LLVM 17.0.6 MSVCRT</span></a></span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-llvm-mingw-18.1.4-ucrt-20240419.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-llvm-mingw-18.1.5-ucrt-20240512.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MinGW-LLVM/Qt5.15.13-Windows-x86_64-llvm-mingw-18.1.4-ucrt-20240419.7z" target="_blank"><span class="title">SourceForge link</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MinGW-LLVM/Qt5.15.13-Windows-x86_64-llvm-mingw-18.1.5-ucrt-20240512.7z" target="_blank"><span class="title">SourceForge link</span></a></span></td>
             </tr>
-            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">MinGW-w64 w/ LLVM 18.1.4 UCRT</td></tr><tr><td width="20%"><b>MinGW Used:</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive grey"><a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20240417/llvm-mingw-20240417-ucrt-x86_64.zip" target="_blank"><span class="title">64-bit MinGW-w64 w/ LLVM 18.1.4 UCRT</span></a></span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">MinGW-w64 w/ LLVM 18.1.5 UCRT</td></tr><tr><td width="20%"><b>MinGW Used:</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive grey"><a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20240502/llvm-mingw-20240502-ucrt-x86_64.zip" target="_blank"><span class="title">64-bit MinGW-w64 w/ LLVM 18.1.5 UCRT</span></a></span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-llvm-mingw-18.1.4-msvcrt-20240419.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-llvm-mingw-18.1.5-msvcrt-20240512.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MinGW-LLVM/Qt5.15.13-Windows-x86_64-llvm-mingw-18.1.4-msvcrt-20240419.7z" target="_blank"><span class="title">SourceForge link</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MinGW-LLVM/Qt5.15.13-Windows-x86_64-llvm-mingw-18.1.5-msvcrt-20240512.7z" target="_blank"><span class="title">SourceForge link</span></a></span></td>
             </tr>
-            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">MinGW-w64 w/ LLVM 18.1.4 MSVCRT</td></tr><tr><td width="20%"><b>MinGW Used:</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive grey"><a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20240417/llvm-mingw-20240417-msvcrt-x86_64.zip" target="_blank"><span class="title">64-bit MinGW-w64 w/ LLVM 18.1.4 MSVCRT</span></a></span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">MinGW-w64 w/ LLVM 18.1.5 MSVCRT</td></tr><tr><td width="20%"><b>MinGW Used:</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive grey"><a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20240502/llvm-mingw-20240502-msvcrt-x86_64.zip" target="_blank"><span class="title">64-bit MinGW-w64 w/ LLVM 18.1.5 MSVCRT</span></a></span></td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <h2 id="static-full-builds">Static <code>Full</code> Builds</h2>
@@ -580,7 +583,7 @@ I build Qt with patches. See <a href="/qtcompile/en/miscellaneous/notesforthisre
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Fri, 19 Apr 2024 21:29:35 CST</p>
+Site generated: Sun, 12 May 2024 07:28:56 CST</p>
 
           </div>
         </div>

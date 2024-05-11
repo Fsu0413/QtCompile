@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.125.1">
-    <meta name="generator" content="Relearn 5.27.0">
-    <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
+    <meta name="generator" content="Hugo 0.125.7">
+    <meta name="generator" content="Relearn 6.0.0">
+    <meta name="description" content="Note Following database backend is distributed with this version:
+SQLite (distributed with Qt): Built in the package using command -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF. iODBC (built in macOS yet deprecated since. Dynamic builds only): Built in the package using command -DFEATURE_sql_odbc=ON. MariaDB Connector/C 3.3 series (Dynamic builds only): Built in the package using command -DFEATURE_sql_mysql=ON. Note Since Qt 6.2 Qt made TLS backends as plugin.
+Following backend(s) are built in the package:">
     <meta name="author" content="Fsu0413">
+    <meta itemprop="name" content="6.5.3 for macOS :: Fsu0413&#39;s Original Qt builds">
+    <meta itemprop="description" content="Note Following database backend is distributed with this version:
+SQLite (distributed with Qt): Built in the package using command -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF. iODBC (built in macOS yet deprecated since. Dynamic builds only): Built in the package using command -DFEATURE_sql_odbc=ON. MariaDB Connector/C 3.3 series (Dynamic builds only): Built in the package using command -DFEATURE_sql_mysql=ON. Note Since Qt 6.2 Qt made TLS backends as plugin.
+Following backend(s) are built in the package:">
+    <meta itemprop="wordCount" content="191">
     <title>6.5.3 for macOS :: Fsu0413&#39;s Original Qt builds</title>
     <link href="/qtcompile/6.5-series/6.5.3-for-macos/index.html" rel="alternate" hreflang="x-default">
     <link href="/qtcompile/6.5-series/6.5.3-for-macos/index.html" rel="alternate" hreflang="zh-cn">
     <link href="/qtcompile/en/6.5-series/6.5.3-for-macos/index.html" rel="alternate" hreflang="en">
-    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/qtcompile/css/fontawesome-all.min.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/qtcompile/css/fontawesome-all.min.css" rel="stylesheet"></noscript>
     <link href="/qtcompile/css/nucleus.css" rel="stylesheet">
     <link href="/qtcompile/css/auto-complete.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/qtcompile/css/auto-complete.css" rel="stylesheet"></noscript>
@@ -22,8 +28,6 @@
     <link href="/qtcompile/css/chroma-relearn-dark.css" rel="stylesheet" id="R-variant-chroma-style">
     <link href="/qtcompile/css/variant.css" rel="stylesheet">
     <link href="/qtcompile/css/print.css" rel="stylesheet" media="print">
-    <link href="/qtcompile/css/ie.css" rel="stylesheet">
-    <script src="/qtcompile/js/url.js"></script>
     <script src="/qtcompile/js/variant.js"></script>
     <script>
       window.relearn = window.relearn || {};
@@ -31,7 +35,6 @@
       window.relearn.relBaseUri='..\/..\/..\/..';
       window.relearn.absBaseUri='\/qtcompile';
       // variant stuff
-      window.relearn.themeVariantModifier='';
       window.variants && variants.init( [ 'relearn-dark', 'relearn-bright', 'relearn-light', 'zen-dark', 'zen-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
       // translations
       window.T_Copy_to_clipboard = `Copy to clipboard`;
@@ -148,7 +151,7 @@
 <p>Since Qt 6.2 Qt made TLS backends as plugin.<br>
 Following backend(s) are built in the package:</p>
 <ol>
-<li>OpenSSL 3.0 series using <code>-DFEATURE_openssl=ON -DINPUT_openssl=linked</code> for enabling linked OpenSSL support</li>
+<li>OpenSSL 3.0 series using <code>-DFEATURE_openssl=ON -DINPUT_openssl=linked</code> for enabling linked OpenSSL support (Dynamic builds only)</li>
 <li>Secure Transport library provided by macOS using <code>-DFEATURE_securetransport=ON</code></li>
 </ol></div>
 </div>
@@ -200,12 +203,12 @@ I&rsquo;ll provide only Universal Binary builds of macOS of this version. <a hre
 <h2 id="static-full-builds">Static <code>Full</code> Builds</h2>
 <h3 id="macos-universal-1">macOS-Universal</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-macOS-Universal-AppleClang14.0.3-staticFull-20240215.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-macOS-Universal-AppleClang14.0.3-staticFull-20240510.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/macOS-Universal/Qt6.5.3-macOS-Universal-AppleClang14.0.3-staticFull-20240215.tar.xz" target="_blank"><span class="title">SourceForge link</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/macOS-Universal/Qt6.5.3-macOS-Universal-AppleClang14.0.3-staticFull-20240510.tar.xz" target="_blank"><span class="title">SourceForge link</span></a></span></td>
             </tr>
-            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 13.6.4</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">AppleClang 14.0.3</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 13.6.6</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">AppleClang 14.0.3</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 
@@ -337,7 +340,7 @@ I&rsquo;ll provide only Universal Binary builds of macOS of this version. <a hre
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Fri, 19 Apr 2024 21:29:35 CST</p>
+Site generated: Sun, 12 May 2024 07:28:56 CST</p>
 
           </div>
         </div>

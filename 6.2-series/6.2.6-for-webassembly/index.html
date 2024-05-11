@@ -1,17 +1,29 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="zh-cn" dir="ltr" itemscope itemtype="http://schema.org/Article">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.125.1">
-    <meta name="generator" content="Relearn 5.27.0">
-    <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
+    <meta name="generator" content="Hugo 0.125.7">
+    <meta name="generator" content="Relearn 6.0.0">
+    <meta name="description" content=" 备注 Qt 提供的配置文件中，针对 WebAssembly 进行限制，禁用了 QtSql 的构建。
+所以这个版本没有数据库后端。
+备注 所有构建配置了 -DFEATURE_icu=OFF 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 所有包使用了于 Qt Wiki 中推荐的 emscripten SDK 版本 2.0.14。
+WebAssembly 不支持二进制兼容性。在构建自己的代码的时候必须要使用 SDK 版本 2.0.14，否则会出现不可预料的错误。
+所有构建通过使用 -DFEATURE_thread=ON 启用了线程支持。
+备注 Qt 在 WebAssembly 平台上只能构建静态库。 补丁（多数是 CVE 问题） 我在构建 Qt 时应用补丁。想查看补丁列表的话，参考此页。 静态构建 交叉构建主机：Windows Qt6.2.8-WebAssembly-emscripten2.0.14-xWindows-x86_64-MinGW11.2.0-20240419.7z 下载地址： SourceForge 链接 构建主机：Windows 11 10.0.22631工具链版本：emscripten-2.0.14备注： 交叉构建主机：Linux Qt6.2.8-WebAssembly-emscripten2.0.14-xLinux-x86_64-gcc8.5.0-20240418.tar.xz 下载地址： SourceForge 链接 构建主机：Rocky Linux 8.9工具链版本：emscripten-2.0.14备注： 交叉构建主机：macOS Qt6.2.8-WebAssembly-emscripten2.0.14-xmacOS-Universal-AppleClang14.0.3-20240418.tar.xz 下载地址： SourceForge 链接 构建主机：macOS 13.6.6工具链版本：emscripten-2.0.14备注： ">
     <meta name="author" content="Fsu0413">
+    <meta itemprop="name" content="6.2.8 的 WebAssembly 版本 :: Fsu0413 的原版 Qt 构建">
+    <meta itemprop="description" content=" 备注 Qt 提供的配置文件中，针对 WebAssembly 进行限制，禁用了 QtSql 的构建。
+所以这个版本没有数据库后端。
+备注 所有构建配置了 -DFEATURE_icu=OFF 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 所有包使用了于 Qt Wiki 中推荐的 emscripten SDK 版本 2.0.14。
+WebAssembly 不支持二进制兼容性。在构建自己的代码的时候必须要使用 SDK 版本 2.0.14，否则会出现不可预料的错误。
+所有构建通过使用 -DFEATURE_thread=ON 启用了线程支持。
+备注 Qt 在 WebAssembly 平台上只能构建静态库。 补丁（多数是 CVE 问题） 我在构建 Qt 时应用补丁。想查看补丁列表的话，参考此页。 静态构建 交叉构建主机：Windows Qt6.2.8-WebAssembly-emscripten2.0.14-xWindows-x86_64-MinGW11.2.0-20240419.7z 下载地址： SourceForge 链接 构建主机：Windows 11 10.0.22631工具链版本：emscripten-2.0.14备注： 交叉构建主机：Linux Qt6.2.8-WebAssembly-emscripten2.0.14-xLinux-x86_64-gcc8.5.0-20240418.tar.xz 下载地址： SourceForge 链接 构建主机：Rocky Linux 8.9工具链版本：emscripten-2.0.14备注： 交叉构建主机：macOS Qt6.2.8-WebAssembly-emscripten2.0.14-xmacOS-Universal-AppleClang14.0.3-20240418.tar.xz 下载地址： SourceForge 链接 构建主机：macOS 13.6.6工具链版本：emscripten-2.0.14备注： ">
+    <meta itemprop="wordCount" content="66">
     <title>6.2.8 的 WebAssembly 版本 :: Fsu0413 的原版 Qt 构建</title>
     <link href="/qtcompile/6.2-series/6.2.6-for-webassembly/index.html" rel="alternate" hreflang="x-default">
     <link href="/qtcompile/6.2-series/6.2.6-for-webassembly/index.html" rel="alternate" hreflang="zh-cn">
     <link href="/qtcompile/en/6.2-series/6.2.6-for-webassembly/index.html" rel="alternate" hreflang="en">
-    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/qtcompile/css/fontawesome-all.min.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/qtcompile/css/fontawesome-all.min.css" rel="stylesheet"></noscript>
     <link href="/qtcompile/css/nucleus.css" rel="stylesheet">
     <link href="/qtcompile/css/auto-complete.css" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/qtcompile/css/auto-complete.css" rel="stylesheet"></noscript>
@@ -22,8 +34,6 @@
     <link href="/qtcompile/css/chroma-relearn-dark.css" rel="stylesheet" id="R-variant-chroma-style">
     <link href="/qtcompile/css/variant.css" rel="stylesheet">
     <link href="/qtcompile/css/print.css" rel="stylesheet" media="print">
-    <link href="/qtcompile/css/ie.css" rel="stylesheet">
-    <script src="/qtcompile/js/url.js"></script>
     <script src="/qtcompile/js/variant.js"></script>
     <script>
       window.relearn = window.relearn || {};
@@ -31,7 +41,6 @@
       window.relearn.relBaseUri='..\/..\/..';
       window.relearn.absBaseUri='\/qtcompile';
       // variant stuff
-      window.relearn.themeVariantModifier='';
       window.variants && variants.init( [ 'relearn-dark', 'relearn-bright', 'relearn-light', 'zen-dark', 'zen-light', 'learn', 'neon', 'red', 'blue', 'green' ] );
       // translations
       window.T_Copy_to_clipboard = `复制到剪贴板`;
@@ -328,7 +337,7 @@ Qt 在 WebAssembly 平台上只能构建静态库。</div>
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Fri, 19 Apr 2024 21:29:35 CST</p>
+Site generated: Sun, 12 May 2024 07:28:56 CST</p>
 
           </div>
         </div>
