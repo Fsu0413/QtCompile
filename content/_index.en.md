@@ -24,6 +24,12 @@ Common reasons for the Error code 4 are:
 {{% /expand %}}
 {{% /notice %}}
 
+## Computer with Windows installed Fails
+
+### {{% date 2024 5 20 %}}
+My computer with Windows installed fails so unable to update here.  
+As far as I can see patches for CVE-2024-36048, Qt 5.15.14 with QtWebEngine 5.15.17 and Qt 6.7.1 can only be updated after my computer been repaired.
+
 ## Disclaimer
 
 These binaries built by Fsu0413 are __TOTALLY UNTESTED__. Use at your own risk.  
