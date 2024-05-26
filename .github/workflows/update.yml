@@ -38,11 +38,10 @@ jobs:
         SOURCE_BRANCH: ge-pages
         DESTINATION_REPO: git@gitee.com:Fsu0413/QtCompile.git
         DESTINATION_BRANCH: ge-pages
-    - uses: yanglbme/gitee-pages-action@main
-      with:
-        gitee-username: Fsu0413
-        gitee-password: ${{ secrets.GITEE_PASSWORD }}
-        gitee-repo: Fsu0413/QtCompile
-        branch: ge-pages
-        https: true
-
+#    - uses: yanglbme/gitee-pages-action@main
+#      with:
+#        gitee-username: Fsu0413
+#        gitee-password: ${{ secrets.GITEE_PASSWORD }}
+#        gitee-repo: Fsu0413/QtCompile
+#        branch: ge-pages
+#        https: true
