@@ -1009,5 +1009,20 @@
       "uploaded": "√",
       "configuration": "√"
     }
+  },
+  "q6_7wx6v2": {
+    "sort": 60701,
+    "fileName": "Qt6.7.0-Windows-x86_64-VS2022-17.9.6-20240417.7z",
+    "addrSf": "https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.7/Windows-x86_64/MSVC/Qt6.7.0-Windows-x86_64-VS2022-17.9.6-20240417.7z",
+    "data": {
+      "version": "6.7.0",
+      "platform": "Windows",
+      "buildHost": "Windows 11 10.0.22631",
+      "toolchain": "VS2022 17.9.6",
+      "arch": "x86_64",
+      "variant": "",
+      "uploaded": "√",
+      "configuration": "√"
+    }
   }
 }
