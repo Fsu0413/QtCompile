@@ -202,9 +202,9 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 
 | Qt 版本 | 商业专属发布日 | 开源发布日 |
 |-|-|-|
-| 5.15.14 | {{% date 2023 5 25 %}} | {{% date 2024 5 25 %}} |
 | 5.15.15 | {{% date 2023 8 31 %}} | {{% date 2024 8 31 %}} （届时需要确认 Qt 到底是否真的发布了开源版本） |
 | 5.15.16 | {{% date 2023 11 17 %}} | {{% date 2024 11 17 %}} |
+| 5.15.17 | {{% date 2024 5 22 %}} | {{% date 2025 5 22 %}} |
 | 6.2.9 | {{% date 2023 7 4 %}} | {{% date 2024 7 4 %}} |
 | 6.2.10 | {{% date 2023 10 9 %}} | {{% date 2024 10 9 %}} |
 | 6.2.11 | {{% date 2024 1 16 %}} | {{% date 2025 1 16 %}} |
@@ -222,14 +222,13 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 若某个补丁在所有的正在维护的版本均已附带或没有应用的必要，则该补丁将会从此表中删除。  
 括号中的版本号为附带该补丁的发布版本。
 
-| 问题 \ Qt 版本 | 5.15.13 | 6.2.7 | 6.5.3 |
+| 问题 \ Qt 版本 | 5.15.14 | 6.2.8 | 6.5.3 |
 |-|-|-|-|
-| CVE-2023-24607 | 附带 | [√](https://download.qt.io/archive/qt/6.2/CVE-2023-24607-qtbase-6.2.diff) （6.2.8） | - |
-| CVE-2023-32573 | [√](https://download.qt.io/archive/qt/5.15/CVE-2023-32573-qtsvg-5.15.diff) （5.15.14） | [√](https://download.qt.io/archive/qt/6.2/CVE-2023-32573-qtsvg-6.2.diff) （6.2.9） | 附带 |
-| （仅限 5.15 系列）Clang 构建修复 | [√](https://invent.kde.org/qt/qt/qtlocation-mapboxgl/-/commit/5a07e1967dcc925d9def47accadae991436b9686 "KDE 提供的补丁") （5.15.14） | - | - |
-| CVE-2023-32762 | [√](https://download.qt.io/archive/qt/5.15/CVE-2023-32762-qtbase-5.15.diff) （5.15.14） | [√](https://download.qt.io/archive/qt/6.2/CVE-2023-32762-qtbase-6.2.diff) （6.2.9） | 附带 |
+| CVE-2023-32573 | 附带 | [√](https://download.qt.io/archive/qt/6.2/CVE-2023-32573-qtsvg-6.2.diff) （6.2.9） | 附带 |
+| （仅限 5.15 系列）Clang mapboxgl 构建修复 | [√](https://invent.kde.org/qt/qt/qtlocation-mapboxgl/-/commit/5a07e1967dcc925d9def47accadae991436b9686 "KDE 提供的补丁") （？） | - | - |
+| CVE-2023-32762 | 附带 | [√](https://download.qt.io/archive/qt/6.2/CVE-2023-32762-qtbase-6.2.diff) （6.2.9） | 附带 |
 | CVE-2023-32763 | [√](https://download.qt.io/archive/qt/5.15/CVE-2023-32763-qtbase-5.15.diff) （5.15.15） | [√](https://download.qt.io/archive/qt/6.2/CVE-2023-32763-qtbase-6.2.diff) （6.2.9） | 附带 |
-| CVE-2023-33285 | [√](https://download.qt.io/archive/qt/5.15/CVE-2023-33285-qtbase-5.15.diff) （5.15.14） | [√](https://download.qt.io/archive/qt/6.2/CVE-2023-33285-qtbase-6.2.diff) （6.2.9） | 附带 |
+| CVE-2023-33285 | 附带 | [√](https://download.qt.io/archive/qt/6.2/CVE-2023-33285-qtbase-6.2.diff) （6.2.9） | 附带 |
 | CVE-2023-34410 | [√](https://download.qt.io/archive/qt/5.15/CVE-2023-34410-qtbase-5.15.diff) （5.15.15） | [√](https://download.qt.io/archive/qt/6.2/CVE-2023-34410-qtbase-6.2.diff) （6.2.9） | 附带 |
 | CVE-2023-37369 | [√](https://download.qt.io/archive/qt/5.15/CVE-2023-37369-qtbase-5.15.diff) （5.15.15） | [**×**](https://download.qt.io/archive/qt/6.2/CVE-2023-37369-qtbase-6.2.diff "官方补丁冲突，依赖 Qt 6.2.9 上的一个提交，暂无发行版与项目解决冲突。已放弃调查") （6.2.10） | 附带 |
 | CVE-2023-38197 | [√](https://download.qt.io/archive/qt/5.15/CVE-2023-38197-qtbase-5.15.diff) （5.15.15） | [**×**](https://download.qt.io/archive/qt/6.2/CVE-2023-38197-qtbase-6.2.diff "依赖 CVE-2023-37369 的补丁") （6.2.10） | 附带 |
@@ -238,13 +237,17 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 | CVE-2023-45872 | - | [**×**](https://download.qt.io/archive/qt/6.2/CVE-2023-45872-qtsvg-6.2.10.diff "官方补丁冲突。原因未知且没有调查计划") （6.2.11） | - |
 | CVE-2023-51714 | √ [1](https://download.qt.io/archive/qt/5.15/0001-CVE-2023-51714-qtbase-5.15.diff) [2](https://download.qt.io/archive/qt/5.15/0002-CVE-2023-51714-qtbase-5.15.diff) （5.15.17） | √ [1](https://download.qt.io/archive/qt/6.2/0001-CVE-2023-51714-qtbase-6.2.diff) [2](https://download.qt.io/archive/qt/6.2/0002-CVE-2023-51714-qtbase-6.2.diff) （6.2.11） | √ [1](https://download.qt.io/archive/qt/6.5/0001-CVE-2023-51714-qtbase-6.5.diff) [2](https://download.qt.io/archive/qt/6.5/0002-CVE-2023-51714-qtbase-6.5.diff) （6.5.4） |
 | CVE-2024-25580 | [√](https://download.qt.io/archive/qt/5.15/CVE-2024-25580-qtbase-5.15.diff) （5.15.17） | [√](https://download.qt.io/archive/qt/6.2/CVE-2024-25580-qtbase-6.2.diff) （6.2.12） | [√](https://download.qt.io/archive/qt/6.5/CVE-2024-25580-qtbase-6.5.diff) （6.5.5） |
-| CVE-2024-30161 | - | - | [**x**](https://download.qt.io/archive/qt/6.5/CVE-2024-30161-qtbase-6.5.diff "影响 6.5.4 和 6.5.5，不影响 6.5.3") （6.5.6） |
-| CVE-2024-33861 | - | - | [**x**](https://download.qt.io/archive/qt/6.5/CVE-2024-33861-qtbase-6.5.diff "咱们不受影响。这个问题只影响附带 ICU 的构建，而咱们的构建不附带 ICU。") （6.5.6） |
+| CVE-2024-30161 | - | - | [**×**](https://download.qt.io/archive/qt/6.5/CVE-2024-30161-qtbase-6.5.diff "影响 6.5.4 和 6.5.5，不影响 6.5.3") （6.5.6） |
+| CVE-2024-33861 [【注】](# "咱们不受影响。这个问题只影响附带 ICU 的构建，而咱们的构建不附带 ICU。") | - | - | [**×**](https://download.qt.io/archive/qt/6.5/CVE-2024-33861-qtbase-6.5.diff) （6.5.6） |
+| CVE-2024-36048 | [√](https://download.qt.io/archive/qt/5.15/CVE-2024-36048-qtnetworkauth-5.15.diff) （5.15.17） | [√](https://download.qt.io/archive/qt/6.2/CVE-2024-36048-qtnetworkauth-6.2.diff) （6.2.13） | [√](https://download.qt.io/archive/qt/6.5/CVE-2024-36048-qtnetworkauth-6.5.diff) （6.5.6） |
+| QtWebEngine 使用 Ninja 1.12.0 构建修复 | [√](https://code.qt.io/cgit/qt/qtwebengine-chromium.git/patch/?id=0d0d7dfbae4f2adfe1109d963160f14896e65244) （5.15.18） | - | [√](https://code.qt.io/cgit/qt/qtwebengine-chromium.git/patch/?id=a766045f65f934df3b5f1aa63bc86fbb3e003a09) （6.5.6 或 6.5.7） |
+| （仅限 5.15 系列）macOS QtWebEngine jumbo 构建修复 | [√](https://code.qt.io/cgit/qt/qtwebengine-chromium.git/patch/?id=5fcbb57926442268c8a6fd4143b5abfe2b8549c7) （5.15.18） | - | - |
+| QtMultiMedia C++17 构建修复 | [√](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-avf-remove-unary_function-usage-qtmultimedia-5.15.diff "Fsu0413 制作的补丁") （？） | [√](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-avf-remove-unary_function-usage-qtmultimedia-6.2.diff "Fsu0413 制作的补丁") （？）  | [√](https://code.qt.io/cgit/qt/qtmultimedia.git/patch/?id=82f7f3de0e90bb7d1447cb710ffd2e1b315ae479) （6.5.6，部分应用） |
 
-从 {{% date 2024 3 12 %}}开始我的 Qt 构建会包含一些简单的关于构建问题的修复。  
+从 {{% date 2024 3 12 %}}开始我的 Qt 构建会包含一些简单的（我自己做的）关于构建问题的修复。  
 目前只有 LTS 版本应用这些补丁。
 
-| 问题 \ Qt 版本 | 5.15.13 | 6.2.7 | 6.5.3 |
+| 问题 \ Qt 版本 | 5.15.14 | 6.2.8 | 6.5.3 |
 |-|-|-|-|
 | 使用 `_WIN32_WINNT` 的默认值为 `0x0A00` 的新版 MinGW-w64 上 Qt 5.15 系列无法构建 | [2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase-5.15.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase-5.15.diff) | - | - |
 | 使用 GCC 11 或更新的版本无法构建 Qt 5.15 系列上的 `angle` | [2024-Fs-angle-fix-build-on-gcc11-qtbase-5.15.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-angle-fix-build-on-gcc11-qtbase-5.15.diff) | - | - |
@@ -253,3 +256,4 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 | 使用 GCC 13 无法构建 Qt 6.2 系列上的 QtShaderTools | - | [2024-Fs-glslang-fix-GCC-13-builds-qtshadertools-6.2.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-glslang-fix-GCC-13-builds-qtshadertools-6.2.diff) | - |
 | 使用 GCC 13 无法构建 Qt 6.2 和 6.5 系列上的 Qt3D | - | [2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.2.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.2.diff) | [2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.5.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.5/2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.5.diff) |
 | 使用 GCC 13 无法构建 Qt 6.2 系列上的 QtQuick3D | - | [2024-Fs-qtquick3dassimp-fix-GCC-13-builds-qtquick3d-6.2.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-qtquick3dassimp-fix-GCC-13-builds-qtquick3d-6.2.diff) | - |
+| macOS mapboxgl `-Wno-enum-constexpr-conversion` 编译警告视为错误修复 | [2024-Fs-remove-warning-as-error-mapbox-gl-native-5.15.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-remove-warning-as-error-mapbox-gl-native-5.15.diff)<br />[2024-Fs-remove-warning-as-error-qtwebengine-chromium-5.15.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-remove-warning-as-error-qtwebengine-chromium-5.15.diff)  | - | - |

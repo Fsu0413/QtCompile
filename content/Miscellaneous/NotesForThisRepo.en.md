@@ -202,9 +202,9 @@ Commericial-only Qt Open Source Release Date (ETA)
 
 | Qt Version | Commericial Release Date | Open Source Release Date |
 |-|-|-|
-| 5.15.14 | {{% date 2023 5 25 %}} | {{% date 2024 5 25 %}} |
 | 5.15.15 | {{% date 2023 8 31 %}} | {{% date 2024 8 31 %}} (Need to check if Qt will really release this version to opensource on that day) |
 | 5.15.16 | {{% date 2023 11 17 %}} | {{% date 2024 11 17 %}} |
+| 5.15.17 | {{% date 2024 5 22 %}} | {{% date 2025 5 22 %}} |
 | 6.2.9 | {{% date 2023 7 4 %}} | {{% date 2024 7 4 %}} |
 | 6.2.10 | {{% date 2023 10 9 %}} | {{% date 2024 10 9 %}} |
 | 6.2.11 | {{% date 2024 1 16 %}} | {{% date 2025 1 16 %}} |
@@ -222,14 +222,13 @@ Note that I won't patch an active version of Qt and will simply wait for future 
 A patch will removed from following table when this patch is shipped or not needed to be applied in all of the maintained versions.  
 Version number in brackets are the version when the corresponding patch will be shipped.
 
-| Issue \ Qt Version | 5.15.13 | 6.2.7 | 6.5.3 |
+| Issue \ Qt Version | 5.15.14 | 6.2.8 | 6.5.3 |
 |-|-|-|-|
-| CVE-2023-24607 | shipped | [√](https://download.qt.io/archive/qt/6.2/CVE-2023-24607-qtbase-6.2.diff) (6.2.8) | - |
-| CVE-2023-32573 | [√](https://download.qt.io/archive/qt/5.15/CVE-2023-32573-qtsvg-5.15.diff) (5.15.14) | [√](https://download.qt.io/archive/qt/6.2/CVE-2023-32573-qtsvg-6.2.diff) (6.2.9) | shipped |
-| (5.15 series specific) Clang build fix | [√](https://invent.kde.org/qt/qt/qtlocation-mapboxgl/-/commit/5a07e1967dcc925d9def47accadae991436b9686 "Patch provided by KDE") (5.15.14) | - | - |
-| CVE-2023-32762 | [√](https://download.qt.io/archive/qt/5.15/CVE-2023-32762-qtbase-5.15.diff) (5.15.14) | [√](https://download.qt.io/archive/qt/6.2/CVE-2023-32762-qtbase-6.2.diff) (6.2.9) | shipped |
+| CVE-2023-32573 | shipped | [√](https://download.qt.io/archive/qt/6.2/CVE-2023-32573-qtsvg-6.2.diff) (6.2.9) | shipped |
+| (5.15 series specific) Clang mapboxgl build fix | [√](https://invent.kde.org/qt/qt/qtlocation-mapboxgl/-/commit/5a07e1967dcc925d9def47accadae991436b9686 "Patch provided by KDE") (?) | - | - |
+| CVE-2023-32762 | shipped | [√](https://download.qt.io/archive/qt/6.2/CVE-2023-32762-qtbase-6.2.diff) (6.2.9) | shipped |
 | CVE-2023-32763 | [√](https://download.qt.io/archive/qt/5.15/CVE-2023-32763-qtbase-5.15.diff) (5.15.15) | [√](https://download.qt.io/archive/qt/6.2/CVE-2023-32763-qtbase-6.2.diff) (6.2.9) | shipped |
-| CVE-2023-33285 | [√](https://download.qt.io/archive/qt/5.15/CVE-2023-33285-qtbase-5.15.diff) (5.15.14) | [√](https://download.qt.io/archive/qt/6.2/CVE-2023-33285-qtbase-6.2.diff) (6.2.9) | shipped |
+| CVE-2023-33285 | shipped | [√](https://download.qt.io/archive/qt/6.2/CVE-2023-33285-qtbase-6.2.diff) (6.2.9) | shipped |
 | CVE-2023-34410 | [√](https://download.qt.io/archive/qt/5.15/CVE-2023-34410-qtbase-5.15.diff) (5.15.15) | [√](https://download.qt.io/archive/qt/6.2/CVE-2023-34410-qtbase-6.2.diff) (6.2.9) | shipped |
 | CVE-2023-37369 | [√](https://download.qt.io/archive/qt/5.15/CVE-2023-37369-qtbase-5.15.diff) (5.15.15) | [**×**](https://download.qt.io/archive/qt/6.2/CVE-2023-37369-qtbase-6.2.diff "Official patch causes CONFLICT. Depends on a commit of Qt 6.2.9. Given up investigating due to no active distro / project is fixing this issue") (6.2.10) | shipped |
 | CVE-2023-38197 | [√](https://download.qt.io/archive/qt/5.15/CVE-2023-38197-qtbase-5.15.diff) (5.15.15) | [**×**](https://download.qt.io/archive/qt/6.2/CVE-2023-38197-qtbase-6.2.diff "Depends on patch of CVE-2023-37369") (6.2.10) | shipped |
@@ -238,13 +237,17 @@ Version number in brackets are the version when the corresponding patch will be 
 | CVE-2023-45872 | - | [**×**](https://download.qt.io/archive/qt/6.2/CVE-2023-45872-qtsvg-6.2.10.diff "Official patch causes CONFLICT. Reason is unknown and will not be investigated.") (6.2.11) | - |
 | CVE-2023-51714 | √ [1](https://download.qt.io/archive/qt/5.15/0001-CVE-2023-51714-qtbase-5.15.diff) [2](https://download.qt.io/archive/qt/5.15/0002-CVE-2023-51714-qtbase-5.15.diff) (5.15.17) | √ [1](https://download.qt.io/archive/qt/6.2/0001-CVE-2023-51714-qtbase-6.2.diff) [2](https://download.qt.io/archive/qt/6.2/0002-CVE-2023-51714-qtbase-6.2.diff) (6.2.11) | √ [1](https://download.qt.io/archive/qt/6.5/0001-CVE-2023-51714-qtbase-6.5.diff) [2](https://download.qt.io/archive/qt/6.5/0002-CVE-2023-51714-qtbase-6.5.diff) (6.5.4) |
 | CVE-2024-25580 | [√](https://download.qt.io/archive/qt/5.15/CVE-2024-25580-qtbase-5.15.diff) (5.15.17) | [√](https://download.qt.io/archive/qt/6.2/CVE-2024-25580-qtbase-6.2.diff) (6.2.12) | [√](https://download.qt.io/archive/qt/6.5/CVE-2024-25580-qtbase-6.5.diff) (6.5.5) |
-| CVE-2024-30161 | - | - | [**x**](https://download.qt.io/archive/qt/6.5/CVE-2024-30161-qtbase-6.5.diff "Affects 6.5.4 and 6.5.5, not 6.5.3") (6.5.6) |
-| CVE-2024-33861 | - | - | [**x**](https://download.qt.io/archive/qt/6.5/CVE-2024-33861-qtbase-6.5.diff "Not affected. It affects only ICU build of Qt but we are not using ICU") (6.5.6) |
+| CVE-2024-30161 | - | - | [**×**](https://download.qt.io/archive/qt/6.5/CVE-2024-30161-qtbase-6.5.diff "Affects 6.5.4 and 6.5.5, not 6.5.3") (6.5.6) |
+| CVE-2024-33861 [[Note]](# "Not affected. It affects only ICU build of Qt but we are not using ICU") | - | - | [**×**](https://download.qt.io/archive/qt/6.5/CVE-2024-33861-qtbase-6.5.diff ) (6.5.6) |
+| CVE-2024-36048 | [√](https://download.qt.io/archive/qt/5.15/CVE-2024-36048-qtnetworkauth-5.15.diff) (5.15.17) | [√](https://download.qt.io/archive/qt/6.2/CVE-2024-36048-qtnetworkauth-6.2.diff) (6.2.13) | [√](https://download.qt.io/archive/qt/6.5/CVE-2024-36048-qtnetworkauth-6.5.diff) (6.5.6) |
+| QtWebEngine w/ Ninja 1.12.0 build fix | [√](https://code.qt.io/cgit/qt/qtwebengine-chromium.git/patch/?id=0d0d7dfbae4f2adfe1109d963160f14896e65244) (5.15.18) | - | [√](https://code.qt.io/cgit/qt/qtwebengine-chromium.git/patch/?id=a766045f65f934df3b5f1aa63bc86fbb3e003a09) (6.5.6 or 6.5.7) |
+| (5.15 series specific) macOS QtWebEngine jumbo build fix | [√](https://code.qt.io/cgit/qt/qtwebengine-chromium.git/patch/?id=5fcbb57926442268c8a6fd4143b5abfe2b8549c7) (5.15.18) | - | - |
+| QtMultiMedia C++17 build fix | [√](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-avf-remove-unary_function-usage-qtmultimedia-5.15.diff "Patch made by Fsu0413") (?) | [√](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-avf-remove-unary_function-usage-qtmultimedia-6.2.diff "Patch made by Fsu0413") (?) | [√](https://code.qt.io/cgit/qt/qtmultimedia.git/patch/?id=82f7f3de0e90bb7d1447cb710ffd2e1b315ae479) (6.5.6, partially applied) |
 
-Starting from {{% date 2024 3 12 %}} I provided some simple fixes about build problem.  
+Starting from {{% date 2024 3 12 %}} I provided some (self-made) simple fixes about build problem.  
 Currently only LTS version will be patched.
 
-| Issue \ Qt Version | 5.15.13 | 6.2.7 | 6.5.3 |
+| Issue \ Qt Version | 5.15.14 | 6.2.8 | 6.5.3 |
 |-|-|-|-|
 | Qt 5.15 series can't be built using later MinGW-w64 which has its `_WIN32_WINNT` defaults to `0x0A00` | [2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase-5.15.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-qmake-enable-build-on-higher-version-of-MinGW-w64-qtbase-5.15.diff) | - | - |
 | Qt 5.15 series `angle` can't be built using GCC 11 or later | [2024-Fs-angle-fix-build-on-gcc11-qtbase-5.15.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-angle-fix-build-on-gcc11-qtbase-5.15.diff) | - | - |
@@ -253,3 +256,4 @@ Currently only LTS version will be patched.
 | Qt 6.2 series QtShaderTools can't build using GCC 13 | - | [2024-Fs-glslang-fix-GCC-13-builds-qtshadertools-6.2.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-glslang-fix-GCC-13-builds-qtshadertools-6.2.diff) | - |
 | Qt 6.2 and 6.5 series Qt3D can't build using GCC 13 | - | [2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.2.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.2.diff) | [2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.5.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.5/2024-Fs-qt3dassimp-fix-GCC-13-builds-qt3d-6.5.diff) |
 | Qt 6.2 series QtQuick3D can't build using GCC 13 | - | [2024-Fs-qtquick3dassimp-fix-GCC-13-builds-qtquick3d-6.2.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-qtquick3dassimp-fix-GCC-13-builds-qtquick3d-6.2.diff) | - |
+| macOS mapboxgl `-Wno-enum-constexpr-conversion` warning as error build fix | [2024-Fs-remove-warning-as-error-mapbox-gl-native-5.15.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-remove-warning-as-error-mapbox-gl-native-5.15.diff)<br />[2024-Fs-remove-warning-as-error-qtwebengine-chromium-5.15.diff](https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-remove-warning-as-error-qtwebengine-chromium-5.15.diff) | - | - |

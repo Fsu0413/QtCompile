@@ -51,7 +51,7 @@ Update {{% date 2023 12 25 %}}:
 Qt 6.2.7 released with open62541 version still being 1.1.  
 We'd wait for next version of Qt 6.2.
 
-Update {{% date 204 4 19 %}}:
+Update {{% date 2024 4 19 %}}:
 Qt 6.2.8 released with open62541 version still being 1.1.  
 I don't want to wait again and again and will permanently disable QtOpcUa for Qt 6.2 series.
 
@@ -71,6 +71,10 @@ I don't expect QtWebEngine can build with mismatched `qtwebengine` and `qtwebeng
 
 Since then I won't provide builds of Qt 6.2 LTS series with QtWebEngine.  
 Existing package with QtWebEngine will be removed after {{% date 2023 3 25 %}}.
+
+Update {{%date 2024 5 28 %}}:   
+Same thing also occurs on / applies for Qt 6.5.3.   
+Currently only macOS is the case. Windows would also be it when issue occurs.
 
 ## Patch of CVE-2023-37369 conflicts on Qt 6.2 series
 
