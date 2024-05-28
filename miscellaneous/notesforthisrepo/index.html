@@ -51,7 +51,7 @@ GitHub
 我可以理解使用静态构建的目的是为了仅发布单一可执行程序，但是事实上有如下限制：
 在程序不以 (L)GPLv3 许可协议发布的情况下，使用静态构建并不免费。 部分模块无法构建。（比如 WebEngine 之类的） 不能使用动态链接的插件。 在构建期不执行链接操作，会在后续过程中导致可能的链接问题 这边还是建议在大型项目中停止使用静态构建。相信我，这么做更加自由。
 静态 Lite 构建和静态 Full 构建 （2022 年 3 月 8 日更新） 静态 Lite 构建跳过了大多数 Qt 模块。只对 QtCore、QtDeclarative（QtQml 2），QtXmlPatterns 和 QtXXXExtras 进行了构建。">
-    <meta itemprop="wordCount" content="1244">
+    <meta itemprop="wordCount" content="1243">
     <title>本版本库的一些备注 :: Fsu0413 的原版 Qt 构建</title>
     <link href="/qtcompile/miscellaneous/notesforthisrepo/index.html" rel="alternate" hreflang="x-default">
     <link href="/qtcompile/miscellaneous/notesforthisrepo/index.html" rel="alternate" hreflang="zh-cn">
@@ -541,7 +541,7 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 <td>QtWebEngine 使用 Ninja 1.12.0 构建修复</td>
 <td><a href="https://code.qt.io/cgit/qt/qtwebengine-chromium.git/patch/?id=0d0d7dfbae4f2adfe1109d963160f14896e65244" rel="external" target="_blank">√</a> （5.15.18）</td>
 <td>-</td>
-<td><a href="https://code.qt.io/cgit/qt/qtwebengine-chromium.git/patch/?id=a766045f65f934df3b5f1aa63bc86fbb3e003a09" rel="external" target="_blank">√</a> （6.5.6 或 6.5.7）</td>
+<td><a href="https://code.qt.io/cgit/qt/qtwebengine-chromium.git/patch/?id=a766045f65f934df3b5f1aa63bc86fbb3e003a09" rel="external" target="_blank">√</a> （6.5.6 或 6.5.7，部分应用）</td>
 </tr>
 <tr>
 <td>（仅限 5.15 系列）macOS QtWebEngine jumbo 构建修复</td>
@@ -553,7 +553,7 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 <td>QtMultiMedia C++17 构建修复</td>
 <td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-avf-remove-unary_function-usage-qtmultimedia-5.15.diff" rel="external" target="_blank" title="Fsu0413 制作的补丁">√</a> （？）</td>
 <td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-avf-remove-unary_function-usage-qtmultimedia-6.2.diff" rel="external" target="_blank" title="Fsu0413 制作的补丁">√</a> （？）</td>
-<td><a href="https://code.qt.io/cgit/qt/qtmultimedia.git/patch/?id=82f7f3de0e90bb7d1447cb710ffd2e1b315ae479" rel="external" target="_blank">√</a> （6.5.6，部分应用）</td>
+<td><a href="https://code.qt.io/cgit/qt/qtmultimedia.git/patch/?id=82f7f3de0e90bb7d1447cb710ffd2e1b315ae479" rel="external" target="_blank">√</a> （6.5.6）</td>
 </tr>
 </tbody>
 </table>
@@ -612,7 +612,7 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 <td>-</td>
 </tr>
 <tr>
-<td>macOS mapboxgl <code>-Wno-enum-constexpr-conversion</code> 编译警告视为错误修复</td>
+<td>macOS <code>-Wno-enum-constexpr-conversion</code> 编译警告视为错误修复</td>
 <td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-remove-warning-as-error-mapbox-gl-native-5.15.diff" rel="external" target="_blank">2024-Fs-remove-warning-as-error-mapbox-gl-native-5.15.diff</a><br /><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-remove-warning-as-error-qtwebengine-chromium-5.15.diff" rel="external" target="_blank">2024-Fs-remove-warning-as-error-qtwebengine-chromium-5.15.diff</a></td>
 <td>-</td>
 <td>-</td>
@@ -748,7 +748,7 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Wed, 29 May 2024 00:03:55 CST</p>
+Site generated: Wed, 29 May 2024 00:09:15 CST</p>
 
           </div>
         </div>
