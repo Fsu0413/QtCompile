@@ -9,7 +9,7 @@
     <meta name="author" content="Fsu0413">
     <meta itemprop="name" content="Fsu0413&#39;s Original Qt builds">
     <meta itemprop="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
-    <meta itemprop="wordCount" content="359">
+    <meta itemprop="wordCount" content="410">
     <title>Fsu0413&#39;s Original Qt builds</title>
     <link href="/qtcompile/index.html" rel="alternate" hreflang="x-default">
     <link href="/qtcompile/index.html" rel="alternate" hreflang="zh-cn">
@@ -84,14 +84,10 @@
               <div class="topbar-content">
                 <div class="topbar-content-wrapper"><nav class="TableOfContents">
   <ul>
-    <li><a href="#computer-with-windows-installed-fails">Computer with Windows installed Fails</a>
-      <ul>
-        <li><a href="#20th-may-2024">20th May, 2024</a></li>
-      </ul>
-    </li>
     <li><a href="#disclaimer">Disclaimer</a></li>
     <li><a href="#update-history">Update History</a>
       <ul>
+        <li><a href="#28th-may-2024">28th May, 2024</a></li>
         <li><a href="#12th-may-2024">12th May, 2024</a></li>
         <li><a href="#19th-apr-2024">19th Apr, 2024</a></li>
         <li><a href="#before-17th-apr-2024">Before 17th Apr, 2024</a></li>
@@ -136,13 +132,13 @@
 All links to OSDN are removed for now. Please download from SourceForge.</p>
 <p>Error during upload is as following (Output by WinSCP).</p>
 <div class="expand">
-    <input type="checkbox" id="R-expand-013bb73008606a7a82eeb52fce92bf83" aria-controls="R-expandcontent-013bb73008606a7a82eeb52fce92bf83" >
-    <label class="expand-label" for="R-expand-013bb73008606a7a82eeb52fce92bf83" >
+    <input type="checkbox" id="R-expand-979e4810b21027da5dcd950bbaefef2c" aria-controls="R-expandcontent-979e4810b21027da5dcd950bbaefef2c" >
+    <label class="expand-label" for="R-expand-979e4810b21027da5dcd950bbaefef2c" >
         <i class="fa-fw fas fa-chevron-down"></i>
         <i class="fa-fw fas fa-chevron-right"></i>
         Expand me&hellip;
     </label>
-    <div id="R-expandcontent-013bb73008606a7a82eeb52fce92bf83" class="expand-content">
+    <div id="R-expandcontent-979e4810b21027da5dcd950bbaefef2c" class="expand-content">
 <p>General failure (server should provide error description).<br>
 Error code: 4<br>
 Error message from server: Failure</p>
@@ -158,16 +154,20 @@ Error message from server: Failure</p>
 </div>
 </div>
 </div>
-<h2 id="computer-with-windows-installed-fails">Computer with Windows installed Fails</h2>
-<h3 id="20th-may-2024">20th May, 2024</h3>
-<p>My computer with Windows installed fails so unable to update here.<br>
-As far as I can see patches for CVE-2024-36048, Qt 5.15.14 with QtWebEngine 5.15.17 and Qt 6.7.1 can only be updated after my computer been repaired.</p>
 <h2 id="disclaimer">Disclaimer</h2>
 <p>These binaries built by Fsu0413 are <strong>TOTALLY UNTESTED</strong>. Use at your own risk.<br>
 The code used is downloaded from <a href="http://download.qt.io" rel="external" target="_blank">here</a>, and patches applied on top of code are <a href="/qtcompile/en/miscellaneous/notesforthisrepo/index.html#existing-patches">listed here</a> only for dealing with some simple and minor compile / build fixes.<br>
 <strong>THESE PACKAGE ARE PROVIDED &ldquo;As is&rdquo;, I have no responsibility that you mess up your things with this binaries.</strong><br>
 Thanks for The Qt Company Ltd. and the programmers of Qt for their fantastic work!!</p>
 <h2 id="update-history">Update History</h2>
+<h3 id="28th-may-2024">28th May, 2024</h3>
+<p>Update Qt 5.15.14 / 6.7.1.<br>
+Apply patches for CVE-2024-36048 for all supported versions, all packages are rebuilt.<br>
+Rebuild versions built by llvm-mingw 18 series toolchain, using llvm-mingw 18.1.6.</p>
+<p>Update macOS (arm64) to 14.5 and update Xcode to version with AppleClang 15.0.0.</p>
+<p>I&rsquo;m starting gradually ending support for QtWebEngine on Qt 6.5 series, as been done in 6.2 series before.<br>
+Currently build doesn&rsquo;t pass on macOS platform and it is disabled and won&rsquo;t be enabled on macOS for 6.5 series again.<br>
+If Qt 6.5 QtWebEngine build failed on MSVC series I&rsquo;ll just disable it.</p>
 <h3 id="12th-may-2024">12th May, 2024</h3>
 <p>Rebuild all Qt 6 static builds. Remove OpenSSL builtin from these versions.<br>
 Reason is that it is <a href="https://github.com/Fsu0413/QtCompile/issues/25" rel="external" target="_blank">Repo</a><a href="https://github.com/Fsu0413/QtCompile/issues/22" rel="external" target="_blank">rted</a> that Qt won&rsquo;t be working without OpenSSL header file.</p>
@@ -204,10 +204,10 @@ Initial version of Qt 6.0 has released for more than 3 years, and all targets pl
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
           <li data-nav-id="/qtcompile/en/5.15-series/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/index.html">5.15 series</a><ul id="R-subsections-d374b83d03acc30b906324bf7f6b9899" class="morespace collapsible-menu">
-          <li data-nav-id="/qtcompile/en/5.15-series/5.15.11-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/5.15.11-for-windows/index.html">5.15.13 for Windows</a></li>
-          <li data-nav-id="/qtcompile/en/5.15-series/5.15.11-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/5.15.11-for-macos/index.html">5.15.13 for macOS</a></li>
-          <li data-nav-id="/qtcompile/en/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/5.15.11-for-android/index.html">5.15.13 for Android</a></li>
-          <li data-nav-id="/qtcompile/en/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/5.15.11-for-webassembly/index.html">5.15.13 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/qtcompile/en/5.15-series/5.15.11-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/5.15.11-for-windows/index.html">5.15.14 for Windows</a></li>
+          <li data-nav-id="/qtcompile/en/5.15-series/5.15.11-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/5.15.11-for-macos/index.html">5.15.14 for macOS</a></li>
+          <li data-nav-id="/qtcompile/en/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/5.15.11-for-android/index.html">5.15.14 for Android</a></li>
+          <li data-nav-id="/qtcompile/en/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/5.15.11-for-webassembly/index.html">5.15.14 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/qtcompile/en/6.2-series/index.html" class=""><a class="padding" href="/qtcompile/en/6.2-series/index.html">6.2 series</a><ul id="R-subsections-f3427fcbeda6da3be7e077b630aae545" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/en/6.2-series/6.2.6-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/6.2-series/6.2.6-for-windows/index.html">6.2.8 for Windows</a></li>
           <li data-nav-id="/qtcompile/en/6.2-series/6.2.6-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/6.2-series/6.2.6-for-macos/index.html">6.2.8 for macOS</a></li>
@@ -219,10 +219,10 @@ Initial version of Qt 6.0 has released for more than 3 years, and all targets pl
           <li data-nav-id="/qtcompile/en/6.5-series/6.5.3-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/6.5-series/6.5.3-for-android/index.html">6.5.3 for Android</a></li>
           <li data-nav-id="/qtcompile/en/6.5-series/6.5.3-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/en/6.5-series/6.5.3-for-webassembly/index.html">6.5.3 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/qtcompile/en/6.7-series/index.html" class=""><a class="padding" href="/qtcompile/en/6.7-series/index.html">6.7 series</a><ul id="R-subsections-7bba749b3ce093fe170f5d1dec09c5d9" class="morespace collapsible-menu">
-          <li data-nav-id="/qtcompile/en/6.7-series/6.7.0-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/6.7-series/6.7.0-for-windows/index.html">6.7.0 for Windows</a></li>
-          <li data-nav-id="/qtcompile/en/6.7-series/6.7.0-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/6.7-series/6.7.0-for-macos/index.html">6.7.0 for macOS</a></li>
-          <li data-nav-id="/qtcompile/en/6.7-series/6.7.0-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/6.7-series/6.7.0-for-android/index.html">6.7.0 for Android</a></li>
-          <li data-nav-id="/qtcompile/en/6.7-series/6.7.0-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/en/6.7-series/6.7.0-for-webassembly/index.html">6.7.0 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/qtcompile/en/6.7-series/6.7.0-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/6.7-series/6.7.0-for-windows/index.html">6.7.1 for Windows</a></li>
+          <li data-nav-id="/qtcompile/en/6.7-series/6.7.0-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/6.7-series/6.7.0-for-macos/index.html">6.7.1 for macOS</a></li>
+          <li data-nav-id="/qtcompile/en/6.7-series/6.7.0-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/6.7-series/6.7.0-for-android/index.html">6.7.1 for Android</a></li>
+          <li data-nav-id="/qtcompile/en/6.7-series/6.7.0-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/en/6.7-series/6.7.0-for-webassembly/index.html">6.7.1 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/qtcompile/en/miscellaneous/index.html" class=""><a class="padding" href="/qtcompile/en/miscellaneous/index.html">Miscellaneous</a><ul id="R-subsections-fbd0e6ecd70e8ab847a5d20136c55334" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/en/miscellaneous/notesforthisrepo/index.html" class=""><a class="padding" href="/qtcompile/en/miscellaneous/notesforthisrepo/index.html">Notes for this repository</a></li>
           <li data-nav-id="/qtcompile/en/miscellaneous/current-build-status/index.html" class=""><a class="padding" href="/qtcompile/en/miscellaneous/current-build-status/index.html">Current build status</a></li>
@@ -309,7 +309,7 @@ Initial version of Qt 6.0 has released for more than 3 years, and all targets pl
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Wed, 22 May 2024 21:29:57 CST</p>
+Site generated: Wed, 29 May 2024 00:03:55 CST</p>
 
           </div>
         </div>

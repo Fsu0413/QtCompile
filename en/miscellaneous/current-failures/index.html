@@ -19,7 +19,7 @@ Update 3rd Nov, 2020:
 libclang_static.lib is packed seprately using script by Qt guys.
 Thanks “lixinwei” on QTCN.org for telling me related info. Original post (Sorry, it’s in Chinese)
 Update 25th Mar, 2024:">
-    <meta itemprop="wordCount" content="796">
+    <meta itemprop="wordCount" content="824">
     <title>Current failures :: Fsu0413&#39;s Original Qt builds</title>
     <link href="/qtcompile/miscellaneous/current-failures/index.html" rel="alternate" hreflang="x-default">
     <link href="/qtcompile/miscellaneous/current-failures/index.html" rel="alternate" hreflang="zh-cn">
@@ -165,7 +165,7 @@ It is estimated that we can build QtOpcUa on Qt 6.2.7 which was released on 2nd 
 <p>Update 25th Dec, 2023:
 Qt 6.2.7 released with open62541 version still being 1.1.<br>
 We&rsquo;d wait for next version of Qt 6.2.</p>
-<p>Update 19th Apr, 204:
+<p>Update 19th Apr, 2024:
 Qt 6.2.8 released with open62541 version still being 1.1.<br>
 I don&rsquo;t want to wait again and again and will permanently disable QtOpcUa for Qt 6.2 series.</p>
 <h2 id="various-failures-building-higher-version-of-qtwebengine-on-qt-624">Various failures building higher version of QtWebEngine on Qt 6.2.4</h2>
@@ -180,6 +180,9 @@ The SHA1 of commits of each release version are recorded in tQtC&rsquo;s own yoc
 I don&rsquo;t expect QtWebEngine can build with mismatched <code>qtwebengine</code> and <code>qtwebengine-chromium</code> repositories. Even if we are lucky enough that the code builds I don&rsquo;t expect it works.</p>
 <p>Since then I won&rsquo;t provide builds of Qt 6.2 LTS series with QtWebEngine.<br>
 Existing package with QtWebEngine will be removed after 25th Mar, 2023.</p>
+<p>Update 28th May, 2024:<br>
+Same thing also occurs on / applies for Qt 6.5.3.<br>
+Currently only macOS is the case. Windows would also be it when issue occurs.</p>
 <h2 id="patch-of-cve-2023-37369-conflicts-on-qt-62-series">Patch of CVE-2023-37369 conflicts on Qt 6.2 series</h2>
 <p>The patch is made for working with Qt 6.2.9, where it included an incompatible modification compared to Qt 6.2 series.<br>
 I&rsquo;ve made patches on Qt 6.2.4 to fix the conflict but it conflicts with 6.2.5 again.</p>
@@ -212,10 +215,10 @@ Since I have had trouble during investigation of previous patches, I won&rsquo;t
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
           <li data-nav-id="/qtcompile/en/5.15-series/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/index.html">5.15 series</a><ul id="R-subsections-d374b83d03acc30b906324bf7f6b9899" class="morespace collapsible-menu">
-          <li data-nav-id="/qtcompile/en/5.15-series/5.15.11-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/5.15.11-for-windows/index.html">5.15.13 for Windows</a></li>
-          <li data-nav-id="/qtcompile/en/5.15-series/5.15.11-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/5.15.11-for-macos/index.html">5.15.13 for macOS</a></li>
-          <li data-nav-id="/qtcompile/en/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/5.15.11-for-android/index.html">5.15.13 for Android</a></li>
-          <li data-nav-id="/qtcompile/en/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/5.15.11-for-webassembly/index.html">5.15.13 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/qtcompile/en/5.15-series/5.15.11-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/5.15.11-for-windows/index.html">5.15.14 for Windows</a></li>
+          <li data-nav-id="/qtcompile/en/5.15-series/5.15.11-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/5.15.11-for-macos/index.html">5.15.14 for macOS</a></li>
+          <li data-nav-id="/qtcompile/en/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/5.15.11-for-android/index.html">5.15.14 for Android</a></li>
+          <li data-nav-id="/qtcompile/en/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/5.15.11-for-webassembly/index.html">5.15.14 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/qtcompile/en/6.2-series/index.html" class=""><a class="padding" href="/qtcompile/en/6.2-series/index.html">6.2 series</a><ul id="R-subsections-f3427fcbeda6da3be7e077b630aae545" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/en/6.2-series/6.2.6-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/6.2-series/6.2.6-for-windows/index.html">6.2.8 for Windows</a></li>
           <li data-nav-id="/qtcompile/en/6.2-series/6.2.6-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/6.2-series/6.2.6-for-macos/index.html">6.2.8 for macOS</a></li>
@@ -227,10 +230,10 @@ Since I have had trouble during investigation of previous patches, I won&rsquo;t
           <li data-nav-id="/qtcompile/en/6.5-series/6.5.3-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/6.5-series/6.5.3-for-android/index.html">6.5.3 for Android</a></li>
           <li data-nav-id="/qtcompile/en/6.5-series/6.5.3-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/en/6.5-series/6.5.3-for-webassembly/index.html">6.5.3 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/qtcompile/en/6.7-series/index.html" class=""><a class="padding" href="/qtcompile/en/6.7-series/index.html">6.7 series</a><ul id="R-subsections-7bba749b3ce093fe170f5d1dec09c5d9" class="morespace collapsible-menu">
-          <li data-nav-id="/qtcompile/en/6.7-series/6.7.0-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/6.7-series/6.7.0-for-windows/index.html">6.7.0 for Windows</a></li>
-          <li data-nav-id="/qtcompile/en/6.7-series/6.7.0-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/6.7-series/6.7.0-for-macos/index.html">6.7.0 for macOS</a></li>
-          <li data-nav-id="/qtcompile/en/6.7-series/6.7.0-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/6.7-series/6.7.0-for-android/index.html">6.7.0 for Android</a></li>
-          <li data-nav-id="/qtcompile/en/6.7-series/6.7.0-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/en/6.7-series/6.7.0-for-webassembly/index.html">6.7.0 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/qtcompile/en/6.7-series/6.7.0-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/6.7-series/6.7.0-for-windows/index.html">6.7.1 for Windows</a></li>
+          <li data-nav-id="/qtcompile/en/6.7-series/6.7.0-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/6.7-series/6.7.0-for-macos/index.html">6.7.1 for macOS</a></li>
+          <li data-nav-id="/qtcompile/en/6.7-series/6.7.0-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/6.7-series/6.7.0-for-android/index.html">6.7.1 for Android</a></li>
+          <li data-nav-id="/qtcompile/en/6.7-series/6.7.0-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/en/6.7-series/6.7.0-for-webassembly/index.html">6.7.1 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/qtcompile/en/miscellaneous/index.html" class="parent "><a class="padding" href="/qtcompile/en/miscellaneous/index.html">Miscellaneous</a><ul id="R-subsections-fbd0e6ecd70e8ab847a5d20136c55334" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/en/miscellaneous/notesforthisrepo/index.html" class=""><a class="padding" href="/qtcompile/en/miscellaneous/notesforthisrepo/index.html">Notes for this repository</a></li>
           <li data-nav-id="/qtcompile/en/miscellaneous/current-build-status/index.html" class=""><a class="padding" href="/qtcompile/en/miscellaneous/current-build-status/index.html">Current build status</a></li>
@@ -317,7 +320,7 @@ Since I have had trouble during investigation of previous patches, I won&rsquo;t
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Wed, 22 May 2024 21:29:57 CST</p>
+Site generated: Wed, 29 May 2024 00:03:55 CST</p>
 
           </div>
         </div>

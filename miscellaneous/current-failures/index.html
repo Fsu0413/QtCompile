@@ -29,7 +29,7 @@ libclang_static.lib 是 Qt 那帮人自己使用脚本打包的。
 在 10.0.1 版本之前，只有动态库是支持的。
 静态库 libclang_staic.lib 和 libclang.lib 在 10.0.1 之前，都是在 Qt 构建 llvm 的时候打了补丁上去才构建出来的。
 目前如果使用 MinGW 的话，llvm 支持全动态链接（参考 mstorsjo 的 llvm-mingw 工程的构建产物），但是使用 MSVC 的话，则不支持。（为什么？） 可能 MinGW 比 MSVC 有更多人爱吧。。。">
-    <meta itemprop="wordCount" content="404">
+    <meta itemprop="wordCount" content="419">
     <title>当前的失败项 :: Fsu0413 的原版 Qt 构建</title>
     <link href="/qtcompile/miscellaneous/current-failures/index.html" rel="alternate" hreflang="x-default">
     <link href="/qtcompile/miscellaneous/current-failures/index.html" rel="alternate" hreflang="zh-cn">
@@ -190,6 +190,9 @@ Qt 公司在他们自己的 yocto 版本库 <code>meta-qt6</code> 中记录了�
 如果强行使用不匹配的 <code>qtwebengine</code> 和 <code>qtwebengine-chromium</code> 版本对 QtWebEngine 进行构建的话我觉得也不会通过。即使我们足够幸运构建通过了，我也不认为它能正确工作。</p>
 <p>所以我不会再提供附带 QtWebEngine 的 Qt 6.2 LTS 系列的版本。<br>
 现有的附带 QtWebEngine 的版本将于 2023 年 3 月 25 日更新后删除。</p>
+<p>2024 年 5 月 28 日更新：<br>
+Qt 6.5.3 也加入放弃 QtWebEngine 豪华午餐。 <br>
+目前只有 macOS 是这种情况，Windows 什么时候碰到问题了什么时候再删。</p>
 <h2 id="cve-2023-37369-的补丁与-qt-62-系列冲突">CVE-2023-37369 的补丁与 Qt 6.2 系列冲突</h2>
 <p>这个补丁是为 Qt 6.2.9 而做，而该版本包含了一个与 Qt 6.2 系列不兼容的修改。<br>
 我之前基于 Qt 6.2.4 做了个补丁修复了冲突，不过这个补丁和 6.2.5 再次发生冲突。</p>
@@ -222,10 +225,10 @@ Qt 6.2 系列上目前已经有很多安全补丁无法应用。<br>
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
           <li data-nav-id="/qtcompile/5.15-series/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/index.html">5.15 系列</a><ul id="R-subsections-d374b83d03acc30b906324bf7f6b9899" class="morespace collapsible-menu">
-          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-windows/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-windows/index.html">5.15.13 的 Windows 版本</a></li>
-          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-macos/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-macos/index.html">5.15.13 的 macOS 版本</a></li>
-          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-android/index.html">5.15.13 的安卓版本</a></li>
-          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-webassembly/index.html">5.15.13 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-windows/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-windows/index.html">5.15.14 的 Windows 版本</a></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-macos/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-macos/index.html">5.15.14 的 macOS 版本</a></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-android/index.html">5.15.14 的安卓版本</a></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-webassembly/index.html">5.15.14 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/6.2-series/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/index.html">6.2 系列</a><ul id="R-subsections-f3427fcbeda6da3be7e077b630aae545" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-windows/index.html">6.2.8 的 Windows 版本</a></li>
           <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-macos/index.html">6.2.8 的 macOS 版本</a></li>
@@ -237,10 +240,10 @@ Qt 6.2 系列上目前已经有很多安全补丁无法应用。<br>
           <li data-nav-id="/qtcompile/6.5-series/6.5.3-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.3-for-android/index.html">6.5.3 的安卓版本</a></li>
           <li data-nav-id="/qtcompile/6.5-series/6.5.3-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.3-for-webassembly/index.html">6.5.3 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/6.7-series/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/index.html">6.7 系列</a><ul id="R-subsections-7bba749b3ce093fe170f5d1dec09c5d9" class="morespace collapsible-menu">
-          <li data-nav-id="/qtcompile/6.7-series/6.7.0-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/6.7.0-for-windows/index.html">6.7.0 的 Windows 版本</a></li>
-          <li data-nav-id="/qtcompile/6.7-series/6.7.0-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/6.7.0-for-macos/index.html">6.7.0 的 macOS 版本</a></li>
-          <li data-nav-id="/qtcompile/6.7-series/6.7.0-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/6.7.0-for-android/index.html">6.7.0 的安卓版本</a></li>
-          <li data-nav-id="/qtcompile/6.7-series/6.7.0-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/6.7.0-for-webassembly/index.html">6.7.0 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/qtcompile/6.7-series/6.7.0-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/6.7.0-for-windows/index.html">6.7.1 的 Windows 版本</a></li>
+          <li data-nav-id="/qtcompile/6.7-series/6.7.0-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/6.7.0-for-macos/index.html">6.7.1 的 macOS 版本</a></li>
+          <li data-nav-id="/qtcompile/6.7-series/6.7.0-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/6.7.0-for-android/index.html">6.7.1 的安卓版本</a></li>
+          <li data-nav-id="/qtcompile/6.7-series/6.7.0-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/6.7.0-for-webassembly/index.html">6.7.1 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/miscellaneous/index.html" class="parent "><a class="padding" href="/qtcompile/miscellaneous/index.html">杂项</a><ul id="R-subsections-fbd0e6ecd70e8ab847a5d20136c55334" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/miscellaneous/notesforthisrepo/index.html" class=""><a class="padding" href="/qtcompile/miscellaneous/notesforthisrepo/index.html">本版本库的一些备注</a></li>
           <li data-nav-id="/qtcompile/miscellaneous/current-build-status/index.html" class=""><a class="padding" href="/qtcompile/miscellaneous/current-build-status/index.html">当前构建状态</a></li>
@@ -327,7 +330,7 @@ Qt 6.2 系列上目前已经有很多安全补丁无法应用。<br>
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Wed, 22 May 2024 21:29:57 CST</p>
+Site generated: Wed, 29 May 2024 00:03:55 CST</p>
 
           </div>
         </div>

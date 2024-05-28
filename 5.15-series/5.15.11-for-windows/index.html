@@ -9,18 +9,18 @@
 SQLite （随 Qt 一起分发）：使用 -sql-sqlite 内建在这份包里。 ODBC：使用 -sql-odbc 内建在这份包里。 MariaDB Connector/C 3.1 系列（仅动态构建）：使用 -sql-mysql 内建在这份包里。 备注 所有构建使用 -no-openssl -schannel，意味着 Windows Secure Channel 作为 TLS 后端来使用。
 这个后端从 Qt 5.13 版本开始支持。 备注 所有构建配置了 -no-icu 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 Qt 于发布商业专用版 Qt 5.15 一年之后发布开源 Qt 5.15，但是 QtWebEngine 是个例外。它保持和 Qt 商业专用版相同的时间发布开源版本。
 原因是 QtWebEngine 使用了带有不允许闭源发布的协议的第三方工程。
-Qt 商业专用版长期支持版本已经发布了 5.15.16，所以这份版本构建时也使用 QtWebEngine 5.15.16。
-补丁（多数是 CVE 问题） 我在构建 Qt 时应用补丁。想查看补丁列表的话，参考此页。 动态 / 共享构建 （x86_64） Qt5.15.13-Windows-x86_64-VS2015-20240310.7z 下载地址： SourceForge 链接 构建主机：Windows 10 10.">
+Qt 商业专用版长期支持版本已经发布了 5.15.17，所以这份版本构建时也使用 QtWebEngine 5.15.17。
+补丁（多数是 CVE 问题） 我在构建 Qt 时应用补丁。想查看补丁列表的话，参考此页。 动态 / 共享构建 （x86_64） Qt5.15.14-Windows-x86_64-VS2015-20240526.7z 下载地址： SourceForge 链接 构建主机：Windows 10 10.">
     <meta name="author" content="Fsu0413">
-    <meta itemprop="name" content="5.15.13 的 Windows 版本 :: Fsu0413 的原版 Qt 构建">
+    <meta itemprop="name" content="5.15.14 的 Windows 版本 :: Fsu0413 的原版 Qt 构建">
     <meta itemprop="description" content="备注 此版本中附带下列数据库：
 SQLite （随 Qt 一起分发）：使用 -sql-sqlite 内建在这份包里。 ODBC：使用 -sql-odbc 内建在这份包里。 MariaDB Connector/C 3.1 系列（仅动态构建）：使用 -sql-mysql 内建在这份包里。 备注 所有构建使用 -no-openssl -schannel，意味着 Windows Secure Channel 作为 TLS 后端来使用。
 这个后端从 Qt 5.13 版本开始支持。 备注 所有构建配置了 -no-icu 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 Qt 于发布商业专用版 Qt 5.15 一年之后发布开源 Qt 5.15，但是 QtWebEngine 是个例外。它保持和 Qt 商业专用版相同的时间发布开源版本。
 原因是 QtWebEngine 使用了带有不允许闭源发布的协议的第三方工程。
-Qt 商业专用版长期支持版本已经发布了 5.15.16，所以这份版本构建时也使用 QtWebEngine 5.15.16。
-补丁（多数是 CVE 问题） 我在构建 Qt 时应用补丁。想查看补丁列表的话，参考此页。 动态 / 共享构建 （x86_64） Qt5.15.13-Windows-x86_64-VS2015-20240310.7z 下载地址： SourceForge 链接 构建主机：Windows 10 10.">
+Qt 商业专用版长期支持版本已经发布了 5.15.17，所以这份版本构建时也使用 QtWebEngine 5.15.17。
+补丁（多数是 CVE 问题） 我在构建 Qt 时应用补丁。想查看补丁列表的话，参考此页。 动态 / 共享构建 （x86_64） Qt5.15.14-Windows-x86_64-VS2015-20240526.7z 下载地址： SourceForge 链接 构建主机：Windows 10 10.">
     <meta itemprop="wordCount" content="492">
-    <title>5.15.13 的 Windows 版本 :: Fsu0413 的原版 Qt 构建</title>
+    <title>5.15.14 的 Windows 版本 :: Fsu0413 的原版 Qt 构建</title>
     <link href="/qtcompile/5.15-series/5.15.11-for-windows/index.html" rel="alternate" hreflang="x-default">
     <link href="/qtcompile/5.15-series/5.15.11-for-windows/index.html" rel="alternate" hreflang="zh-cn">
     <link href="/qtcompile/en/5.15-series/5.15.11-for-windows/index.html" rel="alternate" hreflang="en">
@@ -132,7 +132,7 @@ Qt 商业专用版长期支持版本已经发布了 5.15.16，所以这份版本
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/qtcompile/index.html"><span itemprop="name">Fsu0413 的原版 Qt 构建</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/qtcompile/5.15-series/index.html"><span itemprop="name">5.15 系列</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">5.15.13 的 Windows 版本</span><meta itemprop="position" content="3"></li>
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">5.15.14 的 Windows 版本</span><meta itemprop="position" content="3"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="更多"><i class="fa-fw fas fa-ellipsis-v"></i></button>
@@ -153,7 +153,7 @@ Qt 商业专用版长期支持版本已经发布了 5.15.16，所以这份版本
             <header class="headline">
             </header>
 
-<h1 id="51513-的-windows-版本">5.15.13 的 Windows 版本</h1>
+<h1 id="51514-的-windows-版本">5.15.14 的 Windows 版本</h1>
 
 
 <div class="box notices cstyle info">
@@ -192,7 +192,7 @@ Qt 商业专用版长期支持版本已经发布了 5.15.16，所以这份版本
 
 <p>Qt 于发布商业专用版 Qt 5.15 一年之后发布开源 Qt 5.15，但是 QtWebEngine 是个例外。它保持和 Qt 商业专用版相同的时间发布开源版本。<br>
 原因是 QtWebEngine 使用了带有不允许闭源发布的协议的第三方工程。<br>
-Qt 商业专用版长期支持版本已经发布了 5.15.16，所以这份版本构建时也使用 QtWebEngine 5.15.16。</p>
+Qt 商业专用版长期支持版本已经发布了 5.15.17，所以这份版本构建时也使用 QtWebEngine 5.15.17。</p>
 </div>
 </div>
 
@@ -205,168 +205,168 @@ Qt 商业专用版长期支持版本已经发布了 5.15.16，所以这份版本
 
 <h2 id="动态--共享构建-x86_64">动态 / 共享构建 （x86_64）</h2>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-VS2015-20240310.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.14-Windows-x86_64-VS2015-20240526.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/Qt5.15.13-Windows-x86_64-VS2015-20240310.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MSVC/Qt5.15.14-Windows-x86_64-VS2015-20240526.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 10 10.0.19045</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">VS2015 Update 3</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"><strong>NO WEBENGINE</strong> because Qt has no support for QtWebEngine 5.15 for Visual Studio 2015</td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-VS2017-15.9.61-20240416.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.14-Windows-x86_64-VS2017-15.9.62-20240527.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MSVC/Qt5.15.13-Windows-x86_64-VS2017-15.9.61-20240416.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MSVC/Qt5.15.14-Windows-x86_64-VS2017-15.9.62-20240527.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">VS2017 15.9.61</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"><strong>NO WEBENGINE</strong> because of compile failure</td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">VS2017 15.9.62</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"><strong>NO WEBENGINE</strong> because of compile failure</td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-VS2019-16.11.35-20240416.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.14-Windows-x86_64-VS2019-16.11.36-20240526.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MSVC/Qt5.15.13-Windows-x86_64-VS2019-16.11.35-20240416.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MSVC/Qt5.15.14-Windows-x86_64-VS2019-16.11.36-20240526.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">VS2019 16.11.35</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%">With WebEngine 5.15.16</td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">VS2019 16.11.36</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%">With WebEngine 5.15.17</td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-VS2022-17.9.6-20240416.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.14-Windows-x86_64-VS2022-17.10.0-20240527.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MSVC/Qt5.15.13-Windows-x86_64-VS2022-17.9.6-20240416.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MSVC/Qt5.15.14-Windows-x86_64-VS2022-17.10.0-20240527.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">VS2022 17.9.6</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%">With WebEngine 5.15.16</td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">VS2022 17.10.0</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%">With WebEngine 5.15.17</td></tr>
         </tbody>
     </table>
 <h3 id="windows-mingw">Windows-MinGW</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-MinGW8.1.0-20240311.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.14-Windows-x86_64-MinGW8.1.0-20240527.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/Qt5.15.13-Windows-x86_64-MinGW8.1.0-20240311.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MinGW-GCC/Qt5.15.14-Windows-x86_64-MinGW8.1.0-20240527.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ GCC 8.1.0</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive grey"><a href="https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/8.1.0/threads-posix/seh/x86_64-8.1.0-release-posix-seh-rt_v6-rev0.7z" target="_blank"><span class="title">64 位 MinGW-w64 w/ GCC 8.1.0</span></a></span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-MinGW11.2.0-20240512.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.14-Windows-x86_64-MinGW11.2.0-20240527.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MinGW-GCC/Qt5.15.13-Windows-x86_64-MinGW11.2.0-20240512.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MinGW-GCC/Qt5.15.14-Windows-x86_64-MinGW11.2.0-20240527.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ GCC 11.2.0</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive grey"><a href="https://github.com/cristianadam/mingw-builds/releases/download/v11.2.0-rev4/x86_64-11.2.0-release-posix-seh-rt_v9-rev4.7z" target="_blank"><span class="title">64 位 MinGW-w64 w/ GCC 11.2.0</span></a></span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-MinGW12.2.0-ucrt-20240512.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.14-Windows-x86_64-MinGW12.2.0-ucrt-20240527.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MinGW-GCC/Qt5.15.13-Windows-x86_64-MinGW12.2.0-ucrt-20240512.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MinGW-GCC/Qt5.15.14-Windows-x86_64-MinGW12.2.0-ucrt-20240527.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ GCC 12.2.0 UCRT</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive grey"><a href="https://github.com/niXman/mingw-builds-binaries/releases/download/12.2.0-rt_v10-rev2/x86_64-12.2.0-release-posix-seh-ucrt-rt_v10-rev2.7z" target="_blank"><span class="title">64 位 MinGW-w64 w/ GCC 12.2.0 UCRT</span></a></span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-MinGW12.2.0-msvcrt-20240512.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.14-Windows-x86_64-MinGW12.2.0-msvcrt-20240527.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MinGW-GCC/Qt5.15.13-Windows-x86_64-MinGW12.2.0-msvcrt-20240512.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MinGW-GCC/Qt5.15.14-Windows-x86_64-MinGW12.2.0-msvcrt-20240527.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ GCC 12.2.0 MSVCRT</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive grey"><a href="https://github.com/niXman/mingw-builds-binaries/releases/download/12.2.0-rt_v10-rev2/x86_64-12.2.0-release-posix-seh-msvcrt-rt_v10-rev2.7z" target="_blank"><span class="title">64 位 MinGW-w64 w/ GCC 12.2.0 MSVCRT</span></a></span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <h3 id="windows-mingw-llvm">Windows-MinGW-LLVM</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-llvm-mingw-16.0.6-ucrt-20240512.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.14-Windows-x86_64-llvm-mingw-16.0.6-ucrt-20240528.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MinGW-LLVM/Qt5.15.13-Windows-x86_64-llvm-mingw-16.0.6-ucrt-20240512.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MinGW-LLVM/Qt5.15.14-Windows-x86_64-llvm-mingw-16.0.6-ucrt-20240528.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ LLVM 16.0.6 UCRT</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive grey"><a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20230614/llvm-mingw-20230614-ucrt-x86_64.zip" target="_blank"><span class="title">64 位 MinGW-W64 w/ LLVM 16.0.6 UCRT</span></a></span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-llvm-mingw-16.0.6-msvcrt-20240512.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.14-Windows-x86_64-llvm-mingw-16.0.6-msvcrt-20240528.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MinGW-LLVM/Qt5.15.13-Windows-x86_64-llvm-mingw-16.0.6-msvcrt-20240512.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MinGW-LLVM/Qt5.15.14-Windows-x86_64-llvm-mingw-16.0.6-msvcrt-20240528.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ LLVM 16.0.6 MSVCRT</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive grey"><a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20230614/llvm-mingw-20230614-msvcrt-x86_64.zip" target="_blank"><span class="title">64 位 MinGW-W64 w/ LLVM 16.0.6 MSVCRT</span></a></span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-llvm-mingw-17.0.6-ucrt-20240512.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.14-Windows-x86_64-llvm-mingw-17.0.6-ucrt-20240528.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MinGW-LLVM/Qt5.15.13-Windows-x86_64-llvm-mingw-17.0.6-ucrt-20240512.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MinGW-LLVM/Qt5.15.14-Windows-x86_64-llvm-mingw-17.0.6-ucrt-20240528.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ LLVM 17.0.6 UCRT</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive grey"><a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20231128/llvm-mingw-20231128-ucrt-x86_64.zip" target="_blank"><span class="title">64 位 MinGW-W64 w/ LLVM 17.0.6 UCRT</span></a></span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-llvm-mingw-17.0.6-msvcrt-20240512.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.14-Windows-x86_64-llvm-mingw-17.0.6-msvcrt-20240528.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MinGW-LLVM/Qt5.15.13-Windows-x86_64-llvm-mingw-17.0.6-msvcrt-20240512.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MinGW-LLVM/Qt5.15.14-Windows-x86_64-llvm-mingw-17.0.6-msvcrt-20240528.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ LLVM 17.0.6 MSVCRT</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive grey"><a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20231128/llvm-mingw-20231128-msvcrt-x86_64.zip" target="_blank"><span class="title">64 位 MinGW-W64 w/ LLVM 17.0.6 MSVCRT</span></a></span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-llvm-mingw-18.1.5-ucrt-20240512.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.14-Windows-x86_64-llvm-mingw-18.1.6-ucrt-20240527.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MinGW-LLVM/Qt5.15.13-Windows-x86_64-llvm-mingw-18.1.5-ucrt-20240512.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MinGW-LLVM/Qt5.15.14-Windows-x86_64-llvm-mingw-18.1.6-ucrt-20240527.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ LLVM 18.1.5 UCRT</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive grey"><a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20240502/llvm-mingw-20240502-ucrt-x86_64.zip" target="_blank"><span class="title">64 位 MinGW-w64 w/ LLVM 18.1.5 UCRT</span></a></span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ LLVM 18.1.6 UCRT</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive grey"><a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20240518/llvm-mingw-20240518-ucrt-x86_64.zip" target="_blank"><span class="title">64 位 MinGW-w64 w/ LLVM 18.1.6 UCRT</span></a></span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-llvm-mingw-18.1.5-msvcrt-20240512.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.14-Windows-x86_64-llvm-mingw-18.1.6-msvcrt-20240527.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MinGW-LLVM/Qt5.15.13-Windows-x86_64-llvm-mingw-18.1.5-msvcrt-20240512.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MinGW-LLVM/Qt5.15.14-Windows-x86_64-llvm-mingw-18.1.6-msvcrt-20240527.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ LLVM 18.1.5 MSVCRT</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive grey"><a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20240502/llvm-mingw-20240502-msvcrt-x86_64.zip" target="_blank"><span class="title">64 位 MinGW-w64 w/ LLVM 18.1.5 MSVCRT</span></a></span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ LLVM 18.1.6 MSVCRT</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive grey"><a href="https://github.com/mstorsjo/llvm-mingw/releases/download/20240518/llvm-mingw-20240518-msvcrt-x86_64.zip" target="_blank"><span class="title">64 位 MinGW-w64 w/ LLVM 18.1.6 MSVCRT</span></a></span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <h2 id="静态-full-构建">静态 <code>Full</code> 构建</h2>
 <h3 id="windows-msvc">Windows-MSVC</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-VS2015-staticFull-20240310.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.14-Windows-x86_64-VS2015-staticFull-20240526.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/Qt5.15.13-Windows-x86_64-VS2015-staticFull-20240310.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MSVC/Qt5.15.14-Windows-x86_64-VS2015-staticFull-20240526.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 10 10.0.19045</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">VS2015 Update 3</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-VS2017-15.9.60-staticFull-20240310.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.14-Windows-x86_64-VS2017-15.9.62-staticFull-20240527.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/Qt5.15.13-Windows-x86_64-VS2017-15.9.60-staticFull-20240310.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MSVC/Qt5.15.14-Windows-x86_64-VS2017-15.9.62-staticFull-20240527.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">VS2017 15.9.60</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">VS2017 15.9.62</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-VS2019-16.11.34-staticFull-20240310.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.14-Windows-x86_64-VS2019-16.11.36-staticFull-20240526.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/Qt5.15.13-Windows-x86_64-VS2019-16.11.34-staticFull-20240310.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MSVC/Qt5.15.14-Windows-x86_64-VS2019-16.11.36-staticFull-20240526.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">VS2019 16.11.34</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">VS2019 16.11.36</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <h3 id="windows-mingw-1">Windows-MinGW</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86_64-MinGW8.1.0-staticFull-20240310.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.14-Windows-x86_64-MinGW8.1.0-staticFull-20240527.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/Qt5.15.13-Windows-x86_64-MinGW8.1.0-staticFull-20240310.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86_64/MinGW-GCC/Qt5.15.14-Windows-x86_64-MinGW8.1.0-staticFull-20240527.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ GCC 8.1.0</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive grey"><a href="https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/8.1.0/threads-posix/seh/x86_64-8.1.0-release-posix-seh-rt_v6-rev0.7z" target="_blank"><span class="title">64 位 MinGW-w64 w/ GCC 8.1.0</span></a></span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
@@ -374,38 +374,38 @@ Qt 商业专用版长期支持版本已经发布了 5.15.16，所以这份版本
 <h2 id="动态--共享构建-x86">动态 / 共享构建 （x86）</h2>
 <h3 id="windows-msvc-1">Windows-MSVC</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86-VS2015-20240310.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.14-Windows-x86-VS2015-20240526.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86/Qt5.15.13-Windows-x86-VS2015-20240310.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86/MSVC/Qt5.15.14-Windows-x86-VS2015-20240526.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 10 10.0.19045</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">VS2015 Update 3</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"><strong>NO WEBENGINE</strong> because Qt has no support for QtWebEngine 5.15 for Visual Studio 2015</td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86-VS2017-15.9.61-20240416.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.14-Windows-x86-VS2017-15.9.62-20240527.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86/MSVC/Qt5.15.13-Windows-x86-VS2017-15.9.61-20240416.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86/MSVC/Qt5.15.14-Windows-x86-VS2017-15.9.62-20240527.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">VS2017 15.9.61</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"><strong>NO WEBENGINE</strong> because of compile failure</td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">VS2017 15.9.62</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"><strong>NO WEBENGINE</strong> because of compile failure</td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86-VS2019-16.11.35-20240416.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.14-Windows-x86-VS2019-16.11.36-20240527.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86/MSVC/Qt5.15.13-Windows-x86-VS2019-16.11.35-20240416.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86/MSVC/Qt5.15.14-Windows-x86-VS2019-16.11.36-20240527.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">VS2019 16.11.35</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%">With WebEngine 5.15.16</td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">VS2019 16.11.36</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%">With WebEngine 5.15.17</td></tr>
         </tbody>
     </table>
 <h3 id="windows-mingw-2">Windows-MinGW</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86-MinGW8.1.0-20240311.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.14-Windows-x86-MinGW8.1.0-20240527.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86/Qt5.15.13-Windows-x86-MinGW8.1.0-20240311.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86/MinGW-GCC/Qt5.15.14-Windows-x86-MinGW8.1.0-20240527.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ GCC 8.1.0</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive grey"><a href="https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/8.1.0/threads-posix/dwarf/i686-8.1.0-release-posix-dwarf-rt_v6-rev0.7z" target="_blank"><span class="title">32 位 MinGW-w64 w/ GCC 8.1.0</span></a></span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"><strong>NO MySQL Database Backend</strong> because compile failed (conflicting types for <code>mysql_load_plugin</code>)</td></tr>
         </tbody>
@@ -413,38 +413,38 @@ Qt 商业专用版长期支持版本已经发布了 5.15.16，所以这份版本
 <h2 id="静态-full-构建-1">静态 <code>Full</code> 构建</h2>
 <h3 id="windows-msvc-2">Windows-MSVC</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86-VS2015-staticFull-20240310.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.14-Windows-x86-VS2015-staticFull-20240526.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86/Qt5.15.13-Windows-x86-VS2015-staticFull-20240310.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86/MSVC/Qt5.15.14-Windows-x86-VS2015-staticFull-20240526.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 10 10.0.19045</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">VS2015 Update 3</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86-VS2017-15.9.60-staticFull-20240311.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.14-Windows-x86-VS2017-15.9.62-staticFull-20240527.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86/Qt5.15.13-Windows-x86-VS2017-15.9.60-staticFull-20240311.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86/MSVC/Qt5.15.14-Windows-x86-VS2017-15.9.62-staticFull-20240527.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">VS2017 15.9.60</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">VS2017 15.9.62</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86-VS2019-16.11.34-staticFull-20240311.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.14-Windows-x86-VS2019-16.11.36-staticFull-20240527.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86/Qt5.15.13-Windows-x86-VS2019-16.11.34-staticFull-20240311.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86/MSVC/Qt5.15.14-Windows-x86-VS2019-16.11.36-staticFull-20240527.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">VS2019 16.11.34</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">VS2019 16.11.36</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <h3 id="windows-mingw-3">Windows-MinGW</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-x86-MinGW8.1.0-staticFull-20240311.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.14-Windows-x86-MinGW8.1.0-staticFull-20240527.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86/Qt5.15.13-Windows-x86-MinGW8.1.0-staticFull-20240311.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-x86/MinGW-GCC/Qt5.15.14-Windows-x86-MinGW8.1.0-staticFull-20240527.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">MinGW-w64 w/ GCC 8.1.0</td></tr><tr><td width="20%"><b>使用的 MinGW：</b></td><td colspan="4" width="80%"><span class="btn cstyle interactive grey"><a href="https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/8.1.0/threads-posix/dwarf/i686-8.1.0-release-posix-dwarf-rt_v6-rev0.7z" target="_blank"><span class="title">32 位 MinGW-w64 w/ GCC 8.1.0</span></a></span></td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
@@ -452,12 +452,12 @@ Qt 商业专用版长期支持版本已经发布了 5.15.16，所以这份版本
 <h2 id="动态--共享构建-arm64">动态 / 共享构建 （arm64）</h2>
 <h3 id="windows-msvc-3">Windows-MSVC</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.13-Windows-arm64-VS2022-17.9.6-20240416.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt5.15.14-Windows-arm64-VS2022-17.10.0-20240526.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-arm64/MSVC/Qt5.15.13-Windows-arm64-VS2022-17.9.6-20240416.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt5.15/Windows-arm64/MSVC/Qt5.15.14-Windows-arm64-VS2022-17.10.0-20240526.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">VS2022 17.9.6</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"><strong>NO MySQL Database Backend</strong> because build failed (It linked with <code>/machine:x64</code>)</td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">VS2022 17.10.0</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"><strong>NO MySQL Database Backend</strong> because build failed (It linked with <code>/machine:x64</code>)</td></tr>
         </tbody>
     </table>
 
@@ -484,10 +484,10 @@ Qt 商业专用版长期支持版本已经发布了 5.15.16，所以这份版本
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
           <li data-nav-id="/qtcompile/5.15-series/index.html" class="parent "><a class="padding" href="/qtcompile/5.15-series/index.html">5.15 系列</a><ul id="R-subsections-d374b83d03acc30b906324bf7f6b9899" class="morespace collapsible-menu">
-          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-windows/index.html" class="active"><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-windows/index.html">5.15.13 的 Windows 版本</a></li>
-          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-macos/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-macos/index.html">5.15.13 的 macOS 版本</a></li>
-          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-android/index.html">5.15.13 的安卓版本</a></li>
-          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-webassembly/index.html">5.15.13 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-windows/index.html" class="active"><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-windows/index.html">5.15.14 的 Windows 版本</a></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-macos/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-macos/index.html">5.15.14 的 macOS 版本</a></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-android/index.html">5.15.14 的安卓版本</a></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-webassembly/index.html">5.15.14 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/6.2-series/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/index.html">6.2 系列</a><ul id="R-subsections-f3427fcbeda6da3be7e077b630aae545" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-windows/index.html">6.2.8 的 Windows 版本</a></li>
           <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-macos/index.html">6.2.8 的 macOS 版本</a></li>
@@ -499,10 +499,10 @@ Qt 商业专用版长期支持版本已经发布了 5.15.16，所以这份版本
           <li data-nav-id="/qtcompile/6.5-series/6.5.3-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.3-for-android/index.html">6.5.3 的安卓版本</a></li>
           <li data-nav-id="/qtcompile/6.5-series/6.5.3-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.3-for-webassembly/index.html">6.5.3 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/6.7-series/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/index.html">6.7 系列</a><ul id="R-subsections-7bba749b3ce093fe170f5d1dec09c5d9" class="morespace collapsible-menu">
-          <li data-nav-id="/qtcompile/6.7-series/6.7.0-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/6.7.0-for-windows/index.html">6.7.0 的 Windows 版本</a></li>
-          <li data-nav-id="/qtcompile/6.7-series/6.7.0-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/6.7.0-for-macos/index.html">6.7.0 的 macOS 版本</a></li>
-          <li data-nav-id="/qtcompile/6.7-series/6.7.0-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/6.7.0-for-android/index.html">6.7.0 的安卓版本</a></li>
-          <li data-nav-id="/qtcompile/6.7-series/6.7.0-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/6.7.0-for-webassembly/index.html">6.7.0 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/qtcompile/6.7-series/6.7.0-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/6.7.0-for-windows/index.html">6.7.1 的 Windows 版本</a></li>
+          <li data-nav-id="/qtcompile/6.7-series/6.7.0-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/6.7.0-for-macos/index.html">6.7.1 的 macOS 版本</a></li>
+          <li data-nav-id="/qtcompile/6.7-series/6.7.0-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/6.7.0-for-android/index.html">6.7.1 的安卓版本</a></li>
+          <li data-nav-id="/qtcompile/6.7-series/6.7.0-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/6.7.0-for-webassembly/index.html">6.7.1 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/miscellaneous/index.html" class=""><a class="padding" href="/qtcompile/miscellaneous/index.html">杂项</a><ul id="R-subsections-fbd0e6ecd70e8ab847a5d20136c55334" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/miscellaneous/notesforthisrepo/index.html" class=""><a class="padding" href="/qtcompile/miscellaneous/notesforthisrepo/index.html">本版本库的一些备注</a></li>
           <li data-nav-id="/qtcompile/miscellaneous/current-build-status/index.html" class=""><a class="padding" href="/qtcompile/miscellaneous/current-build-status/index.html">当前构建状态</a></li>
@@ -589,7 +589,7 @@ Qt 商业专用版长期支持版本已经发布了 5.15.16，所以这份版本
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Wed, 22 May 2024 21:29:57 CST</p>
+Site generated: Wed, 29 May 2024 00:03:55 CST</p>
 
           </div>
         </div>

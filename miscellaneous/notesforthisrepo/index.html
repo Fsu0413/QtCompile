@@ -51,7 +51,7 @@ GitHub
 我可以理解使用静态构建的目的是为了仅发布单一可执行程序，但是事实上有如下限制：
 在程序不以 (L)GPLv3 许可协议发布的情况下，使用静态构建并不免费。 部分模块无法构建。（比如 WebEngine 之类的） 不能使用动态链接的插件。 在构建期不执行链接操作，会在后续过程中导致可能的链接问题 这边还是建议在大型项目中停止使用静态构建。相信我，这么做更加自由。
 静态 Lite 构建和静态 Full 构建 （2022 年 3 月 8 日更新） 静态 Lite 构建跳过了大多数 Qt 模块。只对 QtCore、QtDeclarative（QtQml 2），QtXmlPatterns 和 QtXXXExtras 进行了构建。">
-    <meta itemprop="wordCount" content="1204">
+    <meta itemprop="wordCount" content="1244">
     <title>本版本库的一些备注 :: Fsu0413 的原版 Qt 构建</title>
     <link href="/qtcompile/miscellaneous/notesforthisrepo/index.html" rel="alternate" hreflang="x-default">
     <link href="/qtcompile/miscellaneous/notesforthisrepo/index.html" rel="alternate" hreflang="zh-cn">
@@ -378,11 +378,6 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 </thead>
 <tbody>
 <tr>
-<td>5.15.14</td>
-<td>2023 年 5 月 25 日</td>
-<td>2024 年 5 月 25 日</td>
-</tr>
-<tr>
 <td>5.15.15</td>
 <td>2023 年 8 月 31 日</td>
 <td>2024 年 8 月 31 日 （届时需要确认 Qt 到底是否真的发布了开源版本）</td>
@@ -391,6 +386,11 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 <td>5.15.16</td>
 <td>2023 年 11 月 17 日</td>
 <td>2024 年 11 月 17 日</td>
+</tr>
+<tr>
+<td>5.15.17</td>
+<td>2024 年 5 月 22 日</td>
+<td>2025 年 5 月 22 日</td>
 </tr>
 <tr>
 <td>6.2.9</td>
@@ -435,33 +435,27 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 <thead>
 <tr>
 <th>问题 \ Qt 版本</th>
-<th>5.15.13</th>
-<th>6.2.7</th>
+<th>5.15.14</th>
+<th>6.2.8</th>
 <th>6.5.3</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>CVE-2023-24607</td>
-<td>附带</td>
-<td><a href="https://download.qt.io/archive/qt/6.2/CVE-2023-24607-qtbase-6.2.diff" rel="external" target="_blank">√</a> （6.2.8）</td>
-<td>-</td>
-</tr>
-<tr>
 <td>CVE-2023-32573</td>
-<td><a href="https://download.qt.io/archive/qt/5.15/CVE-2023-32573-qtsvg-5.15.diff" rel="external" target="_blank">√</a> （5.15.14）</td>
+<td>附带</td>
 <td><a href="https://download.qt.io/archive/qt/6.2/CVE-2023-32573-qtsvg-6.2.diff" rel="external" target="_blank">√</a> （6.2.9）</td>
 <td>附带</td>
 </tr>
 <tr>
-<td>（仅限 5.15 系列）Clang 构建修复</td>
-<td><a href="https://invent.kde.org/qt/qt/qtlocation-mapboxgl/-/commit/5a07e1967dcc925d9def47accadae991436b9686" rel="external" target="_blank" title="KDE 提供的补丁">√</a> （5.15.14）</td>
+<td>（仅限 5.15 系列）Clang mapboxgl 构建修复</td>
+<td><a href="https://invent.kde.org/qt/qt/qtlocation-mapboxgl/-/commit/5a07e1967dcc925d9def47accadae991436b9686" rel="external" target="_blank" title="KDE 提供的补丁">√</a> （？）</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
 <td>CVE-2023-32762</td>
-<td><a href="https://download.qt.io/archive/qt/5.15/CVE-2023-32762-qtbase-5.15.diff" rel="external" target="_blank">√</a> （5.15.14）</td>
+<td>附带</td>
 <td><a href="https://download.qt.io/archive/qt/6.2/CVE-2023-32762-qtbase-6.2.diff" rel="external" target="_blank">√</a> （6.2.9）</td>
 <td>附带</td>
 </tr>
@@ -473,7 +467,7 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 </tr>
 <tr>
 <td>CVE-2023-33285</td>
-<td><a href="https://download.qt.io/archive/qt/5.15/CVE-2023-33285-qtbase-5.15.diff" rel="external" target="_blank">√</a> （5.15.14）</td>
+<td>附带</td>
 <td><a href="https://download.qt.io/archive/qt/6.2/CVE-2023-33285-qtbase-6.2.diff" rel="external" target="_blank">√</a> （6.2.9）</td>
 <td>附带</td>
 </tr>
@@ -529,24 +523,48 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 <td>CVE-2024-30161</td>
 <td>-</td>
 <td>-</td>
-<td><a href="https://download.qt.io/archive/qt/6.5/CVE-2024-30161-qtbase-6.5.diff" rel="external" target="_blank" title="影响 6.5.4 和 6.5.5，不影响 6.5.3"><strong>x</strong></a> （6.5.6）</td>
+<td><a href="https://download.qt.io/archive/qt/6.5/CVE-2024-30161-qtbase-6.5.diff" rel="external" target="_blank" title="影响 6.5.4 和 6.5.5，不影响 6.5.3"><strong>×</strong></a> （6.5.6）</td>
 </tr>
 <tr>
-<td>CVE-2024-33861</td>
+<td>CVE-2024-33861 <a href="/qtcompile/miscellaneous/notesforthisrepo/index.html" title="咱们不受影响。这个问题只影响附带 ICU 的构建，而咱们的构建不附带 ICU。">【注】</a></td>
 <td>-</td>
 <td>-</td>
-<td><a href="https://download.qt.io/archive/qt/6.5/CVE-2024-33861-qtbase-6.5.diff" rel="external" target="_blank" title="咱们不受影响。这个问题只影响附带 ICU 的构建，而咱们的构建不附带 ICU。"><strong>x</strong></a> （6.5.6）</td>
+<td><a href="https://download.qt.io/archive/qt/6.5/CVE-2024-33861-qtbase-6.5.diff" rel="external" target="_blank"><strong>×</strong></a> （6.5.6）</td>
+</tr>
+<tr>
+<td>CVE-2024-36048</td>
+<td><a href="https://download.qt.io/archive/qt/5.15/CVE-2024-36048-qtnetworkauth-5.15.diff" rel="external" target="_blank">√</a> （5.15.17）</td>
+<td><a href="https://download.qt.io/archive/qt/6.2/CVE-2024-36048-qtnetworkauth-6.2.diff" rel="external" target="_blank">√</a> （6.2.13）</td>
+<td><a href="https://download.qt.io/archive/qt/6.5/CVE-2024-36048-qtnetworkauth-6.5.diff" rel="external" target="_blank">√</a> （6.5.6）</td>
+</tr>
+<tr>
+<td>QtWebEngine 使用 Ninja 1.12.0 构建修复</td>
+<td><a href="https://code.qt.io/cgit/qt/qtwebengine-chromium.git/patch/?id=0d0d7dfbae4f2adfe1109d963160f14896e65244" rel="external" target="_blank">√</a> （5.15.18）</td>
+<td>-</td>
+<td><a href="https://code.qt.io/cgit/qt/qtwebengine-chromium.git/patch/?id=a766045f65f934df3b5f1aa63bc86fbb3e003a09" rel="external" target="_blank">√</a> （6.5.6 或 6.5.7）</td>
+</tr>
+<tr>
+<td>（仅限 5.15 系列）macOS QtWebEngine jumbo 构建修复</td>
+<td><a href="https://code.qt.io/cgit/qt/qtwebengine-chromium.git/patch/?id=5fcbb57926442268c8a6fd4143b5abfe2b8549c7" rel="external" target="_blank">√</a> （5.15.18）</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>QtMultiMedia C++17 构建修复</td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-avf-remove-unary_function-usage-qtmultimedia-5.15.diff" rel="external" target="_blank" title="Fsu0413 制作的补丁">√</a> （？）</td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-avf-remove-unary_function-usage-qtmultimedia-6.2.diff" rel="external" target="_blank" title="Fsu0413 制作的补丁">√</a> （？）</td>
+<td><a href="https://code.qt.io/cgit/qt/qtmultimedia.git/patch/?id=82f7f3de0e90bb7d1447cb710ffd2e1b315ae479" rel="external" target="_blank">√</a> （6.5.6，部分应用）</td>
 </tr>
 </tbody>
 </table>
-<p>从 2024 年 3 月 12 日开始我的 Qt 构建会包含一些简单的关于构建问题的修复。<br>
+<p>从 2024 年 3 月 12 日开始我的 Qt 构建会包含一些简单的（我自己做的）关于构建问题的修复。<br>
 目前只有 LTS 版本应用这些补丁。</p>
 <table>
 <thead>
 <tr>
 <th>问题 \ Qt 版本</th>
-<th>5.15.13</th>
-<th>6.2.7</th>
+<th>5.15.14</th>
+<th>6.2.8</th>
 <th>6.5.3</th>
 </tr>
 </thead>
@@ -593,6 +611,12 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
 <td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/6.2/2024-Fs-qtquick3dassimp-fix-GCC-13-builds-qtquick3d-6.2.diff" rel="external" target="_blank">2024-Fs-qtquick3dassimp-fix-GCC-13-builds-qtquick3d-6.2.diff</a></td>
 <td>-</td>
 </tr>
+<tr>
+<td>macOS mapboxgl <code>-Wno-enum-constexpr-conversion</code> 编译警告视为错误修复</td>
+<td><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-remove-warning-as-error-mapbox-gl-native-5.15.diff" rel="external" target="_blank">2024-Fs-remove-warning-as-error-mapbox-gl-native-5.15.diff</a><br /><a href="https://github.com/Fsu0413/Fs-scripts/blob/master/Patches/5.15/2024-Fs-remove-warning-as-error-qtwebengine-chromium-5.15.diff" rel="external" target="_blank">2024-Fs-remove-warning-as-error-qtwebengine-chromium-5.15.diff</a></td>
+<td>-</td>
+<td>-</td>
+</tr>
 </tbody>
 </table>
 
@@ -619,10 +643,10 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
           <li data-nav-id="/qtcompile/5.15-series/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/index.html">5.15 系列</a><ul id="R-subsections-d374b83d03acc30b906324bf7f6b9899" class="morespace collapsible-menu">
-          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-windows/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-windows/index.html">5.15.13 的 Windows 版本</a></li>
-          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-macos/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-macos/index.html">5.15.13 的 macOS 版本</a></li>
-          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-android/index.html">5.15.13 的安卓版本</a></li>
-          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-webassembly/index.html">5.15.13 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-windows/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-windows/index.html">5.15.14 的 Windows 版本</a></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-macos/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-macos/index.html">5.15.14 的 macOS 版本</a></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-android/index.html">5.15.14 的安卓版本</a></li>
+          <li data-nav-id="/qtcompile/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/5.15-series/5.15.11-for-webassembly/index.html">5.15.14 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/6.2-series/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/index.html">6.2 系列</a><ul id="R-subsections-f3427fcbeda6da3be7e077b630aae545" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-windows/index.html">6.2.8 的 Windows 版本</a></li>
           <li data-nav-id="/qtcompile/6.2-series/6.2.6-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.2-series/6.2.6-for-macos/index.html">6.2.8 的 macOS 版本</a></li>
@@ -634,10 +658,10 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
           <li data-nav-id="/qtcompile/6.5-series/6.5.3-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.3-for-android/index.html">6.5.3 的安卓版本</a></li>
           <li data-nav-id="/qtcompile/6.5-series/6.5.3-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.3-for-webassembly/index.html">6.5.3 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/6.7-series/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/index.html">6.7 系列</a><ul id="R-subsections-7bba749b3ce093fe170f5d1dec09c5d9" class="morespace collapsible-menu">
-          <li data-nav-id="/qtcompile/6.7-series/6.7.0-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/6.7.0-for-windows/index.html">6.7.0 的 Windows 版本</a></li>
-          <li data-nav-id="/qtcompile/6.7-series/6.7.0-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/6.7.0-for-macos/index.html">6.7.0 的 macOS 版本</a></li>
-          <li data-nav-id="/qtcompile/6.7-series/6.7.0-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/6.7.0-for-android/index.html">6.7.0 的安卓版本</a></li>
-          <li data-nav-id="/qtcompile/6.7-series/6.7.0-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/6.7.0-for-webassembly/index.html">6.7.0 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/qtcompile/6.7-series/6.7.0-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/6.7.0-for-windows/index.html">6.7.1 的 Windows 版本</a></li>
+          <li data-nav-id="/qtcompile/6.7-series/6.7.0-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/6.7.0-for-macos/index.html">6.7.1 的 macOS 版本</a></li>
+          <li data-nav-id="/qtcompile/6.7-series/6.7.0-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/6.7.0-for-android/index.html">6.7.1 的安卓版本</a></li>
+          <li data-nav-id="/qtcompile/6.7-series/6.7.0-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/6.7.0-for-webassembly/index.html">6.7.1 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/miscellaneous/index.html" class="parent "><a class="padding" href="/qtcompile/miscellaneous/index.html">杂项</a><ul id="R-subsections-fbd0e6ecd70e8ab847a5d20136c55334" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/miscellaneous/notesforthisrepo/index.html" class="active"><a class="padding" href="/qtcompile/miscellaneous/notesforthisrepo/index.html">本版本库的一些备注</a></li>
           <li data-nav-id="/qtcompile/miscellaneous/current-build-status/index.html" class=""><a class="padding" href="/qtcompile/miscellaneous/current-build-status/index.html">当前构建状态</a></li>
@@ -724,7 +748,7 @@ Windows 10 已经变得越来越流行，而且添加更多更多的新特性。
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Wed, 22 May 2024 21:29:57 CST</p>
+Site generated: Wed, 29 May 2024 00:03:55 CST</p>
 
           </div>
         </div>

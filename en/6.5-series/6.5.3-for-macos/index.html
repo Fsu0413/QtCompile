@@ -13,7 +13,7 @@ Following backend(s) are built in the package:">
     <meta itemprop="description" content="Note Following database backend is distributed with this version:
 SQLite (distributed with Qt): Built in the package using command -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF. iODBC (built in macOS yet deprecated since. Dynamic builds only): Built in the package using command -DFEATURE_sql_odbc=ON. MariaDB Connector/C 3.3 series (Dynamic builds only): Built in the package using command -DFEATURE_sql_mysql=ON. Note Since Qt 6.2 Qt made TLS backends as plugin.
 Following backend(s) are built in the package:">
-    <meta itemprop="wordCount" content="191">
+    <meta itemprop="wordCount" content="207">
     <title>6.5.3 for macOS :: Fsu0413&#39;s Original Qt builds</title>
     <link href="/qtcompile/6.5-series/6.5.3-for-macos/index.html" rel="alternate" hreflang="x-default">
     <link href="/qtcompile/6.5-series/6.5.3-for-macos/index.html" rel="alternate" hreflang="zh-cn">
@@ -165,6 +165,14 @@ All builds have <code>-DFEATURE_icu=OFF</code> because I think the ICU library i
 </div>
 
 
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
+  <div class="box-content">
+
+<p>No QtWebEngine in this version.</p>
+</div>
+</div>
+
 <div class="box notices cstyle primary">
   <div class="box-label"><i class="fas fa-check-square"></i> Patches (mostly CVE issue)</div>
   <div class="box-content">
@@ -183,32 +191,32 @@ I&rsquo;ll provide only Universal Binary builds of macOS of this version. <a hre
 <h2 id="dynamic--shared-builds">Dynamic / Shared Builds</h2>
 <h3 id="macos-universal">macOS-Universal</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-macOS-Universal-AppleClang14.0.3-20240216.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-macOS-Universal-AppleClang15.0.0-20240528.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/macOS-Universal/Qt6.5.3-macOS-Universal-AppleClang14.0.3-20240216.tar.xz" target="_blank"><span class="title">SourceForge link</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/macOS-Universal/Qt6.5.3-macOS-Universal-AppleClang15.0.0-20240528.tar.xz" target="_blank"><span class="title">SourceForge link</span></a></span></td>
             </tr>
-            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 13.6.4</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">AppleClang 14.0.3</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 14.5</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">AppleClang 15.0.0</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"><strong>NO WEBENGINE</strong> because of compile failure</td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-macOS-Universal-AppleClang14.0.3-noFramework-20240215.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-macOS-Universal-AppleClang15.0.0-noFramework-20240528.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/macOS-Universal/Qt6.5.3-macOS-Universal-AppleClang14.0.3-noFramework-20240215.tar.xz" target="_blank"><span class="title">SourceForge link</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/macOS-Universal/Qt6.5.3-macOS-Universal-AppleClang15.0.0-noFramework-20240528.tar.xz" target="_blank"><span class="title">SourceForge link</span></a></span></td>
             </tr>
-            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 13.6.4</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">AppleClang 14.0.3</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 14.5</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">AppleClang 15.0.0</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"><strong>NO WEBENGINE</strong> because of compile failure</td></tr>
         </tbody>
     </table>
 <h2 id="static-full-builds">Static <code>Full</code> Builds</h2>
 <h3 id="macos-universal-1">macOS-Universal</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-macOS-Universal-AppleClang14.0.3-staticFull-20240510.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-macOS-Universal-AppleClang15.0.0-staticFull-20240527.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>Download:</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/macOS-Universal/Qt6.5.3-macOS-Universal-AppleClang14.0.3-staticFull-20240510.tar.xz" target="_blank"><span class="title">SourceForge link</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/macOS-Universal/Qt6.5.3-macOS-Universal-AppleClang15.0.0-staticFull-20240527.tar.xz" target="_blank"><span class="title">SourceForge link</span></a></span></td>
             </tr>
-            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 13.6.6</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">AppleClang 14.0.3</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>Build Host:</b></td><td width="30%">macOS 14.5</td><td colspan="2" width="20%"><b>Toolchain Version:</b></td><td width="30%">AppleClang 15.0.0</td></tr><tr><td width="20%"><b>Notes:</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 
@@ -235,10 +243,10 @@ I&rsquo;ll provide only Universal Binary builds of macOS of this version. <a hre
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
           <li data-nav-id="/qtcompile/en/5.15-series/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/index.html">5.15 series</a><ul id="R-subsections-d374b83d03acc30b906324bf7f6b9899" class="morespace collapsible-menu">
-          <li data-nav-id="/qtcompile/en/5.15-series/5.15.11-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/5.15.11-for-windows/index.html">5.15.13 for Windows</a></li>
-          <li data-nav-id="/qtcompile/en/5.15-series/5.15.11-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/5.15.11-for-macos/index.html">5.15.13 for macOS</a></li>
-          <li data-nav-id="/qtcompile/en/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/5.15.11-for-android/index.html">5.15.13 for Android</a></li>
-          <li data-nav-id="/qtcompile/en/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/5.15.11-for-webassembly/index.html">5.15.13 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/qtcompile/en/5.15-series/5.15.11-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/5.15.11-for-windows/index.html">5.15.14 for Windows</a></li>
+          <li data-nav-id="/qtcompile/en/5.15-series/5.15.11-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/5.15.11-for-macos/index.html">5.15.14 for macOS</a></li>
+          <li data-nav-id="/qtcompile/en/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/5.15.11-for-android/index.html">5.15.14 for Android</a></li>
+          <li data-nav-id="/qtcompile/en/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/en/5.15-series/5.15.11-for-webassembly/index.html">5.15.14 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/qtcompile/en/6.2-series/index.html" class=""><a class="padding" href="/qtcompile/en/6.2-series/index.html">6.2 series</a><ul id="R-subsections-f3427fcbeda6da3be7e077b630aae545" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/en/6.2-series/6.2.6-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/6.2-series/6.2.6-for-windows/index.html">6.2.8 for Windows</a></li>
           <li data-nav-id="/qtcompile/en/6.2-series/6.2.6-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/6.2-series/6.2.6-for-macos/index.html">6.2.8 for macOS</a></li>
@@ -250,10 +258,10 @@ I&rsquo;ll provide only Universal Binary builds of macOS of this version. <a hre
           <li data-nav-id="/qtcompile/en/6.5-series/6.5.3-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/6.5-series/6.5.3-for-android/index.html">6.5.3 for Android</a></li>
           <li data-nav-id="/qtcompile/en/6.5-series/6.5.3-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/en/6.5-series/6.5.3-for-webassembly/index.html">6.5.3 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/qtcompile/en/6.7-series/index.html" class=""><a class="padding" href="/qtcompile/en/6.7-series/index.html">6.7 series</a><ul id="R-subsections-7bba749b3ce093fe170f5d1dec09c5d9" class="morespace collapsible-menu">
-          <li data-nav-id="/qtcompile/en/6.7-series/6.7.0-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/6.7-series/6.7.0-for-windows/index.html">6.7.0 for Windows</a></li>
-          <li data-nav-id="/qtcompile/en/6.7-series/6.7.0-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/6.7-series/6.7.0-for-macos/index.html">6.7.0 for macOS</a></li>
-          <li data-nav-id="/qtcompile/en/6.7-series/6.7.0-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/6.7-series/6.7.0-for-android/index.html">6.7.0 for Android</a></li>
-          <li data-nav-id="/qtcompile/en/6.7-series/6.7.0-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/en/6.7-series/6.7.0-for-webassembly/index.html">6.7.0 for WebAssembly</a></li></ul></li>
+          <li data-nav-id="/qtcompile/en/6.7-series/6.7.0-for-windows/index.html" class=""><a class="padding" href="/qtcompile/en/6.7-series/6.7.0-for-windows/index.html">6.7.1 for Windows</a></li>
+          <li data-nav-id="/qtcompile/en/6.7-series/6.7.0-for-macos/index.html" class=""><a class="padding" href="/qtcompile/en/6.7-series/6.7.0-for-macos/index.html">6.7.1 for macOS</a></li>
+          <li data-nav-id="/qtcompile/en/6.7-series/6.7.0-for-android/index.html" class=""><a class="padding" href="/qtcompile/en/6.7-series/6.7.0-for-android/index.html">6.7.1 for Android</a></li>
+          <li data-nav-id="/qtcompile/en/6.7-series/6.7.0-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/en/6.7-series/6.7.0-for-webassembly/index.html">6.7.1 for WebAssembly</a></li></ul></li>
           <li data-nav-id="/qtcompile/en/miscellaneous/index.html" class=""><a class="padding" href="/qtcompile/en/miscellaneous/index.html">Miscellaneous</a><ul id="R-subsections-fbd0e6ecd70e8ab847a5d20136c55334" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/en/miscellaneous/notesforthisrepo/index.html" class=""><a class="padding" href="/qtcompile/en/miscellaneous/notesforthisrepo/index.html">Notes for this repository</a></li>
           <li data-nav-id="/qtcompile/en/miscellaneous/current-build-status/index.html" class=""><a class="padding" href="/qtcompile/en/miscellaneous/current-build-status/index.html">Current build status</a></li>
@@ -340,7 +348,7 @@ I&rsquo;ll provide only Universal Binary builds of macOS of this version. <a hre
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Wed, 22 May 2024 21:29:57 CST</p>
+Site generated: Wed, 29 May 2024 00:03:55 CST</p>
 
           </div>
         </div>
