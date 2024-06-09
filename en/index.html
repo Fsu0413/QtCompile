@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.126.1">
+    <meta name="generator" content="Hugo 0.127.0">
     <meta name="generator" content="Relearn 6.0.0">
     <meta name="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
     <meta name="author" content="Fsu0413">
     <meta itemprop="name" content="Fsu0413&#39;s Original Qt builds">
     <meta itemprop="description" content="Personal build of Qt4 onwards, with SSL builtin. Multiple configuration available.">
-    <meta itemprop="wordCount" content="410">
+    <meta itemprop="wordCount" content="272">
     <title>Fsu0413&#39;s Original Qt builds</title>
     <link href="/qtcompile/index.html" rel="alternate" hreflang="x-default">
     <link href="/qtcompile/index.html" rel="alternate" hreflang="zh-cn">
@@ -87,10 +87,10 @@
     <li><a href="#disclaimer">Disclaimer</a></li>
     <li><a href="#update-history">Update History</a>
       <ul>
+        <li><a href="#9th-jun-2024">9th Jun, 2024</a></li>
         <li><a href="#28th-may-2024">28th May, 2024</a></li>
         <li><a href="#12th-may-2024">12th May, 2024</a></li>
-        <li><a href="#19th-apr-2024">19th Apr, 2024</a></li>
-        <li><a href="#before-17th-apr-2024">Before 17th Apr, 2024</a></li>
+        <li><a href="#before-19th-apr-2024">Before 19th Apr, 2024</a></li>
       </ul>
     </li>
   </ul>
@@ -123,43 +123,16 @@
 
 <h1 id="fsu0413s-original-qt-builds">Fsu0413&#39;s Original Qt builds</h1>
 
-
-<div class="box notices cstyle info">
-  <div class="box-label"><i class="fas fa-info-circle"></i> Note</div>
-  <div class="box-content">
-
-<p>Currently there is technical problem on OSDN. Download / Upload are having problems.<br>
-All links to OSDN are removed for now. Please download from SourceForge.</p>
-<p>Error during upload is as following (Output by WinSCP).</p>
-<div class="expand">
-    <input type="checkbox" id="R-expand-3fd38a6c11c86686d4902493bcfd1088" aria-controls="R-expandcontent-3fd38a6c11c86686d4902493bcfd1088" >
-    <label class="expand-label" for="R-expand-3fd38a6c11c86686d4902493bcfd1088" >
-        <i class="fa-fw fas fa-chevron-down"></i>
-        <i class="fa-fw fas fa-chevron-right"></i>
-        Expand me&hellip;
-    </label>
-    <div id="R-expandcontent-3fd38a6c11c86686d4902493bcfd1088" class="expand-content">
-<p>General failure (server should provide error description).<br>
-Error code: 4<br>
-Error message from server: Failure</p>
-<p>Common reasons for the Error code 4 are:</p>
-<ul>
-<li>Renaming a file to a name of already existing file.</li>
-<li>Creating a directory that already exists.</li>
-<li>Moving a remote file to a different filesystem (HDD).</li>
-<li>Uploading a file to a full filesystem (HDD).</li>
-<li>Exceeding a user disk quota.</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
 <h2 id="disclaimer">Disclaimer</h2>
 <p>These binaries built by Fsu0413 are <strong>TOTALLY UNTESTED</strong>. Use at your own risk.<br>
 The code used is downloaded from <a href="http://download.qt.io" rel="external" target="_blank">here</a>, and patches applied on top of code are <a href="/qtcompile/en/miscellaneous/notesforthisrepo/index.html#existing-patches">listed here</a> only for dealing with some simple and minor compile / build fixes.<br>
 <strong>THESE PACKAGE ARE PROVIDED &ldquo;As is&rdquo;, I have no responsibility that you mess up your things with this binaries.</strong><br>
 Thanks for The Qt Company Ltd. and the programmers of Qt for their fantastic work!!</p>
 <h2 id="update-history">Update History</h2>
+<h3 id="9th-jun-2024">9th Jun, 2024</h3>
+<p>Update OpenSSL to 3.0.13.<br>
+Rebuild versions built by llvm-mingw 18 series toolchain, using llvm-mingw 18.1.7.<br>
+Update Visual Studio 2022 to 17.10.1.</p>
 <h3 id="28th-may-2024">28th May, 2024</h3>
 <p>Update Qt 5.15.14 / 6.7.1.<br>
 Apply patches for CVE-2024-36048 for all supported versions, all packages are rebuilt.<br>
@@ -173,12 +146,7 @@ If Qt 6.5 QtWebEngine build failed on MSVC series I&rsquo;ll just disable it.</p
 Reason is that it is <a href="https://github.com/Fsu0413/QtCompile/issues/25" rel="external" target="_blank">Repo</a><a href="https://github.com/Fsu0413/QtCompile/issues/22" rel="external" target="_blank">rted</a> that Qt won&rsquo;t be working without OpenSSL header file.</p>
 <p>Rebuild versions (except for Qt 6.7) built by llvm-mingw 18 series toolchain, using llvm-mingw 18.1.5.</p>
 <p>Rebuild Qt 5.15 MinGW (GCC 11.2.0 and later, LLVM all) versions, fixed a problem which causes that the MySQL (MariaDB) plugin wasn&rsquo;t built.</p>
-<h3 id="19th-apr-2024">19th Apr, 2024</h3>
-<p>Update Qt 6.2.8.<br>
-Rebuild versions built by llvm-mingw 18 series toolchain, using llvm-mingw 18.1.4.</p>
-<p>Remove &ldquo;Qt 6 support platforms&rdquo; section from notes since there is nothing we are planning for Qt 6 build right now.<br>
-Initial version of Qt 6.0 has released for more than 3 years, and all targets planned for build has achieved. This section have no future use.</p>
-<h3 id="before-17th-apr-2024">Before 17th Apr, 2024</h3>
+<h3 id="before-19th-apr-2024">Before 19th Apr, 2024</h3>
 <p><a href="/qtcompile/en/miscellaneous/histories/index.html">Here</a></p>
 
             <footer class="footline">
@@ -309,7 +277,7 @@ Initial version of Qt 6.0 has released for more than 3 years, and all targets pl
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Wed, 29 May 2024 07:55:03 CST</p>
+Site generated: Mon, 10 Jun 2024 00:35:51 CST</p>
 
           </div>
         </div>
