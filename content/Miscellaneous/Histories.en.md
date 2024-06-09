@@ -3,6 +3,13 @@
   "weight": 4
 }
 
+## {{% date 2024 4 19 %}}
+Update Qt 6.2.8.  
+Rebuild versions built by llvm-mingw 18 series toolchain, using llvm-mingw 18.1.4.
+
+Remove "Qt 6 support platforms" section from notes since there is nothing we are planning for Qt 6 build right now.  
+Initial version of Qt 6.0 has released for more than 3 years, and all targets planned for build has achieved. This section have no future use.
+
 ## {{% date 2024 4 17 %}}
 Add builds of Qt 6.5 and 6.7, using VS2019.  
 Rebuild Qt 5.15 / 6.5 / 6.7 using updated VS2017 15.9.61 / VS2019 16.11.35 / VS2022 17.9.6. (except for static builds)
@@ -112,7 +119,7 @@ Update Qt 6.5.2.
 
 Update OpenSSL to 3.0.10 / 1.1.1v.
 
-OSDN service is temporarily stopping from being used due to technical problem. Currently prebuilt packages are only uploaded to SourceForge.
+OSDN service ~~is temporarily~~ will be forever stopping from being used due to technical problem. Currently prebuilt packages are only uploaded to SourceForge.
 
 ## {{% date 2023 6 14 %}}
 Update Qt 5.15.10 series with QtWebEngine / QtScript 5.15.14.  
