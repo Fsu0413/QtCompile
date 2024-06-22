@@ -9,7 +9,7 @@
     <meta name="author" content="Fsu0413">
     <meta itemprop="name" content="Fsu0413 的原版 Qt 构建">
     <meta itemprop="description" content="个人构建的 Qt 4 以后的版本，附带内置的 SSL。包含多种选项。">
-    <meta itemprop="wordCount" content="133">
+    <meta itemprop="wordCount" content="85">
     <title>Fsu0413 的原版 Qt 构建</title>
     <link href="/qtcompile/index.html" rel="alternate" hreflang="x-default">
     <link href="/qtcompile/index.html" rel="alternate" hreflang="zh-cn">
@@ -87,10 +87,9 @@
     <li><a href="#免责声明">免责声明</a></li>
     <li><a href="#更新记录">更新记录</a>
       <ul>
+        <li><a href="#2024-年-6-月-22-日">2024 年 6 月 22 日</a></li>
         <li><a href="#2024-年-6-月-9-日">2024 年 6 月 9 日</a></li>
-        <li><a href="#2024-年-5-月-28-日">2024 年 5 月 28 日</a></li>
-        <li><a href="#2024-年-5-月-12-日">2024 年 5 月 12 日</a></li>
-        <li><a href="#2024-年-4-月-19-日以前">2024 年 4 月 19 日以前</a></li>
+        <li><a href="#2024-年-5-月-28-日以前">2024 年 5 月 28 日以前</a></li>
       </ul>
     </li>
   </ul>
@@ -129,24 +128,17 @@
 <strong>这些包为“依原样”提供。我对您使用此二进制文件作出的任何事情不负任何责任。</strong><br>
 感谢 The Qt Company Ltd. 和众多 Qt 的开发者的绝妙工作！</p>
 <h2 id="更新记录">更新记录</h2>
+<h3 id="2024-年-6-月-22-日">2024 年 6 月 22 日</h3>
+<p>更新 Qt 6.7.2。<br>
+使用 llvm-mingw 18.1.8 重新构建所有使用 llvm-mingw 18 系列工具链的版本。<br>
+更新 Visual Studio 2022 到 17.10.1。<br>
+更新 Visual Studio 2019 到 16.11.37。<br>
+更新 Visual Studio 2017 到 15.9.63。</p>
 <h3 id="2024-年-6-月-9-日">2024 年 6 月 9 日</h3>
 <p>更新 OpenSSL 到 3.0.13。<br>
 使用 llvm-mingw 18.1.7 重新构建所有使用 llvm-mingw 18 系列工具链的版本。<br>
 更新 Visual Studio 2022 到 17.10.1。</p>
-<h3 id="2024-年-5-月-28-日">2024 年 5 月 28 日</h3>
-<p>更新 Qt 5.15.14 / 6.7.1。<br>
-为所有支持的版本应用 CVE-2024-36048 的补丁，所有包都重新构建了。<br>
-使用 llvm-mingw 18.1.6 重新构建所有使用 llvm-mingw 18 系列工具链的版本。</p>
-<p>升级 macOS （arm64） 到 14.5，并且更新 Xcode 到附带 AppleClang 15.0.0 的版本。</p>
-<p>正如我在 6.2 上做的一样，我已经开始逐步终止 Qt 6.5 系列上的 QtWebEngine 支持。 <br>
-当前 macOS 上已经出现构建失败的情况，所以构建已经禁用，并且不会再于 macOS 平台上再次启用。 <br>
-如果 MSVC 也出现这个情况的话，我也会直接给它禁止掉。</p>
-<h3 id="2024-年-5-月-12-日">2024 年 5 月 12 日</h3>
-<p>重新构建了所有的 Qt 6 静态版本。删掉了里面的内置 OpenSSL。<br>
-原因是有<a href="https://github.com/Fsu0413/QtCompile/issues/25" rel="external" target="_blank">报</a><a href="https://github.com/Fsu0413/QtCompile/issues/22" rel="external" target="_blank">告</a>说没了 OpenSSL 的头文件，Qt 用不了。</p>
-<p>使用 llvm-mingw 18.1.5 重新构建除 Qt 6.7 外的使用 llvm-mingw 18 系列工具链的版本。</p>
-<p>重新构建了 Qt 5.15 MinGW （GCC 11.2.0 及以后，LLVM 的所有）版本，修复一个导致 MySQL （MariaDB）插件没有构建的问题。</p>
-<h3 id="2024-年-4-月-19-日以前">2024 年 4 月 19 日以前</h3>
+<h3 id="2024-年-5-月-28-日以前">2024 年 5 月 28 日以前</h3>
 <p><a href="/qtcompile/miscellaneous/histories/index.html">这里</a></p>
 
             <footer class="footline">
@@ -187,10 +179,10 @@
           <li data-nav-id="/qtcompile/6.5-series/6.5.3-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.3-for-android/index.html">6.5.3 的安卓版本</a></li>
           <li data-nav-id="/qtcompile/6.5-series/6.5.3-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.5-series/6.5.3-for-webassembly/index.html">6.5.3 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/6.7-series/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/index.html">6.7 系列</a><ul id="R-subsections-7bba749b3ce093fe170f5d1dec09c5d9" class="morespace collapsible-menu">
-          <li data-nav-id="/qtcompile/6.7-series/6.7.0-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/6.7.0-for-windows/index.html">6.7.1 的 Windows 版本</a></li>
-          <li data-nav-id="/qtcompile/6.7-series/6.7.0-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/6.7.0-for-macos/index.html">6.7.1 的 macOS 版本</a></li>
-          <li data-nav-id="/qtcompile/6.7-series/6.7.0-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/6.7.0-for-android/index.html">6.7.1 的安卓版本</a></li>
-          <li data-nav-id="/qtcompile/6.7-series/6.7.0-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/6.7.0-for-webassembly/index.html">6.7.1 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/qtcompile/6.7-series/6.7.0-for-windows/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/6.7.0-for-windows/index.html">6.7.2 的 Windows 版本</a></li>
+          <li data-nav-id="/qtcompile/6.7-series/6.7.0-for-macos/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/6.7.0-for-macos/index.html">6.7.2 的 macOS 版本</a></li>
+          <li data-nav-id="/qtcompile/6.7-series/6.7.0-for-android/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/6.7.0-for-android/index.html">6.7.2 的安卓版本</a></li>
+          <li data-nav-id="/qtcompile/6.7-series/6.7.0-for-webassembly/index.html" class=""><a class="padding" href="/qtcompile/6.7-series/6.7.0-for-webassembly/index.html">6.7.2 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/qtcompile/miscellaneous/index.html" class=""><a class="padding" href="/qtcompile/miscellaneous/index.html">杂项</a><ul id="R-subsections-fbd0e6ecd70e8ab847a5d20136c55334" class="morespace collapsible-menu">
           <li data-nav-id="/qtcompile/miscellaneous/notesforthisrepo/index.html" class=""><a class="padding" href="/qtcompile/miscellaneous/notesforthisrepo/index.html">本版本库的一些备注</a></li>
           <li data-nav-id="/qtcompile/miscellaneous/current-build-status/index.html" class=""><a class="padding" href="/qtcompile/miscellaneous/current-build-status/index.html">当前构建状态</a></li>
@@ -277,7 +269,7 @@
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Mon, 10 Jun 2024 00:35:51 CST</p>
+Site generated: Sat, 22 Jun 2024 11:00:25 CST</p>
 
           </div>
         </div>
