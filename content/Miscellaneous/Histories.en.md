@@ -3,6 +3,25 @@
   "weight": 4
 }
 
+## {{% date 2024 5 28 %}}
+Update Qt 5.15.14 / 6.7.1.  
+Apply patches for CVE-2024-36048 for all supported versions, all packages are rebuilt.  
+Rebuild versions built by llvm-mingw 18 series toolchain, using llvm-mingw 18.1.6.
+
+Update macOS (arm64) to 14.5 and update Xcode to version with AppleClang 15.0.0.
+
+I'm starting gradually ending support for QtWebEngine on Qt 6.5 series, as been done in 6.2 series before.  
+Currently build doesn't pass on macOS platform and it is disabled and won't be enabled on macOS for 6.5 series again.  
+If Qt 6.5 QtWebEngine build failed on MSVC series I'll just disable it.
+
+## {{% date 2024 5 12 %}}
+Rebuild all Qt 6 static builds. Remove OpenSSL builtin from these versions.  
+Reason is that it is [Repo](https://github.com/Fsu0413/QtCompile/issues/25)[rted](https://github.com/Fsu0413/QtCompile/issues/22) that Qt won't be working without OpenSSL header file.
+
+Rebuild versions (except for Qt 6.7) built by llvm-mingw 18 series toolchain, using llvm-mingw 18.1.5.
+
+Rebuild Qt 5.15 MinGW (GCC 11.2.0 and later, LLVM all) versions, fixed a problem which causes that the MySQL (MariaDB) plugin wasn't built.
+
 ## {{% date 2024 4 19 %}}
 Update Qt 6.2.8.  
 Rebuild versions built by llvm-mingw 18 series toolchain, using llvm-mingw 18.1.4.

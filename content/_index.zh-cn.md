@@ -13,30 +13,18 @@ __这些包为“依原样”提供。我对您使用此二进制文件作出的
 
 ## 更新记录
 
+### {{% date 2024 6 22 %}}
+更新 Qt 6.7.2。  
+使用 llvm-mingw 18.1.8 重新构建所有使用 llvm-mingw 18 系列工具链的版本。  
+更新 Visual Studio 2022 到 17.10.1。  
+更新 Visual Studio 2019 到 16.11.37。  
+更新 Visual Studio 2017 到 15.9.63。
+
 ### {{% date 2024 6 9 %}}
 更新 OpenSSL 到 3.0.13。  
 使用 llvm-mingw 18.1.7 重新构建所有使用 llvm-mingw 18 系列工具链的版本。  
 更新 Visual Studio 2022 到 17.10.1。
 
-### {{% date 2024 5 28 %}}
-更新 Qt 5.15.14 / 6.7.1。   
-为所有支持的版本应用 CVE-2024-36048 的补丁，所有包都重新构建了。   
-使用 llvm-mingw 18.1.6 重新构建所有使用 llvm-mingw 18 系列工具链的版本。
-
-升级 macOS （arm64） 到 14.5，并且更新 Xcode 到附带 AppleClang 15.0.0 的版本。
-
-正如我在 6.2 上做的一样，我已经开始逐步终止 Qt 6.5 系列上的 QtWebEngine 支持。    
-当前 macOS 上已经出现构建失败的情况，所以构建已经禁用，并且不会再于 macOS 平台上再次启用。    
-如果 MSVC 也出现这个情况的话，我也会直接给它禁止掉。
-
-### {{% date 2024 5 12 %}}
-重新构建了所有的 Qt 6 静态版本。删掉了里面的内置 OpenSSL。  
-原因是有[报](https://github.com/Fsu0413/QtCompile/issues/25)[告](https://github.com/Fsu0413/QtCompile/issues/22)说没了 OpenSSL 的头文件，Qt 用不了。
-
-使用 llvm-mingw 18.1.5 重新构建除 Qt 6.7 外的使用 llvm-mingw 18 系列工具链的版本。
-
-重新构建了 Qt 5.15 MinGW （GCC 11.2.0 及以后，LLVM 的所有）版本，修复一个导致 MySQL （MariaDB）插件没有构建的问题。
-
-### {{% date 2024 4 19 %}}以前
+### {{% date 2024 5 28 %}}以前
 
 [这里](/Miscellaneous/Histories)
