@@ -4,7 +4,7 @@
       "version": "3.0.14",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "VS2019 16.11.36",
+      "toolchain": "VS2019 16.11.37",
       "arch": "x86_64",
       "variant": ""
     },
@@ -15,7 +15,7 @@
       "version": "3.0.14",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "VS2022 17.10.1",
+      "toolchain": "VS2022 17.10.3",
       "arch": "x86_64",
       "variant": ""
     },
@@ -26,7 +26,7 @@
       "version": "3.0.14",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "VS2022 17.10.1",
+      "toolchain": "VS2022 17.10.3",
       "arch": "arm64",
       "variant": ""
     },
@@ -136,7 +136,7 @@
       "version": "3.0.14",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "MinGW-w64 w/ LLVM 18.1.7 UCRT",
+      "toolchain": "MinGW-w64 w/ LLVM 18.1.8 UCRT",
       "arch": "x86_64",
       "variant": ""
     },
@@ -147,7 +147,7 @@
       "version": "3.0.14",
       "platform": "Windows",
       "buildHost": "Windows 11 10.0.22631",
-      "toolchain": "MinGW-w64 w/ LLVM 18.1.7 MSVCRT",
+      "toolchain": "MinGW-w64 w/ LLVM 18.1.8 MSVCRT",
       "arch": "x86_64",
       "variant": ""
     },
