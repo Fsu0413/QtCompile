@@ -1530,7 +1530,7 @@
       "toolchain": "MinGW-w64 w/ GCC 11.2.0",
       "arch": "x86_64",
       "variant": "-static(Lite)",
-      "uploaded": "[×](# \"Won't upload seprately, used in cross-compiled Qt\")",
+      "uploaded": "[×](# \"Won't upload separately, used in cross-compiled Qt\")",
       "configuration": "√"
     }
   },
@@ -1543,7 +1543,7 @@
       "toolchain": "GCC 8.5.0",
       "arch": "x86_64",
       "variant": "-static(Lite)",
-      "uploaded": "[×](# \"Won't upload seprately, used in cross-compiled Qt\")",
+      "uploaded": "[×](# \"Won't upload separately, used in cross-compiled Qt\")",
       "configuration": "√"
     }
   },
@@ -1556,7 +1556,7 @@
       "toolchain": "AppleClang 15.0.0",
       "arch": "Universal (x86_64, arm64)",
       "variant": "-static(Lite)",
-      "uploaded": "[×](# \"Won't upload seprately, used in cross-compiled Qt\")",
+      "uploaded": "[×](# \"Won't upload separately, used in cross-compiled Qt\")",
       "configuration": "√"
     }
   },
@@ -2251,7 +2251,7 @@
       "toolchain": "MinGW-w64 w/ GCC 12.2.0 MSVCRT",
       "arch": "x86_64",
       "variant": "-static(Lite)",
-      "uploaded": "[×](# \"Won't upload seprately, used in cross-compiled Qt\")",
+      "uploaded": "[×](# \"Won't upload separately, used in cross-compiled Qt\")",
       "configuration": "√"
     }
   },
@@ -2264,7 +2264,7 @@
       "toolchain": "GCC 11.4.1",
       "arch": "x86_64",
       "variant": "-static(Lite)",
-      "uploaded": "[×](# \"Won't upload seprately, used in cross-compiled Qt\")",
+      "uploaded": "[×](# \"Won't upload separately, used in cross-compiled Qt\")",
       "configuration": "√"
     }
   },
@@ -2277,7 +2277,7 @@
       "toolchain": "AppleClang 15.0.0",
       "arch": "Universal (x86_64, arm64)",
       "variant": "-static(Lite)",
-      "uploaded": "[×](# \"Won't upload seprately, used in cross-compiled Qt\")",
+      "uploaded": "[×](# \"Won't upload separately, used in cross-compiled Qt\")",
       "configuration": "√"
     }
   },
@@ -2628,7 +2628,7 @@
       "toolchain": "MinGW-w64 w/ GCC 13.2.0 MSVCRT",
       "arch": "x86_64",
       "variant": "-static(Lite)",
-      "uploaded": "[×](# \"Won't upload seprately, used in cross-compiled Qt\")",
+      "uploaded": "[×](# \"Won't upload separately, used in cross-compiled Qt\")",
       "configuration": "√"
     }
   },
@@ -2641,7 +2641,7 @@
       "toolchain": "GCC 11.4.1",
       "arch": "x86_64",
       "variant": "-static(Lite)",
-      "uploaded": "[×](# \"Won't upload seprately, used in cross-compiled Qt\")",
+      "uploaded": "[×](# \"Won't upload separately, used in cross-compiled Qt\")",
       "configuration": "√"
     }
   },
@@ -2654,7 +2654,7 @@
       "toolchain": "AppleClang 15.0.0",
       "arch": "Universal (x86_64, arm64)",
       "variant": "-static(Lite)",
-      "uploaded": "[×](# \"Won't upload seprately, used in cross-compiled Qt\")",
+      "uploaded": "[×](# \"Won't upload separately, used in cross-compiled Qt\")",
       "configuration": "√"
     }
   }
