@@ -9,7 +9,7 @@ It uses `libclang_static.lib` but llvm / clang don't provide this one.
 I have decided not provide LLVM-based QDoc until I find a way to static link it.
 
 Update {{% date 2020 11 3 %}}:  
-`libclang_static.lib` is packed seprately using script by Qt guys.  
+`libclang_static.lib` is packed separately using script by Qt guys.  
 Thanks "lixinwei" on QTCN.org for telling me related info. [Original post](http://www.qtcn.org/bbs/job.php?action=topost&tid=85983&pid=200952) (Sorry, it's in Chinese)
 
 Update {{% date 2024 3 25 %}}:  
@@ -87,4 +87,4 @@ Subsequent patch of CVE-2023-38197 depends on patch of CVE-2023-37369 thus can't
 
 Update {{% date 2024 2 16 %}}:  
 There are currently many security patches which can not be applied on Qt 6.2 series.  
-Since I have had trouble during investigation of previous patches, I won't (possibily) investigate any solution for the patches that can't be applied, instead I'll just apply the patches when it applies cleanly.
+Since I have had trouble during investigation of previous patches, I won't (possibly) investigate any solution for the patches that can't be applied, instead I'll just apply the patches when it applies cleanly.

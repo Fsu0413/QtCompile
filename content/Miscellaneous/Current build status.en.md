@@ -58,7 +58,7 @@ I have following reason for not using MySQL libraries.
 ## Qt Build Table
 
 **Note: Since Qt 6 dropped support for 32-bit Windows for Qt 6, our Qt 6 builds will no longer run for 32-bit Windows either.**  
-**If there is need of static builds for non-LTS release, please contect me directly for commerical customization.**
+**If there is need of static builds for non-LTS release, please contact me directly for commercial customization.**
 
 {{% QtTable %}}
 

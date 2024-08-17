@@ -25,7 +25,7 @@ I may purchage the service later when the service seems good enough for me.
 [Github Pages (America, with English as default language)](https://build-qt.fsu0413.me/)  
 [Gitee Pages (The Greatest China, with Chinese-S as default language)](https://fsu0413.gitee.io/qtcompile/)
 
-## Reproduciable building
+## Reproducible building
 
 I use a set of scripts to do the build and packaging for [reproducible building](https://reproducible-builds.org/) Qt.  
 If you are interested in build method, please check the following GitHub repository. (**PLEASE DO NOT FORK THIS REPOSITORY!**)
@@ -95,13 +95,13 @@ tar -cf - xxx | 7zr a -txz -m0=LZMA2:d256m:fb273 -mmt=3 -myx -si -- xxx.tar.xz
 Make sure your uncompresser supports LZMA2 algorithm. For example:  
 `7z` users should upgrade your `7z` to 9.20 or later.  
 `WinRAR` users should upgrade your `WinRAR` to 4.00 or later.  
-Other decompresser users should query for their latest version, since it may support LZMA2 algorithm.
+Other decompressor users should query for their latest version, since it may support LZMA2 algorithm.
 
 Arch Linux and MSYS2 switched to zst for their package manager recently.  
 Only recent GNU `tar` (1.31 or later) and recent `bsdtar` (3.3.3 or later) directly supports `.tar.zst` compress method.  
 I will not use zst here because the compress ratio is not as good as LZMA2(xz).
 
-## Difference of this Qt and offically distributed Qt (Updated {{% date 2023 1 8 %}})
+## Difference of this Qt and officially distributed Qt (Updated {{% date 2023 1 8 %}})
 
 I provide only binary tarball, which contains only built Qt binary for each OS.  
 It should work out of box (for Qt 5.14 or later) or work after patches to Qt (for Qt 5.13 and before).  
@@ -117,7 +117,7 @@ macOS builds are using SecureTransport instead of OpenSSL.
 Windows builds after and including Qt 5.13 are using SChannel instead of OpenSSL.
 
 (Updated {{% date 2022 4 14 %}}) **No debug libs, which cuts more than a half of the size of the whole Qt package.**  
-(Kindly please don't request it without commericial customization since I don't use it. Note that commerical customization has not started yet)
+(Kindly please don't request it without commercial customization since I don't use it. Note that commercial customization has not started yet)
 
 No examples, which cuts more than a half of the size of the whole Qt package.
 
@@ -126,7 +126,7 @@ No docs (and no `QDoc` for Qt 5.12 and later since it depends on Clang), since Q
 (Updated {{% date 2023 1 8 %}}) **No certificate** which may be devastating for especially non-developers.  
 Binary program certificate must be bought on expensive price, yet I as a personal developer can't afford it for only a simple trust verification.  
 This leads to a problem that the program is reported to be not trusted when running my build of Qt.  
-There is no solution for this problem at the moment. I won't buy certificate for verification until commericial customization started and I earned some money by it in the future.  
+There is no solution for this problem at the moment. I won't buy certificate for verification until commercial customization started and I earned some money by it in the future.  
 It is possible to implement GPG verifiiation before certificate can be bought. (Although it has been put away for a long time...)  
 (Qt before 5.14 can't be trusted due to patch of Qt after install. Qt 5.14 and later can be relocated which resolves this problem)
 
@@ -200,7 +200,7 @@ If subsequent version of Qt 5.15 remains private we won't upgrade OpenSSL to pos
 
 Commericial-only Qt Open Source Release Date (ETA)
 
-| Qt Version | Commericial Release Date | Open Source Release Date |
+| Qt Version | Commercial Release Date | Open Source Release Date |
 |-|-|-|
 | 5.15.15 | {{% date 2023 8 31 %}} | {{% date 2024 8 31 %}} (Need to check if Qt will really release this version to opensource on that day) |
 | 5.15.16 | {{% date 2023 11 17 %}} | {{% date 2024 11 17 %}} |
@@ -218,7 +218,7 @@ Starting from {{% date 2022 3 12 %}} I am shipping Qt with patches from Qt.
 Most of them are CVE patches which can be downloaded from [Qt Downloads](https://download.qt.io/), others are build fixes which are download from Qt Gerrit or KDE.
 
 Following is a table for patches of each version I am currently building.  
-Note that I won't patch an active version of Qt and will simply wait for future release. So only Commericial LTS and EOL version are patched.  
+Note that I won't patch an active version of Qt and will simply wait for future release. So only Commercial LTS and EOL version are patched.  
 A patch will removed from following table when this patch is shipped or not needed to be applied in all of the maintained versions.  
 Version number in brackets are the version when the corresponding patch will be shipped.
 
