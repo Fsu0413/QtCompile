@@ -186,15 +186,15 @@ If subsequent version of Qt 5.15 remains private we won't upgrade OpenSSL to pos
 
 | Qt version | Build Target | EOL date | Notes |
 |-|-|-|-|
-| 5.15 Series | Windows 11 with VS2019 (Shared) / VS2022 | {{% date "2024 or 2026" 5 26 %}} | Same as EOL of Qt opensource 5.15, with WebEngine got update ahead of time, with VS version update within VS2019/22 |
+| 5.15 Series | Windows 11 with VS2019 (Shared) / VS2022 | {{% date "2025 or 2026" 5 26 %}} | Same as EOL of Qt WebEngine 5.15, with WebEngine got update ahead of time, with VS version update within VS2019/22 |
 | | Windows with VS2015 / VS2017 / VS2019 (static) / MinGW | {{% date "2024 or 2026" 5 26 %}} | Same as EOL of Qt opensource 5.15, with VS version update within VS2017/9/22 |
-| | macOS | {{% date "2024 or 2026" 5 26 %}} | Same as EOL of Qt opensource 5.15, with WebEngine got update ahead of time, with (at best effort) Xcode and macOS update |
+| | macOS | {{% date "2025 or 2026" 5 26 %}} | Same as EOL of Qt WebEngine 5.15, with WebEngine got update ahead of time, with (at best effort) Xcode and macOS update |
 | | Android | {{% date 2026 9 7 %}} | Same as EOL of OpenSSL 3.0 series. |
 | | WebAssembly | {{% date "2024 or 2026" 5 26 %}} | Same as EOL of Qt opensource 5.15 |
 | 6.2 Series | Windows 11 with VS2019 / VS2022 | {{% date 2026 9 7 %}} | Same as EOL of OpenSSL 3.0 series, with VS version update |
 | | Windows 11 with MinGW / LLVM-MinGW | {{% date 2026 9 7 %}} | Same as EOL of OpenSSL 3.0 series, with MinGW version update |
 | | macOS | {{% date 2026 9 7 %}} | Same as EOL of OpenSSL 3.0 series, with (at best effort) Xcode and macOS update |
-| | Android | {{% date 2026 9 7 %}} | Same as EOL of OpenSSL 3.0 series, Will stuck at Android NDK r23 LTS series |
+| | Android | {{% date 2026 9 7 %}} | Same as EOL of OpenSSL 3.0 series |
 | | WebAssembly | {{% date 2025 9 29 %}} | Same as EOL of Qt opensource 6.2 |
 | 6.5 Series | ? | {{% date 2027 4 3 %}} (tentitive) | Updated OpenSSL or third party libraries should be checked beforehand. |
 
@@ -205,12 +205,12 @@ Commericial-only Qt Open Source Release Date (ETA)
 | 5.15.15 | {{% date 2023 8 31 %}} | {{% date 2024 8 31 %}} (Need to check if Qt will really release this version to opensource on that day) |
 | 5.15.16 | {{% date 2023 11 17 %}} | {{% date 2024 11 17 %}} |
 | 5.15.17 | {{% date 2024 5 22 %}} | {{% date 2025 5 22 %}} |
-| 6.2.9 | {{% date 2023 7 4 %}} | {{% date 2024 7 4 %}} |
 | 6.2.10 | {{% date 2023 10 9 %}} | {{% date 2024 10 9 %}} |
 | 6.2.11 | {{% date 2024 1 16 %}} | {{% date 2025 1 16 %}} |
 | 6.2.12 | {{% date 2024 3 22 %}} | {{% date 2025 3 22 %}} |
 | 6.5.4 | {{% date 2024 1 11 %}} | {{% date 2025 1 11 %}} |
 | 6.5.5 | {{% date 2024 3 4 %}} | {{% date 2025 3 4 %}} |
+| 6.5.6 | {{% date 2024 5 31 %}} | {{% date 2025 5 31 %}} |
 
 ## Existing Patches
 
