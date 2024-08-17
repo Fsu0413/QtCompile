@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.127.0">
+    <meta name="generator" content="Hugo 0.132.1">
     <meta name="generator" content="Relearn 6.0.0">
     <meta name="description" content="Chinese / Multilingual Support This website was English only since when it was initially built, although the maintainer of this website (me, Fsu0413) is a Chinese native speaker from the PRC.
 Currently I am gradually adding Simplified Chinese support on this website.
@@ -92,12 +92,12 @@ Current Chinese support is in the stage of writing texts.">
   <ul>
     <li><a href="#chinese--multilingual-support">Chinese / Multilingual Support</a></li>
     <li><a href="#website-mirror">Website Mirror</a></li>
-    <li><a href="#reproduciable-building">Reproduciable building</a></li>
+    <li><a href="#reproducible-building">Reproducible building</a></li>
     <li><a href="#notes-on-static-builds">Notes on static builds</a></li>
     <li><a href="#static-lite-builds-and-static-full-builds-updated-8th-mar-2022">Static <code>Lite</code> Builds and Static <code>Full</code> Builds (Updated 8th Mar, 2022)</a></li>
     <li><a href="#notes-on-users-of-qt-of-old-version">Notes on users of Qt of old version</a></li>
     <li><a href="#notes-on-the-distributed-compressed-files">Notes on the distributed compressed files</a></li>
-    <li><a href="#difference-of-this-qt-and-offically-distributed-qt-updated-8th-jan-2023">Difference of this Qt and offically distributed Qt (Updated 8th Jan, 2023)</a></li>
+    <li><a href="#difference-of-this-qt-and-officially-distributed-qt-updated-8th-jan-2023">Difference of this Qt and officially distributed Qt (Updated 8th Jan, 2023)</a></li>
     <li><a href="#qt-offering-changes-2020-updated-2nd-sep-2023">Qt offering changes 2020 (updated 2nd Sep, 2023)</a></li>
     <li><a href="#gpg-sign-updated-6th-feb-2021">GPG sign (Updated 6th Feb, 2021)</a></li>
     <li><a href="#windows-10-before-version-1809-and-32-bit-windows-deprecation-important-notes-updated-25th-mar-2023">Windows 10 before version 1809 and 32-bit Windows deprecation (IMPORTANT NOTES!!) (updated 25th Mar, 2023)</a></li>
@@ -149,7 +149,7 @@ This mirror is configured to be displaying Simplified Chinese by default.</p>
 I may purchage the service later when the service seems good enough for me.</p>
 <p><a href="https://build-qt.fsu0413.me/" rel="external" target="_blank">Github Pages (America, with English as default language)</a><br>
 <a href="https://fsu0413.gitee.io/qtcompile/" rel="external" target="_blank">Gitee Pages (The Greatest China, with Chinese-S as default language)</a></p>
-<h2 id="reproduciable-building">Reproduciable building</h2>
+<h2 id="reproducible-building">Reproducible building</h2>
 <p>I use a set of scripts to do the build and packaging for <a href="https://reproducible-builds.org/" rel="external" target="_blank">reproducible building</a> Qt.<br>
 If you are interested in build method, please check the following GitHub repository. (<strong>PLEASE DO NOT FORK THIS REPOSITORY!</strong>)</p>
 <p><a href="https://github.com/Fsu0413/Fs-scripts" rel="external" target="_blank">GitHub</a></p>
@@ -195,11 +195,11 @@ The command line of generating the compressed file is like:</p>
 <div class="highlight wrap-code"><pre tabindex="0"><code>tar -cf - xxx | 7zr a -txz -m0=LZMA2:d256m:fb273 -mmt=3 -myx -si -- xxx.tar.xz</code></pre></div><p>Make sure your uncompresser supports LZMA2 algorithm. For example:<br>
 <code>7z</code> users should upgrade your <code>7z</code> to 9.20 or later.<br>
 <code>WinRAR</code> users should upgrade your <code>WinRAR</code> to 4.00 or later.<br>
-Other decompresser users should query for their latest version, since it may support LZMA2 algorithm.</p>
+Other decompressor users should query for their latest version, since it may support LZMA2 algorithm.</p>
 <p>Arch Linux and MSYS2 switched to zst for their package manager recently.<br>
 Only recent GNU <code>tar</code> (1.31 or later) and recent <code>bsdtar</code> (3.3.3 or later) directly supports <code>.tar.zst</code> compress method.<br>
 I will not use zst here because the compress ratio is not as good as LZMA2(xz).</p>
-<h2 id="difference-of-this-qt-and-offically-distributed-qt-updated-8th-jan-2023">Difference of this Qt and offically distributed Qt (Updated 8th Jan, 2023)</h2>
+<h2 id="difference-of-this-qt-and-officially-distributed-qt-updated-8th-jan-2023">Difference of this Qt and officially distributed Qt (Updated 8th Jan, 2023)</h2>
 <p>I provide only binary tarball, which contains only built Qt binary for each OS.<br>
 It should work out of box (for Qt 5.14 or later) or work after patches to Qt (for Qt 5.13 and before).<br>
 (Updated 14th Apr, 2022) Since installers are often doubted for attaching unwanted software (I never mean to do it), I will never use installers.</p>
@@ -210,13 +210,13 @@ Windows builds before and including Qt 5.12 are using linked OpenSSL to dynamic(
 macOS builds are using SecureTransport instead of OpenSSL.<br>
 Windows builds after and including Qt 5.13 are using SChannel instead of OpenSSL.</p>
 <p>(Updated 14th Apr, 2022) <strong>No debug libs, which cuts more than a half of the size of the whole Qt package.</strong><br>
-(Kindly please don&rsquo;t request it without commericial customization since I don&rsquo;t use it. Note that commerical customization has not started yet)</p>
+(Kindly please don&rsquo;t request it without commercial customization since I don&rsquo;t use it. Note that commercial customization has not started yet)</p>
 <p>No examples, which cuts more than a half of the size of the whole Qt package.</p>
 <p>No docs (and no <code>QDoc</code> for Qt 5.12 and later since it depends on Clang), since Qt docs can be read from <a href="http://doc.qt.io" rel="external" target="_blank">http://doc.qt.io</a> at any time, it is no need to bondle doc to the package.</p>
 <p>(Updated 8th Jan, 2023) <strong>No certificate</strong> which may be devastating for especially non-developers.<br>
 Binary program certificate must be bought on expensive price, yet I as a personal developer can&rsquo;t afford it for only a simple trust verification.<br>
 This leads to a problem that the program is reported to be not trusted when running my build of Qt.<br>
-There is no solution for this problem at the moment. I won&rsquo;t buy certificate for verification until commericial customization started and I earned some money by it in the future.<br>
+There is no solution for this problem at the moment. I won&rsquo;t buy certificate for verification until commercial customization started and I earned some money by it in the future.<br>
 It is possible to implement GPG verifiiation before certificate can be bought. (Although it has been put away for a long time&hellip;)<br>
 (Qt before 5.14 can&rsquo;t be trusted due to patch of Qt after install. Qt 5.14 and later can be relocated which resolves this problem)</p>
 <h2 id="qt-offering-changes-2020-updated-2nd-sep-2023">Qt offering changes 2020 (updated 2nd Sep, 2023)</h2>
@@ -336,7 +336,7 @@ If subsequent version of Qt 5.15 remains private we won&rsquo;t upgrade OpenSSL 
 <thead>
 <tr>
 <th>Qt Version</th>
-<th>Commericial Release Date</th>
+<th>Commercial Release Date</th>
 <th>Open Source Release Date</th>
 </tr>
 </thead>
@@ -392,7 +392,7 @@ If subsequent version of Qt 5.15 remains private we won&rsquo;t upgrade OpenSSL 
 <p>Starting from 12th Mar, 2022 I am shipping Qt with patches from Qt.<br>
 Most of them are CVE patches which can be downloaded from <a href="https://download.qt.io/" rel="external" target="_blank">Qt Downloads</a>, others are build fixes which are download from Qt Gerrit or KDE.</p>
 <p>Following is a table for patches of each version I am currently building.<br>
-Note that I won&rsquo;t patch an active version of Qt and will simply wait for future release. So only Commericial LTS and EOL version are patched.<br>
+Note that I won&rsquo;t patch an active version of Qt and will simply wait for future release. So only Commercial LTS and EOL version are patched.<br>
 A patch will removed from following table when this patch is shipped or not needed to be applied in all of the maintained versions.<br>
 Version number in brackets are the version when the corresponding patch will be shipped.</p>
 <table>
@@ -712,7 +712,7 @@ Currently only LTS version will be patched.</p>
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Sat, 22 Jun 2024 11:00:26 CST</p>
+Site generated: Sat, 17 Aug 2024 20:09:45 CST</p>
 
           </div>
         </div>
